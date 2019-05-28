@@ -12,6 +12,7 @@ import { PanelFooter } from '../src'
 
 storiesOf('Panel', module)
   .addDecorator(withInfo)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All elements', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">

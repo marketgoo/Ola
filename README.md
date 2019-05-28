@@ -1,8 +1,9 @@
 ![logo ola](ola.png)
 
-*Ola* is the design system created by **marketgoo**. This is an implementation in React.
+React implementation of **ola** design system created by **marketgoo**.
 
-[View *ola* specs](https://zeroheight.com/22mjgbuf6)
+- [View *ola* specs](https://zeroheight.com/22mjgbuf6)
+- [View storybook demos](https://marketgoo.gitlab.io/ola/)
 
 ## Install & update (using yarn)
 

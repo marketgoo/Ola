@@ -12,6 +12,7 @@ import { PanelFooter } from '../src'
 
 storiesOf('Button', module)
   .addDecorator(withInfo)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All', () => (
     <Panel>
       <PanelHeader title="Buttons" intro="Examples of buttons in different states"/>

@@ -8,6 +8,11 @@ module.exports = {
       features: {
         'custom-properties': false
       }
-    }
+    },
+    'postcss-prefix-selector': {
+      prefix: '.ola',
+      exclude: [/^\.ola/]
+    },
+    'stylefmt': {}
   }
 }
