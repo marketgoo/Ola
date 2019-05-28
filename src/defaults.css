@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-ui);
+    font-weight: var(--regular);
+    color: var(--black);
+}
+
+b, strong {
+    font-weight: var(--bold);
+}

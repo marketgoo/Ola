@@ -1,0 +1,83 @@
+:root {
+    /* Fonts */
+    --font-brand: 'Omnes', -apple-system, system-ui, sans-serif;
+    --font-ui: -apple-system, system-ui, sans-serif;
+
+    --regular: 300;
+    --bold: 500;
+
+    /* Colors */
+    --brand: #0090DA;
+    --brand-dark: #0070A8;
+    --brand-focus: #0090DA33;
+    --white: #FFFFFF;
+    --black: #2C333E;
+    --gray: #57657A;
+    --gray-light: #BBC2CE;
+    --gray-xlight: #F0F2F4;
+    --error: #DE0220;
+    --error-dark: #AC0219;
+    --error-focus: #DE022033;
+    --warning: #D7800F;
+    --success: #17AB4D;
+    --pro: #AC18B4;
+    --pro-dark: #811287;
+    --pro-focus: #AC18B433;
+    --premium: #F1D34B;
+
+    /* Space units */
+    --size-1: 2px;
+    --size-2: 4px;
+    --size-3: 8px;
+    --size-4: 14px;
+    --size-5: 16px;
+    --size-6: 20px;
+    --size-7: 28px;
+    --size-8: 44px;
+    --size-9: 76px;
+    --size-10: 140px;
+    --size-11: 268px;
+    --size-12: 524px;
+
+    /* Font styles */
+    --font-display: 400 var(--size-9) / 1 var(--font-brand);
+    --font-title: 500 var(--size-8) / 1.05 var(--font-brand);
+    --font-headline: var(--size-7) / 1.28 var(--font-ui);
+    --font-body: var(--size-6) / 1.3 var(--font-ui);
+    --font-callout: var(--size-5) / 1.38 var(--font-ui);
+    --font-caption: var(--size-4) / 1.42 var(--font-ui);
+
+    /* Shadows */
+    --shadow-1: 0 1px 3px #0003, 0 0 0 1px #0001;
+    --shadow-2: 0 2px 6px #0003;
+    --shadow-3: 0 4px 12px #0003;
+
+    /* Border radius */
+    --radius: 8px;
+    --radius-small: 4px;
+
+    /* Separator */
+    --separator: solid 4px var(--gray-xlight);
+
+    /* Margins and paddings */
+    --column-gap: var(--size-5);
+    --row-gap: var(--size-5);
+    --inner-gap: var(--size-5);
+
+    @media (--from-width-1) {
+        --column-gap: var(--size-6);
+        --row-gap: var(--size-7);
+        --inner-gap: var(--size-7);
+    }
+
+    @media (--from-width-2) {
+        --column-gap: var(--size-7);
+        --row-gap: var(--size-8);
+        --inner-gap: var(--size-8);
+    }
+}
+
+@custom-media --to-width-1 (max-width: 500px);
+@custom-media --from-width-1 (min-width: 500px);
+@custom-media --to-width-2 (max-width: 850px);
+@custom-media --from-width-2 (min-width: 850px);

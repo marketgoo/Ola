@@ -1,0 +1,33 @@
+.spinner {
+
+    --color: currentColor;
+
+    width: var(--size-8);
+    height: var(--size-8);
+
+    & circle {
+        fill: none;
+        stroke-width: 2;
+        stroke: var(--color);
+        stroke-dashoffset: 0;
+        stroke-dasharray: 55;
+        stroke-linecap: round;
+        animation: spinner 2s linear infinite;
+        animation-fill-mode: both;
+        transform-origin: center center;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        stroke-dasharray: 10 55;
+        transform: rotate(0deg);
+    }
+    50% {
+        stroke-dasharray: 55 55;
+    }
+    100% {
+        stroke-dasharray: 10 55;
+        transform: rotate(1080deg);
+    }
+}

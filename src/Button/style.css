@@ -1,0 +1,126 @@
+.button {
+    --color: var(--brand);
+    --background: transparent;
+    --color-hover: var(--brand-dark);
+    --background-hover: var(--gray-xlight);
+    --focus: var(--brand-focus);
+    --background-active: var(--brand-focus);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: var(--size-8);
+    min-width: var(--size-10);
+    border: none;
+    background: none;
+    color: var(--color);
+    background-color: var(--background);
+    border-radius: calc(var(--size-8) / 2);
+    font: var(--font-callout);
+    padding: 0 1em;
+    font-weight: var(--bold);
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 200ms;
+    outline: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    box-sizing: border-box;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:hover {
+        color: var(--color-hover);
+        background-color: var(--background-hover);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 4px var(--focus);
+    }
+
+    &:active {
+        background-color: var(--background-active);
+    }
+
+    &:disabled {
+        color: var(--gray-light);
+        --background: var(--gray-xlight);
+        cursor: not-allowed;
+        box-shadow: none;
+    }
+
+    &.is-primary {
+        --color: var(--white);
+        --background: var(--brand);
+        --color-hover: var(--white);
+        --background-hover: var(--brand-dark);
+        --focus: var(--brand-focus);
+        --background-active: var(--black);
+    }
+
+    &.is-secondary {
+        border: solid 1px var(--gray-light);
+
+        &:hover {
+            border-color: currentColor;
+        }
+    }
+
+    &.is-destructive-primary {
+        --color: var(--white);
+        --background: var(--error);
+        --color-hover: var(--white);
+        --background-hover: var(--error-dark);
+        --focus: var(--error-focus);
+        --background-active: var(--black);
+    }
+
+    &.is-destructive {
+        --color: var(--error);
+        --focus: var(--error-focus);
+        --color-hover: var(--error-dark);
+        --background-active: var(--error-focus);
+    }
+
+    &.is-pro {
+        --color: var(--white);
+        --background: var(--pro);
+        --color-hover: var(--white);
+        --background-hover: var(--pro-dark);
+        --focus: var(--pro-focus);
+        --background-active: var(--black);
+    }
+
+    &.is-busy {
+        color: var(--white);
+        background: var(--gray);
+        cursor: default;
+        min-width: 0;
+        padding-left: 0;
+        cursor: wait;
+    }
+
+    &.is-link {
+        --background-hover: transparent;
+
+        cursor: pointer;
+        min-width: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-radius: 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.button-group {
+    display: flex;
+
+    & .button + .button {
+        margin-left: var(--size-6);
+    }
+}

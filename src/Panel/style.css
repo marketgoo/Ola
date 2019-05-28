@@ -1,0 +1,69 @@
+.panel {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-1);
+}
+.panel-header {
+    padding: var(--inner-gap) var(--inner-gap) 0;
+    display: grid;
+    grid-template-areas: "title" "intro";
+    grid-template-columns: 1fr auto;
+    grid-column-gap: var(--size-6);
+
+    &.has-extra {
+        grid-template-areas: "title extra" "intro extra";
+    }
+}
+.panel-title {
+    grid-area: title;
+    margin: 0;
+    font: var(--font-headline);
+    font-weight: var(--regular);
+}
+.panel-intro {
+    grid-area: intro;
+    margin-top: var(--size-3);
+    font: var(--font-callout);
+    color: var(--gray);
+}
+.panel-extra {
+    grid-area: extra;
+}
+
+.panel-subtitle {
+    padding: var(--size-3) var(--inner-gap);
+    margin: var(--size-7) 0;
+    background-color: var(--gray-xlight);
+    font: var(--font-body);
+    font-weight: var(--regular);
+}
+
+.panel-content {
+    & > div {
+        margin: var(--size-7) 0;
+        padding: 0 var(--inner-gap);
+    }
+
+    &.is-fullwidth {
+        & > div {
+            padding: 0;
+        }
+    }
+
+    &:last-child {
+        padding-bottom: 0.1px;
+    }
+    &:first-child .panel-subtitle {
+        border-radius: var(--radius) var(--radius) 0 0;
+    }
+}
+
+.panel-footer {
+    background: var(--gray-xlight);
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: var(--size-3) var(--inner-gap);
+    display: flex;
+}
+.panel-buttons {
+    margin-left: auto;
+}

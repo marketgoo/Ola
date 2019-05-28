@@ -1,0 +1,17 @@
+image: node:latest
+
+pages:
+  stage: deploy
+  script:
+  - npm install
+  - npm run build
+  - npm run build:storybook
+  - mv storybook-static public
+  - npm pack
+  - mv *.tgz public/nightly.tgz
+  - mv static/* public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master

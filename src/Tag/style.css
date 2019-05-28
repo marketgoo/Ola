@@ -1,0 +1,41 @@
+.tag {
+    --color: var(--gray);
+    --background: var(--gray-xlight);
+
+    display: inline-flex;
+    white-space: nowrap;
+    height: var(--size-6);
+    font: var(--font-caption);
+    font-weight: var(--bold);
+    color: var(--color);
+    background-color: var(--background);
+    padding: 0 var(--size-3);
+    border-radius: var(--radius-small);
+    vertical-align: middle;
+    cursor: default;
+
+    &.is-success {
+        --color: var(--white);
+        --background: var(--success);
+    }
+
+    &.is-error {
+        --color: var(--white);
+        --background: var(--error);
+    }
+
+    &.is-warning {
+        --color: var(--white);
+        --background: var(--warning);
+    }
+
+    &.is-invert {
+        --color: var(--white);
+        --background: var(--gray);
+    }
+
+    &.is-pro {
+        --color: var(--white);
+        --background: var(--pro);
+    }
+}
