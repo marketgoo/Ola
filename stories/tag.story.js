@@ -6,6 +6,7 @@ import { Tag } from '../src'
 
 storiesOf('Tag', module)
   .addDecorator(withInfo)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Default', () => (
     <Tag>Default Tag</Tag>
   ))

@@ -12,6 +12,7 @@ import { PanelContent } from '../src'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All', () => (
     <Panel>
       <PanelHeader title="Forms" intro="Examples of fields in different states"/>
