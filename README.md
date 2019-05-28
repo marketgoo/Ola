@@ -6,14 +6,14 @@
 
 ## Install & update (using yarn)
 
-To install, execute the following command: `yarn add https://marketgoo.gitlab.io/app/design-system-ui/nightly.tgz`
+To install, execute the following command: `yarn add https://marketgoo.gitlab.io/ola/nightly.tgz`
 
 To update, copy the following script to your `package.json`:
 
 ```json
 {
     "scripts": {
-        "update-ola": "yarn cache clean @ola/ola && cache=$(yarn cache dir) && [ \"$cache\" != \"\" ] && [ -d \"$cache/.tmp\" ] && rm -rf \"$cache/.tmp\" && yarn add https://marketgoo.gitlab.io/app/design-system-ui/nightly.tgz"
+        "update-ola": "yarn cache clean @ola/components && cache=$(yarn cache dir) && [ \"$cache\" != \"\" ] && [ -d \"$cache/.tmp\" ] && rm -rf \"$cache/.tmp\" && yarn add https://marketgoo.gitlab.io/ola/nightly.tgz"
     }
 }
 ```
