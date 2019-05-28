@@ -6,7 +6,7 @@ import { Spinner } from '../src'
 
 storiesOf('Spinner', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('Default', () => (
     <Spinner />
   ))

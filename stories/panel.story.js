@@ -12,11 +12,11 @@ import { PanelFooter } from '../src'
 
 storiesOf('Panel', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered is-wide">{story()}</div>)
   .add('All elements', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">
-        Optinal extra content
+        Optional extra content
       </PanelHeader>
       <PanelContent title="Conten Title">
         <p>Panel content</p>
@@ -30,7 +30,7 @@ storiesOf('Panel', module)
   .add('Panel content fullwidth', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">
-        Optinal extra content
+        Optional extra content
       </PanelHeader>
       <PanelContent title="Conten Title" variant="fullwidth">
         <p>Panel content full width</p>
@@ -48,7 +48,7 @@ storiesOf('Panel', module)
         htmlTitle={true}
         intro={'Lorem ipsum for testing intro with <span>span</span>'}
         htmlIntro={true}>
-        Optinal extra content
+        Optional extra content
       </PanelHeader>
       <PanelContent htmlTitle={true} extraClass="extraclass" title="Conten Titles with <span>span</span>">
         <p>Panel content</p>

@@ -12,16 +12,13 @@ import { PanelContent } from '../src'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All', () => (
-    <Panel>
-      <PanelHeader title="Forms" intro="Examples of fields in different states"/>
-      <PanelContent>
-        <p>Default: <Field placeholder="Text placeholder" /></p>
-        <p>Disabled: <Field placeholder="Text placeholder" disabled /></p>
-        <p>With value: <Field value="louis@gmail.com" /></p>
-      </PanelContent>
-    </Panel>
+    <div className="preview-centered">
+      <p>Default: <Field placeholder="Text placeholder" /></p>
+      <p>Disabled: <Field placeholder="Text placeholder" disabled /></p>
+      <p>With value: <Field value="louis@gmail.com" /></p>
+    </div>
   ))
   .add('Field Empty', () => (
     <Field placeholder="Text placeholder" />

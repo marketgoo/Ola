@@ -10,7 +10,7 @@ import { Tag } from '../src'
 
 storiesOf('ButtonIcon', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('Default', () => (
     <Tag>
       Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}>x</ButtonIcon>

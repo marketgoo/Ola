@@ -12,24 +12,17 @@ import { PanelFooter } from '../src'
 
 storiesOf('Button', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All', () => (
-    <Panel>
-      <PanelHeader title="Buttons" intro="Examples of buttons in different states"/>
-      <PanelContent>
-        <p><Button onClick={action('onClick event')}>Default</Button></p>
-        <p><Button disabled>Default disabled</Button></p>
-        <p><Button onClick={action('onClick event')} variant='primary'>Primary</Button></p>
-        <p><Button onClick={action('onClick event')} variant='destructive'>Is Destructive</Button></p>
-        <p><Button onClick={action('onClick event')} variant='destructive-primary'>Is Destructive and primary</Button></p>
-        <p><Button onClick={action('onClick event')} variant='pro'>Is Pro</Button></p>
-        <p><Button onClick={action('onClick event')} variant='secondary'>Is Secondary</Button></p>
-      </PanelContent>
-      <PanelFooter panelButtons>
-        <Button onClick={action('onClick event')} variant="secondary">Secondary</Button>
-        <Button onClick={action('onClick event')} variant="primary">Primary</Button>
-      </PanelFooter>
-    </Panel>
+    <div className="preview-centered">
+        <Button onClick={action('onClick event')}>Default</Button>
+        <Button disabled>Default disabled</Button>
+        <Button onClick={action('onClick event')} variant='primary'>Primary</Button>
+        <Button onClick={action('onClick event')} variant='destructive'>Is Destructive</Button>
+        <Button onClick={action('onClick event')} variant='destructive-primary'>Is Destructive and primary</Button>
+        <Button onClick={action('onClick event')} variant='pro'>Is Pro</Button>
+        <Button onClick={action('onClick event')} variant='secondary'>Is Secondary</Button>
+    </div>
   ))
   .add('Default', () => (
     <Button onClick={action('onClick event')}>Default</Button>
