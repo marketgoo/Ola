@@ -33,5 +33,8 @@ storiesOf('Form', module)
     <Field value="louis@gmail.com" />
   ))
   .add('Checkbox', () => (
-    <Checkbox label="Checkbox" />
+    <Panel>
+      <p><Checkbox label="Checkbox" /></p>
+      <p><Checkbox label="Checkbox <span> with span</span>" htmlLabel /></p>
+    </Panel>
   ))
