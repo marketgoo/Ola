@@ -19,4 +19,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Panel` with subcomponents `PanelContent`, `PanelHeader` and `PanelFooter`
 - New component `Tag`
 
-[0.2.0]: https://gitlab.com/marketgoo/app/design-system-ui/compare/v0.1.0...master
+[0.2.0]: https://gitlab.com/marketgoo/ola/compare/v0.1.0...master
