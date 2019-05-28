@@ -2,10 +2,10 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 // import cx from 'classnames'
 
-const Checkbox = ({ label, input: { value, onChange }}) => {
+const Checkbox = ({ label, ...props }) => {
   return (
     <label className="check">
-      <input type="checkbox" className="check-input" onClick={() => onChange(!value)} />
+      <input type="checkbox" className="check-input" {...props} />
       <span className="check-label">{ label }</span>
     </label>
   )

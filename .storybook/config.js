@@ -5,7 +5,7 @@ const gooTheme = create({
   base: 'light',
   brandTitle: 'marketgoo',
   brandUrl: 'https://zeroheight.com/22mjgbuf6',
-  brandImage: './marketgoo.svg',
+  brandImage: './ola.svg',
 
   colorPrimary: '#0090DA',
   colorSecondary: '#0090DA',
