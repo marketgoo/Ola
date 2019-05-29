@@ -21,7 +21,6 @@ storiesOf('Form', module)
   ))
   .add('Field', () => (
     <Field
-      name="test"
       label="Test"
       description="Test description"
       hint="(optional)">
@@ -31,7 +30,6 @@ storiesOf('Form', module)
   .add('Field Error', () => (
     <Field
       error
-      name="test"
       label="Test"
       description="Test description"
       hint="(optional)">
@@ -41,7 +39,6 @@ storiesOf('Form', module)
   .add('Field Disabled', () => (
     <Field
       disabled
-      name="test"
       label="Test"
       description="Test description"
       hint="(optional)">

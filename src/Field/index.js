@@ -1,12 +1,12 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-
+import uniqueid from 'lodash.uniqueid'
 
 const Field = ({ name, label, hint, error, description, disabled, children }) => {
   return (
     <div className={cx('field', {'is-invalid': error})}>
-      <label htmlFor="test" className="field-label">
+      <label htmlFor={name} className="field-label">
         { label }
         {hint && <span className="field-hint">{ hint }</span>}
       </label>
@@ -19,6 +19,7 @@ const Field = ({ name, label, hint, error, description, disabled, children }) =>
 }
 
 Field.defaultProps = {
+  name: uniqueid('id-'),
   error: false,
   hint: null,
   description: null,
@@ -26,7 +27,7 @@ Field.defaultProps = {
 }
 
 Field.propTypes = {
-  /** Name for Input and Label */
+  /** Name for Input and Label (automatic if not defined)*/
   name: PT.string,
   /** Label */
   label: PT.string.isRequired,
