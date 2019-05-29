@@ -5,7 +5,7 @@ import uniqueid from 'lodash.uniqueid'
 
 const Field = ({ name, label, hint, error, description, disabled, children }) => {
   return (
-    <div className={cx('field', {'is-invalid': error})}>
+    <div className={cx('field', {'is-invalid': error}, {'is-disabled': disabled})}>
       <label htmlFor={name} className="field-label">
         { label }
         {hint && <span className="field-hint">{ hint }</span>}
