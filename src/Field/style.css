@@ -1,5 +1,16 @@
 .field {
+    &.is-disabled {
+        cursor: not-allowed;
 
+        & .field-label {
+            cursor: inherit;
+            color: var(--gray-light);
+        }
+        & .field-hint,
+        & .field-description {
+            visibility: hidden;
+        }
+    }
 }
 .field-label {
     color: var(--black);
