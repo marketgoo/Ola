@@ -1,21 +1,17 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import cx from 'classnames'
+import { Input } from '../Input'
 
-const Field = ({ invalid, ...props }) => {
-  const style = cx('input', {invalid: `is-${invalid}`})
+const Field = ({...props }) => {
   return (
-    <input className={style} {...props} />
+    <Input {...props } />
   )
 }
 
 Field.defaultProps = {
-  invalid: false
 }
 
 Field.propTypes = {
-  /** Input is invalid */
-  invalid: PT.bool
 }
 
 export { Field }

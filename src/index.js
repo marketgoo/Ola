@@ -9,5 +9,6 @@ export { PanelContent } from './Panel/Content'
 export { PanelFooter } from './Panel/Footer'
 export { PanelHeader } from './Panel/Header'
 
+export { Input } from './Input'
 export { Field } from './Field'
 export { Checkbox } from './Checkbox'
