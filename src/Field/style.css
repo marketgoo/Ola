@@ -5,11 +5,11 @@
     color: var(--black);
     display: flex;
     justify-content: space-between;
-    @extend %callout;
+    font: var(--font-callout);
     font-weight: var(--bold);
 }
 .field-hint {
-    @extend %caption;
+    font: var(--font-caption);
     margin-left: 1em;
     font-weight: var(--regular);
     color: var(--gray);
@@ -19,7 +19,7 @@
 }
 .field-description,
 .field-error {
-    @extend %caption;
+    font: var(--font-caption);
     margin-top: 0;
     color: var(--gray);
 }

@@ -19,23 +19,34 @@ storiesOf('Form', module)
   .add('Input Filled', () => (
     <Input value="louis@gmail.com" />
   ))
-  .add('Default Field', () => (
-    <Field placeholder="Text placeholder" />
-  ))
-  .add('Default Field Optional', () => (
+  .add('Field', () => (
     <Field
-      label='Test Label'
+      name="test"
+      label="Test"
       description="Test description"
-      placeholder="Text placeholder"
-      hint="(optional)" />
+      hint="(optional)">
+      <Input placeholder="Text placeholder" />
+    </Field>
   ))
-  .add('Field with error', () => (
+  .add('Field Error', () => (
     <Field
       error
-      label='Test Label'
+      name="test"
+      label="Test"
       description="Test description"
-      placeholder="Text placeholder"
-      hint="(optional)" />
+      hint="(optional)">
+      <Input placeholder="Text placeholder" />
+    </Field>
+  ))
+  .add('Field Disabled', () => (
+    <Field
+      disabled
+      name="test"
+      label="Test"
+      description="Test description"
+      hint="(optional)">
+      <Input placeholder="Text placeholder" />
+    </Field>
   ))
   .add('Checkbox', () => (
     <div className="preview-centered">

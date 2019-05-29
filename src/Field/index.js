@@ -1,29 +1,48 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import { Input } from '../Input'
 import cx from 'classnames'
 
 
-const Field = ({ label, hint, error, description, ...props }) => {
+const Field = ({ name, label, hint, error, description, disabled, children }) => {
   return (
     <div className={cx('field', {'is-invalid': error})}>
-      {label && <label className="field-label">{ label }</label>}
-      {hint && <span className="field-hint">{ hint }</span>}
-      <Input error={error} extraClass="field-input" {...props} />
+      <label htmlFor="test" className="field-label">
+        { label }
+        {hint && <span className="field-hint">{ hint }</span>}
+      </label>
+      <div className="field-input">
+        {React.cloneElement(children, { id: name, error, disabled })}
+      </div>
       <p className={ cx({ 'field-error': error, 'field-description': !error }) }>{description}</p>
     </div>
   )
 }
 
 Field.defaultProps = {
-  error: false
+  error: false,
+  hint: null,
+  description: null,
+  disabled: false
 }
 
 Field.propTypes = {
-  label: PT.string,
-  hint: PT.bool,
+  /** Name for Input and Label */
+  name: PT.string,
+  /** Label */
+  label: PT.string.isRequired,
+  /** Disabled input children */
+  disabled: PT.bool,
+  /** Hint */
+  hint: PT.string,
+  /** Description */
   description: PT.string,
-  error: PT.bool
+  /** Error variant */
+  error: PT.bool,
+  /** Childen nodes */
+  children: PT.oneOfType([
+    PT.arrayOf(PT.node),
+    PT.node
+  ]).isRequired
 }
 
 export { Field }
