@@ -25,7 +25,7 @@
     margin-right: 10px;
     color: var(--color);
     transition-property: color, background-color;
-    transition-duration: 200ms;
+    transition-duration: var(--duration);
 }
 .check-input:checked ~ .check-label::before {
     --color: var(--brand);
