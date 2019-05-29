@@ -27,13 +27,13 @@
         opacity: 1;
     }
 
-    &:hover {
-        --border: var(--brand);
-    }
-
     &:focus {
         --border: var(--brand);
         box-shadow: 0 0 0 4px var(--focus);
+    }
+
+    &:hover {
+        --border: var(--brand-dark);
     }
 
     &:invalid,
