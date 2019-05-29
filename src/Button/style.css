@@ -21,7 +21,7 @@
     padding: 0 1em;
     font-weight: var(--bold);
     transition-property: background-color, color, box-shadow;
-    transition-duration: 200ms;
+    transition-duration: var(--duration);
     outline: 0;
     white-space: nowrap;
     text-decoration: none;
@@ -95,7 +95,7 @@
 
     &.is-busy {
         color: var(--white);
-        background: var(--gray);
+        background-color: var(--gray);
         cursor: default;
         min-width: 0;
         padding-left: 0;

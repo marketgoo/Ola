@@ -64,6 +64,9 @@
     --row-gap: var(--size-5);
     --inner-gap: var(--size-5);
 
+    /* Transitions */
+    --duration: 100ms;
+
     @media (--from-width-1) {
         --column-gap: var(--size-6);
         --row-gap: var(--size-7);

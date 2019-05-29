@@ -16,7 +16,7 @@
     font: var(--font-callout);
     padding: 0 1em;
     transition-property: background-color, color, box-shadow, border-color;
-    transition-duration: 200ms;
+    transition-duration: var(--duration);
     outline: 0;
     white-space: nowrap;
     text-decoration: none;
@@ -44,6 +44,10 @@
 
         &:focus {
             box-shadow: 0 0 0 4px var(--error-focus);
+        }
+
+        &:hover {
+            --border: var(--error-dark);
         }
     }
 
