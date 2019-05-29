@@ -1,6 +1,5 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-// import cx from 'classnames'
 
 const Checkbox = ({ label, htmlLabel, ...props }) => {
   return (

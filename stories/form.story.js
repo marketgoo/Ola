@@ -5,11 +5,6 @@ import { storiesOf } from '@storybook/react'
 import { Field } from '../src'
 import { Checkbox } from '../src'
 
-import { Panel } from '../src'
-import { PanelHeader } from '../src'
-import { PanelContent } from '../src'
-
-
 storiesOf('Form', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
@@ -33,8 +28,8 @@ storiesOf('Form', module)
     <Field value="louis@gmail.com" />
   ))
   .add('Checkbox', () => (
-    <Panel>
+    <div className="preview-centered">
       <p><Checkbox label="Checkbox" /></p>
       <p><Checkbox label="Checkbox <span> with span</span>" htmlLabel /></p>
-    </Panel>
+    </div>
   ))

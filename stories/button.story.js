@@ -5,23 +5,19 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import { Button } from '../src'
-import { Panel } from '../src'
-import { PanelHeader } from '../src'
-import { PanelContent } from '../src'
-import { PanelFooter } from '../src'
 
 storiesOf('Button', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All', () => (
     <div className="preview-centered">
-        <Button onClick={action('onClick event')}>Default</Button>
-        <Button disabled>Default disabled</Button>
-        <Button onClick={action('onClick event')} variant='primary'>Primary</Button>
-        <Button onClick={action('onClick event')} variant='destructive'>Is Destructive</Button>
-        <Button onClick={action('onClick event')} variant='destructive-primary'>Is Destructive and primary</Button>
-        <Button onClick={action('onClick event')} variant='pro'>Is Pro</Button>
-        <Button onClick={action('onClick event')} variant='secondary'>Is Secondary</Button>
+      <Button onClick={action('onClick event')}>Default</Button>
+      <Button disabled>Default disabled</Button>
+      <Button onClick={action('onClick event')} variant='primary'>Primary</Button>
+      <Button onClick={action('onClick event')} variant='destructive'>Is Destructive</Button>
+      <Button onClick={action('onClick event')} variant='destructive-primary'>Is Destructive and primary</Button>
+      <Button onClick={action('onClick event')} variant='pro'>Is Pro</Button>
+      <Button onClick={action('onClick event')} variant='secondary'>Is Secondary</Button>
     </div>
   ))
   .add('Default', () => (
