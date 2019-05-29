@@ -9,20 +9,21 @@ const Field = ({ label, hint, error, description, ...props }) => {
     <div className={cx('field', {'is-invalid': error})}>
       {label && <label className="field-label">{ label }</label>}
       {hint && <span className="field-hint">{ hint }</span>}
-      <Input error extraClass="field-input" {...props} />
+      <Input error={error} extraClass="field-input" {...props} />
       <p className={ cx({ 'field-error': error, 'field-description': !error }) }>{description}</p>
     </div>
   )
 }
 
 Field.defaultProps = {
+  error: false
 }
 
 Field.propTypes = {
   label: PT.string,
   hint: PT.bool,
   description: PT.string,
-  error: PT.string
+  error: PT.bool
 }
 
 export { Field }

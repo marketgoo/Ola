@@ -7,13 +7,6 @@ import { Input, Field, Checkbox } from '../src'
 storiesOf('Form', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
-  .add('All', () => (
-    <div className="preview-centered">
-      <p>Default: <Input placeholder="Text placeholder" /></p>
-      <p>Disabled: <Input placeholder="Text placeholder" disabled /></p>
-      <p>With value: <Input value="louis@gmail.com" /></p>
-    </div>
-  ))
   .add('Input Empty', () => (
     <Input placeholder="Text placeholder" />
   ))
@@ -26,7 +19,10 @@ storiesOf('Form', module)
   .add('Input Filled', () => (
     <Input value="louis@gmail.com" />
   ))
-  .add('Field', () => (
+  .add('Default Field', () => (
+    <Field placeholder="Text placeholder" />
+  ))
+  .add('Default Field Optional', () => (
     <Field
       label='Test Label'
       description="Test description"
