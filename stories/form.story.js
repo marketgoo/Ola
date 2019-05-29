@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { Input, Checkbox } from '../src'
+import { Input, Field, Checkbox } from '../src'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
@@ -25,6 +25,21 @@ storiesOf('Form', module)
   ))
   .add('Input Filled', () => (
     <Input value="louis@gmail.com" />
+  ))
+  .add('Field', () => (
+    <Field
+      label='Test Label'
+      description="Test description"
+      placeholder="Text placeholder"
+      hint="(optional)" />
+  ))
+  .add('Field with error', () => (
+    <Field
+      error
+      label='Test Label'
+      description="Test description"
+      placeholder="Text placeholder"
+      hint="(optional)" />
   ))
   .add('Checkbox', () => (
     <div className="preview-centered">

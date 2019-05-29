@@ -1,1 +1,33 @@
-.Field {}
+.field {
+
+}
+.field-label {
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    @extend %callout;
+    font-weight: var(--bold);
+}
+.field-hint {
+    @extend %caption;
+    margin-left: 1em;
+    font-weight: var(--regular);
+    color: var(--gray);
+}
+.field-input {
+    margin: var(--size-2) 0;
+}
+.field-description,
+.field-error {
+    @extend %caption;
+    margin-top: 0;
+    color: var(--gray);
+}
+.field-error {
+    color: var(--error);
+}
+.field.is-invalid {
+    & .field-label {
+        color: var(--error);
+    }
+}
