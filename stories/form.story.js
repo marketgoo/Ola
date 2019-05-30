@@ -19,6 +19,9 @@ storiesOf('Form', module)
   .add('Input Filled', () => (
     <Input value="louis@gmail.com" />
   ))
+  .add('Input textarea', () => (
+    <Input type="textarea" />
+  ))
   .add('Field', () => (
     <Field
       id="field-test"
