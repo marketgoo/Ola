@@ -12,11 +12,20 @@
     display: none;
 }
 .searchField-input {
-    border-radius: calc(var(--size-8) / 2) 0 0 calc(var(--size-8) / 2);
-    border-right: 0;
+    --radius: calc(var(--size-8) / 2);
+    border-radius: var(--radius) 0 0 var(--radius);
 
     &:focus {
         box-shadow: none;
+    }
+
+    &:last-child {
+        border-top-right-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+    }
+
+    &:not(:last-child) {
+        border-right: 0;
     }
 }
 .searchField-button {
