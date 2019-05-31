@@ -82,6 +82,12 @@
         --focus: var(--error-focus);
         --color-hover: var(--error-dark);
         --background-active: var(--error-focus);
+
+        border: solid 1px var(--gray-light);
+
+        &:hover {
+            border-color: currentColor;
+        }
     }
 
     &.is-pro {
