@@ -1,8 +1,9 @@
 import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 
-import { Input, Field, Checkbox } from '../src'
+import { Input, Field, FieldDescription, Checkbox } from '../src'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
@@ -50,6 +51,25 @@ storiesOf('Form', module)
       hint="(optional)">
       <Input placeholder="Text placeholder" />
     </Field>
+  ))
+  .add('Field Custom description', () => (
+    <div className="preview-centered">
+      <Field
+        id="field-cutsom-description"
+        label="Test"
+        customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+        hint="(optional)">
+        <Input placeholder="Text placeholder" />
+      </Field>
+      <Field
+        id="field-custom-description-error"
+        error
+        label="Test"
+        customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+        hint="(optional)">
+        <Input placeholder="Text placeholder" />
+      </Field>
+    </div>
   ))
   .add('Checkbox', () => (
     <div className="preview-centered">

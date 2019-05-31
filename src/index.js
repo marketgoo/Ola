@@ -11,4 +11,5 @@ export { PanelHeader } from './Panel/Header'
 
 export { Input } from './Input'
 export { Field } from './Field'
+export { FieldDescription } from './FieldDescription'
 export { Checkbox } from './Checkbox'

@@ -10,6 +10,7 @@ const Input = ({ extraClass, error, type, ...props }) => {
 
 Input.defaultProps = {
   type: 'text',
+  extraClass: null,
   error: false
 }
 
