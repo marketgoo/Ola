@@ -1,0 +1,29 @@
+.searchField {
+    display: flex;
+    border-radius: calc(var(--size-8) / 2);
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+
+    &:focus-within {
+        box-shadow: 0 0 0 4px var(--brand-focus);
+    }
+}
+.searchField-label {
+    display: none;
+}
+.searchField-input {
+    border-radius: calc(var(--size-8) / 2) 0 0 calc(var(--size-8) / 2);
+    border-right: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+.searchField-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    &:focus {
+        box-shadow: none;
+    }
+}

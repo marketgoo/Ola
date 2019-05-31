@@ -4,8 +4,8 @@ import cx from 'classnames'
 
 import { Spinner } from '../Spinner'
 
-const Button = ({ variant, children, disabled, busy, ...props }) => {
-  const styles = variant ? cx('button', `is-${variant}`) : 'button'
+const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => {
+  const styles = variant ? cx('button', `is-${variant}`, extraClass) : 'button'
   return busy ? (
     <button className={'button is-busy'} disabled {...props}><Spinner />{busy}</button>
   ) : (
@@ -16,6 +16,7 @@ const Button = ({ variant, children, disabled, busy, ...props }) => {
 Button.defaultProps = {
   variant: null,
   busy: null,
+  extraClass: null,
   disabled: false
 }
 
@@ -27,6 +28,8 @@ Button.propTypes = {
     PT.string,
     PT.bool
   ]),
+  /** Extra className */
+  extraClass: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

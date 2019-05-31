@@ -3,7 +3,13 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { Input, Field, FieldDescription, Checkbox } from '../src'
+import {
+  Input,
+  Field,
+  FieldDescription,
+  SearchField,
+  Checkbox
+} from '../src'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
@@ -69,6 +75,12 @@ storiesOf('Form', module)
         hint="(optional)">
         <Input placeholder="Text placeholder" />
       </Field>
+    </div>
+  ))
+  .add('SearchField', () => (
+    <div className="preview-centered">
+      <SearchField />
+      <SearchField textButton="Test Search" />
     </div>
   ))
   .add('Checkbox', () => (

@@ -6,8 +6,9 @@
 @import './ButtonIcon/style.css';
 @import './Spinner/style.css';
 @import './Panel/style.css';
-@import './Input/style.css';
 @import './Tag/style.css';
 
+@import './Input/style.css';
 @import './Field/style.css';
 @import './Checkbox/style.css';
+@import './SearchField/style.css';
