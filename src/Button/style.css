@@ -44,13 +44,6 @@
         background-color: var(--background-active);
     }
 
-    &:disabled {
-        color: var(--gray-light);
-        --background: var(--gray-xlight);
-        cursor: not-allowed;
-        box-shadow: none;
-    }
-
     &.is-primary {
         --color: var(--white);
         --background: var(--brand);
@@ -120,6 +113,16 @@
         &:hover {
             text-decoration: underline;
         }
+    }
+
+    &:disabled {
+        color: var(--gray-light);
+        --background: var(--gray-xlight);
+        --background-hover: var(--gray-xlight);
+        --background-active: var(--gray-xlight);
+        border: none;
+        cursor: not-allowed;
+        box-shadow: none;
     }
 }
 
