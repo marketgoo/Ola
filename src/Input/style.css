@@ -59,6 +59,10 @@
             opacity: 0;
         }
     }
+
+    &[readonly] {
+        box-shadow: none;
+    }
 }
 
 textarea.ola_input {
