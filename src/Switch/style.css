@@ -1,0 +1,44 @@
+.switch {
+    padding: var(--size-3) 0;
+    display: inline-block;
+}
+.switch-input {
+    position: absolute;
+    opacity: 0;
+}
+.switch-label {
+    display: flex;
+    font: var(--font-callout);
+    align-items: center;
+}
+.switch-label::before {
+    --color: var(--gray-xlight);
+
+    content: "";
+    display: block;
+    width: 44px;
+    height: 24px;
+    border-radius: 12px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    background-color: var(--color);
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><circle id="shape" cx="12" cy="12" r="10"></circle><filter x="-25.0%" y="-20.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="shadow"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><use fill="black" filter="url(%23shadow)" xlink:href="%23shape"></use><use fill="white" xlink:href="%23shape"></use></svg>');
+    background-repeat: no-repeat;
+    background-position: left center;
+    transition-property: background-color, background-position;
+    transition-duration: 200ms;
+}
+
+.switch-input:checked ~ .switch-label::before {
+    --color: var(--brand);
+    background-position: right center;
+}
+.switch-input:focus ~ .switch-label::before {
+    box-shadow: 0 0 0 4px var(--brand-focus);
+}
+.switch-input:hover ~ .switch-label::before {
+    --color: var(--gray-light);
+}
+.switch-input:checked:hover ~ .switch-label::before {
+    --color: var(--brand-dark);
+}

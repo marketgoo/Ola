@@ -8,7 +8,8 @@ import {
   Field,
   FieldDescription,
   SearchField,
-  Checkbox
+  Checkbox,
+  Switch
 } from '../src'
 
 storiesOf('Form', module)
@@ -87,5 +88,11 @@ storiesOf('Form', module)
     <div className="preview-centered">
       <p><Checkbox label="Checkbox" /></p>
       <p><Checkbox label="Checkbox <span> with span</span>" htmlLabel /></p>
+    </div>
+  ))
+  .add('Switch', () => (
+    <div className="preview-centered">
+      <p><Switch label="Switch" /></p>
+      <p><Switch label="Switch <span> with span</span>" htmlLabel /></p>
     </div>
   ))
