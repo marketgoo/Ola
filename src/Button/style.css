@@ -97,8 +97,15 @@
         background-color: var(--gray);
         cursor: default;
         min-width: 0;
-        padding-left: 0;
         cursor: wait;
+
+        & .ola_spinner:first-child {
+            margin-left: -1em;
+        }
+
+        & .ola_spinner:last-child {
+            margin-right: -1em;
+        }
     }
 
     &.is-link {
