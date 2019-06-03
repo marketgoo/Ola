@@ -1,4 +1,4 @@
-.input {
+.ola_input {
     --border: var(--gray-light);
     --color: var(--black);
     --background: var(--white);
@@ -61,7 +61,7 @@
     }
 }
 
-textarea.input {
+textarea.ola_input {
     padding-top: 1em;
     padding-bottom: 1em;
     height: auto;

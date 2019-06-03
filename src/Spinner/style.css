@@ -1,5 +1,4 @@
-.spinner {
-
+.ola_spinner {
     --color: currentColor;
 
     width: var(--size-8);

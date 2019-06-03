@@ -1,4 +1,4 @@
-.searchField {
+.ola_searchField {
     display: flex;
     border-radius: calc(var(--size-8) / 2);
     transition-property: box-shadow;
@@ -8,10 +8,10 @@
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
 }
-.searchField-label {
+.ola_searchField-label {
     display: none;
 }
-.searchField-input {
+.ola_searchField-input {
     --radius: calc(var(--size-8) / 2);
     border-radius: var(--radius) 0 0 var(--radius);
 
@@ -28,7 +28,7 @@
         border-right: 0;
     }
 }
-.searchField-button {
+.ola_searchField-button {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
