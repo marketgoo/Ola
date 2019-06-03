@@ -4,7 +4,7 @@ import cx from 'classnames'
 
 const FieldDescription = ({ error, children }) => {
   return (
-    <p className={cx({'field-error': error, 'field-description': !error })}>
+    <p className={cx({'ola_field-error': error, 'ola_field-description': !error })}>
       { children }
     </p>
   )

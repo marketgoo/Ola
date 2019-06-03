@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 
 const Panel = ({ children }) => {
   return (
-    <section className="panel">
+    <section className="ola_panel">
       {children}
     </section>
   )

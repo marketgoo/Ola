@@ -4,8 +4,8 @@ import cx from 'classnames'
 
 const Input = ({ extraClass, error, type, ...props }) => {
   return type === 'textarea' ?
-    ( <textarea type={type} className={ cx('input', {'is-invalid': error}, extraClass) } {...props} /> ) :
-    ( <input type={type} className={ cx('input', {'is-invalid': error}, extraClass) } {...props} /> )
+    ( <textarea type={type} className={ cx('ola_input', {'is-invalid': error}, extraClass) } {...props} /> ) :
+    ( <input type={type} className={ cx('ola_input', {'is-invalid': error}, extraClass) } {...props} /> )
 }
 
 Input.defaultProps = {

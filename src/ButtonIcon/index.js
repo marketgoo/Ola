@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 
 const ButtonIcon = ({ children, ...props }) => {
-  return (<button {...props} className='buttonIcon'>{children}</button>)
+  return (<button {...props} className='ola_buttonIcon'>{children}</button>)
 }
 
 ButtonIcon.propTypes = {

@@ -5,8 +5,8 @@ import cx from 'classnames'
 const PanelContent = ({ children, title, htmlTitle, variant, extraClass, ...props }) => {
   // const styles = variant ? cx('panel-content', `is-${variant}`, extraClass) : cx('panel-content', extraClass)
   return (
-    <div className={cx('panel-content', variant && `is-${variant}`, extraClass)} {...props}>
-      { title && ( htmlTitle ? <h2 className="panel-subtitle" dangerouslySetInnerHTML={{__html: title}} /> : <h2 className="panel-subtitle">{title}</h2>) }
+    <div className={cx('ola_panel-content', variant && `is-${variant}`, extraClass)} {...props}>
+      { title && ( htmlTitle ? <h2 className="ola_panel-subtitle" dangerouslySetInnerHTML={{__html: title}} /> : <h2 className="ola_panel-subtitle">{title}</h2>) }
       <div>
         {children}
       </div>

@@ -4,13 +4,13 @@ import {default as PT} from 'prop-types'
 const PanelFooter = ({ children, panelButtons, ...props }) => {
 
   return panelButtons ? (
-    <footer className="panel-footer" {...props}>
-      <div className="button-group panel-buttons">
+    <footer className="ola_panel-footer" {...props}>
+      <div className="ola_button-group ola_panel-buttons">
         {children}
       </div>
     </footer>
   ) : (
-    <footer className="panel-footer" {...props}>
+    <footer className="ola_panel-footer" {...props}>
       {children}
     </footer>
   )

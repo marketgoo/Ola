@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 const Tag = ({ variant, children }) =>
-  <span className={cx('tag', variant && `is-${variant}`)}>
+  <span className={cx('ola_tag', variant && `is-${variant}`)}>
     {children}
   </span>
 

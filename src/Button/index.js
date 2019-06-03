@@ -5,9 +5,9 @@ import cx from 'classnames'
 import { Spinner } from '../Spinner'
 
 const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => {
-  const styles = variant ? cx('button', `is-${variant}`, extraClass) : 'button'
+  const styles = variant ? cx('ola_button', `is-${variant}`, extraClass) : 'ola_button'
   return busy ? (
-    <button className={'button is-busy'} disabled {...props}><Spinner />{busy}</button>
+    <button className={'ola_button is-busy'} disabled {...props}><Spinner />{busy}</button>
   ) : (
     <button className={styles} disabled={disabled} {...props}>{children}</button>
   )

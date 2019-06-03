@@ -4,10 +4,10 @@ import cx from 'classnames'
 
 const PanelHeader = ({ title, htmlTitle, intro, htmlIntro, children }) => {
   return (
-    <header className={cx('panel-header', children && 'has-extra')}>
-      { htmlTitle ?  <h1 className="panel-title" dangerouslySetInnerHTML={{__html: title}} /> : <h1 className="panel-title">{title}</h1> }
-      { htmlIntro ? <p className="panel-intro" dangerouslySetInnerHTML={{__html: intro}} /> : <p className="panel-intro">{intro}</p> }
-      { children && <div className="panel-extra">{ children }</div> }
+    <header className={cx('ola_panel-header', children && 'has-extra')}>
+      { htmlTitle ?  <h1 className="ola_panel-title" dangerouslySetInnerHTML={{__html: title}} /> : <h1 className="ola_panel-title">{title}</h1> }
+      { htmlIntro ? <p className="ola_panel-intro" dangerouslySetInnerHTML={{__html: intro}} /> : <p className="ola_panel-intro">{intro}</p> }
+      { children && <div className="ola_panel-extra">{ children }</div> }
     </header>
   )
 }

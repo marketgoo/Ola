@@ -4,18 +4,18 @@ import cx from 'classnames'
 
 const Field = ({ id, label, hint, error, description, customDescription, disabled, children }) => {
   return (
-    <div className={cx('field', {'is-invalid': error}, {'is-disabled': disabled})}>
-      <label htmlFor={id} className="field-label">
+    <div className={cx('ola_field', {'is-invalid': error}, {'is-disabled': disabled})}>
+      <label htmlFor={id} className="ola_field-label">
         { label }
-        {hint && <span className="field-hint">{ hint }</span>}
+        {hint && <span className="ola_field-hint">{ hint }</span>}
       </label>
-      <div className="field-input">
+      <div className="ola_field-input">
         {React.cloneElement(children, { id: id, error, disabled })}
       </div>
       {
         customDescription ?
           React.cloneElement(customDescription, { error }) :
-          ( <p className={ cx({ 'field-error': error, 'field-description': !error }) }>{description}</p> )
+          ( <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p> )
       }
 
     </div>
