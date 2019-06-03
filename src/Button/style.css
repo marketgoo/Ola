@@ -1,4 +1,4 @@
-.button {
+.ola_button {
     --color: var(--brand);
     --background: transparent;
     --color-hover: var(--brand-dark);
@@ -126,10 +126,10 @@
     }
 }
 
-.button-group {
+.ola_button-group {
     display: flex;
 
-    & .button + .button {
+    & .ola_button + .ola_button {
         margin-left: var(--size-6);
     }
 }

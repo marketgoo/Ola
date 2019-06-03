@@ -1,44 +1,44 @@
-.field {
+.ola_field {
     &.is-disabled {
         cursor: not-allowed;
 
-        & .field-label {
+        & .ola_field-label {
             cursor: inherit;
             color: var(--gray-light);
         }
-        & .field-hint,
-        & .field-description {
+        & .ola_field-hint,
+        & .ola_field-description {
             visibility: hidden;
         }
     }
 }
-.field-label {
+.ola_field-label {
     color: var(--black);
     display: flex;
     justify-content: space-between;
     font: var(--font-callout);
     font-weight: var(--bold);
 }
-.field-hint {
+.ola_field-hint {
     font: var(--font-caption);
     margin-left: 1em;
     font-weight: var(--regular);
     color: var(--gray);
 }
-.field-input {
+.ola_field-input {
     margin: var(--size-2) 0;
 }
-.field-description,
-.field-error {
+.ola_field-description,
+.ola_field-error {
     font: var(--font-caption);
     margin-top: 0;
     color: var(--gray);
 }
-.field-error {
+.ola_field-error {
     color: var(--error);
 }
-.field.is-invalid {
-    & .field-label {
+.ola_field.is-invalid {
+    & .ola_field-label {
         color: var(--error);
     }
 }

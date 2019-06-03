@@ -1,17 +1,17 @@
-.switch {
+.ola_switch {
     padding: var(--size-3) 0;
     display: inline-block;
 }
-.switch-input {
+.ola_switch-input {
     position: absolute;
     opacity: 0;
 }
-.switch-label {
+.ola_switch-label {
     display: flex;
     font: var(--font-callout);
     align-items: center;
 }
-.switch-label::before {
+.ola_switch-label::before {
     --color: var(--gray-xlight);
 
     content: "";
@@ -29,16 +29,16 @@
     transition-duration: 200ms;
 }
 
-.switch-input:checked ~ .switch-label::before {
+.ola_switch-input:checked ~ .ola_switch-label::before {
     --color: var(--brand);
     background-position: right center;
 }
-.switch-input:focus ~ .switch-label::before {
+.ola_switch-input:focus ~ .ola_switch-label::before {
     box-shadow: 0 0 0 4px var(--brand-focus);
 }
-.switch-input:hover ~ .switch-label::before {
+.ola_switch-input:hover ~ .ola_switch-label::before {
     --color: var(--gray-light);
 }
-.switch-input:checked:hover ~ .switch-label::before {
+.ola_switch-input:checked:hover ~ .ola_switch-label::before {
     --color: var(--brand-dark);
 }
