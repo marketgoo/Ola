@@ -8,4 +8,13 @@
     & strong {
         font-weight: var(--bold);
     }
+
+    & a {
+        color: var(--brand);
+
+        &:hover {
+            text-decoration-style: wavy;
+            color: var(--black);
+        }
+    }
 }
