@@ -80,8 +80,8 @@ storiesOf('Form', module)
   ))
   .add('SearchField', () => (
     <div className="preview-centered">
-      <SearchField />
-      <SearchField textButton="Test Search" />
+      <SearchField id="search" placeholder="Filter elements" />
+      <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
     </div>
   ))
   .add('Checkbox', () => (
