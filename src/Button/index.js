@@ -5,12 +5,15 @@ import cx from 'classnames'
 import { Spinner } from '../Spinner'
 
 const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => {
-  const styles = variant ? cx('ola_button', `is-${variant}`, extraClass) : 'ola_button'
-  return busy ? (
-    <button className={'ola_button is-busy'} disabled {...props}><Spinner />{busy}</button>
-  ) : (
-    <button className={styles} disabled={disabled} {...props}>{children}</button>
+
+  const styles = cx('ola_button', {[`is-${variant}`]: (variant && !busy) }, {'is-busy': busy}, extraClass)
+  return (
+    <button className={styles} disabled={busy ? true : disabled} {...props}>
+      {busy && <Spinner />}
+      {!busy ? children : busy}
+    </button>
   )
+
 }
 
 Button.defaultProps = {
