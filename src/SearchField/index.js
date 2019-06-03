@@ -6,11 +6,11 @@ import { Input } from '../Input'
 
 const SearchField = ({ id, textButton, busy, placeholder, ...props }) => {
   return (
-    <form className="ola_searchField" {...props}>
+    <div className="ola_searchField" {...props}>
       <label htmlFor={id} className="ola_searchField-label">{ placeholder }</label>
       <Input type="search" id={id} extraClass="ola_searchField-input" placeholder={placeholder} />
       { textButton && <Button variant="primary" busy={busy} extraClass="ola_searchField-button" tabIndex="-1">{ textButton }</Button> }
-    </form>
+    </div>
   )
 }
 
