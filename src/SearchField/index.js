@@ -6,9 +6,9 @@ import { Input } from '../Input'
 
 const SearchField = ({ id, textButton, busy, placeholder, ...props }) => {
   return (
-    <form className="searchField">
+    <form className="searchField" {...props}>
       <label htmlFor={id} className="searchField-label">{ placeholder }</label>
-      <Input type="search" id={id} extraClass="searchField-input" placeholder={placeholder} {...props} />
+      <Input type="search" id={id} extraClass="searchField-input" placeholder={placeholder} />
       { textButton && <Button variant="primary" busy={busy} extraClass="searchField-button" tabIndex="-1">{ textButton }</Button> }
     </form>
   )
