@@ -25,7 +25,7 @@ storiesOf('Form', module)
     <Input placeholder="Text placeholder" disabled />
   ))
   .add('Input Filled', () => (
-    <Input value="louis@gmail.com" />
+    <Input defaultValue="louis@gmail.com" />
   ))
   .add('Input textarea', () => (
     <Input type="textarea" />
