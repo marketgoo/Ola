@@ -15,6 +15,7 @@ const PanelContent = ({ children, title, htmlTitle, variant, extraClass, ...prop
 }
 
 PanelContent.defaultProps = {
+  title: null,
   extraClass: null,
   variant: null,
   htmlTitle: false
@@ -22,7 +23,7 @@ PanelContent.defaultProps = {
 
 PanelContent.propTypes = {
   /** Content Title */
-  title: PT.string.isRequired,
+  title: PT.string,
   /** Title support HTML tags */
   htmlTitle: PT.bool,
   /** PanelContent variants */
