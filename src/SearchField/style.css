@@ -33,9 +33,15 @@
 .ola_searchField-input {
     --radius: calc(var(--size-8) / 2);
     border-radius: var(--radius) 0 0 var(--radius);
+    padding-right: var(--size-8);
 
     &:focus {
         box-shadow: none;
+    }
+
+    /* hidden because React cannot handle 'input' events */
+    &::-webkit-search-cancel-button {
+        display: none;
     }
 }
 .ola_searchField-button {
