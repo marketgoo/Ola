@@ -60,7 +60,7 @@ storiesOf('Form', module)
     </Field>
   ))
   .add('Field Custom description', () => (
-    <div className="preview-centered">
+    <div className="preview-centered-inner">
       <Field
         id="field-cutsom-description"
         label="Test"
@@ -79,20 +79,20 @@ storiesOf('Form', module)
     </div>
   ))
   .add('SearchField', () => (
-    <div className="preview-centered">
-      <SearchField id="search" placeholder="Filter elements" />
+    <div className="preview-centered-inner">
+      <SearchField id="search" busy placeholder="Filter elements" />
       <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
       <SearchField id="search-loading" busy placeholder="Filter elements" textButton="Test Search" />
     </div>
   ))
   .add('Checkbox', () => (
-    <div className="preview-centered">
+    <div className="preview-centered-inner">
       <p><Checkbox label="Checkbox" /></p>
       <p><Checkbox label="Checkbox <span> with span</span>" htmlLabel /></p>
     </div>
   ))
   .add('Switch', () => (
-    <div className="preview-centered">
+    <div className="preview-centered-inner">
       <p><Switch label="Switch" /></p>
       <p><Switch label="Switch <span> with span</span>" htmlLabel /></p>
     </div>

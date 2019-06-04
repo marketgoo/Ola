@@ -8,7 +8,7 @@ storiesOf('Tag', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All', () => (
-    <div className="preview-centered">
+    <div className="preview-centered-inner">
       <Tag>Default Tag</Tag>
       <Tag variant='invert'>Invert Tag</Tag>
       <Tag variant='success'>Sucess Tag</Tag>
