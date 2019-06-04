@@ -18,12 +18,12 @@ Select.defaultProps = {
 }
 
 const optionType = {
-  value: PT.string,
+  value: PT.any,
   label: PT.string
 }
 
 Select.propTypes = {
-  /** Select options */
+  /** Select options (array {value: any, label: string} )*/
   options: PT.arrayOf(optionType).isRequired,
   /** Extra className */
   extraClass: PT.string,
