@@ -4,8 +4,8 @@ import cx from 'classnames'
 
 const SelectOption = ({ value, label }) =>  <option value={value}>{label}</option>
 
-const Select = ({ options, extraClass, ...props }) => {
-  const styles = cx('ola_select', extraClass)
+const Select = ({ options, error, extraClass, ...props }) => {
+  const styles = cx('ola_select', {'is-invalid': error}, extraClass)
   return (
     <select className={styles} {...props}>
       { options.map( ({ value, label }, idx) => <SelectOption key={idx} value={value} label={label} /> ) }
@@ -26,7 +26,9 @@ Select.propTypes = {
   /** Select options */
   options: PT.arrayOf(optionType).isRequired,
   /** Extra className */
-  extraClass: PT.string
+  extraClass: PT.string,
+  /** Select is invalid */
+  error: PT.bool
 }
 
 export { Select }

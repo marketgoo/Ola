@@ -109,3 +109,21 @@ storiesOf('Form', module)
       </p>
     </div>
   ))
+  .add('Select Field', () => (
+    <div className="preview-centered-inner">
+      <p>
+        <Field
+          id="field-custom-description-error"
+          error
+          label="Test"
+          customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+          hint="(optional)">
+          <Select options={[
+            { value: 'chocolate', label: 'Chocolate' },
+            { value: 'strawberry', label: 'Strawberry' },
+            { value: 'vanilla', label: 'Vanilla' }
+          ]} />
+        </Field>
+      </p>
+    </div>
+  ))
