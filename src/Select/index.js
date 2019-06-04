@@ -17,14 +17,12 @@ Select.defaultProps = {
   extraClass: null
 }
 
-const optionType = {
-  value: PT.any,
-  label: PT.string
-}
-
 Select.propTypes = {
   /** Select options (array {value: any, label: string} )*/
-  options: PT.arrayOf(optionType).isRequired,
+  options: PT.arrayOf(PT.shape({
+    value: PT.any,
+    label: PT.string
+  })).isRequired,
   /** Extra className */
   extraClass: PT.string,
   /** Select is invalid */
