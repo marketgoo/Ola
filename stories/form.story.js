@@ -113,7 +113,20 @@ storiesOf('Form', module)
     <div className="preview-centered-inner">
       <p>
         <Field
-          id="field-custom-description-error"
+          id="field-select-description"
+          label="Test"
+          customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+          hint="(optional)">
+          <Select options={[
+            { value: 'chocolate', label: 'Chocolate' },
+            { value: 'strawberry', label: 'Strawberry' },
+            { value: 'vanilla', label: 'Vanilla' }
+          ]} />
+        </Field>
+      </p>
+      <p>
+        <Field
+          id="field-select-error"
           error
           label="Test"
           customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
