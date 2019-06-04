@@ -9,7 +9,8 @@ import {
   FieldDescription,
   SearchField,
   Checkbox,
-  Switch
+  Switch,
+  Select
 } from '../src'
 
 storiesOf('Form', module)
@@ -95,5 +96,16 @@ storiesOf('Form', module)
     <div className="preview-centered-inner">
       <p><Switch label="Switch" /></p>
       <p><Switch label="Switch <span> with span</span>" htmlLabel /></p>
+    </div>
+  ))
+  .add('Select', () => (
+    <div className="preview-centered-inner">
+      <p>
+        <Select options={[
+          { value: 'chocolate', label: 'Chocolate' },
+          { value: 'strawberry', label: 'Strawberry' },
+          { value: 'vanilla', label: 'Vanilla' }
+        ]} />
+      </p>
     </div>
   ))

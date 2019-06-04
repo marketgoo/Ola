@@ -1,0 +1,58 @@
+.ola_select {
+    --border: var(--gray-light);
+    --color: var(--black);
+    --background: var(--white);
+    --focus: var(--brand-focus);
+
+    display: block;
+    appearance: none;
+    box-sizing: border-box;
+    height: var(--size-8);
+    width: 100%;
+    border: solid 2px var(--border);
+    background: var(--white);
+    color: var(--color);
+    background-color: var(--background);
+    /* Chevron gray-light */
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%23BBC2CE"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    border-radius: var(--radius-small);
+    font: var(--font-callout);
+    padding: 0 var(--size-8) 0 1em;
+    transition-property: background-color, color, box-shadow, border-color;
+    transition-duration: 200ms;
+    outline: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    font-weight: var(--regular);
+
+    &:focus {
+        --border: var(--brand);
+        box-shadow: 0 0 0 4px var(--focus);
+
+        /* Chevron brand */
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%230090DA"></path></svg>');
+    }
+
+    &:invalid,
+    &.is-invalid {
+        --border: var(--error);
+        --color: var(--error);
+        box-shadow: none;
+
+        &:focus {
+            box-shadow: 0 0 0 4px var(--error-focus);
+        }
+    }
+
+    &:disabled {
+        --border: var(--gray-xlight);
+        --color: var(--gray-light);
+        cursor: not-allowed;
+
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+}
