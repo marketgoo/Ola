@@ -3,7 +3,7 @@
         margin: 0;
     }
     .preview-centered > div > div:first-child,
-    .preview-centered .preview-centered {
+    .preview-centered-inner {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -17,17 +17,17 @@
         margin: auto;
     }
     .preview-centered > div > div:first-child > *,
-    .preview-centered .preview-centered > * {
+    .preview-centered-inner > * {
         flex: 0 0 auto;
         margin: 2em;
     }
-    .preview-centered .preview-centered {
+    .preview-centered-inner {
         padding: 0;
         margin: auto;
     }
 
     .preview-centered.is-wide > div > div:first-child > *,
-    .preview-centered.is-wide .preview-centered > * {
+    .preview-centered-inner.is-wide {
         flex-basis: 800px;
     }
 </style>

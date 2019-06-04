@@ -10,7 +10,7 @@ storiesOf('Button', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All', () => (
-    <div className="preview-centered">
+    <div className="preview-centered-inner">
       <Button onClick={action('onClick event')}>Default</Button>
       <Button disabled>Default disabled</Button>
       <Button onClick={action('onClick event')} variant='primary'>Primary</Button>

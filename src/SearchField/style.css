@@ -8,6 +8,25 @@
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
 }
+.ola_searchField-field {
+    position: relative;
+
+    & .ola_spinner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: var(--gray-light);
+    }
+
+    &:last-child > .ola_searchField-input {
+        border-top-right-radius: var(--radius);
+        border-bottom-right-radius: var(--radius);
+    }
+
+    &:not(:last-child) > .ola_searchField-input {
+        border-right: 0;
+    }
+}
 .ola_searchField-label {
     display: none;
 }
@@ -17,15 +36,6 @@
 
     &:focus {
         box-shadow: none;
-    }
-
-    &:last-child {
-        border-top-right-radius: var(--radius);
-        border-bottom-right-radius: var(--radius);
-    }
-
-    &:not(:last-child) {
-        border-right: 0;
     }
 }
 .ola_searchField-button {
