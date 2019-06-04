@@ -26,6 +26,7 @@
     white-space: nowrap;
     text-decoration: none;
     box-sizing: border-box;
+    vertical-align: middle;
 
     &::-moz-focus-inner {
         border: 0;
