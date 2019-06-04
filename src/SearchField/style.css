@@ -51,4 +51,8 @@
     &:focus {
         box-shadow: none;
     }
+
+    & .ola_spinner {
+      display: none;
+    }
 }
