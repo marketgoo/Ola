@@ -10,7 +10,7 @@ const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => 
   return (
     <button className={styles} disabled={busy ? true : disabled} {...props}>
       {busy && <Spinner />}
-      <span className={'.ola_button-text'}>{!busy ? children : busy}</span>      
+      <span className="ola_button-text">{!busy ? children : busy}</span>
     </button>
   )
 }
