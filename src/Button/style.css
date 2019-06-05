@@ -142,7 +142,12 @@
         margin-left: var(--size-6);
     }
 
-    &.to-end {
-        justify-content: flex-end;
+    &.is-reversed {
+        flex-direction: row-reverse;
+
+        & .ola_button + .ola_button {
+            margin-left: 0;
+            margin-right: var(--size-6);
+        }
     }
 }

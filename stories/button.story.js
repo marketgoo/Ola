@@ -44,3 +44,15 @@ storiesOf('Button', module)
   .add('Pro', () => (
     <Button variant='pro' onClick={action('onClick event')}>Is Pro</Button>
   ))
+  .add('Button group', () => (
+    <div className="ola_button-group" style={{width: '500px', border: 'solid 1px'}}>
+      <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
+      <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
+    </div>
+  ))
+  .add('Button group reversed', () => (
+    <div className="ola_button-group is-reversed" style={{width: '500px', border: 'solid 1px'}}>
+      <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
+      <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
+    </div>
+  ))
