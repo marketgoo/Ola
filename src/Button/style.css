@@ -136,8 +136,13 @@
 
 .ola_button-group {
     display: flex;
+    align-items: center;
 
     & .ola_button + .ola_button {
         margin-left: var(--size-6);
+    }
+
+    &.to-end {
+        justify-content: flex-end;
     }
 }
