@@ -10,7 +10,7 @@ module.exports = {
     },
     'postcss-prefix-selector': {
       prefix: '.ola',
-      exclude: [/^\.ola/]
+      exclude: ['.ola', /^\.ola\s/]
     },
     'stylefmt': {}
   }
