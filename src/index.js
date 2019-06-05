@@ -3,6 +3,7 @@ export { Button } from './Button'
 export { Spinner } from './Spinner'
 export { Tag } from './Tag'
 export { ButtonIcon } from './ButtonIcon'
+export { ButtonGroup } from './ButtonGroup'
 
 export { Panel } from './Panel'
 export { PanelContent } from './Panel/Content'

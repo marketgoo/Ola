@@ -133,21 +133,3 @@
         box-shadow: none;
     }
 }
-
-.ola_button-group {
-    display: flex;
-    align-items: center;
-
-    & .ola_button + .ola_button {
-        margin-left: var(--size-6);
-    }
-
-    &.is-reversed {
-        flex-direction: row-reverse;
-
-        & .ola_button + .ola_button {
-            margin-left: 0;
-            margin-right: var(--size-6);
-        }
-    }
-}

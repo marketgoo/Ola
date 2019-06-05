@@ -3,12 +3,14 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
 
-import { Button } from '../src'
-import { Panel } from '../src'
-import { PanelHeader } from '../src'
-import { PanelContent } from '../src'
-import { PanelFooter } from '../src'
-
+import {
+  Button,
+  Panel,
+  PanelHeader,
+  PanelContent,
+  PanelFooter,
+  ButtonGroup
+} from '../src'
 
 storiesOf('Panel', module)
   .addDecorator(withInfo)
@@ -22,8 +24,10 @@ storiesOf('Panel', module)
         <p>Panel content</p>
       </PanelContent>
       <PanelFooter>
-        <Button variant='secondary'>Default Button</Button>
-        <Button variant='primary'>Primary</Button>
+        <ButtonGroup>
+          <Button variant='primary'>Primary</Button>
+          <Button variant='secondary'>Default Button</Button>
+        </ButtonGroup>
       </PanelFooter>
     </Panel>
   ))
@@ -36,8 +40,10 @@ storiesOf('Panel', module)
         <p>Panel content full width</p>
       </PanelContent>
       <PanelFooter>
-        <Button variant='secondary'>Default Button</Button>
-        <Button variant='primary'>Primary</Button>
+        <ButtonGroup>
+          <Button variant='primary'>Primary</Button>
+          <Button variant='secondary'>Default Button</Button>
+        </ButtonGroup>
       </PanelFooter>
     </Panel>
   ))
@@ -54,8 +60,10 @@ storiesOf('Panel', module)
         <p>Panel content</p>
       </PanelContent>
       <PanelFooter>
-        <Button variant='secondary'>Default Button</Button>
-        <Button variant='primary'>Primary</Button>
+        <ButtonGroup reversed>
+          <Button variant='primary'>Primary</Button>
+          <Button variant='secondary'>Default Button</Button>
+        </ButtonGroup>
       </PanelFooter>
     </Panel>
   ))

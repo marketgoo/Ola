@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
-import { Button } from '../src'
+import { Button, ButtonIcon, ButtonGroup, Tag } from '../src'
 
 storiesOf('Button', module)
   .addDecorator(withInfo)
@@ -44,15 +44,20 @@ storiesOf('Button', module)
   .add('Pro', () => (
     <Button variant='pro' onClick={action('onClick event')}>Is Pro</Button>
   ))
+  .add('Button Icon', () => (
+    <Tag>
+      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}>x</ButtonIcon>
+    </Tag>
+  ))
   .add('Button group', () => (
-    <div className="ola_button-group" style={{width: '500px', border: 'solid 1px'}}>
+    <ButtonGroup style={{width: '500px', border: 'solid 1px'}}>
       <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
       <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
-    </div>
+    </ButtonGroup>
   ))
   .add('Button group reversed', () => (
-    <div className="ola_button-group is-reversed" style={{width: '500px', border: 'solid 1px'}}>
+    <ButtonGroup reversed style={{width: '500px', border: 'solid 1px'}}>
       <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
       <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
-    </div>
+    </ButtonGroup>
   ))

@@ -63,8 +63,4 @@
     background: var(--gray-xlight);
     border-radius: 0 0 var(--radius) var(--radius);
     padding: var(--size-3) var(--inner-gap);
-    display: flex;
-}
-.ola_panel-buttons {
-    margin-left: auto;
 }

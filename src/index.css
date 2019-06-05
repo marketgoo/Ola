@@ -4,6 +4,7 @@
 /* Components */
 @import './Button/style.css';
 @import './ButtonIcon/style.css';
+@import './ButtonGroup/style.css';
 @import './Spinner/style.css';
 @import './Panel/style.css';
 @import './Tag/style.css';
