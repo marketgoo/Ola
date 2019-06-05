@@ -10,6 +10,7 @@
 }
 .ola_searchField-field {
     position: relative;
+    flex: 1 1 auto;
 
     & .ola_spinner {
         position: absolute;
@@ -27,8 +28,13 @@
         border-right: 0;
     }
 }
+/* Visually hidden but accessible */
 .ola_searchField-label {
-    display: none;
+    position: absolute; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0; 
 }
 .ola_searchField-input {
     --radius: calc(var(--size-8) / 2);
