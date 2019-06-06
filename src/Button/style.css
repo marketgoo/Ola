@@ -16,7 +16,7 @@
     background: none;
     color: var(--color);
     background-color: var(--background);
-    border-radius: calc(var(--size-8) / 2);
+    border-radius: var(--radius-big);
     font: var(--font-callout);
     padding: 0 1em;
     font-weight: var(--bold);
