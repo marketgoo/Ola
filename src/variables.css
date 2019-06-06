@@ -53,8 +53,9 @@
     --shadow-3: 0 4px 12px #0003;
 
     /* Border radius */
-    --radius: 8px;
-    --radius-small: 4px;
+    --radius-big: calc(var(--size-8) / 2);
+    --radius: var(--size-3);
+    --radius-small: var(--size-2);
 
     /* Separator */
     --separator: solid 4px var(--gray-xlight);
