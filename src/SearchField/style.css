@@ -1,6 +1,6 @@
 .ola_searchField {
     display: flex;
-    border-radius: calc(var(--size-8) / 2);
+    border-radius: var(--radius-big);
     transition-property: box-shadow;
     transition-duration: 200ms;
 
@@ -37,8 +37,7 @@
     margin: -1px; padding: 0; border: 0; 
 }
 .ola_searchField-input {
-    --radius: calc(var(--size-8) / 2);
-    border-radius: var(--radius) 0 0 var(--radius);
+    border-radius: var(--radius-big) 0 0 var(--radius-big);
     padding-right: var(--size-8);
 
     &:focus {
