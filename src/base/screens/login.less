@@ -1,0 +1,96 @@
+.login {
+    .logo {
+        margin: @block;
+        text-align: center;
+        img {
+            width: 280px;
+            height: auto;
+        }
+    }
+
+    .ola_panel{
+        width: 800px;
+        margin: auto;
+    }
+
+    .container{
+
+        padding: 14px 0px 0px 280px;
+        background-image: url("../../img/wizard/barco.svg");
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: -18px center;
+
+        h1 {
+            margin: @block 0 0.37em 0;
+            font-weight: lighter;
+            color: @gray-darker;
+        }
+
+        .input-container {
+            margin-bottom: @block/2;
+            label { margin-bottom: 5px; }
+         }
+
+        form{
+            margin-top: @block;
+            padding-right: @block;
+        }
+
+    }
+
+    .dontHaveAnAccountContainer {
+        text-align: center;
+        a { margin-left: 8px; }
+        margin-top: @block * 1.5;
+        margin-bottom: @block;
+    }
+
+    a.button {
+        margin-right: 10px;
+    }
+
+    .error-login {
+        display: none;
+        float: right;
+        font-size: @font-size-base;
+        margin-top: 16px;
+        color: @brand-danger;
+    }
+
+    &.error-email {
+        #form_login {
+            input[name=email] {
+                background-color: lighten(@brand-danger, 30%);
+                border-color: lighten(@brand-danger, 10%);
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+            }
+        }
+        .error-login {
+            &.email {
+                display: inline;
+            }
+        }
+    }
+
+    &.error-password {
+        #form_login {
+            input[name=password] {
+                background-color: lighten(@brand-danger, 30%);
+                border-color: lighten(@brand-danger, 10%);
+                &::-webkit-input-placeholder {
+                    color: white;
+                }
+            }
+        }
+
+        .error-login {
+            &.password {
+                display: inline;
+            }
+        }
+    }
+
+}

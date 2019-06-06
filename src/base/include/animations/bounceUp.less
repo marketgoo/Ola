@@ -1,0 +1,10 @@
+@keyframes updown {
+    0% {transform: translate3d(0px, 0px, 0px)}
+    50% {transform: translate3d(0px, -5px, 0px)}
+    100% {transform: translate3d(0px, 0px, 0px)}
+}
+
+.bounceUp(@duration: 0.75s) {
+    .animation-name(updown);
+    .animation-duration(@duration);
+}

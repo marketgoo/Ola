@@ -1,0 +1,117 @@
+#paywall-container {
+
+    width: 800px;
+    margin: auto;
+
+    .ola_panel {
+        padding: 0px 0px 0px 250px;
+        background-image: url("/img/upgrade/boatPro.svg");
+        background-repeat: no-repeat;
+        background-size: 26%;
+        background-position: 45px 51px;
+
+        #form_paywall {
+            padding: 0px @block-panel @block-panel;
+            form {
+                .plan-select-row {
+                    display: flex;
+                    border-radius: @border-radius;
+                    cursor: pointer;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 10px;
+                    &.active {
+                        background-color: @gray-lighter;
+                        .plan-select-info, .plan-option {
+                            color: @gray-darker;
+                            font-weight: 500;
+                        }
+                    }
+                }
+
+                .plan-select-info {
+                    text-align: right;
+                    span {
+                        color: @brand-primary;
+                    }
+                }
+
+                .plan-option {
+                    display: flex;
+                    align-items: center;
+                    color: @gray-darker;
+                    cursor: pointer;
+                    input {
+                        margin-right: 10px;
+                        min-height: auto;
+                        width: auto;
+                    }
+                }
+
+
+                .plan-action {
+
+                    padding: 20px 0px;
+                    text-align: center;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    button {
+                        margin-left: 10px;
+                    }
+
+                }
+
+            }
+
+            .legal {
+                text-align: left;
+                p {
+                    font-size: @font-size-smaller;
+                    margin: 0;
+                }
+            }
+
+            .total-price {
+                text-align: right;
+                background: url('../img/powered_by_stripe.gif') no-repeat left center;
+                background-size: 60%;
+                background-position: -10px 0px;
+                height: 50px;
+                h1 {
+                    color: @gray-darker;
+                    font-weight: 400;
+                    margin: 0;
+                }
+                p {
+                    margin: 0;
+                    font-size: @font-size-smaller;
+                }
+            }
+        }
+    }
+
+
+
+    // .image {
+    //     text-align: center;
+    //     figure {
+    //         height: 210px;
+    //         width: 210px;
+    //         background-repeat: no-repeat;
+    //         margin: 0px auto 15px auto;
+    //     }
+    //     h1 {
+    //         margin: 0;
+    //         font-weight: 400;
+    //         color: @brand-primary;
+    //         font-size: @font-size-larger;
+    //     }
+
+    //     h2 {
+    //         margin: 0;
+    //         font-weight: 400;
+    //         font-size: @font-size-large;
+    //     }
+    // }
+}

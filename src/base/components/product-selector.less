@@ -1,0 +1,64 @@
+.product-selector {}
+
+.product-selector-container {
+    border: 2px solid @input-border;
+    border-radius: @border-radius;
+    display: flex;
+}
+
+.product-selector-item {
+    flex: 50%;
+    cursor: pointer;
+    padding: 20px 0 20px 90px;
+
+    background-image: url("/img/upgrade/boatPro.svg");
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: 17px 12px;
+    order: 2;
+
+    h5 {
+        font-weight: normal;
+        font-size: @font-size-larger;
+        color: @gray-darker;
+        padding: 0px;
+        margin: 0px;
+    }
+    .list-group-icon {
+        font-size: @font-size-large;
+        margin-left: 6px;
+    }
+}
+
+
+.product-selector-item.is-free {
+    background-image: url("/img/wizard/barco.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 7px 8px;
+    order: 1;
+}
+
+.product-selector-description {
+    font-family: @font-family-base;
+    color: @gray;
+    font-size: @font-size-medium;
+    margin: 0px 0px 0px 0px;
+}
+
+.product-selector-helptext {
+    margin-top: @block / 2;
+    a {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+.product-selector-item.is-selected {
+    background-color: @input-bg-focused;
+    box-shadow: 0 0 0 2px @brand-primary;
+    border-radius: @border-radius;
+    h5, .product-selector-description {
+        color: @brand-primary-dark;
+    }
+}

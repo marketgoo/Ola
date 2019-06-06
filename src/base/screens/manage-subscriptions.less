@@ -1,0 +1,128 @@
+#manage-subscriptions {
+
+    .ola_panel-content > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .device-container{
+            .display{
+                &.imac{
+                    width: 290px;
+                    height: 243px;
+                }
+            }
+        }
+
+        .score-container {
+
+            display: flex;
+            flex-flow: row wrap;
+
+            .knob {}
+            .status-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 22px;
+            }
+
+            .title{
+                .font-title(25px);
+                margin-bottom: 5px;
+                span{
+                    color: @brand-primary;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        p {
+            .font-description();
+        }
+
+        .trial{
+            color: @brand-primary-dark;
+            background-color: @brand-primary-subtle;
+            width: auto;
+            padding: 12px;
+            text-align: center;
+        }
+
+    }
+
+    .panel-footer{
+        .center-container(grid, auto);
+    }
+}
+
+.modal-cancel-survey{
+    .modal-content{
+        display: flex;
+        flex-direction: row;
+        margin-top: @block;
+        .left-container{
+            .center-container(flex, auto);
+            flex: 1;
+            figure {
+                background-image: url("/img/subscriptions/goodbye.svg");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center center;
+                width: 300px;
+                height: 240px;
+
+                &.survey {
+                    background-image: url("/img/subscriptions/goodbye.svg");
+                }
+
+                &.success {
+                    background-image: url("/img/subscriptions/seeyou.svg");
+                }
+
+            }
+        }
+        .modal-body{
+            flex: 1.8;
+            margin-left: @block;
+            label{
+                width: 100%;
+                flex: 1;
+                display: flex;
+                margin-bottom: 10px;
+                height: auto;
+                input{
+                    margin-right: 10px;
+                }
+            }
+
+            .input-container{
+                margin-top: @block / 2;
+            }
+            textarea{
+                height: auto;
+                min-height: 70px;
+                resize: vertical;
+            }
+
+            .error-radio{
+                text-align: end;
+                color: @brand-danger;
+            }
+        }
+
+        .suggestions{
+            textarea{
+                width: 100%;
+            }
+        }
+    }
+
+    .panel-footer{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        &.error{
+            justify-content: center;
+        }
+    }
+}

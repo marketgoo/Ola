@@ -1,0 +1,365 @@
+//
+// Variables específicas del Freereport.
+//
+@page-margin-top: 0cm;
+@cover-page-color: @gray-lighter;
+
+@media print {
+
+    @page :first {
+        // background: #3fb6fd;
+
+        // Esconder todos los elementos de footnotes en la primera página
+        // @bottom-left {
+        //     visibility: hidden;
+        // }
+        //
+        // @bottom-right {
+        //     visibility: hidden;
+        // }
+    }
+
+    @page :last {
+        background: #3fb6fd;
+    }
+
+    @page {
+        // margin: 0cm @page-margin-right @page-margin-bottom @page-margin-left;
+
+        @footnotes {
+            padding: 8pt 0pt;
+        }
+
+    }
+
+    // Estilos para el texto del footnote
+    span.info-tooltip {
+
+        // Deshabilitados para el Freereport.
+        // Descomentar las líneas siguientes para activar los tool-tips
+        // como "footnotes" del informe
+        display: none !important;
+
+        // width: 100%;
+        // float: inline-footnote !important;
+        // margin-right: 2pt !important;
+        //
+        // &:before {
+        //     // Lo siguiente hace aparecer el contenido de "data-title" como
+        //     // encabezado "strong" del footnote
+        //     content: attr(title);
+        //     margin: 0 2pt 0 0 !important;
+        //     position: static !important;
+        //     font-weight: bold !important;
+        //     color: @gray-darker !important;
+        //     font-size: 6pt;
+        //     line-height: 8pt;
+        //     vertical-align: baseline;
+        //     font-family: @font-family-text;
+        // }
+    }
+
+    // Estilo de los marcadores del footer. Estos son los numericos que
+    // aparecen dentro del footer.
+    //
+    // NOTA: Los "footnotes" los hemos deshabilitado en el informe, descomentar
+    // las siguientes líneas para reactivarlos junto con el estilo anterior de
+    // el selector "span.info-tooltip"
+    //
+    .info-tooltip::footnote-marker {
+        display: none !important;
+
+        // display: inline-block;
+        // margin-right: 2pt;
+        //
+        // color: white;
+        // background: @gray-dark;
+        // border: 0pt solid @gray-dark;
+    }
+
+    // Hacer visibles aquellos elementos que en el layout original están
+    // marcados con clase ".wow" para animación.
+    .wow {
+        visibility: visible;
+    }
+
+    // En el free-report, el page-break por secciones cambia ligeramente con
+    // respecto al layout de la aplicación.
+
+    // Primero, reseteamos los valores por defecto de los page-break-*
+    section, section:first-child {
+        page-break-before: auto;
+        margin-top: 0cm;
+    }
+
+    // Ahora generamos los selectores correctos para generar saltos de página
+    // para las secciones del FWR
+    main section, main section:first-child {
+        page-break-before: always;
+    }
+
+    // Salto de página también en la última para que el resumen esté en página
+    // aparte como última página del informe
+    aside.footer-cta {
+        page-break-before: always;
+        margin-top: 5cm;
+    }
+
+    .panel {
+        .panel-heading {
+            position: absolute;
+            top: 1.5cm;
+            left: 0;
+            margin: 0cm;
+
+            // Resetear los colores y borders, en print quedan feos
+            background: transparent;
+            border: none;
+
+            // Los elementos "Knob" de las cabeceras de sección se posicionan
+            // sorprendentemente por encima de otros elementos (Quizá por ser
+            // "position: absolute"?). Tenemos que quitarles el color blanco
+            // de fondo para que se pueda ver el icono.
+            .knob {
+                background: transparent;
+                left: 1.2mm;
+                top: 0.2mm;
+                visibility: hidden;
+            }
+        }
+
+        // Ajustar las cabeceras para que ocupen toda la página
+        .sub-heading, .panel-sub-heading {
+            margin-top:     0cm;
+            margin-left:    -@page-margin - (@grid-gutter-width / 2);
+            margin-right:   -@page-margin - (@grid-gutter-width / 2);
+            margin-bottom:  @page-margin;
+
+            text-align: left;
+            padding: @page-margin @page-margin @page-margin 10cm;
+
+            p {
+                font-size: 9pt;
+                margin-left: 30pt;
+            }
+        }
+
+        .panel-body {
+
+            // Eliminar los espacios laterales de los "sub-panels" ya que en
+            // @media print no tienen sentido
+            .sub-panel {
+                padding-left: 0;
+                padding-right: 0;
+                float: left;
+                width: 100%;
+                border-top: none;
+            }
+
+            .fwr-subsection-keywords {
+                margin-top: @page-margin;
+                border: none;
+                margin-top: 25px;
+                float: left;
+                width: 100%;
+            }
+
+            .big-value {
+                font-size: 38pt;
+            }
+
+            .explanation {
+                font-size: 7pt;
+                strong {
+                    font-size: 1.1em;
+                }
+            }
+        }
+
+        // Adaptar el tamaño del texto de los "list-group-items"
+        .list-group-item {
+            font-size: 10pt;
+
+            // Y abrir por defecto los contenidos "workon", que tienen que
+            // verse completos en @media print
+            .workon {
+                display: block;
+            }
+
+            // Este es el texto del "workon". Es demasiado grande especificado
+            // en pixels según está en el Freereport normal, lo hacemos más
+            // pequeño especificando el tamaño en puntos.
+            p, li, a {
+                font-size: 8pt;
+            }
+
+            ul {
+                margin: 0;
+            }
+        }
+
+        // Lo siguiente elimina las cruces "X" de los elementos "What do you
+        // need to look at?" que en print no tienen sentido.
+        .list-fail .list-group-item:after {
+            display: none;
+        }
+    }
+
+    // Dar estilo de color gris a la parte superior de la página cover
+    .main-header, .header-intro {
+        background: @cover-page-color;
+
+        // Intercambiar los valores de @page-margin entre el "margin" y el
+        // "padding" para que los elementos se extiendan hasta el borde:
+        margin-left:    -@page-margin;
+        margin-right:   -@page-margin;
+        padding-left:   @page-margin;
+        padding-right:  @page-margin;
+
+        // Esto da el color a la "flecha" apuntando hacia abajo de .header-intro
+        &:after {
+            border-top-color: @cover-page-color;
+        }
+    }
+
+    // Configuración de los tamaños de textos
+    .main-header {
+        h1 {
+            font-size: 12pt;
+            font-weight: 300;
+        }
+        h2 {
+            font-size: 12pt;
+            font-weight: normal;
+        }
+    }
+
+    .header-intro {
+
+        // Aplicamos unos espaciados más generosos en @media print
+        padding-top: 1cm;
+        padding-bottom: 2cm;
+        margin-bottom: 3cm;
+
+        h1 {
+            font-size: 15pt;
+            font-weight: 300;
+        }
+    }
+
+    .header-summary {
+        .status {
+            padding-left: 2cm;
+
+            h1 {
+                font-size: 16pt;
+            }
+            h2 {
+                font-size: 10pt;
+                font-weight: 300;
+            }
+        }
+    }
+
+
+    // Ajustes de varios estilos para que se vean mejor en @media print
+    .knob.large {
+        .grade {
+            font-size: 6em;
+        }
+    }
+
+    .screenshot figure figcaption {
+        font-family: @font-family-text;
+        font-size: 8pt;
+    }
+
+    .barchart .legend .source {
+        line-height: 0.8em;
+
+        &:before {
+            margin-bottom: 0cm;
+        }
+
+        .info-text {
+            border: none;
+            text-align: center;
+            font-size: 8pt;
+            font-weight: 300;
+        }
+    }
+
+    .barchart .bars .bar .fill .percent {
+        font-size: 8pt;
+        font-weight: 300;
+    }
+
+    .visit-shares td.data {
+        padding: 1px;
+        vertical-align: top;
+
+        .sharebar {
+            display: none;
+        }
+        .value {
+            position: static;
+            top: 0;
+        }
+    }
+
+
+    // Reposicionar los elementos de "Mobile" para que el iPhone esté en el
+    // sitio correcto (con inline-block, se posiciona debajo)
+
+    #section-mobile {
+        .sub-heading {
+            margin-bottom: 0.5cm;
+        }
+    }
+
+    .mobile-screenshots {
+        position: relative;
+        height: 10.2cm;
+
+        .display {
+            display: block;
+            position: absolute;
+
+            &.iphone {
+                margin-left: 1cm;
+            }
+
+            &.imac {
+                margin-top: 0.5cm;
+                margin-left: 2.3cm;
+            }
+
+            &.ipad {
+                margin-left: 10cm;
+            }
+        }
+    }
+
+
+    // Hacer los textos de las tablas más pequeños
+    .table-background {
+        margin-top: 1cm;
+
+        .table {
+            th, td {
+                font-size: 9pt;
+            }
+        }
+    }
+
+    .fwr-subsection-keywords{
+        margin-top: 25px;
+        float: left;
+        width: 100%;
+    }
+
+}
+
+.btn.loading{
+    width: auto;
+}

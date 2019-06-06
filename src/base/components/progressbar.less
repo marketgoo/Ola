@@ -1,0 +1,34 @@
+.progressbar {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 9px;
+    align-items: center;
+    .bar {
+        text-align: right;
+        p {
+            margin: 0 0 3px 0;
+            font-size: @font-size-smaller;
+            font-weight: 500;
+            color: @gray;
+        }
+        .bar-container {
+            width: 150px;
+            height: 9px;
+            background-color: darken(@brand-primary-subtle, 8%);
+            .border-radius(15px);
+            box-sizing: border-box;
+            .bar-content {
+                background: @brand-primary;
+                height: 100%;
+                .border-radius(15px);
+            }
+        }
+    }
+    .status {
+        margin: 0;
+        font-family: @font-family-base;
+        font-size: @font-size-large;
+        font-weight: 500;
+        color: @gray-dark;
+    }
+}

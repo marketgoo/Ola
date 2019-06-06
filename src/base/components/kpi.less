@@ -1,0 +1,83 @@
+.panel-kpis{
+    display: flex;
+}
+
+
+.kpi-container {
+    flex: 1;
+    .kpi-value {
+        text-align: left;
+        font-size: 60px;
+        font-weight: 300;
+        color: #59677C;
+
+        &.waiting {
+            .icon-clock { color: @gray-light; }
+            margin-top: 9px;
+        }
+
+        span {
+            font-size: 45px;
+        }
+    }
+
+    &.pass .kpi-value {
+        &:before {
+            .make-round-icon(@icon-check-content, @brand-success);
+        }
+    }
+
+    &.nopass .kpi-value {
+        &:before {
+            .make-round-icon(@icon-cross-content, @brand-danger);
+        }
+    }
+
+    &.pass .kpi-value,
+    &.nopass .kpi-value {
+        &:before {
+            font-size: 36px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            margin-right: 15px;
+            margin-top: -10px;
+            border-width: 0.07em;
+            padding: 0;
+        }
+    }
+
+    .kpi-description {
+        .kpi-title {
+            font-size: @font-size-medium;
+            font-weight: 500;
+            color: @gray-darker;
+            margin-bottom: -4px;
+
+            span:before {
+                margin-right: 0;
+                top: 1px;
+                font-size: @font-size-large;
+            }
+        }
+
+        p{
+            font-size: 14px;
+            color: #999999;
+            margin-top: 5px;
+        }
+
+        .kpi-diff {
+            font-size: @font-size-small;
+            margin-top: 10;
+
+            &.up {
+                .icomoon(@icon-arrow-up-content, @brand-success, @font-size-medium, 5px);
+            }
+
+            &.down {
+                .icomoon(@icon-arrow-down-content, @brand-danger, @font-size-medium, 5px);
+            }
+        }
+    }
+}

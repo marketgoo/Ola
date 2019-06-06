@@ -1,0 +1,33 @@
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      .translate3d(0, 25%, 0);
+    }
+
+    100% {
+      opacity: 1;
+      .transform-none();
+    }
+  }
+
+  @keyframes fadeInUp15 {
+      0% {
+        opacity: 0;
+        .translate3d(0, 15px, 0);
+      }
+
+      100% {
+        opacity: 1;
+        .transform-none();
+      }
+    }
+
+  .fadeInUp(@duration: 0.75s) {
+      .animation-name(fadeInUp);
+      .animation-duration(@duration);
+  }
+
+  .fadeInUpSmooth(@duration: 0.75s) {
+      .animation-name(fadeInUp15);
+      .animation-duration(@duration);
+  }

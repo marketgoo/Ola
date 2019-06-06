@@ -1,0 +1,57 @@
+.intro-text {
+    margin: 0;
+    padding: 7px;
+    color: @gray-darker;
+    font-size: 18px;
+    font-family: @font-family-base;
+}
+
+a.update-keyword {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#keywords {
+    .keywords-controller {
+        .tab-content {
+            .tab-pane {
+                .intro-header {
+                    margin: auto -5px 25px -10px;
+                }
+            }
+        }
+    }
+}
+
+.keywords-controller {
+
+    .sub-panel {
+        text-align: left;
+    }
+
+    .bootstrap-tagsinput {
+        width: 660px;
+    }
+}
+
+
+span.competition {
+    .icomoon(@icon-progress-0-content);
+    &:before {
+        font-size: @font-size-large;
+        line-height: 16px;
+    }
+
+    width: 20px;
+    height: 16px;
+    color: @brand-success;
+
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &.competition-high:before   { content: @icon-progress-3-content; color: @brand-danger; }
+    &.competition-medium:before { content: @icon-progress-2-content; color: @brand-warning; }
+    &.competition-low:before    { content: @icon-brogress-1-content; color: @brand-success; } /* (sic!) */
+}

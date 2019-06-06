@@ -1,0 +1,311 @@
+@keyframes ctamodalcheck {
+    0% {transform: scale(1.1);}
+    50% {transform: scale(0.9);}
+    100% {transform: scale(1.1);}
+}
+
+
+.modal-paywall {
+
+    .fwr-paywall .panel {
+        width: 900px;
+        margin: auto;
+        padding: 50px 50px 10px 50px;
+        font-size: @font-size-large;
+
+        .intro {
+            padding-bottom: 35px;
+            h2 {
+                color: @brand-primary;
+                margin: 0;
+                font-weight: 400;
+                font-size: @font-size-h1;
+            }
+            p {
+                margin: 0;
+                font-size: @font-size-large;
+            }
+        }
+
+        .panel-heading{
+            padding: 0px 0px 15px;
+            .panel-title{
+                font-size: 30px;
+                font-weight: 300;
+            }
+        }
+
+        #form_paywall {
+            padding: 35px 0px;
+            form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 50px;
+                .plan-select {
+
+                    &-row {
+                        display: grid;
+                        grid-template-columns: 100px 1fr;
+                        margin-bottom: 5px;
+                        border-radius: 3px;
+                        padding: 15px 20px;
+                        cursor: pointer;
+                        input[type="radio"] {
+                            min-height: auto!important;
+                        }
+                        &.active {
+                            background-color: #F6F8FA;
+                            .plan-select-info, .plan-option {
+                                color: #0F222E;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+
+                    &-info {
+                        text-align: right;
+                        span {
+                            color: @brand-primary;
+                        }
+                    }
+
+                    .plan-option {
+                        color: #0F222E;
+                        cursor: pointer;
+                        input {
+                            margin-right: 10px;
+                            width: auto;
+                        }
+                    }
+                }
+                .card-input {
+                    .plan-action {
+                        padding: 20px 10px;
+                        button { width: 100%; }
+                    }
+                    .error{
+                        .icomoon(@icon-warning-content, @brand-warning, 18px);
+                        display: flex;
+                        font-size: 12px;
+                        margin-top: 28px;
+                        margin-bottom: 0px;
+                        &::before{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+
+            .legal {
+                text-align: center;
+                p {
+                    font-size: @font-size-small;
+                    margin: 0;
+                }
+            }
+
+            .total-price {
+                padding: 35px/2 0px;
+                text-align: right;
+                background: url('../img/powered_by_stripe.gif') no-repeat left center;
+                background-size: 60%;
+                height: 86px;
+                h1 {
+                    color: @gray-darker;
+                    font-weight: 400;
+                    margin: 0;
+                    font-size: 36px;
+                }
+                p {
+                    margin: 0;
+                    font-size: @font-size-small;
+                }
+            }
+        }
+    }
+
+}
+
+.modal-paywall.fade .modal-dialog {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    top: 0px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-paywall.fade.in .modal-dialog {
+    width: 900px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+
+// INPUTS
+
+input[type=radio] {
+    display: inline-block;
+}
+
+.input-radio-container {
+
+    input[type="radio"] {
+        border: 1px solid transparent;
+    }
+
+    label {
+        display: inline-block;
+        font-weight: 500;
+        font-family: @font-family-base;
+        color: #0F222E;
+        padding: 0px 0px 0px 10px;
+        margin-bottom: 10px;
+    }
+
+}
+
+.input-container{
+    margin-bottom: 15px;
+
+    label{
+        // font-size: 15px;
+        font-weight: 500;
+        font-family: @font-family-base;
+        color: #0F222E;
+        display: block;
+        text-align: left;
+        padding: 0px 0px 0px 2px;
+        margin-bottom: 10px;
+        span {
+            float: right;
+            &.error {
+                color: @brand-danger;
+            }
+            &.warning {
+                color: @brand-warning;
+            }
+            &.didyoumean {
+                background-color: @input-bg-focused;
+                padding: 3px 8px 3px 8px;
+                border-radius: 50px;
+                margin-top: -5px;
+                color: darken(@brand-primary, 10%);
+                cursor: pointer;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    input, textarea {
+        width: 100%;
+        box-sizing: border-box;
+        outline: none;
+        // font-size: 16px;
+        padding: 0 10px;
+        font-weight: 500;
+        box-shadow: none !important;
+        min-height: @input-height-base;
+        line-height: 1.2;
+        color: #333333;
+        background-color: @input-bg;
+        background-image: none;
+        border: 2px solid @input-border;
+        .border-radius();
+        .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s, background-color ease-in-out .15s");
+
+        &::-webkit-input-placeholder  { /* Chrome/Opera/Safari */
+            color: @input-border;
+        }
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+        }
+
+        &:focus {
+            border-color: @brand-primary;
+            background-color: @input-bg-focused;
+
+            .tag {
+                background: darken(@input-bg-focused, 10%);
+            }
+        }
+
+        &.error{
+            background-color: lighten(@brand-danger, 30%);
+            border-color: lighten(@brand-danger, 10%);
+            &::-webkit-input-placeholder{
+                color: white;
+            }
+        }
+
+        &.warning{
+            background-color: lighten(@brand-warning, 30%);
+            border-color: lighten(@brand-warning, 10%);
+            &::-webkit-input-placeholder{
+                color: white;
+            }
+        }
+    }
+}
+
+.input-credit-card-container {
+    label {
+        font-weight: 500;
+        font-family: @font-family-base;
+        color: #0F222E;
+        display: block;
+        text-align: left;
+        padding: 0px 0px 0px 2px;
+        margin-bottom: 5px;
+
+        span {
+            float: right;
+            &.error {
+                color: @brand-danger;
+            }
+        }
+
+    }
+    .input-credit-card {
+        border: 2px solid @input-border;
+        background-color: @input-bg;
+        .border-radius();
+        padding: 10px;
+        &.error {
+            border: 2px solid @brand-danger;
+            background-color: lighten(@brand-danger, 30%);
+        }
+    }
+}
+
+.input-container{
+    .select-input__control{
+        background-color: @input-bg;
+        border: 2px solid @input-border;
+        outline: none;
+        height: @input-height-base;
+        &:hover{ border: 2px solid @input-border; }
+        &:focus{ outline: none; }
+        //&.select-input__control-is_focused{ // react-select v2
+        &.select-input__control--is-focused{
+            border: 2px solid @brand-primary;
+            box-shadow: none;
+            background-color: @input-bg-focused;
+        }
+
+        .select-input__indicators {
+            .select-input__indicator-separator {
+                background-color: @input-border;
+            }
+        }
+    }
+}

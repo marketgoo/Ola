@@ -1,0 +1,79 @@
+.section-rankings {
+
+    .hoverTable();
+    .clicableTable();
+    .ola_panel-content > div {
+
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        grid-column-gap: @block * 2;
+        padding: @block @block-panel;
+
+        th figure {
+            &.google {
+                background: url("/img/logo/google.png") no-repeat;
+                background-size: 100%;
+            }
+
+            &.bing {
+                background: url("/img/logo/bing.png") no-repeat;
+                background-size: 100%;
+            }
+
+            &.yahoo {
+                background: url("/img/logo/yahoo.png") no-repeat;
+                background-size: 100%;
+            }
+        }
+
+        thead tr {
+            th {
+                figure {
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        tbody tr{
+            td {
+                text-align: center;
+            }
+
+            td:first-child {
+                padding-left: 8px;
+                padding-right: 8px;
+                text-align: left;
+            }
+        }
+
+        .keyword{
+            height: 50px;
+            .value{
+                padding-left: 8px;
+                padding-right: 8px;
+                min-width: 25px;
+            }
+        }
+
+        .current-ranking {
+            padding-top: 12px;
+
+            .goo-chart-title {
+                font-size: 10px;
+                width: 100%;
+                text-align: center;
+            }
+
+            // Apaño provisional hasta que ajustemos las gráficas
+            .snippet { padding: 20px 0px 0px 20px; }
+        }
+    }
+
+    &.rankings-no-data .ola_panel-content {
+        .ola_button {
+            justify-self: end;
+            align-self: center;
+        }
+    }
+
+}

@@ -1,0 +1,16 @@
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    .translate3d(0, -25%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    .transform-none();
+  }
+}
+
+.fadeInDown(@duration: .75s) {
+  .animation-name(fadeInDown);
+  .animation-duration(@duration);
+}

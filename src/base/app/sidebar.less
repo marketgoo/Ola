@@ -1,0 +1,212 @@
+
+.make-menu(@icon: @icon-start-content, @icon-active: @icon)
+{
+    > a {
+        .icomoon(@icon);
+    }
+
+    &.active {
+        > a {
+            .icomoon(@icon-active);
+        }
+    }
+}
+
+
+
+.sidebar-fixed {
+    position: fixed;
+    // ATENCION: Ancho fijo, no se puede poner "adptive" por ser fixed.
+    width: 250px;
+    margin-top: 25px;
+    #sidebar {
+        .list-group {
+            margin-bottom: 0;
+            .list-group-item {
+                background: transparent;
+                list-style: none;
+                margin: 0 0 5px 0;
+                padding: 0;
+                border: none;
+                position: relative;
+                overflow: hidden;
+                // height: @sidebar-item-height;
+                max-height: @sidebar-item-height;
+
+                &:first-child, &:last-child {
+                    border-radius: @border-radius-smaller;
+                }
+
+                .transition(max-height 0.5s ease-out);
+
+                > a {
+                    display: block;
+                    position: relative;
+                    height: @sidebar-item-height;
+                    font-size: @sidebar-item-font-size;
+                    color: @sidebar-item-text-color;
+                    font-weight: @sidebar-item-font-weight;
+                    padding: 9px;
+                    border-radius: @sidebar-item-radius;
+                    text-transform: uppercase;
+                    text-decoration: @sidebar-item-text-decoration;
+                    background-color: @sidebar-item-bg-color;
+                    font-family: @sidebar-item-font-family;
+                    .icomoon-after(@icon-arrow-right3-content);
+                    &:after {
+                        display: block;
+                        position: absolute;
+                        right: 15px;
+                        top: 35%;
+                        font-size: @sidebar-item-icon-size;
+                        color: @sidebar-item-icon-color;
+                        .transition(all 0.5s ease);
+                    }
+                    &:before {
+                        background-color: @sidebar-item-icon-bg-color;
+                        border-radius: 50%;
+                        color: @sidebar-item-icon-color;
+                        font-size: @sidebar-item-icon-size;
+                        padding-top: 7px;
+                        padding-left: 8px;
+                        .transition(color 0.5s ease-out);
+                        .transition(background-color 0.5s ease-out);
+                    }
+                    &:hover {
+                        background-color: @sidebar-item-bg-color-active;
+                        color: @sidebar-item-text-color-active;
+                        cursor: pointer;
+                        font-weight: @sidebar-item-font-weight-active;
+                        text-decoration: @sidebar-item-text-decoration-active;
+                    }
+                }
+
+                &.overview { .make-menu(@icon-house-content); }
+                &.tasks    { .make-menu(@icon-paper-content); }
+                &.settings { .make-menu(@icon-cog-content);   }
+
+                &.active {
+                    > a {
+                        text-decoration: @sidebar-item-text-decoration-active;
+                        background-color: @sidebar-item-bg-color-active;
+                        &:before {
+                            background-color: @sidebar-item-icon-bg-color-active;
+                            color: @sidebar-item-icon-color-active;
+                        }
+                    }
+                    &.collapsible {
+                        &.opened {
+                            // es un asco usar el max-heigth, porque según
+                            // la altura del elemento tardará más o menos
+                            // en hacer la transición y queda raro si hay más
+                            // de un desplegable como en nuestro caso.
+                            // El problema es que no se puede animar el height a auto,
+                            // por eso usamos el max-height.
+                            // Podríamos usar un height fijo, pero según el producto
+                            // start o evo, el número de elementos es variable asi que
+                            // no sirve tampoco. ¿ideas?
+                            max-height: 350px;
+                            > a:after {
+                                .rotate(90deg);
+                                // .icomoon-after(@icon-arrow-down3-content);
+                            }
+                        }
+                    }
+                }
+
+                .sub-list-group {
+                    list-style: none;
+                    margin-top: 10px;
+                    padding-left: 30px;
+
+                    .sub-list-group-item {
+                        > a {
+                            background-color: @sidebar-subitem-bg-color;
+                            color: @sidebar-subitem-text-color;
+                            font-family: @sidebar-subitem-font-family;
+                            font-size: @sidebar-subitem-font-size;
+                            font-weight: @sidebar-subitem-font-weight;
+                            border-radius: @sidebar-subitem-radius;
+                            padding: @sidebar-subitem-padding;
+                            text-decoration: @sidebar-subitem-text-decoration;
+                            .transition(color 0.5s ease-out);
+                            .transition(background-color 0.5s ease-out);
+                            &:before {
+                                color: @sidebar-subitem-icon-color;
+                                font-size: @sidebar-subitem-icon-size;
+                                background-color: @sidebar-subitem-icon-bg-color;
+                                border-radius: 50%;
+                                padding-top: 9px;
+                                padding-left: 9px;
+                                .transition(color 0.3s ease-out);
+                                .transition(background-color 0.3s ease-out);
+                            }
+                        }
+                        &.active, &:hover {
+                            > a {
+                                background-color: @sidebar-subitem-bg-color-active;
+                                color: @sidebar-subitem-text-color-active;
+                                font-weight: @sidebar-subitem-font-weight-active;
+                                text-decoration: @sidebar-subitem-text-decoration-active;
+                                &:before {
+                                    color: @sidebar-subitem-icon-color-active;
+                                    background-color: @sidebar-subitem-icon-bg-color-active;
+                                }
+                            }
+                        }
+                        &.start        { .make-menu(@icon-globe-content); }
+                        &.ses          { .make-menu(@icon-cloud-upload-content); }
+                        &.onpage       { .make-menu(@icon-desktop-content); }
+                        &.site-results { .make-menu(@icon-thermometer-content); }
+                        &.site-review  { .make-menu(@icon-bar-graph-2-content); }
+                        &.popularity   { .make-menu(@icon-popularity-content); }
+                        &.social       { .make-menu(@icon-social-content); }
+                        &.mobile       { .make-menu(@icon-phone-content); }
+                        &.tasks-list   { .make-menu(@icon-grid-content); }
+                        &.ofs          { .make-menu(@icon-search2-content); }
+                        &.keywords     { .make-menu(@icon-key-content); }
+                        &.competitors  { .make-menu(@icon-trophy2-content); }
+                        &.configure    { .make-menu(@icon-tools3-content); }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        .scale(0.1);
+        opacity: 0;
+    }
+
+    1% {
+        .scale(0.1);
+        opacity: .5;
+    }
+
+    20% {
+        .scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        .scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+#sidebar {
+    .list-group .list-group-item a {
+        padding: 6px 10px;
+     }
+
+    // Empequeñecer el icono de los menús
+    a:before {
+        font-size: @font-size-base;
+        padding: 8px;
+        width: 30px;
+        height: 30px;
+    }
+}

@@ -1,0 +1,39 @@
+.toolTipInfo {
+    max-width: 300px;
+    padding: @block / 2 @block / 2 + 5px;
+
+    h4 {
+        font-weight: 500;
+        color: @gray-darker;
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        font-family: @font-family-text;
+        font-size: @font-size-small;
+        margin: 0.5em 0px 0px 0px;
+        padding: 0;
+    }
+}
+
+.toolTipInfo-icon {
+    cursor: help;
+    display: inline;
+    .icomoon(@icon-help2-content);
+
+    &:before {
+        display: inline;
+        width: 100%;
+        margin: 0px 5px;
+        font-size: 15px;
+        color: @gray-light;
+
+        .transition(color 0.2s ease-out);
+    }
+
+    &:hover:before {
+        color: @brand-primary;
+    }
+}

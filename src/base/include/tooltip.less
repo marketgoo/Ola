@@ -1,0 +1,211 @@
+
+.why-tooltip {
+    .icomoon(@icon-speech-bubble-content, @white, 1.2em);
+
+    padding-top: 10px;
+    float: right;
+    display: inline-block;
+    color: @gray;
+    cursor: help;
+    font-family: @font-family-text;
+    font-size: 13px;
+
+    &:hover, &:hover:before {
+        color: @white;
+    }
+}
+
+.info-text {
+    cursor: help;
+    border-bottom: 1px dotted @brand-primary;
+}
+
+.info-tooltip {
+    .icomoon(@icon-speech-bubble-content, @brand-primary, 1.15em);
+
+    &:before {
+        top: -0.15em;
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+        text-align: center;
+        color: @brand-primary;
+    }
+
+    // POSICIONADO DEL INFO TOOLTIP:
+    // El info-tooltip va posicionado después de un texto, generalmente una
+    // cabecera. El siguiente posicionado como "inline-block" tiene el problema
+    // de que el tooltip hace "wrap" a la siguiente línea cuando da la
+    // casualidad de que el texto ocupa toda la línea.
+
+    // POSICIONADO A)
+    // margin-left: 10px;
+    // display: inline-block;
+    // vertical-align: middle;
+
+    // El siguiente posicionado se basa en que el "position" absolute SE QUEDA
+    // DONDE ESTA el elemento si no tiene ni "left", "top", "bottom" o "right".
+    // POSICIONADO B)
+    position: absolute;
+    margin-left: 0.3em;
+    margin-top: 0.2em;
+
+    opacity: 0;
+    cursor: help;
+    .transition(~"color .15s linear, opacity .25s linear");
+
+    .sub-panel:hover & {
+        opacity: 0.5;
+    }
+
+    section:hover & {
+        opacity: 0.5;
+    }
+
+    .panel-data:hover & {
+        opacity: 0.5;
+    }
+
+    .tab-content:hover & {
+        opacity: 0.5;
+    }
+
+    .panel-heading > & {
+        opacity: 0.3;
+        float: right;
+        margin: 5px 0px 0px 0px;
+    }
+
+    .panel-heading h2 & {
+        opacity: 0.3;
+        float: inherit;
+        margin: 5px 0px 0px 10px;
+    }
+
+    &:before {
+        .transition(~"color .15s linear, opacity .25s linear");
+        // margin: -2px 1px 3px 0px;
+    }
+
+    &:hover {
+        // color: @brand-primary;
+        opacity: 1;
+
+        // &:before {
+        //     color: @brand-primary;
+        // }
+    }
+}
+
+.differential-tooltip {
+    font-size: 1.2em;
+    cursor: help;
+
+    .transition(~"color .15s linear, opacity .25s linear");
+
+    .sub-panel:hover & {
+        .opacity(1);
+    }
+
+    &:hover {
+        color: @brand-primary;
+    }
+
+    span {
+        &.increase {
+            .icomoon(@icon-arrow-up2-content, @brand-success, 1.5em);
+            &:before {
+                margin: 1px -5px 0 0;
+            }
+        }
+        &.decrease {
+            .icomoon(@icon-arrow-down2-content, @brand-danger, 1.5em);
+            &:before {
+                margin: 1px -5px 0 0;
+            }
+        }
+        &.unchanged {
+            .icomoon(@icon-arrow-right3-content, @gray-light, 1.5em);
+            &:before {
+                font-size: 1em;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.diff-up {
+    .icomoon-after(@icon-arrow-up-content, @brand-success, 1em);
+    &:after {
+        margin: 0px;
+    }
+}
+
+.diff-down {
+    .icomoon-after(@icon-arrow-down-content, @brand-danger, 1em);
+    &:after {
+        margin: 0px;
+    }
+}
+
+.diff-equals {
+    .icomoon-after(@icon-record-content, @gray-light, 1em);
+    &:after {
+        margin: 0px;
+    }
+}
+
+.diff-none {
+    .icomoon-after(@icon-ellipsis-content, transparent, 1em);
+    &:after {
+        margin: 0px;
+    }
+}
+
+
+.popover {
+    max-width: 490px;
+
+    border-radius: @border-radius-small;
+    .box-shadow(0px 0px 45px fadeout(@gray-dark, 65%));
+    border: 0px;
+}
+
+.popover-title {
+    padding: 20px 25px 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+
+    border-bottom: none;
+    border-radius: @border-radius-large @border-radius-large 0 0;
+}
+
+.popover-content {
+    padding: 5px 25px 25px;
+    border-top: none;
+    color: @gray;
+    line-height: 1.4em;
+    font-family: @font-family-text;
+    font-size: 13px;
+}
+
+.tooltip-inner {
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: @font-size-smaller;
+    font-family: @font-family-text;
+    font-weight: bold;
+    border-radius: @border-radius-large;
+    max-width: 300px;
+}
+
+// Ajuste de las flechas en los Tooltips de Bootstrap
+.tooltip.left .tooltip-arrow {
+    right: 1px;
+}
+
+.tooltip.right .tooltip-arrow {
+    left: 1px;
+}

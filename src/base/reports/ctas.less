@@ -1,0 +1,130 @@
+.panel .panel-body .sub-panel .cta-panel {
+    background: @cta-panel-bg;
+    padding: 40px 20px;
+    .border-radius(@border-radius-base);
+
+    h1 {
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        font-size: 35px;
+        font-weight: 400;
+        color: @cta-panel-title-color;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 30px 30px 0px;
+        color: @cta-panel-text-color;
+        font-weight: 300;
+
+        .icomoon-after(@icon-arrow-down-content);
+        &:after {
+            display: block;
+            font-size: 50px;
+            color: @cta-panel-arrow-color;
+            margin: 30px 0px 0px;
+            position: initial;
+            .opacity(0.5);
+        }
+    }
+}
+
+.middle-cta {
+    color: @cta-middle-color;
+    background: @cta-middle-bg;
+    border-radius: 10px;
+    .triangleUp(@cta-middle-bg, 15px);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    p {
+        font-weight: normal;
+        margin: 5px 0px 0px 0px;
+
+        &:first-child {
+            margin: 0px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+
+        a { color: @cta-middle-link-color; }
+    }
+
+    // Margins y paddings deben ir subclaseados dentro de .panel .panel-body
+    // por temas de especificalidad.
+    .panel .panel-body &.sub-panel {
+        border: 0px;
+        margin: -15px @subpanel-body-padding + @panel-body-padding
+                      @subpanel-body-padding + @panel-body-padding
+                      @subpanel-body-padding + @panel-body-padding;
+    }
+}
+
+.footer-cta {
+    margin-top: 100px;
+
+    .knob {
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        margin-left: -75px;
+        z-index: 12;
+    }
+
+    .panel .panel-body .sub-panel {
+        padding-top: 25px;
+        .freereport-footer-octo {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media print {
+    .middle-cta {
+        float: left;
+        width: 80% !important;
+        margin-top: 10px !important;
+        &:after{
+            top: -13px;
+        }
+    }
+    .panel .panel-body .middle-cta.sub-panel{
+        margin: 45px;
+    }
+
+    #section-mobile{
+        .panel-body {
+            .sub-panel > :last-child{
+                padding-left: 40px;
+            }
+        }
+        .imac-results{margin-left: 15px}
+    }
+}
+
+
+@media print {
+    .middle-cta {
+        float: left;
+        width: 80% !important;
+        margin-top: 10px !important;
+        &:after{
+            top: -13px;
+        }
+    }
+    .panel .panel-body .middle-cta.sub-panel{
+        margin: 45px;
+    }
+
+    /*#section-mobile{
+        .panel-body {
+            .sub-panel > :last-child{
+                padding-left: 40px;
+            }
+        }
+        .imac-results{margin-left: 55px}
+    }*/
+}

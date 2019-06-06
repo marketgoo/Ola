@@ -1,0 +1,43 @@
+.table-background {
+    background-color: @gray-lighter;
+    border-radius: 5px;
+    padding: 10px 25px;
+    color: @gray;
+    font-size: 16px;
+
+    .table {
+        margin: 0px;
+        border-collapse: collapse;
+
+        th {
+            color: @gray-darker;
+            font-size: 18px;
+            font-weight: bold;
+            border-top: 0px;
+            border-bottom: solid 2px darken(@gray-lighter, 5%);
+        }
+
+        td {
+            padding: 10px;
+            border-bottom: 0px;
+            border-top: solid 1px darken(@gray-lighter, 5%);
+        }
+    }
+}
+
+
+.val-keyword, .head-keyword,
+.val-domain, .head-domain {
+    text-align: left;
+    max-width: 250px;
+
+    .ellipsis();
+}
+
+.val-ranking, .head-ranking {
+    text-align: center;
+}
+
+.val-volume, .head-volume {
+    text-align: right;
+}

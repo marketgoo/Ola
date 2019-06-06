@@ -1,0 +1,134 @@
+.card {
+    // min-height: 250px;
+    .stripe-card {
+        position: relative;
+        box-sizing: border-box;
+        width: 360px;
+        height: 220px;
+        color: white;
+        padding: @block;
+        .border-radius(12px);
+        .box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 0.3));
+
+        /* Gradiente */
+        background: #3FB6FD;
+        background: -moz-linear-gradient(-45deg, #3FB6FD 0%, #3FB6FD 20%, #1D3B6F 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, #3FB6FD), color-stop(20%, #3FB6FD), color-stop(100%, #1D3B6F));
+        background: -webkit-linear-gradient(-45deg, #3FB6FD 0%, #3FB6FD 20%, #1D3B6F 100%);
+        background: -o-linear-gradient(-45deg, #3FB6FD 0%, #3FB6FD 20%, #1D3B6F 100%);
+        background: -ms-linear-gradient(-45deg, #3FB6FD 0%, #3FB6FD 20%, #1D3B6F 100%);
+        background: linear-gradient(135deg, #3FB6FD 0%, #3FB6FD 20%, #1D3B6F 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3FB6FD', endColorstr='#1D3B6F', GradientType=1 );
+
+        .current-card-data {
+            display: grid;
+            grid-template-rows: max-content 1f max-content;
+            align-items: center;
+            height: 100%;
+
+            .card-brand {
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 5px;
+            }
+            .card-number {
+                display: flex;
+                justify-content: space-between;
+                span {
+                    font-family: courier, courier new;
+                    font-size: @font-size-large;
+                    font-weight: 500;
+                    text-shadow: 1px 1px  rgba(255, 255, 255, 0.2);
+                }
+            }
+            .card-expiry {
+                .exp-title {
+                    margin: 0 0 2px 0;
+                    font-size: @font-size-base;
+                }
+                .exp-date {
+                    font-family: courier, courier new;
+                    margin: 0;
+                    font-size: @font-size-medium;
+                    text-shadow: 1px 1px  rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+
+        .edit-card-menu {
+            background-color: rgba(241, 241, 241, 0.8);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 12px;
+            .center-content();
+            // CssTransitionGroup animation
+            &-enter { .fadeIn(0.3s); }
+            &-leave { .fadeOut(0.3s); }
+        }
+
+        &.updating-card {
+            padding: 30px;
+            .edit-card-cancel {
+                position: absolute;
+                top: 24px;
+                right: 20px;
+                .icomoon(@icon-cross-content);
+                .transition(opacity 0.25s ease-out);
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.7;
+                }
+            }
+
+            .StripeElement {
+                height: 30px;
+                border-bottom: solid 1px @gray-light;
+            }
+
+            // .StripeElement--focus {
+            //     box-shadow: 0 1px 3px 0 #cfd7df;
+            // }
+
+            .StripeElement--invalid {
+                border-color: @brand-danger;
+            }
+
+            .StripeElement--webkit-autofill {
+                background-color: transparent !important;
+                color: white;
+            }
+
+            .stripe-form-container {
+                display: grid;
+                grid-template-rows: max-content 1fr max-content;
+                align-items: center;
+                height: 100%;
+                h2 {
+                    margin: 0;
+                    font-weight: 700;
+                    font-size: @font-size-medium;
+                    color: @white;
+                }
+                .stripe-form-row {
+                    width: 100%;
+                    text-align: center;
+                    button {}
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

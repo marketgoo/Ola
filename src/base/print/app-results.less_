@@ -1,0 +1,210 @@
+@media print {
+
+    @page :first {
+        // background: #3fb6fd;
+
+        // Esconder todos los elementos de footnotes en la primera página
+        // @bottom-left {
+        //     visibility: hidden;
+        // }
+        //
+        // @bottom-right {
+        //     visibility: hidden;
+        // }
+    }
+
+
+    // Estilos para el texto del footnote deshabilitados para el inf. mensual.
+    // Comentar estas líneas (o eliminarlas) para reactivar los footnotes.
+    span.info-tooltip {
+        display: none !important;
+    }
+    .info-tooltip::footnote-marker {
+        display: none !important;
+    }
+
+
+    // Hacer que en la primera página, el cover, ocupe media página
+    .cover {
+
+        // Posicionamiento y visualización del logo.
+        // Espero que con max-width sirva posicionarlo, tendremos que ver
+        // qué pasa con la resolución del GIF/PNG y demás.
+        .logo {
+            max-width: 6cm;
+
+            position: absolute;
+        }
+
+        .text-logo {
+            font-size: 26px;
+            font-weight: 200;
+            color: white;
+        }
+
+        .panel-heading {
+            min-height: 10cm;
+            .triangleDown(@brand-primary, 1cm);
+
+            // Tenemos que mover ligeramente la flecha hacia arriba y así
+            // eliminamos un pequeño hueco blanco que se produce.
+            &:after {
+                bottom: -0.99cm;
+            }
+
+            h1 {
+                font-size: 24pt!important;;
+                font-weight: bold!important;;
+                text-align: center;
+                margin-top: 5cm!important;
+                color: white;
+            }
+
+            h2 {
+                font-size: 18pt;
+                font-weight: 300;
+                text-align: center;
+                margin-top: 0.2cm;
+                color: white;
+            }
+        }
+
+        .panel-body {
+            h2.site-url {
+                text-align: center;
+                font-size: 18pt;
+                font-weight: 300;
+            }
+        }
+    }
+
+    // Ajustar las cabeceras para que ocupen toda la página
+    .results {
+        .panel-data {
+            .panel-heading {
+                border: none;
+                border-radius: 0;
+                margin-top:     -@page-margin - (@grid-gutter-width / 2);
+                margin-left:    -@page-margin - (@grid-gutter-width / 2);
+                margin-right:   -@page-margin - (@grid-gutter-width / 2);
+                margin-bottom:  1cm;
+                background-color: @brand-primary;
+                padding: @page-margin;
+            }
+        }
+    }
+
+    .panel-data {
+
+        // Eliminamos los "espacios raros" en las columnas. Parece que no se
+        // posicionan bien en print (quizá por el uso de "px" como unidades)
+        .column {
+        	border-left: solid 1px @gray-light;
+            padding-left: 0;
+            padding-right: 0;
+
+            &:first-child {
+                border: none;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+
+        // Eliminar los espacios laterales de los "sub-panels" ya que en
+        // @media print no tienen sentido
+        .sub-panel {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        // Ajustar el tamaño de la pantalla de thumbnail en la portada
+        .panel-body {
+            .result-score {
+                .display.imac {
+                    width: 240pt;
+                    height: 208pt;
+                    margin-bottom: 0.5cm;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                .knob {
+                    left: 62%;
+                    top: -15%;
+
+                    .grade {
+                        font-size: 6em;
+                    }
+                }
+            }
+            aside.score {
+
+            }
+        }
+
+        // Otros ajustes que sólo tienen sentido en los bloques para imprimir
+        .info-visits-estimated {
+            h2 {
+                margin-top: 0.5cm;
+            }
+        }
+
+        .sub-info {
+            margin: 0;
+
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .info-links {
+            h2 {
+                text-align: center;
+            }
+        }
+
+        .info-links-websites {
+            margin-top: 1cm;
+            padding-top: 1cm;
+        }
+
+        #panel-insights{
+            .table-keyword {
+                .keyword {
+                    border-bottom: 1px solid #e2e7ec;
+                    font-size: 12px;
+                }
+            }
+
+            .traffic, .search-engines {
+                .kpi-value {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .panel-footer-competitors {
+
+        margin-top: 1cm;
+
+        // Ajustar las columnas de las tablas de competidores para que las
+        // imágenes de los thumbnails sean más pequeñas y quepan en una página
+        .column-website {
+            width: 60pt;
+            img {
+                width: 58pt;
+            }
+        }
+
+        // Ajustar también el bloque de competidores para que no tenga border
+        // ni la flecha apuntando hacia abajo
+        .competitors-wrapper {
+            border: 0;
+
+            &:before, &:after {
+                border: 0;
+            }
+        }
+    }
+
+}

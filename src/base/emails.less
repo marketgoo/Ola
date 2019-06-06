@@ -1,0 +1,309 @@
+// @import "lib/normalize.less";
+@import "lib/vendor-prefixes.less";
+@import "lib/variables.less";
+@import "lib/mixins.less";
+
+@font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-text: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+* { font-family: @font-family-base; }
+
+html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: @font-family-base;
+    color: @text-color;
+}
+
+body {
+    margin:0; padding:0;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing:antialiased;
+    width:100% !important; /* Force Hotmail to display emails at full width */
+    background-color: @bg-color;
+}
+
+
+img  { border:0; vertical-align: text-top; }
+table { border-collapse: collapse; }
+#backgroundTable { height:100% !important; margin:0; padding:0; width:100% !important;}
+
+p {
+    font-family: @font-family-text;
+    font-weight: 400;
+    font-size: @font-size-base;
+    line-height: @font-size-large;
+    margin-top: 0;
+    strong {
+        color: @gray-darker;
+    }
+}
+
+a, a:hover, a:focus, a:active, a:visited {
+    text-decoration: none;
+    color: @brand-primary;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    color: @gray-dark;
+    background-color: @gray-lighter;
+    letter-spacing: 0.5px;
+    padding: 2px 4px;
+    .border-radius(@border-radius);
+}
+
+pre {
+    white-space: pre-wrap !important;
+    background-color: @gray-lighter;
+    color: @text-color;
+    padding: 14px;
+    font-size: @font-size-base;
+    .border-radius(@border-radius);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: @gray-darker;
+}
+h1 { font-size: @font-size-larger; }
+h2 { font-size: @font-size-large; }
+h3 { font-size: @font-size-medium; }
+h4 { font-size: @font-size-base; }
+h5 { font-size: @font-size-small; }
+h6 { font-size: @font-size-smaller; }
+
+ol, ul {
+    font-family: @font-family-text;
+    font-size: @font-size-base;
+    margin: 0;
+    padding: 0 15px;
+    li { margin-bottom: 8px; }
+}
+
+.header {
+    margin-top: @block*2.5;
+    margin-bottom: @block;
+    font-size: @font-size-base;
+    font-weight: 400;
+}
+
+.title {
+    color: @brand-primary;
+    font-size: @font-size-base;
+    font-weight: 500;
+}
+
+.panel {
+    background-color: white;
+    .border-radius(@border-radius);
+    .box-shadow(0, 0, 10px, 1px, rgba(0, 0, 0, 0.05));
+    margin-bottom: @block/2;
+}
+
+.action {
+    text-align: center;
+    margin-top: @block;
+    h3, h4 { font-weight: bold; font-size: @font-size-medium; }
+}
+
+.btn {
+    display: inline-block;
+    background-color: @btn-main-color;
+    color: @btn-alt-color;
+    text-transform: @btn-text-transform;
+    font-size: @font-size-small;
+    font-weight: @btn-font-weight;
+    padding: 11px 22px;
+    .border-radius(@btn-border-radius);
+    &.btn-alt {
+        background-color: @btn-alt-color;
+        color: @btn-main-color;
+    }
+}
+
+.data-table {
+    th {
+        font-weight: 500;
+        color: @gray-darker;
+        font-size: @font-size-base;
+    }
+    tbody > tr:nth-child(odd) {
+        background-color: @gray-light;
+    }
+    p { margin: 0; }
+    margin: @block 0;
+}
+
+.footer {
+    text-align: center;
+    margin-top: @block/2;
+    p {
+        margin: 0;
+        font-size: @font-size-smaller;
+        line-height: auto;
+        color: lighten(@gray, 30%);
+        & > strong, & > a strong, & > a, & > a:hover, & > a:focus, & > a:active, & > a:visited {
+            color: lighten(@gray, 20%);
+        }
+    }
+}
+
+.inner-action a {
+    margin: @block 0;
+}
+.outer-action {
+    text-align: center;
+    margin: @block 0;
+}
+
+h3.section-title {
+    padding: 25px 25px 25px 50px;
+    background-color: @gray-lighter;
+    margin: 0;
+    color: @brand-primary;
+    font-weight: bold;
+}
+
+// MONTHLY EMAIL
+.monthly-intro {
+    text-align: center;
+    h1 {margin-top: 0;}
+    a { margin-top: @block/2; }
+}
+
+
+.panel.monthly-score {
+    background-color: @brand-primary;
+    color: white;
+    h1, h2, h3, h4, h5, h6, p { color: white; }
+    h1 {
+        margin: 0;
+        font-size: 29px;
+    }
+    .score-diff {
+        .value {
+            font-size: 130px;
+            // line-height: @font-size-large;
+            span {
+                font-size: @font-size-large;
+            }
+        }
+        .description {
+            font-size: @font-size-large;
+            text-transform: uppercase;
+        }
+    }
+    .engagement-phrase h2 { font-size: @font-size-larger; }
+    .scoreboxes {
+        & > table { margin: 20px 0; }
+        .scorebox {
+            border: solid 1px white;
+            padding: 8px @block;
+            font-size: @font-size-medium;
+            .border-radius(@border-radius);
+        }
+    }
+
+}
+
+
+.panel.diff-panel {
+    .data {
+        .title {
+            h4 {
+                margin: 0;
+                font-size: @font-size-medium;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            p {
+                font-size: @font-size-small;
+            }
+        }
+        .data {
+            font-size: @font-size-base;
+            strong {
+                color: @gray-darker;
+                font-size: @font-size-medium;
+            }
+        }
+    }
+    .diff {
+        color: white;
+        .border-radiuses(0, @border-radius, @border-radius, 0);
+        &.no-change { background-color: @brand-primary; }
+        &.fail { background-color: @brand-danger; }
+        &.success { background-color: @brand-success; }
+        .value {
+            font-size: 42px;
+            font-weight: bold;
+            line-height: 34px;
+        }
+        .description {
+            font-size: @font-size-medium;
+        }
+    }
+}
+
+// END MONTHLY EMAIL
+
+
+
+
+// WEBMASTER EMAIL
+
+h2.task-title {
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.extra-table {
+    font-family: @font-family-text;
+    font-size: @font-size-base;
+    th, td { text-align: left; }
+    .pagina {
+        margin-bottom: 8px;
+        strong, a { display: block; }
+    }
+}
+
+// .suggestions-list {
+//     ol {
+//         list-style: none;
+//         counter-reset: item;
+//         li {
+//             counter-increment: item;
+//             &:before {
+//                 content: counter(item);
+//                 color: @gray-darker;
+//                 font-weight: bold;
+//                 text-align: center;
+//                 display: inline-block;
+//             }
+//         }
+//     }
+// }
+
+// END WEBMASTER EMAIL
+
+// ACTIVITY-SNAPSHOT EMAIL
+.block {
+    p {
+        margin: 0;
+        line-height: inherit;
+        &.value {
+            font-size: 60px;
+            &.good { color: @brand-success; }
+            &.medium { color: @brand-primary; }
+            &.bad { color: @brand-danger; }
+        }
+        &.title {
+            font-size: @font-size-medium;
+            font-weight: 500;
+        }
+    }
+}
+// ACTIVITY-SNAPSHOT EMAIL END

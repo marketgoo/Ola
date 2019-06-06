@@ -1,0 +1,190 @@
+
+.Access {
+
+    &-signup {
+        .make-md-column(12);
+        .breadcrumb {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            margin-left: -@signup-padding;
+            padding: 0px;
+            background-color: transparent;
+            position: absolute;
+            top: -18px;
+            li {
+                border-radius: 50%;
+                width: 36px;
+                height: 36px;
+                padding: 6px;
+                text-align: center;
+                margin: 0px 10px 0px 0px;
+                font-size: 18px;
+                font-weight: bold;
+                border: 1px solid @brand-primary;
+                background-color: darken(@brand-primary, 15%);
+                color: #ffffff;
+                &.active {
+                    background-color: @brand-primary;
+                }
+                &.step-user {
+                    &:before { color: #ffffff; content: "1"; }
+                }
+                &.step-site {
+                    &:before { color: #ffffff; content: "2"; }
+                }
+            }
+        }
+        .panel {
+            width: 700px;
+            min-height: 307px;
+            margin: 20px auto;
+            padding: @signup-padding;
+            position: relative;
+            background-color: @brand-primary-subtle;
+            .panel-body {
+                h1, label, p { color: #ffffff; }
+                h1 { font-size: 35px; }
+                p { font-size: 18px; }
+                h2 {
+                    color: #ffffff;
+                    font-size: 30px;
+                    margin:0px 0px 20px;
+                    span { display: block; font-size: @font-size-base; }
+                }
+                small { display: block; margin-bottom: 20px;}
+            }
+            .passwordField .passwordField__info span{
+                color: #ffffff;
+            }
+
+            .wizard-step {
+                width: 100%;
+                padding-right: @signup-padding;
+                position: absolute;
+            }
+
+            .signup-intro {
+                padding-left: @signup-padding;
+                position: relative;
+                height: 219px;
+                .actions {
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px;
+                    button:last-child {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-form {
+      margin-top: 50px;
+
+      .make-md-column(12);
+
+      .panel {
+          width: 310px;
+          margin: auto auto 20px;
+          padding-top:20px;
+          padding-bottom:15px;
+          background-color: @brand-primary-subtle;
+          .panel-body{
+              label{
+                  color: #ffffff;
+                  text-align: right;
+              }
+              a{
+                  color: @brand-primary;
+                  display: block;
+                  text-align: center;
+                  font-weight: 700;
+                  margin: 0px 0px 15px;
+                  &:hover {
+                      color: #ffffff;
+                      text-decoration: underline;
+                  }
+              }
+          }
+      }
+    }
+
+    &-headerInfo {
+        text-align: center;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 21px;
+        span{
+            font-size: 16px;
+            margin: 0px 10px 0px 0px;
+            &.success { color: @brand-success; }
+        }
+    }
+
+    &-inputInfo{
+        color: #ffffff;
+        font-size: 13px;
+        margin-top: 10px;
+        padding: 0px 5px;
+    }
+
+    &-footerInfo {
+        text-align: center;
+        width: 250px;
+        margin: auto;
+        p, a { color: #ffffff; font-weight: 700; margin-bottom: 45px}
+        a:hover{
+            color: @brand-primary;
+        }
+    }
+
+    &-logo {
+        figure{
+            height: 100px;
+            background: url('../img/logo.png') center center no-repeat;
+            background-size: 230px;
+        }
+    }
+
+    &-links {
+        text-align: center;
+        button {
+            min-width: 170px;
+            margin: 5px auto 0px;
+        }
+        a {
+            margin: 20px 0px 0px 0px !important;
+        }
+        span {
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+
+    &-tryagain{
+        color: #ffffff;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    &-sendMessage{
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0px 0px 0px 0px;
+        span {
+            font-size: 40px;
+            display: block;
+            float: left;
+            margin-right: 10px;
+        }
+    }
+
+    #signup-form-agency{
+        .actions {
+            margin-top: 15px;
+        }
+    }
+}

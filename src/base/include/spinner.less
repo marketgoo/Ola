@@ -1,0 +1,99 @@
+// @keyframes scaleout {
+//   0%   { transform: scale(0); opacity: 1; }
+//   100% { transform: scale(1); opacity: 0; }
+// }
+//
+// @keyframes scalein {
+//   0%   { transform: scale(1); opacity: 0; }
+//   100% { transform: scale(0); opacity: 1; }
+// }
+//
+// .dot(@color: @loader-dot-color)
+// {
+//     content: '';
+//     width: @loader-dot-size;
+//     height: @loader-dot-size;
+//     margin-top: -@loader-dot-size/2;
+//     margin-left: -@loader-dot-size/2;
+//     position: absolute;
+//     background-color: @color;
+//     border-radius: 100%;
+// }
+//
+// .do_spinner(@xpos: 50%, @ypos: 50%, @color: @loader-dot-color)
+// {
+//     &:before {
+//         .dot(@color);
+//         left: @xpos;
+//         top: @ypos;
+//         animation: scaleout 1.0s infinite ease-in-out;
+//     }
+//
+//     &:after {
+//         .dot(@color);
+//         left: @xpos;
+//         top: @ypos;
+//         animation: scalein 1.0s infinite ease-in-out;
+//     }
+// }
+//
+// .spinner {
+//     .do_spinner();
+//
+//     .border-radius(15px);
+//     position: relative;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 1;
+//     padding: 0;
+//     margin: 0;
+//     opacity: 0;
+//     visibility: hidden;
+//
+//     .transition( ~"opacity .2s linear 0s, visibility 0s linear .2s" );
+//
+//     &.visible {
+//         opacity: 1;
+//         visibility: visible;
+//         .transition-delay(0s);
+//     }
+// }
+//
+// .spinner p {
+//     font-size: 18px;
+//     color: @gray;
+//     width: 100%;
+//     text-align: center;
+//     position: absolute;
+//     top: 60%;
+//     margin: 3px 0 0;
+// }
+//
+// .spinner-fixed {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     z-index: 999999;
+//     height: auto;
+//     width: auto;
+//     background: rgba(255, 255, 255, 0.8);
+// }
+//
+//
+// .loader {
+//     position: relative;
+//     height: 100px;
+//     .do_spinner();
+//
+//     .loader-caption {
+//         font-family: @font-family-base;
+//         font-size: @font-size-base;
+//         font-weight: normal;
+//
+//         color: @gray;
+//         text-align: center;
+//         line-height: 100px;
+//     }
+// }

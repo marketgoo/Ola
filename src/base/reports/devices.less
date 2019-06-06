@@ -1,0 +1,111 @@
+.display{
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    &.iphone{
+        width: 116px;
+        height: 218px;
+        z-index: 9;
+        bottom: 10px;
+        margin-left: 0px;
+        & .screen{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        & .shot{
+            position: absolute;
+            z-index: 11;
+            height: 171px;
+            width: 102px;
+            background: 22px 30px no-repeat;
+            background-size: 78%;
+        }
+        & .glare{
+            position: absolute;
+            top: 0;
+            right: 8px;
+            z-index: 12;
+        }
+    }
+    &.imac{
+        width: 436px;
+        height: 365px;
+        margin-left: -65px;
+        margin-right: -143px;
+        z-index: 8;
+        & .screen{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        & .shot{
+            position: absolute;
+            z-index: 11;
+            height: 243px;
+            width: 511px;
+            background: 19px 19px no-repeat;
+            background-size: 78%;
+        }
+        & .glare{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 12;
+        }
+    }
+    &.ipad{
+        width: 280px;
+        height: 243px;
+        z-index: 9;
+        bottom: -22px;
+        & .screen{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+        & .shot{
+            position: absolute;
+            z-index: 11;
+            height: 179px;
+            width: 256px;
+            background: 37px 21px no-repeat;
+            background-size: 78%;
+        }
+        & .glare{
+            position: absolute;
+            top: 0;
+            right: 20px;
+            z-index: 12;
+        }
+    }
+}
+
+.result-icon:before {
+    font-size: 30px;
+}
+
+.iphone-results .result-icon {
+    position: relative;
+    left: -6px;
+}
+
+.imac-results .result-icon {
+    position: relative;
+    left: -7px;
+}
+
+.ipad-results .result-icon {
+    position: relative;
+    right: 0px;
+}
+
+
+@media screen and (max-width: @screen-md-max) {
+    .display.imac {
+        margin-right: -200px;
+    }
+}

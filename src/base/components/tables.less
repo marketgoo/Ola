@@ -1,0 +1,87 @@
+table {
+    width: 100%;
+
+    th {
+        height: @block;
+        text-align: left;
+
+        figure {
+            width: 23px;
+            height: 23px;
+        }
+    }
+
+    tbody tr {
+        .transition(~"background-color ease-in-out .15s");
+        height: @block;
+        border-top: 1px solid @gray-lighter;
+    }
+
+    thead th {
+        color: @table-header-color;
+        font-weight: @table-header-font-weight;
+    }
+}
+
+
+
+
+// MIXINS
+
+// Aplicar mixin al panel que contenga una tabla que deba ocupar todo el ancho
+// de un panel. En principio es para keywords y competitors.
+.expandedTable() {
+    .panel-section-content {
+        padding: @block / 2 0 @block 0;
+
+        table {
+            thead tr {
+                th {
+                    text-align: center;
+                }
+
+                th:first-child {
+                    padding-left: @block-panel;
+                    text-align: left;
+                }
+
+                th:last-child {
+                    padding-right: @block-panel;
+                    text-align: right;
+                }
+            }
+
+            tbody tr {
+                td {
+                    text-align: center;
+                }
+
+                td:first-child {
+                    padding-left: @block-panel;
+                    text-align: left;
+                }
+
+                td:last-child {
+                    padding-right: @block-panel;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+// Hace los tr de una tabla tengan efecto hover
+.hoverTable() {
+    .panel-content table tbody tr {
+        &:hover, &.selected {
+            background-color: @brand-primary-subtle;
+        }
+    }
+}
+
+// Hace los tr de una tabla tengan efecto clicable
+.clicableTable() {
+    .panel-content table tbody tr:hover {
+        cursor: pointer;
+    }
+}

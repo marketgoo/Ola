@@ -1,0 +1,52 @@
+.cta-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    // background-color: @white;
+    .img {
+        width: 200px;
+        align-self: stretch;
+    }
+    .text {
+        h2 {
+            margin: 0;
+            font-size: @font-size-large;
+            font-weight: 400;
+            color: @gray-darker;
+        }
+        p { margin: 5px 0 0 0; }
+    }
+    button {
+        margin: 0 @block/2;
+    }
+
+    &.keywords,
+    &.rankings-keywords,
+    &.competitors,
+    &.rankings-competitors {
+        .img {
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+
+    &.keywords,
+    &.rankings-keywords {
+        .img {
+            background-image: url("/img/tasks/keyword.svg");
+        }
+    }
+    &.competitors,
+    &.rankings-competitors {
+        .img {
+            background-image: url("/img/tasks/configurecomp.svg");
+        }
+    }
+}
+
+#settings {
+    .cta-container {
+        margin: -@block/2 0 0 0;
+    }
+}

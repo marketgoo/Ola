@@ -1,0 +1,67 @@
+.content-header {
+    margin: 40px 0px 50px 0px;
+
+    h1 {
+        font-weight: 300;
+        font-size: 40px;
+        color: #333;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 18px;
+        color: #999;
+    }
+}
+
+.section-header {
+    padding: 10px 0px 10px 0px;
+
+    h1 {
+        margin: 0px;
+
+        strong {
+            font-weight: 500;
+        }
+
+        small {
+            float: right;
+            color: @gray-dark;
+            margin-top: 10px;
+        }
+    }
+}
+
+
+// Specific headers for some sections
+
+.content-header-wrapper {
+
+    .header-wizard & {
+        .icomoon-left-background(@icon-streetsign-content, @header-icon-color, 90px);
+    }
+
+    .header-mywebsites & {
+        .icomoon-left-background(@icon-layers2-content, @header-icon-color, 90px);
+    }
+
+    .header-mywebsites-add & {
+        .icomoon-left-background(@icon-square-plus-content, @header-icon-color, 90px);
+    }
+
+    .header-keywords & {
+        .icomoon-left-background(@icon-key-content, @header-icon-color, 90px);
+    }
+
+    .header-competitors & {
+        .icomoon-left-background(@icon-target-content, @header-icon-color, 90px);
+    }
+
+    .header-myprofile & {
+        .icomoon-left-background(@icon-profile-male-content, @header-icon-color, 90px);
+    }
+
+    // .header-configure & {
+    //     .icomoon-left-background(@icon-tools2-content, @header-icon-color, 90px);
+    // }
+}

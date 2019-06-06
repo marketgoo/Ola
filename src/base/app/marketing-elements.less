@@ -1,0 +1,285 @@
+// Elementos de Marketing como la página de sign-up y la de credit-card, etc
+
+.panel-signup-container {
+    .center-form(900px, 530px);
+    z-index: @zindex-navbar-fixed - 1;
+}
+
+.panel-relative {
+    width: 80%;
+    min-height: 470px;
+    margin: 0px;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.panel-signup {
+    width: 900px;
+    min-height: 470px;
+    margin: 0px;
+}
+
+.panel-signup, .panel-relative {
+    .zoomIn();
+
+    .panel-heading {
+        border-bottom: 1px solid @panel-inner-border;
+        padding: 30px;
+        background: @brand-primary;
+
+        h1 {
+            color: white;
+            font-size: 32px;
+        }
+    }
+
+    .panel-body {
+        min-height: 320px;
+    }
+
+    .credit-card-panel, .introduction-panel {
+        .make-lg-column(6);
+        padding: 30px;
+    }
+
+    .credit-card-wrapper {
+        .cc-actions {
+            padding-top: 15px;
+
+            button {
+                width: 100%;
+            }
+        }
+
+        .cc-script-error {
+            font-size: 0.9em;
+            color: @brand-danger;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 15px;
+        }
+    }
+
+    .panel-footer {
+        padding: 20px 30px;
+
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+.promo-introduction {
+    padding: 50px 90px;
+    text-align: center;
+    margin: -@panel-body-padding -@panel-body-padding @panel-body-padding -@panel-body-padding;
+    width: auto;
+
+    h2 {
+        margin: 0px;
+        line-height: 1.3em;
+    }
+}
+
+ul.check {
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+    margin: 20px 0px;
+
+    li {
+        font-size: 15px;
+        font-family: @font-family-text;
+        .icomoon(@icon-circle-check-content, @brand-success, 20px);
+        margin: 0px 0px 10px 0px;
+    }
+}
+
+p.promo-hint {
+    font-size: @font-size-smaller;
+}
+
+
+.promo-marketgoo {
+    .panel-heading {
+        .triangleDown(@brand-primary, 20px);
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .testimonials-panel {
+        padding: 25px;
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: @brand-primary;
+            font-weight: 600;
+        }
+    }
+}
+
+
+#paywall .loader {
+    top: 160px;
+}
+
+
+.promo-weebly {
+
+    .panel-heading {
+        background: @brand-primary;
+        text-align: center;
+        padding: 20px 30px;
+        h1 {
+            font-size: 24px;
+        }
+    }
+
+    .promo-header {
+        h2 {
+            color: @brand-primary;
+            font-size: 26px;
+            margin-left: 20px;
+        }
+        p {
+            margin-left: 20px;
+            font-size: 15px;
+        }
+    }
+
+    .panel-body {
+        min-height: 460px;
+
+        h2 {
+            font-weight: 500;
+        }
+    }
+
+    .credit-card-panel {
+        .total-plan {
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 30px;
+            color: @gray-darker;
+            font-weight: 500;
+            text-align: left;
+
+            span {
+                text-transform: uppercase;
+                color: @gray-dark;
+                display: block;
+                font-weight: 500;
+                font-size: @font-size-smaller;
+                margin-bottom: 5px;
+            }
+        }
+
+        .total-info {
+            font-family: @font-family-text;
+            margin-top: 25px;
+            font-size: 11px;
+            line-height: 1.5;
+        }
+    }
+
+    .powered-stripe {
+        background: url('../img/powered_by_stripe.gif') no-repeat center center;
+        background-size: 70%;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    .select-plan-table {
+        margin-bottom: 10px;
+
+        caption {
+            // Igualar los estilos de include/forms.less:119 (.control-label)
+            font-size: 17px;
+            font-weight: bold;
+            color: @gray-darker;
+            text-align: left;
+            padding: 0px 0px 5px 2px;
+            margin-bottom: 0px;
+            line-height: 1.2;
+            border-bottom: 2px solid @table-border-color;
+        }
+
+        tr {
+            cursor: pointer;
+
+            &:hover {
+                label:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+
+        .price {
+            text-align: right;
+            font-family: @font-family-base;
+            font-size: 15px;
+            padding-right: 10px;
+            color: @gray;
+            font-weight: 500;
+
+            .monthly-saving {
+                color: @brand-primary;
+                padding-left: 10px;
+            }
+        }
+        .active .price {
+            color: @gray-darker;
+            font-weight: bold;
+        }
+
+    }
+
+
+    .promo-introduction {
+        background: fadeout(@weebly-color, 90%);
+        position: relative;
+        padding: 30px 270px 30px 90px ;
+
+        &:after {
+            background: transparent url('../img/octo.png') no-repeat top left;
+            background-size: 200px;
+            content: '';
+            width: 200px;
+            height: 95px;
+            position: absolute;
+            bottom: -20px;
+            right: 50px;
+        }
+
+        h2 {
+            color: @gray-darker;
+            font-weight: normal;
+            font-size: 17px;
+            position: relative;
+
+            &:before {
+                quotes: "\201C" "\201D" "\2018" "\2019";
+                content: open-quote;
+                font-size: 80px;
+                font-family: "Times New Roman", Times, serif;
+                color: fadeout(@weebly-color, 50%);
+
+                position: absolute;
+                left: -30px;
+                top: 10px;
+            }
+        }
+    }
+
+    p.promo-hint {
+        font-size: @font-size-smaller;
+        margin-left: 35px;
+        margin-top: 7px;
+        font-style: italic;
+    }
+
+    ul.check {
+        margin: 0px 0px 20px 0px;
+    }
+}

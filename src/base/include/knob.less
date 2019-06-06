@@ -1,0 +1,218 @@
+.knob {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+
+    .background {
+        fill: @gray-dark;
+    }
+    .foreground {
+        fill: @gray-darker;
+    }
+    .icon-cont {
+        position: absolute;
+        text-align: center;
+        color: @gray-dark;
+        width:100%;
+        height: 100%;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        overflow: visible;
+    }
+    .grade{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        text-align: center;
+    }
+    &.midlarge {
+        width: 124px;
+        height: 124px;
+
+        .background {
+            fill: @gray-lighter;
+            stroke: @gray-light;
+        }
+        .foreground {
+            fill: @gray-darker;
+            stroke: @gray-darker;
+        }
+        .foregroundborder {
+            fill: @gray-darker;
+        }
+        .line {
+            fill: none;
+            stroke: none;
+        }
+        .icon-cont {
+            font-size: 50px;
+            line-height: 128px;
+
+            &.number {
+                color: @gray-darker;
+                width: auto;
+                left: 62px;
+                margin-left: -30px;
+
+                span {
+                    width: 30px;
+                    position: relative;
+                    float:left;
+                }
+            }
+        }
+        .grade {
+            font-weight: bold;
+            margin-top: 30px;
+            font-size: 50px;
+        }
+        svg {
+            .ring {
+                fill: transparent;
+                stroke: #dddddd;
+                stroke-width: 8%;
+                stroke-linecap: round;
+            }
+            .score-ring {
+                stroke: #888888;
+                stroke-width: 8%;
+                -webkit-transition: stroke-dashoffset 2s ease-out;
+                transition: stroke-dashoffset 2s ease-out;
+            }
+        }
+    }
+    &.small{
+        width:40px;
+        height:40px;
+        margin-right:10px;
+
+        .icon-cont {
+            font-size: @font-size-large;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        .grade{
+            opacity: 0;
+        }
+        svg{
+            .ring {
+                fill: transparent;
+                stroke: #dddddd;
+                stroke-width: 2%;
+                stroke-linecap: round;
+            }
+            .score-ring {
+                stroke: #888888;
+                stroke-width: 4%;
+                -webkit-transition: stroke-dashoffset 2s ease-out;
+                transition: stroke-dashoffset 2s ease-out;
+            }
+        }
+        .icon{
+            display: inline-block;
+            vertical-align:middle;
+            line-height: 1;
+            font-size: 1em;
+            margin-top: -5px;
+        }
+    }
+    &.medium{
+        width: 60px;
+        height: 60px;
+
+        .icon-cont {
+            font-size: 22px;
+            line-height: 60px;
+        }
+        .grade{
+            font-weight: bold;
+            margin-top: 17px;
+            font-size: @font-size-large;
+        }
+        svg{
+            .ring {
+                fill: transparent;
+                stroke: #aaaaaa;
+                stroke-width: 2%;
+                stroke-linecap: round;
+            }
+            .score-ring {
+                stroke: #26acfd;
+                stroke-width: 6%;
+                -webkit-transition: stroke-dashoffset 2s ease-out;
+                transition: stroke-dashoffset 2s ease-out;
+            }
+        }
+    }
+    &.large{
+        width: 150px;
+        height: 150px;
+
+        .background {
+            fill: @gray-lighter;
+            stroke: @gray-light;
+        }
+        .foreground {
+            fill: @gray-darker;
+            stroke: @gray-darker;
+        }
+        .foregroundborder {
+            fill: @gray-darker;
+        }
+        .line {
+            fill: none;
+            stroke: none;
+        }
+        .icon-cont {
+            font-size: 73px;
+            line-height: 175px;
+
+            &.number {
+                color: @gray-darker;
+                width: auto;
+                left: 87px;
+                margin-left: -40px;
+
+                span {
+                    width: 40px;
+                    position: relative;
+                    float:left;
+                }
+            }
+        }
+
+        &.ring {
+            stroke-width: 15%;
+        }
+        &.grade {
+            font-size: 70px;
+        }
+    }
+    &.xx-small {
+        width:20px;
+        height:20px;
+        margin-right:5px;
+
+        .icon-cont {
+            font-size: @font-size-smaller;
+            line-height: 19px;
+        }
+    }
+
+    &.x-small {
+        width:30px;
+        height:32px;
+        margin-right:8px;
+
+        .icon-cont {
+            font-size: @font-size-base;
+            line-height: 30px;
+        }
+    }
+}

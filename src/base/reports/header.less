@@ -1,0 +1,182 @@
+
+html.nosvg header a.logo {
+    background: transparent;
+    text-indent: 0px;
+}
+
+
+header {
+    padding: 55px 0px;
+    background-color: @header-bg;
+
+    .logo {
+        display: block;
+        color: @brand-primary;
+        font-size: 45px;
+        font-weight: bold;
+        letter-spacing: -0.04em;
+        text-rendering: optimizelegibility;
+
+        text-transform: lowercase;
+
+        background: url(@header-logo-url) left center no-repeat;
+        background-size: @header-logo-size;
+        background-position: @header-logo-position;
+        width: @header-logo-width;
+        text-indent: -9999px;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    h1, h2, h2 a {
+        text-align: right;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 1.1em;
+        margin: 0px;
+
+        color: @header-color;
+        strong {color: @header-strong-color;}
+    }
+
+    h1 {
+        margin: 9px 0px 0px 0px;
+    }
+
+    .header-info {
+        text-align: right;
+    }
+}
+
+.header-intro {
+    padding: @header-intro-padding;
+    margin: @header-intro-margin;
+    background-color: @header-intro-bg;
+
+    .triangleDown(@header-intro-triangle-color);
+
+    h1 {
+        color: @header-intro-color;
+        font-size: @header-intro-font-size;
+        font-weight: @header-intro-font-weight;
+        libe-height: @header-intro-line-height;
+        .text-center();
+
+        strong {
+            color: @header-intro-color-strong;
+        }
+    }
+}
+
+.header-summary {
+    margin-bottom: 70px;
+    position: relative;
+    z-index: @zindex-dropdown - 1;
+
+    .status {
+        h1 {
+            font-weight: 400;
+            font-size: 36px;
+            color: @header-summary-h1;
+            margin: 0px 0px 20px;
+        }
+
+        h2 {
+            color: @header-summary-h2;
+            font-size: 20px;
+            line-height: 1.2em;
+        }
+    }
+
+    .knob {
+        position: absolute;
+        top: -50px;
+        left: 168px;
+        z-index: 12;
+    }
+
+    .actions {
+        margin-top: 50px;
+
+        button, a.btn {
+            margin-right: 20px;
+        }
+    }
+}
+
+.screenshot {
+
+    .imac {
+        width: 225px;
+        height: 188px;
+    }
+
+    .imac-glare {
+        z-index: 11;
+        position: absolute;
+        top: 0px;
+        left: 20px;
+        width: 225px;
+        height: 136px;
+    }
+  
+    .header-screenshot {
+        width: 205px;
+        height: 115px;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        background-size: 100%;
+
+        &:after {
+            background: url("../../img/freereport/iMac-big-glare.png") top left no-repeat;
+            background-size: 100%;
+            content: " ";
+            width: 130px;
+            height: 130px;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+    }
+
+    figure {
+        width: 225px;
+        padding: 185px 0px 0px 0px;
+
+        background: url("../../img/freereport/iMac-big.png") top left no-repeat;
+        background-size: 100%;
+
+        figcaption {
+            color: @gray-dark;
+            font-size: @font-size-small;
+            font-family: @font-family-text;
+
+            p {
+                text-align: center;
+                margin: 3px;
+            }
+
+            span {
+                color: @gray-darker;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.download-pdf-button {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a.details-caret {
+    text-align: center;
+    color: @gray;
+
+    img {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,47 @@
+// Tenemos que recrear algunos mixins que no están disponibles en los fuentes
+// del Bootstrap. Posiblemente en un futuro los implementen, así que tenemos
+// que estar preparados para quitarlos.
+
+.scale3d(@x; @y; @z) {
+    transform: scale3d(@x, @y, @z);
+}
+
+.animation-fill-mode(@mode) {
+    animation-fill-mode: @mode;
+}
+
+.transform-none() {
+    transform: none;
+}
+
+
+// Las siguientes animaciones están basadas (copiadas, vamos) de la librería
+// Animate.css: http://daneden.github.io/animate.css/
+
+.animated {
+    .animation-duration(0.5s);
+    .animation-fill-mode(both);
+}
+
+.animated.infinite {
+    .animation-iteration-count(infinite);
+}
+
+.animated.hinge {
+    .animation-duration(2s);
+}
+
+@import "animations/bounceIn.less";
+@import "animations/bounceUp.less";
+@import "animations/fadeInLeft.less";
+@import "animations/fadeInRight.less";
+@import "animations/fadeInDown.less";
+@import "animations/fadeInUp.less";
+@import "animations/zoomIn.less";
+@import "animations/jellyBounce.less";
+@import "animations/fadeInFadeOut.less";
+
+// Para que los elementos de "wow" no aparezcan inicialmente
+.wow {
+    visibility: hidden;
+}

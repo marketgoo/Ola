@@ -1,0 +1,74 @@
+.email-settings{
+    .panel-footer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dropdown-body{
+        left: -318px;
+        top: -191px;
+    }
+
+    .dropdown-trigger{
+        &:after{
+            display: none;
+        }
+    }
+}
+.email-item-container {
+    // Para el flexbox queremos que los elementos se espacien entre ellos sin
+    // dejar espacio alrededor y que estén alineados verticalmente arriba.
+    // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 0px 0px 0px;
+
+    // Ajuste del checkbox inicial para que se alinie correctamente
+    .checkbox {
+        display: flex;
+        align-items: center;
+        label{
+            margin-left: 15px;
+        }
+    }
+
+    .email-recipients-prefix, .email-recipients-separator{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+    .email-recipients-prefix{
+        margin-left: 5px;
+    }
+}
+
+.email-recipients-container {
+    //.bootstrap-tagsinput();
+
+    // Modificar los elementos que no queremos de "bootstrap-tagsinput"
+    border: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    min-height: auto;
+    color: @gray;
+    font-weight: normal;
+
+    // Alinear correctamente el elemento en el flex-box
+    // Flex-grow a "3" indica que queremos que este elemento tenga al menos
+    // tres veces más tamaño que el resto (es una proporción)
+    // https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    flex-grow: 3;
+}
+
+#popover-add-recipient {
+    max-width: 494px;
+    padding: 15px 25px;
+    width: 450px;
+    font-family: inherit;
+        button{
+            float: right;
+            margin-bottom: 15px;
+        }
+}

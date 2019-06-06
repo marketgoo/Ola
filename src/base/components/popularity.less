@@ -1,0 +1,32 @@
+.popularity-section-content {
+    display: grid;
+    grid-column-gap: @block;
+    grid-template-columns: repeat(2, 1fr);
+
+    .popularity-kpis {
+        display: grid;
+        grid-column-gap: @block;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        .kpi-value{
+            font-size: 60px;
+            margin-top: -10px;
+        }
+    }
+
+    #popularity-linking-to-you-container {
+        .download-button {
+            text-align: center;
+            margin-top: @block;
+        }
+
+        .icon-cloud-download{
+            margin-right: 8px;
+            font-size: 15px;
+            position: relative;
+            top: 2px;
+        }
+
+    }
+
+}

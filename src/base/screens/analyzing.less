@@ -1,0 +1,65 @@
+.wizard.analyzing {
+
+    .wizard-wrapper {
+        align-items: baseline;
+    }
+
+    .waves {
+        margin-top: -150px;
+        margin-bottom: -3px;
+        width: 100%;
+    }
+
+    .panel-wizard {
+
+        .scan-info {
+
+            padding: 70px 0px 0px 300px;
+            background-image: url("/img/illustrations/header_ceo.svg");
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-position: 40px 110px;
+
+            .progressbar {
+                position: relative;
+                top: 0px;
+                right: 0px;
+            }
+
+            &.error {
+                padding: 20px 0px 50px 300px;
+                background-position: 40px 40px;
+                background-image: url("/img/illustrations/no500.svg");
+            }
+
+            // Waiting state
+            &.waiting h1 {
+                padding-top: 50px;
+            }
+
+        }
+    }
+
+    .error-info {
+        padding: 35px 50px;
+        .icomoon(@icon-info2-content, @gray-light, 40px);
+
+        // Para modificar el layout del icono...
+        &:before {
+            float: left;
+        }
+
+        h4 {
+            margin: 0px 0px 10px 65px;
+            font-weight: 500;
+            font-size: @font-size-medium;
+            color: @gray-dark;
+        }
+
+        p {
+            font-size: 12px; // @font-size-small;
+            margin: 0px 0px 0px 65px;
+        }
+    }
+
+}

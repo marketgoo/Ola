@@ -1,0 +1,64 @@
+.barchart {
+    .bars {
+        .bar {
+            height: 150px;
+            position: relative;
+            padding: 0;
+
+            .fill {
+                position: absolute;
+                bottom: 0;
+                background-color: #E5F6D2;
+                width: 100%;
+                .percent {
+                    margin-top: -20px;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .legend {
+        border-top: solid 1px @gray-light;
+        padding-top: 20px;
+
+        .source {
+            font-size: 15px;
+            padding: 0;
+        }
+
+        // Auto-icon definitions
+        .source-direct      { .icomoon(@icon-location-content); }
+        .source-referrals   { .icomoon(@icon-reply-content); }
+        .source-search      { .icomoon(@icon-search2-content); }
+        .source-social      { .icomoon(@icon-speech-bubble-content); }
+        .source-mail        { .icomoon(@icon-mail-content); }
+        .source-paid        { .icomoon(@icon-monitor-content); }
+
+        // Note: Keep the following definition after above icon definitions
+        // It is used to reset some CSS properties global to .icomoon() mixin
+        // (Due to the CSS specificity it will not apply)
+        .source:before {
+            display: block;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            top: 0px;
+        }
+    }
+}
+
+
+// In order to center the barchart columns, we need to create a col-offset
+// of half of a colum. We take advantage of having 6 colums so each bar
+// takes 2 of each "col-*". Problem is, we have a full col of empty space
+// at either side of the chart. We CAN NOT use the text-center mixin to
+// center columns, but we can use a "col-offset-half" to push the first col
+// to the right and thus have the chart center visually.
+//
+// We need to create 4 of those, one for each of "xs", "sm", "md" and "lg"
+// It turns out it's pretty easy using the bootstrap mixins:
+.col-xs-offset-half, .col-sm-offset-half, .col-md-offset-half, .col-lg-offset-half {
+  margin-left: percentage((0.5 / @grid-columns));
+}

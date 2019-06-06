@@ -10,6 +10,11 @@ export { PanelContent } from './Panel/Content'
 export { PanelFooter } from './Panel/Footer'
 export { PanelHeader } from './Panel/Header'
 
+export { Modal } from './Modal'
+export { ModalFooter } from './Modal/Footer'
+export { ModalHeader } from './Modal/Header'
+export { ModalContent } from './Modal/Content'
+
 export { Input } from './Input'
 export { Field } from './Field'
 export { FieldDescription } from './FieldDescription'

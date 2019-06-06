@@ -1,0 +1,166 @@
+// This file is the root include for icons based on "icomoon".
+// The include "icomoon.less" is AUTOMATICALLY generated from Icomoon.io, so
+// IT WILL BE ERASED AND REGENERATED EACH TIME WE CHANGE ICONS
+//
+// Define the font-family name used for icons. This SHOULD be equal to the
+// font family defined in "icomoon.less" generated from Icomoon.io
+@icon-font-family: "custom-icons";
+
+@font-face {
+    font-family: 'custom-icons';
+    src:url('/fonts/custom-icons.eot?scbg9z');
+    src:url('/fonts/custom-icons.eot?#iefixscbg9z') format('embedded-opentype'),
+        url('/fonts/custom-icons.woff?scbg9z') format('woff'),
+        url('/fonts/custom-icons.ttf?scbg9z') format('truetype'),
+        url('/fonts/custom-icons.svg?scbg9z#custom-icons') format('svg');
+        font-weight: normal;
+        font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: @icon-font-family;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+// Import all icon definitions for classes
+@import "icomoon.less";
+
+// Extract all icon-classes definitions to the global namespace
+.icon-classes();
+
+.make-round-icon(@glyph: @icon-check-content, @color: @brand-success) {
+    content: @glyph;
+    color: @color;
+    border: 0.1em solid @color;
+    .border-radius(50%);
+    background-color: @white;
+    padding: 4px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+
+    // Imported from .icomoon()
+    font-family: @icon-font-family;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-success:before {
+    .make-round-icon(@icon-check-content, @brand-success);
+    font-size: 23px;
+}
+
+.icon-fail:before {
+    .make-round-icon(@icon-cross-content, @brand-danger);
+    font-size: 23px;
+}
+
+// Less mixin to transform any element into an icon
+
+.iconized-left {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-right: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconized-right {
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-left: 0.5em;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -0.1em;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon(@glyph: @icon-check-content)
+{
+    &:before {
+        &:extend(.iconized-left);
+        font-family: @icon-font-family;
+        content: @glyph;
+    }
+}
+
+.icomoon(@glyph: @icon-check-content, @color, @size, @margin:0.5em)
+{
+    .icomoon(@glyph);
+
+    &:before {
+        color: @color;
+        font-size: @size;
+        margin-right: @margin;
+    }
+}
+
+.icomoon-after(@glyph: @icon-check-content)
+{
+    &:after {
+        &:extend(.iconized-right);
+        font-family: @icon-font-family;
+        content: @glyph;
+    }
+}
+
+.icomoon-left-background(@glyph: @icon-check-content, @color, @size)
+{
+    .icomoon(@glyph);
+
+    &:before {
+        color: @color;
+        font-size: @size;
+        float: left;
+        top: 0px;
+    }
+}
+
+.icomoon-after(@glyph: @icon-check-content, @color, @size)
+{
+    .icomoon-after(@glyph);
+
+    &:after {
+        color: @color;
+        font-size: @size;
+    }
+}

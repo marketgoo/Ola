@@ -1,0 +1,36 @@
+.ola_modal {
+    position: fixed;
+    top: var(--size-10);
+    border-radius: var(--radius);
+    border: none;
+    box-shadow: var(--shadow-3);
+    max-width: 850px;
+    width: calc(100% - var(--size-9));
+}
+.ola_modal-header {
+    padding: var(--size-7) var(--size-8) 0;
+}
+.ola_modal-title {
+    margin: 0;
+    font: var(--font-headline);
+    font-weight: var(--regular);
+}
+.ola_modal-intro {
+    margin-top: var(--size-3);
+    font: var(--font-callout);
+    color: var(--gray);
+}
+.ola_modal-content {
+    padding: var(--size-8);
+}
+.ola_modal-footer {
+    padding: 0 var(--size-8) var(--size-7);
+    display: flex;
+}
+.ola_modal-buttons {
+    margin-left: auto;
+}
+
+.ola_modal + .backdrop {
+    background: rgba(0, 0, 0, .5);
+}

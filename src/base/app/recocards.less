@@ -1,0 +1,710 @@
+@import "../include/animations.less";
+
+.recocard-wrapper {
+    z-index: @zindex-modal-background;
+    .transition( ~"opacity .2s linear 0s, visibility 0s linear .2s" );
+    background: @modal-backdrop-bg; // fadeout(black, 40%);
+
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+
+    &.recocard-active {
+        opacity: 1;
+        visibility: visible;
+        .transition-delay(0s);
+    }
+
+    .close-handle {
+        .icomoon(@icon-cross-content, @white, 24px);
+        z-index: 1;
+        cursor: pointer;
+        position: absolute;
+        top: @modal-inner-padding + 5;
+        right: @modal-inner-padding;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+
+        &:hover:before {
+            color: @brand-primary-dark;
+        }
+    }
+}
+
+.instrucctions-wrapper {
+    .instructions-actions {
+        text-align: right;
+    }
+}
+
+
+.recocard-enter {
+    opacity: 0.01;
+    transform: matrix(0.9, 0, 0, 0.9, 200, 0);
+    transition: opacity .2s ease-out, transform .2s ease-out;
+}
+
+.recocard-enter-active {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.recocard-leave {
+    opacity: 1;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transition: opacity .2s ease-out, transform .2s ease-out;
+}
+
+.recocard-leave-active {
+    opacity: 0.01;
+    transform: matrix(0.9, 0, 0, 0.9, -150, 0);
+}
+
+
+
+.recocard-center-enter {
+    transform: scale(0.9, 0.9);
+    transition: transform .3s ease-out;
+}
+
+.recocard-center-enter-active {
+    transform: scale(1, 1);
+}
+
+.recocard-center-leave {
+    transform: scale(1, 1);
+    transition: transform 0.3s ease-out;
+}
+
+.recocard-center-leave-active {
+    transform: scale(0.9, 0.9);
+}
+
+
+
+.recocard-modal {
+
+    // Modal bootstrap styles override
+    .modal-content {
+        border: none;
+        border-radius: @border-radius-smaller;
+        .box-shadow(0px 0px 90px rgba(0,0,0,.5));
+
+        // To give space at the bottom so scrolling down doesn't get stuck
+        margin-bottom: 100px;
+        min-width: @card-width;
+    }
+
+    .modal-header {
+        padding: @modal-inner-padding @modal-inner-padding;
+        background: @brand-primary;
+        border-radius: @border-radius-smaller @border-radius-smaller 0 0;
+
+        h1 {
+            color: @white;
+            margin: 0px;
+            font-size: 23px;
+            font-weight: 500;
+            padding-right: 35px;
+
+            strong {
+                color: @white;
+            }
+        }
+    }
+
+    .section-site h1 {
+        .icomoon(@icon-desktop-content);
+    }
+
+    .section-search h1 {
+        .icomoon(@icon-controls-content);
+    }
+
+    .section-content h1 {
+        .icomoon(@icon-content-content);
+    }
+
+    .section-popularity h1 {
+        .icomoon(@icon-popularity-content);
+    }
+
+    .section-social h1 {
+        .icomoon(@icon-social-content);
+    }
+
+    .section-mobile h1 {
+        .icomoon(@icon-mobile-content);
+    }
+
+    .modal-ribbon {
+        .icomoon(@icon-graduation-content, inherit, 1.5em);
+        padding: (@modal-inner-padding / 2) @modal-inner-padding;
+        background-color: @card-ribbon-bg;
+        color: @card-ribbon-color;
+        font-family: @font-family-text;
+        font-weight: 500;
+        .triangleDown(@card-ribbon-bg, 10px);
+
+        .date {
+            float: right;
+        }
+    }
+
+    .modal-ribbon-warning {
+        .icomoon(@icon-warning-content);
+        background-color: fadeout(@brand-warning, 80%);
+        color: darken(@brand-warning, 20%);
+        .triangleDown(fadeout(@brand-warning, 80%), 10px);
+    }
+
+    .modal-body {
+        padding-left: (@modal-inner-padding * 2) + 10px;
+        padding-right: (@modal-inner-padding * 2) + 10px;
+
+        h2 {
+            font-size: @font-size-larger;
+            font-weight: 400;
+            margin: 0px 0px 10px;
+            color: #444;
+        }
+
+        h5 {
+            font-size: @font-size-larger;
+            font-weight: 500;
+            margin: 20px 0px 10px;
+            color: #444;
+            .icomoon(@icon-loader-content);
+        }
+
+        li {
+            font-family: @font-family-text;
+            line-height: 1.5em;
+            font-size: @font-size-base;
+        }
+
+        ul, ol {
+            margin: 20px 0px 20px;
+
+            * + * {
+                margin: 5px 0px 0px;
+            }
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: @font-size-base;
+        }
+        .card-about-block {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .keyword-intro {
+        // border: 1px solid @gray-light;
+        background: @card-background-color;
+
+        border-radius: @border-radius-small;
+        padding: 20px;
+        margin: 0px -20px 20px -20px;
+
+        p {
+            margin: 0px;
+        }
+
+        .keyword {
+            font-size: 18px;
+            font-weight: 500;
+            color: @gray-darker;
+            text-align: center;
+        }
+    }
+
+    .card-info-block {
+        margin: 20px 0px 0px 0px;
+
+        h2 {
+            color: #444;
+            .icomoon(@icon-bell-content);
+        }
+    }
+
+    .card-extra {
+        height: 200px;
+        overflow: auto;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 30px 20px;
+
+        h4 {
+            font-weight: 500;
+            color: #444;
+        }
+
+        ul {
+            li {
+                font-size: @font-size-smaller;
+                margin: 0px;
+            }
+        }
+    }
+
+    /*
+     * RECOCARD EXTRA SCROLLBAR
+     * Avoids scrollbar dissapearance for wheelless devices
+     */
+    .card-extra {
+        overflow-y: auto;
+    }
+
+    .card-extra::-webkit-scrollbar {
+        -webkit-appearance: none;
+        &:vertical {
+            width: 11px;
+        }
+        &:horizontal {
+            height: 11px;
+        }
+    }
+
+    .card-extra::-webkit-scrollbar-thumb {
+        border-radius: @border-radius-small;
+        border: 2px solid white; /* should match background, can't be transparent */
+        background-color: #C4C4C4;
+    }
+    /* END OF RECOCARD EXTRA SCROLLBAR */
+
+    .extra-table {
+        a {
+            font-family: "Courier New", Courier, sans-serif;
+            color: darken(@brand-primary, 30%);
+        }
+
+        .pagina {
+            margin-bottom: 10px;
+
+            .icomoon(@icon-paper-content);
+            &:before {
+                float: left;
+                line-height: 23px;
+            }
+
+            strong {
+                max-width: 550px;
+                color: #444;
+                font-weight: 500;
+                display: block;
+                font-size: 15px;
+                line-height: 21px;
+                .ellipsis();
+            }
+            a {
+                display: block;
+                max-width: 550px;
+                margin-left: 20px;
+                font-size: 13px;
+                .ellipsis();
+            }
+        }
+
+        .broken-links {
+            margin: 10px 0px 20px;
+        }
+
+        .images-noalt {
+            margin: 10px 0px 20px;
+
+            li {
+                white-space: nowrap;
+            }
+        }
+
+        .inner-info {
+            margin: 5px 20px 15px;
+        }
+    }
+
+    .card-extra-container {
+        border-radius: @border-radius-small;
+        background: @card-extra-bg;
+    }
+    .extra-info-controls {
+        text-align: center;
+        margin-top: 10px;
+        padding: 20px 0px;
+    }
+
+    .card-youdo-block {
+        background: @card-background-color;
+        padding: 20px;
+        border-radius: @border-radius-small;
+        margin: 20px 0px 0px 0px;
+
+        h2 {
+            color: #444;
+            .icomoon(@icon-cog-content);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 26px;
+        }
+    }
+
+    .card-done-block {
+        padding: 20px 0px;
+
+        ul, ol {
+            margin: 0px;
+
+            * + * {
+                margin: 0px 0px;
+            }
+        }
+
+        .list-group-item {
+            background: transparent;
+            &.subtask-pending{
+                cursor: pointer;
+                &:hover {
+                    color: @list-group-link-heading-color
+                }
+            }
+        }
+
+        .list-done .list-group-item {
+            .icomoon(@icon-circle-check-content, @brand-success, 25px);
+        }
+
+        .list-fail .list-group-item {
+            .icomoon(@icon-circle-cross-content, @brand-danger, 25px);
+            &:before {
+                top: -0.05em;
+            }
+            .icomoon-after(@icon-cross-content, @gray-light, 15px);
+            &:after {
+                position: absolute;
+                right: 15px;
+                top: 7px;
+                opacity: 0;
+                margin-right: 0px;
+                padding: 4px;
+                border-radius: 50%;
+                border: 1px solid transparent;
+            }
+            &:hover:after {
+                color: darken(@gray-light, 20%);
+            }
+        }
+
+        .instructions {
+            margin: 10px 0px 5px;
+            background: @gray-lighter;
+            padding: 10px;
+            border-radius: @border-radius-smaller;
+            overflow: hidden;
+
+            li, p, code, pre {
+                font-size: 13px;
+                line-height: 1.4em;
+            }
+
+            * + * {
+                margin-top: 5px;
+            }
+
+            pre {
+                margin: 10px 0px;
+                border-radius: 5px;
+                font-family: "Courier New", Courier, sans-serif;
+            }
+
+            h5 {
+                margin: 0px 0px 10px 0px;
+                font-size: 16px;
+                font-family: @font-family-base;
+
+                &:before {
+                    content: @icon-image-content;
+                }
+            }
+        }
+
+        .example {
+            margin: 20px 10px 10px 20px;
+            padding: 20px;
+            background: lighten(@brand-primary, 35%);
+            border-radius: @border-radius-smaller;
+        }
+    }
+
+    .card-why-block {
+        margin: 20px 0px 0px 0px;
+
+        h2 {
+            color: #444;
+            .icomoon(@icon-speech-bubble-content);
+        }
+    }
+
+    .card-help-block {
+        margin: 20px 0px 0px 0px;
+
+        h2 {
+            color: #444;
+            .icomoon(@icon-help-content);
+        }
+    }
+
+    .card-completed {
+        padding: 40px 50px 30px 50px;
+
+        border-radius: @border-radius-small;
+        background: #EAFAD8;
+
+        .icomoon(@icon-circle-check-content);
+        &:before {
+            // color: fadeout(@brand-primary, 80%);
+            color: @brand-success;
+            font-size: 100px;
+            line-height: 100px;
+            text-align: center;
+            top: 0px;
+            left: 50%;
+            margin-left: -50px;
+            margin-top: 125px;
+            position: absolute;
+        }
+
+        h2 {
+            // color: @gray;
+            font-size: 36px;
+            font-weight: 300;
+            margin: 0px 0px 150px;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #375C38; // @gray-darker;
+            font-family: @font-family-base;
+            font-size: 16px;
+        }
+    }
+
+    .modal-footer {
+        background: @card-background-color;
+        border-radius:  0 0 @border-radius-smaller @border-radius-smaller;
+        padding: @modal-inner-padding (@modal-inner-padding * 2);
+        text-align: left;
+
+        button.btn-primary {
+            float: right;
+        }
+
+        // Estilos temporales para el mensaje del producto Start y el footer
+        // de las reco cards.
+        h3.header {
+            margin: 5px 0px;
+        }
+    }
+
+    &.recocard-busy .modal-footer {
+        .striped-animation();
+    }
+
+    .modal-notification {
+        padding: @modal-inner-padding (@modal-inner-padding * 2);
+        text-align: left;
+        background: darken(@brand-primary, 15%);
+
+        // Este z-index es para contrarestar el z-index: 2 del "button:active"
+        // que impone Bootstrap en "button-groups.less".
+        z-index: 10;
+
+        // Tenemos que quitarle un poco de radius a las esquinas porque
+        // teniendo un color más oscuro sobre fondo blanco y además
+        // contrastado con el fondo super oscuro del shim hace aparecer una
+        // especie de "halo" alrededor de las esquinas.
+        border-radius:  0 0 (@border-radius-smaller - 1) (@border-radius-smaller - 1);
+
+        // Posicionar absolutamente la notificación nos permite hacer cosas
+        // chulas más adelante (p.ej: una notificación a full-screen, etc)
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+
+        button.btn-primary {
+            float: right;
+            margin-left: @modal-inner-padding * 2;
+        }
+
+        p {
+            color: white;
+            margin: 0px;
+        }
+
+        .header {
+            font-family: @font-family-base;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+    }
+
+    .modal-notification-success:before {
+        .make-round-icon(@icon-check-content, @white);
+        background-color: transparent;
+        float: left;
+        font-size: 27px;
+        margin-right: 20px;
+    }
+
+    .modal-freezer {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: white;
+        opacity: 0.2;
+        cursor: wait;
+    }
+
+    // Reposition the dialog
+    &.modal-dialog {
+        position: absolute;
+        width: @card-width;
+        margin-left: -@card-width / 2;
+        margin-bottom: 0px;
+
+        //top: 10vh;
+        left: 50%;
+    }
+
+    .dropup .dropdown-menu {
+        bottom: -75%;
+    }
+
+    .dropdown-menu {
+        .box-shadow(none);
+        padding: 12px 0px;
+        border: 0px;
+        left: -10%;
+        border-radius: @border-radius-large;
+        background: @dropdown-bg;
+
+        li {
+            a {
+                font-size: 1.1em;
+                font-weight: 500;
+                line-height: 1.8em;
+                color: @dropdown-link-color;
+                text-transform: uppercase;
+
+                &:hover {
+                    background: @dropdown-link-hover-bg;
+                    color: @dropdown-link-hover-color;
+                }
+            }
+            &.wmsend  a { .icomoon(@icon-mail-content); }
+            &.rmweek  a { .icomoon(@icon-bell-content); }
+            &.discard a { .icomoon(@icon-cross-content); }
+        }
+    }
+
+    .open .dropdown-menu {
+        .jellyBounce();
+    }
+
+    ul.list-group-keywords {
+        margin: 40px 50px 0px 50px;
+
+        li {
+            font-family: @font-family-base;
+            font-weight: 500;
+            font-size: 16px;
+            color: #444;
+            cursor: pointer;
+            .icomoon("\00a0\00a0");
+
+            &:hover {
+                background: @brand-primary;
+                color: @white;
+            }
+
+            &.selected {
+                background: @brand-success;
+                .icomoon(@icon-check-content);
+                color: @white;
+                cursor: default;
+            }
+            &.linked {
+                .icomoon(@icon-link-content);
+                color: @gray;
+                background: @gray-light;
+            }
+        }
+    }
+}
+
+
+.reco-notification-enter {
+    perspective: 1050px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate3d(1, 0, 0, -90deg);
+}
+
+.reco-notification-enter-active {
+    transform: rotate3d(1, 0, 0, 0deg);
+}
+
+.reco-notification-leave {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.reco-notification-leave-active {
+    opacity: 0.01;
+}
+
+
+
+
+.extra-info-enter {
+    perspective: 1050px;
+    transition: all 0.3s ease-in-out;
+    transform: rotate3d(1, 0, 0, -90deg);
+    transform-origin: 0% 0%;
+    max-height: 0px;
+}
+
+.extra-info-enter-active {
+    transform: rotate3d(1, 0, 0, 0deg);
+    max-height: 200px;
+}
+
+.extra-info-leave {
+    perspective: 1050px;
+    transform-origin: 0% 0%;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    transform: rotate3d(1, 0, 0, 0deg);
+    max-height: 200px;
+}
+
+.extra-info-leave-active {
+    opacity: 0.01;
+    transform: rotate3d(1, 0, 0, -90deg);
+    max-height: 0px;
+}

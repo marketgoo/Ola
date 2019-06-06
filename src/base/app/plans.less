@@ -1,0 +1,143 @@
+.pricing-header {
+    padding: 25px 0;
+}
+
+.pricing {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 0;
+
+    .plan {
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+
+        .panel-heading {
+            color: white;
+            background-color: @brand-primary;
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 0;
+            border-right: solid 1px darken(@brand-primary, 10%);
+            border-bottom: 0;
+            font-size: 18px;
+            height: 285px;
+
+            strong {
+                font-size: @font-size-large;
+            }
+
+            .price {
+                font-size: 60px;
+                margin-top: 20px;
+                margin-bottom: 25px;
+                font-weight: 600;
+                .coin, .period {
+                    font-size: 23px;
+                    color: lighten(@brand-primary, 20%);
+                }
+            }
+
+            .checkbox {
+                margin-top: -31px;
+            }
+
+            .btn-subscribe {
+                margin-top: 10px;
+            }
+        }
+
+        .panel-body {
+            text-align: center;
+            border-radius: 0 0 0 0;
+            border-right: solid 1px @gray-light;
+            padding: 30px;
+            font-size: 16px;
+            height: 575px;
+
+            p {
+                font-family: @font-family-base;
+            }
+
+            & > p {
+                color: @brand-primary;
+                font-weight: 500;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+                margin-top: 30px;
+
+                li {
+                    padding: 22px 0;
+                    text-align: left;
+                    position: relative;
+                    margin-left: 45px;
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        height: 1px;
+                        background-color: #eeeeee;
+                        margin: 0 29px;
+                        position: absolute;
+                        bottom: -5px;
+                        left: -15px;
+                        right: 20px;
+                    }
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    &:before {
+                        margin-right: 15px;
+                        font-size: 22px;
+                        color: @brand-primary;
+                        position: absolute;
+                        left: -40px;
+                    }
+
+                    p {
+                        margin: 0;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+        }
+
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+            .panel-heading {
+                border-radius: 5px 0 0 0;
+            }
+            .panel-body {
+                border-radius: 0 0 0 5px;
+            }
+        }
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+            .panel-heading {
+                border-radius: 0 5px 0 0;
+                border-right: none;
+            }
+            .panel-body {
+                border-radius: 0 0 5px 0;
+                border-right: none;
+            }
+        }
+    }
+}
+
+.cancel-plan-button{
+    cursor: pointer;
+}
+
+.pricing-footer {
+    border-top: solid 1px darken(@gray-light, 8%);
+    padding: 25px 50px;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,85 @@
+// Footnotes
+// NOTA: Tenemos que poner estos "!important" obligatoriamente porque
+// algunos tooltips hacen cambios de color en el :before para el icono que
+// son más específicos que los que podamos añadir aquí.
+//
+// Algunas propiedades importantes a cambiar son:
+// color position font-*
+//
+@media print {
+
+    span.info-tooltip {
+        float: footnote !important;
+        counter-increment: footnote;
+        content: attr(data-content);
+
+        font-size: 6pt;
+        line-height: 8pt;
+        color: @gray-dark !important;
+        font-family: @font-family-text;
+        font-weight: 300;
+        text-align: justify;
+
+        margin: 0 0 8pt 0 !important;
+        display: block !important;
+        position: static !important;
+        width: 50%;
+        height: auto;
+
+        &:before {
+            // Elimina los iconos que aparecen como "hovers" en la app
+            content: "";
+
+            //// Lo siguiente hace aparecer el contenido de "data-title" como
+            //// encabezado "strong" del footnote
+            // content: attr(title);
+            // margin: 0 0 2pt 0 !important;
+            // display: block !important;
+            // position: static !important;
+            // font-weight: bold !important;
+            // color: black !important;
+            // font-size: 10pt;
+            // font-family: @font-family-base;
+        }
+
+        &:after {
+            // Elimina los iconos que aparecen como "hovers" en la app
+            content: "";
+        }
+    }
+
+    .info-tooltip::footnote-call {
+        content: counter(footnote, decimal);
+        position: relative;
+        top: -2pt;
+
+        font-size: 5pt;
+        font-weight: 300;
+        line-height: 5pt;
+        margin-left: 6pt;
+        border-radius: 50%;
+        padding: 0.5pt 2.5pt 1pt;
+
+        color: @gray-darker;
+        background: @gray-light;
+        border: 1pt solid @gray-light;
+    }
+
+    .info-tooltip::footnote-marker {
+        content: counter(footnote, decimal);
+
+        font-size: 5pt;
+        font-weight: 300;
+        line-height: 6.5pt;
+        margin-right: 8pt;
+        width: 2.5mm;
+        height: 2.5mm;
+        text-align: center;
+        border-radius: 50%;
+
+        color: @gray-darker;
+        background: @gray-light;
+        border: 1pt solid @gray-light;
+    }
+
+}

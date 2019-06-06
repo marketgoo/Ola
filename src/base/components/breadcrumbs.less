@@ -1,0 +1,21 @@
+.breadcrumb {
+    .center-container(flex, auto);
+    margin-top: -@block;
+    margin-bottom: @block;
+    padding: 0;
+    li {
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        text-align: center;
+        margin: 0px 10px 0px 0px;
+        background-color: darken(@gray, -25%);
+        color: transparent;
+        &.active {
+            background-color: #000000;
+        }
+        &.step- {
+            &:before { color: #ffffff }
+        }
+    }
+}
