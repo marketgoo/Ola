@@ -47,6 +47,9 @@
     --font-callout: var(--size-5) / 1.38 var(--font-ui);
     --font-caption: var(--size-4) / 1.42 var(--font-ui);
 
+    --font-display-spacing: -0.03em;
+    --font-title-spacing: -0.015em;
+
     /* Shadows */
     --shadow-1: 0 1px 3px #0003, 0 0 0 1px #0001;
     --shadow-2: 0 2px 6px #0003;
