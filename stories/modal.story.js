@@ -17,14 +17,12 @@ storiesOf('Modal', module)
   .addDecorator(story => <div className="ola preview-centered is-wide">{story()}</div>)
   .add('All elements', () => (
     <Modal>
-      <ModalHeader title="Modal Header" intro="Lorem ipsum for testing intro">
-        Optional extra content
-      </ModalHeader>
+      <ModalHeader title="Modal Header" intro="Lorem ipsum for testing intro" />
       <ModalContent>
         <p>Modal content</p>
       </ModalContent>
       <ModalFooter>
-        <ButtonGroup>
+        <ButtonGroup reversed>
           <Button variant='primary'>Primary</Button>
           <Button variant='secondary'>Default Button</Button>
         </ButtonGroup>
