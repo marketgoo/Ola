@@ -1,6 +1,5 @@
 .ola_modal {
     background: var(--white);
-    position: fixed;
     top: var(--size-10);
     border-radius: var(--radius);
     border: none;
