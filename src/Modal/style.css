@@ -23,9 +23,14 @@
     right: var(--size-4);
     color: var(--black);
     border-radius: var(--radius-big);
+    outline: 0;
 
     &:hover {
         background: var(--gray-xlight);
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 4px var(--brand-focus);
     }
 
     &:active {
