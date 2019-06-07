@@ -20,8 +20,8 @@
     }
 
     &:last-child > .ola_searchField-input {
-        border-top-right-radius: var(--radius);
-        border-bottom-right-radius: var(--radius);
+        border-top-right-radius: var(--radius-big);
+        border-bottom-right-radius: var(--radius-big);
     }
 
     &:not(:last-child) > .ola_searchField-input {

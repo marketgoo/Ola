@@ -1,14 +1,41 @@
 .ola_modal {
     background: var(--white);
-    top: var(--size-10);
     border-radius: var(--radius);
     border: none;
     box-shadow: var(--shadow-3);
     max-width: 850px;
-    width: calc(100% - var(--size-9));
+    margin: 8vh auto;
+    animation: modal-show .5s;
+    animation-fill-mode: both;
+    position: relative;
 }
+
 .ola_modal-header {
     padding: var(--size-7) var(--size-8) 0;
+}
+.ola_modal-close {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: var(--size-4);
+    right: var(--size-4);
+    color: var(--black);
+    border-radius: var(--radius-big);
+
+    &:hover {
+        background: var(--gray-xlight);
+    }
+
+    &:active {
+        background: var(--gray-light);
+    }
+
+    & svg {
+        path: currentColor;
+        display: block;
+    }
 }
 .ola_modal-title {
     margin: 0;
@@ -26,4 +53,30 @@
 .ola_modal-footer {
     padding: 0 var(--size-8) var(--size-7);
     display: flex;
+}
+.ola_modal-overlay {
+    background: #0006;
+    position: fixed !important;
+    z-index: 10;
+    margin: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    box-sizing: border-box;
+    padding: var(--size-8);
+    overflow: auto;
+}
+
+@keyframes modal-show {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        transform: translateY(0);
+    }
 }
