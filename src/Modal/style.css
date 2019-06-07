@@ -7,10 +7,35 @@
     margin: 8vh auto;
     animation: modal-show .5s;
     animation-fill-mode: both;
+    position: relative;
 }
 
 .ola_modal-header {
     padding: var(--size-7) var(--size-8) 0;
+}
+.ola_modal-close {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: var(--size-4);
+    right: var(--size-4);
+    color: var(--black);
+    border-radius: var(--radius-big);
+
+    &:hover {
+        background: var(--gray-xlight);
+    }
+
+    &:active {
+        background: var(--gray-light);
+    }
+
+    & svg {
+        path: currentColor;
+        display: block;
+    }
 }
 .ola_modal-title {
     margin: 0;
