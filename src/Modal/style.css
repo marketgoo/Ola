@@ -25,6 +25,10 @@
     border-radius: var(--radius-big);
     outline: 0;
 
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
     &:hover {
         background: var(--gray-xlight);
     }
