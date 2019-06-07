@@ -61,7 +61,6 @@
 }
 .ola_modal-footer {
     padding: 0 var(--size-8) var(--size-7);
-    display: flex;
 }
 .ola_modal-overlay {
     background: #0006;
