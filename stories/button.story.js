@@ -3,7 +3,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, text, boolean, radios, select } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, radios, select } from '@storybook/addon-knobs'
 
 import { Button, ButtonIcon, ButtonGroup, Tag } from '../src'
 
@@ -12,12 +12,11 @@ storiesOf('Button', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('All buttons', () => (
-    <Button 
-      onClick={action('onClick event')} 
+    <Button
+      onClick={action('onClick event')}
       disabled={boolean('Disabled', false)}
-      busy={select('Busy', [false, 'Please, wait...'])} 
-      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro'])}
-      >
+      busy={select('Busy', [false, 'Please, wait...'])}
+      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro'])}>
       { text('Label', 'Button') }
     </Button>
   ))
