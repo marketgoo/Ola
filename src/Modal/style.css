@@ -1,11 +1,10 @@
 .ola_modal {
     background: var(--white);
-    top: var(--size-10);
     border-radius: var(--radius);
     border: none;
     box-shadow: var(--shadow-3);
     max-width: 850px;
-    margin: auto;
+    margin: 8vh auto;
     animation: modal-show .5s;
     animation-fill-mode: both;
 }
