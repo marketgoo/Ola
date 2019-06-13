@@ -1,6 +1,7 @@
 .ola {
     /* Fonts */
-    --font-brand: 'Omnes', -apple-system, system-ui, sans-serif;
+    --font-brand-name: 'Omnes';
+    --font-brand: var(--font-brand-name), -apple-system, system-ui, sans-serif;
     --font-ui: -apple-system, system-ui, sans-serif;
 
     --regular: 300;
@@ -40,15 +41,17 @@
     --size-12: 524px;
 
     /* Font styles */
-    --font-display: 400 var(--size-9) / 1 var(--font-brand);
-    --font-title: 500 var(--size-8) / 1.05 var(--font-brand);
+    --font-display-spacing: -0.03em;
+    --font-display-weight: 400;
+    --font-title-spacing: -0.015em;
+    --font-title-weight: 500;
+
+    --font-display: var(--font-display-weight) var(--size-9) / 1 var(--font-brand);
+    --font-title: var(--font-title-weight) var(--size-8) / 1.05 var(--font-brand);
     --font-headline: var(--size-7) / 1.28 var(--font-ui);
     --font-body: var(--size-6) / 1.3 var(--font-ui);
     --font-callout: var(--size-5) / 1.38 var(--font-ui);
     --font-caption: var(--size-4) / 1.42 var(--font-ui);
-
-    --font-display-spacing: -0.03em;
-    --font-title-spacing: -0.015em;
 
     /* Shadows */
     --shadow-1: 0 1px 3px #0003, 0 0 0 1px #0001;
