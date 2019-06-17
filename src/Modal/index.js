@@ -17,7 +17,7 @@ const Modal = ({ extraClass, children, onClose, ...props }) => {
 
 Modal.propTypes = {
   /** On Close function */
-  onClose: PT.function,
+  onClose: PT.func,
   /** Extra className */
   extraClass: PT.string,
   /** Childen nodes */
