@@ -1,11 +1,11 @@
 .ola_spinner {
     --color: currentColor;
 
-    width: var(--size-8);
-    height: var(--size-8);
+    width: var(--size-7);
+    height: var(--size-7);
 
     & circle {
-        --diameter: 70;
+        --diameter: 75;
 
         fill: none;
         stroke-width: 2;
@@ -23,7 +23,7 @@
         height: var(--size-9);
 
         & circle {
-            --diameter: 176;
+            --diameter: 213;
             stroke-width: 3;
         }
     }

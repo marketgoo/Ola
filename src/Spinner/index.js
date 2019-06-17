@@ -5,13 +5,13 @@ import cx from 'classnames'
 const sizes = {
   small: {
     className: null,
-    size: 44,
-    radio: 10
+    size: 28,
+    radio: 12
   },
   medium: {
     className: 'is-medium',
     size: 76,
-    radio: 28
+    radio: 34
   },
   big: {
     className: 'is-big',

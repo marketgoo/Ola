@@ -102,11 +102,13 @@
         cursor: wait;
 
         & .ola_spinner:first-child {
-            margin-left: -1em;
+            position: relative;
+            right: var(--size-3);
         }
 
         & .ola_spinner:last-child {
-            margin-right: -1em;
+            position: relative;
+            left: var(--size-3);
         }
     }
 

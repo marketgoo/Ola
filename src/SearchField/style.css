@@ -14,8 +14,8 @@
 
     & .ola_spinner {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: var(--size-3);
+        right: var(--size-3);
         color: var(--gray-light);
     }
 
