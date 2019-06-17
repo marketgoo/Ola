@@ -5,28 +5,51 @@
     height: var(--size-8);
 
     & circle {
+        --diameter: 70;
+
         fill: none;
         stroke-width: 2;
         stroke: var(--color);
-        stroke-dasharray: 70;
+        stroke-dasharray: var(--diameter);
         stroke-linecap: round;
         animation: spinner 3s linear infinite;
         animation-fill-mode: both;
         transform-origin: center center;
+        vector-effect: non-scaling-stroke;
+    }
+
+    &.is-medium {
+        width: var(--size-9);
+        height: var(--size-9);
+
+        & circle {
+            --diameter: 176;
+            stroke-width: 3;
+        }
+    }
+
+    &.is-big {
+        width: var(--size-10);
+        height: var(--size-10);
+
+        & circle {
+            --diameter: 402;
+            stroke-width: 4;
+        }
     }
 }
 
 @keyframes spinner {
     0% {
-        stroke-dashoffset: 14;
+        stroke-dashoffset: calc(var(--diameter) * 0.2);
         transform: rotate(0deg);
     }
     50% {
-        stroke-dashoffset: 70;
+        stroke-dashoffset: var(--diameter);
         transform: rotate(720deg);
     }
     100% {
-        stroke-dashoffset: 14;
+        stroke-dashoffset: calc(var(--diameter) * 0.2);
         transform: rotate(1080deg);
     }
 }
