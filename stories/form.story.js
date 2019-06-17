@@ -90,8 +90,8 @@ storiesOf('Form', module)
     <div className="preview-centered-inner">
       <p><Check label="Check" /></p>
       <p><Check label="Check <span> with span</span>" htmlLabel /></p>
-      <p><Check type="radio" label="Check Radio" /></p>
-      <p><Check type="radio" label="Check Radio <span> with span</span>" htmlLabel /></p>
+      <p><Check type="radio" name="name" label="Check Radio" /></p>
+      <p><Check type="radio" name="name" label="Check Radio <span> with span</span>" htmlLabel /></p>
     </div>
   ))
   .add('Switch', () => (

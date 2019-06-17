@@ -44,7 +44,7 @@
 
 /* Changes for radio */
 .ola_check-input[type="radio"] {
-    & ~ .check-label::before {
+    & ~ .ola_check-label::before {
         border-radius: 50%;
     }
 
