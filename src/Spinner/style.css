@@ -8,10 +8,9 @@
         fill: none;
         stroke-width: 2;
         stroke: var(--color);
-        stroke-dashoffset: 0;
-        stroke-dasharray: 55;
+        stroke-dasharray: 70;
         stroke-linecap: round;
-        animation: spinner 2s linear infinite;
+        animation: spinner 3s linear infinite;
         animation-fill-mode: both;
         transform-origin: center center;
     }
@@ -19,14 +18,15 @@
 
 @keyframes spinner {
     0% {
-        stroke-dasharray: 10 55;
+        stroke-dashoffset: 14;
         transform: rotate(0deg);
     }
     50% {
-        stroke-dasharray: 55 55;
+        stroke-dashoffset: 70;
+        transform: rotate(720deg);
     }
     100% {
-        stroke-dasharray: 10 55;
+        stroke-dashoffset: 14;
         transform: rotate(1080deg);
     }
 }
