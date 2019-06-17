@@ -8,7 +8,7 @@ import {
   Field,
   FieldDescription,
   SearchField,
-  Checkbox,
+  Check,
   Switch,
   Select
 } from '../src'
@@ -86,10 +86,12 @@ storiesOf('Form', module)
       <SearchField id="search-loading" busy placeholder="Filter elements" textButton="Test Search" />
     </div>
   ))
-  .add('Checkbox', () => (
+  .add('Check', () => (
     <div className="preview-centered-inner">
-      <p><Checkbox label="Checkbox" /></p>
-      <p><Checkbox label="Checkbox <span> with span</span>" htmlLabel /></p>
+      <p><Check label="Check" /></p>
+      <p><Check label="Check <span> with span</span>" htmlLabel /></p>
+      <p><Check type="radio" label="Check Radio" /></p>
+      <p><Check type="radio" label="Check Radio <span> with span</span>" htmlLabel /></p>
     </div>
   ))
   .add('Switch', () => (

@@ -1,26 +1,29 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 
-const Checkbox = ({ label, htmlLabel, ...props }) => {
+const Check = ({ type, label, htmlLabel, ...props }) => {
   return (
     <label className="ola_check">
-      <input type="checkbox" className="ola_check-input" {...props} />
+      <input type={type} className="ola_check-input" {...props} />
       { label && ( htmlLabel ? <span className="ola_check-label" dangerouslySetInnerHTML={{__html: label}} /> : <span className="ola_check-label">{ label }</span>) }
     </label>
   )
 }
 
-Checkbox.defaultProps = {
+Check.defaultProps = {
+  type: 'checkbox',
   label: null
 }
 
-Checkbox.propTypes = {
-  /** Label Checkbox */
+Check.propTypes = {
+  /** Check Type */
+  type: PT.oneOf(['checkbox', 'radio']),
+  /** Check Label */
   label: PT.string,
   /** Label support HTML tags */
   htmlLabel: PT.bool,
-  /** Redux Forms input Checkbox */
+  /** Redux Forms input Check */
   input: PT.object
 }
 
-export { Checkbox }
+export { Check }
