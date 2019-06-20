@@ -1,0 +1,13 @@
+.ola_icon {
+    fill: currentColor;
+
+    &.is-small {
+        width: var(--size-6);
+        height: var(--size-6);
+    }
+
+    &.is-big {
+        width: var(--size-9);
+        height: var(--size-9);
+    }
+}
