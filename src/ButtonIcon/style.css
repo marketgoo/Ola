@@ -1,9 +1,22 @@
 .ola_buttonIcon {
-  min-height: var(--size-6);
-  min-width: var(--size-6);
-  background: none;
-  color: currentColor;
-  border: none;
-  cursor: pointer;
-  padding: 0;
+    min-height: var(--size-6);
+    min-width: var(--size-6);
+    background: none;
+    color: currentColor;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 4px var(--brand-focus);
+    }
+
+    &:hover {
+        color: var(--black);
+        background-color: var(--gray-xlight);
+    }
 }
