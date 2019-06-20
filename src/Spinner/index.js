@@ -21,10 +21,8 @@ const sizes = {
 }
 
 const Spinner = ({size, extraClass, ...props }) => {
-  const sizeProps = sizes[size];
-
-  const styles = cx('ola_spinner', sizeProps.className, extraClass);
-
+  const sizeProps = sizes[size]
+  const styles = cx('ola_spinner', sizeProps.className, extraClass)
   return (
     <svg {...props} className={styles} width={sizeProps.size} height={sizeProps.size} viewBox={`0 0 ${sizeProps.size} ${sizeProps.size}`}>
       <circle r={sizeProps.radio} cx={sizeProps.size/2} cy={sizeProps.size/2}></circle>
