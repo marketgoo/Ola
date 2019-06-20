@@ -35,18 +35,20 @@ const ICONS = {
   'warning': Warning
 }
 
-const Icon = ({ name, extraClass, ...props }) => {
+const Icon = ({ name, size, extraClass, ...props }) => {
   const SpecificIcon = ICONS[name]
-  return <SpecificIcon className={cx('ola_icon', extraClass)} {...props} />
+  const IconClasses = cx('ola_icon', (size !== 'medium') && `is-${size}`, extraClass)
+  return <SpecificIcon className={IconClasses} {...props} />
 }
 
 Icon.defaultProps = {
   name: 'help',
+  size: 'medium',
   extraClass: null
 }
 
 Icon.propTypes = {
-  /** Tag variants */
+  /** Icons */
   name: PT.oneOf([
     'chevronDown',
     'chevronUp',
@@ -63,6 +65,8 @@ Icon.propTypes = {
     'user',
     'warning'
   ]).isRequired,
+  /** Size */
+  size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
   extraClass: PT.string
 }

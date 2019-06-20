@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, text, boolean, radios, select } from '@storybook/addon-knobs'
 
-import { Button, ButtonIcon, ButtonGroup, Tag } from '../src'
+import { Button, ButtonIcon, ButtonGroup, Tag, Icon } from '../src'
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -25,7 +25,7 @@ storiesOf('Button', module)
   ))
   .add('Button Icon', () => (
     <Tag>
-      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}>x</ButtonIcon>
+      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}><Icon name="help" size="small" /></ButtonIcon>
     </Tag>
   ))
   .add('Button Group', () => (
