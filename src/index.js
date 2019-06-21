@@ -5,6 +5,8 @@ export { Tag } from './Tag'
 export { ButtonIcon } from './ButtonIcon'
 export { ButtonGroup } from './ButtonGroup'
 export { Icon } from './Icon'
+export { ProgressCircle } from './ProgressCircle'
+export { ProgressBar } from './ProgressBar'
 
 export { Panel } from './Panel'
 export { PanelContent } from './Panel/Content'

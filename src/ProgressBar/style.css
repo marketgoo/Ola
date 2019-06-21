@@ -1,0 +1,68 @@
+progress.ola_progressBar {
+    --color: var(--brand);
+
+    appearance: none;
+    border: solid 1px var(--color);
+    height: 10px;
+    width: 100%;
+    background: var(--white);
+    border-radius: 6px;
+    box-sizing: border-box;
+
+    &::-webkit-progress-value {
+        background: var(--color);
+    }
+    &::-webkit-progress-bar {
+        background: transparent;
+    }
+    &::-moz-progress-bar {
+        background: var(--color);
+    }
+}
+
+meter.ola_progressBar {
+    --color: var(--brand);
+
+    -moz-appearance: none;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background: var(--white);
+    width: 100%;
+    height: 10px;
+
+    &::-moz-meter-bar {
+        background: none;
+        background-color: var(--color);
+    }
+    &::-moz-meter-optimum::-moz-meter-bar {
+        background-color: var(--color);
+    }
+    &::-moz-meter-sub-optimum::-moz-meter-bar {
+        background-color: var(--warning);
+    }
+    &::-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background-color: var(--red);
+    }
+
+    &::-webkit-meter-bar {
+        height: 10px;
+        border-radius: 6px;
+        background: none;
+        border: solid 1px var(--brand);
+    }
+    &::-webkit-meter-optimum-value {
+        background: var(--brand);
+    }
+    &::-webkit-meter-suboptimum-value {
+        background: var(--warning);
+    }
+    &::-webkit-meter-even-less-good-value {
+        background: var(--error);
+    }
+}
+/* Only firefox */
+@-moz-document url-prefix() {
+    meter.ola_progressBar {
+        border: solid 1px var(--brand);
+    }
+}
