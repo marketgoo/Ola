@@ -8,17 +8,17 @@ import { ButtonGroup } from '../ButtonGroup'
 
 const TaskSumary = ({ title, htmlTitle }) => {
   return (
-    <summary className="task-title">
-      <Icon name={'help'} extraClass='task-icon' />
+    <summary className="ola_task-title">
+      <Icon name={'help'} extraClass='ola_task-icon' />
       { htmlTitle ? <div dangerouslySetInnerHTML={{__html: title}} /> : <div>{title}</div> }
-      <Icon name={'close'} extraClass='task-close' />
+      <Icon name={'close'} extraClass='ola_task-close' />
     </summary>
   )
 }
 
 const TaskFooter = ({ children }) => {
   return (
-    <footer className="task-footer">
+    <footer className="ola_task-footer">
       { children }
     </footer>
   )
@@ -26,7 +26,7 @@ const TaskFooter = ({ children }) => {
 
 const TaskBody = ({ children}) => {
   return (
-    <div className="task-body">
+    <div className="ola_task-body">
       {children}
     </div>
   )
@@ -36,7 +36,7 @@ const ErrorTask = ({title, htmlTitle, children}) => {
   return (
     <details>
       <TaskSumary title={title} htmlTitle={htmlTitle} />
-      <div className='task-content'>
+      <div className='ola_task-content'>
         <TaskBody>{ children }</TaskBody>
         <TaskFooter>
           <ButtonGroup>

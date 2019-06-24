@@ -9,7 +9,7 @@ storiesOf('Tasks', module)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('Error', () => (
     <Panel>
-      <PanelContent title="What do you need to look at?">
+      <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
           <Task title="Task title">
             <div>
