@@ -5,22 +5,22 @@
     background: var(--white);
 
     &.is-success {
-        & .task-icon {
+        & .ola_task-icon {
             fill: var(--success);
         }
     }
     &.is-error {
-        & .task-icon {
+        & .ola_task-icon {
             fill: var(--error);
         }
     }
     &.is-warning {
-        & .task-icon {
+        & .ola_task-icon {
             fill: var(--warning);
         }
     }
     &.is-suggested {
-        & .task-icon {
+        & .ola_task-icon {
             fill: var(--gray);
         }
     }

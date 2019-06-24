@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { Panel, PanelContent, TaskGroup, Task } from '../src'
+import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup } from '../src'
 
 storiesOf('Tasks', module)
   .addDecorator(withInfo)
@@ -11,11 +11,29 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
-          <Task title="Task title">
-            <div>
+
+          <Task title="Task title demo">
+            <TaskBody>
               Test content for card resolve
-            </div>
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
           </Task>
+
+          <Task title="Task title demo 2">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
         </TaskGroup>
       </PanelContent>
     </Panel>
@@ -25,6 +43,8 @@ storiesOf('Tasks', module)
       <PanelContent title="What have you done well?">
         <TaskGroup>
           <Task title="Task title" variant="success" />
+          <Task title="Task title" variant="success" />
+          <Task title="Task title" variant="success" />
         </TaskGroup>
       </PanelContent>
     </Panel>
@@ -33,7 +53,9 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="Suggestions">
         <TaskGroup>
-          <Task title="Task title" />
+          <Task title="Task title" variant="suggestion" />
+          <Task title="Task title" variant="suggestion" />
+          <Task title="Task title" variant="suggestion" />
         </TaskGroup>
       </PanelContent>
     </Panel>
@@ -42,8 +64,15 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="Reopened">
         <TaskGroup>
-          <Task title="Task title">
-            <p>Test</p>
+          <Task title="Task title" variant="warning">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
           </Task>
         </TaskGroup>
       </PanelContent>
