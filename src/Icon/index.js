@@ -64,7 +64,7 @@ Icon.propTypes = {
     'success',
     'user',
     'warning'
-  ]).isRequired,
+  ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */

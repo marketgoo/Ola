@@ -1,18 +1,25 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import { getElementType } from '../utils'
+import { Icon } from '../Icon'
+import { Button } from '../Button'
+import { ButtonGroup } from '../ButtonGroup'
 
-const TaskTitle = ({ title, htmlTitle=false, ...props }) => {
-  const ElementType = getElementType(TaskTitle, {...props})
-  return htmlTitle ?
-    <ElementType className="task-title" dangerouslySetInnerHTML={{__html: title}} /> :
-    <ElementType className="task-title"></ElementType>
+
+const TaskSumary = ({ title, htmlTitle }) => {
+  return (
+    <summary className="task-title">
+      <Icon name={'help'} extraClass='task-icon' />
+      { htmlTitle ? <div dangerouslySetInnerHTML={{__html: title}} /> : <div>{title}</div> }
+      <Icon name={'close'} extraClass='task-close' />
+    </summary>
+  )
 }
 
-const TaskFooter = () => {
+const TaskFooter = ({ children }) => {
   return (
     <footer className="task-footer">
+      { children }
     </footer>
   )
 }
@@ -25,16 +32,36 @@ const TaskBody = ({ children}) => {
   )
 }
 
+const ErrorTask = ({title, htmlTitle, children}) => {
+  return (
+    <details>
+      <TaskSumary title={title} htmlTitle={htmlTitle} />
+      <div className='task-content'>
+        <TaskBody>{ children }</TaskBody>
+        <TaskFooter>
+          <ButtonGroup>
+            <Button variant="primary">Done! Check it now</Button>
+          </ButtonGroup>
+        </TaskFooter>
+      </div>
+    </details>
+  )
+}
+
+const SuccessTask = ({ title, htmlTitle }) => {
+  return (
+    <div className="task-title">
+      <Icon name={'help'} extraClass='task-icon' />
+      { htmlTitle ? <div dangerouslySetInnerHTML={{__html: title}} /> : <div>{title}</div> }
+    </div>
+  )
+}
+
 const Task = ({ title, htmlTitle, variant, children }) => {
   return (
     <li className={cx('ola_task', variant && `is-${variant}`)}>
-      <TaskTitle title={title} htmlTitle={htmlTitle} />
-      { variant === 'error' && (
-        <div className="task-content">
-          <TaskBody>{children}</TaskBody>
-          <TaskFooter />
-        </div>
-      )}
+      { variant === 'error' &&  <ErrorTask title={title} htmlTitle={htmlTitle}>{children}</ErrorTask> }
+      { variant === 'success' && <SuccessTask title={title} htmlTitle={htmlTitle} /> }
     </li>
   )
 }
@@ -57,7 +84,7 @@ Task.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ])
 }
 
 export { Task }
