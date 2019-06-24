@@ -2,13 +2,25 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
+const progressCircleValue = (value, r) => {
+  value = Math.min(100, Math.max(0, value))
+  const radius = parseInt(r)
+  const diameter = Math.PI * (radius * 2)
+  return ((100 - value) / 100) * diameter
+}
+
 const ProgressCircle = ({ value, busy, extraClass, ...props }) => {
+
+  const circleStyle = {
+    strokeDashoffset: progressCircleValue(value, 62)
+  }
+
   return (
     <div className={cx('ola_progressCircle', {'is-busy': busy}, extraClass)} {...props}>
-      <strong className="ola_progressCircle-value">{value}<span>%</span></strong>
+      { value &&  <strong className="ola_progressCircle-value">{value}<span>%</span></strong> }
       <svg className="ola_progressCircle-circle" width="140" height="140" viewbox="0 0 140 140">
         <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-background"></circle>
-        <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-value"></circle>
+        <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-value" style={circleStyle}></circle>
       </svg>
     </div>
   )
