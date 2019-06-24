@@ -9,11 +9,11 @@
     justify-content: center;
 
     &.is-busy {
-        & .progressCircle-value,
-        & .progressCircle-circle-value {
+        & .ola_progressCircle-value,
+        & .ola_progressCircle-circle-value {
             opacity: 0;
         }
-        & .progressCircle-circle-background {
+        & .ola_progressCircle-circle-background {
             animation: progressCircle-loading 2s linear infinite;
             animation-fill-mode: both;
             stroke: var(--gray-light);

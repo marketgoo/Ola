@@ -2,14 +2,18 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { ProgressCircle } from '../src'
+import { Panel, PanelHeader, TaskGroup, Task } from '../src'
 
-storiesOf('Progress Circle', module)
+storiesOf('Tasks', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
-  .add('Default', () => (
+  .add('All', () => (
     <div className="preview-centered-inner">
-      <ProgressCircle value={20} />
-      <ProgressCircle value={60} busy />
+      <Panel>
+        <PanelHeader title="Tasks" />
+        <TaskGroup>
+          <Task title="Task title" variant="success" />
+        </TaskGroup>
+      </Panel>
     </div>
   ))

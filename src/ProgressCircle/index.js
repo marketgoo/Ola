@@ -4,15 +4,13 @@ import cx from 'classnames'
 
 const ProgressCircle = ({ value, busy, extraClass, ...props }) => {
   return (
-    <svg className={cx('ola_progressCircle', {'is-busy': busy}, extraClass)} {...props}>
-      <circle className='ola_progressCircle-circle'>
-        <g className='ola_progressCircle-circle-background'>
-          <g className='ola_progressCircle-circle-value'>
-            <text className='ola_progressCircle-value'>{value}</text>
-          </g>
-        </g>
-      </circle>
-    </svg>
+    <div className={cx('ola_progressCircle', {'is-busy': busy}, extraClass)} {...props}>
+      <strong className="ola_progressCircle-value">{value}<span>%</span></strong>
+      <svg className="ola_progressCircle-circle" width="140" height="140" viewbox="0 0 140 140">
+        <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-background"></circle>
+        <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-value"></circle>
+      </svg>
+    </div>
   )
 }
 

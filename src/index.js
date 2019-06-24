@@ -13,6 +13,9 @@ export { PanelContent } from './Panel/Content'
 export { PanelFooter } from './Panel/Footer'
 export { PanelHeader } from './Panel/Header'
 
+export { Task } from './Task'
+export { TaskGroup } from './TaskGroup'
+
 export { Modal } from './Modal'
 export { ModalFooter } from './Modal/Footer'
 export { ModalHeader } from './Modal/Header'
