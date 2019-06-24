@@ -38,7 +38,11 @@ const ICONS = {
 const Icon = ({ name, size, extraClass, ...props }) => {
   const SpecificIcon = ICONS[name]
   const IconClasses = cx('ola_icon', (size !== 'medium') && `is-${size}`, extraClass)
-  return <SpecificIcon className={IconClasses} {...props} />
+  return (
+    <svg width="28" height="28" viewBox="0 0 28 28" className={IconClasses} {...props}>
+      <SpecificIcon />
+    </svg>
+  )
 }
 
 Icon.defaultProps = {
