@@ -14,6 +14,16 @@
             fill: var(--error);
         }
     }
+    &.is-warning {
+        & .task-icon {
+            fill: var(--warning);
+        }
+    }
+    &.is-suggested {
+        & .task-icon {
+            fill: var(--gray);
+        }
+    }
 
     &[open] {
         --inner: calc(var(--size-8) + var(--size-4));
