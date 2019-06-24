@@ -58,7 +58,7 @@
 .ola_progressCircle-circle-value {
     stroke: var(--color);
     transform: rotate(-90deg);
-    transition: opacity 200ms;
+    transition: opacity 200ms, stroke-dashoffset 400ms;
 }
 
 @keyframes progressCircle-loading {
