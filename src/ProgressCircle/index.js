@@ -2,17 +2,16 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const progressCircleValue = (value, r) => {
+const progressCircleValue = (value) => {
   value = Math.min(100, Math.max(0, value))
-  const radius = parseInt(r)
-  const diameter = Math.PI * (radius * 2)
+  const diameter = Math.PI * (62 * 2)
   return ((100 - value) / 100) * diameter
 }
 
 const ProgressCircle = ({ value, busy, extraClass, ...props }) => {
 
   const circleStyle = {
-    strokeDashoffset: progressCircleValue(value, 62)
+    strokeDashoffset: progressCircleValue(value)
   }
 
   return (
