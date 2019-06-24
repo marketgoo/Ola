@@ -2,68 +2,43 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { Icon } from '../Icon'
-import { Button } from '../Button'
-import { ButtonGroup } from '../ButtonGroup'
 
+
+const TaskTitle = ({ title, htmlTitle }) => {
+  return  htmlTitle ? (
+    <div dangerouslySetInnerHTML={{__html: title}} />
+  ) : (
+    <div>{title}</div>
+  )
+}
 
 const TaskSumary = ({ title, htmlTitle }) => {
   return (
     <summary className="ola_task-title">
       <Icon name={'help'} extraClass='ola_task-icon' />
-      { htmlTitle ? <div dangerouslySetInnerHTML={{__html: title}} /> : <div>{title}</div> }
+      <TaskTitle title={title} htmlTitle={htmlTitle} />
       <Icon name={'close'} extraClass='ola_task-close' />
     </summary>
   )
 }
 
-const TaskFooter = ({ children }) => {
-  return (
-    <footer className="ola_task-footer">
-      { children }
-    </footer>
-  )
-}
-
-const TaskBody = ({ children}) => {
-  return (
-    <div className="ola_task-body">
-      {children}
-    </div>
-  )
-}
-
-const ErrorTask = ({title, htmlTitle, children}) => {
-  return (
-    <details>
-      <TaskSumary title={title} htmlTitle={htmlTitle} />
-      <div className='ola_task-content'>
-        <TaskBody>{ children }</TaskBody>
-        <TaskFooter>
-          <ButtonGroup>
-            <Button variant="primary">Done! Check it now</Button>
-          </ButtonGroup>
-        </TaskFooter>
-      </div>
-    </details>
-  )
-}
-
-const SuccessTask = ({ title, htmlTitle }) => {
-  return (
-    <div className="task-title">
-      <Icon name={'help'} extraClass='task-icon' />
-      { htmlTitle ? <div dangerouslySetInnerHTML={{__html: title}} /> : <div>{title}</div> }
-    </div>
-  )
-}
-
 const Task = ({ title, htmlTitle, variant, children }) => {
-  return (
-    <li className={cx('ola_task', variant && `is-${variant}`)}>
-      { variant === 'error' &&  <ErrorTask title={title} htmlTitle={htmlTitle}>{children}</ErrorTask> }
-      { variant === 'success' && <SuccessTask title={title} htmlTitle={htmlTitle} /> }
-    </li>
-  )
+
+  const hasClidren = React.isValidElement(children)
+  return hasClidren ?
+    (
+      <details className={cx('ola_task', variant && `is-${variant}`)}>
+        <TaskSumary title={title} htmlTitle={htmlTitle} />
+        <div className='ola_task-content'>
+          { children }
+        </div>
+      </details>
+    ) :
+    (
+      <div className={cx('ola_task', variant && `is-${variant}`)}>
+        <TaskTitle title={title} htmlTitle={htmlTitle} />
+      </div>
+    )
 }
 
 

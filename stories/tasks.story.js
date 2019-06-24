@@ -33,9 +33,7 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="Suggestions">
         <TaskGroup>
-          <Task title="Task title">
-            <p>Test</p>
-          </Task>
+          <Task title="Task title" />
         </TaskGroup>
       </PanelContent>
     </Panel>
