@@ -25,7 +25,7 @@ storiesOf('Button', module)
   ))
   .add('Button Icon', () => (
     <Tag>
-      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}><Icon name="help" size="small" /></ButtonIcon>
+      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}><Icon name="close" size="small" /></ButtonIcon>
     </Tag>
   ))
   .add('Button Group', () => (
