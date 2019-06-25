@@ -50,12 +50,18 @@
         }
     }
 
+    &:first-child {
+        border-radius: var(--radius) var(--radius) 0 0;
+
+        & .ola_panel-subtitle {
+            border-radius: var(--radius) var(--radius) 0 0;
+            margin-top: 0;
+        }
+    }
+
     &:last-child {
         padding-bottom: 0.1px;
-    }
-    &:first-child .ola_panel-subtitle {
-        border-radius: var(--radius) var(--radius) 0 0;
-        margin-top: 0;
+        border-radius: 0 0 var(--radius) var(--radius);
     }
 }
 
