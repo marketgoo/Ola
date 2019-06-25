@@ -2,9 +2,4 @@
     list-style: none;
     margin: var(--size-5) 0;;
     padding: 0;
-
-    & .task-title {
-        padding-left: var(--inner);
-        padding-right: var(--inner);
-    }
 }

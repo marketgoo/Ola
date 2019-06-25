@@ -40,7 +40,7 @@ storiesOf('Tasks', module)
   ))
   .add('Success', () => (
     <Panel>
-      <PanelContent title="What have you done well?">
+      <PanelContent title="What have you done well?" variant="fullwidth">
         <TaskGroup>
           <Task title="Task title" variant="success" />
           <Task title="Task title" variant="success" />
@@ -51,7 +51,7 @@ storiesOf('Tasks', module)
   ))
   .add('Suggested', () => (
     <Panel>
-      <PanelContent title="Suggestions">
+      <PanelContent title="Suggestions" variant="fullwidth">
         <TaskGroup>
           <Task title="Task title" variant="suggested" />
           <Task title="Task title" variant="suggested" />
@@ -62,7 +62,7 @@ storiesOf('Tasks', module)
   ))
   .add('Reopened', () => (
     <Panel>
-      <PanelContent title="Reopened">
+      <PanelContent title="Reopened" variant="fullwidth">
         <TaskGroup>
 
           <Task title="Task title" variant="warning">

@@ -5,10 +5,10 @@ import { Icon } from '../Icon'
 
 const TaskIcon = ({ variant }) => {
   switch (variant) {
-  case 'success': return (<Icon name={'success'} extraClass='ola_task-icon' />)
-  case 'warning': return (<Icon name={'warning'} extraClass='ola_task-icon' />)
-  case 'suggested': return (<Icon name={'help'} extraClass='ola_task-icon' />)
-  default: return (<Icon name={'error'} extraClass='ola_task-icon' />)
+  case 'success': return (<Icon name='success' extraClass='ola_task-icon' />)
+  case 'warning': return (<Icon name='warning' extraClass='ola_task-icon' />)
+  case 'suggested': return (<Icon name='help' extraClass='ola_task-icon' />)
+  default: return (<Icon name='error' extraClass='ola_task-icon' />)
   }
 }
 
@@ -32,11 +32,11 @@ const TaskSumary = ({ title, htmlTitle, variant }) => {
 
 const Task = ({ title, htmlTitle, variant, children }) => {
 
-  const hasClidren = React.Children.count(children) > 0
-  return hasClidren ?
+  const hasChildren = React.Children.count(children) > 0
+  return hasChildren ?
     (
       <details className={cx('ola_task', variant && `is-${variant}`)}>
-        <TaskSumary title={title} htmlTitle={htmlTitle} />
+        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} />
         <div className='ola_task-content'>
           { children }
         </div>

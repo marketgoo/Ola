@@ -36,15 +36,20 @@
         border-radius: var(--radius);
         padding-top: var(--size-4);
         margin-top: calc(var(--size-4) * -1);
+        margin-top: var(--size-4);
 
-        & .task-content {
+        & .ola_task-content {
             animation: task-open 200ms;
             animation-fill-mode: both;
             margin-left: var(--size-8);
         }
 
-        & .task-close {
+        & .ola_task-close {
             display: block;
+        }
+
+        & .ola_task-title {
+            color: inherit;
         }
     }
 }
@@ -54,7 +59,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    padding: var(--size-4);
+    padding: var(--size-4) var(--inner);
     cursor: default;
     position: relative;
     z-index: 1;
@@ -63,10 +68,22 @@ summary.ola_task-title {
     color: var(--brand);
     cursor: pointer;
     transition: background-color 200ms;
+    outline: 0;
+    list-style: none;
+
+    &::-webkit-details-marker {
+        display: none;
+    }
 
     &:hover {
         color: var(--brand-dark);
         background-color: var(--gray-xlight);
+    }
+
+    &:focus {
+        position: relative;
+        z-index: 2;
+        box-shadow: 0 0 0 4px var(--brand-focus);
     }
 }
 .ola_task-icon {
@@ -89,7 +106,7 @@ summary.ola_task-title {
     }
 }
 .ola_task-body {
-    padding: 0 var(--inner) var(--size-8);
+    padding: var(--size-4) var(--inner) var(--size-8);
 }
 .ola_task-footer {
     padding: 0 var(--inner) var(--size-8);
