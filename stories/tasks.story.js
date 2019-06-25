@@ -6,7 +6,7 @@ import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, But
 
 storiesOf('Tasks', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola preview-centered is-wide">{story()}</div>)
   .add('Error', () => (
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">
