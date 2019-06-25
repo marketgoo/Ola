@@ -1,0 +1,20 @@
+.ola_util-display {
+    font: var(--font-display);
+    letter-spacing: var(--font-display-spacing);
+}
+.ola_util-title {
+    font: var(--font-title);
+    letter-spacing: var(--font-title-spacing);
+}
+.ola_util-headline {
+    font: var(--font-headline);
+}
+.ola_util-body {
+    font: var(--font-body);
+}
+.ola_util-callout {
+    font: var(--font-callout);
+}
+.ola_util-caption {
+    font: var(--font-caption);
+}

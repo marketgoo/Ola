@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './defaults.css';
+@import './utils.css';
 
 /* Components */
 @import './Button/style.css';
