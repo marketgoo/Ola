@@ -15,10 +15,14 @@
 @import './Icon/style.css';
 @import './ProgressCircle/style.css';
 @import './ProgressBar/style.css';
-
 @import './Input/style.css';
 @import './Field/style.css';
 @import './Check/style.css';
 @import './Switch/style.css';
 @import './SearchField/style.css';
 @import './Select/style.css';
+
+/* Layouts */
+@import './layouts/ly-imgContent.css';
+@import './layouts/ly-form.css';
+@import './layouts/ly-columns.css';

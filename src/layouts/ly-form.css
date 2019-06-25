@@ -1,0 +1,6 @@
+/* Layout for the different fields of a field */
+
+.ola_ly-form {
+    display: grid;
+    grid-row-gap: var(--size-7);
+}

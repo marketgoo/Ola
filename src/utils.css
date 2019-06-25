@@ -1,3 +1,6 @@
+.ola_util-bg {
+    background-color: var(--gray-xlight);
+}
 .ola_util-display {
     font: var(--font-display);
     letter-spacing: var(--font-display-spacing);

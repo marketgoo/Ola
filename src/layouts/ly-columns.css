@@ -1,0 +1,11 @@
+/* Layout to distribute elements in same-size columns */
+
+.ola_ly-columns {
+    column-width: var(--size-11);
+    column-gap: var(--size-9);
+    column-rule: solid 4px var(--gray-xlight);
+
+    & > * {
+        break-inside: avoid;
+    }
+}
