@@ -53,9 +53,9 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="Suggestions">
         <TaskGroup>
-          <Task title="Task title" variant="suggestion" />
-          <Task title="Task title" variant="suggestion" />
-          <Task title="Task title" variant="suggestion" />
+          <Task title="Task title" variant="suggested" />
+          <Task title="Task title" variant="suggested" />
+          <Task title="Task title" variant="suggested" />
         </TaskGroup>
       </PanelContent>
     </Panel>
@@ -64,6 +64,7 @@ storiesOf('Tasks', module)
     <Panel>
       <PanelContent title="Reopened">
         <TaskGroup>
+
           <Task title="Task title" variant="warning">
             <TaskBody>
               Test content for card resolve
@@ -74,6 +75,18 @@ storiesOf('Tasks', module)
               </ButtonGroup>
             </TaskFooter>
           </Task>
+
+          <Task title="Task title" variant="warning">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
         </TaskGroup>
       </PanelContent>
     </Panel>

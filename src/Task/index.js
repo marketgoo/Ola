@@ -5,10 +5,10 @@ import { Icon } from '../Icon'
 
 const TaskIcon = ({ variant }) => {
   switch (variant) {
-  case 'success': return (<Icon name={'help'} extraClass='ola_task-icon' />)
-  case 'warning': return (<Icon name={'help'} extraClass='ola_task-icon' />)
+  case 'success': return (<Icon name={'success'} extraClass='ola_task-icon' />)
+  case 'warning': return (<Icon name={'warning'} extraClass='ola_task-icon' />)
   case 'suggested': return (<Icon name={'help'} extraClass='ola_task-icon' />)
-  default: return (<Icon name={'help'} extraClass='ola_task-icon' />)
+  default: return (<Icon name={'error'} extraClass='ola_task-icon' />)
   }
 }
 
