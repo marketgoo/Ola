@@ -40,11 +40,13 @@ module.exports = {
     `${SOURCE_DIR}/index.js`,
     `${SOURCE_DIR}/index.css`
   ],
-  mode: 'production',
+  mode: 'development',
+  devtool: 'source-map',
+  target: 'web',
   output: {
     path: DIST_DIR,
-    filename: 'index.js',
-    library: 'DesignSystem',
+    filename: 'index.umd.js',
+    library: 'ola',
     libraryTarget: 'umd'
   },
   module: {
@@ -53,6 +55,11 @@ module.exports = {
       CSSLoader
     ]
   },
+  externals: [
+    'react',
+    'classnames',
+    'prop-types',
+  ],
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'index.css'

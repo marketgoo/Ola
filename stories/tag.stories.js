@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { Tag } from '../src'
+import { Tag } from '../dist'
 
 storiesOf('Tag', module)
   .addDecorator(withInfo)

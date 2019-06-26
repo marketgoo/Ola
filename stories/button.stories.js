@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { withKnobs, text, boolean, radios, select } from '@storybook/addon-knobs'
 
-import { Button, ButtonIcon, ButtonGroup, Tag, Icon } from '../src'
+import { Button, ButtonIcon, ButtonGroup, Tag, Icon } from '../dist'
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)

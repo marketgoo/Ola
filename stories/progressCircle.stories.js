@@ -3,7 +3,7 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { withKnobs, number, boolean } from '@storybook/addon-knobs'
 
-import { ProgressCircle } from '../src'
+import { ProgressCircle } from '../dist'
 
 storiesOf('Progress Circle', module)
   .addDecorator(withInfo)

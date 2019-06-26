@@ -10,7 +10,7 @@ import {
   PanelContent,
   PanelFooter,
   ButtonGroup
-} from '../src'
+} from '../dist'
 
 storiesOf('Panel', module)
   .addDecorator(withInfo)

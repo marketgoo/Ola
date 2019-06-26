@@ -11,7 +11,7 @@ import {
   ModalContent,
   ModalFooter,
   ButtonGroup
-} from '../src'
+} from '../dist'
 
 storiesOf('Modal', module)
   .addDecorator(withInfo)

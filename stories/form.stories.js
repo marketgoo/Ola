@@ -11,7 +11,7 @@ import {
   Check,
   Switch,
   Select
-} from '../src'
+} from '../dist'
 
 storiesOf('Form', module)
   .addDecorator(withInfo)

@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup } from '../src'
+import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup } from '../dist'
 
 storiesOf('Tasks', module)
   .addDecorator(withInfo)

@@ -12,6 +12,6 @@ module.exports = {
       prefix: '.ola',
       exclude: ['.ola', '.ola_util-bg', /^\.ola\s/]
     },
-    'stylefmt': {}
+    'cssnano': {}
   }
 }

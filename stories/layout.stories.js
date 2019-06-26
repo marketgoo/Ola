@@ -10,7 +10,7 @@ import {
     Input,
     Field,
     FieldDescription,
-} from '../src'
+} from '../dist'
 
 storiesOf('Layout', module)
   .addDecorator(withInfo)

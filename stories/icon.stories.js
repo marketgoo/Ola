@@ -3,7 +3,7 @@ import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 import { withKnobs, select } from '@storybook/addon-knobs'
 
-import { Icon } from '../src'
+import { Icon } from '../dist'
 
 storiesOf('Icon', module)
   .addDecorator(withKnobs)

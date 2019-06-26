@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { ProgressBar } from '../src'
+import { ProgressBar } from '../dist'
 
 storiesOf('Progress Bar', module)
   .addDecorator(withInfo)
