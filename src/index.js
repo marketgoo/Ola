@@ -14,8 +14,8 @@ export { PanelFooter } from './Panel/Footer'
 export { PanelHeader } from './Panel/Header'
 
 export { Task } from './Task'
-export { TaskBody } from './TaskBody'
-export { TaskFooter } from './TaskFooter'
+export { TaskBody } from './Task/TaskBody'
+export { TaskFooter } from './Task/TaskFooter'
 export { TaskGroup } from './TaskGroup'
 
 export { Modal } from './Modal'
