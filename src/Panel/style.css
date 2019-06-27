@@ -57,6 +57,11 @@
             padding: 0;
         }
     }
+
+    &.is-highlight {
+        background-color: var(--gray-xlight);
+        padding: 1px 0;
+    }
 }
 
 .ola_panel > .ola_panel-content {

@@ -27,7 +27,7 @@ PanelContent.propTypes = {
   /** Title support HTML tags */
   htmlTitle: PT.bool,
   /** PanelContent variants */
-  variant: PT.oneOf(['fullwidth']),
+  variant: PT.oneOf(['fullwidth', 'highlight']),
   /** Extra className */
   extraClass: PT.string,
   /** Childen nodes */

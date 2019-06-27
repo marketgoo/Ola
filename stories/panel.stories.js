@@ -31,13 +31,16 @@ storiesOf('Panel', module)
       </PanelFooter>
     </Panel>
   ))
-  .add('Panel content fullwidth', () => (
+  .add('Panel content fullwidth and highlight', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">
         Optional extra content
       </PanelHeader>
       <PanelContent title="Conten Title" variant="fullwidth">
         <p>Panel content full width</p>
+      </PanelContent>
+      <PanelContent title="Conten Title" variant="highlight">
+        <p>Panel content highlight</p>
       </PanelContent>
       <PanelFooter>
         <ButtonGroup>
