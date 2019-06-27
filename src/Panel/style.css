@@ -57,7 +57,9 @@
             padding: 0;
         }
     }
+}
 
+.ola_panel > .ola_panel-content {
     &:first-child {
         padding-top: 0.1px;
         border-top-left-radius: var(--radius);
