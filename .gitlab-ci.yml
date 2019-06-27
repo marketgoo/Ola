@@ -1,17 +1,44 @@
 image: node:latest
 
-pages:
-  stage: deploy
+build_dev:
+  stage: build
   script:
   - npm install
   - npm run build
   - npm run build:storybook
-  - mv storybook-static public
+  - mv storybook-static/ build/
   - npm pack
-  - mv *.tgz public/nightly.tgz
-  - mv static/* public
+  - mv *.tgz build/nightly.tgz
+  - mv static/* build/
+  artifacts:
+    paths:
+    - build
+  only:
+  - development
+
+build_master:
+  stage: build
+  script:
+  - npm install
+  - npm run build
+  - npm run build:storybook
+  - mv storybook-static/ build/
+  - npm pack
+  - mv *.tgz build
+  - mv static/* build
+  artifacts:
+    paths:
+    - build
+  only:
+  - master
+
+pages:
+  stage: deploy
+  script:
+  - mv build/ public/
   artifacts:
     paths:
     - public
   only:
+  - master
   - development
