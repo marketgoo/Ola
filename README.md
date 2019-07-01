@@ -5,6 +5,10 @@ React implementation of **ola** design system created by **marketgoo**.
 - [View *ola* specs](https://zeroheight.com/22mjgbuf6)
 - [View storybook demos](https://marketgoo.gitlab.io/ola/)
 
+## Install (using npm)
+
+To install, execute the following command: `npm i https://marketgoo.gitlab.io/ola/nightly.tgz`
+
 ## Install & update (using yarn)
 
 To install, execute the following command: `yarn add https://marketgoo.gitlab.io/ola/nightly.tgz`
