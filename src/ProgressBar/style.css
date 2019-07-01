@@ -5,6 +5,7 @@ progress.ola_progressBar {
     border: solid 1px var(--color);
     height: 10px;
     width: 100%;
+    min-width: 100px;
     background: var(--white);
     border-radius: 6px;
     box-sizing: border-box;

@@ -8,11 +8,25 @@
     animation: modal-show .5s;
     animation-fill-mode: both;
     position: relative;
+    & > .ola_modal-header {
+        padding: var(--inner-gap) var(--inner-gap) 0;
+    }
 }
 
 .ola_modal-header {
-    padding: var(--size-7) var(--size-8) 0;
+  display: grid;
+  grid-template-areas: "title" "intro";
+  grid-template-columns: 1fr auto;
+  grid-column-gap: var(--size-6);
+  &.has-extra {
+      grid-template-areas: "title extra" "intro extra";
+  }
 }
+
+.ola_modal-extra {
+    grid-area: extra;
+}
+
 .ola_modal-close {
     border: none;
     background: none;
@@ -47,11 +61,13 @@
     }
 }
 .ola_modal-title {
+    grid-area: title;
     margin: 0;
     font: var(--font-headline);
     font-weight: var(--regular);
 }
 .ola_modal-intro {
+    grid-area: intro;
     margin-top: var(--size-3);
     font: var(--font-callout);
     color: var(--gray);

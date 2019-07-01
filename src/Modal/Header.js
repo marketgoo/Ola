@@ -1,5 +1,6 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
+import cx from 'classnames'
 
 const ModalTitle = ({ title, htmlTitle=false }) => {
   return htmlTitle ?
@@ -13,19 +14,21 @@ const ModalIntro = ({ intro, htmlIntro=false }) => {
     <p className="ola_modal-intro">{intro}</p>
 }
 
-const ModalHeader = ({ title, htmlTitle, intro, htmlIntro, ...props }) => {
+const ModalHeader = ({ title, htmlTitle, intro, htmlIntro, children, ...props }) => {
   return (
-    <div className="ola_modal-header" {...props}>
+    <header className={cx('ola_modal-header', children && 'has-extra')} {...props}>
       <ModalTitle title={title} htmlTitle={htmlTitle} />
       { intro && <ModalIntro intro={intro} htmlIntro={htmlIntro} /> }
-    </div>
+      { children && <div className="ola_modal-extra">{ children }</div> }
+    </header>
   )
 }
 
 ModalHeader.defaultProps = {
   intro: null,
   htmlTitle: false,
-  htmlIntro: false
+  htmlIntro: false,
+  children: undefined
 }
 
 ModalHeader.propTypes = {
@@ -36,7 +39,12 @@ ModalHeader.propTypes = {
   /** Intro support HTML tags */
   htmlIntro: PT.bool,
   /** Intro text of header */
-  intro: PT.string
+  intro: PT.string,
+  /** Childen nodes */
+  children: PT.oneOfType([
+    PT.arrayOf(PT.node),
+    PT.node
+  ])
 }
 
 export { ModalHeader }

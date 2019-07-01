@@ -10,7 +10,8 @@ import {
   ModalHeader,
   ModalContent,
   ModalFooter,
-  ButtonGroup
+  ButtonGroup,
+  ProgressBar
 } from '../dist'
 
 storiesOf('Modal', module)
@@ -20,7 +21,9 @@ storiesOf('Modal', module)
     <div className="ola_modal-overlay">
       <div>
         <Modal onClose={action('onClick event')}>
-          <ModalHeader title="Modal Header" intro="Lorem ipsum for testing intro" />
+          <ModalHeader title="Modal Header" intro="Lorem ipsum for testing intro">
+            <ProgressBar value="20" max="100" />
+          </ModalHeader>
           <ModalContent>
             <p>Modal content</p>
           </ModalContent>

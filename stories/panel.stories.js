@@ -9,7 +9,8 @@ import {
   PanelHeader,
   PanelContent,
   PanelFooter,
-  ButtonGroup
+  ButtonGroup,
+  ProgressBar
 } from '../dist'
 
 storiesOf('Panel', module)
@@ -18,7 +19,7 @@ storiesOf('Panel', module)
   .add('All elements', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">
-        Optional extra content
+        <ProgressBar value="20" max="100" />
       </PanelHeader>
       <PanelContent title="Conten Title">
         <p>Panel content</p>
