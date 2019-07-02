@@ -19,6 +19,19 @@
             stroke: var(--gray-light);
         }
     }
+
+    &.is-success {
+        --color: var(--success);
+    }
+
+    &.is-error {
+        --color: var(--error);
+    }
+
+    &.is-warning {
+        --color: var(--warning);
+    }
+
 }
 
 .ola_progressCircle-value {
