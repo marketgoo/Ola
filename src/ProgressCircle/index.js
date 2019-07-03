@@ -17,7 +17,7 @@ const ProgressCircle = ({ variant, value, busy, extraClass, ...props }) => {
   return (
     <div className={cx('ola_progressCircle', variant && `is-${variant}`, {'is-busy': busy}, extraClass)} {...props}>
       { (value !== null) &&  <strong className="ola_progressCircle-value">{value}<span>%</span></strong> }
-      <svg className="ola_progressCircle-circle" width="140" height="140" viewbox="0 0 140 140">
+      <svg className="ola_progressCircle-circle" width="140" height="140" viewBox="0 0 140 140">
         <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-background"></circle>
         <circle r="62" cx="70" cy="70" className="ola_progressCircle-circle-value" style={circleStyle}></circle>
       </svg>
