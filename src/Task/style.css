@@ -5,22 +5,22 @@
     background: var(--white);
 
     &.is-success {
-        & .ola_task-icon {
+        & .ola_task-status {
             fill: var(--success);
         }
     }
     &.is-error {
-        & .ola_task-icon {
+        & .ola_task-status {
             fill: var(--error);
         }
     }
     &.is-warning {
-        & .ola_task-icon {
+        & .ola_task-status {
             fill: var(--warning);
         }
     }
     &.is-suggested {
-        & .ola_task-icon {
+        & .ola_task-status {
             fill: var(--gray);
         }
     }
@@ -67,6 +67,7 @@
     cursor: default;
     position: relative;
     z-index: 1;
+    min-height: 52px;
 }
 summary.ola_task-title {
     color: var(--brand);
@@ -74,7 +75,6 @@ summary.ola_task-title {
     transition: background-color var(--duration);
     outline: 0;
     list-style: none;
-    min-height: 52px;
 
     &::-webkit-details-marker {
         display: none;
