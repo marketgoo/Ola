@@ -1,0 +1,35 @@
+.ola_metric {
+    display: inline-block;
+    vertical-align: top;
+
+    &.is-success .ola_metric-value {
+        color: var(--success);
+    }
+    &.is-error .ola_metric-value,
+    &.is-warning .ola_icon {
+        color: var(--error);
+    }
+    &.is-warning .ola_metric-value,
+    &.is-warning .ola_metric-value {
+        color: var(--gray-light);
+    }
+}
+.ola_metric-title {
+    font: var(--font-body);
+    font-weight: var(--regular);
+    color: var(--black);
+}
+.ola_metric-description {
+    font: var(--font-caption);
+    color: var(--gray);
+    margin: var(--size-1) 0 0;
+}
+.ola_metric-value {
+    font: var(--font-title);
+    color: var(--black);
+    margin: var(--size-1) 0 0;
+
+    &.is-busy {
+      color: var(--gray-light);
+    }
+}

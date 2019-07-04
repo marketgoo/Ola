@@ -7,6 +7,7 @@ export { ButtonGroup } from './ButtonGroup'
 export { Icon } from './Icon'
 export { ProgressCircle } from './ProgressCircle'
 export { ProgressBar } from './ProgressBar'
+export { Metric } from './Metric'
 
 export { Panel } from './Panel'
 export { PanelContent } from './Panel/Content'
