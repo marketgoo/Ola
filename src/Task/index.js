@@ -5,10 +5,10 @@ import { Icon } from '../Icon'
 
 const TaskIcon = ({ variant }) => {
   switch (variant) {
-  case 'success': return (<Icon name='success' extraClass='ola_task-icon' />)
-  case 'warning': return (<Icon name='warning' extraClass='ola_task-icon' />)
-  case 'suggested': return (<Icon name='help' extraClass='ola_task-icon' />)
-  default: return (<Icon name='error' extraClass='ola_task-icon' />)
+  case 'success': return (<Icon name='success' extraClass='ola_task-status' />)
+  case 'warning': return (<Icon name='warning' extraClass='ola_task-status' />)
+  case 'suggested': return (<Icon name='help' extraClass='ola_task-status' />)
+  default: return (<Icon name='error' extraClass='ola_task-status' />)
   }
 }
 
@@ -25,7 +25,10 @@ const TaskSumary = ({ title, htmlTitle, variant }) => {
     <summary className="ola_task-title">
       <TaskIcon variant={variant} />
       <TaskTitle title={title} htmlTitle={htmlTitle} />
-      <Icon name={'close'} extraClass='ola_task-close' />
+      <span className="ola_task-icon ola_buttonIcon">
+        <Icon name="close" extraClass="ola_task-icon-close" />
+        <Icon name="chevronDown" extraClass="ola_task-icon-open" />
+      </span>
     </summary>
   )
 }

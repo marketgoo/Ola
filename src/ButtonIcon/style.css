@@ -6,6 +6,7 @@
     border: none;
     cursor: pointer;
     padding: 0;
+    border-radius: 50%;
 
     &::-moz-focus-inner {
         border: 0;
@@ -18,5 +19,17 @@
     &:hover {
         color: var(--black);
         background-color: var(--gray-xlight);
+    }
+
+    &:active {
+        background: var(--gray-light);
+    }
+
+    & > svg {
+        display: block;
+    }
+
+    & .ola_icon.is-medium {
+        padding: var(--size-3);
     }
 }

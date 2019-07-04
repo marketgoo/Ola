@@ -45,11 +45,15 @@
         }
 
         & .ola_task-close {
-            display: block;
+            visibility: visible;
         }
 
         & .ola_task-title {
             color: inherit;
+            
+            &:focus {
+                box-shadow: none;
+            }
         }
     }
 }
@@ -59,7 +63,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    padding: var(--size-4) var(--inner);
+    padding: 0 var(--inner);
     cursor: default;
     position: relative;
     z-index: 1;
@@ -67,9 +71,10 @@
 summary.ola_task-title {
     color: var(--brand);
     cursor: pointer;
-    transition: background-color 200ms;
+    transition: background-color var(--duration);
     outline: 0;
     list-style: none;
+    min-height: 52px;
 
     &::-webkit-details-marker {
         display: none;
@@ -86,24 +91,16 @@ summary.ola_task-title {
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
 }
-.ola_task-icon {
+.ola_task-status {
     flex: 0 0 auto;
     margin-right: var(--size-5);
 }
-.ola_task-close {
+.ola_task-icon {
     flex: 0 0 auto;
     margin-left: auto;
     margin-right: calc(var(--size-7) * -1);
-    display: none;
+    visibility: hidden;
     color: var(--gray);
-
-    & path {
-        fill: currentColor;
-    }
-
-    &:hover {
-        color: var(--black);
-    }
 }
 .ola_task-body {
     padding: var(--size-4) var(--inner) var(--size-8);

@@ -28,37 +28,9 @@
 }
 
 .ola_modal-close {
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
     position: absolute;
     top: var(--size-4);
     right: var(--size-4);
-    color: var(--black);
-    border-radius: var(--radius-big);
-    outline: 0;
-
-    &::-moz-focus-inner {
-        border: 0;
-    }
-
-    &:hover {
-        background: var(--gray-xlight);
-    }
-
-    &:focus {
-        box-shadow: 0 0 0 4px var(--brand-focus);
-    }
-
-    &:active {
-        background: var(--gray-light);
-    }
-
-    & svg {
-        path: currentColor;
-        display: block;
-    }
 }
 .ola_modal-title {
     grid-area: title;
