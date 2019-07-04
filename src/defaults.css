@@ -3,6 +3,9 @@
     font-family: var(--font-ui);
     font-weight: var(--regular);
     color: var(--black);
+    text-rendering: auto;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 
     & b,
     & strong {
