@@ -6,10 +6,10 @@ import { Spinner } from '../Spinner'
 
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
-    <strong className={cx('ola_metric-value', busy && 'is-busy')}>
-      { busy && <Spinner /> }
-      { (variant === 'warning') && <Icon name="warning" /> }
-      { (valueIcon && variant && variant !== 'warning') && <Icon name={variant} /> }
+    <strong className="ola_metric-value">
+      { busy && <Spinner extraClass="ola_metric-icon" /> }
+      { (variant === 'warning') && <Icon name="warning" extraClass="ola_metric-icon" /> }
+      { (valueIcon && variant && variant !== 'warning') && <Icon name={variant} extraClass="ola_metric-icon" /> }
       {children}
     </strong>
   )
@@ -17,7 +17,7 @@ const MetricValue = ({busy=false, variant, valueIcon, children}) => {
 
 const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, ...props }) => {
   return (
-    <div className={cx('ola_metric', variant && `is-${variant}`, extraClass)} {...props}>
+    <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', extraClass)} {...props}>
       <strong className="ola_metric-title">{title}</strong>
       <p className="ola_metric-description">{description}</p>
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>

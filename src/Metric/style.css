@@ -5,13 +5,34 @@
     &.is-success .ola_metric-value {
         color: var(--success);
     }
-    &.is-error .ola_metric-value,
-    &.is-warning .ola_icon {
-        color: var(--error);
+
+    &.is-error {
+        & .ola_metric-value {
+            color: var(--gray-light);
+        }
+
+        & .ola_metric-description,
+        & .ola_metric-icon {
+            color: var(--error);
+        }
     }
-    &.is-warning .ola_metric-value,
-    &.is-warning .ola_metric-value {
-        color: var(--gray-light);
+
+    &.is-positive {
+        & .ola_metric-value {
+            color: var(--success);
+        }
+    }
+    
+    &.is-negative {
+        & .ola_metric-value {
+            color: var(--error);
+        }
+    }
+    
+    &.is-busy {
+        & .ola_metric-value {
+            color: var(--gray-light);
+        }
     }
 }
 .ola_metric-title {
@@ -25,11 +46,11 @@
     margin: var(--size-1) 0 0;
 }
 .ola_metric-value {
+    display: block;
     font: var(--font-title);
     color: var(--black);
     margin: var(--size-1) 0 0;
-
-    &.is-busy {
-      color: var(--gray-light);
-    }
+}
+.ola_metric-icon {
+    margin-right: var(--size-1);
 }
