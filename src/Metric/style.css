@@ -2,10 +2,6 @@
     display: inline-block;
     vertical-align: top;
 
-    &.is-success .ola_metric-value {
-        color: var(--success);
-    }
-
     &.is-error {
         & .ola_metric-value {
             color: var(--gray-light);
