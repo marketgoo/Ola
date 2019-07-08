@@ -4,12 +4,18 @@ import cx from 'classnames'
 import { Icon } from '../Icon'
 import { Spinner } from '../Spinner'
 
+const defaultIcons = {
+  error: 'warning',
+  positive: 'success',
+  negative: 'error'
+};
+
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
     <strong className="ola_metric-value">
       { busy && <Spinner extraClass="ola_metric-icon" /> }
-      { (variant === 'warning') && <Icon name="warning" extraClass="ola_metric-icon" /> }
-      { (valueIcon && variant && variant !== 'warning') && <Icon name={variant} extraClass="ola_metric-icon" /> }
+      { (variant === 'error') && <Icon name={defaultIcons.error} extraClass="ola_metric-icon" /> }
+      { (valueIcon && variant && variant !== 'error') && <Icon name={defaultIcons[variant]} extraClass="ola_metric-icon" /> }
       {children}
     </strong>
   )
@@ -47,7 +53,7 @@ Metric.propTypes = {
   /** Extra className */
   extraClass: PT.string,
   /** Tag variants */
-  variant: PT.oneOf(['error', 'success', 'warning']),
+  variant: PT.oneOf(['error', 'positive', 'negative']),
   /** Icon for value variants */
   valueIcon: PT.bool,
   /** Busy state */

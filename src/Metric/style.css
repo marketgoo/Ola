@@ -48,5 +48,7 @@
     margin: var(--size-1) 0 0;
 }
 .ola_metric-icon {
-    margin-right: var(--size-1);
+    margin-right: var(--size-2);
+    position: relative;
+    top: 1px;
 }
