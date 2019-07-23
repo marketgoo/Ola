@@ -10,6 +10,10 @@ const defaultIcons = {
   negative: 'error'
 }
 
+const MetricFooter = ({ footer, htmlFooter }) => {
+  return footer && ( htmlFooter ? <p className="ola_metric-footer" dangerouslySetInnerHTML={{__html: footer}} /> : <p className="ola_metric-footer">{footer}</p>)
+}
+
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
     <strong className="ola_metric-value">
@@ -28,8 +32,8 @@ const Metric = ({ title, value, description, variant, valueIcon, busy, extraClas
       <p className="ola_metric-description">{description}</p>
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>
         {value}
-        { footer && ( htmlFooter ? <p className="ola_metric-description" dangerouslySetInnerHTML={{__html: footer}} /> : <p className="ola_metric-description">{footer}</p>) }
       </MetricValue>
+      <MetricFooter footer={footer} htmlFooter={htmlFooter} />
     </div>
   )
 }
