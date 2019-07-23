@@ -8,7 +8,7 @@ const defaultIcons = {
   error: 'warning',
   positive: 'success',
   negative: 'error'
-};
+}
 
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
@@ -21,13 +21,14 @@ const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   )
 }
 
-const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, ...props }) => {
+const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, footer, htmlFooter, ...props }) => {
   return (
-    <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', extraClass)} {...props}>
+    <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', footer && 'is-centered', extraClass)} {...props}>
       <strong className="ola_metric-title">{title}</strong>
       <p className="ola_metric-description">{description}</p>
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>
         {value}
+        { footer && ( htmlFooter ? <p className="ola_metric-description" dangerouslySetInnerHTML={{__html: footer}} /> : <p className="ola_metric-description">{footer}</p>) }
       </MetricValue>
     </div>
   )
@@ -40,14 +41,16 @@ Metric.defaultProps = {
   extraClass: null,
   variant: null,
   valueIcon: false,
-  busy: false
+  busy: false,
+  footer: null,
+  htmlFooter: false
 }
 
 Metric.propTypes = {
   /** Metric title */
   title: PT.string.isRequired,
   /** Metric description */
-  description: PT.string.isRequired,
+  description: PT.string,
   /** Metric value */
   value: PT.string,
   /** Extra className */
@@ -57,7 +60,11 @@ Metric.propTypes = {
   /** Icon for value variants */
   valueIcon: PT.bool,
   /** Busy state */
-  busy: PT.bool
+  busy: PT.bool,
+  /** Footer */
+  footer: PT.string,
+  /** Footer support HTML tags */
+  htmlFooter: PT.bool
 }
 
 export { Metric }

@@ -18,17 +18,21 @@
             color: var(--success);
         }
     }
-    
+
     &.is-negative {
         & .ola_metric-value {
             color: var(--error);
         }
     }
-    
+
     &.is-busy {
         & .ola_metric-value {
             color: var(--gray-light);
         }
+    }
+
+    &.is-centered {
+        text-align: center;
     }
 }
 .ola_metric-title {
