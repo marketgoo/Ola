@@ -29,7 +29,7 @@ const Metric = ({ title, value, description, variant, valueIcon, busy, extraClas
   return (
     <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', footer && 'is-centered', extraClass)} {...props}>
       <strong className="ola_metric-title">{title}</strong>
-      <p className="ola_metric-description">{description}</p>
+      { description && !footer && <p className="ola_metric-description">{description}</p> }
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>
         {value}
       </MetricValue>
