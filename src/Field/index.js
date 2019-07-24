@@ -16,8 +16,8 @@ const Field = ({ id, label, hint, error, description, customDescription, disable
         customDescription ?
           React.cloneElement(customDescription, { error }) :
           description ?
-          ( <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p> ) :
-          ''
+            ( <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p> ) :
+            ''
       }
 
     </div>
