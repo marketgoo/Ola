@@ -5,8 +5,8 @@ import { getElementType } from '../utils'
 
 const ProgressBarDescription = ({ description, htmlDescription=false }) => {
   return htmlDescription ?
-    <p dangerouslySetInnerHTML={{__html: description}} /> :
-    <p>{description}</p>
+    <p className="ola_progressBar-description" dangerouslySetInnerHTML={{__html: description}} /> :
+    <p className="ola_progressBar-description">{description}</p>
 }
 
 const ProgressBar = ({ extraClass, description, descriptionPosition, htmlDescription, ...props }) => {

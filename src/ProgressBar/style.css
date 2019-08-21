@@ -1,27 +1,25 @@
 .ola_progressBar {
 
   width: 100%;
-  display: grid;
-  justify-items: end;
-  grid-gap: 0.5em;
-  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
 
   &.is-description-right {
-    grid-template-columns: 1fr auto;
-    & p {
-      order: 1;
-    }
+    align-items: baseline;
+    flex-wrap: nowrap;
+    white-space: nowrap;
   }
 
 }
 
-.ola_progressBar p {
+.ola_progressBar-description {
   font: var(--font-caption);
   color: var(--gray);
-  margin: 0px;
+  margin: 0px 0px var(--size-3) var(--size-3);
 }
 
-.ola_progressBar p strong {
+.ola_progressBar-description strong {
   color: var(--black);
   font-weight: var(--bold);
 }
