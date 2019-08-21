@@ -1,4 +1,33 @@
-progress.ola_progressBar {
+.ola_progressBar {
+
+  width: 100%;
+  display: grid;
+  justify-items: end;
+  grid-gap: 0.5em;
+  align-items: baseline;
+
+  &.is-description-right {
+    grid-template-columns: 1fr auto;
+    & p {
+      order: 1;
+    }
+  }
+
+}
+
+.ola_progressBar p {
+  font: var(--font-caption);
+  color: var(--gray);
+  margin: 0px;
+}
+
+.ola_progressBar p strong {
+  color: var(--black);
+  font-weight: var(--bold);
+}
+
+.ola_progressBar progress {
+
     --color: var(--brand);
 
     appearance: none;
@@ -21,7 +50,7 @@ progress.ola_progressBar {
     }
 }
 
-meter.ola_progressBar {
+.ola_progressBar meter {
     --color: var(--brand);
 
     -moz-appearance: none;
@@ -42,7 +71,7 @@ meter.ola_progressBar {
         background-color: var(--warning);
     }
     &::-moz-meter-sub-sub-optimum::-moz-meter-bar {
-        background-color: var(--red);
+        background-color: var(--error);
     }
 
     &::-webkit-meter-bar {
@@ -63,7 +92,7 @@ meter.ola_progressBar {
 }
 /* Only firefox */
 @-moz-document url-prefix() {
-    meter.ola_progressBar {
+    .ola_progressBar meter {
         border: solid 1px var(--brand);
     }
 }
