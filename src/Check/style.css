@@ -30,7 +30,7 @@
 .ola_check-input:checked ~ .ola_check-label::before {
     --color: var(--brand);
     background-color: currentColor;
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.9189624,7 C18.2173738,7 18.4721496,7.10860122 18.6832898,7.32580365 C18.8944299,7.54300608 19,7.80509702 19,8.11207646 C19,8.41905589 18.8930223,8.68259485 18.679067,8.90269331 L11.1202493,16.6785404 C10.9119244,16.8928468 10.6585562,17 10.3601448,17 C10.056103,17 9.79991957,16.8928468 9.59159461,16.6785404 L5.31248743,12.2852592 C5.10416248,12.0709528 5,11.8074138 5,11.4946423 C5,11.1876629 5.10557008,10.925572 5.31671024,10.7083695 C5.52785039,10.4911671 5.78262618,10.3825659 6.0810376,10.3825659 C6.37944902,10.3825659 6.63563242,10.4926151 6.84958777,10.7127136 L10.3601448,14.324066 L17.1504122,7.3301477 C17.3643676,7.11004923 17.620551,7 17.9189624,7 Z" fill="white"></path></svg>');
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.919 7c.298 0 .553.109.764.326.211.217.317.48.317.786 0 .307-.107.57-.32.79l-7.56 7.777a1.02 1.02 0 0 1-.76.321 1.03 1.03 0 0 1-.768-.321l-4.28-4.394a1.09 1.09 0 0 1-.312-.79c0-.307.106-.57.317-.787.21-.217.466-.325.764-.325s.555.11.769.33l3.51 3.611 6.79-6.994c.214-.22.47-.33.769-.33z" fill="white"/></svg>');
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -49,6 +49,6 @@
     }
 
     &:checked ~ .ola_check-label::before {
-        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle fill="%23FFFFFF" cx="12" cy="12" r="4"></circle></svg>');
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle fill="white" cx="12" cy="12" r="4"/></svg>');
     }
 }
