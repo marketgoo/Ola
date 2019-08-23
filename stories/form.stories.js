@@ -9,9 +9,25 @@ import {
   FieldDescription,
   SearchField,
   Check,
+  CheckGroup,
   Switch,
   Select
 } from '../dist'
+
+const random_option_values = [
+  {
+    label: 'Test 1',
+    value: 'test1'
+  },
+  {
+    label: 'Test 2',
+    value: 'test2'
+  },
+  {
+    label: 'Test 3',
+    value: 'test3'
+  }
+]
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
@@ -92,6 +108,22 @@ storiesOf('Form', module)
       <p><Check label="Check <span> with span</span>" htmlLabel /></p>
       <p><Check type="radio" name="name" label="Check Radio" /></p>
       <p><Check type="radio" name="name" label="Check Radio <span> with span</span>" htmlLabel /></p>
+    </div>
+  ))
+  .add('CheckGroup', () => (
+    <div className="preview-centered-inner">
+      <Field
+        id="field-cutsom-checkGroup"
+        label="Select the most accurate option:"
+        hint="(optional)">
+        <CheckGroup values={random_option_values} />
+      </Field>
+      <Field
+        id="field-cutsom-checkGroup"
+        label="Select the most accurate option:"
+        hint="(optional)">
+        <CheckGroup values={random_option_values} type="checkbox" />
+      </Field>
     </div>
   ))
   .add('Switch', () => (

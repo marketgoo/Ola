@@ -1,0 +1,24 @@
+.ola_checkGroup {
+    display: block;
+    box-sizing: border-box;
+    max-height: var(--size-11);
+    width: 100%;
+    border: solid 2px var(--gray-light);
+    background: var(--white);
+    border-radius: var(--radius-small);
+    padding: var(--size-3) 0;
+    overflow-y: auto;
+    margin: var(--size-2) 0;
+
+    & .ola_check {
+        display: block;
+        padding: 0;
+    }
+    & .ola_check-label {
+        padding: var(--size-4);
+        transition: background-color 200ms;
+    }
+    & .ola_check-input:checked ~ .ola_check-label {
+        background-color: var(--gray-xlight);
+    }
+}
