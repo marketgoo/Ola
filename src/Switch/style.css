@@ -12,7 +12,7 @@
     align-items: center;
 }
 .ola_switch-label::before {
-    --color: var(--gray-xlight);
+    --color: var(--gray-light);
 
     content: "";
     display: block;
@@ -22,7 +22,7 @@
     flex: 0 0 auto;
     margin-right: 10px;
     background-color: var(--color);
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24px" height="24px" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><circle id="shape" cx="12" cy="12" r="10"></circle><filter x="-25.0%" y="-20.0%" width="150.0%" height="150.0%" filterUnits="objectBoundingBox" id="shadow"><feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset><feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur><feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix></filter></defs><use fill="black" filter="url(%23shadow)" xlink:href="%23shape"></use><use fill="white" xlink:href="%23shape"></use></svg>');
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><defs><circle id="a" cx="12" cy="12" r="10"/></defs><use filter="url(%23a)" xlink:href="%23a"/><use fill="%23fff" xlink:href="%23a"/></svg>');
     background-repeat: no-repeat;
     background-position: left center;
     transition-property: background-color, background-position;

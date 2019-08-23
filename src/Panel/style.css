@@ -10,11 +10,11 @@
 .ola_panel-header {
     display: grid;
     grid-template-areas: "title" "intro";
-    grid-template-columns: 1fr auto;
-    grid-column-gap: var(--size-6);
+    grid-column-gap: var(--inner-gap);
 
     &.has-extra {
         grid-template-areas: "title extra" "intro extra";
+        grid-template-columns: 1fr auto;
     }
 }
 .ola_panel-title {
@@ -36,6 +36,7 @@
 }
 .ola_panel-extra {
     grid-area: extra;
+    max-width: var(--size-11);
 }
 
 .ola_panel-subtitle {
