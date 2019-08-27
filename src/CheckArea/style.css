@@ -8,7 +8,7 @@
     &.is-row {
         flex-direction: column;
 
-        & > .check + .check {
+        & > .ola_check + .ola_check {
             margin-top: var(--size-4);
         }
     }
@@ -16,7 +16,7 @@
     &.is-column {
         flex-direction: row;
 
-        & > .check + .check {
+        & > .ola_check + .ola_check {
             margin-left: var(--size-4);
         }
         & .ola_check-label {
