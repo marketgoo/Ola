@@ -7,11 +7,11 @@ storiesOf('Utils', module)
   .addDecorator(story => <div className="ola preview-centered is-wide">{story()}</div>)
   .add('Font styles', () => (
     <div>
-        <div class="ola_util-display">Display</div>
-        <div class="ola_util-title">Title</div>
-        <div class="ola_util-headline">Headline</div>
-        <div class="ola_util-body">Body</div>
-        <div class="ola_util-callout">Callout</div>
-        <div class="ola_util-caption">Caption</div>
+      <div className="ola_util-display">Display</div>
+      <div className="ola_util-title">Title</div>
+      <div className="ola_util-headline">Headline</div>
+      <div className="ola_util-body">Body</div>
+      <div className="ola_util-callout">Callout</div>
+      <div className="ola_util-caption">Caption</div>
     </div>
   ))

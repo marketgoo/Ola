@@ -1,0 +1,54 @@
+.ola_checkArea {
+    display: flex;
+    box-sizing: border-box;
+    min-height: var(--size-7);
+    background: var(--white);
+    margin: var(--size-2) 0;
+
+    &.is-row {
+        flex-direction: column;
+
+        & > .check + .check {
+            margin-top: var(--size-4);
+        }
+    }
+
+    &.is-column {
+        flex-direction: row;
+
+        & > .check + .check {
+            margin-left: var(--size-4);
+        }
+        & .ola_check-label {
+            position: relative;
+            padding: var(--size-7) var(--size-7) var(--size-5);
+
+            &::before {
+                position: absolute;
+                top: var(--size-3);
+                left: var(--size-3);
+            }
+        }
+    }
+
+    & .ola_check {
+        display: block;
+        padding: 0;
+    }
+
+    & .ola_check-label {
+        border-radius: var(--radius-small);
+        border: solid 2px var(--gray-light);
+        padding: var(--size-4);
+        transition: background-color 200ms;
+    }
+
+    & .ola_check-input:checked ~ .ola_check-label {
+        background-color: var(--gray-xlight);
+        border-color: var(--brand);
+    }
+
+    & .ola_check-input:focus ~ .ola_check-label {
+        box-shadow: 0 0 0 4px var(--brand-focus);
+    }
+}

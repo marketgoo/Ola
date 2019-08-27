@@ -3,7 +3,9 @@ import {default as PT} from 'prop-types'
 import { Check } from '../Check'
 
 const CheckList = ({ values, type }) => values.map( ({label, value}, idx) =>
-  <Check key={idx} name="test" label={ label ? label : value } type={type} value={value} />
+  <Check key={idx} name="test" type={type} value={value}>
+    { label ? label : value }
+  </Check>
 )
 
 const CheckGroup = ({ values, type, ...props }) => {

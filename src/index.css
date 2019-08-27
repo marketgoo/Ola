@@ -20,6 +20,7 @@
 @import './Field/style.css';
 @import './Check/style.css';
 @import './CheckGroup/style.css';
+@import './CheckArea/style.css';
 @import './Switch/style.css';
 @import './SearchField/style.css';
 @import './Select/style.css';
