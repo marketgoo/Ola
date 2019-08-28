@@ -157,6 +157,12 @@ storiesOf('Form', module)
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
+        <CheckArea values={random_option_values} type="checkbox" />
+      </Field>
+      <Field
+        id="field-cutsom-checkArea"
+        label="Select the most accurate option:"
+        hint="(optional)">
         <CheckArea values={random_option_values} variant="column"/>
       </Field>
       <Field

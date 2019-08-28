@@ -9,9 +9,9 @@ const CheckList = ({ values, type }) => values.map( ({label, description, value}
   </Check>
 )
 
-const CheckArea = ({ values, type, variant, ...props }) => {
+const CheckArea = ({ values, type, variant }) => {
   return (
-    <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)} {...props}>
+    <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)}>
       <CheckList values={values} type={type} />
     </div>
   )

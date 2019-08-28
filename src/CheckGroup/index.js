@@ -8,9 +8,9 @@ const CheckList = ({ values, type }) => values.map( ({label, value}, idx) =>
   </Check>
 )
 
-const CheckGroup = ({ values, type, ...props }) => {
+const CheckGroup = ({ values, type }) => {
   return (
-    <div role="radiogroup" className="ola_checkGroup" {...props}>
+    <div role="radiogroup" className="ola_checkGroup">
       <CheckList values={values} type={type} />
     </div>
   )
