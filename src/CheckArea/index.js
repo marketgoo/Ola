@@ -3,16 +3,18 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { Check } from '../Check'
 
-const CheckList = ({ values, type }) => values.map( ({label, description, value}, idx) =>
-  <Check key={idx} name="test" type={type} value={value}>
-    { description ? <div className="checkArea-content"><strong>{label}</strong><br/>{description}</div> : <div className="checkArea-content">{ label }</div> }
-  </Check>
-)
-
 const CheckArea = ({ values, type, variant }) => {
   return (
     <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)}>
-      <CheckList values={values} type={type} />
+      { values && values.map( ({label, description, value}, idx) => (
+        <Check key={idx} name="test" type={type} value={value}>
+          { description ? (
+            <div className="checkArea-content"><strong>{label}</strong><br/>{description}</div>
+          ) : (
+            <div className="checkArea-content">{ label }</div>
+          )}
+        </Check>
+      ))}
     </div>
   )
 }
