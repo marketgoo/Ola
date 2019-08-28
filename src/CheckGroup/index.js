@@ -2,16 +2,14 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import { Check } from '../Check'
 
-const CheckList = ({ values, type }) => values.map( ({label, value}, idx) =>
-  <Check key={idx} name="test" type={type} value={value}>
-    { label ? label : value }
-  </Check>
-)
-
 const CheckGroup = ({ values, type }) => {
   return (
     <div role="radiogroup" className="ola_checkGroup">
-      <CheckList values={values} type={type} />
+      { values && values.map( ({label, value}, idx) => (
+        <Check key={idx} name="test" type={type} value={value}>
+          { label ? label : value }
+        </Check>
+      ))}
     </div>
   )
 }
