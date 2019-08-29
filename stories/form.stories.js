@@ -34,17 +34,17 @@ const random_option_values_with_description = [
   {
     label: 'Test 1',
     value: 'test1',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet.'
   },
   {
     label: 'Test 2',
     value: 'test2',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet.'
   },
   {
     label: 'Test 3',
     value: 'test3',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    description: 'Lorem ipsum dolor sit amet.'
   }
 ]
 
@@ -135,13 +135,13 @@ storiesOf('Form', module)
         id="field-cutsom-checkGroup"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckGroup values={random_option_values} />
+        <CheckGroup options={random_option_values} />
       </Field>
       <Field
         id="field-cutsom-checkGroup"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckGroup values={random_option_values} type="checkbox" />
+        <CheckGroup options={random_option_values} type="checkbox" />
       </Field>
     </div>
   ))
@@ -151,31 +151,45 @@ storiesOf('Form', module)
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea values={random_option_values} type="checkbox" />
+        <CheckArea options={random_option_values} />
       </Field>
       <Field
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea values={random_option_values} type="checkbox" />
+        <CheckArea options={random_option_values} type="checkbox" />
+      </Field>
+    </div>
+  ))
+  .add('CheckArea with description', () => (
+    <div className="preview-centered-inner">
+      <Field
+        id="field-cutsom-checkArea"
+        label="Select the most accurate option:"
+        hint="(optional)">
+        <CheckArea options={random_option_values_with_description} />
       </Field>
       <Field
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea values={random_option_values} variant="column"/>
+        <CheckArea options={random_option_values_with_description} type="checkbox" />
+      </Field>
+    </div>
+  ))
+  .add('CheckArea column', () => (
+    <div className="preview-centered-inner">
+      <Field
+        id="field-cutsom-checkArea"
+        label="Select the most accurate option:"
+        hint="(optional)">
+        <CheckArea options={random_option_values} variant="column" type="checkbox" />
       </Field>
       <Field
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea values={random_option_values_with_description} />
-      </Field>
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea values={random_option_values_with_description} type="checkbox" />
+        <CheckArea options={random_option_values_with_description} variant="column" />
       </Field>
     </div>
   ))

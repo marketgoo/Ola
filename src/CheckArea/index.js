@@ -3,15 +3,15 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { Check } from '../Check'
 
-const CheckArea = ({ values, type, variant }) => {
+const CheckArea = ({ options, value, type, variant, onChange }) => {
   return (
-    <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)}>
-      { values && values.map( ({label, description, value}, idx) => (
-        <Check key={idx} name="test" type={type} value={value}>
-          { description ? (
-            <div className="checkArea-content"><strong>{label}</strong><br/>{description}</div>
+    <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)} onChange={ e => onChange(e) }>
+      { options && options.map( (option, idx) => (
+        <Check key={idx} name="test" type={type} value={option.value} checked={ value && value === option.value }>
+          { option.description ? (
+            <div className="checkArea-content"><strong>{option.label}</strong><br/>{option.description}</div>
           ) : (
-            <div className="checkArea-content">{ label }</div>
+            <div className="checkArea-content">{ option.label }</div>
           )}
         </Check>
       ))}
@@ -22,7 +22,9 @@ const CheckArea = ({ values, type, variant }) => {
 
 CheckArea.defaultProps = {
   type: 'radio',
-  variant: 'row'
+  variant: 'row',
+  value: null,
+  onChange: () => {}
 }
 
 CheckArea.propTypes = {
@@ -31,11 +33,15 @@ CheckArea.propTypes = {
   /** CheckArea variants */
   variant: PT.oneOf(['row', 'column']),
   /** Array of values */
-  values: PT.arrayOf(PT.shape({
+  options: PT.arrayOf(PT.shape({
     label: PT.string.isRequired,
     description: PT.string,
     value: PT.any.isRequired
-  })).isRequired
+  })).isRequired,
+  /** value selected */
+  value: PT.string,
+  /** OnChange method */
+  onChange: PT.func
 }
 
 export { CheckArea }
