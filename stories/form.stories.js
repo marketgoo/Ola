@@ -205,7 +205,24 @@ storiesOf('Form', module)
         <Select options={[
           { value: 'chocolate', label: 'Chocolate' },
           { value: 'strawberry', label: 'Strawberry' },
-          { value: 'vanilla', label: 'Vanilla' }
+          { value: 'vanilla', label: 'Vanilla' },
+          { value: '', label: 'None' }
+        ]} />
+      </p>
+      <p>
+        <Select emptyOption="Select yout flavor" options={[
+          { value: 'chocolate', label: 'Chocolate' },
+          { value: 'strawberry', label: 'Strawberry' },
+          { value: 'vanilla', label: 'Vanilla' },
+          { value: '', label: 'None' }
+        ]} />
+      </p>
+      <p>
+        <Select emptyOption="Select yout flavor" value="vanilla" options={[
+          { value: 'chocolate', label: 'Chocolate' },
+          { value: 'strawberry', label: 'Strawberry' },
+          { value: 'vanilla', label: 'Vanilla' },
+          { value: '', label: 'None' }
         ]} />
       </p>
     </div>
