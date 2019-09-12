@@ -7,6 +7,7 @@
     cursor: pointer;
     padding: 0;
     border-radius: 50%;
+    outline: 0;
 
     &::-moz-focus-inner {
         border: 0;
