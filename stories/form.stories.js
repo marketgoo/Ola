@@ -27,6 +27,38 @@ const random_option_values = [
   {
     label: 'Test 3',
     value: 'test3'
+  },
+  {
+    label: 'Test 4',
+    value: 'test4'
+  },
+  {
+    label: 'Test 5',
+    value: 'test5'
+  },
+  {
+    label: 'Test 6',
+    value: 'test6'
+  },
+  {
+    label: 'Test 7',
+    value: 'test7'
+  },
+  {
+    label: 'Test 8',
+    value: 'test8'
+  },
+  {
+    label: 'Test 9',
+    value: 'test9'
+  },
+  {
+    label: 'Test 10',
+    value: 'test10'
+  },
+  {
+    label: 'Test 11',
+    value: 'test11'
   }
 ]
 
