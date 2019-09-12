@@ -91,3 +91,48 @@ storiesOf('Tasks', module)
       </PanelContent>
     </Panel>
   ))
+  .add('Mixed', () => (
+    <Panel>
+      <PanelContent title="Mixed" variant="fullwidth">
+        <TaskGroup>
+
+          <Task title="Task title" variant="warning">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
+          <Task title="Task title" variant="suggested">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
+          <Task title="Task title" variant="success" />
+          <Task title="Task title" variant="suggested" />
+
+          <Task title="Task title demo" variant="error">
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
+        </TaskGroup>
+      </PanelContent>
+    </Panel>
+  ))
