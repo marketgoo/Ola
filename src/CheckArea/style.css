@@ -16,12 +16,18 @@
     &.is-column {
         flex-direction: row;
 
+        & > .ola_check {
+            max-width: 200px;
+            flex: 0 0 100%;
+            display: flex;
+        }
         & > .ola_check + .ola_check {
             margin-left: var(--size-4);
         }
         & .ola_check-label {
             position: relative;
             padding: var(--size-7) var(--size-7) var(--size-5);
+            flex: 1 1 auto;
 
             &::before {
                 position: absolute;
@@ -43,6 +49,10 @@
         transition: background-color 200ms;
     }
 
+    & .ola_check-label:hover {
+        border-color: var(--brand-dark);
+    }
+
     & .ola_check-input:checked ~ .ola_check-label {
         background-color: var(--gray-xlight);
         border-color: var(--brand);
@@ -51,4 +61,10 @@
     & .ola_check-input:focus ~ .ola_check-label {
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
+}
+.ola_checkArea-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }

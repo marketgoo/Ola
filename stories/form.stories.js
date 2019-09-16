@@ -66,17 +66,22 @@ const random_option_values_with_description = [
   {
     label: 'Test 1',
     value: 'test1',
-    description: 'Lorem ipsum dolor sit amet.'
+    content: 'Lorem ipsum dolor sit amet.'
   },
   {
     label: 'Test 2',
     value: 'test2',
-    description: 'Lorem ipsum dolor sit amet.'
+    content: 'Lorem ipsum dolor sit amet.'
   },
   {
     label: 'Test 3',
     value: 'test3',
-    description: 'Lorem ipsum dolor sit amet.'
+    content: (
+      <div>
+        <strong>Test 3</strong><br/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet nisl metus, non auctor urna volutpat a.</p>
+      </div>
+    )
   }
 ]
 
