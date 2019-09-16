@@ -27,6 +27,7 @@
         & .ola_check-label {
             position: relative;
             padding: var(--size-7) var(--size-7) var(--size-5);
+            flex: 1 1 auto;
 
             &::before {
                 position: absolute;
