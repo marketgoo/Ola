@@ -15,6 +15,10 @@
 
     &.is-column {
         flex-direction: row;
+        max-width: 100%;
+        overflow-x: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
 
         & > .ola_check {
             max-width: 200px;
