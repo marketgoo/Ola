@@ -1,4 +1,6 @@
 .ola_field {
+    max-width: 100%;
+
     &.is-disabled {
         cursor: not-allowed;
 
