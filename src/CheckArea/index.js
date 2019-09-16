@@ -9,9 +9,9 @@ const CheckArea = ({ options, value, type, variant, onChange }) => {
       { options && options.map( (option, idx) => (
         <Check key={idx} name="test" type={type} value={option.value} checked={ value && value === option.value }>
           { option.description ? (
-            <div className="checkArea-content"><strong>{option.label}</strong><br/>{option.description}</div>
+            <div className="ola_checkArea-content"><strong>{option.label}</strong><br/>{option.description}</div>
           ) : (
-            <div className="checkArea-content">{ option.label }</div>
+            <div className="ola_checkArea-content">{ option.label }</div>
           )}
         </Check>
       ))}
