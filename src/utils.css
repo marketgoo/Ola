@@ -1,23 +1,23 @@
-.ola-bg {
+.ola_util-bg {
     background-color: var(--gray-xlight);
 }
-.ola-display {
+.ola_util-display {
     font: var(--font-display);
     letter-spacing: var(--font-display-spacing);
 }
-.ola-title {
+.ola_util-title {
     font: var(--font-title);
     letter-spacing: var(--font-title-spacing);
 }
-.ola-headline {
+.ola_util-headline {
     font: var(--font-headline);
 }
-.ola-body {
+.ola_util-body {
     font: var(--font-body);
 }
-.ola-callout {
+.ola_util-callout {
     font: var(--font-callout);
 }
-.ola-caption {
+.ola_util-caption {
     font: var(--font-caption);
 }
