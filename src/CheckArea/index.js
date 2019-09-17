@@ -35,7 +35,11 @@ CheckArea.propTypes = {
   variant: PT.oneOf(['row', 'column']),
   /** Array of values */
   options: PT.arrayOf(PT.shape({
-    label: PT.string.isRequired,
+    label: PT.oneOfType([
+      PT.string,
+      PT.arrayOf(PT.node),
+      PT.node
+    ]).isRequired,
     value: PT.any.isRequired
   })).isRequired,
   /** Label value in options can be html */
