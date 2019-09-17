@@ -3,13 +3,13 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { Check } from '../Check'
 
-const CheckArea = ({ options, value, type, variant, onChange }) => {
+const CheckArea = ({ options, htmlOptions, value, type, variant, onChange }) => {
   return (
     <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)} onChange={ e => onChange(e) }>
       { options && options.map( (option, idx) => (
         <Check key={idx} name="test" type={type} value={option.value} checked={ value && value === option.value }>
-          { option.content ? (
-            <div className="ola_checkArea-content">{ option.content }</div>
+          { htmlOptions ? (
+            <div className="ola_checkArea-content" dangerouslySetInnerHTML={{ __html: option.label }} />
           ) : (
             <div className="ola_checkArea-content">{ option.label }</div>
           )}
@@ -24,7 +24,8 @@ CheckArea.defaultProps = {
   type: 'radio',
   variant: 'row',
   value: null,
-  onChange: () => {}
+  onChange: () => {},
+  htmlOptions: false
 }
 
 CheckArea.propTypes = {
@@ -35,9 +36,10 @@ CheckArea.propTypes = {
   /** Array of values */
   options: PT.arrayOf(PT.shape({
     label: PT.string.isRequired,
-    content: PT.string,
     value: PT.any.isRequired
   })).isRequired,
+  /** Label value in options can be html */
+  htmlOptions: PT.bool,
   /** value selected */
   value: PT.string,
   /** OnChange method */

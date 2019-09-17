@@ -64,24 +64,16 @@ const random_option_values = [
 
 const random_option_values_with_description = [
   {
-    label: 'Test 1',
-    value: 'test1',
-    content: 'Lorem ipsum dolor sit amet.'
+    label: '<strong>Test 1</strong>Lorem ipsum dolor sit amet.',
+    value: 'test1'
   },
   {
-    label: 'Test 2',
-    value: 'test2',
-    content: 'Lorem ipsum dolor sit amet.'
+    label: '<strong>Test 2</strong>Lorem ipsum dolor sit amet.',
+    value: 'test2'
   },
   {
-    label: 'Test 3',
-    value: 'test3',
-    content: (
-      <div>
-        <strong>Test 3</strong><br/>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla imperdiet nisl metus, non auctor urna volutpat a.</p>
-      </div>
-    )
+    label: '<strong>Test 3</strong>Lorem ipsum dolor sit amet.',
+    value: 'test3'
   }
 ]
 
@@ -198,19 +190,19 @@ storiesOf('Form', module)
       </Field>
     </div>
   ))
-  .add('CheckArea with description', () => (
+  .add('CheckArea with html description', () => (
     <div className="preview-centered-inner">
       <Field
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea options={random_option_values_with_description} />
+        <CheckArea htmlOptions={true} options={random_option_values_with_description} />
       </Field>
       <Field
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea options={random_option_values_with_description} type="checkbox" />
+        <CheckArea htmlOptions={true} options={random_option_values_with_description} type="checkbox" />
       </Field>
     </div>
   ))
@@ -226,7 +218,7 @@ storiesOf('Form', module)
         id="field-cutsom-checkArea"
         label="Select the most accurate option:"
         hint="(optional)">
-        <CheckArea options={random_option_values_with_description} variant="column" />
+        <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
       </Field>
     </div>
   ))
