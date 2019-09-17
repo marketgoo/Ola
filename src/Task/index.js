@@ -27,7 +27,6 @@ const TaskSumary = ({ title, htmlTitle, variant }) => {
       <TaskTitle title={title} htmlTitle={htmlTitle} />
       <span className="ola_task-icon ola_buttonIcon">
         <Icon name="close" extraClass="ola_task-icon-close" />
-        <Icon name="chevronDown" extraClass="ola_task-icon-open" />
       </span>
     </summary>
   )
