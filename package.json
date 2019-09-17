@@ -1,9 +1,8 @@
 {
-  "name": "@ola/components",
+  "name": "@marketgoo/ola",
   "version": "0.1.0",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
-  "browser": "dist/index.dist.js",
   "styles": "dist/index.css",
   "license": "MIT",
   "scripts": {
@@ -20,7 +19,8 @@
     "dist",
     "src",
     "*.md",
-    "ola.png"
+    "ola.png",
+    "LICENSE"
   ],
   "peerDependencies": {
     "react": "^16.8.6",

@@ -11,6 +11,29 @@ React implementation of **Ola** design system created by **marketgoo**.
 npm i @marketgoo/ola
 ```
 
+## Usage
+
+Import Ola styles in your app
+```css
+
+@import "@marketgoo/ola/dist/index.css";
+```
+
+
+Import Ola components in your app
+```js
+
+import { Button } from "@marketgoo/ola";
+
+const Example = () => (
+  <div>
+    <Button variant="primary">My Button</Button>
+  </div>
+)
+
+
+```
+
 ## Available components
 
 Name | Design
