@@ -16,6 +16,11 @@
     "build:storybook": "build-storybook",
     "publish:storybook": "gh-pages -d storybook-static"
   },
+  "homepage": "https://github.com/marketgoo/Ola.git",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/marketgoo/Ola.git"
+  },
   "files": [
     "dist",
     "src",
