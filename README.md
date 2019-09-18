@@ -3,7 +3,7 @@
 React implementation of **Ola** design system created by **marketgoo**.
 
 - [View *Ola* specs](https://zeroheight.com/22mjgbuf6)
-- [View Storybook demos](https://marketgoo.gitlab.io/ola/)
+- [View Storybook demos](https://marketgoo.github.io/Ola/)
 
 ## Install
 
