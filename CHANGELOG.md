@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.1.1] - 2019-09-18
+### Changed
+- Moved the repository from gitlab to github
+
+### Fixed
+- Improved README documentation and links [#1], [#2]
+- Added the links to the repository and the homepage to package.json
+
 ## 0.1.0 - 2019-09-17
 ### Added
 - New component `Button`
@@ -36,3 +44,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `.ola-body`
   - `.ola-callout`
   - `.ola-caption`
+
+[#1]: https://github.com/marketgoo/Ola/issues/1
+[#2]: https://github.com/marketgoo/Ola/issues/2
+
+[0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
