@@ -13,7 +13,8 @@
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
     "guide": "start-storybook -p 6006 -s ./static",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist && postcss src/index.css -o dist/index.css",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook && cp -R static storybook-static",
+    "publish:storybook": "gh-pages -d storybook-static"
   },
   "files": [
     "dist",
@@ -45,6 +46,7 @@
     "cssnano": "^4.1.10",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.12.4",
+    "gh-pages": "^2.1.1",
     "postcss": "^7.0.14",
     "postcss-cli": "^6.1.2",
     "postcss-import": "^12.0.1",
