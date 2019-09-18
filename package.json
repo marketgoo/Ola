@@ -13,7 +13,7 @@
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
     "guide": "start-storybook -p 6006 -s ./static",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist && postcss src/index.css -o dist/index.css",
-    "build:storybook": "build-storybook && cp -R static storybook-static",
+    "build:storybook": "build-storybook && cp static/* storybook-static",
     "publish:storybook": "gh-pages -d storybook-static"
   },
   "files": [
