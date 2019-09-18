@@ -1,4 +1,4 @@
-![logo Ola](ola.png)
+![logo Ola](https://gitlab.com/marketgoo/ola/raw/master/ola.png)
 
 React implementation of **Ola** design system created by **marketgoo**.
 
@@ -71,6 +71,6 @@ TaskGroup | --
 
 ---
 
-Please see [CHANGELOG](CHANGELOG.md) for more information about recent changes.
+Please see [CHANGELOG](https://gitlab.com/marketgoo/ola/blob/master/CHANGELOG.md) for more information about recent changes.
 
-The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
+The MIT License (MIT). Please see [LICENSE](https://gitlab.com/marketgoo/ola/blob/master/LICENSE) for more information.
