@@ -13,10 +13,19 @@ npm i @marketgoo/ola
 
 ## Usage
 
-Import Ola styles in your app
-```css
+Import Ola styles in your document and add the `ola` class in the root of your app (usually the `html` element)
 
-@import "@marketgoo/ola/dist/index.css";
+```html
+<html class="ola">
+  <head>
+    <!-- Your head content -->
+    <link rel="stylesheet" href="./node_modules/@marketgoo/ola/dist/index.css">
+  </head>
+
+  <body>
+    <!-- Your body content -->
+  </body>
+</html>
 ```
 
 
