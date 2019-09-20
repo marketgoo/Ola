@@ -69,6 +69,22 @@ Tag | [Tag](https://zeroheight.com/22mjgbuf6/p/48a462/b/3764b3) | [Tags](https:/
 Task | -- | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mixed)
 TaskGroup | -- | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mixed)
 
+
+## Browser support
+
+This library was tested in the following browsers:
+
+- Mozilla Firefox (latests 2 versions)
+- Google Chrome (latests 2 versions)
+- Opera (latests 2 versions)
+- Microsoft Edge 18
+- Apple Safari 12
+- Apple Safari iOS 12
+- Android Chrome (latests 2 versions)
+- Firefox for Android (latests 2 versions)
+
+> Internet Explorer is not supported
+
 ---
 
 Please see [CHANGELOG](https://github.com/marketgoo/Ola/blob/master/CHANGELOG.md) for more information about recent changes.
