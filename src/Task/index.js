@@ -22,12 +22,14 @@ const TaskTitle = ({ title, htmlTitle }) => {
 
 const TaskSumary = ({ title, htmlTitle, variant }) => {
   return (
-    <summary className="ola_task-title">
-      <TaskIcon variant={variant} />
-      <TaskTitle title={title} htmlTitle={htmlTitle} />
-      <span className="ola_task-icon ola_buttonIcon">
-        <Icon name="close" extraClass="ola_task-icon-close" />
-      </span>
+    <summary className="ola_task-summary">
+      <div className="ola_task-title">
+        <TaskIcon variant={variant} />
+        <TaskTitle title={title} htmlTitle={htmlTitle} />
+        <span className="ola_task-icon ola_buttonIcon">
+          <Icon name="close" extraClass="ola_task-icon-close" />
+        </span>
+      </div>
     </summary>
   )
 }

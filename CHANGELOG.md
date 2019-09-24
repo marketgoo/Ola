@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Fixed
 - Improved README adding demo links and browser support info
+- Task component doesn't look properly in Safari [#6]
 
 ## [0.1.1] - 2019-09-18
 ### Changed
@@ -51,6 +52,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 [#1]: https://github.com/marketgoo/Ola/issues/1
 [#2]: https://github.com/marketgoo/Ola/issues/2
+[#6]: https://github.com/marketgoo/Ola/issues/6
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.1.1...HEAD
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
