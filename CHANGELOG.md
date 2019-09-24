@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Fixed
+- Improved README adding demo links and browser support info
+
 ## [0.1.1] - 2019-09-18
 ### Changed
 - Moved the repository from gitlab to github
@@ -48,4 +52,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#1]: https://github.com/marketgoo/Ola/issues/1
 [#2]: https://github.com/marketgoo/Ola/issues/2
 
+[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.1.1...HEAD
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
