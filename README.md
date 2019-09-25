@@ -85,6 +85,10 @@ This library was tested in the following browsers:
 
 > Internet Explorer is not supported
 
+Tested with [Browserstack](https://www.browserstack.com)
+
+[![Browserstack logo](browserstack.png)](https://www.browserstack.com)
+
 ---
 
 Please see [CHANGELOG](https://github.com/marketgoo/Ola/blob/master/CHANGELOG.md) for more information about recent changes.
