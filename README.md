@@ -66,7 +66,7 @@ Select | [Inputs > Selectors](https://zeroheight.com/22mjgbuf6/p/12656e/t/7b7d) 
 Spinner | [Spinner](https://zeroheight.com/22mjgbuf6/p/01ddf2/b/21deb0) | [Spinner](https://marketgoo.github.io/Ola/?path=/story/spinner--default)
 Switch | [Switch](https://zeroheight.com/22mjgbuf6/p/18645f) | [Switch](https://marketgoo.github.io/Ola/?path=/story/form--switch)
 Tag | [Tag](https://zeroheight.com/22mjgbuf6/p/48a462/b/3764b3) | [Tags](https://marketgoo.github.io/Ola/?path=/story/tag--all)
-Task | -- | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mixed)
+Task | [Tasks](https://zeroheight.com/22mjgbuf6/p/14cad2) | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mixed)
 TaskGroup | -- | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mixed)
 
 
