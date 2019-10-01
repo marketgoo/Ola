@@ -36,8 +36,8 @@ storiesOf('Table', module)
         <thead>
           <th>Page</th>
           <th>Incoming links</th>
-          <th className="is-center">Popularity</th>
-          <th className="is-center">Actions</th>
+          <th className="ola-center">Popularity</th>
+          <th className="ola-center">Actions</th>
         </thead>
         <tbody>
 
@@ -45,8 +45,8 @@ storiesOf('Table', module)
             <tr key={idx}>
               <td>{row.title}</td>
               <td>{row.links}</td>
-              <td className="is-center">{row.popularity}</td>
-              <td className="is-center"><Button>Edit</Button></td>
+              <td className="ola-center">{row.popularity}</td>
+              <td className="ola-center"><Button>Edit</Button></td>
             </tr>
           ) ) }
 

@@ -21,9 +21,9 @@
 .ola-caption {
     font: var(--font-caption);
 }
-.is-right {
+.ola-right {
     text-align: right;
 }
-.is-center {
+.ola-center {
     text-align: center;
 }
