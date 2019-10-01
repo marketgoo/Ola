@@ -27,3 +27,7 @@
 .ola-center {
     text-align: center;
 }
+.ola-numeric {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+}

@@ -35,7 +35,7 @@ storiesOf('Table', module)
         <caption>Superheros and sidekicks</caption>
         <thead>
           <th>Page</th>
-          <th>Incoming links</th>
+          <th className="ola-right">Incoming links</th>
           <th className="ola-center">Popularity</th>
           <th className="ola-center">Actions</th>
         </thead>
@@ -44,7 +44,7 @@ storiesOf('Table', module)
           { data.map( (row, idx) => (
             <tr key={idx}>
               <td>{row.title}</td>
-              <td>{row.links}</td>
+              <td className="ola-numeric">{row.links}</td>
               <td className="ola-center">{row.popularity}</td>
               <td className="ola-center"><Button>Edit</Button></td>
             </tr>
