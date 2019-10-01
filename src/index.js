@@ -8,6 +8,7 @@ export { Icon } from './Icon'
 export { ProgressCircle } from './ProgressCircle'
 export { ProgressBar } from './ProgressBar'
 export { Metric } from './Metric'
+export { Table } from './Table'
 
 export { Panel } from './Panel'
 export { PanelContent } from './Panel/Content'

@@ -1,0 +1,47 @@
+.ola_table {
+    font: var(--font-callout);
+    color: var(--gray);
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+
+    & td,
+    & th {
+        border: none;
+        height: var(--size-8);
+    }
+
+    & th {
+        font-weight: var(--bold);
+        color: var(--black);
+    }
+
+    & td {
+        padding-top: var(--size-3);
+        padding-bottom: var(--size-3);
+    }
+
+    & :matches(th, td) + :matches(th, td) {
+        padding-left: var(--size-8);
+    }
+
+    & thead {
+        & th {
+            white-space: nowrap;
+            box-shadow: 0 1px 0 var(--gray-light);
+            position: sticky;
+            top: 0;
+            background: white;
+        }
+    }
+
+    & caption {
+        @extend %caption;
+        caption-side: bottom;
+        border-top: solid 1px var(--gray-light);
+        padding-top: var(--size-3);
+        text-align: right;
+    }
+
+}

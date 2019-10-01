@@ -21,3 +21,9 @@
 .ola-caption {
     font: var(--font-caption);
 }
+.is-right {
+    text-align: right;
+}
+.is-center {
+    text-align: center;
+}
