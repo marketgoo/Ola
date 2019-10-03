@@ -10,6 +10,7 @@ export { ProgressBar } from './ProgressBar'
 export { Metric } from './Metric'
 export { Table } from './Table'
 export { Page } from './Page'
+export { Level } from './Level'
 
 export { Panel } from './Panel'
 export { PanelContent } from './Panel/Content'
