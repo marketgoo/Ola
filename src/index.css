@@ -10,6 +10,7 @@
 @import './Panel/style.css';
 @import './Tag/style.css';
 @import './Table/style.css';
+@import './Page/style.css';
 @import './Modal/style.css';
 @import './Task/style.css';
 @import './TaskGroup/style.css';

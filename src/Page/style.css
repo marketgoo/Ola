@@ -1,0 +1,29 @@
+.ola_page {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-column-gap: var(--size-4);
+}
+.ola_page-title {
+    font: var(--font-callout);
+    font-weight: var(--bold);
+    display: block;
+    grid-column: 2;
+    grid-row: 1;
+}
+.ola_page-url {
+    font: var(--font-caption);
+    display: block;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: start;
+}
+span.ola_page-url {
+    color: var(--gray);
+}
+.ola_page-icon {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    max-width: var(--size-8);
+    align-self: center;
+    color: var(--gray-light);
+}
