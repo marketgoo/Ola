@@ -1,32 +1,38 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import { Icon } from '../Icon'
 
-const Page = ({ title, url, iconName }) => {
+const Page = ({ title, url, icon, link }) => {
+
+  const pageUrl = link ?
+    <a href={link} rel="noopener noreferrer" target="_blank" className="ola_page-url">{url}</a> :
+    <span className="ola_page-url">{ url }</span>
+
   return (
     <p className="ola_page">
-      { iconName &&
+      { icon &&
         <span className="ola_page-icon">
-          <Icon name={iconName} />
+          { icon }
         </span>
       }
       <strong className="ola_page-title">{ title }</strong>
-      <span className="ola_page-url">{ url }</span>
+      { pageUrl }
     </p>
   )
 }
 
 Page.defaultProps = {
-  iconName: 'page'
+  icon: null,
+  link: null
 }
 
 Page.propTypes = {
+  icon: PT.element,
   /** Page Title*/
   title: PT.string.isRequired,
   /** Page Url */
-  url: PT.string,
-  /** Icon name */
-  iconName: PT.string
+  url: PT.string.isRequired,
+  /** Url link */
+  link: PT.string
 }
 
 export { Page }
