@@ -87,7 +87,7 @@
     }
 }
 
-@custom-media --to-width-1 (max-width: 500px);
-@custom-media --from-width-1 (min-width: 500px);
-@custom-media --to-width-2 (max-width: 850px);
-@custom-media --from-width-2 (min-width: 850px);
+@custom-media --to-width-1 (max-width: 523px);
+@custom-media --from-width-1 (min-width: 524px);
+@custom-media --to-width-2 (max-width: 782px);
+@custom-media --from-width-2 (min-width: 783px);
