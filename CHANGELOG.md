@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- New component `Table` [#7]
+- New component `Page` [#8], [#13]
+
 ### Fixed
 - Improved README adding demo links and browser support info
 - Task component doesn't look properly in Safari [#6]
@@ -53,6 +57,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#1]: https://github.com/marketgoo/Ola/issues/1
 [#2]: https://github.com/marketgoo/Ola/issues/2
 [#6]: https://github.com/marketgoo/Ola/issues/6
+[#7]: https://github.com/marketgoo/Ola/issues/7
+[#8]: https://github.com/marketgoo/Ola/issues/8
+[#13]: https://github.com/marketgoo/Ola/issues/13
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.1.1...HEAD
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
