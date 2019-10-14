@@ -13,8 +13,12 @@
     grid-column-gap: var(--inner-gap);
 
     &.has-extra {
-        grid-template-areas: "title extra" "intro extra";
-        grid-template-columns: 1fr auto;
+        grid-template-areas: "title" "intro" "extra";
+
+        @media (--from-width-2) {
+            grid-template-areas: "title extra" "intro extra";
+            grid-template-columns: 1fr auto;
+        }
     }
 }
 .ola_panel-title {
@@ -36,7 +40,10 @@
 }
 .ola_panel-extra {
     grid-area: extra;
-    max-width: var(--size-11);
+
+    @media (--from-width-2) {
+        max-width: var(--size-11);
+    }
 }
 
 .ola_panel-subtitle {
@@ -87,5 +94,10 @@
 .ola_panel-footer {
     background: var(--gray-xlight);
     border-radius: 0 0 var(--radius) var(--radius);
-    padding: var(--size-3) var(--inner-gap);
+    padding: var(--inner-gap);
+
+    @media (--from-width-1) {
+        padding-top: var(--size-3);
+        padding-bottom: var(--size-3);
+    }
 }
