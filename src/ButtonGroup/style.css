@@ -1,17 +1,38 @@
 .ola_buttonGroup {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
 
     & .ola_button + .ola_button {
-        margin-left: var(--size-6);
+        margin-top: var(--inner-gap);
     }
 
     &.is-reversed {
-        flex-direction: row-reverse;
+        flex-direction: column-reverse;
 
         & .ola_button + .ola_button {
-            margin-left: 0;
-            margin-right: var(--size-6);
+            margin-top: 0;
+            margin-bottom: var(--inner-gap);
+        }
+    }
+
+    @media (--from-width-1) {
+        flex-direction: row;
+        align-items: center;
+
+        & .ola_button + .ola_button {
+            margin-left: var(--size-6);
+            margin-top: 0;
+        }
+
+        &.is-reversed {
+            flex-direction: row-reverse;
+
+            & .ola_button + .ola_button {
+                margin-left: 0;
+                margin-bottom: 0;
+                margin-right: var(--size-6);
+            }
         }
     }
 }
