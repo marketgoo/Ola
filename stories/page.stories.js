@@ -1,7 +1,7 @@
 import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
-import { Page, Icon } from '../dist'
+import { Page, Icon, Level } from '../dist'
 
 storiesOf('Page', module)
   .addDecorator(withInfo)
@@ -10,7 +10,7 @@ storiesOf('Page', module)
     <div className="preview-inner">
       <Page title="Easy SEO Tools - marketgoo" url="/index" icon={<Icon name="home"/>} />
       <Page title="Free SEO Report - marketgoo" url="/free-seo-report/" icon={<Icon name="page"/>} />
-      <Page title="MarkeGoo PRO - marketgoo" url="/marketgoo-pro/" link="http://google.com" icon={<Icon />} />
+      <Page title="MarkeGoo PRO - marketgoo" url="/marketgoo-pro/" link="http://google.com" icon={<Level variant="medium"/>} />
       <Page title="Pricing - marketgoo" url="/pricing/" />
     </div>
   ))

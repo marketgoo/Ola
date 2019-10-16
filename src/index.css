@@ -10,6 +10,7 @@
 @import './Panel/style.css';
 @import './Tag/style.css';
 @import './Table/style.css';
+@import './Level/style.css';
 @import './Page/style.css';
 @import './Modal/style.css';
 @import './Task/style.css';
@@ -18,6 +19,7 @@
 @import './ProgressCircle/style.css';
 @import './ProgressBar/style.css';
 @import './Metric/style.css';
+
 @import './Input/style.css';
 @import './Field/style.css';
 @import './Check/style.css';

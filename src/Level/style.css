@@ -1,0 +1,41 @@
+.ola_level {
+    --background: var(--gray-xlight);
+
+    display: inline-flex;
+    vertical-align: middle;
+    width: 12px;
+    height: var(--size-6);
+    border-left: 12px solid;
+    border-right: 12px solid;
+    border-color: var(--background);
+    border-radius: var(--radius-small);
+    padding: 0 var(--size-1);
+    margin: var(--size-1);
+
+    &::after {
+        content: "";
+        display: block;
+        background: var(--background);
+        flex: 1 1 auto;
+    }
+
+    &.is-low {
+        border-left-color: var(--error);
+    }
+
+    &.is-medium {
+        border-left-color: var(--warning);
+
+        &::after {
+            background-color: var(--warning);
+        }
+    }
+
+    &.is-high {
+        border-color: var(--success);
+
+        &::after {
+            background-color: var(--success);
+        }
+    }
+}
