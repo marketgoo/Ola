@@ -11,6 +11,7 @@ storiesOf('Level', module)
   .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
   .add('Default', () => (
     <div className="preview-centered-inner">
-      <Level variant={radios('Variant', ['low', 'medium', 'high'], 'low')} />
+      <Level />
+      <Level variant={radios('Variant', ['low', 'medium', 'high'], 'medium')} />
     </div>
   ))
