@@ -20,6 +20,13 @@ storiesOf('Button', module)
       { text('Label', 'Button') }
     </Button>
   ))
+  .add('As link', () => (
+    <div className="preview-centered-inner">
+      <Button href="https://marketgoo.github.io/Ola" variant="primary" target="_blank">Link</Button>
+      <Button href="https://marketgoo.github.io/Ola" variant="primary" disabled>Link disabled</Button>
+      <Button href="https://marketgoo.github.io/Ola" variant="primary" busy='Link busy ...' disabled></Button>
+    </div>
+  ))
   .add('Loading / Busy', () => (
     <Button busy='Busy ...'>Example text button</Button>
   ))
