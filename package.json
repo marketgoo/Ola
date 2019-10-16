@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/marketgoo/Ola.git"
+    "type": "git",
+    "url": "https://github.com/marketgoo/Ola.git"
   },
   "files": [
     "dist",
@@ -38,12 +38,12 @@
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
-    "@storybook/addon-actions": "^5.0.11",
-    "@storybook/addon-info": "^5.0.11",
-    "@storybook/addon-knobs": "^5.1.1",
-    "@storybook/addon-links": "^5.0.11",
-    "@storybook/addons": "^5.0.11",
-    "@storybook/react": "^5.0.11",
+    "@storybook/addon-actions": "^5.2.4",
+    "@storybook/addon-info": "^5.2.4",
+    "@storybook/addon-knobs": "^5.2.4",
+    "@storybook/addon-links": "^5.2.4",
+    "@storybook/addons": "^5.2.4",
+    "@storybook/react": "^5.2.4",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.6",
     "classnames": "^2.2.6",
