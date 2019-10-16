@@ -11,14 +11,15 @@
     justify-content: center;
     text-align: center;
     height: var(--size-8);
-    min-width: var(--size-10);
+    min-width: var(--size-8);
+    max-width: 100%;
     border: none;
     background: none;
     color: var(--color);
     background-color: var(--background);
     border-radius: var(--radius-big);
     font: var(--font-callout);
-    padding: 0 1em;
+    padding: 0 var(--size-7);
     font-weight: var(--bold);
     transition-property: background-color, color, box-shadow;
     transition-duration: var(--duration);
@@ -103,12 +104,12 @@
 
         & .ola_spinner:first-child {
             position: relative;
-            right: var(--size-3);
+            right: var(--size-6);
         }
 
         & .ola_spinner:last-child {
             position: relative;
-            left: var(--size-3);
+            left: var(--size-6);
         }
     }
 
@@ -135,4 +136,10 @@
         cursor: not-allowed;
         box-shadow: none;
     }
+}
+
+.ola_button-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
