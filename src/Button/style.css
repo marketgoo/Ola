@@ -101,6 +101,7 @@
         cursor: default;
         min-width: 0;
         cursor: wait;
+        pointer-events: none;
 
         & .ola_spinner:first-child {
             position: relative;
