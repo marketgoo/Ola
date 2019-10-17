@@ -8,7 +8,7 @@
   "scripts": {
     "start": "concurrently npm:watch npm:guide",
     "lint": "eslint ./src",
-    "watch": "rm -rf dist && mkdir dist && concurrently npm:watch:js npm:watch:css",
+    "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
     "guide": "start-storybook -p 6006 -s ./static",

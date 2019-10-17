@@ -16,7 +16,7 @@ import {
 
 storiesOf('Modal', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered is-wide">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All elements', () => (
     <div className="ola_modal-overlay">
       <div>

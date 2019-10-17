@@ -14,7 +14,7 @@ import {
 
 storiesOf('Layout', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered is-wide ola_util-bg">{story()}</div>)
+  .addDecorator(story => <div className="ola ola-bg">{story()}</div>)
   .add('ola_ly-form', () => (
     <div className="ola_ly-form">
       <header className="ola_panel-header">

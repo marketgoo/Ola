@@ -8,9 +8,9 @@ import { ProgressCircle } from '../dist'
 storiesOf('Progress Circle', module)
   .addDecorator(withInfo)
   .addDecorator(withKnobs)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Default', () => (
-    <div className="preview-centered-inner">
+    <div>
       <ProgressCircle
         variant={radios('Variant', ['null', 'error', 'success', 'warning'])}
         value={number('Value', 20)}
