@@ -10,7 +10,7 @@ import { Button, ButtonIcon, ButtonGroup, Tag, Icon } from '../dist'
 storiesOf('Button', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All buttons', () => (
     <Button
       onClick={action('onClick event')}
@@ -21,10 +21,10 @@ storiesOf('Button', module)
     </Button>
   ))
   .add('As link', () => (
-    <div className="preview-centered-inner">
-      <Button href="https://marketgoo.github.io/Ola" variant="primary" target="_blank">Link</Button>
-      <Button href="https://marketgoo.github.io/Ola" variant="primary" disabled>Link disabled</Button>
-      <Button href="https://marketgoo.github.io/Ola" variant="primary" busy='Link busy ...' disabled></Button>
+    <div>
+      <figure><Button href="#" variant="primary" target="_blank">Link</Button></figure>
+      <figure><Button href="#" variant="primary" disabled>Link disabled</Button></figure>
+      <figure><Button href="#" variant="primary" busy='Link busy ...' disabled></Button></figure>
     </div>
   ))
   .add('Loading / Busy', () => (

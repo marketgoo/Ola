@@ -7,7 +7,7 @@ const CheckArea = ({ options, htmlOptions, value, type, variant, onChange }) => 
   return (
     <div role="radiogroup" className={cx('ola_checkArea', variant && `is-${variant}`)} onChange={ e => onChange(e) }>
       { options && options.map( (option, idx) => (
-        <Check key={idx} name="test" type={type} value={option.value} checked={ value && value === option.value }>
+        <Check key={idx} name="test" type={type} value={option.value} checked={ value && value == option.value }>
           { htmlOptions ? (
             <div className="ola_checkArea-content" dangerouslySetInnerHTML={{ __html: option.label }} />
           ) : (

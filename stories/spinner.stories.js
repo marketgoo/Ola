@@ -8,7 +8,7 @@ import { Spinner } from '../dist'
 storiesOf('Spinner', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Default', () => (
     <Spinner size={radios('Size', ['small', 'medium', 'big'], 'big')} />
   ))

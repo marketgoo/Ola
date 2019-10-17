@@ -8,10 +8,10 @@ import { Level } from '../dist'
 storiesOf('Level', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Default', () => (
-    <div className="preview-centered-inner">
-      <Level />
-      <Level variant={radios('Variant', ['low', 'medium', 'high'], 'medium')} />
+    <div>
+      <figure><Level /></figure>
+      <figure><Level variant={radios('Variant', ['low', 'medium', 'high'], 'medium')} /></figure>
     </div>
   ))

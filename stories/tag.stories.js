@@ -6,14 +6,14 @@ import { Tag } from '../dist'
 
 storiesOf('Tag', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All', () => (
-    <div className="preview-centered-inner">
-      <Tag>Default Tag</Tag>
-      <Tag variant='invert'>Invert Tag</Tag>
-      <Tag variant='success'>Sucess Tag</Tag>
-      <Tag variant='warning'>Warning Tag</Tag>
-      <Tag variant='error'>Error Tag</Tag>
-      <Tag variant='pro'>Pro Tag</Tag>
+    <div>
+      <figure><Tag>Default Tag</Tag></figure>
+      <figure><Tag variant='invert'>Invert Tag</Tag></figure>
+      <figure><Tag variant='success'>Sucess Tag</Tag></figure>
+      <figure><Tag variant='warning'>Warning Tag</Tag></figure>
+      <figure><Tag variant='error'>Error Tag</Tag></figure>
+      <figure><Tag variant='pro'>Pro Tag</Tag></figure>
     </div>
   ))

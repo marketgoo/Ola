@@ -8,9 +8,9 @@ import { Icon } from '../dist'
 storiesOf('Icon', module)
   .addDecorator(withKnobs)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Default', () => (
-    <div className="preview-centered-inner">
+    <div>
       <Icon name="help" />
       <Icon name="help" size="big" />
       <Icon name="help" size="medium" />
@@ -18,7 +18,7 @@ storiesOf('Icon', module)
     </div>
   ))
   .add('All', () => (
-    <div className="preview-centered-inner">
+    <div>
       <Icon size={select('Size', ['medium', 'small', 'big'])} name={select('Name', [
         'help',
         'chevronDown',

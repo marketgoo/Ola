@@ -79,7 +79,7 @@ const random_option_values_with_description = [
 
 storiesOf('Form', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Input Empty', () => (
     <Input placeholder="Text placeholder" />
   ))
@@ -125,140 +125,160 @@ storiesOf('Form', module)
     </Field>
   ))
   .add('Field Custom description', () => (
-    <div className="preview-centered-inner">
-      <Field
-        id="field-cutsom-description"
-        label="Test"
-        customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
-        hint="(optional)">
-        <Input placeholder="Text placeholder" />
-      </Field>
-      <Field
-        id="field-custom-description-error"
-        error
-        label="Test"
-        customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
-        hint="(optional)">
-        <Input placeholder="Text placeholder" />
-      </Field>
+    <div>
+      <figure>
+        <Field
+          id="field-cutsom-description"
+          label="Test"
+          customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+          hint="(optional)">
+          <Input placeholder="Text placeholder" />
+        </Field>
+      </figure>
+      <figure>
+        <Field
+          id="field-custom-description-error"
+          error
+          label="Test"
+          customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
+          hint="(optional)">
+          <Input placeholder="Text placeholder" />
+        </Field>
+      </figure>
     </div>
   ))
   .add('SearchField', () => (
-    <div className="preview-centered-inner">
-      <SearchField id="search" busy placeholder="Filter elements" />
-      <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
-      <SearchField id="search-loading" busy placeholder="Filter elements" textButton="Test Search" />
+    <div>
+      <figure><SearchField id="search" busy placeholder="Filter elements" /></figure>
+      <figure><SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" /></figure>
+      <figure><SearchField id="search-loading" busy placeholder="Filter elements" textButton="Test Search" /></figure>
     </div>
   ))
   .add('Check', () => (
-    <div className="preview-centered-inner">
-      <p><Check>Check</Check></p>
-      <p><Check>Check <span> with span</span></Check></p>
-      <p><Check type="radio" name="name">Check Radio</Check></p>
-      <p><Check type="radio" name="name">Check Radio <span> with span</span></Check></p>
+    <div>
+      <figure><Check>Check</Check></figure>
+      <figure><Check>Check <span> with span</span></Check></figure>
+      <figure><Check type="radio" name="name">Check Radio</Check></figure>
+      <figure><Check type="radio" name="name">Check Radio <span> with span</span></Check></figure>
     </div>
   ))
   .add('CheckGroup', () => (
-    <div className="preview-centered-inner">
-      <Field
-        id="field-cutsom-checkGroup"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckGroup options={random_option_values} />
-      </Field>
-      <Field
-        id="field-cutsom-checkGroup"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckGroup options={random_option_values} type="checkbox" />
-      </Field>
+    <div>
+      <figure>
+        <Field
+          id="field-cutsom-checkGroup"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckGroup options={random_option_values} />
+        </Field>
+      </figure>
+      <figure>
+        <Field
+          id="field-cutsom-checkGroup"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckGroup options={random_option_values} type="checkbox" />
+        </Field>
+      </figure>
     </div>
   ))
   .add('CheckArea', () => (
-    <div className="preview-centered-inner">
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea options={random_option_values} />
-      </Field>
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea options={random_option_values} type="checkbox" />
-      </Field>
+    <div>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea options={random_option_values} />
+        </Field>
+      </figure>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea options={random_option_values} type="checkbox" />
+        </Field>
+      </figure>
     </div>
   ))
   .add('CheckArea with html description', () => (
-    <div className="preview-centered-inner">
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea htmlOptions={true} options={random_option_values_with_description} />
-      </Field>
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea htmlOptions={true} options={random_option_values_with_description} type="checkbox" />
-      </Field>
+    <div>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea htmlOptions={true} options={random_option_values_with_description} />
+        </Field>
+      </figure>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea htmlOptions={true} options={random_option_values_with_description} type="checkbox" />
+        </Field>
+      </figure>
     </div>
   ))
   .add('CheckArea column', () => (
-    <div className="preview-centered-inner">
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea options={random_option_values} variant="column" type="checkbox" />
-      </Field>
-      <Field
-        id="field-cutsom-checkArea"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
-      </Field>
+    <div>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea options={random_option_values} variant="column" type="checkbox" />
+        </Field>
+      </figure>
+      <figure>
+        <Field
+          id="field-cutsom-checkArea"
+          label="Select the most accurate option:"
+          hint="(optional)">
+          <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
+        </Field>
+      </figure>
     </div>
   ))
   .add('Switch', () => (
-    <div className="preview-centered-inner">
-      <p><Switch label="Switch" /></p>
-      <p><Switch label="Switch <span> with span</span>" htmlLabel /></p>
+    <div>
+      <figure><Switch label="Switch" /></figure>
+      <figure><Switch label="Switch <span> with span</span>" htmlLabel /></figure>
     </div>
   ))
   .add('Select', () => (
-    <div className="preview-centered-inner">
-      <p>
+    <div>
+      <figure>
         <Select options={[
           { value: 'chocolate', label: 'Chocolate' },
           { value: 'strawberry', label: 'Strawberry' },
           { value: 'vanilla', label: 'Vanilla' },
           { value: '', label: 'None' }
         ]} />
-      </p>
-      <p>
+      </figure>
+      <figure>
         <Select emptyOption="Select yout flavor" options={[
           { value: 'chocolate', label: 'Chocolate' },
           { value: 'strawberry', label: 'Strawberry' },
           { value: 'vanilla', label: 'Vanilla' },
           { value: '', label: 'None' }
         ]} />
-      </p>
-      <p>
+      </figure>
+      <figure>
         <Select emptyOption="Select yout flavor" value="vanilla" options={[
           { value: 'chocolate', label: 'Chocolate' },
           { value: 'strawberry', label: 'Strawberry' },
           { value: 'vanilla', label: 'Vanilla' },
           { value: '', label: 'None' }
         ]} />
-      </p>
+      </figure>
     </div>
   ))
   .add('Select Field', () => (
-    <div className="preview-centered-inner">
-      <p>
+    <div>
+      <figure>
         <Field
           id="field-select-description"
           label="Test"
@@ -270,8 +290,8 @@ storiesOf('Form', module)
             { value: 'vanilla', label: 'Vanilla' }
           ]} />
         </Field>
-      </p>
-      <p>
+      </figure>
+      <figure>
         <Field
           id="field-select-error"
           error
@@ -284,6 +304,6 @@ storiesOf('Form', module)
             { value: 'vanilla', label: 'Vanilla' }
           ]} />
         </Field>
-      </p>
+      </figure>
     </div>
   ))

@@ -28,9 +28,9 @@ const data = [
 
 storiesOf('Table', module)
   .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola preview-centered">{story()}</div>)
+  .addDecorator(story => <div className="ola">{story()}</div>)
   .add('All', () => (
-    <div className="preview-centered-inner">
+    <div>
       <Table>
         <caption>Superheros and sidekicks</caption>
         <thead>
