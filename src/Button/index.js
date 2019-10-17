@@ -1,21 +1,29 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import { getElementType } from '../utils'
 
 import { Spinner } from '../Spinner'
 
 const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => {
-
-  const styles = cx('ola_button', {[`is-${variant}`]: (variant && !busy) }, {'is-busy': busy}, extraClass)
+  const ElementType = getElementType(Button, {...props})
+  const styles = cx(
+    'ola_button',
+    {[`is-${variant}`]: (variant && !busy && !disabled) },
+    {'is-busy': busy},
+    {'is-disabled': disabled && !busy},
+    extraClass
+  )
   return (
-    <button className={styles} disabled={busy ? true : disabled} {...props}>
+    <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
       {busy && <Spinner />}
       <span className="ola_button-text">{!busy ? children : busy}</span>
-    </button>
+    </ElementType>
   )
 }
 
 Button.defaultProps = {
+  as: 'button',
   variant: null,
   busy: null,
   extraClass: null,
@@ -23,6 +31,8 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
+  /** Element Type */
+  as: 'button',
   /** Button variants */
   variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro']),
   /** Text for loading state */

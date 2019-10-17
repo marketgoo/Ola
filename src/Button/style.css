@@ -127,15 +127,17 @@
         }
     }
 
-    &:disabled {
-        color: var(--gray-light);
-        --background: var(--gray-xlight);
-        --background-hover: var(--gray-xlight);
-        --background-active: var(--gray-xlight);
-        border: none;
-        cursor: not-allowed;
-        box-shadow: none;
+    &.is-disabled {
+      color: var(--gray-light);
+      --background: var(--gray-xlight);
+      --background-hover: var(--gray-xlight);
+      --background-active: var(--gray-xlight);
+      border: none;
+      cursor: not-allowed;
+      pointer-events: none;
+      box-shadow: none;
     }
+
 }
 
 .ola_button-text {
