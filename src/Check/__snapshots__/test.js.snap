@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check type checkbox 1`] = `
+<label
+  className="ola_check"
+>
+  <input
+    className="ola_check-input"
+    type="checkbox"
+  />
+  <div
+    className="ola_check-label"
+  >
+    Accept terms
+  </div>
+</label>
+`;
+
+exports[`Check type radio 1`] = `
+<label
+  className="ola_check"
+>
+  <input
+    className="ola_check-input"
+    type="radio"
+  />
+  <div
+    className="ola_check-label"
+  >
+    Accept terms
+  </div>
+</label>
+`;
+
+exports[`Default check is checkbox 1`] = `
+<label
+  className="ola_check"
+>
+  <input
+    className="ola_check-input"
+    type="checkbox"
+  />
+  <div
+    className="ola_check-label"
+  >
+    Accept terms
+  </div>
+</label>
+`;

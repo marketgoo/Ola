@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkarea type checkbox 1`] = `
+<div
+  className="ola_checkArea is-row"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Checkarea type radio with value="2" 1`] = `
+<div
+  className="ola_checkArea is-row"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Checkarea type radio with value=2 1`] = `
+<div
+  className="ola_checkArea is-row"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name="test"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Default checkarea 1`] = `
+<div
+  className="ola_checkArea is-row"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="radio"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="radio"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name="test"
+      type="radio"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_checkArea-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
