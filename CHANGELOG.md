@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Level` [#14], [#15]
 - New css utils:
   - `ola-right` to align text to the right
-  - `ola-center` to align center text
+  - `ola-center` to center text
   - `ola-numeric` to display numeric values aligned to right (mainly for tables)
 - Jest and Travis to create and run tests [#20], [#21]
 - The component `Button` is a link if the href property is defined [#12]
