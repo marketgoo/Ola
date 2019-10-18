@@ -5,8 +5,9 @@ import { getElementType } from '../utils'
 
 import { Spinner } from '../Spinner'
 
-const Button = ({ variant, children, disabled, busy, extraClass, ...props }) => {
-  const ElementType = getElementType(Button, {...props})
+const Button = ({ variant, children, disabled, busy, extraClass, as, ...props }) => {
+  const ElementType = getElementType(Button, { as: as, ...props })
+  delete props['as']
   const styles = cx(
     'ola_button',
     {[`is-${variant}`]: (variant && !busy && !disabled) },
@@ -31,8 +32,7 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-  /** Element Type */
-  as: 'button',
+  as: PT.string,
   /** Button variants */
   variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro']),
   /** Text for loading state */

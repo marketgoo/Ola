@@ -24,7 +24,7 @@ storiesOf('Button', module)
     <div>
       <figure><Button href="#" variant="primary" target="_blank">Link</Button></figure>
       <figure><Button href="#" variant="primary" disabled>Link disabled</Button></figure>
-      <figure><Button href="#" variant="primary" busy='Link busy ...' disabled></Button></figure>
+      <figure><Button href="#" variant="primary" busy='Link busy ...' disabled>Hide text by busy text</Button></figure>
     </div>
   ))
   .add('Loading / Busy', () => (

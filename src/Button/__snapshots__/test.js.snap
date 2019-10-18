@@ -38,7 +38,7 @@ exports[`Destructive button 1`] = `
 
 exports[`Disabled primary button 1`] = `
 <button
-  className="ola_button is-primary"
+  className="ola_button is-disabled"
   disabled={true}
 >
   <span

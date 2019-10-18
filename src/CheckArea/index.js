@@ -45,7 +45,7 @@ CheckArea.propTypes = {
   /** Label value in options can be html */
   htmlOptions: PT.bool,
   /** value selected */
-  value: PT.string,
+  value: PT.oneOfType([PT.string, PT.number]),
   /** OnChange method */
   onChange: PT.func
 }

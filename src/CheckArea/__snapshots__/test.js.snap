@@ -101,7 +101,7 @@ exports[`Checkarea type radio with value="2" 1`] = `
     className="ola_check"
   >
     <input
-      checked={false}
+      checked={true}
       className="ola_check-input"
       name="test"
       type="checkbox"
@@ -172,7 +172,7 @@ exports[`Checkarea type radio with value=2 1`] = `
     className="ola_check"
   >
     <input
-      checked={false}
+      checked={true}
       className="ola_check-input"
       name="test"
       type="checkbox"
