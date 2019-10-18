@@ -1,7 +1,7 @@
-import React from 'react';
-import { Button } from '../Button';
-import { ButtonGroup } from './';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import { Button } from '../Button'
+import { ButtonGroup } from './'
+import renderer from 'react-test-renderer'
 
 it('Group with two buttons', () => {
   const tree = renderer
@@ -11,10 +11,10 @@ it('Group with two buttons', () => {
         <Button variant="secondary">Secondary button</Button>
       </ButtonGroup>
     )
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
 
 it('Group with two buttons in reverse order', () => {
   const tree = renderer
@@ -24,10 +24,10 @@ it('Group with two buttons in reverse order', () => {
         <Button variant="secondary">Secondary button</Button>
       </ButtonGroup>
     )
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
 
 it('Group with two buttons in reverse order and extra class', () => {
   const tree = renderer
@@ -37,7 +37,7 @@ it('Group with two buttons in reverse order and extra class', () => {
         <Button variant="secondary">Secondary button</Button>
       </ButtonGroup>
     )
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})

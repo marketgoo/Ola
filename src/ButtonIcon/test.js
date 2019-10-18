@@ -1,7 +1,7 @@
-import React from 'react';
-import { Icon } from '../Icon';
-import { ButtonIcon } from './';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import { Icon } from '../Icon'
+import { ButtonIcon } from './'
+import renderer from 'react-test-renderer'
 
 it('Close Button icon', () => {
   const tree = renderer
@@ -10,7 +10,7 @@ it('Close Button icon', () => {
         <Icon name="close" />
       </ButtonIcon>
     )
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
