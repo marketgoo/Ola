@@ -24,7 +24,7 @@ Import Ola styles in your document and add the `ola` class in the root of your a
     <link rel="stylesheet" href="./node_modules/@marketgoo/ola/dist/index.css">
   </head>
 
-  <body>˚
+  <body>
     <!-- Your body content -->
   </body>
 </html>
