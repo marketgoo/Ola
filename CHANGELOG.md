@@ -9,10 +9,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New component `Table` [#7]
 - New component `Page` [#8], [#13]
+- New component `Level` [#14], [#15]
+- New css utils:
+  - `ola-right` to align text to right
+  - `ola-center` to align text to center
+  - `ola-numeric` to display numeric values aligned to right (mainly for tables)
+- Jest and Travis for create and run tests [#20], [#21]
+- The component `Button` can be a link adding the href property [#12]
+
+### Changed
+- The `dist` folder exports the modules as CommonJS format instead ES6
 
 ### Fixed
 - Improved README adding demo links and browser support info
 - Task component doesn't look properly in Safari [#6]
+- All components are responsive [#16], [#17]
+- Strict value comparison in `CheckArea` and `CheckGroup` [#23]
 
 ## [0.1.1] - 2019-09-18
 ### Changed
@@ -59,7 +71,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#6]: https://github.com/marketgoo/Ola/issues/6
 [#7]: https://github.com/marketgoo/Ola/issues/7
 [#8]: https://github.com/marketgoo/Ola/issues/8
+[#12]: https://github.com/marketgoo/Ola/issues/12
 [#13]: https://github.com/marketgoo/Ola/issues/13
+[#14]: https://github.com/marketgoo/Ola/issues/14
+[#15]: https://github.com/marketgoo/Ola/issues/15
+[#16]: https://github.com/marketgoo/Ola/issues/16
+[#17]: https://github.com/marketgoo/Ola/issues/17
+[#20]: https://github.com/marketgoo/Ola/issues/20
+[#21]: https://github.com/marketgoo/Ola/issues/21
+[#23]: https://github.com/marketgoo/Ola/issues/23
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.1.1...HEAD
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
