@@ -2,6 +2,8 @@
 
 React implementation of **Ola** design system created by **marketgoo**.
 
+[![Build Status](https://travis-ci.org/marketgoo/Ola.svg?branch=development)](https://travis-ci.org/marketgoo/Ola)
+
 - [View *Ola* specs](https://zeroheight.com/22mjgbuf6)
 - [View Storybook demos](https://marketgoo.github.io/Ola/)
 
