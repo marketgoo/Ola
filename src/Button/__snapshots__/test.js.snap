@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Busy button 1`] = `
+<button
+  className="ola_button is-busy"
+  disabled={true}
+>
+  <svg
+    className="ola_spinner"
+    height={28}
+    viewBox="0 0 28 28"
+    width={28}
+  >
+    <circle
+      cx={14}
+      cy={14}
+      r={12}
+    />
+  </svg>
+  <span
+    className="ola_button-text"
+  />
+</button>
+`;
+
+exports[`Destructive button 1`] = `
+<button
+  className="ola_button is-destructive"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Disabled primary button 1`] = `
+<button
+  className="ola_button is-primary"
+  disabled={true}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`No variant button 1`] = `
+<button
+  className="ola_button"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`PRO button 1`] = `
+<button
+  className="ola_button is-pro"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Primary button 1`] = `
+<button
+  className="ola_button is-primary"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Primary button with extra class 1`] = `
+<button
+  className="ola_button is-primary is-extra"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Primary destructive button 1`] = `
+<button
+  className="ola_button is-destructive-primary"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Secondary button 1`] = `
+<button
+  className="ola_button is-secondary"
+  disabled={false}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
