@@ -1,6 +1,6 @@
-import React from 'react';
-import { CheckArea } from './';
-import renderer from 'react-test-renderer';
+import React from 'react'
+import { CheckArea } from './'
+import renderer from 'react-test-renderer'
 
 const options = [
   {
@@ -15,36 +15,36 @@ const options = [
     label: <strong>Option 3</strong>,
     value: 3,
   }
-];
+]
 
 it('Default checkarea', () => {
   const tree = renderer
     .create(<CheckArea options={options}></CheckArea>)
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
 
 it('Checkarea type checkbox', () => {
   const tree = renderer
     .create(<CheckArea options={options} type="checkbox"></CheckArea>)
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
 
 it('Checkarea type radio with value="2"', () => {
   const tree = renderer
     .create(<CheckArea options={options} type="checkbox" value="2"></CheckArea>)
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
 
 it('Checkarea type radio with value=2', () => {
   const tree = renderer
     .create(<CheckArea options={options} type="checkbox" value={2}></CheckArea>)
-    .toJSON();
+    .toJSON()
 
-  expect(tree).toMatchSnapshot();
-});
+  expect(tree).toMatchSnapshot()
+})
