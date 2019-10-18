@@ -22,7 +22,7 @@ Import Ola styles in your document and add the `ola` class in the root of your a
     <link rel="stylesheet" href="./node_modules/@marketgoo/ola/dist/index.css">
   </head>
 
-  <body>
+  <body>˚
     <!-- Your body content -->
   </body>
 </html>
@@ -72,6 +72,10 @@ TaskGroup | -- | [Tasks](https://marketgoo.github.io/Ola/?path=/story/tasks--mix
 
 ## Browser support
 
+Microsoft Edge does not support the [summary] element, so the Task component is always opened.
+You can use polyfill like [https://github.com/javan/details-element-polyfill] to solve.
+The next version of Edge will come with fully support for summary, so this is a temporary solution.
+
 This library was tested in the following browsers:
 
 - Mozilla Firefox (latests 2 versions)
@@ -94,3 +98,6 @@ Tested with [Browserstack](https://www.browserstack.com)
 Please see [CHANGELOG](https://github.com/marketgoo/Ola/blob/master/CHANGELOG.md) for more information about recent changes.
 
 The MIT License (MIT). Please see [LICENSE](https://github.com/marketgoo/Ola/blob/master/LICENSE) for more information.
+
+[summary]: https://caniuse.com/#feat=details
+[https://github.com/javan/details-element-polyfill]: https://github.com/javan/details-element-polyfill
