@@ -11,11 +11,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Page` [#8], [#13]
 - New component `Level` [#14], [#15]
 - New css utils:
-  - `ola-right` to align text to right
-  - `ola-center` to align text to center
+  - `ola-right` to align text to the right
+  - `ola-center` to align center text
   - `ola-numeric` to display numeric values aligned to right (mainly for tables)
-- Jest and Travis for create and run tests [#20], [#21]
-- The component `Button` can be a link adding the href property [#12]
+- Jest and Travis to create and run tests [#20], [#21]
+- The component `Button` is a link if the href property is defined [#12]
 
 ### Changed
 - The `dist` folder exports the modules as CommonJS format instead ES6
