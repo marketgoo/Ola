@@ -6,6 +6,7 @@ yarn-error.log*
 node_modules/
 .env
 .DS_Store
+coverage
 .coverage
 .vscode
 .cache

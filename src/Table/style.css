@@ -41,4 +41,13 @@
         text-align: right;
     }
 
+    &.is-sticky {
+        & thead {
+          & th {
+            position: sticky;
+            background: white;
+          }
+        }
+    }
+
 }

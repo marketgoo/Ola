@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add caption 1`] = `
+<table
+  className="ola_table"
+>
+  <caption>
+    test caption
+  </caption>
+  <tbody />
+</table>
+`;
+
+exports[`Align center Cell 1`] = `
+<td
+  className="ola-center"
+>
+  Test content
+</td>
+`;
+
+exports[`Can be stiky 1`] = `
+<table
+  className="ola_table is-sticky"
+>
+  <tbody />
+</table>
+`;
+
+exports[`Default Cell 1`] = `
+<td
+  className=""
+>
+  Test content
+</td>
+`;
+
+exports[`Default Table 1`] = `
+<table
+  className="ola_table"
+>
+  <tbody />
+</table>
+`;
+
+exports[`Header Cell 1`] = `
+<th
+  className=""
+>
+  Content
+</th>
+`;
+
+exports[`Numeric Cell 1`] = `
+<td
+  className="ola-numeric"
+>
+  8
+</td>
+`;
+
+exports[`Table with extra class 1`] = `
+<table
+  className="ola_table extra-class"
+>
+  <tbody />
+</table>
+`;

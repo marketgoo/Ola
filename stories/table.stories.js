@@ -1,55 +1,58 @@
 import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
-import { Table, Button } from '../dist'
+import { Table, TableCell, Button } from '../dist'
 
 const data = [
   {
     title: 'Page title test',
     links: '999999',
-    popularity: 'hight'
+    popularity: 'hight',
+    action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 2',
     links: '78854',
-    popularity: 'medium'
+    popularity: 'medium',
+    action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 3',
     links: '2354689',
-    popularity: 'hight'
+    popularity: 'hight',
+    action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 4',
     links: '7668132',
-    popularity: 'low'
+    popularity: 'low',
+    action: <Button>Edit</Button>
   }
 ]
 
 storiesOf('Table', module)
   .addDecorator(withInfo)
   .addDecorator(story => <div className="ola">{story()}</div>)
-  .add('All', () => (
+  .add('Complete', () => (
     <div>
-      <Table>
-        <caption>Superheros and sidekicks</caption>
+      <Table caption="Superheros and sidekicks" stiky>
         <thead>
-          <th>Page</th>
-          <th className="ola-right">Incoming links</th>
-          <th className="ola-center">Popularity</th>
-          <th className="ola-center">Actions</th>
+          <tr>
+            <TableCell variant="header">Page</TableCell>
+            <TableCell variant="header" align="right">Incoming links</TableCell>
+            <TableCell variant="header" align="center">Popularity</TableCell>
+            <TableCell variant="header" align="center">Actions</TableCell>
+          </tr>
         </thead>
         <tbody>
-
           { data.map( (row, idx) => (
             <tr key={idx}>
-              <td>{row.title}</td>
-              <td className="ola-numeric">{row.links}</td>
-              <td className="ola-center">{row.popularity}</td>
-              <td className="ola-center"><Button>Edit</Button></td>
+              <TableCell>{row.title}</TableCell>
+              <TableCell numeric>{row.links}</TableCell>
+              <TableCell align="center">{row.popularity}</TableCell>
+              <TableCell align="center">{row.action}</TableCell>
             </tr>
           ) ) }
-
         </tbody>
       </Table>
     </div>

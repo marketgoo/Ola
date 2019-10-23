@@ -9,6 +9,7 @@ export { ProgressCircle } from './ProgressCircle'
 export { ProgressBar } from './ProgressBar'
 export { Metric } from './Metric'
 export { Table } from './Table'
+export { TableCell } from './Table/Cell'
 export { Page } from './Page'
 export { Level } from './Level'
 
