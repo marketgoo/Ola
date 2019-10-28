@@ -19,6 +19,12 @@
     "publish:storybook": "gh-pages -d storybook-static"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
+  "keywords": [
+    "react",
+    "design-system",
+    "ola",
+    "component-library"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/marketgoo/Ola.git"
