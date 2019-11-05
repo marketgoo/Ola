@@ -1,6 +1,6 @@
 {
   "name": "@marketgoo/ola",
-  "version": "0.1.2-beta.3",
+  "version": "0.1.2-beta.4",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
   "styles": "dist/index.css",
@@ -19,6 +19,12 @@
     "publish:storybook": "gh-pages -d storybook-static"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
+  "keywords": [
+    "react",
+    "design-system",
+    "ola",
+    "component-library"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/marketgoo/Ola.git"
