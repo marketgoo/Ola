@@ -27,6 +27,13 @@ exports[`Can be stiky 1`] = `
 </table>
 `;
 
+exports[`ColSpan Cell 1`] = `
+<td
+  className=""
+  colSpan={8}
+/>
+`;
+
 exports[`Default Cell 1`] = `
 <td
   className=""
@@ -41,6 +48,12 @@ exports[`Default Table 1`] = `
 >
   <tbody />
 </table>
+`;
+
+exports[`Empty Cell 1`] = `
+<td
+  className=""
+/>
 `;
 
 exports[`Header Cell 1`] = `

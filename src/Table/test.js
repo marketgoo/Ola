@@ -72,6 +72,26 @@ it('Header Cell', () => {
   expect(tree).toMatchSnapshot()
 })
 
+it('Empty Cell', () => {
+  const tree = renderer
+    .create(
+      <TableCell></TableCell>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
+it('ColSpan Cell', () => {
+  const tree = renderer
+    .create(
+      <TableCell colSpan={8}></TableCell>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
 it('Numeric Cell', () => {
   const tree = renderer
     .create(

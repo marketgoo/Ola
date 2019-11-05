@@ -20,6 +20,7 @@
     & td {
         padding-top: var(--size-3);
         padding-bottom: var(--size-3);
+        border-top: solid 1px var(--gray-xlight);
     }
 
     & :matches(th, td) + :matches(th, td) {
@@ -29,7 +30,7 @@
     & thead {
         & th {
             white-space: nowrap;
-            box-shadow: 0 1px 0 var(--gray-light);
+            border-bottom: solid 1px var(--gray-light);
         }
     }
 

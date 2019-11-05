@@ -2,10 +2,10 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const TableCell = ({ variant, align, numeric, extraClass, children }) => {
+const TableCell = ({ variant, align, numeric, extraClass, children, ...props }) => {
   const Component = (variant === 'header') ? 'th' : 'td'
   return (
-    <Component className={cx(numeric && 'ola-numeric', align && align !== 'left' && `ola-${align}`, extraClass)}>
+    <Component className={cx(numeric && 'ola-numeric', align && align !== 'left' && `ola-${align}`, extraClass)} {...props}>
       {children}
     </Component>
   )
@@ -31,7 +31,7 @@ TableCell.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ])
 }
 
 export { TableCell }
