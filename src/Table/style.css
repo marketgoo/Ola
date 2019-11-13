@@ -5,6 +5,7 @@
     width: 100%;
     border-collapse: collapse;
     position: relative;
+    overflow-x: auto;
 
     & td,
     & th {
@@ -50,5 +51,8 @@
           }
         }
     }
+}
 
+.ola_table-container {
+  overflow-x: auto;
 }

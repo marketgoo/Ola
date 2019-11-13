@@ -3,10 +3,12 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 const Table = ({ caption, sticky, extraClass, children }) =>
-  <table className={cx('ola_table', sticky && 'is-sticky', extraClass)}>
-    { caption && <caption>{ caption }</caption> }
-    {children}
-  </table>
+  <div className='ola_table-container'>
+    <table className={cx('ola_table', sticky && 'is-sticky', extraClass)}>
+      { caption && <caption>{ caption }</caption> }
+      {children}
+    </table>
+  </div>
 
 Table.defaultProps = {
   caption: null,
