@@ -14,6 +14,28 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `ola-right` to align text to the right
   - `ola-center` to center text
   - `ola-numeric` to display numeric values aligned to right (mainly for tables)
+  - Utilities to apply standard colors:
+    - `ola-brand`
+    - `ola-white`
+    - `ola-black`
+    - `ola-gray`
+    - `ola-gray-light`
+    - `ola-gray-xlight`
+    - `ola-error`
+    - `ola-warning`
+    - `ola-success`
+    - `ola-pro`
+  - Utilities to apply standard colors as background:
+    - `ola-bg-brand`
+    - `ola-bg-white`
+    - `ola-bg-black`
+    - `ola-bg-gray`
+    - `ola-bg-gray-light`
+    - `ola-bg-gray-xlight`
+    - `ola-bg-error`
+    - `ola-bg-warning`
+    - `ola-bg-success`
+    - `ola-bg-pro`
 - Jest and Travis to create and run tests [#20], [#21]
 - The component `Button` is a link if the href property is defined [#12]
 
