@@ -16,11 +16,12 @@
     & th {
         font-weight: var(--bold);
         color: var(--black);
+        padding-left: var(--size-2);
+        padding-right: var(--size-2);
     }
 
     & td {
-        padding-top: var(--size-3);
-        padding-bottom: var(--size-3);
+        padding: var(--size-3) var(--size-2);
         border-top: solid 1px var(--gray-xlight);
     }
 

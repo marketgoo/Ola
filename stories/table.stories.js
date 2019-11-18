@@ -1,7 +1,7 @@
 import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
-import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup } from '../dist'
+import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check } from '../dist'
 
 const data = [
   {
@@ -47,7 +47,7 @@ storiesOf('Table', module)
         <tbody>
           { data.map( (row, idx) => (
             <tr key={idx}>
-              <TableCell>{row.title}</TableCell>
+              <TableCell><Check>{row.title}</Check></TableCell>
               <TableCell numeric>{row.links}</TableCell>
               <TableCell align="center">{row.popularity}</TableCell>
               <TableCell align="center">{row.action}</TableCell>
