@@ -5,11 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.1.2] - 2019-11-18
 ### Added
 - New component `Table` [#7]
 - New component `Page` [#8], [#13]
 - New component `Level` [#14], [#15]
+- New layer `pageCenter` [#33]
 - New css utils:
   - `ola-right` to align text to the right
   - `ola-center` to center text
@@ -102,6 +103,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#20]: https://github.com/marketgoo/Ola/issues/20
 [#21]: https://github.com/marketgoo/Ola/issues/21
 [#23]: https://github.com/marketgoo/Ola/issues/23
+[#33]: https://github.com/marketgoo/Ola/issues/33
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.1.1...HEAD
+[0.1.2]: https://github.com/marketgoo/Ola/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
