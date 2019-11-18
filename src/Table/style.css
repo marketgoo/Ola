@@ -11,6 +11,7 @@
     & th {
         border: none;
         height: var(--size-8);
+        white-space: nowrap;
     }
 
     & th {
