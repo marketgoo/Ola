@@ -9,8 +9,27 @@ import {
   ButtonGroup,
   Input,
   Field,
-  FieldDescription,
+  CheckArea,
 } from '../dist'
+
+const random_option_values_with_description = [
+  {
+    label: '<strong>Test 1</strong>Lorem ipsum dolor sit amet.',
+    value: 'test1'
+  },
+  {
+    label: '<strong>Test 2</strong>Lorem ipsum dolor sit amet.',
+    value: 'test2'
+  },
+  {
+    label: '<strong>Test 3</strong>Lorem ipsum dolor sit amet.',
+    value: 'test3'
+  },
+  {
+    label: '<strong>Test 4</strong>Lorem ipsum dolor sit amet.',
+    value: 'test4'
+  }
+]
 
 storiesOf('Layout', module)
   .addDecorator(withInfo)
@@ -96,4 +115,32 @@ storiesOf('Layout', module)
             </div>
         </PanelContent>
     </Panel>
+    ))
+  .add('ola_ly-pageCenter', () => (
+      <section className="ola_ly-pageCenter">
+          <header>
+              <h1 className="ola-title">Welcome to this page</h1>
+              <p className="ola-callout ola-gray">This is a introductory text of this process</p>
+          </header>
+
+          <div>
+              <Field id="field-name2" label="Email">
+                  <Input type="email" placeholder="name@example.com" />
+              </Field>
+
+              <Field id="field-password2" label="Password">
+                  <Input type="password" placeholder="Super secret" />
+              </Field>
+          </div>
+
+          <div className="is-fullwidth">
+            <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
+          </div>
+
+          <footer>
+            <ButtonGroup>
+              <Button href="#" variant="primary">Continue</Button>
+            </ButtonGroup>
+          </footer>
+      </section>
     ))
