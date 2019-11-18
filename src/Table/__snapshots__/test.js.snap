@@ -1,14 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Add caption 1`] = `
-<table
-  className="ola_table"
+<div
+  className="ola_table-container"
 >
-  <caption>
-    test caption
-  </caption>
-  <tbody />
-</table>
+  <table
+    className="ola_table"
+  >
+    <caption>
+      test caption
+    </caption>
+    <tbody />
+  </table>
+</div>
 `;
 
 exports[`Align center Cell 1`] = `
@@ -20,11 +24,15 @@ exports[`Align center Cell 1`] = `
 `;
 
 exports[`Can be stiky 1`] = `
-<table
-  className="ola_table is-sticky"
+<div
+  className="ola_table-container"
 >
-  <tbody />
-</table>
+  <table
+    className="ola_table is-sticky"
+  >
+    <tbody />
+  </table>
+</div>
 `;
 
 exports[`ColSpan Cell 1`] = `
@@ -43,11 +51,15 @@ exports[`Default Cell 1`] = `
 `;
 
 exports[`Default Table 1`] = `
-<table
-  className="ola_table"
+<div
+  className="ola_table-container"
 >
-  <tbody />
-</table>
+  <table
+    className="ola_table"
+  >
+    <tbody />
+  </table>
+</div>
 `;
 
 exports[`Empty Cell 1`] = `
@@ -73,9 +85,13 @@ exports[`Numeric Cell 1`] = `
 `;
 
 exports[`Table with extra class 1`] = `
-<table
-  className="ola_table extra-class"
+<div
+  className="ola_table-container"
 >
-  <tbody />
-</table>
+  <table
+    className="ola_table extra-class"
+  >
+    <tbody />
+  </table>
+</div>
 `;
