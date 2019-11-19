@@ -36,7 +36,7 @@ storiesOf('Button', module)
     </Tag>
   ))
   .add('Button Group', () => (
-    <ButtonGroup reversed={boolean('Reversed')} style={{width: '500px', border: 'solid 1px'}}>
+    <ButtonGroup variant={radios('Variant', ['default', 'center', 'reversed'])} style={{width: '500px', border: 'solid 1px'}}>
       <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
       <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
     </ButtonGroup>
