@@ -17,7 +17,6 @@
     }
 
     &.is-center {
-      align-items: center;
       justify-content: center;
     }
 
@@ -30,7 +29,7 @@
             margin-top: 0;
         }
 
-        &.is-reversed {
+        &.is-reversed, &.is-reversed-center {
             flex-direction: row-reverse;
 
             & .ola_button + .ola_button {

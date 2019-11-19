@@ -107,3 +107,30 @@ exports[`Group with two buttons in reverse order and extra class 1`] = `
   </button>
 </div>
 `;
+
+exports[`Group with two buttons in reverse order centered 1`] = `
+<div
+  className="ola_buttonGroup is-center is-reversed"
+>
+  <button
+    className="ola_button is-primary"
+    disabled={false}
+  >
+    <span
+      className="ola_button-text"
+    >
+      Main button
+    </span>
+  </button>
+  <button
+    className="ola_button is-secondary"
+    disabled={false}
+  >
+    <span
+      className="ola_button-text"
+    >
+      Secondary button
+    </span>
+  </button>
+</div>
+`;

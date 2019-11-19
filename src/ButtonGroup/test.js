@@ -42,6 +42,19 @@ it('Group with two buttons in reverse order', () => {
   expect(tree).toMatchSnapshot()
 })
 
+it('Group with two buttons in reverse order centered', () => {
+  const tree = renderer
+    .create(
+      <ButtonGroup variant="reversed-center">
+        <Button variant="primary">Main button</Button>
+        <Button variant="secondary">Secondary button</Button>
+      </ButtonGroup>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
 it('Group with two buttons in reverse order and extra class', () => {
   const tree = renderer
     .create(

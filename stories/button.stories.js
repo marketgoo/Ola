@@ -32,11 +32,11 @@ storiesOf('Button', module)
   ))
   .add('Button Icon', () => (
     <Tag>
-      Tag with ButtoIcon <ButtonIcon onClick={action('onClick event')}><Icon name="close" size="small" /></ButtonIcon>
+      Tag with ButtonIcon <ButtonIcon onClick={action('onClick event')}><Icon name="close" size="small" /></ButtonIcon>
     </Tag>
   ))
   .add('Button Group', () => (
-    <ButtonGroup variant={radios('Variant', ['default', 'center', 'reversed'])} style={{width: '500px', border: 'solid 1px'}}>
+    <ButtonGroup variant={radios('Variant', ['default', 'center', 'reversed', 'reversed-center'], 'default')} style={{width: '500px', border: 'solid 1px'}}>
       <Button variant='primary' onClick={action('onClick event')}>Accept</Button>
       <Button variant='secondary' onClick={action('onClick event')}>Cancel</Button>
     </ButtonGroup>
