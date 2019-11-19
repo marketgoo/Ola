@@ -29,7 +29,7 @@
             margin-top: 0;
         }
 
-        &.is-reversed, &.is-reversed-center {
+        &.is-reversed {
             flex-direction: row-reverse;
 
             & .ola_button + .ola_button {
