@@ -16,6 +16,10 @@
         }
     }
 
+    &.is-center {
+      justify-content: center;
+    }
+
     @media (--from-width-1) {
         flex-direction: row;
         align-items: center;
