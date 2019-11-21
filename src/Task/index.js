@@ -13,29 +13,23 @@ const TaskIcon = ({ variant }) => {
   }
 }
 
-const TaskTitle = ({ title, htmlTitle, buttonLabel, onButtonClick }) => {
-  const handleClick = e => {
-    e.preventDefault()
-    if (onButtonClick){
-      onButtonClick()
-    }
-  }
+const TaskTitle = ({ title, htmlTitle, extraButton }) => {
   return  htmlTitle ? (
     <div dangerouslySetInnerHTML={{__html: title}} />
   ) : (
     <div>
       <span className="ola_task-title-text">{title}</span>
-      {buttonLabel && onButtonClick && <Button variant="secondary" onClick={handleClick}>{buttonLabel}</Button>}
+      {extraButton && extraButton.type === Button && extraButton}
     </div>
   )
 }
 
-const TaskSumary = ({ title, htmlTitle, variant, buttonLabel, onButtonClick }) => {
+const TaskSumary = ({ title, htmlTitle, variant, extraButton }) => {
   return (
     <summary className="ola_task-summary">
       <div className={'ola_task-title'}>
         <TaskIcon variant={variant} />
-        <TaskTitle title={title} htmlTitle={htmlTitle} buttonLabel={buttonLabel} onButtonClick={onButtonClick} />
+        <TaskTitle title={title} htmlTitle={htmlTitle} extraButton={extraButton} />
         <span className="ola_task-icon ola_buttonIcon">
           <Icon name="close" extraClass="ola_task-icon-close" />
         </span>
@@ -44,23 +38,23 @@ const TaskSumary = ({ title, htmlTitle, variant, buttonLabel, onButtonClick }) =
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children, buttonLabel, onButtonClick }) => {
+const Task = ({ title, htmlTitle, variant, children, extraButton }) => {
 
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
-      <details className={cx('ola_task', variant && `is-${variant}`, buttonLabel && onButtonClick && 'is-button')}>
-        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} buttonLabel={buttonLabel} onButtonClick={onButtonClick} />
+      <details className={cx('ola_task', variant && `is-${variant}`, extraButton && 'is-button')}>
+        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extraButton={extraButton} />
         <div className='ola_task-content'>
           { children }
         </div>
       </details>
     ) :
     (
-      <div className={cx('ola_task', variant && `is-${variant}`)}>
+      <div className={cx('ola_task', variant && `is-${variant}`, extraButton && 'is-button')}>
         <div className="ola_task-title">
           <TaskIcon variant={variant} />
-          <TaskTitle title={title} htmlTitle={htmlTitle} />
+          <TaskTitle title={title} htmlTitle={htmlTitle} extraButton={extraButton} />
         </div>
       </div>
     )
@@ -85,10 +79,13 @@ Task.propTypes = {
     PT.arrayOf(PT.node),
     PT.node
   ]),
-  /** Title right button label  */
-  buttonLabel: PT.string,
-  /** Title right button event */
-  onButtonClick: PT.func
+  /** Title right button  */
+  extraButton: (props, propName, componentName) => {
+    if (!props[propName] || props[propName].type === Button){
+      return null
+    }
+    return new Error(`Invalid extraButton prop supplied to ${componentName}. You have to pass a valid Button component`)
+  }
 }
 
 export { Task }

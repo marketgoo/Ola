@@ -23,7 +23,18 @@ storiesOf('Tasks', module)
             </TaskFooter>
           </Task>
 
-          <Task title="Task title demo 2" buttonLabel="Fix now" onButtonClick={() => alert('click')}>
+          <Task title="Task title demo 2" extraButton={<Button variant="secondary" onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
+          <Task title="Task title demo 3" extraButton={<Button onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
             <TaskBody>
               Test content for card resolve
             </TaskBody>
@@ -43,7 +54,7 @@ storiesOf('Tasks', module)
       <PanelContent title="What have you done well?" variant="fullwidth">
         <TaskGroup>
           <Task title="Task title" variant="success" />
-          <Task title="Task title" variant="success" />
+          <Task title="Task title" variant="success" extraButton={<Button onClick={e => {e.preventDefault();alert('click')}}>more detail</Button>}/>
           <Task title="Task title" variant="success" />
         </TaskGroup>
       </PanelContent>
