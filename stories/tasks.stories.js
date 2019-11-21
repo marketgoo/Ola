@@ -12,7 +12,7 @@ storiesOf('Tasks', module)
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
 
-          <Task title="Task title demo">
+          <Task title="Task title demo" buttonLabel="Fix this issue">
             <TaskBody>
               Test content for card resolve
             </TaskBody>
@@ -23,7 +23,7 @@ storiesOf('Tasks', module)
             </TaskFooter>
           </Task>
 
-          <Task title="Task title demo 2">
+          <Task title="Task title demo 2" buttonLabel="Fix now" onButtonClick={() => alert('click')}>
             <TaskBody>
               Test content for card resolve
             </TaskBody>

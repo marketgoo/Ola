@@ -24,6 +24,22 @@
             fill: var(--gray);
         }
     }
+    &.is-button{
+        & .ola_task-title-text {
+            padding-right: var(--size-6);
+            @media (--to-width-1) {
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+        & .ola_task-title > div {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+        }
+    }
 
     &[open] {
         --inner: calc(var(--size-8) + var(--size-4));
@@ -55,6 +71,20 @@
                 box-shadow: none;
             }
         }
+
+        &.is-button{
+            & .ola_button{
+                display: none;
+            }
+            & .ola_task-title-text {
+                @media (--to-width-1) {
+                    text-overflow: initial;
+                    overflow: auto;
+                    white-space: initial;
+                    padding-right: 0;
+                }
+            }
+        }
     }
 }
 .ola_task-title {
@@ -67,7 +97,11 @@
     position: relative;
     z-index: 1;
     min-height: 52px;
+    @media (--to-width-1) {
+        padding: 0 var(--size-6);
+    }
 }
+
 .ola_task-summary {
     color: var(--brand);
     cursor: pointer;
