@@ -122,9 +122,22 @@
         padding-left: 0;
         padding-right: 0;
         border-radius: 0;
+        text-decoration: none;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
 
         &:hover {
-            text-decoration: underline;
+            color: var(--black);
+        }
+
+        /*
+        Wavy style is buggy in blink
+        */
+        @supports (text-underline-offset: 4px) {
+            &:hover {
+                text-decoration-style: wavy;
+            }
         }
     }
 
@@ -145,4 +158,6 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }

@@ -34,7 +34,7 @@ Button.defaultProps = {
 Button.propTypes = {
   as: PT.string,
   /** Button variants */
-  variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro']),
+  variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link']),
   /** Text for loading state */
   busy: PT.oneOfType([
     PT.string,
