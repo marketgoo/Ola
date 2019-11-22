@@ -102,15 +102,18 @@
         min-width: 0;
         cursor: wait;
         pointer-events: none;
+        border: none;
 
-        & .ola_spinner:first-child {
+        & .ola_spinner {
             position: relative;
-            right: var(--size-6);
-        }
 
-        & .ola_spinner:last-child {
-            position: relative;
-            left: var(--size-6);
+            &:first-child {
+                right: var(--size-6);
+            }
+
+            &:last-child {
+                left: var(--size-6);
+            }
         }
     }
 
@@ -122,13 +125,37 @@
         padding-left: 0;
         padding-right: 0;
         border-radius: 0;
-        text-decoration: none;
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-thickness: 1px;
 
         &:hover {
             color: var(--black);
+        }
+
+        &.is-disabled {
+            color: var(--gray-light);
+            text-decoration: none;
+            background: none;
+        }
+
+        &.is-busy {
+            color: var(--gray);
+            text-decoration: none;
+            background: none;
+            cursor: wait;
+
+            & .ola_spinner {
+                position: static;
+
+                &:first-child {
+                    margin-right: var(--size-4);
+                }
+
+                &:last-child {
+                    margin-left: var(--size-4);
+                }
+            }
         }
 
         /*

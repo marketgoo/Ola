@@ -10,7 +10,7 @@ const Button = ({ variant, children, disabled, busy, extraClass, as, ...props })
   delete props['as']
   const styles = cx(
     'ola_button',
-    {[`is-${variant}`]: (variant && !busy && !disabled) },
+    {[`is-${variant}`]: variant },
     {'is-busy': busy},
     {'is-disabled': disabled && !busy},
     extraClass
