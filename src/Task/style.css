@@ -27,17 +27,12 @@
     &.is-extra{
         & .ola_task-title-text {
             padding-right: var(--size-6);
+            flex: 1 1 auto;
             @media (--to-width-1) {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
             }
-        }
-        & .ola_task-title > div {
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr auto;
-            align-items: center;
         }
     }
 
@@ -87,7 +82,7 @@
         }
     }
 }
-.ola_task-title {
+.ola_task-header {
     font: var(--font-body);
     list-style: none;
     display: flex;

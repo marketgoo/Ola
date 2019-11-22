@@ -13,18 +13,18 @@ const TaskIcon = ({ variant }) => {
 }
 
 const TaskTitle = ({ title, htmlTitle, extra }) => 
-  <div>
+  <>
     {htmlTitle ?
       <span className="ola_task-title-text" dangerouslySetInnerHTML={{__html: title}} /> :
       <span className="ola_task-title-text">{title}</span>
     }
-    <div className="ola_task-title-extra">{extra}</div>
-  </div>
+    {extra && <div className="ola_task-title-extra">{extra}</div>}
+  </>
 
 const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   return (
     <summary className="ola_task-summary">
-      <div className={'ola_task-title'}>
+      <div className={'ola_task-header'}>
         <TaskIcon variant={variant} />
         <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         <span className="ola_task-icon ola_buttonIcon">
@@ -48,7 +48,7 @@ const Task = ({ title, htmlTitle, variant, children, extra }) => {
     ) :
     (
       <div className={cx('ola_task', variant && `is-${variant}`, extra && 'is-extra')}>
-        <div className="ola_task-title">
+        <div className="ola_task-header">
           <TaskIcon variant={variant} />
           <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         </div>
