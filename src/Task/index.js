@@ -2,7 +2,6 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { Icon } from '../Icon'
-import { Button } from '../Button'
 
 const TaskIcon = ({ variant }) => {
   switch (variant) {
@@ -13,23 +12,21 @@ const TaskIcon = ({ variant }) => {
   }
 }
 
-const TaskTitle = ({ title, htmlTitle, extraButton }) => {
-  return  htmlTitle ? (
-    <div dangerouslySetInnerHTML={{__html: title}} />
-  ) : (
-    <div>
+const TaskTitle = ({ title, htmlTitle, extra }) => 
+  <div>
+    {htmlTitle ?
+      <span className="ola_task-title-text" dangerouslySetInnerHTML={{__html: title}} /> :
       <span className="ola_task-title-text">{title}</span>
-      {extraButton && extraButton.type === Button && extraButton}
-    </div>
-  )
-}
+    }
+    <div className="ola_task-title-extra">{extra}</div>
+  </div>
 
-const TaskSumary = ({ title, htmlTitle, variant, extraButton }) => {
+const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   return (
     <summary className="ola_task-summary">
       <div className={'ola_task-title'}>
         <TaskIcon variant={variant} />
-        <TaskTitle title={title} htmlTitle={htmlTitle} extraButton={extraButton} />
+        <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         <span className="ola_task-icon ola_buttonIcon">
           <Icon name="close" extraClass="ola_task-icon-close" />
         </span>
@@ -38,23 +35,22 @@ const TaskSumary = ({ title, htmlTitle, variant, extraButton }) => {
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children, extraButton }) => {
-
+const Task = ({ title, htmlTitle, variant, children, extra }) => {
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
-      <details className={cx('ola_task', variant && `is-${variant}`, extraButton && 'is-button')}>
-        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extraButton={extraButton} />
+      <details className={cx('ola_task', variant && `is-${variant}`, extra && 'is-extra')}>
+        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }
         </div>
       </details>
     ) :
     (
-      <div className={cx('ola_task', variant && `is-${variant}`, extraButton && 'is-button')}>
+      <div className={cx('ola_task', variant && `is-${variant}`, extra && 'is-extra')}>
         <div className="ola_task-title">
           <TaskIcon variant={variant} />
-          <TaskTitle title={title} htmlTitle={htmlTitle} extraButton={extraButton} />
+          <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         </div>
       </div>
     )
@@ -79,13 +75,8 @@ Task.propTypes = {
     PT.arrayOf(PT.node),
     PT.node
   ]),
-  /** Title right button  */
-  extraButton: (props, propName, componentName) => {
-    if (!props[propName] || props[propName].type === Button){
-      return null
-    }
-    return new Error(`Invalid extraButton prop supplied to ${componentName}. You have to pass a valid Button component`)
-  }
+  /** Title right component  */
+  extra: PT.elementType
 }
 
 export { Task }

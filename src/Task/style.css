@@ -24,7 +24,7 @@
             fill: var(--gray);
         }
     }
-    &.is-button{
+    &.is-extra{
         & .ola_task-title-text {
             padding-right: var(--size-6);
             @media (--to-width-1) {
@@ -72,8 +72,8 @@
             }
         }
 
-        &.is-button{
-            & .ola_button{
+        &.is-extra {
+            & .ola_task-title-extra {
                 display: none;
             }
             & .ola_task-title-text {
