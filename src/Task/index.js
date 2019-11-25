@@ -12,20 +12,21 @@ const TaskIcon = ({ variant }) => {
   }
 }
 
-const TaskTitle = ({ title, htmlTitle }) => {
-  return  htmlTitle ? (
-    <div dangerouslySetInnerHTML={{__html: title}} />
-  ) : (
-    <div>{title}</div>
-  )
-}
+const TaskTitle = ({ title, htmlTitle, extra }) => 
+  <>
+    {htmlTitle ?
+      <span className="ola_task-title" dangerouslySetInnerHTML={{__html: title}} /> :
+      <span className="ola_task-title">{title}</span>
+    }
+    {extra && <div className="ola_task-extra">{extra}</div>}
+  </>
 
-const TaskSumary = ({ title, htmlTitle, variant }) => {
+const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   return (
     <summary className="ola_task-summary">
-      <div className="ola_task-title">
+      <div className={'ola_task-header'}>
         <TaskIcon variant={variant} />
-        <TaskTitle title={title} htmlTitle={htmlTitle} />
+        <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         <span className="ola_task-icon ola_buttonIcon">
           <Icon name="close" extraClass="ola_task-icon-close" />
         </span>
@@ -34,13 +35,12 @@ const TaskSumary = ({ title, htmlTitle, variant }) => {
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children }) => {
-
+const Task = ({ title, htmlTitle, variant, children, extra }) => {
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
       <details className={cx('ola_task', variant && `is-${variant}`)}>
-        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} />
+        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }
         </div>
@@ -48,9 +48,9 @@ const Task = ({ title, htmlTitle, variant, children }) => {
     ) :
     (
       <div className={cx('ola_task', variant && `is-${variant}`)}>
-        <div className="ola_task-title">
+        <div className="ola_task-header">
           <TaskIcon variant={variant} />
-          <TaskTitle title={title} htmlTitle={htmlTitle} />
+          <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
         </div>
       </div>
     )
@@ -74,7 +74,9 @@ Task.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ])
+  ]),
+  /** Title right component  */
+  extra: PT.node
 }
 
 export { Task }

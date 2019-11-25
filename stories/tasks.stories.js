@@ -2,7 +2,7 @@ import React from 'react'
 import { withInfo } from '@storybook/addon-info'
 import { storiesOf } from '@storybook/react'
 
-import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup } from '../dist'
+import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup, Tag } from '../dist'
 
 storiesOf('Tasks', module)
   .addDecorator(withInfo)
@@ -23,7 +23,18 @@ storiesOf('Tasks', module)
             </TaskFooter>
           </Task>
 
-          <Task title="Task title demo 2">
+          <Task title="Task title demo 2" extra={<Button variant="secondary" onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
+            <TaskBody>
+              Test content for card resolve
+            </TaskBody>
+            <TaskFooter>
+              <ButtonGroup>
+                <Button>Done! Check it now</Button>
+              </ButtonGroup>
+            </TaskFooter>
+          </Task>
+
+          <Task htmlTitle title="Task html title <strong>demo 3</strong>" extra={<Button onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
             <TaskBody>
               Test content for card resolve
             </TaskBody>
@@ -43,8 +54,8 @@ storiesOf('Tasks', module)
       <PanelContent title="What have you done well?" variant="fullwidth">
         <TaskGroup>
           <Task title="Task title" variant="success" />
-          <Task title="Task title" variant="success" />
-          <Task title="Task title" variant="success" />
+          <Task title="Task title" variant="success" extra={<Button variant="pro" onClick={e => {e.preventDefault();alert('click')}}>buy</Button>}/>
+          <Task title="Task title" variant="success" extra={<Tag variant="success">Success</Tag>}/>
         </TaskGroup>
       </PanelContent>
     </Panel>
