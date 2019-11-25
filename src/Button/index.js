@@ -10,7 +10,7 @@ const Button = ({ variant, children, disabled, busy, extraClass, as, ...props })
   delete props['as']
   const styles = cx(
     'ola_button',
-    {[`is-${variant}`]: (variant && !busy && !disabled) },
+    {[`is-${variant}`]: variant },
     {'is-busy': busy},
     {'is-disabled': disabled && !busy},
     extraClass
@@ -34,7 +34,7 @@ Button.defaultProps = {
 Button.propTypes = {
   as: PT.string,
   /** Button variants */
-  variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro']),
+  variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link']),
   /** Text for loading state */
   busy: PT.oneOfType([
     PT.string,

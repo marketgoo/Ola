@@ -73,3 +73,11 @@ it('Disabled primary button', () => {
 
   expect(tree).toMatchSnapshot()
 })
+
+it('Disabled link button', () => {
+  const tree = renderer
+    .create(<Button variant="link" disabled>Click here</Button>)
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})

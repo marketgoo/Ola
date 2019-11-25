@@ -2,7 +2,7 @@
 
 exports[`Busy button 1`] = `
 <button
-  className="ola_button is-busy"
+  className="ola_button is-primary is-busy"
   disabled={true}
 >
   <svg
@@ -36,9 +36,22 @@ exports[`Destructive button 1`] = `
 </button>
 `;
 
+exports[`Disabled link button 1`] = `
+<button
+  className="ola_button is-link is-disabled"
+  disabled={true}
+>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
 exports[`Disabled primary button 1`] = `
 <button
-  className="ola_button is-disabled"
+  className="ola_button is-primary is-disabled"
   disabled={true}
 >
   <span
