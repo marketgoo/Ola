@@ -19,7 +19,7 @@ exports[`Default Task 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 1
     </span>
@@ -46,7 +46,7 @@ exports[`Error Task 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 5
     </span>
@@ -73,7 +73,7 @@ exports[`Success Task 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 2
     </span>
@@ -100,7 +100,7 @@ exports[`Suggested Task 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 3
     </span>
@@ -110,7 +110,7 @@ exports[`Suggested Task 1`] = `
 
 exports[`Task with Extra 1`] = `
 <div
-  className="ola_task is-error is-extra"
+  className="ola_task is-error"
 >
   <div
     className="ola_task-header"
@@ -127,12 +127,12 @@ exports[`Task with Extra 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 6
     </span>
     <div
-      className="ola_task-title-extra"
+      className="ola_task-extra"
     >
       <button
         className="ola_button"
@@ -169,7 +169,7 @@ exports[`Warning Task 1`] = `
       />
     </svg>
     <span
-      className="ola_task-title-text"
+      className="ola_task-title"
     >
       Task title 4
     </span>

@@ -24,16 +24,18 @@
             fill: var(--gray);
         }
     }
-    &.is-extra{
-        & .ola_task-title-text {
-            padding-right: var(--size-6);
+
+    & .ola_task-title {
             flex: 1 1 auto;
             @media (--to-width-1) {
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;
             }
-        }
+    }
+
+    & .ola_task-extra {
+        margin-left: var(--size-6);
     }
 
     &[open] {
@@ -67,17 +69,17 @@
             }
         }
 
-        &.is-extra {
-            & .ola_task-title-extra {
-                display: none;
-            }
-            & .ola_task-title-text {
-                @media (--to-width-1) {
-                    text-overflow: initial;
-                    overflow: auto;
-                    white-space: initial;
-                    padding-right: 0;
-                }
+ 
+        & .ola_task-extra {
+            display: none;
+        }
+
+        & .ola_task-title {
+            @media (--to-width-1) {
+                text-overflow: initial;
+                overflow: auto;
+                white-space: initial;
+                padding-right: 0;
             }
         }
     }

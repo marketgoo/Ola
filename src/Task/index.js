@@ -15,10 +15,10 @@ const TaskIcon = ({ variant }) => {
 const TaskTitle = ({ title, htmlTitle, extra }) => 
   <>
     {htmlTitle ?
-      <span className="ola_task-title-text" dangerouslySetInnerHTML={{__html: title}} /> :
-      <span className="ola_task-title-text">{title}</span>
+      <span className="ola_task-title" dangerouslySetInnerHTML={{__html: title}} /> :
+      <span className="ola_task-title">{title}</span>
     }
-    {extra && <div className="ola_task-title-extra">{extra}</div>}
+    {extra && <div className="ola_task-extra">{extra}</div>}
   </>
 
 const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
@@ -39,7 +39,7 @@ const Task = ({ title, htmlTitle, variant, children, extra }) => {
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
-      <details className={cx('ola_task', variant && `is-${variant}`, extra && 'is-extra')}>
+      <details className={cx('ola_task', variant && `is-${variant}`)}>
         <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }
@@ -47,7 +47,7 @@ const Task = ({ title, htmlTitle, variant, children, extra }) => {
       </details>
     ) :
     (
-      <div className={cx('ola_task', variant && `is-${variant}`, extra && 'is-extra')}>
+      <div className={cx('ola_task', variant && `is-${variant}`)}>
         <div className="ola_task-header">
           <TaskIcon variant={variant} />
           <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
