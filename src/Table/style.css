@@ -38,7 +38,7 @@
     }
 
     & caption {
-        @extend %caption;
+        font: var(--font-caption);
         caption-side: bottom;
         border-top: solid 1px var(--gray-light);
         padding-top: var(--size-3);
