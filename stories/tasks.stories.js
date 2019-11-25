@@ -12,7 +12,7 @@ storiesOf('Tasks', module)
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
 
-          <Task title="Task title demo" buttonLabel="Fix this issue">
+          <Task title="Task title demo">
             <TaskBody>
               Test content for card resolve
             </TaskBody>

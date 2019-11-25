@@ -76,7 +76,7 @@ Task.propTypes = {
     PT.node
   ]),
   /** Title right component  */
-  extra: PT.elementType
+  extra: PT.node
 }
 
 export { Task }
