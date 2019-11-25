@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.0] - 2019-11-25
+### Added
+- Component `Task`: new property `extra` to place elements next to title [#40], [#41]
+- Component `Button`: new variant `link` [#30], [#36]
+- Component `ButtonGroup`: new variant `center` [#34], [#35]
+- Layer `pageCenter` [#32]
+- CONTRIBUTING.md file [#39]
+
+### Removed
+- Support for React < 16.2. Due the use of fragments, React ^16.2 is required.
+
 ## [0.1.2] - 2019-11-18
 ### Added
 - New component `Table` [#7]
@@ -103,7 +114,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#20]: https://github.com/marketgoo/Ola/issues/20
 [#21]: https://github.com/marketgoo/Ola/issues/21
 [#23]: https://github.com/marketgoo/Ola/issues/23
+[#30]: https://github.com/marketgoo/Ola/issues/30
+[#32]: https://github.com/marketgoo/Ola/issues/32
 [#33]: https://github.com/marketgoo/Ola/issues/33
+[#34]: https://github.com/marketgoo/Ola/issues/34
+[#35]: https://github.com/marketgoo/Ola/issues/35
+[#36]: https://github.com/marketgoo/Ola/issues/36
+[#39]: https://github.com/marketgoo/Ola/issues/39
+[#40]: https://github.com/marketgoo/Ola/issues/40
+[#41]: https://github.com/marketgoo/Ola/issues/41
 
+[0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/marketgoo/Ola/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
