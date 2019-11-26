@@ -43,11 +43,10 @@
     & .ola_check {
         display: block;
         padding: 0;
-        background: var(--white);
-        border-radius: var(--radius-small);
     }
 
     & .ola_check-label {
+        background: var(--white);
         border-radius: var(--radius-small);
         border: solid 2px var(--gray-light);
         padding: var(--size-4);
