@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Layer `pageCenter` [#32]
 - CONTRIBUTING.md file [#39]
 
+### Changed
+- The boolean property `reversed` of `ButtonGroup` is now a variant (`variant="reversed"`)
+
 ### Removed
 - Support for React < 16.2. Due the use of fragments, React ^16.2 is required.
 
