@@ -2,7 +2,6 @@
     display: flex;
     box-sizing: border-box;
     min-height: var(--size-7);
-    background: var(--white);
     margin: var(--size-2) 0;
 
     &.is-row {
@@ -44,6 +43,8 @@
     & .ola_check {
         display: block;
         padding: 0;
+        background: var(--white);
+        border-radius: var(--radius-small);
     }
 
     & .ola_check-label {
