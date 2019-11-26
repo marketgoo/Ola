@@ -12,7 +12,7 @@ exports[`Checkarea type checkbox 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={1}
     />
@@ -32,7 +32,7 @@ exports[`Checkarea type checkbox 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={2}
     />
@@ -52,7 +52,7 @@ exports[`Checkarea type checkbox 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={3}
     />
@@ -83,7 +83,7 @@ exports[`Checkarea type radio with value="2" 1`] = `
     <input
       checked={false}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={1}
     />
@@ -103,7 +103,7 @@ exports[`Checkarea type radio with value="2" 1`] = `
     <input
       checked={true}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={2}
     />
@@ -123,7 +123,7 @@ exports[`Checkarea type radio with value="2" 1`] = `
     <input
       checked={false}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={3}
     />
@@ -154,7 +154,7 @@ exports[`Checkarea type radio with value=2 1`] = `
     <input
       checked={false}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={1}
     />
@@ -174,7 +174,7 @@ exports[`Checkarea type radio with value=2 1`] = `
     <input
       checked={true}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={2}
     />
@@ -194,7 +194,7 @@ exports[`Checkarea type radio with value=2 1`] = `
     <input
       checked={false}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="checkbox"
       value={3}
     />
@@ -225,7 +225,7 @@ exports[`Default checkarea 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="radio"
       value={1}
     />
@@ -245,7 +245,7 @@ exports[`Default checkarea 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="radio"
       value={2}
     />
@@ -265,7 +265,7 @@ exports[`Default checkarea 1`] = `
     <input
       checked={null}
       className="ola_check-input"
-      name="test"
+      name="checkArea"
       type="radio"
       value={3}
     />
