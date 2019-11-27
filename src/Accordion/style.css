@@ -9,26 +9,50 @@
         }
     }
 }
-.ola_accordion-title {
+.ola_accordion-header {
     display: inline-flex;
     align-items: center;
     cursor: default;
-    font: var(--font-callout);
-    font-weight: var(--bold);
-    color: var(--brand);
-    text-decoration: underline;
     height: var(--size-8);
-    padding-right: var(--size-7);
+    padding-right: var(--size-5);
     outline: 0;
-    border-radius: var(--radius-small);
+    list-style: none;
+    border-radius: var(--radius);
+
+    &::-webkit-details-marker {
+        display: none;
+    }
 
     &:focus {
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
-    & * + * {
-        margin-left: 10px;
+
+    &:hover .ola_accordion-title {
+        color: var(--black);
+    }
+
+    /*
+    Wavy style is buggy in blink
+    */
+    @supports (text-underline-offset: 4px) {
+        &:hover .ola_accordion-title {
+            text-decoration-style: wavy;
+        }
+    }
+
+    & .ola_tag {
+        margin-left: var(--size-3);
     }
 }
+.ola_accordion-title {
+    font: var(--font-callout);
+    font-weight: var(--bold);
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
 .ola_accordion-marker {
     display: block;
     flex: 0 0 auto;
