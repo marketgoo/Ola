@@ -29,6 +29,9 @@
 .ola-brand {
     color: var(--brand);
 }
+.ola-accent {
+    color: var(--accent);
+}
 .ola-white {
     color: var(--white);
 }
@@ -60,6 +63,9 @@
 /* Background colors */
 .ola-bg-brand {
     background-color: var(--brand);
+}
+.ola-bg-accent {
+    background-color: var(--accent);
 }
 .ola-bg-white {
     background-color: var(--white);

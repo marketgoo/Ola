@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New css util `.ola-nomargin` to remove all default margins of an element
 - New css util `.ola-bold` to assing `bold` font-weight to an element
 - New css variables `--accent`, `--accent-dark` and `--accent-focus` applied to some elements that may not use the default `--brand` color [#47]
+- New css util `.ola-accent` and `.ola-bg-accent` to use the accent color
 
 ### Fixed
 - Some `focus` and `hover` styles of `Task` component for usability purposes.
