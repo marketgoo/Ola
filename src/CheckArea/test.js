@@ -19,7 +19,7 @@ const options = [
 
 it('Default checkarea', () => {
   const tree = renderer
-    .create(<CheckArea options={options}></CheckArea>)
+    .create(<CheckArea name="test" options={options}></CheckArea>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()
@@ -27,7 +27,7 @@ it('Default checkarea', () => {
 
 it('Checkarea type checkbox', () => {
   const tree = renderer
-    .create(<CheckArea options={options} type="checkbox"></CheckArea>)
+    .create(<CheckArea name="test" options={options} type="checkbox"></CheckArea>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()
@@ -35,7 +35,7 @@ it('Checkarea type checkbox', () => {
 
 it('Checkarea type radio with value="2"', () => {
   const tree = renderer
-    .create(<CheckArea options={options} type="checkbox" value="2"></CheckArea>)
+    .create(<CheckArea name="test" options={options} type="checkbox" value="2"></CheckArea>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()
@@ -43,7 +43,7 @@ it('Checkarea type radio with value="2"', () => {
 
 it('Checkarea type radio with value=2', () => {
   const tree = renderer
-    .create(<CheckArea options={options} type="checkbox" value={2}></CheckArea>)
+    .create(<CheckArea name="test" options={options} type="checkbox" value={2}></CheckArea>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()

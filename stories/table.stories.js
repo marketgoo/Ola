@@ -1,6 +1,6 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+
+import create from './create'
 import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check } from '../dist'
 
 const data = [
@@ -30,9 +30,7 @@ const data = [
   }
 ]
 
-storiesOf('Table', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Table')
   .add('Complete', () => (
     <div>
       <Table caption="Superheros and sidekicks" stiky>

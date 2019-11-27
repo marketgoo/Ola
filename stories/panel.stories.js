@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import create from './create'
 
 import {
   Button,
@@ -13,9 +12,7 @@ import {
   ProgressBar
 } from '../dist'
 
-storiesOf('Panel', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Panel')
   .add('All elements', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">

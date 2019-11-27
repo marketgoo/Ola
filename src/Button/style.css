@@ -1,10 +1,10 @@
 .ola_button {
-    --color: var(--brand);
+    --color: var(--accent);
     --background: transparent;
-    --color-hover: var(--brand-dark);
+    --color-hover: var(--accent-dark);
     --background-hover: var(--gray-xlight);
-    --focus: var(--brand-focus);
-    --background-active: var(--brand-focus);
+    --focus: var(--accent-focus);
+    --background-active: var(--accent-focus);
 
     display: inline-flex;
     align-items: center;
@@ -49,10 +49,10 @@
 
     &.is-primary {
         --color: var(--white);
-        --background: var(--brand);
+        --background: var(--accent);
         --color-hover: var(--white);
-        --background-hover: var(--brand-dark);
-        --focus: var(--brand-focus);
+        --background-hover: var(--accent-dark);
+        --focus: var(--accent-focus);
         --background-active: var(--black);
     }
 
@@ -119,6 +119,9 @@
 
     &.is-link {
         --background-hover: transparent;
+        --color: var(--brand);
+        --focus: var(--brand-focus);
+        --background-active: var(--brand-focus);
 
         cursor: pointer;
         min-width: 0;
