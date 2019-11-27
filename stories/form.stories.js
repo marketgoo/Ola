@@ -167,7 +167,7 @@ create('Form')
           id="field-cutsom-checkGroup"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckGroup options={random_option_values} />
+          <CheckGroup name="random" options={random_option_values} />
         </Field>
       </figure>
       <figure>
@@ -175,7 +175,7 @@ create('Form')
           id="field-cutsom-checkGroup"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckGroup options={random_option_values} type="checkbox" />
+          <CheckGroup name="random" options={random_option_values} type="checkbox" />
         </Field>
       </figure>
     </div>
@@ -187,7 +187,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea options={random_option_values} />
+          <CheckArea name="random" options={random_option_values} />
         </Field>
       </figure>
       <figure>
@@ -195,7 +195,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea options={random_option_values} type="checkbox" />
+          <CheckArea name="random" options={random_option_values} type="checkbox" />
         </Field>
       </figure>
     </div>
@@ -207,7 +207,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea htmlOptions={true} options={random_option_values_with_description} />
+          <CheckArea name="random" htmlOptions={true} options={random_option_values_with_description} />
         </Field>
       </figure>
       <figure>
@@ -215,7 +215,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea htmlOptions={true} options={random_option_values_with_description} type="checkbox" />
+          <CheckArea name="random" htmlOptions={true} options={random_option_values_with_description} type="checkbox" />
         </Field>
       </figure>
     </div>
@@ -227,7 +227,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea options={random_option_values} variant="column" type="checkbox" />
+          <CheckArea name="random" options={random_option_values} variant="column" type="checkbox" />
         </Field>
       </figure>
       <figure>
@@ -235,7 +235,7 @@ create('Form')
           id="field-cutsom-checkArea"
           label="Select the most accurate option:"
           hint="(optional)">
-          <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
+          <CheckArea name="random" htmlOptions options={random_option_values_with_description} variant="column" />
         </Field>
       </figure>
     </div>
