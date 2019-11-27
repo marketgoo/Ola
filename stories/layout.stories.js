@@ -1,6 +1,5 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+import create from './create'
 
 import {
   Button,
@@ -31,9 +30,7 @@ const random_option_values_with_description = [
   }
 ]
 
-storiesOf('Layout', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola ola-bg">{story()}</div>)
+create('Layout')
   .add('ola_ly-form', () => (
     <div className="ola_ly-form">
       <header className="ola_panel-header">

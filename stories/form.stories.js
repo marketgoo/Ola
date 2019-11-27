@@ -1,6 +1,6 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+
+import create from './create'
 import { action } from '@storybook/addon-actions'
 
 import {
@@ -77,9 +77,7 @@ const random_option_values_with_description = [
   }
 ]
 
-storiesOf('Form', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Form')
   .add('Input Empty', () => (
     <Input placeholder="Text placeholder" />
   ))

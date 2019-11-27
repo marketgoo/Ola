@@ -1,12 +1,10 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+
+import create from './create'
 
 import { Tag } from '../dist'
 
-storiesOf('Tag', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Tag')
   .add('All', () => (
     <div>
       <figure><Tag>Default Tag</Tag></figure>

@@ -1,14 +1,10 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
-import { withKnobs, select } from '@storybook/addon-knobs'
 
+import create from './create'
+import { select } from '@storybook/addon-knobs'
 import { Icon } from '../dist'
 
-storiesOf('Icon', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Icon')
   .add('Default', () => (
     <div>
       <Icon name="help" />

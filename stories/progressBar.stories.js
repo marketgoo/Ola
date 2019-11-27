@@ -1,12 +1,9 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+import create from './create'
 
 import { ProgressBar } from '../dist'
 
-storiesOf('Progress Bar', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Progress Bar')
   .add('Progress element', () => (
     <div>
       <figure><ProgressBar value="20" max="100" /></figure>

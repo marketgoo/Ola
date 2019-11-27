@@ -1,12 +1,9 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
 
+import create from './create'
 import { Metric } from '../dist'
 
-storiesOf('Metric', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Metric')
   .add('All', () => (
     <div>
       <figure><Metric title="Test Metric" description="Test metric lorem ipsum" value="299" /></figure>

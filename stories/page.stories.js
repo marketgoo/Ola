@@ -1,11 +1,9 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+
+import create from './create'
 import { Page, Icon, Level } from '../dist'
 
-storiesOf('Page', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Page')
   .add('Page list', () => (
     <div>
       <figure><Page title="Easy SEO Tools - marketgoo" url="/index" icon={<Icon name="home"/>} /></figure>

@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { storiesOf } from '@storybook/react'
-import { withInfo } from '@storybook/addon-info'
+import create from './create'
 import { action } from '@storybook/addon-actions'
 
 import {
@@ -14,9 +13,7 @@ import {
   ProgressBar
 } from '../dist'
 
-storiesOf('Modal', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Modal')
   .add('All elements', () => (
     <div className="ola_modal-overlay">
       <div>

@@ -1,10 +1,7 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+import create from './create'
 
-storiesOf('Utils', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Utils')
   .add('Font styles', () => (
     <figure class="ola-bg">
       <h1 className="ola-display ola-nomargin">Display</h1>
@@ -20,6 +17,7 @@ storiesOf('Utils', module)
   .add('Colors', () => (
     <figure>
       <div className="ola-brand ola-title">Brand</div>
+      <div className="ola-accent ola-title">Accent</div>
       <div className="ola-white ola-bg-black ola-title">White</div>
       <div className="ola-black ola-title">Black</div>
       <div className="ola-gray ola-title">Gray</div>
@@ -34,6 +32,7 @@ storiesOf('Utils', module)
   .add('Background colors', () => (
     <figure>
       <div className="ola-bg-brand ola-white ola-title">Brand</div>
+      <div className="ola-bg-accent ola-white ola-title">Accent</div>
       <div className="ola-bg-white ola-title">White</div>
       <div className="ola-bg-black ola-white ola-title">Black</div>
       <div className="ola-bg-gray ola-white ola-title">Gray</div>
