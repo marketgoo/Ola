@@ -1,4 +1,5 @@
 
+export { Accordion } from './Accordion'
 export { Button } from './Button'
 export { Spinner } from './Spinner'
 export { Tag } from './Tag'

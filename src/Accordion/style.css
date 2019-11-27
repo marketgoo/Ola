@@ -1,0 +1,43 @@
+.ola_accordion {
+    &[open] {
+        & .ola_accordion-marker {
+            transform: rotate(90deg);
+        }
+        & .ola_accordion-title {
+            color: var(--black);
+            text-decoration: none;
+        }
+    }
+}
+.ola_accordion-title {
+    display: inline-flex;
+    align-items: center;
+    cursor: default;
+    font: var(--font-callout);
+    font-weight: var(--bold);
+    color: var(--brand);
+    text-decoration: underline;
+    height: var(--size-8);
+    padding-right: var(--size-7);
+    outline: 0;
+    border-radius: var(--radius-small);
+
+    &:focus {
+        box-shadow: 0 0 0 4px var(--brand-focus);
+    }
+    & * + * {
+        margin-left: 10px;
+    }
+}
+.ola_accordion-marker {
+    display: block;
+    flex: 0 0 auto;
+    margin-right: var(--size-3);
+    color: var(--gray-light);
+    border-radius: 50%;
+    transition: transform var(--duration);
+
+    & svg {
+        display: block;
+    }
+}
