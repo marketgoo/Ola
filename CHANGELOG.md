@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.2.1] - Unreleased
+### Fixed
+- Some `focus` and `hover` styles of `Task` component for usability purposes.
+
 ## [0.2.0] - 2019-11-25
 ### Added
 - Component `Task`: new property `extra` to place elements next to title [#40], [#41]
@@ -127,6 +131,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#40]: https://github.com/marketgoo/Ola/issues/40
 [#41]: https://github.com/marketgoo/Ola/issues/41
 
+[0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...HEAD
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/marketgoo/Ola/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1

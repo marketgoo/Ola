@@ -58,14 +58,17 @@
         }
 
         & .ola_task-icon {
-            visibility: visible;
+            display: block;
         }
 
         & .ola_task-summary {
             color: inherit;
 
-            &:focus {
+            &:focus-visible {
                 box-shadow: none;
+            }
+            &:hover {
+                background: none;
             }
         }
 
@@ -129,7 +132,7 @@
     flex: 0 0 auto;
     margin-left: auto;
     margin-right: calc(var(--size-7) * -1);
-    visibility: hidden;
+    display: none;
     color: var(--gray);
 }
 .ola_task-body {
