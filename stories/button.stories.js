@@ -28,6 +28,16 @@ storiesOf('Button', module)
       <figure><Button href="#" variant="link">Link style</Button></figure>
     </div>
   ))
+  .add('As custom accent color', () => (
+    <div style={{ '--accent': '#5BC500', '--accent-focus': '#5BC50033', '--accent-dark': '#449400' }}>
+      <figure><Button>No variant</Button></figure>
+      <figure><Button variant="primary">Primary</Button></figure>
+      <figure><Button variant="secondary">Secondary</Button></figure>
+      <figure><Button variant="primary" disabled>Disabled</Button></figure>
+      <figure><Button variant="primary" busy='Link busy ...' disabled>Hide text by busy text</Button></figure>
+      <figure><Button variant="link">Link style</Button></figure>
+    </div>
+  ))
   .add('Loading / Busy', () => (
     <Button busy='Busy ...'>Example text button</Button>
   ))
