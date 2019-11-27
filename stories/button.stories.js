@@ -1,16 +1,12 @@
 import React from 'react'
 
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+import create from './create'
 import { action } from '@storybook/addon-actions'
-import { withKnobs, text, boolean, radios, select } from '@storybook/addon-knobs'
+import { text, boolean, radios, select } from '@storybook/addon-knobs'
 
 import { Button, ButtonIcon, ButtonGroup, Tag, Icon } from '../dist'
 
-storiesOf('Button', module)
-  .addDecorator(withKnobs)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Button')
   .add('All buttons', () => (
     <Button
       onClick={action('onClick event')}

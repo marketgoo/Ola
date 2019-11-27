@@ -1,14 +1,11 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
-import { withKnobs, number, radios, boolean } from '@storybook/addon-knobs'
+
+import create from './create'
+import { number, radios, boolean } from '@storybook/addon-knobs'
 
 import { ProgressCircle } from '../dist'
 
-storiesOf('Progress Circle', module)
-  .addDecorator(withInfo)
-  .addDecorator(withKnobs)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Progress Circle')
   .add('Default', () => (
     <div>
       <ProgressCircle

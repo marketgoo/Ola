@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New css util `.ola-nomargin` to remove all default margins of an element
 - New css util `.ola-bold` to assing `bold` font-weight to an element
+- New css variables `--accent`, `--accent-dark` and `--accent-focus` applied to some elements that may not use the default `--brand` color [#47]
+- New css util `.ola-accent` and `.ola-bg-accent` to use the accent color
 
 ### Fixed
 - Some `focus` and `hover` styles of `Task` component for usability purposes.
@@ -134,6 +136,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#39]: https://github.com/marketgoo/Ola/issues/39
 [#40]: https://github.com/marketgoo/Ola/issues/40
 [#41]: https://github.com/marketgoo/Ola/issues/41
+[#47]: https://github.com/marketgoo/Ola/issues/47
 
 [0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...HEAD
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0

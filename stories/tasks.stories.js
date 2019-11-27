@@ -1,12 +1,9 @@
 import React from 'react'
-import { withInfo } from '@storybook/addon-info'
-import { storiesOf } from '@storybook/react'
+import create from './create'
 
 import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup, Tag } from '../dist'
 
-storiesOf('Tasks', module)
-  .addDecorator(withInfo)
-  .addDecorator(story => <div className="ola">{story()}</div>)
+create('Tasks')
   .add('Error', () => (
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">
