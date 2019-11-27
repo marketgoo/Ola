@@ -7,12 +7,14 @@ storiesOf('Utils', module)
   .addDecorator(story => <div className="ola">{story()}</div>)
   .add('Font styles', () => (
     <figure class="ola-bg">
-      <div className="ola-display">Display</div>
-      <div className="ola-title">Title</div>
-      <div className="ola-headline">Headline</div>
-      <div className="ola-body">Body</div>
-      <div className="ola-callout">Callout</div>
-      <div className="ola-caption">Caption</div>
+      <h1 className="ola-display ola-nomargin">Display</h1>
+      <h2 className="ola-title ola-nomargin">Title</h2>
+      <h3 className="ola-headline ola-nomargin">Headline</h3>
+      <h3 className="ola-headline ola-nomargin ola-bold">Headline Bold</h3>
+      <p className="ola-body ola-nomargin">Body</p>
+      <p className="ola-callout ola-nomargin">Callout</p>
+      <p className="ola-caption ola-nomargin">Caption</p>
+      <p className="ola-caption ola-nomargin ola-bold">Caption Bold</p>
     </figure>
   ))
   .add('Colors', () => (

@@ -100,3 +100,11 @@
     font-variant-numeric: tabular-nums;
     text-align: right;
 }
+
+/* Misc */
+.ola-nomargin {
+    margin: 0;
+}
+.ola-bold {
+    font-weight: var(--bold);
+}
