@@ -35,11 +35,11 @@ const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children, extra }) => {
+const Task = ({ title, htmlTitle, variant, children, extra, open }) => {
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
-      <details className={cx('ola_task', variant && `is-${variant}`)}>
+      <details className={cx('ola_task', variant && `is-${variant}`)} open={open}>
         <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }
@@ -76,7 +76,9 @@ Task.propTypes = {
     PT.node
   ]),
   /** Title right component  */
-  extra: PT.node
+  extra: PT.node,
+  /** Open or close the Task */
+  open: PT.bool
 }
 
 export { Task }

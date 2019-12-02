@@ -9,7 +9,7 @@ create('Tasks')
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
 
-          <Task title="Task title demo">
+          <Task title="Task title demo" open>
             <TaskBody>
               Test content for card resolve
             </TaskBody>
