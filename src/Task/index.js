@@ -35,13 +35,11 @@ const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children, extra, open, onToggle }) => {
+const Task = ({ title, htmlTitle, variant, children, extra, ...props }) => {
   const hasChildren = React.Children.count(children) > 0
-  const onTaskToggle = e => onToggle && onToggle(e.target.open)
-
   return hasChildren ?
     (
-      <details className={cx('ola_task', variant && `is-${variant}`)} open={open} onToggle={onTaskToggle}>
+      <details className={cx('ola_task', variant && `is-${variant}`)} {...props}>
         <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }

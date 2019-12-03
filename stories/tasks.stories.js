@@ -9,7 +9,7 @@ create('Tasks')
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
 
-          <Task title="Task title demo" onToggle={open => alert('Task is ' + (open ? 'open' : 'close'))}>
+          <Task title="Task title demo" onToggle={e => alert('Task is ' + (e.target.open ? 'open' : 'close'))}>
             <TaskBody>
               Test content for card resolve
             </TaskBody>
