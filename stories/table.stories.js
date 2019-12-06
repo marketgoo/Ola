@@ -2,6 +2,7 @@ import React from 'react'
 
 import create from './create'
 import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check } from '../dist'
+import { TableRow } from '../src'
 
 const data = [
   {
@@ -36,6 +37,7 @@ create('Table')
       <Table caption="Superheros and sidekicks" stiky>
         <thead>
           <tr>
+            <TableCell variant="header"></TableCell>
             <TableCell variant="header">Page</TableCell>
             <TableCell variant="header" align="right">Incoming links</TableCell>
             <TableCell variant="header" align="center">Popularity</TableCell>
@@ -44,12 +46,12 @@ create('Table')
         </thead>
         <tbody>
           { data.map( (row, idx) => (
-            <tr key={idx}>
-              <TableCell><Check>{row.title}</Check></TableCell>
+            <TableRow key={idx} select={<Check type="radio" name="foo" />}>
+              <TableCell>{row.title}</TableCell>
               <TableCell numeric>{row.links}</TableCell>
               <TableCell align="center">{row.popularity}</TableCell>
               <TableCell align="center">{row.action}</TableCell>
-            </tr>
+            </TableRow>
           ) ) }
         </tbody>
       </Table>

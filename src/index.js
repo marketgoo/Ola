@@ -10,6 +10,7 @@ export { ProgressBar } from './ProgressBar'
 export { Metric } from './Metric'
 export { Table } from './Table'
 export { TableCell } from './Table/Cell'
+export { TableRow } from './Table/Row'
 export { Page } from './Page'
 export { Level } from './Level'
 
