@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default ProgressCircle 1`] = `
+<div
+  className="ola_progressCircle"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle Busy 1`] = `
+<div
+  className="ola_progressCircle is-busy"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle with error variant 1`] = `
+<div
+  className="ola_progressCircle is-error"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle with extraClass 1`] = `
+<div
+  className="ola_progressCircle extraclass"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle with success variant 1`] = `
+<div
+  className="ola_progressCircle is-success"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle with value 1`] = `
+<div
+  className="ola_progressCircle"
+>
+  <strong
+    className="ola_progressCircle-value"
+  >
+    20
+    <span>
+      %
+    </span>
+  </strong>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 311.6459912361075,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
+exports[`ProgressCircle with warning variant 1`] = `
+<div
+  className="ola_progressCircle is-warning"
+>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
