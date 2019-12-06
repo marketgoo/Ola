@@ -43,7 +43,7 @@ Field.propTypes = {
   hint: PT.string,
   /** Description */
   description: PT.string,
-  /** Custom Description (react element to replace default description)*/
+  /** Custom Description. Should be a React element to replace default description. It will recibe the error props */
   customDescription: PT.element,
   /** Error variant */
   error: PT.bool,
