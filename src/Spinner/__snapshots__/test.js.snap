@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Big Spinner 1`] = `
+<svg
+  className="ola_spinner is-big"
+  height={140}
+  viewBox="0 0 140 140"
+  width={140}
+>
+  <circle
+    cx={70}
+    cy={70}
+    r={62}
+  />
+</svg>
+`;
+
+exports[`Default Spinner 1`] = `
+<svg
+  className="ola_spinner"
+  height={28}
+  viewBox="0 0 28 28"
+  width={28}
+>
+  <circle
+    cx={14}
+    cy={14}
+    r={12}
+  />
+</svg>
+`;
+
+exports[`Medium Spinner 1`] = `
+<svg
+  className="ola_spinner is-medium"
+  height={76}
+  viewBox="0 0 76 76"
+  width={76}
+>
+  <circle
+    cx={38}
+    cy={38}
+    r={34}
+  />
+</svg>
+`;
+
+exports[`Small Spinner 1`] = `
+<svg
+  className="ola_spinner"
+  height={28}
+  viewBox="0 0 28 28"
+  width={28}
+>
+  <circle
+    cx={14}
+    cy={14}
+    r={12}
+  />
+</svg>
+`;
+
+exports[`Spinner with extraClasss 1`] = `
+<svg
+  className="ola_spinner"
+  extraClasss="extraclass"
+  height={28}
+  viewBox="0 0 28 28"
+  width={28}
+>
+  <circle
+    cx={14}
+    cy={14}
+    r={12}
+  />
+</svg>
+`;
