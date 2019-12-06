@@ -24,7 +24,7 @@ exports[`Default Field 1`] = `
 </div>
 `;
 
-exports[`Default Field with custom description 1`] = `
+exports[`Field with custom description 1`] = `
 <div
   className="ola_field"
 >
@@ -52,7 +52,7 @@ exports[`Default Field with custom description 1`] = `
 </div>
 `;
 
-exports[`Default Field with custom description with error 1`] = `
+exports[`Field with custom description with error 1`] = `
 <div
   className="ola_field is-invalid"
 >
@@ -80,7 +80,7 @@ exports[`Default Field with custom description with error 1`] = `
 </div>
 `;
 
-exports[`Default Field with description 1`] = `
+exports[`Field with description 1`] = `
 <div
   className="ola_field"
 >
@@ -108,7 +108,7 @@ exports[`Default Field with description 1`] = `
 </div>
 `;
 
-exports[`Default Field with error 1`] = `
+exports[`Field with error 1`] = `
 <div
   className="ola_field is-invalid"
 >
@@ -132,7 +132,7 @@ exports[`Default Field with error 1`] = `
 </div>
 `;
 
-exports[`Default Field with hint 1`] = `
+exports[`Field with hint 1`] = `
 <div
   className="ola_field"
 >

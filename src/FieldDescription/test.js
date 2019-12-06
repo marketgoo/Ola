@@ -9,7 +9,7 @@ it('Default FieldDescription', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('Default FieldDescription with error', () => {
+it('FieldDescription with error', () => {
   const tree = renderer
     .create(<FieldDescription error={true}>Description</FieldDescription>)
     .toJSON()

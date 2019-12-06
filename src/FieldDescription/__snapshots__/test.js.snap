@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Default Field 1`] = `
+exports[`Default FieldDescription 1`] = `
 <p
   className="ola_field-description"
 >
@@ -8,7 +8,7 @@ exports[`Default Field 1`] = `
 </p>
 `;
 
-exports[`Default Field with error 1`] = `
+exports[`FieldDescription with error 1`] = `
 <p
   className="ola_field-error"
 >
