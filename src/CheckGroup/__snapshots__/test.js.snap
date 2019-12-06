@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default CheckGroup 1`] = `
+<div
+  className="ola_checkGroup"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 1
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 2
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={null}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 3
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Default CheckGroup option checked 1`] = `
+<div
+  className="ola_checkGroup"
+  onChange={[Function]}
+  role="radiogroup"
+>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={true}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 1
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 2
+    </div>
+  </label>
+  <label
+    className="ola_check"
+  >
+    <input
+      checked={false}
+      className="ola_check-input"
+      name={null}
+      type="radio"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      Option 3
+    </div>
+  </label>
+</div>
+`;
