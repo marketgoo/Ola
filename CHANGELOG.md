@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Added styles for `<hr>`
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
+- Default styles for task content [#54]
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
@@ -151,6 +152,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#44]: https://github.com/marketgoo/Ola/issues/44
 [#45]: https://github.com/marketgoo/Ola/issues/45
 [#47]: https://github.com/marketgoo/Ola/issues/47
+[#54]: https://github.com/marketgoo/Ola/issues/54
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.2.2...HEAD
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2

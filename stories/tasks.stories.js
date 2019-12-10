@@ -9,9 +9,14 @@ create('Tasks')
       <PanelContent title="What do you need to look at?" variant="fullwidth">
         <TaskGroup>
 
-          <Task title="Task title demo" onToggle={e => alert('Task is ' + (e.target.open ? 'open' : 'close'))}>
+          <Task title="Task title demo" onToggle={e => ('Task is ' + (e.target.open ? 'open' : 'close'))}>
             <TaskBody>
-              Test content for card resolve
+              <p>Add the targeted keyword <strong>florida man</strong> to the page title to help it rank in search engine results.</p>
+              <p>Here are some tips for writing an SEO-friendly title:</p>
+              <ul>
+                <li>Add the keyword <strong>florida man</strong> to the beginning of the title for best results.</li>
+                <li>Avoid or limit STOP words, such as 'the', 'a', 'an', 'but', 'if', and 'that' in the title tag. These words carry little value from an SEO perspective.</li>
+              </ul>
             </TaskBody>
             <TaskFooter>
               <ButtonGroup>
