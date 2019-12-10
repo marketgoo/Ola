@@ -106,7 +106,9 @@ create('Tasks')
 
           <Task title="Task title" variant="warning">
             <TaskBody>
-              Test content for card resolve
+              <p>Text content for card resolve</p>
+              <hr />
+              <p>More text content for card resolve</p>
             </TaskBody>
             <TaskFooter>
               <ButtonGroup>
@@ -117,7 +119,7 @@ create('Tasks')
 
           <Task title="Task title" variant="suggested">
             <TaskBody>
-              Test content for card resolve
+            Text content for card resolve
             </TaskBody>
             <TaskFooter>
               <ButtonGroup>
@@ -131,7 +133,7 @@ create('Tasks')
 
           <Task title="Task title demo" variant="error">
             <TaskBody>
-              Test content for card resolve
+            Text content for card resolve
             </TaskBody>
             <TaskFooter>
               <ButtonGroup>
