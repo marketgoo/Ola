@@ -25,6 +25,22 @@
     font: var(--font-caption);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    &.ola-headline,
+    &.ola-body,
+    &.ola-callout,
+    &.ola-caption {
+        font-weight: var(--bold);
+    }
+}
+
 /* Colors */
 .ola-brand {
     color: var(--brand);

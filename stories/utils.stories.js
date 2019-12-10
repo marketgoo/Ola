@@ -6,12 +6,13 @@ create('Utils')
     <figure class="ola-bg">
       <h1 className="ola-display ola-nomargin">Display</h1>
       <h2 className="ola-title ola-nomargin">Title</h2>
-      <h3 className="ola-headline ola-nomargin">Headline</h3>
-      <h3 className="ola-headline ola-nomargin ola-bold">Headline Bold</h3>
+      <p className="ola-headline ola-nomargin">Headline</p>
+      <h3 className="ola-headline ola-nomargin">Headline Bold</h3>
       <p className="ola-body ola-nomargin">Body</p>
       <p className="ola-callout ola-nomargin">Callout</p>
       <p className="ola-caption ola-nomargin">Caption</p>
       <p className="ola-caption ola-nomargin ola-bold">Caption Bold</p>
+      <strong className="ola-caption">Caption Bold</strong>
     </figure>
   ))
   .add('Colors', () => (

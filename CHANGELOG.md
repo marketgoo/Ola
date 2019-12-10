@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Fixed
 - Added styles for `<hr>`
+- Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
