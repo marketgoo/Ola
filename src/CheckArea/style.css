@@ -3,6 +3,7 @@
     box-sizing: border-box;
     min-height: var(--size-7);
     margin: var(--size-2) 0;
+    padding: var(--size-2);
 
     &.is-row {
         flex-direction: column;
@@ -18,6 +19,7 @@
         overflow-x: auto;
         position: relative;
         -webkit-overflow-scrolling: touch;
+        text-align: center;
 
         & > .ola_check {
             max-width: 200px;
@@ -58,7 +60,6 @@
     }
 
     & .ola_check-input:checked ~ .ola_check-label {
-        background-color: var(--gray-xlight);
         border-color: var(--brand);
     }
 
@@ -71,4 +72,17 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+
+    & img {
+        max-width: 100%;
+        display: block;
+        filter: grayscale(1);
+        opacity: .7;
+    }
+}
+
+.ola_check-input:checked ~ .ola_check-label .ola_checkArea-content img,
+.ola_check-label:hover .ola_checkArea-content img {
+    filter: none;
+    opacity: 1;
 }

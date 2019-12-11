@@ -64,15 +64,27 @@ const random_option_values = [
 
 const random_option_values_with_description = [
   {
-    label: '<strong>Test 1</strong>Lorem ipsum dolor sit amet.',
+    label: `
+      <strong class="ola-callout">Test 1</strong>
+      <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg">
+      <p class="ola-callout">Lorem ipsum dolor sit amet</p>
+    `,
     value: 'test1'
   },
   {
-    label: '<strong>Test 2</strong>Lorem ipsum dolor sit amet.',
+    label: `
+      <strong class="ola-callout">Test 2</strong>
+      <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg">
+      <p class="ola-callout">Lorem ipsum dolor sit amet</p>
+    `,
     value: 'test2'
   },
   {
-    label: '<strong>Test 3</strong>Lorem ipsum dolor sit amet.',
+    label: `
+      <strong class="ola-callout">Test 3</strong>
+      <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg">
+      <p class="ola-callout">Lorem ipsum dolor sit amet</p>
+    `,
     value: 'test3'
   }
 ]
