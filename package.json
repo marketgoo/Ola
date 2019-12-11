@@ -16,7 +16,7 @@
     "guide": "start-storybook -p 6006 -s ./static",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist && postcss src/index.css -o dist/index.css",
     "build:storybook": "build-storybook",
-    "publish:storybook": "gh-pages -d storybook-static",
+    "publish:storybook": "npm run build:storybook && gh-pages -d storybook-static",
     "prepack": "npm test && npm run lint && npm run build"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",

@@ -78,6 +78,8 @@
         display: block;
         filter: grayscale(1);
         opacity: .7;
+        transition-property: filter, opacity;
+        transition-duration: var(--duration);
     }
 }
 
