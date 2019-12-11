@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Added styles for `<hr>`
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 - Default styles for task content [#54]
+- Improved CheckArea styles ##56
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
