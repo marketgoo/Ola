@@ -4,7 +4,7 @@ import create from '../create'
 import { action } from '@storybook/addon-actions'
 
 import Field from './'
-import FieldDescription from './FieldDescription'
+import FieldDescription from './Description'
 import Input from '../Input'
 
 create('Field')

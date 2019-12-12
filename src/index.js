@@ -32,7 +32,7 @@ export { default as ModalContent } from './Modal/Content'
 
 export { default as Input } from './Input'
 export { default as Field } from './Field'
-export { default as FieldDescription } from './FieldDescription'
+export { default as FieldDescription } from './Field/Description'
 export { default as SearchField } from './SearchField'
 export { default as Check } from './Check'
 export { default as CheckGroup } from './CheckGroup'
