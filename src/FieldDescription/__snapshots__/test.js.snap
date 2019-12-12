@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default FieldDescription 1`] = `
+<p
+  className="ola_field-description"
+>
+  Description
+</p>
+`;
+
+exports[`FieldDescription with error 1`] = `
+<p
+  className="ola_field-error"
+>
+  Description
+</p>
+`;
