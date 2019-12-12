@@ -3,9 +3,9 @@ import React from 'react'
 import create from '../create'
 
 import Task from './'
-import TaskBody from './TaskBody'
-import TaskFooter from './TaskFooter'
-import TaskInfo from './TaskInfo'
+import TaskBody from './Body'
+import TaskFooter from './Footer'
+import TaskInfo from './Info'
 import TaskGroup from '../TaskGroup'
 
 import Button from '../Button'

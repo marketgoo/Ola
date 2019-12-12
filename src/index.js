@@ -20,9 +20,9 @@ export { default as PanelFooter } from './Panel/Footer'
 export { default as PanelHeader } from './Panel/Header'
 
 export { default as Task } from './Task'
-export { default as TaskBody } from './Task/TaskBody'
-export { default as TaskFooter } from './Task/TaskFooter'
-export { default as TaskInfo } from './Task/TaskInfo'
+export { default as TaskBody } from './Task/Body'
+export { default as TaskFooter } from './Task/Footer'
+export { default as TaskInfo } from './Task/Info'
 export { default as TaskGroup } from './TaskGroup'
 
 export { default as Modal } from './Modal'
