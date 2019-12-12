@@ -1,9 +1,10 @@
 import React from 'react'
-import create from './create'
+
+import create from '../create'
 
 create('Utils')
   .add('Font styles', () => (
-    <figure class="ola-bg">
+    <figure className="ola-bg">
       <h1 className="ola-display ola-nomargin">Display</h1>
       <h2 className="ola-title ola-nomargin">Title</h2>
       <p className="ola-headline ola-nomargin">Headline</p>

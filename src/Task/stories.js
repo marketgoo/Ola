@@ -1,9 +1,20 @@
 import React from 'react'
-import create from './create'
 
-import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, TaskInfo, Button, ButtonGroup, Tag } from '../dist'
+import create from '../create'
 
-create('Tasks')
+import Task from './'
+import TaskBody from './TaskBody'
+import TaskFooter from './TaskFooter'
+import TaskInfo from './TaskInfo'
+import TaskGroup from '../TaskGroup'
+
+import Button from '../Button'
+import ButtonGroup from '../ButtonGroup'
+import Tag from '../Tag'
+import Panel from '../Panel'
+import PanelContent from '../Panel/Content'
+
+create('Task')
   .add('Error', () => (
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">
@@ -81,7 +92,6 @@ create('Tasks')
     <Panel>
       <PanelContent title="Reopened" variant="fullwidth">
         <TaskGroup>
-
           <Task title="Task title" variant="warning">
             <TaskBody>
               Test content for card resolve

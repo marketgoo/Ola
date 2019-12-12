@@ -1,9 +1,10 @@
 import React from 'react'
-import create from './create'
 
-import { ProgressBar } from '../dist'
+import create from '../create'
 
-create('Progress Bar')
+import ProgressBar from './'
+
+create('ProgressBar')
   .add('Progress element', () => (
     <div>
       <figure><ProgressBar value="20" max="100" /></figure>
