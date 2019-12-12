@@ -22,6 +22,7 @@ export { PanelHeader } from './Panel/Header'
 export { Task } from './Task'
 export { TaskBody } from './Task/TaskBody'
 export { TaskFooter } from './Task/TaskFooter'
+export { TaskInfo } from './Task/TaskInfo'
 export { TaskGroup } from './TaskGroup'
 
 export { Modal } from './Modal'
