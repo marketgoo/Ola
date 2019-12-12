@@ -1,7 +1,7 @@
 import React from 'react'
 import create from './create'
 
-import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, Button, ButtonGroup, Tag } from '../dist'
+import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, TaskInfo, Button, ButtonGroup, Tag } from '../dist'
 
 create('Tasks')
   .add('Error', () => (
@@ -10,6 +10,10 @@ create('Tasks')
         <TaskGroup>
 
           <Task title="Task title demo" onToggle={e => ('Task is ' + (e.target.open ? 'open' : 'close'))}>
+            <TaskInfo>
+              <p>Impact: <strong>High</strong></p>
+              <p>Estimated time: <strong>1-2 minutes</strong></p>
+            </TaskInfo>
             <TaskBody>
               <p>Add the targeted keyword <strong>florida man</strong> to the page title to help it rank in search engine results.</p>
               <p>Here are some tips for writing an SEO-friendly title:</p>
