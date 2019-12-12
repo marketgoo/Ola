@@ -1,5 +1,5 @@
 import React from 'react'
-import { FieldDescription } from './'
+import FieldDescription from './'
 import renderer from 'react-test-renderer'
 
 it('Default FieldDescription', () => {

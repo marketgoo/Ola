@@ -12,4 +12,4 @@ TaskBody.propTypes = {
   ]).isRequired
 }
 
-export { TaskBody }
+export default TaskBody

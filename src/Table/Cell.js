@@ -34,4 +34,4 @@ TableCell.propTypes = {
   ])
 }
 
-export { TableCell }
+export default TableCell

@@ -1,7 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import { Icon } from '../Icon'
+import Icon from '../Icon'
 
 const TaskIcon = ({ variant }) => {
   switch (variant) {
@@ -83,4 +83,4 @@ Task.propTypes = {
   onToggle: PT.func
 }
 
-export { Task }
+export default Task

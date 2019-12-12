@@ -37,4 +37,4 @@ Input.propTypes = {
   error: PT.bool
 }
 
-export { Input }
+export default Input

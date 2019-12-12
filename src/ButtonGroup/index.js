@@ -34,4 +34,4 @@ ButtonGroup.propTypes = {
   ]).isRequired
 }
 
-export { ButtonGroup }
+export default ButtonGroup

@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckArea } from './'
+import CheckArea from './'
 import renderer from 'react-test-renderer'
 
 const options = [

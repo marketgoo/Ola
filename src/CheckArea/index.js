@@ -1,7 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import { Check } from '../Check'
+import Check from '../Check'
 
 const CheckArea = ({ options, htmlOptions, name, value, type, variant, onChange }) => {
   return (
@@ -53,4 +53,4 @@ CheckArea.propTypes = {
   onChange: PT.func
 }
 
-export { CheckArea }
+export default CheckArea

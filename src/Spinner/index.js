@@ -42,4 +42,4 @@ Spinner.propTypes = {
   extraClass: PT.string,
 }
 
-export { Spinner }
+export default Spinner

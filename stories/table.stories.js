@@ -1,8 +1,7 @@
 import React from 'react'
 
 import create from './create'
-import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check } from '../dist'
-import { TableRow } from '../src'
+import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check, TableRow } from '../dist'
 
 const data = [
   {

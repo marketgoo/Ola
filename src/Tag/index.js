@@ -24,4 +24,4 @@ Tag.propTypes = {
   ]).isRequired
 }
 
-export { Tag }
+export default Tag

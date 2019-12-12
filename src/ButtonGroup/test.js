@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../Button'
-import { ButtonGroup } from './'
+import Button from '../Button'
+import ButtonGroup from './'
 import renderer from 'react-test-renderer'
 
 it('Group with two buttons', () => {

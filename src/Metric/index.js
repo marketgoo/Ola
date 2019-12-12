@@ -1,8 +1,8 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import { Icon } from '../Icon'
-import { Spinner } from '../Spinner'
+import Icon from '../Icon'
+import Spinner from '../Spinner'
 
 const defaultIcons = {
   error: 'warning',
@@ -71,4 +71,4 @@ Metric.propTypes = {
   htmlFooter: PT.bool
 }
 
-export { Metric }
+export default Metric

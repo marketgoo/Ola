@@ -1,6 +1,6 @@
 import React from 'react'
-import { Field } from './'
-import { Input } from '../Input'
+import Field from './'
+import Input from '../Input'
 import renderer from 'react-test-renderer'
 
 it('Default Field', () => {

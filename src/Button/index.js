@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
-import { Spinner } from '../Spinner'
+import Spinner from '../Spinner'
 
 const Button = ({ variant, children, disabled, busy, extraClass, as, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
@@ -52,4 +52,4 @@ Button.propTypes = {
   disabled: PT.bool
 }
 
-export { Button }
+export default Button;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Level } from './'
+import Level from './'
 import renderer from 'react-test-renderer'
 
 it('Default Level', () => {

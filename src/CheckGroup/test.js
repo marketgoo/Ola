@@ -1,5 +1,5 @@
 import React from 'react'
-import { CheckGroup } from './'
+import CheckGroup from './'
 import renderer from 'react-test-renderer'
 
 const options = [

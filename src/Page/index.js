@@ -35,4 +35,4 @@ Page.propTypes = {
   link: PT.string
 }
 
-export { Page }
+export default Page
