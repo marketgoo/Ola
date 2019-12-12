@@ -52,4 +52,4 @@ Button.propTypes = {
   disabled: PT.bool
 }
 
-export default Button;
+export default Button
