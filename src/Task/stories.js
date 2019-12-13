@@ -30,7 +30,7 @@ create('Task')
               <p>Here are some tips for writing an SEO-friendly title:</p>
               <ul>
                 <li>Add the keyword <strong>florida man</strong> to the beginning of the title for best results.</li>
-                <li>Avoid or limit STOP words, such as 'the', 'a', 'an', 'but', 'if', and 'that' in the title tag. These words carry little value from an SEO perspective.</li>
+                <li>Avoid or limit STOP words, such as `&#39`the`&#39`, `&#39`a`&#39`, `&#39`an`&#39`, `&#39`but`&#39`, `&#39`if`&#39`, and `&#39`that`&#39` in the title tag. These words carry little value from an SEO perspective.</li>
               </ul>
             </TaskBody>
             <TaskFooter>

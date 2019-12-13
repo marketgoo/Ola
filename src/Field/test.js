@@ -1,6 +1,6 @@
 import React from 'react'
 import Field from './'
-import FieldDescription from './FieldDescription'
+import FieldDescription from './Description'
 import Input from '../Input'
 import renderer from 'react-test-renderer'
 
