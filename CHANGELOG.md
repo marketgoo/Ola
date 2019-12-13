@@ -8,13 +8,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Property `extraClass` to `Check`
+- Property `variant` to `Check`
+
+### Changed
+- `CheckGroup` component is now a container with no logic. It accepts three variants: `row`, `column` and `list`.
+
+### Removed
+- `CheckArea` component. Use `CheckGroup` with `column` or `row` variant.
 
 ### Fixed
 - Added styles for `<hr>`
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 - Default styles for task content [#54]
 - Improved Check label styles
-- Improved CheckArea styles #56
+- Improved CheckArea styles [#56]
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
@@ -158,6 +165,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#45]: https://github.com/marketgoo/Ola/issues/45
 [#47]: https://github.com/marketgoo/Ola/issues/47
 [#54]: https://github.com/marketgoo/Ola/issues/54
+[#56]: https://github.com/marketgoo/Ola/issues/56
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.2.2...HEAD
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
