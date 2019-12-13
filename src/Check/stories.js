@@ -10,9 +10,9 @@ create('Check')
   .add('Default', () => (
     <div>
       <figure><Check>Check</Check></figure>
-      <figure><Check>Check&nbsp;<a href="#">with a link</a></Check></figure>
+      <figure><Check>Check <a href="#">with a link</a></Check></figure>
       <figure><Check type="radio" name="name">Check Radio</Check></figure>
-      <figure><Check type="radio" name="name">Check Radio&nbsp;<a href="#">with a link</a></Check></figure>
+      <figure><Check type="radio" name="name">Check Radio <a href="#">with a link</a></Check></figure>
     </div>
   ))
   .add('Viewer', () => (

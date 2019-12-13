@@ -6,11 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Property `extraClass` to `Check`
+
 ### Fixed
 - Added styles for `<hr>`
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 - Default styles for task content [#54]
-- Improved CheckArea styles ##56
+- Improved Check label styles
+- Improved CheckArea styles #56
 
 ## [0.2.2] - 2019-11-27
 ### Fixed

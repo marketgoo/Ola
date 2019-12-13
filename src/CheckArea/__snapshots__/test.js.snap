@@ -20,9 +20,13 @@ exports[`Checkarea type checkbox 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 1
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 1
+        </div>
       </div>
     </div>
   </label>
@@ -40,9 +44,13 @@ exports[`Checkarea type checkbox 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 2
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 2
+        </div>
       </div>
     </div>
   </label>
@@ -60,11 +68,15 @@ exports[`Checkarea type checkbox 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        <strong>
-          Option 3
-        </strong>
+        <div
+          className="ola_checkArea-content"
+        >
+          <strong>
+            Option 3
+          </strong>
+        </div>
       </div>
     </div>
   </label>
@@ -91,9 +103,13 @@ exports[`Checkarea type radio with value="2" 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 1
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 1
+        </div>
       </div>
     </div>
   </label>
@@ -111,9 +127,13 @@ exports[`Checkarea type radio with value="2" 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 2
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 2
+        </div>
       </div>
     </div>
   </label>
@@ -131,11 +151,15 @@ exports[`Checkarea type radio with value="2" 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        <strong>
-          Option 3
-        </strong>
+        <div
+          className="ola_checkArea-content"
+        >
+          <strong>
+            Option 3
+          </strong>
+        </div>
       </div>
     </div>
   </label>
@@ -162,9 +186,13 @@ exports[`Checkarea type radio with value=2 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 1
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 1
+        </div>
       </div>
     </div>
   </label>
@@ -182,9 +210,13 @@ exports[`Checkarea type radio with value=2 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 2
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 2
+        </div>
       </div>
     </div>
   </label>
@@ -202,11 +234,15 @@ exports[`Checkarea type radio with value=2 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        <strong>
-          Option 3
-        </strong>
+        <div
+          className="ola_checkArea-content"
+        >
+          <strong>
+            Option 3
+          </strong>
+        </div>
       </div>
     </div>
   </label>
@@ -233,9 +269,13 @@ exports[`Default checkarea 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 1
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 1
+        </div>
       </div>
     </div>
   </label>
@@ -253,9 +293,13 @@ exports[`Default checkarea 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        Option 2
+        <div
+          className="ola_checkArea-content"
+        >
+          Option 2
+        </div>
       </div>
     </div>
   </label>
@@ -273,11 +317,15 @@ exports[`Default checkarea 1`] = `
       className="ola_check-label"
     >
       <div
-        className="ola_checkArea-content"
+        className="ola_check-label-content"
       >
-        <strong>
-          Option 3
-        </strong>
+        <div
+          className="ola_checkArea-content"
+        >
+          <strong>
+            Option 3
+          </strong>
+        </div>
       </div>
     </div>
   </label>
