@@ -1,5 +1,5 @@
 import React from 'react'
-import { Check } from './'
+import Check from './'
 import renderer from 'react-test-renderer'
 
 it('Default check is checkbox', () => {

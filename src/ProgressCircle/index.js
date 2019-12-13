@@ -44,4 +44,4 @@ ProgressCircle.propTypes = {
   extraClass: PT.string
 }
 
-export { ProgressCircle }
+export default ProgressCircle

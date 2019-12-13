@@ -12,4 +12,4 @@ TaskFooter.propTypes = {
   ]).isRequired
 }
 
-export { TaskFooter }
+export default TaskFooter

@@ -14,4 +14,4 @@ ButtonIcon.propTypes = {
   ]).isRequired
 }
 
-export { ButtonIcon }
+export default ButtonIcon

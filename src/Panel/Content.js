@@ -37,4 +37,4 @@ PanelContent.propTypes = {
   ]).isRequired
 }
 
-export { PanelContent }
+export default PanelContent

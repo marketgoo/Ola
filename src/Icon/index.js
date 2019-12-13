@@ -75,4 +75,4 @@ Icon.propTypes = {
   extraClass: PT.string
 }
 
-export { Icon }
+export default Icon

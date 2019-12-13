@@ -1,6 +1,6 @@
 import React from 'react'
-import { Page } from './'
-import { Icon } from '../Icon'
+import Page from './'
+import Icon from '../Icon'
 import renderer from 'react-test-renderer'
 
 it('Default Page', () => {

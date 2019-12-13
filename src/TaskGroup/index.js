@@ -33,4 +33,4 @@ TaskGroup.propTypes = {
   ]).isRequired
 }
 
-export { TaskGroup }
+export default TaskGroup

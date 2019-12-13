@@ -25,4 +25,4 @@ Check.propTypes = {
   ]).isRequired
 }
 
-export { Check }
+export default Check

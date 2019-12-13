@@ -23,4 +23,4 @@ Switch.propTypes = {
   input: PT.object
 }
 
-export { Switch }
+export default Switch

@@ -12,4 +12,4 @@ TaskInfo.propTypes = {
   ]).isRequired
 }
 
-export { TaskInfo }
+export default TaskInfo

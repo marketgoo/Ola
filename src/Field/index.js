@@ -54,4 +54,4 @@ Field.propTypes = {
   ]).isRequired
 }
 
-export { Field }
+export default Field

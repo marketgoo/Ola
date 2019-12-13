@@ -1,8 +1,12 @@
 import React from 'react'
 
-import create from './create'
-import { Table, TableCell, Button, Panel, PanelContent, PanelFooter, ButtonGroup, Check } from '../dist'
-import { TableRow } from '../src'
+import create from '../create'
+
+import Table from './'
+import TableRow from './Row'
+import TableCell from './Cell'
+import Button from '../Button'
+import Check from '../Check'
 
 const data = [
   {
@@ -32,8 +36,8 @@ const data = [
 ]
 
 create('Table')
-  .add('Complete', () => (
-    <div>
+  .add('Selectable', () => (
+    <figure>
       <Table caption="Superheros and sidekicks" stiky>
         <thead>
           <tr>
@@ -55,37 +59,27 @@ create('Table')
           ) ) }
         </tbody>
       </Table>
-    </div>
+    </figure>
   ))
-  .add('Responive example', () => (
-    <Panel>
-      <PanelContent>
-        <Table caption="Superheros and sidekicks" stiky>
-          <thead>
-            <tr>
-              <TableCell variant="header">Your current page title</TableCell>
-              <TableCell variant="header" align="right">Incoming links</TableCell>
-              <TableCell variant="header" align="center">Popularity</TableCell>
-              <TableCell variant="header" align="center">Actions</TableCell>
-            </tr>
-          </thead>
-          <tbody>
-            { data.map( (row, idx) => (
-              <tr key={idx}>
-                <TableCell>{row.title}</TableCell>
-                <TableCell numeric>{row.links}</TableCell>
-                <TableCell align="center">{row.popularity}</TableCell>
-                <TableCell align="center">{row.action}</TableCell>
-              </tr>
-            ) ) }
-          </tbody>
-        </Table>
-      </PanelContent>
-      <PanelFooter>
-        <ButtonGroup reversed>
-          <Button variant='primary'>Primary</Button>
-          <Button variant='secondary'>Default Button</Button>
-        </ButtonGroup>
-      </PanelFooter>
-    </Panel>
+  .add('Default', () => (
+    <Table caption="Superheros and sidekicks" stiky>
+      <thead>
+        <tr>
+          <TableCell variant="header">Your current page title</TableCell>
+          <TableCell variant="header" align="right">Incoming links</TableCell>
+          <TableCell variant="header" align="center">Popularity</TableCell>
+          <TableCell variant="header" align="center">Actions</TableCell>
+        </tr>
+      </thead>
+      <tbody>
+        { data.map( (row, idx) => (
+          <tr key={idx}>
+            <TableCell>{row.title}</TableCell>
+            <TableCell numeric>{row.links}</TableCell>
+            <TableCell align="center">{row.popularity}</TableCell>
+            <TableCell align="center">{row.action}</TableCell>
+          </tr>
+        ) ) }
+      </tbody>
+    </Table>
   ))

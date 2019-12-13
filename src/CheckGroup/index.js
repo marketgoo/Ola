@@ -1,6 +1,6 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import { Check } from '../Check'
+import Check from '../Check'
 
 const CheckGroup = ({ options, value, type, name, onChange }) => {
   return (
@@ -37,4 +37,4 @@ CheckGroup.propTypes = {
   onChange: PT.func
 }
 
-export { CheckGroup }
+export default CheckGroup

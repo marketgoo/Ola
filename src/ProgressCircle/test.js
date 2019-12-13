@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProgressCircle } from './'
+import ProgressCircle from './'
 import renderer from 'react-test-renderer'
 
 it('Default ProgressCircle', () => {

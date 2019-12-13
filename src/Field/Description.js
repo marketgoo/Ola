@@ -24,4 +24,4 @@ FieldDescription.propTypes = {
   ]).isRequired
 }
 
-export { FieldDescription }
+export default FieldDescription

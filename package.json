@@ -9,7 +9,7 @@
     "start": "concurrently npm:watch npm:guide",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "test": "jest ./src",
+    "test": "npm run lint && jest ./src",
     "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",

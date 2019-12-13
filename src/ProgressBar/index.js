@@ -39,4 +39,4 @@ ProgressBar.propTypes = {
   htmlDescription: PT.bool
 }
 
-export { ProgressBar }
+export default ProgressBar

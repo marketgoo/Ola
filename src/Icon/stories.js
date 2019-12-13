@@ -1,20 +1,21 @@
 import React from 'react'
 
-import create from './create'
+import create from '../create'
 import { select } from '@storybook/addon-knobs'
-import { Icon } from '../dist'
+
+import Icon from './'
 
 create('Icon')
-  .add('Default', () => (
-    <div>
+  .add('Sizes', () => (
+    <figure>
       <Icon name="help" />
       <Icon name="help" size="big" />
       <Icon name="help" size="medium" />
       <Icon name="help" size="small" />
-    </div>
+    </figure>
   ))
-  .add('All', () => (
-    <div>
+  .add('Viewer', () => (
+    <figure>
       <Icon size={select('Size', ['medium', 'small', 'big'])} name={select('Name', [
         'help',
         'chevronDown',
@@ -31,5 +32,5 @@ create('Icon')
         'user',
         'warning'
       ])} />
-    </div>
+    </figure>
   ))

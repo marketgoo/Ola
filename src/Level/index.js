@@ -18,4 +18,4 @@ Level.propTypes = {
   variant: PT.oneOf(['low', 'medium', 'high']),
 }
 
-export { Level }
+export default Level

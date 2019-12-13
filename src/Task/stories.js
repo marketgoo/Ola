@@ -1,9 +1,20 @@
 import React from 'react'
-import create from './create'
 
-import { Panel, PanelContent, TaskGroup, Task, TaskBody, TaskFooter, TaskInfo, Button, ButtonGroup, Tag } from '../dist'
+import create from '../create'
 
-create('Tasks')
+import Task from './'
+import TaskBody from './Body'
+import TaskFooter from './Footer'
+import TaskInfo from './Info'
+import TaskGroup from '../TaskGroup'
+
+import Button from '../Button'
+import ButtonGroup from '../ButtonGroup'
+import Tag from '../Tag'
+import Panel from '../Panel'
+import PanelContent from '../Panel/Content'
+
+create('Task')
   .add('Error', () => (
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">
@@ -19,7 +30,7 @@ create('Tasks')
               <p>Here are some tips for writing an SEO-friendly title:</p>
               <ul>
                 <li>Add the keyword <strong>florida man</strong> to the beginning of the title for best results.</li>
-                <li>Avoid or limit STOP words, such as 'the', 'a', 'an', 'but', 'if', and 'that' in the title tag. These words carry little value from an SEO perspective.</li>
+                <li>Avoid or limit STOP words, such as `&#39`the`&#39`, `&#39`a`&#39`, `&#39`an`&#39`, `&#39`but`&#39`, `&#39`if`&#39`, and `&#39`that`&#39` in the title tag. These words carry little value from an SEO perspective.</li>
               </ul>
             </TaskBody>
             <TaskFooter>
@@ -81,7 +92,6 @@ create('Tasks')
     <Panel>
       <PanelContent title="Reopened" variant="fullwidth">
         <TaskGroup>
-
           <Task title="Task title" variant="warning">
             <TaskBody>
               Test content for card resolve

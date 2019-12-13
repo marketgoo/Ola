@@ -1,6 +1,6 @@
 import React from 'react'
-import { Table } from './'
-import { TableCell } from './Cell'
+import Table from './'
+import TableCell from './Cell'
 import renderer from 'react-test-renderer'
 
 

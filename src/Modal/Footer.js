@@ -20,4 +20,4 @@ ModalFooter.propTypes = {
   ]).isRequired
 }
 
-export { ModalFooter }
+export default ModalFooter

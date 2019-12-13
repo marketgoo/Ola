@@ -1,7 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import {TableCell} from './Cell.js'
+import TableCell from './Cell.js'
 
 const TableRow = ({ extraClass, select, children, ...props }) => {
   return (
@@ -29,4 +29,4 @@ TableRow.propTypes = {
   ])
 }
 
-export { TableRow }
+export default TableRow

@@ -1,16 +1,15 @@
 import React from 'react'
 
-import create from './create'
+import create from '../create'
 
-import {
-  Button,
-  Panel,
-  PanelHeader,
-  PanelContent,
-  PanelFooter,
-  ButtonGroup,
-  ProgressBar
-} from '../dist'
+import Panel from './'
+import PanelHeader from './Header'
+import PanelContent from './Content'
+import PanelFooter from './Footer'
+import ProgressBar from '../ProgressBar'
+import Button from '../Button'
+import ButtonGroup from '../ButtonGroup'
+
 
 create('Panel')
   .add('All elements', () => (

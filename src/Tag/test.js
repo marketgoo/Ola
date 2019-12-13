@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tag } from './'
+import Tag from './'
 import renderer from 'react-test-renderer'
 
 it('Default Tag', () => {

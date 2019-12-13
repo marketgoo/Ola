@@ -1,9 +1,9 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 
-import { Button } from '../Button'
-import { Input } from '../Input'
-import { Spinner } from '../Spinner'
+import Button from '../Button'
+import Input from '../Input'
+import Spinner from '../Spinner'
 
 const SearchField = ({ id, textButton, busy, placeholder, ...props }) => {
   return (
@@ -34,4 +34,4 @@ SearchField.propTypes = {
   busy: PT.bool
 }
 
-export { SearchField }
+export default SearchField
