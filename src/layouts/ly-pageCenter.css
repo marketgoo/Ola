@@ -2,21 +2,21 @@
 
 .ola_ly-pageCenter {
     display: grid;
-    grid-template-columns: 1fr minmax(0, var(--size-12)) 1fr;
-    grid-column-gap: var(--column-gap);
+    grid-template-columns: var(--column-gap) 1fr minmax(0, var(--size-12)) 1fr var(--column-gap);
     grid-row-gap: var(--row-gap);
     min-height: 100%;
     box-sizing: border-box;
     align-content: center;
 
     & > * {
-        grid-column: 2 / span 1;
+        grid-column: 3 / span 1;
+        box-sizing: border-box;
     }
 
     & > *.is-fullwidth {
-        grid-column: 1 / -1;
+        grid-column: 2 / -2;
         max-width: max-content;
-        min-width: var(--size-12);
+        width: 100%;
         justify-self: center;
     }
 }
