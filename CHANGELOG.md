@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 - Default styles for task content [#54]
 - Improved CheckArea styles ##56
+- Fixed `.ola_ly-pageCenter` aligment in narrow screens.
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
