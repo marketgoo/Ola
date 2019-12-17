@@ -11,7 +11,11 @@ exports[`Check type checkbox 1`] = `
   <div
     className="ola_check-label"
   >
-    Accept terms
+    <div
+      className="ola_check-label-content"
+    >
+      Accept terms
+    </div>
   </div>
 </label>
 `;
@@ -27,7 +31,11 @@ exports[`Check type radio 1`] = `
   <div
     className="ola_check-label"
   >
-    Accept terms
+    <div
+      className="ola_check-label-content"
+    >
+      Accept terms
+    </div>
   </div>
 </label>
 `;
@@ -43,7 +51,11 @@ exports[`Default check is checkbox 1`] = `
   <div
     className="ola_check-label"
   >
-    Accept terms
+    <div
+      className="ola_check-label-content"
+    >
+      Accept terms
+    </div>
   </div>
 </label>
 `;

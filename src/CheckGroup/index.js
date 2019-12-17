@@ -1,40 +1,30 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import Check from '../Check'
+import cx from 'classnames'
 
-const CheckGroup = ({ options, value, type, name, onChange }) => {
+const CheckGroup = ({ variant, children, extraClass, ...props }) => {
   return (
-    <div role="radiogroup" className="ola_checkGroup" onChange={ e => onChange(e) }>
-      { options && options.map( (option, idx) => (
-        <Check key={idx} name={name} type={type} value={option.value} checked={value && value == option.value}>
-          { option.label ? option.label : option.value }
-        </Check>
-      ))}
+    <div role="radiogroup" className={cx('ola_checkGroup', variant && `is-${variant}`, extraClass)} { ...props }>
+      { children }
     </div>
   )
 }
 
 CheckGroup.defaultProps = {
-  type: 'radio',
-  value: null,
-  name: null,
-  onChange: () => {}
+  variant: 'row',
+  extraClass: null,
 }
 
 CheckGroup.propTypes = {
-  /** Check Type */
-  type: PT.oneOf(['checkbox', 'radio']),
-  /** Name for Check inputs */
-  name: PT.string,
-  /** Array of values */
-  options: PT.arrayOf(PT.shape({
-    label: PT.string.isRequired,
-    value: PT.any.isRequired
-  })).isRequired,
-  /** value selected */
-  value: PT.oneOfType([PT.string, PT.number]),
-  /** OnChange method */
-  onChange: PT.func
+  variant: PT.oneOf(['row', 'column', 'list']),
+  /** Extra className */
+  extraClass: PT.string,
+  /** Childen nodes */
+  children: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]).isRequired
 }
 
 export default CheckGroup
