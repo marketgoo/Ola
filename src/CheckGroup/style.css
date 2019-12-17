@@ -8,7 +8,6 @@
         flex-direction: column;
         padding: var(--size-2);
         margin-left: calc(var(--size-2) * -1);
-        margin-right: calc(var(--size-2) * -1);
 
         & > * + * {
             margin-top: var(--size-4);
@@ -25,7 +24,6 @@
         text-align: center;
         padding: var(--size-2);
         margin-left: calc(var(--size-2) * -1);
-        margin-right: calc(var(--size-2) * -1);
 
         & > * {
             max-width: 200px;
