@@ -1,6 +1,6 @@
 import React from 'react'
-import { Icon } from '../Icon'
-import { ButtonIcon } from './'
+import Icon from '../Icon'
+import ButtonIcon from './'
 import renderer from 'react-test-renderer'
 
 it('Close Button icon', () => {

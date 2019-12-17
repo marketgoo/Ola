@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion with extra class 1`] = `
+<details
+  className="ola_accordion foo"
+>
+  <summary
+    className="ola_accordion-header"
+  >
+    <span
+      className="ola_accordion-marker"
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </span>
+    <span
+      className="ola_accordion-title"
+    >
+      See more
+    </span>
+  </summary>
+  <div
+    className="ola_accordion-content"
+  >
+    Lorem ipsum dolor sit amet
+  </div>
+</details>
+`;
+
+exports[`Default accordion 1`] = `
+<details
+  className="ola_accordion"
+>
+  <summary
+    className="ola_accordion-header"
+  >
+    <span
+      className="ola_accordion-marker"
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </span>
+    <span
+      className="ola_accordion-title"
+    >
+      See more
+    </span>
+  </summary>
+  <div
+    className="ola_accordion-content"
+  >
+    Lorem ipsum dolor sit amet
+  </div>
+</details>
+`;
+
+exports[`Open accordion 1`] = `
+<details
+  className="ola_accordion"
+  open={true}
+>
+  <summary
+    className="ola_accordion-header"
+  >
+    <span
+      className="ola_accordion-marker"
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </span>
+    <span
+      className="ola_accordion-title"
+    >
+      See more
+    </span>
+  </summary>
+  <div
+    className="ola_accordion-content"
+  >
+    Lorem ipsum dolor sit amet
+  </div>
+</details>
+`;

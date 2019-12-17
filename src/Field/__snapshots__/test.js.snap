@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Field 1`] = `
+<div
+  className="ola_field"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Default FieldDescription 1`] = `
+<p
+  className="ola_field-description"
+>
+  Description
+</p>
+`;
+
+exports[`Field with custom description 1`] = `
+<div
+  className="ola_field"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  <span
+    error={false}
+  >
+    Custom description
+  </span>
+</div>
+`;
+
+exports[`Field with custom description with error 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input is-invalid"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  <span
+    error={true}
+  >
+    Custom description
+  </span>
+</div>
+`;
+
+exports[`Field with description 1`] = `
+<div
+  className="ola_field"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  <p
+    className="ola_field-description"
+  >
+    Test Description
+  </p>
+</div>
+`;
+
+exports[`Field with error 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input is-invalid"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`Field with hint 1`] = `
+<div
+  className="ola_field"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+    <span
+      className="ola_field-hint"
+    >
+      Test hint
+    </span>
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      type="text"
+    />
+  </div>
+  
+</div>
+`;
+
+exports[`FieldDescription with error 1`] = `
+<p
+  className="ola_field-error"
+>
+  Description
+</p>
+`;

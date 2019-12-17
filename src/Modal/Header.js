@@ -47,4 +47,4 @@ ModalHeader.propTypes = {
   ])
 }
 
-export { ModalHeader }
+export default ModalHeader

@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkgroup in columns 1`] = `
+<div
+  className="ola_checkGroup is-column"
+  role="radiogroup"
+>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Checkgroup in list 1`] = `
+<div
+  className="ola_checkGroup is-list"
+  role="radiogroup"
+>
+  <label
+    className="ola_check is-option"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-option"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-option"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Default checkGroup 1`] = `
+<div
+  className="ola_checkGroup is-row"
+  role="radiogroup"
+>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
+</div>
+`;

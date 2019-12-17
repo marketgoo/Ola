@@ -58,3 +58,15 @@
 .ola_table-container {
   overflow-x: auto;
 }
+
+.ola_tableRow {
+    &.is-selectable:hover,
+    &.is-checked {
+        background-color: var(--gray-xlight);
+        color: var(--black);
+    }
+
+    & .ola_tableRow-check {
+        padding-left: var(--size-4);
+    }
+}

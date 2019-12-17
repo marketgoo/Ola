@@ -32,4 +32,4 @@ Select.propTypes = {
   error: PT.bool
 }
 
-export { Select }
+export default Select

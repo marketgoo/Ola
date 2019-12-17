@@ -84,6 +84,33 @@ exports[`Numeric Cell 1`] = `
 </td>
 `;
 
+exports[`Table row 1`] = `
+<tr
+  className="ola_tableRow is-selectable"
+>
+  <td
+    className="ola_tableRow-check"
+  >
+    <label
+      className="ola_check"
+    >
+      <input
+        className="ola_check-input"
+        type="checkbox"
+      />
+      <div
+        className="ola_check-label"
+      />
+    </label>
+  </td>
+  <td
+    className=""
+  >
+    First column
+  </td>
+</tr>
+`;
+
 exports[`Table with extra class 1`] = `
 <div
   className="ola_table-container"

@@ -137,9 +137,68 @@
 }
 .ola_task-body {
     padding: var(--size-4) var(--inner) var(--size-8);
+    font: var(--font-callout);
+    color: var(--gray);
+
+    & p,
+    & li,
+    & ul {
+        margin: 0;
+        font: inherit;
+        color: inherit;
+    }
+
+    & li + li,
+    & p + p,
+    & p + ul {
+        margin-top: 0.8em;
+    }
+
+    & strong {
+        color: var(--black);
+    }
+
+    & ul {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    & li {
+        list-style: none;
+        position: relative;
+        padding-left: var(--size-7);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: .4em;
+            width: var(--size-3);
+            height: var(--size-3);
+            background: var(--gray-light);
+            border-radius: 50%;
+        }
+    }
 }
 .ola_task-footer {
     padding: 0 var(--inner) var(--size-8);
+}
+
+.ola_task-info {
+    padding: 0 var(--inner) var(--size-8);
+    font: var(--font-caption);
+    color: var(--gray);
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+        margin: 0;
+        margin-right: var(--size-7);
+    }
+
+    & strong {
+        color: var(--black);
+    }
 }
 
 

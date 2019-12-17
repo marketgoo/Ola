@@ -1,6 +1,6 @@
 import React from 'react'
-import {Task} from './'
-import {Button} from './../Button'
+import Task from './'
+import Button from './../Button'
 import renderer from 'react-test-renderer'
 
 it('Default Task', () => {

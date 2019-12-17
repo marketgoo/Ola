@@ -20,4 +20,10 @@
             color: var(--black);
         }
     }
+
+    & hr {
+        border: 0;
+        margin: var(--size-7) 0;
+        border-top: var(--separator);
+    }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@marketgoo/ola",
-  "version": "0.2.2",
+  "version": "0.3.0-beta.3",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
   "styles": "dist/index.css",
@@ -9,15 +9,16 @@
     "start": "concurrently npm:watch npm:guide",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
-    "test": "jest ./src",
+    "test": "npm run lint && jest ./src",
+    "test:update": "jest ./src -u",
     "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
     "guide": "start-storybook -p 6006 -s ./static",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist && postcss src/index.css -o dist/index.css",
     "build:storybook": "build-storybook",
-    "publish:storybook": "gh-pages -d storybook-static",
-    "prepack": "npm test && npm run lint && npm run build"
+    "publish:storybook": "npm run build:storybook && gh-pages -d storybook-static",
+    "prepack": "npm test && npm run build"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
   "keywords": [

@@ -34,4 +34,4 @@ Table.propTypes = {
   ]).isRequired
 }
 
-export { Table }
+export default Table

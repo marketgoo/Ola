@@ -1,6 +1,8 @@
 import React from 'react'
-import { Table } from './'
-import { TableCell } from './Cell'
+import Table from './'
+import TableCell from './Cell'
+import TableRow from './Row'
+import Check from '../Check'
 import renderer from 'react-test-renderer'
 
 
@@ -106,6 +108,18 @@ it('Align center Cell', () => {
   const tree = renderer
     .create(
       <TableCell align="center">Test content</TableCell>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
+it('Table row', () => {
+  const tree = renderer
+    .create(
+      <TableRow check={<Check></Check>}>
+        <TableCell>First column</TableCell>
+      </TableRow>
     )
     .toJSON()
 

@@ -47,4 +47,4 @@ PanelHeader.propTypes = {
   ])
 }
 
-export { PanelHeader }
+export default PanelHeader

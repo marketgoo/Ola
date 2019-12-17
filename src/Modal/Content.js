@@ -20,4 +20,4 @@ ModalContent.propTypes = {
   ]).isRequired
 }
 
-export { ModalContent }
+export default ModalContent

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from './'
+import Button from './'
 import renderer from 'react-test-renderer'
 
 it('No variant button', () => {

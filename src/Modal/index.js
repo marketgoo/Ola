@@ -1,7 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import { Icon } from '../Icon'
+import Icon from '../Icon'
 
 const Modal = ({ extraClass, children, onClose, ...props }) => {
   return (
@@ -26,4 +26,4 @@ Modal.propTypes = {
   ]).isRequired
 }
 
-export { Modal }
+export default Modal

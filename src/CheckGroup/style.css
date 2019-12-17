@@ -1,25 +1,62 @@
 .ola_checkGroup {
-    display: block;
     box-sizing: border-box;
-    max-height: var(--size-11);
-    width: 100%;
-    border: solid 2px var(--gray-light);
-    background: var(--white);
-    border-radius: var(--radius-small);
-    padding: var(--size-3) 0;
-    overflow-y: auto;
-    position: relative;
+    min-height: var(--size-7);
     margin: var(--size-2) 0;
 
-    & .ola_check {
+    &.is-row {
+        display: flex;
+        flex-direction: column;
+        padding: var(--size-2);
+        margin-left: calc(var(--size-2) * -1);
+
+        & > * + * {
+            margin-top: var(--size-4);
+        }
+    }
+
+    &.is-column {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        overflow-x: auto;
+        position: relative;
+        -webkit-overflow-scrolling: touch;
+        text-align: center;
+        padding: var(--size-2);
+        margin-left: calc(var(--size-2) * -1);
+
+        & > * {
+            max-width: 200px;
+            flex: 0 0 100%;
+        }
+        & > .ola_check {
+            display: flex;
+        }
+        & > * + * {
+            margin-left: var(--size-4);
+        }
+        & > .ola_check.is-area .ola_check-label {
+            position: relative;
+            padding: var(--size-7) var(--size-7) var(--size-5);
+            flex: 1 1 auto;
+
+            &::before {
+                position: absolute;
+                top: var(--size-3);
+                left: var(--size-3);
+            }
+        }
+    }
+
+    &.is-list {
         display: block;
-        padding: 0;
-    }
-    & .ola_check-label {
-        padding: var(--size-4);
-        transition: background-color 200ms;
-    }
-    & .ola_check-input:checked ~ .ola_check-label {
-        background-color: var(--gray-xlight);
+        box-sizing: border-box;
+        max-height: var(--size-11);
+        width: 100%;
+        border: solid 2px var(--gray-light);
+        background: var(--white);
+        border-radius: var(--radius-small);
+        overflow-y: auto;
+        position: relative;
     }
 }

@@ -15,4 +15,4 @@ PanelFooter.propTypes = {
   ]).isRequired
 }
 
-export { PanelFooter }
+export default PanelFooter
