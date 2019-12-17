@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.3.0] - Unreleased
 ### Added
+- New component `Accordion`
 - Property `extraClass` to `Check`
 - Property `variant` to `Check`
 - Property `label` to `ProgressCircle`

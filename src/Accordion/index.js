@@ -24,7 +24,12 @@ Accordion.defaultProps = {
 }
 
 Accordion.propTypes = {
-  title: PT.string,
+  /** Title */
+  title: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]).isRequired,
   extraClass: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
