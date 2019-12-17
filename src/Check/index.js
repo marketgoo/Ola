@@ -7,7 +7,7 @@ const Check = ({ type, children, extraClass, variant, ...props }) => {
     <label className={cx('ola_check', variant && `is-${variant}`, extraClass)}>
       <input type={type} className="ola_check-input" {...props} />
       <div className="ola_check-label">
-        <div className="ola_check-label-content">{ children }</div>
+        { children && <div className="ola_check-label-content">{ children }</div> }
       </div>
     </label>
   )
@@ -31,7 +31,7 @@ Check.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ])
 }
 
 export default Check
