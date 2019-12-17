@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.3.0] - 2019-12-17
+## [0.3.0] - Unreleased
 ### Added
 - Property `extraClass` to `Check`
 - Property `variant` to `Check`
@@ -170,7 +170,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#54]: https://github.com/marketgoo/Ola/issues/54
 [#56]: https://github.com/marketgoo/Ola/issues/56
 
-[0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
+[0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...HEAD
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
