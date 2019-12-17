@@ -5,13 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.3.0] - 2019-12-17
 ### Added
 - Property `extraClass` to `Check`
 - Property `variant` to `Check`
+- Property `label` to `ProgressCircle`
 
 ### Changed
 - `CheckGroup` component is now a container with no logic. It accepts three variants: `row`, `column` and `list`.
+- The children property of `Check` component is not required.
 
 ### Removed
 - `CheckArea` component. Use `CheckGroup` with `column` or `row` variant.
@@ -168,7 +170,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#54]: https://github.com/marketgoo/Ola/issues/54
 [#56]: https://github.com/marketgoo/Ola/issues/56
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.2.2...HEAD
+[0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0

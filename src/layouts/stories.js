@@ -7,26 +7,8 @@ import Panel from '../Panel'
 import PanelContent from '../Panel/Content'
 import Field from '../Field'
 import Input from '../Input'
-import CheckArea from '../CheckArea'
-
-const random_option_values_with_description = [
-  {
-    label: '<strong>Test 1</strong>Lorem ipsum dolor sit amet.',
-    value: 'test1'
-  },
-  {
-    label: '<strong>Test 2</strong>Lorem ipsum dolor sit amet.',
-    value: 'test2'
-  },
-  {
-    label: '<strong>Test 3</strong>Lorem ipsum dolor sit amet.',
-    value: 'test3'
-  },
-  {
-    label: '<strong>Test 4</strong>Lorem ipsum dolor sit amet.',
-    value: 'test4'
-  }
-]
+import CheckGroup from '../CheckGroup'
+import Check from '../Check'
 
 create('Layout')
   .add('ola_ly-form', () => (
@@ -129,7 +111,23 @@ create('Layout')
       </div>
   
       <div className="is-fullwidth">
-        <CheckArea htmlOptions options={random_option_values_with_description} variant="column" />
+        <CheckGroup variant="column">
+          <Check variant="area">
+            <strong className="ola-callout">Test 1</strong>
+            <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+            <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          </Check>
+          <Check variant="area">
+            <strong className="ola-callout">Test 1</strong>
+            <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+            <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          </Check>
+          <Check variant="area">
+            <strong className="ola-callout">Test 1</strong>
+            <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+            <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          </Check>
+        </CheckGroup>
       </div>
   
       <footer>
