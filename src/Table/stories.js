@@ -13,24 +13,28 @@ const data = [
     title: 'Page title test',
     links: '999999',
     popularity: 'hight',
+    checked: false,
     action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 2',
     links: '78854',
     popularity: 'medium',
+    checked: true,
     action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 3',
     links: '2354689',
     popularity: 'hight',
+    checked: false,
     action: <Button>Edit</Button>
   },
   {
     title: 'Page title test 4',
     links: '7668132',
     popularity: 'low',
+    checked: true,
     action: <Button>Edit</Button>
   }
 ]
@@ -50,7 +54,7 @@ create('Table')
         </thead>
         <tbody>
           { data.map( (row, idx) => (
-            <TableRow key={idx} select={<Check type="radio" name="foo" />}>
+            <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
               <TableCell>{row.title}</TableCell>
               <TableCell numeric>{row.links}</TableCell>
               <TableCell align="center">{row.popularity}</TableCell>

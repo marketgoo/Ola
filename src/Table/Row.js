@@ -3,24 +3,27 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import TableCell from './Cell.js'
 
-const TableRow = ({ extraClass, select, children, ...props }) => {
+const TableRow = ({ extraClass, check, children, checked, ...props }) => {
   return (
-    <tr className={cx('ola_tableRow', {'is-selectable': select}, extraClass)} {...props}>
-      {select && (<TableCell>{select}</TableCell>)}
+    <tr className={cx('ola_tableRow', {'is-selectable': check, 'is-checked': checked}, extraClass)} {...props}>
+      {check && (<TableCell extraClass="ola_tableRow-check">{check}</TableCell>)}
       {children}
     </tr>
   )
 }
 
 TableRow.defaultProps = {
-
+  check: null,
+  checked: false
 }
 
 TableRow.propTypes = {
   /** Extra className */
   extraClass: PT.string,
   /** Selectable check */
-  select: PT.node,
+  check: PT.node,
+  /** Is checked */
+  checked: PT.bool,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

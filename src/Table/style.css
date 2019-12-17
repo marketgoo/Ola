@@ -61,8 +61,12 @@
 
 .ola_tableRow {
     &.is-selectable:hover,
-    &.is-selected {
+    &.is-checked {
         background-color: var(--gray-xlight);
         color: var(--black);
+    }
+
+    & .ola_tableRow-check {
+        padding-left: var(--size-4);
     }
 }
