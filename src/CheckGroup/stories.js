@@ -2,10 +2,10 @@ import React from 'react'
 
 import create from '../create'
 
-import Field from '../Field'
 import CheckGroup from './'
+import Check from '../Check'
 
-const random_option_values = [
+const options = [
   {
     label: 'Test 1',
     value: 'test1'
@@ -53,13 +53,54 @@ const random_option_values = [
 ]
 
 create('CheckGroup')
-  .add('Default', () => (
+  .add('Row (Check area)', () => (
     <figure>
-      <Field
-        id="field-cutsom-checkGroup"
-        label="Select the most accurate option:"
-        hint="(optional)">
-        <CheckGroup name="random" options={random_option_values} />
-      </Field>
+      <CheckGroup>
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+        </Check>
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+        </Check>
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+        </Check>
+      </CheckGroup>
     </figure>
   ))
+  .add('Columns (Check area)', () => (
+    <figure>
+      <CheckGroup variant="column">
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+        </Check>
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+        </Check>
+        <Check variant="area">
+          <strong className="ola-callout">Test 1</strong>
+          <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
+          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+        </Check>
+      </CheckGroup>
+    </figure>
+  ))
+  .add('List (Check option)', () => (
+    <figure>
+      <CheckGroup variant="list">
+        {options.map((option, key) => (
+          <Check key={key} value={option.value} variant="option">
+            {option.label}
+          </Check>
+        ))}
+      </CheckGroup>
+    </figure>
+  ))
+

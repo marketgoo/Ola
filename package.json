@@ -10,6 +10,7 @@
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "npm run lint && jest ./src",
+    "test:update": "jest ./src -u",
     "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",

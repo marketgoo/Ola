@@ -1,6 +1,48 @@
 .ola_check {
     padding: var(--size-3) 0;
     display: inline-block;
+
+    &.is-area {
+        display: block;
+        padding: 0;
+
+        & .ola_check-label {
+            background: var(--white);
+            border-radius: var(--radius-small);
+            border: solid 2px var(--gray-light);
+            padding: var(--size-4);
+            transition: background-color 200ms;
+        }
+
+        & .ola_check-label:hover {
+            border-color: var(--brand-dark);
+        }
+
+        & .ola_check-input:checked ~ .ola_check-label {
+            border-color: var(--brand);
+        }
+
+        & .ola_check-input:active ~ .ola_check-label {
+            border-color: var(--black);
+        }
+
+        & .ola_check-input:focus ~ .ola_check-label {
+            box-shadow: 0 0 0 4px var(--brand-focus);
+        }
+    }
+
+    &.is-option {
+        display: block;
+        padding: 0;
+
+        & .ola_check-label {
+            padding: var(--size-4);
+            transition: background-color 200ms;
+        }
+        & .ola_check-input:checked ~ .ola_check-label {
+            background-color: var(--gray-xlight);
+        }
+    }
 }
 .ola_check-input {
     position: absolute;
@@ -10,6 +52,15 @@
     font: var(--font-callout);
     display: flex;
     align-items: center;
+
+    & img {
+        max-width: 100%;
+        display: block;
+        filter: grayscale(1);
+        opacity: .7;
+        transition-property: filter, opacity;
+        transition-duration: var(--duration);
+    }
 }
 .ola_check-label::before {
     --color: var(--gray-light);
@@ -26,6 +77,10 @@
     color: var(--color);
     transition-property: color, background-color;
     transition-duration: var(--duration);
+}
+.ola_check-input:checked ~ .ola_check-label img {
+    filter: none;
+    opacity: 1;
 }
 .ola_check-input:checked ~ .ola_check-label::before {
     --color: var(--brand);

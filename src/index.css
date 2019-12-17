@@ -4,30 +4,29 @@
 
 /* Components */
 @import './Button/style.css';
-@import './ButtonIcon/style.css';
 @import './ButtonGroup/style.css';
-@import './Spinner/style.css';
-@import './Panel/style.css';
-@import './Tag/style.css';
-@import './Table/style.css';
-@import './Level/style.css';
-@import './Page/style.css';
-@import './Modal/style.css';
-@import './Task/style.css';
-@import './TaskGroup/style.css';
-@import './Icon/style.css';
-@import './ProgressCircle/style.css';
-@import './ProgressBar/style.css';
-@import './Metric/style.css';
-
-@import './Input/style.css';
-@import './Field/style.css';
+@import './ButtonIcon/style.css';
 @import './Check/style.css';
 @import './CheckGroup/style.css';
-@import './CheckArea/style.css';
-@import './Switch/style.css';
+@import './CheckList/style.css';
+@import './Field/style.css';
+@import './Icon/style.css';
+@import './Input/style.css';
+@import './Level/style.css';
+@import './Metric/style.css';
+@import './Modal/style.css';
+@import './Page/style.css';
+@import './Panel/style.css';
+@import './ProgressBar/style.css';
+@import './ProgressCircle/style.css';
 @import './SearchField/style.css';
 @import './Select/style.css';
+@import './Spinner/style.css';
+@import './Switch/style.css';
+@import './Table/style.css';
+@import './Tag/style.css';
+@import './Task/style.css';
+@import './TaskGroup/style.css';
 
 /* Layouts */
 @import './layouts/ly-imgContent.css';
