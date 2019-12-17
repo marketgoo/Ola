@@ -1,0 +1,67 @@
+.ola_accordion {
+    &[open] {
+        & .ola_accordion-marker {
+            transform: rotate(90deg);
+        }
+        & .ola_accordion-title {
+            color: var(--black);
+            text-decoration: none;
+        }
+    }
+}
+.ola_accordion-header {
+    display: inline-flex;
+    align-items: center;
+    cursor: default;
+    height: var(--size-8);
+    padding-right: var(--size-5);
+    outline: 0;
+    list-style: none;
+    border-radius: var(--radius);
+
+    &::-webkit-details-marker {
+        display: none;
+    }
+
+    &:focus {
+        box-shadow: 0 0 0 4px var(--brand-focus);
+    }
+
+    &:hover .ola_accordion-title {
+        color: var(--black);
+    }
+
+    /*
+    Wavy style is buggy in blink
+    */
+    @supports (text-underline-offset: 4px) {
+        &:hover .ola_accordion-title {
+            text-decoration-style: wavy;
+        }
+    }
+
+    & .ola_tag {
+        margin-left: var(--size-3);
+    }
+}
+.ola_accordion-title {
+    font: var(--font-callout);
+    font-weight: var(--bold);
+    color: var(--brand);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+}
+
+.ola_accordion-marker {
+    display: block;
+    flex: 0 0 auto;
+    margin-right: var(--size-3);
+    color: var(--gray-light);
+    border-radius: 50%;
+    transition: transform var(--duration);
+
+    & svg {
+        display: block;
+    }
+}

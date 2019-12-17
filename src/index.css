@@ -3,6 +3,7 @@
 @import './utils/utils.css';
 
 /* Components */
+@import './Accordion/style.css';
 @import './Button/style.css';
 @import './ButtonGroup/style.css';
 @import './ButtonIcon/style.css';
