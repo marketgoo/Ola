@@ -50,3 +50,10 @@ it('ProgressCircle with extraClass', () => {
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
+
+it('ProgressCircle with label and value', () => {
+  const tree = renderer
+    .create(<ProgressCircle label='Your score' value={75} />)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})

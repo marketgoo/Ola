@@ -5,6 +5,7 @@
     height: var(--size-10);
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -44,6 +45,15 @@
     & > span {
         font-size: var(--size-7);
     }
+}
+
+.ola_progressCircle-label {
+    font: var(--font-caption);
+    color: var(--gray);
+    position: relative;
+    transition: opacity 200ms;
+    z-index: 1;
+    display: block;
 }
 
 .ola_progressCircle-circle {

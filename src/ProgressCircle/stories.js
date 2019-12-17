@@ -6,6 +6,14 @@ import { number, radios, boolean } from '@storybook/addon-knobs'
 import ProgressCircle from './'
 
 create('ProgressCircle')
+  .add('Label + value', () => (
+    <figure>
+      <ProgressCircle
+        variant="warning"
+        value="75"
+        label="Your score" />
+    </figure>
+  ))
   .add('Viewer', () => (
     <figure>
       <ProgressCircle
