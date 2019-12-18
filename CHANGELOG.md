@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Improved CheckArea styles [#56]
 - Fixed `.ola_ly-pageCenter` aligment in narrow screens.
 - Fixed width, colors and cursor of `Select` in WordPress.
+- Fixed cursor label cursor in WordPress.
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
