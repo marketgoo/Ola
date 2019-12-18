@@ -20,6 +20,7 @@
     justify-content: space-between;
     font: var(--font-callout);
     font-weight: var(--bold);
+    cursor: default;
 }
 .ola_field-hint {
     font: var(--font-caption);
