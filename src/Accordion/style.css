@@ -68,3 +68,6 @@
         display: block;
     }
 }
+.ola_accordion-content {
+    margin-top: var(--size-4);
+}
