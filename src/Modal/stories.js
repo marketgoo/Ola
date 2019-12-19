@@ -1,6 +1,5 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Modal from './'
@@ -11,7 +10,7 @@ import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
 import ProgressBar from '../ProgressBar'
 
-create('Modal')
+storiesOf('Modal')
   .add('Default', () => (
     <div className="ola_modal-overlay">
       <Modal onClose={action('onClick event')}>

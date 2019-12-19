@@ -1,13 +1,12 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Field from './'
 import FieldDescription from './Description'
 import Input from '../Input'
 
-create('Field')
+storiesOf('Field')
   .add('Default', () => (
     <Field
       id="field-test"

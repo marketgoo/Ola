@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Metric from './'
 
-create('Metric')
+storiesOf('Metric')
   .add('Default', () => (
     <figure><Metric title="Test Metric" description="Test metric lorem ipsum" value="299" /></figure>
   ))

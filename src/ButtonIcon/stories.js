@@ -1,13 +1,12 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Tag from '../Tag'
 import Icon from '../Icon'
 import ButtonIcon from './'
 
-create('ButtonIcon')
+storiesOf('ButtonIcon')
   .add('Default', () => (
     <figure>
       <ButtonIcon onClick={action('onClick event')}><Icon name="close" /></ButtonIcon>

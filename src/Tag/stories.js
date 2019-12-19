@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Tag from './'
 
-create('Tag')
+storiesOf('Tag')
   .add('Default', () => (
     <figure><Tag>Default Tag</Tag></figure>
   ))

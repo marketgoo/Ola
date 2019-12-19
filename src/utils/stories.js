@@ -1,8 +1,7 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import create from '../create'
-
-create('Utils')
+storiesOf('Utils')
   .add('Font styles', () => (
     <figure className="ola-bg">
       <h1 className="ola-display ola-nomargin">Display</h1>

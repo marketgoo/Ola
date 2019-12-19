@@ -1,12 +1,11 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Page from './'
 import Icon from '../Icon'
 import Level from '../Level'
 
-create('Page')
+storiesOf('Page')
   .add('Default', () => (
     <figure><Page title="Pricing - marketgoo" url="/pricing/" /></figure>
   ))

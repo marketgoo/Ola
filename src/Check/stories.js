@@ -1,12 +1,11 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { text, boolean, radios } from '@storybook/addon-knobs'
 
 import Check from './'
 
-create('Check')
+storiesOf('Check')
   .add('Default', () => (
     <>
       <figure><Check>Check</Check></figure>

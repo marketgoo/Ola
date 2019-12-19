@@ -1,6 +1,5 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Task from './'
 import TaskBody from './Body'
@@ -14,7 +13,7 @@ import Tag from '../Tag'
 import Panel from '../Panel'
 import PanelContent from '../Panel/Content'
 
-create('Task')
+storiesOf('Task')
   .add('Error', () => (
     <Panel>
       <PanelContent title="What do you need to look at?" variant="fullwidth">

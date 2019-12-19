@@ -1,6 +1,5 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Table from './'
 import TableRow from './Row'
@@ -39,7 +38,7 @@ const data = [
   }
 ]
 
-create('Table')
+storiesOf('Table')
   .add('Selectable', () => (
     <figure>
       <Table caption="Superheros and sidekicks" stiky>

@@ -1,6 +1,5 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import CheckGroup from './'
 import Check from '../Check'
@@ -52,7 +51,7 @@ const options = [
   }
 ]
 
-create('CheckGroup')
+storiesOf('CheckGroup')
   .add('Row (Check area)', () => (
     <figure>
       <CheckGroup>

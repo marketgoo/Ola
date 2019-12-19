@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import ProgressBar from './'
 
-create('ProgressBar')
+storiesOf('ProgressBar')
   .add('Progress element', () => (
     <div>
       <figure><ProgressBar value="20" max="100" /></figure>

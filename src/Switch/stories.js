@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Switch from './'
 
-create('Switch')
+storiesOf('Switch')
   .add('Default', () => (
     <figure><Switch label="Switch" /></figure>
   ))

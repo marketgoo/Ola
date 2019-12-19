@@ -1,6 +1,5 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Panel from './'
 import PanelHeader from './Header'
@@ -11,7 +10,7 @@ import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
 
 
-create('Panel')
+storiesOf('Panel')
   .add('All elements', () => (
     <Panel>
       <PanelHeader title="Panel Header" intro="Lorem ipsum for testing intro">

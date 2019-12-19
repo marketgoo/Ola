@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import SearchField from './'
 
-create('SearchField')
+storiesOf('SearchField')
   .add('Busy', () => (
     <figure><SearchField id="search" busy placeholder="Filter elements" /></figure>
   ))

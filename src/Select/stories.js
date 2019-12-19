@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Select from './'
 
-create('Select')
+storiesOf('Select')
   .add('Default', () => (
     <figure>
       <Select options={[

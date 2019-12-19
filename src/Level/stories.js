@@ -1,11 +1,10 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { radios } from '@storybook/addon-knobs'
 
 import Level from './'
 
-create('Level')
+storiesOf('Level')
   .add('No value', () => (
     <figure><Level /></figure>
   ))

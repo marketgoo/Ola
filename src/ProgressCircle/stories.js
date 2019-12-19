@@ -1,11 +1,10 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { number, radios, boolean } from '@storybook/addon-knobs'
 
 import ProgressCircle from './'
 
-create('ProgressCircle')
+storiesOf('ProgressCircle')
   .add('Label + value', () => (
     <figure>
       <ProgressCircle

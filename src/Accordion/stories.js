@@ -1,10 +1,10 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import create from '../create'
 import Accordion from './'
 import Tag from '../Tag'
 
-create('Accordion')
+storiesOf('Accordion')
   .add('Default', () => (
     <figure>
       <Accordion title="See more">

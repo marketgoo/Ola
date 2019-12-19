@@ -1,6 +1,6 @@
 import React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import create from '../create'
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
 import Panel from '../Panel'
@@ -10,7 +10,7 @@ import Input from '../Input'
 import CheckGroup from '../CheckGroup'
 import Check from '../Check'
 
-create('Layout')
+storiesOf('Layout')
   .add('ola_ly-form', () => (
     <div className="ola_ly-form">
       <header className="ola_panel-header">

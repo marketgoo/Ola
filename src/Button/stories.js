@@ -1,12 +1,11 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { text, boolean, radios, select } from '@storybook/addon-knobs'
 
 import Button from './'
 
-create('Button')
+storiesOf('Button')
   .add('Viewer', () => (
     <Button
       onClick={action('onClick event')}

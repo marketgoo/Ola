@@ -1,11 +1,10 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 import { select } from '@storybook/addon-knobs'
 
 import Icon from './'
 
-create('Icon')
+storiesOf('Icon')
   .add('Sizes', () => (
     <figure>
       <Icon name="help" />

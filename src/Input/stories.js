@@ -1,10 +1,9 @@
 import React from 'react'
-
-import create from '../create'
+import { storiesOf } from '@storybook/react'
 
 import Input from './'
 
-create('Input')
+storiesOf('Input')
   .add('Empty', () => (
     <Input placeholder="Text placeholder" />
   ))
