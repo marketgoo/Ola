@@ -110,7 +110,7 @@
 }
 
 .ola_task-summary {
-    color: var(--brand);
+    color: var(--black);
     cursor: pointer;
     transition: background-color var(--duration);
     outline: 0;
