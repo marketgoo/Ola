@@ -9,8 +9,10 @@ const Accordion = ({ children, title, extraClass, ...props }) => {
   return (
     <details className={styles} {...props}>
       <summary className="ola_accordion-header">
-        <span className="ola_accordion-marker"><Icon name="chevronRight" /></span>
-        <span className="ola_accordion-title">{ title }</span>
+        <div className="ola_accordion-header-content">
+          <span className="ola_accordion-marker"><Icon name="chevronRight" /></span>
+          <span className="ola_accordion-title">{ title }</span>
+        </div>
       </summary>
       <div className="ola_accordion-content">
         { children }

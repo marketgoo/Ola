@@ -10,11 +10,8 @@
     }
 }
 .ola_accordion-header {
-    display: inline-flex;
-    align-items: center;
+    display: inline-block;
     cursor: default;
-    height: var(--size-8);
-    padding-right: var(--size-5);
     outline: 0;
     list-style: none;
     border-radius: var(--radius);
@@ -43,6 +40,12 @@
     & .ola_tag {
         margin-left: var(--size-3);
     }
+}
+.ola_accordion-header-content {
+    display: inline-flex;
+    align-items: center;
+    height: var(--size-8);
+    padding-right: var(--size-5);
 }
 .ola_accordion-title {
     font: var(--font-callout);
