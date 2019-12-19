@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 2019-12-19
 ### Added
 - New component `Accordion`
 - Property `extraClass` to `Check`
@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed width, colors and cursor of `Select` in WordPress.
 - Fixed cursor label cursor in WordPress.
 - Fixed color of the task titles (from --brand to --black)
+- Do not include `test.js` and `stories.js` files in dist
 
 ## [0.2.2] - 2019-11-27
 ### Fixed
@@ -174,7 +175,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#54]: https://github.com/marketgoo/Ola/issues/54
 [#56]: https://github.com/marketgoo/Ola/issues/56
 
-[0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...HEAD
+[0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
