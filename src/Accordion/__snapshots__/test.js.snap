@@ -7,26 +7,30 @@ exports[`Accordion with extra class 1`] = `
   <summary
     className="ola_accordion-header"
   >
-    <span
-      className="ola_accordion-marker"
+    <div
+      className="ola_accordion-header-content"
     >
-      <svg
-        className="ola_icon is-medium"
-        fillRule="evenodd"
-        height="28"
-        viewBox="0 0 28 28"
-        width="28"
+      <span
+        className="ola_accordion-marker"
       >
-        <path
-          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
-        />
-      </svg>
-    </span>
-    <span
-      className="ola_accordion-title"
-    >
-      See more
-    </span>
+        <svg
+          className="ola_icon is-medium"
+          fillRule="evenodd"
+          height="28"
+          viewBox="0 0 28 28"
+          width="28"
+        >
+          <path
+            d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+          />
+        </svg>
+      </span>
+      <span
+        className="ola_accordion-title"
+      >
+        See more
+      </span>
+    </div>
   </summary>
   <div
     className="ola_accordion-content"
@@ -43,26 +47,30 @@ exports[`Default accordion 1`] = `
   <summary
     className="ola_accordion-header"
   >
-    <span
-      className="ola_accordion-marker"
+    <div
+      className="ola_accordion-header-content"
     >
-      <svg
-        className="ola_icon is-medium"
-        fillRule="evenodd"
-        height="28"
-        viewBox="0 0 28 28"
-        width="28"
+      <span
+        className="ola_accordion-marker"
       >
-        <path
-          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
-        />
-      </svg>
-    </span>
-    <span
-      className="ola_accordion-title"
-    >
-      See more
-    </span>
+        <svg
+          className="ola_icon is-medium"
+          fillRule="evenodd"
+          height="28"
+          viewBox="0 0 28 28"
+          width="28"
+        >
+          <path
+            d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+          />
+        </svg>
+      </span>
+      <span
+        className="ola_accordion-title"
+      >
+        See more
+      </span>
+    </div>
   </summary>
   <div
     className="ola_accordion-content"
@@ -80,26 +88,30 @@ exports[`Open accordion 1`] = `
   <summary
     className="ola_accordion-header"
   >
-    <span
-      className="ola_accordion-marker"
+    <div
+      className="ola_accordion-header-content"
     >
-      <svg
-        className="ola_icon is-medium"
-        fillRule="evenodd"
-        height="28"
-        viewBox="0 0 28 28"
-        width="28"
+      <span
+        className="ola_accordion-marker"
       >
-        <path
-          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
-        />
-      </svg>
-    </span>
-    <span
-      className="ola_accordion-title"
-    >
-      See more
-    </span>
+        <svg
+          className="ola_icon is-medium"
+          fillRule="evenodd"
+          height="28"
+          viewBox="0 0 28 28"
+          width="28"
+        >
+          <path
+            d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+          />
+        </svg>
+      </span>
+      <span
+        className="ola_accordion-title"
+      >
+        See more
+      </span>
+    </div>
   </summary>
   <div
     className="ola_accordion-content"
