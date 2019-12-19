@@ -36,6 +36,7 @@
             margin-left: var(--size-4);
         }
         & > .ola_check.is-area .ola_check-label {
+            display: block;
             position: relative;
             padding-top: var(--size-7);
             flex: 1 1 auto;

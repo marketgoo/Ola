@@ -74,19 +74,19 @@ storiesOf('CheckGroup')
     <figure>
       <CheckGroup variant="column">
         <Check variant="area">
-          <strong className="ola-callout">Test 1</strong>
           <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
-          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          <strong className="ola-body">Test 1</strong>
+          <p className="ola-caption">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
         </Check>
         <Check variant="area">
-          <strong className="ola-callout">Test 1</strong>
           <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
-          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          <strong className="ola-body">Test 2 with a large title</strong>
+          <p className="ola-caption">Lorem ipsum dolor sit amet</p>
         </Check>
         <Check variant="area">
-          <strong className="ola-callout">Test 1</strong>
           <img src="https://www.marketgoo.com/wp-content/uploads/2018/07/Local-business-icon-1.svg" />
-          <p className="ola-callout">Lorem ipsum dolor sit amet</p>
+          <strong className="ola-body">Test 3</strong>
+          <p className="ola-caption">Lorem ipsum dolor sit amet</p>
         </Check>
       </CheckGroup>
     </figure>

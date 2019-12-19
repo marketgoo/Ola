@@ -6,7 +6,7 @@
   "styles": "dist/index.css",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently npm:watch npm:guide",
+    "start": "concurrently npm:watch:css npm:guide",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "npm run lint && jest ./src",
@@ -14,7 +14,7 @@
     "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --ignore 'src/**/stories.js','src/**/test.js' --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
-    "guide": "start-storybook -p 6006 -s ./static",
+    "guide": "start-storybook -p 6006",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist --ignore 'src/**/stories.js','src/**/test.js' && postcss src/index.css -o dist/index.css",
     "build:storybook": "build-storybook",
     "publish:storybook": "npm run build:storybook && gh-pages -d storybook-static",

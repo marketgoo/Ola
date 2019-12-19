@@ -7,7 +7,6 @@
         padding: 0;
 
         & .ola_check-label {
-            display: block;
             background: var(--white);
             border-radius: var(--radius-small);
             border: solid 2px var(--gray-light);
@@ -80,6 +79,7 @@
     color: var(--color);
     transition-property: color, background-color;
     transition-duration: var(--duration);
+    z-index: 2;
 }
 .ola_check-input:checked ~ .ola_check-label img {
     filter: none;
