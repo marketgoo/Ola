@@ -37,7 +37,7 @@
         }
         & > .ola_check.is-area .ola_check-label {
             position: relative;
-            padding: var(--size-7) var(--size-7) var(--size-5);
+            padding-top: var(--size-7);
             flex: 1 1 auto;
 
             &::before {
