@@ -6,7 +6,7 @@ import TableCell from './Cell.js'
 const TableRow = ({ extraClass, check, children, checked, ...props }) => {
   return (
     <tr className={cx('ola_tableRow', {'is-selectable': check, 'is-checked': checked}, extraClass)} {...props}>
-      {check && (<TableCell extraClass="ola_tableRow-check">{check}</TableCell>)}
+      {check && (<TableCell variant="check">{check}</TableCell>)}
       {children}
     </tr>
   )

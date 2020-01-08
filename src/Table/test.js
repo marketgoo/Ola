@@ -67,7 +67,7 @@ it('Default Cell', () => {
 it('Header Cell', () => {
   const tree = renderer
     .create(
-      <TableCell variant="header">Content</TableCell>
+      <TableCell header>Content</TableCell>
     )
     .toJSON()
 
@@ -97,7 +97,7 @@ it('ColSpan Cell', () => {
 it('Numeric Cell', () => {
   const tree = renderer
     .create(
-      <TableCell numeric>8</TableCell>
+      <TableCell variant="numeric">8</TableCell>
     )
     .toJSON()
 
@@ -107,7 +107,7 @@ it('Numeric Cell', () => {
 it('Align center Cell', () => {
   const tree = renderer
     .create(
-      <TableCell align="center">Test content</TableCell>
+      <TableCell variant="center">Test content</TableCell>
     )
     .toJSON()
 

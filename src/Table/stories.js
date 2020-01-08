@@ -13,7 +13,7 @@ const data = [
     links: '999999',
     popularity: 'hight',
     checked: false,
-    action: <Button>Edit</Button>
+    action: <Button>Change column</Button>
   },
   {
     title: 'Page title test 2',
@@ -27,7 +27,7 @@ const data = [
     links: '2354689',
     popularity: 'hight',
     checked: false,
-    action: <Button>Edit</Button>
+    action: <Button>Other action</Button>
   },
   {
     title: 'Page title test 4',
@@ -44,20 +44,18 @@ storiesOf('Table')
       <Table caption="Superheros and sidekicks" stiky>
         <thead>
           <tr>
-            <TableCell variant="header"></TableCell>
-            <TableCell variant="header">Page</TableCell>
-            <TableCell variant="header" align="right">Incoming links</TableCell>
-            <TableCell variant="header" align="center">Popularity</TableCell>
-            <TableCell variant="header" align="center">Actions</TableCell>
+            <TableCell header variant="check"></TableCell>
+            <TableCell header>Page</TableCell>
+            <TableCell header variant="numeric">Incoming links</TableCell>
+            <TableCell header variant="center">Popularity</TableCell>
           </tr>
         </thead>
         <tbody>
           { data.map( (row, idx) => (
             <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
               <TableCell>{row.title}</TableCell>
-              <TableCell numeric>{row.links}</TableCell>
-              <TableCell align="center">{row.popularity}</TableCell>
-              <TableCell align="center">{row.action}</TableCell>
+              <TableCell variant="numeric">{row.links}</TableCell>
+              <TableCell variant="center">{row.popularity}</TableCell>
             </TableRow>
           ) ) }
         </tbody>
@@ -65,24 +63,26 @@ storiesOf('Table')
     </figure>
   ))
   .add('Default', () => (
-    <Table caption="Superheros and sidekicks" stiky>
-      <thead>
-        <tr>
-          <TableCell variant="header">Your current page title</TableCell>
-          <TableCell variant="header" align="right">Incoming links</TableCell>
-          <TableCell variant="header" align="center">Popularity</TableCell>
-          <TableCell variant="header" align="center">Actions</TableCell>
-        </tr>
-      </thead>
-      <tbody>
-        { data.map( (row, idx) => (
-          <tr key={idx}>
-            <TableCell>{row.title}</TableCell>
-            <TableCell numeric>{row.links}</TableCell>
-            <TableCell align="center">{row.popularity}</TableCell>
-            <TableCell align="center">{row.action}</TableCell>
+    <figure>
+      <Table caption="Superheros and sidekicks" stiky>
+        <thead>
+          <tr>
+            <TableCell header>Your current page title</TableCell>
+            <TableCell header variant="right">Incoming links</TableCell>
+            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="action">Actions</TableCell>
           </tr>
-        ) ) }
-      </tbody>
-    </Table>
+        </thead>
+        <tbody>
+          { data.map( (row, idx) => (
+            <tr key={idx}>
+              <TableCell>{row.title}</TableCell>
+              <TableCell variant="numeric">{row.links}</TableCell>
+              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="action">{row.action}</TableCell>
+            </tr>
+          ) ) }
+        </tbody>
+      </Table>
+    </figure>
   ))
