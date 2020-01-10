@@ -17,7 +17,7 @@ exports[`Add caption 1`] = `
 
 exports[`Align center Cell 1`] = `
 <td
-  className="ola-center"
+  className="ola_tableCell is-center"
 >
   Test content
 </td>
@@ -37,14 +37,14 @@ exports[`Can be stiky 1`] = `
 
 exports[`ColSpan Cell 1`] = `
 <td
-  className=""
+  className="ola_tableCell is-left"
   colSpan={8}
 />
 `;
 
 exports[`Default Cell 1`] = `
 <td
-  className=""
+  className="ola_tableCell is-left"
 >
   Test content
 </td>
@@ -64,13 +64,13 @@ exports[`Default Table 1`] = `
 
 exports[`Empty Cell 1`] = `
 <td
-  className=""
+  className="ola_tableCell is-left"
 />
 `;
 
 exports[`Header Cell 1`] = `
 <th
-  className=""
+  className="ola_tableCell is-left"
 >
   Content
 </th>
@@ -78,7 +78,7 @@ exports[`Header Cell 1`] = `
 
 exports[`Numeric Cell 1`] = `
 <td
-  className="ola-numeric"
+  className="ola_tableCell is-numeric"
 >
   8
 </td>
@@ -89,7 +89,7 @@ exports[`Table row 1`] = `
   className="ola_tableRow is-selectable"
 >
   <td
-    className="ola_tableRow-check"
+    className="ola_tableCell is-check"
   >
     <label
       className="ola_check"
@@ -104,7 +104,7 @@ exports[`Table row 1`] = `
     </label>
   </td>
   <td
-    className=""
+    className="ola_tableCell is-left"
   >
     First column
   </td>

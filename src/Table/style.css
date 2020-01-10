@@ -26,10 +26,6 @@
         border-top: solid 1px var(--gray-xlight);
     }
 
-    & :matches(th, td) + :matches(th, td) {
-        padding-left: var(--size-8);
-    }
-
     & thead {
         & th {
             white-space: nowrap;
@@ -65,8 +61,39 @@
         background-color: var(--gray-xlight);
         color: var(--black);
     }
+}
 
-    & .ola_tableRow-check {
-        padding-left: var(--size-4);
+.ola_tableCell {
+    &.is-left {
+        text-align: left;
     }
+    &.is-right {
+        text-align: right;
+    }
+    &.is-center {
+        text-align: center;
+    }
+    &.is-numeric {
+        font-variant-numeric: tabular-nums;
+        text-align: right;
+    }
+    &.is-action {
+        text-align: right;
+        padding-right: 0;
+    }
+    &.is-check {
+        padding-left: var(--size-4);
+        width: var(--size-7);
+
+        & + .ola_tableCell {
+            padding-left: var(--size-4);
+        }
+    }
+
+    & + .ola_tableCell {
+        padding-left: var(--size-8);
+    }
+}
+th.ola_tableCell.is-action {
+    padding-right: var(--size-7);
 }
