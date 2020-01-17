@@ -180,9 +180,9 @@ This library was tested in the following browsers:
 - Mozilla Firefox (latests 2 versions)
 - Google Chrome (latests 2 versions)
 - Opera (latests 2 versions)
-- Microsoft Edge 18
-- Apple Safari 12
-- Apple Safari iOS 12
+- Microsoft Edge (from 79)
+- Apple Safari (from 12)
+- Apple Safari iOS (from 12)
 - Android Chrome (latests 2 versions)
 - Firefox for Android (latests 2 versions)
 
