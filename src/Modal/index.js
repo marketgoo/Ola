@@ -21,6 +21,7 @@ Modal.propTypes = {
   extraClass: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
+    PT.string,
     PT.arrayOf(PT.node),
     PT.node
   ]).isRequired

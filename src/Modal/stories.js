@@ -14,7 +14,10 @@ storiesOf('Modal')
   .add('Default', () => (
     <div className="ola_modal-overlay">
       <Modal onClose={action('onClick event')}>
-        <ModalHeader title="Modal Header" intro="Lorem ipsum for testing intro">
+        <ModalHeader
+          title="Modal Header"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}
+        >
           <ProgressBar value="20" max="100" />
         </ModalHeader>
         <ModalContent>

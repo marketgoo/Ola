@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Component `Switch` use `children` to define the label content, instead `label` and `htmlLabel` properties. [#28]
 - The signature of `TableCell` component has changed. See [#37] and [#65] for more info.
+- Removed the properties `htmlTitle` and `htmlIntro` in `ModalHeader`. Now `title` and `intro` accept not only strings but also nodes as values [#28]
 
 ### Fixed
 - Removed `display:flex` to Check areas.
