@@ -5,8 +5,14 @@ import Switch from './'
 
 storiesOf('Switch')
   .add('Default', () => (
-    <figure><Switch label="Switch" /></figure>
+    <figure>
+      <Switch>Switch</Switch>
+    </figure>
   ))
   .add('With link', () => (
-    <figure><Switch label="Switch&nbsp;<a href='#'>with link</a>" htmlLabel /></figure>
+    <figure>
+      <Switch>
+        Switch <a href='#'>with link</a>
+      </Switch>
+    </figure>
   ))

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Switch 1`] = `
+<label
+  className="ola_switch"
+>
+  <input
+    className="ola_switch-input"
+    label={null}
+    type="checkbox"
+  />
+  <div
+    className="ola_switch-label"
+  >
+    <div
+      className="ola_switch-label-content"
+    >
+      Label text
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Extra class Switch 1`] = `
+<label
+  className="ola_switch foo"
+>
+  <input
+    className="ola_switch-input"
+    label={null}
+    type="checkbox"
+  />
+  <div
+    className="ola_switch-label"
+  >
+    <div
+      className="ola_switch-label-content"
+    >
+      Label text
+    </div>
+  </div>
+</label>
+`;
