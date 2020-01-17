@@ -50,7 +50,7 @@ storiesOf('Task')
             </TaskFooter>
           </Task>
 
-          <Task htmlTitle title="Task html title <strong>demo 3</strong>" extra={<Button onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
+          <Task title={<>Task html title <strong>demo 3</strong></>} extra={<Button onClick={e => {e.preventDefault();alert('click')}}>Fix now</Button>}>
             <TaskBody>
               Test content for card resolve
             </TaskBody>

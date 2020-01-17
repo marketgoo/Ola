@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default ProgressBar 1`] = `
+<div
+  className="ola_progressBar is-description-top"
+>
+  <progress
+    as="progress"
+    value="100"
+  />
+</div>
+`;
+
+exports[`ProgressBar with description 1`] = `
+<div
+  className="ola_progressBar is-description-top"
+>
+  <p
+    className="ola_progressBar-description"
+  >
+    This is a 
+    <strong>
+      description
+    </strong>
+  </p>
+  <progress
+    as="progress"
+    value="100"
+  />
+</div>
+`;

@@ -13,7 +13,8 @@ const ModalHeader = ({ title, intro, children, extraClass, ...props }) => {
 }
 
 ModalHeader.defaultProps = {
-  intro: null
+  intro: null,
+  children: null
 }
 
 ModalHeader.propTypes = {
