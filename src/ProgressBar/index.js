@@ -3,17 +3,11 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
-const ProgressBarDescription = ({ description, htmlDescription=false }) => {
-  return htmlDescription ?
-    <p className="ola_progressBar-description" dangerouslySetInnerHTML={{__html: description}} /> :
-    <p className="ola_progressBar-description">{description}</p>
-}
-
-const ProgressBar = ({ extraClass, description, descriptionPosition, htmlDescription, ...props }) => {
+const ProgressBar = ({ extraClass, children, descriptionPosition, ...props }) => {
   const ElementType = getElementType(ProgressBar, {...props})
   return (
     <div className={cx('ola_progressBar', `is-description-${descriptionPosition}`, extraClass)}>
-      { description && <ProgressBarDescription description={description} htmlDescription={htmlDescription} /> }
+      { children && <p className="ola_progressBar-description">{children}</p> }
       <ElementType {...props} />
     </div>
   )
@@ -22,21 +16,22 @@ const ProgressBar = ({ extraClass, description, descriptionPosition, htmlDescrip
 ProgressBar.defaultProps = {
   as: 'progress',
   extraClass: null,
-  description: null,
-  descriptionPosition: 'top',
-  htmlDescription: false
+  children: null,
+  descriptionPosition: 'top'
 }
 
 ProgressBar.propTypes = {
   as: PT.oneOf(['progress', 'meter']),
   /** Extra className */
   extraClass: PT.string,
-  /** Description */
-  description: PT.string,
   /** Description Position */
   descriptionPosition: PT.oneOf(['top', 'right']),
-  /** Description support HTML tags */
-  htmlDescription: PT.bool
+  /** Childen nodes */
+  children: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ])
 }
 
 export default ProgressBar

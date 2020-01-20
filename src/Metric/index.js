@@ -10,10 +10,6 @@ const defaultIcons = {
   negative: 'error'
 }
 
-const MetricFooter = ({ footer, htmlFooter }) => {
-  return footer && ( htmlFooter ? <p className="ola_metric-footer" dangerouslySetInnerHTML={{__html: footer}} /> : <p className="ola_metric-footer">{footer}</p>)
-}
-
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
     <strong className="ola_metric-value">
@@ -25,7 +21,7 @@ const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   )
 }
 
-const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, footer, htmlFooter, ...props }) => {
+const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, footer, ...props }) => {
   return (
     <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', footer && 'is-centered', extraClass)} {...props}>
       <strong className="ola_metric-title">{title}</strong>
@@ -33,7 +29,7 @@ const Metric = ({ title, value, description, variant, valueIcon, busy, extraClas
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>
         {value}
       </MetricValue>
-      <MetricFooter footer={footer} htmlFooter={htmlFooter} />
+      { footer && <p className="ola_metric-footer">{footer}</p> }
     </div>
   )
 }
@@ -46,8 +42,7 @@ Metric.defaultProps = {
   variant: null,
   valueIcon: false,
   busy: false,
-  footer: null,
-  htmlFooter: false
+  footer: null
 }
 
 Metric.propTypes = {
@@ -66,9 +61,11 @@ Metric.propTypes = {
   /** Busy state */
   busy: PT.bool,
   /** Footer */
-  footer: PT.string,
-  /** Footer support HTML tags */
-  htmlFooter: PT.bool
+  footer: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ])
 }
 
 export default Metric

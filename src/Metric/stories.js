@@ -29,8 +29,7 @@ storiesOf('Metric')
     <figure>
       <Metric
         title="Do you have a blog?"
-        footer={'We found a Blog at <a href="#">http:blog.example.com</a>'}
-        htmlFooter
+        footer={<>We found a Blog at <a href="#">http:blog.example.com</a></>}
         value="Yes"
         variant="positive"/>
     </figure>

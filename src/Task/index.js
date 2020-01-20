@@ -12,21 +12,18 @@ const TaskIcon = ({ variant }) => {
   }
 }
 
-const TaskTitle = ({ title, htmlTitle, extra }) => 
+const TaskTitle = ({ title, extra }) => 
   <>
-    {htmlTitle ?
-      <span className="ola_task-title" dangerouslySetInnerHTML={{__html: title}} /> :
-      <span className="ola_task-title">{title}</span>
-    }
+    <span className="ola_task-title">{title}</span>
     {extra && <div className="ola_task-extra">{extra}</div>}
   </>
 
-const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
+const TaskSumary = ({ title, variant, extra }) => {
   return (
     <summary className="ola_task-summary">
       <div className={'ola_task-header'}>
         <TaskIcon variant={variant} />
-        <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
+        <TaskTitle title={title} extra={extra} />
         <span className="ola_task-icon ola_buttonIcon">
           <Icon name="close" extraClass="ola_task-icon-close" />
         </span>
@@ -35,12 +32,12 @@ const TaskSumary = ({ title, htmlTitle, variant, extra }) => {
   )
 }
 
-const Task = ({ title, htmlTitle, variant, children, extra, ...props }) => {
+const Task = ({ title, variant, children, extra, ...props }) => {
   const hasChildren = React.Children.count(children) > 0
   return hasChildren ?
     (
       <details className={cx('ola_task', variant && `is-${variant}`)} {...props}>
-        <TaskSumary title={title} htmlTitle={htmlTitle} variant={variant} extra={extra} />
+        <TaskSumary title={title} variant={variant} extra={extra} />
         <div className='ola_task-content'>
           { children }
         </div>
@@ -50,7 +47,7 @@ const Task = ({ title, htmlTitle, variant, children, extra, ...props }) => {
       <div className={cx('ola_task', variant && `is-${variant}`)}>
         <div className="ola_task-header">
           <TaskIcon variant={variant} />
-          <TaskTitle title={title} htmlTitle={htmlTitle} extra={extra} />
+          <TaskTitle title={title} extra={extra} />
         </div>
       </div>
     )
@@ -59,16 +56,17 @@ const Task = ({ title, htmlTitle, variant, children, extra, ...props }) => {
 
 Task.defaultProps = {
   variant: 'error',
-  htmlTitle: false
 }
 
 Task.propTypes = {
   /** Task variants */
   variant: PT.oneOf(['success', 'error', 'suggested', 'warning']),
   /** Title of header */
-  title: PT.string.isRequired,
-  /** Title support HTML tags */
-  htmlTitle: PT.bool,
+  title: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]).isRequired,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

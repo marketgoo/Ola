@@ -49,13 +49,12 @@ storiesOf('Panel')
   .add('Titles with HTML', () => (
     <Panel>
       <PanelHeader
-        title={'Title with <span>Span</span>'}
-        htmlTitle={true}
-        intro={'Lorem ipsum for testing intro with <span>span</span>'}
-        htmlIntro={true}>
+        title={<>Title with <strong>Strong</strong></>}
+        intro={<>Lorem ipsum for testing intro with <em>cursive</em></>}
+      >
         Optional extra content
       </PanelHeader>
-      <PanelContent htmlTitle={true} extraClass="extraclass" title="Conten Titles with <span>span</span>">
+      <PanelContent extraClass="extraclass" title={<>Conten Titles with <a href="#">a link</a></>}>
         <p>Panel content</p>
       </PanelContent>
       <PanelFooter>

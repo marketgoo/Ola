@@ -5,7 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.4.0] - Unreleased
+### Added
+- Property `extraClass` to `Switch`, `ModalHeader`, `PanelHeader`.
+
+### Changed
+- `Switch`: From now use `children` to define the label content, instead `label` and `htmlLabel` properties. [#28]
+- `ProgressBar`: From now use `children` to define the description, instead `description` and `htmlDescription` properties. [#28]
+- The signature of `TableCell` component has changed. See [#37] and [#65] for more info.
+- `ModalHeader`: Removed the properties `htmlTitle` and `htmlIntro`. From now, `title` and `intro` accept strings and nodes as values [#28]
+- `PanelHeader`: Removed the properties `htmlTitle` and `htmlIntro`. From now, `title` and `intro` accept strings and nodes as values [#28]
+- `PanelContent`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
+- `Metric`: Removed the property `htmlFooter`. From now `footer` accepts strings and nodes as values [#28]
+- `Task`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
+
 ### Fixed
 - Removed `display:flex` to Check areas.
 - Decrease padding in Check areas in columns.
@@ -165,12 +178,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#20]: https://github.com/marketgoo/Ola/issues/20
 [#21]: https://github.com/marketgoo/Ola/issues/21
 [#23]: https://github.com/marketgoo/Ola/issues/23
+[#28]: https://github.com/marketgoo/Ola/issues/28
 [#30]: https://github.com/marketgoo/Ola/issues/30
 [#32]: https://github.com/marketgoo/Ola/issues/32
 [#33]: https://github.com/marketgoo/Ola/issues/33
 [#34]: https://github.com/marketgoo/Ola/issues/34
 [#35]: https://github.com/marketgoo/Ola/issues/35
 [#36]: https://github.com/marketgoo/Ola/issues/36
+[#37]: https://github.com/marketgoo/Ola/issues/37
 [#39]: https://github.com/marketgoo/Ola/issues/39
 [#40]: https://github.com/marketgoo/Ola/issues/40
 [#41]: https://github.com/marketgoo/Ola/issues/41
@@ -179,8 +194,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#47]: https://github.com/marketgoo/Ola/issues/47
 [#54]: https://github.com/marketgoo/Ola/issues/54
 [#56]: https://github.com/marketgoo/Ola/issues/56
+[#65]: https://github.com/marketgoo/Ola/issues/65
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.3.0...HEAD
+[0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...HEAD
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
 [0.2.1]: https://github.com/marketgoo/Ola/compare/v0.2.0...v0.2.1

@@ -2,23 +2,11 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const PanelTitle = ({ title, htmlTitle=false }) => {
-  return htmlTitle ?
-    <h1 className="ola_panel-title" dangerouslySetInnerHTML={{__html: title}} /> :
-    <h1 className="ola_panel-title">{title}</h1>
-}
-
-const PanelIntro = ({ intro, htmlIntro=false }) => {
-  return htmlIntro ?
-    <p className="ola_panel-intro" dangerouslySetInnerHTML={{__html: intro}} /> :
-    <p className="ola_panel-intro">{intro}</p>
-}
-
-const PanelHeader = ({ title, htmlTitle, intro, htmlIntro, children }) => {
+const PanelHeader = ({ title, intro, extraClass, children, ...props }) => {
   return (
-    <header className={cx('ola_panel-header', children && 'has-extra')}>
-      <PanelTitle title={title} htmlTitle={htmlTitle} />
-      { intro && <PanelIntro intro={intro} htmlIntro={htmlIntro} /> }
+    <header className={cx('ola_panel-header', children && 'has-extra', extraClass)} {...props}>
+      <h1 className="ola_panel-title">{title}</h1>
+      { intro && <p className="ola_panel-intro">{intro}</p> }
       { children && <div className="ola_panel-extra">{ children }</div> }
     </header>
   )
@@ -26,22 +14,27 @@ const PanelHeader = ({ title, htmlTitle, intro, htmlIntro, children }) => {
 
 PanelHeader.defaultProps = {
   intro: null,
-  htmlTitle: false,
-  htmlIntro: false,
-  children: undefined
+  children: null
 }
 
 PanelHeader.propTypes = {
+  /** Extra className */
+  extraClass: PT.string,
   /** Title of header */
-  title: PT.string.isRequired,
-  /** Title support HTML tags */
-  htmlTitle: PT.bool,
-  /** Intro support HTML tags */
-  htmlIntro: PT.bool,
+  title: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]).isRequired,
   /** Intro text of header */
-  intro: PT.string,
+  intro: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]),
   /** Childen nodes */
   children: PT.oneOfType([
+    PT.string,
     PT.arrayOf(PT.node),
     PT.node
   ])

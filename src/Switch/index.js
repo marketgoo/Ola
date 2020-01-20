@@ -1,11 +1,14 @@
 import React from 'react'
+import cx from 'classnames'
 import {default as PT} from 'prop-types'
 
-const Switch = ({ label, htmlLabel, ...props }) => {
+const Switch = ({ children, extraClass, ...props }) => {
   return (
-    <label className="ola_switch">
+    <label className={cx('ola_switch', extraClass)}>
       <input type="checkbox" className="ola_switch-input" {...props} />
-      { label && ( htmlLabel ? <span className="ola_switch-label" dangerouslySetInnerHTML={{__html: label}} /> : <span className="ola_switch-label">{ label }</span>) }
+      <div className="ola_switch-label">
+        { children && <div className="ola_switch-label-content">{ children }</div> }
+      </div>
     </label>
   )
 }
@@ -15,12 +18,14 @@ Switch.defaultProps = {
 }
 
 Switch.propTypes = {
-  /** Label Switch */
-  label: PT.string,
-  /** Label support HTML tags */
-  htmlLabel: PT.bool,
-  /** Redux Forms input Switch */
-  input: PT.object
+  /** Extra className */
+  extraClass: PT.string,
+  /** Childen nodes */
+  children: PT.oneOfType([
+    PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ])
 }
 
 export default Switch
