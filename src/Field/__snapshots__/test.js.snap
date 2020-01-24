@@ -20,16 +20,7 @@ exports[`Default Field 1`] = `
       type="text"
     />
   </div>
-  
 </div>
-`;
-
-exports[`Default FieldDescription 1`] = `
-<p
-  className="ola_field-description"
->
-  Description
-</p>
 `;
 
 exports[`Field with custom description 1`] = `
@@ -52,11 +43,13 @@ exports[`Field with custom description 1`] = `
       type="text"
     />
   </div>
-  <span
-    error={false}
+  <p
+    className="ola_field-description"
   >
-    Custom description
-  </span>
+    <span>
+      Custom description
+    </span>
+  </p>
 </div>
 `;
 
@@ -80,11 +73,13 @@ exports[`Field with custom description with error 1`] = `
       type="text"
     />
   </div>
-  <span
-    error={true}
+  <p
+    className="ola_field-error"
   >
-    Custom description
-  </span>
+    <span>
+      Custom description
+    </span>
+  </p>
 </div>
 `;
 
@@ -136,7 +131,6 @@ exports[`Field with error 1`] = `
       type="text"
     />
   </div>
-  
 </div>
 `;
 
@@ -165,14 +159,5 @@ exports[`Field with hint 1`] = `
       type="text"
     />
   </div>
-  
 </div>
-`;
-
-exports[`FieldDescription with error 1`] = `
-<p
-  className="ola_field-error"
->
-  Description
-</p>
 `;

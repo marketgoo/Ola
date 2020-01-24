@@ -3,7 +3,6 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 
 import Field from './'
-import FieldDescription from './Description'
 import Input from '../Input'
 
 storiesOf('Field')
@@ -36,13 +35,13 @@ storiesOf('Field')
       <Input placeholder="Text placeholder" />
     </Field>
   ))
-  .add('Custom description', () => (
+  .add('Description and hint with html', () => (
     <figure>
       <Field
         id="field-cutsom-description"
         label="Test"
-        customDescription={<FieldDescription>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></FieldDescription>}
-        hint="(optional)">
+        description={<>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></>}
+        hint={<strong>(optional)</strong>}>
         <Input placeholder="Text placeholder" />
       </Field>
     </figure>
