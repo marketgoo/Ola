@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Removed `display:flex` to Check areas.
 - Decrease padding in Check areas in columns.
+- Check with variant "option" should be bold on checked [#68]
 
 ## [0.3.0] - 2019-12-19
 ### Added
@@ -195,6 +196,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#54]: https://github.com/marketgoo/Ola/issues/54
 [#56]: https://github.com/marketgoo/Ola/issues/56
 [#65]: https://github.com/marketgoo/Ola/issues/65
+[#68]: https://github.com/marketgoo/Ola/issues/68
 
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...HEAD
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
