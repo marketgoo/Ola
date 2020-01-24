@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `PanelContent`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
 - `Metric`: Removed the property `htmlFooter`. From now `footer` accepts strings and nodes as values [#28]
 - `Task`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
+- `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11]
 
 ### Fixed
 - Removed `display:flex` to Check areas.
@@ -170,6 +171,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#6]: https://github.com/marketgoo/Ola/issues/6
 [#7]: https://github.com/marketgoo/Ola/issues/7
 [#8]: https://github.com/marketgoo/Ola/issues/8
+[#11]: https://github.com/marketgoo/Ola/issues/11
 [#12]: https://github.com/marketgoo/Ola/issues/12
 [#13]: https://github.com/marketgoo/Ola/issues/13
 [#14]: https://github.com/marketgoo/Ola/issues/14
