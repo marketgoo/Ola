@@ -41,6 +41,7 @@
         }
         & .ola_check-input:checked ~ .ola_check-label {
             background-color: var(--gray-xlight);
+            font-weight: var(--bold);
         }
     }
 }
