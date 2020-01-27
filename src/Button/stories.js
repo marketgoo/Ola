@@ -26,3 +26,6 @@ storiesOf('Button')
   .add('Busy', () => (
     <Button busy='Busy ...'>Example text button</Button>
   ))
+  .add('Autofocus', () => (
+    <Button type="button" autoFocus>Click here</Button>
+  ))
