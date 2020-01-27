@@ -8,17 +8,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.4.0] - Unreleased
 ### Added
 - Property `extraClass` to `Switch`, `ModalHeader`, `PanelHeader`.
-- `Field` component allow html in `description` and `hint` properties. [#67]
+- `Field`: Added support for html in `description` and `hint` properties. [#67]
 
 ### Changed
-- `Switch`: From now use `children` to define the label content, instead `label` and `htmlLabel` properties [#28]
-- `ProgressBar`: From now use `children` to define the description, instead `description` and `htmlDescription` properties [#28]
+- `Switch`: Removed `label` and `htmlLabel` properties. Use `children` to define the label content [#28]
+- `ProgressBar`: Removed `description` and `htmlDescription` properties. Use `children` to define the description [#28]
 - The signature of `TableCell` component has changed. See [#37] and [#65] for more info.
-- `ModalHeader`: Removed the properties `htmlTitle` and `htmlIntro`. From now, `title` and `intro` accept strings and nodes as values [#28]
-- `PanelHeader`: Removed the properties `htmlTitle` and `htmlIntro`. From now, `title` and `intro` accept strings and nodes as values [#28]
-- `PanelContent`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
-- `Metric`: Removed the property `htmlFooter`. From now `footer` accepts strings and nodes as values [#28]
-- `Task`: Removed the property `htmlTitle`. From now `title` accepts strings and nodes as values [#28]
+- `ModalHeader`: Removed the properties `htmlTitle` and `htmlIntro`. The props `title` and `intro` accept strings and nodes as values [#28]
+- `PanelHeader`: Removed the properties `htmlTitle` and `htmlIntro`. The props `title` and `intro` accept strings and nodes as values [#28]
+- `PanelContent`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
+- `Metric`: Removed the property `htmlFooter`. The prop `footer` accepts strings and nodes as values [#28]
+- `Task`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
 - `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11]
 
 ### Removed
