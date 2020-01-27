@@ -27,5 +27,5 @@ storiesOf('Button')
     <Button busy='Busy ...'>Example text button</Button>
   ))
   .add('Autofocus', () => (
-    <Button type="button" autoFocus>Click here</Button>
+    <Button type="button" autoFocus onClick={action('onClick event')}>Click here</Button>
   ))
