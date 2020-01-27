@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Field = ({ id, label, hint, error, description, customDescription, disabled, children }) => {
+const Field = ({ id, label, hint, error, description, disabled, children }) => {
   return (
     <div className={cx('ola_field', {'is-invalid': error}, {'is-disabled': disabled})}>
       <label htmlFor={id} className="ola_field-label">
@@ -12,14 +12,7 @@ const Field = ({ id, label, hint, error, description, customDescription, disable
       <div className="ola_field-input">
         {React.cloneElement(children, { id: id, error, disabled })}
       </div>
-      {
-        customDescription ?
-          React.cloneElement(customDescription, { error }) :
-          description ?
-            ( <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p> ) :
-            ''
-      }
-
+      {description && <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p>}
     </div>
   )
 }
@@ -28,7 +21,6 @@ Field.defaultProps = {
   error: false,
   hint: null,
   description: null,
-  customDescription: null,
   disabled: false
 }
 
@@ -40,11 +32,17 @@ Field.propTypes = {
   /** Disabled input children */
   disabled: PT.bool,
   /** Hint */
-  hint: PT.string,
+  hint: PT.oneOfType([
+    PT.arrayOf(PT.node),
+    PT.node,
+    PT.string
+  ]),
   /** Description */
-  description: PT.string,
-  /** Custom Description. Should be a React element to replace default description. It will recibe the error props */
-  customDescription: PT.element,
+  description: PT.oneOfType([
+    PT.arrayOf(PT.node),
+    PT.node,
+    PT.string
+  ]),
   /** Error variant */
   error: PT.bool,
   /** Childen input node */
