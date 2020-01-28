@@ -136,7 +136,8 @@
             color: var(--black);
         }
 
-        &.is-disabled {
+        &.is-disabled,
+        &:disabled {
             color: var(--gray-light);
             text-decoration: none;
             background: none;
@@ -171,7 +172,8 @@
         }
     }
 
-    &.is-disabled {
+    &.is-disabled,
+    &:disabled {
       color: var(--gray-light);
       --background: var(--gray-xlight);
       --background-hover: var(--gray-xlight);
@@ -181,7 +183,6 @@
       pointer-events: none;
       box-shadow: none;
     }
-
 }
 
 .ola_button-text {

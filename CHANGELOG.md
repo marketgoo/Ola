@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Removed `display:flex` to Check areas.
 - Decrease padding in Check areas in columns.
 - Check with variant "option" should be bold on checked [#68]
+- Disabled buttons styles
 
 ## [0.3.0] - 2019-12-19
 ### Added
