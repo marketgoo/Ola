@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Tooltip 1`] = `
+<details
+  className="ola_tooltip"
+  onToggle={[Function]}
+>
+  <summary
+    className="ola_tooltip-trigger"
+  >
+    Trigger
+  </summary>
+  <div
+    className="ola_tooltip-content"
+  >
+    Content
+  </div>
+</details>
+`;
+
+exports[`Tooltip with nodes 1`] = `
+<details
+  className="ola_tooltip"
+  onToggle={[Function]}
+>
+  <summary
+    className="ola_tooltip-trigger"
+  >
+    <p>
+      Node trigger
+    </p>
+  </summary>
+  <div
+    className="ola_tooltip-content"
+  >
+    <p>
+      Node content
+    </p>
+  </div>
+</details>
+`;

@@ -1,7 +1,7 @@
 .ola_panel {
     background: var(--white);
     border-radius: var(--radius);
-    box-shadow: var(--shadow-1);
+    box-shadow: var(--shadow-1), var(--shadow-line);
     padding-top: 0.1px;
     padding-bottom: 0.1px;
 
