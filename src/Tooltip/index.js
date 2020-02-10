@@ -1,11 +1,17 @@
 import React, { useState, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import useOutsideEvent from '../hooks/useOutsideEvent'
 
 const Tooltip = ({ trigger, children }) => {
 
-  const tooltipRef = useRef(null)
   const [position, setPosition] = useState(null)
+  const tooltipRef = useRef(null)
+
+  useOutsideEvent(tooltipRef, ref => {
+    ref.current.open = false
+    setPosition(null)
+  })
 
   const toggle = () => {
 
