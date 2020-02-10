@@ -4,7 +4,7 @@
 }
 .ola_tooltip-trigger {
     list-style: none;
-
+    outline: 0;
     &::-webkit-details-marker {
         display: none;
     }

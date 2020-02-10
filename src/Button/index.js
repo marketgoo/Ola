@@ -32,6 +32,7 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
+  /** Render Button with any html tag */
   as: PT.string,
   /** Button variants */
   variant: PT.oneOf(['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link']),
