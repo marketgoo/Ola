@@ -10,8 +10,8 @@
     }
 }
 .ola_tooltip-content {
+    will-change: opacity, transform;
     --size: var(--size-5);
-
     position: absolute;
     filter: drop-shadow(var(--shadow-2)) drop-shadow(var(--shadow-line));
     background: var(--white);
