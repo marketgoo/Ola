@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Property `extraClass` to `Switch`, `ModalHeader`, `PanelHeader`.
 - `Field`: Added support for html in `description` and `hint` properties. [#67]
+- New component `Tooltip` [#72]
 
 ### Changed
 - `Switch`: Removed `label` and `htmlLabel` properties. Use `children` to define the label content [#28]
@@ -19,7 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `PanelContent`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
 - `Metric`: Removed the property `htmlFooter`. The prop `footer` accepts strings and nodes as values [#28]
 - `Task`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
-- `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11]
+- `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11], [#70]
 
 ### Removed
 - `FieldDescription` component. Now you can use html in the `description` property of `Field` [#67]
@@ -205,6 +206,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#65]: https://github.com/marketgoo/Ola/issues/65
 [#67]: https://github.com/marketgoo/Ola/issues/67
 [#68]: https://github.com/marketgoo/Ola/issues/68
+[#70]: https://github.com/marketgoo/Ola/issues/70
+[#72]: https://github.com/marketgoo/Ola/issues/72
 
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...HEAD
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
