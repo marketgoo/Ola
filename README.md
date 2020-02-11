@@ -187,8 +187,8 @@ This library was tested in the following browsers:
 - Android Chrome (latests 2 versions)
 - Firefox for Android (latests 2 versions)
 
-> Internet Explorer is not supported
-> Microsoft Edge <= 18 is not supported
+> * Internet Explorer is not supported
+> * Microsoft Edge <= 18 is not supported
 
 Tested with [Browserstack](https://www.browserstack.com)
 
