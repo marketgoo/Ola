@@ -192,3 +192,16 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
+
+.ola_button:not(button):not(a) {
+    cursor: default;
+}
+
+summary:focus .ola_button {
+  box-shadow: 0 0 0 4px var(--focus);
+}
+
+details[open] summary .ola_button {
+  color: var(--color-hover);
+  background-color: var(--background-hover);
+}

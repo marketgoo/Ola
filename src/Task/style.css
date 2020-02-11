@@ -43,7 +43,7 @@
 
         position: relative;
         z-index: 2;
-        box-shadow: var(--shadow-2);
+        box-shadow: var(--shadow-2), var(--shadow-line);
         margin-left: calc(var(--size-4) * -1);
         margin-right: calc(var(--size-4) * -1);
         border-radius: var(--radius);
@@ -72,7 +72,7 @@
             }
         }
 
- 
+
         & .ola_task-extra {
             display: none;
         }
