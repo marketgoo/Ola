@@ -164,6 +164,11 @@ const Example = () => (
 
 - [Storybook](https://marketgoo.github.io/Ola/?path=/story/taskgroup--success)
 
+### Tooltip
+
+- [Design specs](https://zeroheight.com/22mjgbuf6/p/88cf8e-tooltip)
+- [Storybook](https://marketgoo.github.io/Ola/?path=/story/tooltip--default)
+
 ## Other Utilities
 
 - CSS classes with design tokens: [Storybook](https://marketgoo.github.io/Ola/?path=/story/utils--font-styles)
@@ -171,22 +176,19 @@ const Example = () => (
 
 ## Browser support
 
-Microsoft Edge does not support the [summary] element, so the Task component is always opened.
-You can use polyfill like [https://github.com/javan/details-element-polyfill] to solve.
-The next version of Edge will come with fully support for summary, so this is a temporary solution.
-
 This library was tested in the following browsers:
 
 - Mozilla Firefox (latests 2 versions)
 - Google Chrome (latests 2 versions)
 - Opera (latests 2 versions)
-- Microsoft Edge (from 79)
+- Microsoft Edge (latest 2 versions)
 - Apple Safari (from 12)
 - Apple Safari iOS (from 12)
 - Android Chrome (latests 2 versions)
 - Firefox for Android (latests 2 versions)
 
 > Internet Explorer is not supported
+> Microsoft Edge <= 18 is not supported
 
 Tested with [Browserstack](https://www.browserstack.com)
 
