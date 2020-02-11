@@ -1,4 +1,5 @@
 .ola_buttonIcon {
+    display: inline-block;
     min-height: var(--size-6);
     min-width: var(--size-6);
     background: none;
@@ -33,4 +34,8 @@
     & .ola_icon.is-medium {
         padding: var(--size-3);
     }
+}
+details[open] summary .ola_buttonIcon {
+  color: var(--black);
+  background-color: var(--gray-xlight);
 }
