@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import Icon from '../Icon'
+import ButtonIcon from '../ButtonIcon'
 
 const Modal = ({ extraClass, children, open, onClose, ...props }) => {
     
@@ -16,9 +17,9 @@ const Modal = ({ extraClass, children, open, onClose, ...props }) => {
     return (
       <div className="ola_modal-overlay" onClick={onClose}>
         <dialog onClick={e => e.stopPropagation()} className={cx('ola_modal', extraClass)} open={open} {...props}>
-          <button className="ola_modal-close ola_buttonIcon" onClick={onClose}>
+          <ButtonIcon extraClass="ola_modal-close ola_buttonIcon" onClick={onClose}>
             <Icon name="close" />
-          </button>
+          </ButtonIcon>
           {children}
         </dialog>
       </div>
