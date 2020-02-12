@@ -63,6 +63,7 @@
     box-sizing: border-box;
     padding: var(--size-8);
     overflow: auto;
+    animation: overlay-show .5s;
     @media (--to-width-1) {
         padding: var(--size-4);
     }
@@ -78,5 +79,14 @@
     }
     to {
         transform: translateY(0);
+    }
+}
+
+@keyframes overlay-show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
