@@ -16,12 +16,12 @@ const Modal = ({ extraClass, children, open, onClose, ...props }) => {
   if (open){
     return (
       <div className="ola_modal-overlay" onClick={onClose}>
-        <dialog onClick={e => e.stopPropagation()} className={cx('ola_modal', extraClass)} open={open} {...props}>
+        <section onClick={e => e.stopPropagation()} className={cx('ola_modal', extraClass)} {...props}>
           <ButtonIcon extraClass="ola_modal-close ola_buttonIcon" onClick={onClose}>
             <Icon name="close" />
           </ButtonIcon>
           {children}
-        </dialog>
+        </section>
       </div>
     )
   }
