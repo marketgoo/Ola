@@ -63,6 +63,9 @@
     box-sizing: border-box;
     padding: var(--size-8);
     overflow: auto;
+    @media (--to-width-1) {
+        padding: var(--size-4);
+    }
 }
 
 @keyframes modal-show {
