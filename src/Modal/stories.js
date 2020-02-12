@@ -12,23 +12,20 @@ import ProgressBar from '../ProgressBar'
 
 storiesOf('Modal')
   .add('Default', () => (
-    <div className="ola_modal-overlay">
-      <Modal onClose={action('onClick event')}>
-        <ModalHeader
-          title="Modal Header"
-          intro={<><strong>Lorem ipsum</strong> for testing intro</>}
-        >
-          <ProgressBar value="20" max="100" />
-        </ModalHeader>
-        <ModalContent>
-          <p>Modal content</p>
-        </ModalContent>
-        <ModalFooter>
-          <ButtonGroup reversed>
-            <Button variant='primary'>Primary</Button>
-            <Button variant='secondary'>Default Button</Button>
-          </ButtonGroup>
-        </ModalFooter>
-      </Modal>
-    </div>
+    <Modal onClose={action('onClick event')} open>
+      <ModalHeader
+        title="Modal Header"
+        intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        <ProgressBar value="20" max="100" />
+      </ModalHeader>
+      <ModalContent>
+        <p>Modal content</p>
+      </ModalContent>
+      <ModalFooter>
+        <ButtonGroup variant='reversed'>
+          <Button variant='primary'>Primary</Button>
+          <Button variant='secondary'>Default Button</Button>
+        </ButtonGroup>
+      </ModalFooter>
+    </Modal>
   ))

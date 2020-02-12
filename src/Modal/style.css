@@ -3,6 +3,7 @@
     border-radius: var(--radius);
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
+    width: 100%;
     max-width: 850px;
     margin: 8vh auto;
     animation: modal-show .5s;
