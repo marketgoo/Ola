@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
-import cx from 'classnames'
 import dialogPolyfill from 'dialog-polyfill'
 import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
@@ -9,10 +8,12 @@ import ButtonIcon from '../ButtonIcon'
 const Modal = ({ open, onClose, onOpen, children, ...props }) => {
 
   const modal = useRef(null)
+  const mounted = useRef(null)
 
   const closeModal = () => {
-    modal.current.close()
-    onClose()
+    if (modal.current.open){
+      modal.current.close()
+    }
   }
 
   const openModal = () => {
@@ -25,21 +26,26 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
     const rect = modal.current.getBoundingClientRect()
     const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
       && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
-    if(!isInDialog) { closeModal() }
+    if(!isInDialog) { onClose() }
   }
 
+  useEffect(() => dialogPolyfill.registerDialog(modal.current), [])
+
   useEffect(() => {
-    if(modal.current) dialogPolyfill.registerDialog(modal.current)
-    if (open && modal.current && (modal.current.open === false) ) { openModal() }
-    if(!open && modal.current && (modal.current.open === true)) { closeModal() }
+    if (!mounted.current){
+      mounted.current = true
+    }else{
+      if (open){ openModal() } 
+      else{ closeModal() }
+    }
   })
 
   useEventListener(modal.current, 'close', onClose)
 
   return (
-    <dialog className={cx('ola_modal')} {...props} ref={modal} onClick={clickOutside}>
+    <dialog className='ola_modal' {...props} ref={modal} onClick={clickOutside}>
       {children}
-      <ButtonIcon type="button" onClick={closeModal} extraClass={'ola_modal-close'}>
+      <ButtonIcon type="button" onClick={onClose} extraClass={'ola_modal-close'}>
         <Icon name="close" />
       </ButtonIcon>
     </dialog>
