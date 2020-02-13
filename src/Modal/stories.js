@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
+import { action, actions } from '@storybook/addon-actions'
 
 import Modal from './'
 import ModalHeader from './Header'
@@ -16,6 +17,9 @@ storiesOf('Modal')
   .add('Default', () => {
 
     const [isOpen, setIsOpen] = useState(false)
+
+    const eventsFromObject = actions({ onClose: 'onClose event' })
+
     return (
       <>
         <Panel>
@@ -52,7 +56,12 @@ storiesOf('Modal')
             <h1>Panel content</h1>
           </PanelContent>
         </Panel>
-        <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+        <Modal
+          open={isOpen}
+          onOpen={ action('onOpen event') }
+          onClose={() => { setIsOpen(false) }}
+          { ...eventsFromObject }
+        >
           <ModalHeader
             title="Modal Header"
             intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
