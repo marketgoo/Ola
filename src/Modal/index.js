@@ -29,14 +29,14 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
   useEventListener(modal.current, 'close', closeModal)
 
   return (
-    <div onClick={closeModal}>
+    // <div onClick={closeModal}>
       <dialog className={cx('ola_modal')} {...props} ref={modal}>
         {children}
         <ButtonIcon type="button" onClick={closeModal} extraClass={'ola_modal-close'}>
           <Icon name="close" />
         </ButtonIcon>
       </dialog>
-    </div>
+    // </div>
   )
 
 }

@@ -4,20 +4,38 @@
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
     max-width: 850px;
-    width: 100%;
-    margin: 8vh auto;
+    max-height: 90vh;
+    width: calc(100% - 10vw);
+    margin: 5vh auto;
     animation: modal-show .5s;
     animation-fill-mode: both;
-    position: relative;
+    position: fixed;
     display: none;
+    flex-direction: column;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
 
     &[open] {
-      display: block;
+      display: flex;
     }
 
     & > .ola_modal-header {
-        padding: var(--inner-gap) var(--inner-gap) 0;
+        padding: var(--inner-gap);
     }
+}
+
+.ola_modal::backdrop {
+    background: #0006;
+}
+.ola_modal + .backdrop {
+    background: #0006;
+}
+.ola_modal + .backdrop,
+._dialog_overlay {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
 }
 
 .ola_modal-header {
@@ -25,9 +43,16 @@
   grid-template-areas: "title" "intro";
   grid-template-columns: 1fr auto;
   grid-column-gap: var(--size-6);
+  flex: 0 0 auto;
+
   &.has-extra {
-      grid-template-areas: "title title" "intro extra";
-  }
+        grid-template-areas: "title" "intro" "extra";
+
+        @media (--from-width-2) {
+            grid-template-areas: "title extra" "intro extra";
+            grid-template-columns: 1fr auto;
+        }
+    }
 }
 
 .ola_modal-extra {
@@ -47,32 +72,18 @@
 }
 .ola_modal-intro {
     grid-area: intro;
-    margin-top: var(--size-3);
+    margin: var(--size-3) 0 0;
     font: var(--font-callout);
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: var(--size-8);
+    padding: var(--inner-gap);
+    min-height: 0;
+    overflow-y: auto;
 }
 .ola_modal-footer {
-    padding: 0 var(--size-8) var(--size-7);
-}
-.ola_modal-overlay {
-    background: #0006;
-    position: fixed !important;
-    z-index: 10;
-    margin: 0 !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    box-sizing: border-box;
-    padding: var(--size-8);
-    overflow: auto;
-    animation: overlay-show .5s;
-    @media (--to-width-1) {
-        padding: var(--size-4);
-    }
+    padding: 0  var(--inner-gap) var(--inner-gap);
+    flex: 0 0 auto;
 }
 
 @keyframes modal-show {
@@ -86,31 +97,4 @@
     to {
         transform: translateY(0);
     }
-}
-
-@keyframes overlay-show {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-// polyfill
-
-dialog + .backdrop {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-}
-
-._dialog_overlay {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-}
-
-dialog.fixed {
-  position: fixed;
-  top: 50%;
-  transform: translate(0, -50%);
 }

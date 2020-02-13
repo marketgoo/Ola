@@ -21,35 +21,35 @@ storiesOf('Modal')
         <Panel>
           <PanelContent title="Test dialog">
             <Button onClick={() => setIsOpen(true)}>Open dialog</Button>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
-            <h1>Modal content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
           </PanelContent>
         </Panel>
         <Modal open={isOpen} onClose={() => setIsOpen(false)}>
@@ -59,7 +59,35 @@ storiesOf('Modal')
             <ProgressBar value="20" max="100" />
           </ModalHeader>
           <ModalContent>
-            <p>Modal content</p>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
+            <h1>Panel content</h1>
           </ModalContent>
           <ModalFooter>
             <ButtonGroup variant='reversed'>
