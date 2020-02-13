@@ -1,40 +1,59 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import dialogPolyfill from 'dialog-polyfill'
+import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
-const Modal = ({ extraClass, children, open, onClose, ...props }) => {
-    
-  useEffect(() => {
-    if (open){
-      document.body.addEventListener('keydown', e => e.keyCode === 27 && onClose())
-      return () => document.body.removeEventListener('keydown')
-    }
-  },[])
+const Modal = ({ open, onClose, onOpen, children, ...props }) => {
 
-  if (open){
-    return (
-      <div className="ola_modal-overlay" onClick={onClose}>
-        <section onClick={e => e.stopPropagation()} className={cx('ola_modal', extraClass)} {...props}>
-          <ButtonIcon extraClass="ola_modal-close ola_buttonIcon" onClick={onClose}>
-            <Icon name="close" />
-          </ButtonIcon>
-          {children}
-        </section>
-      </div>
-    )
+  const modal = useRef(null)
+
+  const closeModal = () => {
+    modal.current.close()
+    onClose()
   }
-  return null
+
+  const openModal = () => {
+    modal.current.showModal()
+    onOpen()
+  }
+
+  useEffect(() => {
+    if(modal.current) dialogPolyfill.registerDialog(modal.current)
+    if (open && modal.current && (modal.current.open === false) ) { openModal() }
+    if(!open && modal.current && (modal.current.open === true)) { closeModal() }
+  })
+
+  useEventListener(modal.current, 'close', closeModal)
+
+  return (
+    <div onClick={closeModal}>
+      <dialog className={cx('ola_modal')} {...props} ref={modal}>
+        {children}
+        <ButtonIcon type="button" onClick={closeModal} extraClass={'ola_modal-close'}>
+          <Icon name="close" />
+        </ButtonIcon>
+      </dialog>
+    </div>
+  )
+
+}
+
+Modal.defaultProps = {
+  open: false,
+  onOpen: () => {},
+  onClose: () => {}
 }
 
 Modal.propTypes = {
-  /** Open or close Modal */
+  /** open */
   open: PT.bool,
-  /** On Close function */
+  /** Close event */
   onClose: PT.func,
-  /** Extra className */
-  extraClass: PT.string,
+  /** Open event */
+  onOpen: PT.func,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

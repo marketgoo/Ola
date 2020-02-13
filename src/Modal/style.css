@@ -4,10 +4,17 @@
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
     max-width: 850px;
+    width: 100%;
     margin: 8vh auto;
     animation: modal-show .5s;
     animation-fill-mode: both;
     position: relative;
+    display: none;
+
+    &[open] {
+      display: block;
+    }
+
     & > .ola_modal-header {
         padding: var(--inner-gap) var(--inner-gap) 0;
     }
@@ -88,4 +95,22 @@
     to {
         opacity: 1;
     }
+}
+
+// polyfill
+
+dialog + .backdrop {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+._dialog_overlay {
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+dialog.fixed {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
 }
