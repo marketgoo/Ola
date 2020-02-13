@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { storiesOf } from '@storybook/react'
-import { action, actions } from '@storybook/addon-actions'
+import { action } from '@storybook/addon-actions'
 
 import Modal from './'
 import ModalHeader from './Header'
@@ -16,9 +16,7 @@ import ProgressBar from '../ProgressBar'
 storiesOf('Modal')
   .add('Default', () => {
 
-    const [isOpen, setIsOpen] = useState(false)
-
-    const eventsFromObject = actions({ onClose: 'onClose event' })
+    const [isOpen, setIsOpen] = useState()
 
     return (
       <>
@@ -59,8 +57,7 @@ storiesOf('Modal')
         <Modal
           open={isOpen}
           onOpen={ action('onOpen event') }
-          onClose={() => { setIsOpen(false) }}
-          { ...eventsFromObject }
+          onClose={ () => { setIsOpen(false) }}
         >
           <ModalHeader
             title="Modal Header"
