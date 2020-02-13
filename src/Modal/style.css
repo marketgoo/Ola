@@ -4,9 +4,9 @@
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
     max-width: 850px;
-    max-height: 90vh;
-    width: calc(100% - 10vw);
-    margin: 5vh auto;
+    max-height: calc(100vh - 5vw);
+    width: calc(100% - 5vw);
+    margin: 2.5vw auto 0;
     animation: modal-show .5s;
     animation-fill-mode: both;
     position: fixed;
@@ -21,8 +21,10 @@
       display: flex;
     }
 
-    & > .ola_modal-header {
-        padding: var(--inner-gap);
+    @media (--from-width-1) {
+        margin: 5vh auto 0;
+        width: calc(100% - 10vw);
+        max-height: calc(100vh - 10vh);
     }
 }
 
@@ -42,8 +44,10 @@
   display: grid;
   grid-template-areas: "title" "intro";
   grid-template-columns: 1fr auto;
-  grid-column-gap: var(--size-6);
+  grid-column-gap: var(--column-gap);
+  grid-row-gap: var(--size-3);
   flex: 0 0 auto;
+  padding: var(--inner-gap) var(--inner-gap) var(--size-3);
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
@@ -72,17 +76,24 @@
 }
 .ola_modal-intro {
     grid-area: intro;
-    margin: var(--size-3) 0 0;
+    margin: 0;
     font: var(--font-callout);
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: var(--inner-gap);
+    padding: var(--size-3) var(--inner-gap);
     min-height: 0;
     overflow-y: auto;
+
+    &:first-child {
+        padding-top: var(--inner-gap);
+    }
+    &:last-child {
+        padding-bottom: var(--inner-gap);
+    }
 }
 .ola_modal-footer {
-    padding: 0  var(--inner-gap) var(--inner-gap);
+    padding: var(--size-3)  var(--inner-gap) var(--inner-gap);
     flex: 0 0 auto;
 }
 
