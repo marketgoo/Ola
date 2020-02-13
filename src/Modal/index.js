@@ -34,7 +34,7 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
     if(!open && modal.current && (modal.current.open === true)) { closeModal() }
   })
 
-  useEventListener(modal.current, 'close', closeModal)
+  useEventListener(modal.current, 'close', onClose)
 
   return (
     <dialog className={cx('ola_modal')} {...props} ref={modal} onClick={clickOutside}>
