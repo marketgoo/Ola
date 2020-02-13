@@ -20,6 +20,14 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
     onOpen()
   }
 
+  // We can't use useOutsideEvent hook. Dialog height and width is 100%
+  const clickOutside = event => {
+    const rect = modal.current.getBoundingClientRect()
+    const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+      && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
+    if(!isInDialog) { closeModal() }
+  }
+
   useEffect(() => {
     if(modal.current) dialogPolyfill.registerDialog(modal.current)
     if (open && modal.current && (modal.current.open === false) ) { openModal() }
@@ -29,14 +37,12 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
   useEventListener(modal.current, 'close', closeModal)
 
   return (
-    // <div onClick={closeModal}>
-      <dialog className={cx('ola_modal')} {...props} ref={modal}>
-        {children}
-        <ButtonIcon type="button" onClick={closeModal} extraClass={'ola_modal-close'}>
-          <Icon name="close" />
-        </ButtonIcon>
-      </dialog>
-    // </div>
+    <dialog className={cx('ola_modal')} {...props} ref={modal} onClick={clickOutside}>
+      {children}
+      <ButtonIcon type="button" onClick={closeModal} extraClass={'ola_modal-close'}>
+        <Icon name="close" />
+      </ButtonIcon>
+    </dialog>
   )
 
 }
