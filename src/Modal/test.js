@@ -9,7 +9,7 @@ import renderer from 'react-test-renderer'
 it('Default Modal', () => {
   const tree = renderer
     .create(
-      <Modal onClose={() => alert('onClick event')}>
+      <Modal open onClose={() => alert('onClick event')}>
         <ModalHeader
           title="Modal Header"
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}
