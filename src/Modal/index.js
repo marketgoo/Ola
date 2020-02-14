@@ -18,11 +18,11 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
   }
 
   useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
-  useEventListener(modal.current, 'close', onClose)
+  useEventListener(modal.current, 'close', ()=> { if(open) { onClose() }})
 
   useEffect(() => {
     if(modal.current) {
-      if(open && (modal.current.open === false)) { modal.current.showModal(); onOpen() }
+      if(open && (modal.current.open === false)) { onOpen(); modal.current.showModal() }
       if(!open && (modal.current.open === true)) { modal.current.close() }
     }
   })

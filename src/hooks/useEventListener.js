@@ -8,7 +8,7 @@ const useEventListener = (ref, event, func) => {
       // Unbind the event listener on clean up
       ref && ref.removeEventListener(event, func)
     }
-  }, [])
+  })
 }
 
 export default useEventListener
