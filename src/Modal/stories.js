@@ -57,7 +57,10 @@ storiesOf('Modal')
         <Modal
           open={isOpen}
           onOpen={ action('onOpen event') }
-          onClose={ () => { setIsOpen(false) }}
+          onClose={() => {
+            setIsOpen(false)
+            action('onClose event')()
+          }}
         >
           <ModalHeader
             title="Modal Header"

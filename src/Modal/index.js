@@ -1,25 +1,12 @@
 import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
-import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
 const Modal = ({ open, onClose, onOpen, children, ...props }) => {
 
   const modal = useRef(null)
-  const mounted = useRef(null)
-
-  const closeModal = () => {
-    if (modal.current.open){
-      modal.current.close()
-    }
-  }
-
-  const openModal = () => {
-    modal.current.showModal()
-    onOpen()
-  }
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
   const clickOutside = event => {
@@ -30,17 +17,12 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
   }
 
   useEffect(() => dialogPolyfill.registerDialog(modal.current), [])
-
   useEffect(() => {
-    if (!mounted.current){
-      mounted.current = true
-    }else{
-      if (open){ openModal() } 
-      else{ closeModal() }
+    if(modal.current) {
+      if(open && (modal.current.open === false)) { modal.current.showModal(); onOpen() }
+      if(!open && (modal.current.open === true)) { modal.current.close() }
     }
   })
-
-  useEventListener(modal.current, 'close', onClose)
 
   return (
     <dialog className='ola_modal' {...props} ref={modal} onClick={clickOutside}>
