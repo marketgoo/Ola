@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
+import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
@@ -16,11 +17,8 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
     if(!isInDialog) { onClose() }
   }
 
-  useEffect(() => {
-    dialogPolyfill.registerDialog(modal.current)
-    modal.current.addEventListener('close', onClose)
-    return () => modal.current.removeEventListener('close')
-  }, [])
+  useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
+  useEventListener(modal.current, 'close', onClose)
 
   useEffect(() => {
     if(modal.current) {
@@ -31,10 +29,14 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
 
   return (
     <dialog className='ola_modal' {...props} ref={modal} onClick={clickOutside}>
-      {children}
-      <ButtonIcon type="button" onClick={onClose} extraClass={'ola_modal-close'}>
-        <Icon name="close" />
-      </ButtonIcon>
+      { open &&
+        <>
+          {children}
+          <ButtonIcon type="button" onClick={onClose} extraClass={'ola_modal-close'}>
+            <Icon name="close" />
+          </ButtonIcon>
+        </>
+      }
     </dialog>
   )
 
