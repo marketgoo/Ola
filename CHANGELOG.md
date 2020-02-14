@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `Metric`: Removed the property `htmlFooter`. The prop `footer` accepts strings and nodes as values [#28]
 - `Task`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
 - `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11], [#70]
+- `Modal` component was changed to use the native `<dialog>` element [#74], [#75]
 
 ### Removed
 - `FieldDescription` component. Now you can use html in the `description` property of `Field` [#67]
@@ -208,6 +209,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#68]: https://github.com/marketgoo/Ola/issues/68
 [#70]: https://github.com/marketgoo/Ola/issues/70
 [#72]: https://github.com/marketgoo/Ola/issues/72
+[#74]: https://github.com/marketgoo/Ola/issues/74
+[#75]: https://github.com/marketgoo/Ola/issues/75
 
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...HEAD
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
