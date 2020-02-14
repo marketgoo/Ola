@@ -7,8 +7,6 @@
     max-height: calc(100vh - 5vw);
     width: calc(100% - 5vw);
     margin: 2.5vw auto 0;
-    animation: modal-show .5s;
-    animation-fill-mode: both;
     position: fixed;
     display: none;
     flex-direction: column;
@@ -19,13 +17,21 @@
     padding: 0;
 
     &[open] {
-      display: flex;
+        display: flex;
+        animation: fadeIn var(--duration);
+        animation-fill-mode: both;
     }
 
     @media (--from-width-1) {
         margin: 5vh auto 0;
         width: calc(100% - 10vw);
         max-height: calc(100vh - 10vh);
+    }
+
+    &.is-center {
+        top: 50%;
+        margin-top: 0;
+        transform: translateY(-50%);
     }
 }
 
@@ -91,7 +97,7 @@
     &:first-child {
         padding-top: var(--inner-gap);
     }
-    &:last-child {
+    &:nth-last-child(2) {
         padding-bottom: var(--inner-gap);
     }
 }

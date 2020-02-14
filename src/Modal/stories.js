@@ -109,3 +109,13 @@ storiesOf('Modal')
     )
 
   })
+
+  .add('Center', () =>
+    <>
+      <Modal open extraClass="is-center">
+        <ModalContent>
+          Lorem ipsum
+        </ModalContent>
+      </Modal>
+    </>
+  )

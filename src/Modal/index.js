@@ -1,11 +1,12 @@
 import React, { useEffect, useRef } from 'react'
+import cx from 'classnames'
 import {default as PT} from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
 import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
-const Modal = ({ open, onClose, onOpen, children, ...props }) => {
+const Modal = ({ open, onClose, onOpen, extraClass, children, ...props }) => {
 
   const modal = useRef(null)
 
@@ -28,7 +29,7 @@ const Modal = ({ open, onClose, onOpen, children, ...props }) => {
   })
 
   return (
-    <dialog className='ola_modal' {...props} ref={modal} onClick={clickOutside}>
+    <dialog className={cx('ola_modal', extraClass)} {...props} ref={modal} onClick={clickOutside}>
       { open &&
         <>
           {children}
