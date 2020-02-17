@@ -50,6 +50,8 @@ Modal.defaultProps = {
 }
 
 Modal.propTypes = {
+  /** Extra className */
+  extraClass: PT.string,
   /** open */
   open: PT.bool,
   /** Close event */

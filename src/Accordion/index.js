@@ -32,6 +32,7 @@ Accordion.propTypes = {
     PT.arrayOf(PT.node),
     PT.node
   ]).isRequired,
+  /** Extra className */
   extraClass: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
