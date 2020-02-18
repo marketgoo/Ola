@@ -100,6 +100,10 @@
     &:nth-last-child(2) {
         padding-bottom: var(--inner-gap);
     }
+
+    &.is-fullwidth {
+        padding: 0 0 0 0;
+    }
 }
 .ola_modal-footer {
     padding: var(--size-3)  var(--inner-gap) var(--inner-gap);
