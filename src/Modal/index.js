@@ -15,16 +15,18 @@ const Modal = ({ open, onClose, onOpen, variant, extraClass, children, ...props 
     const rect = modal.current.getBoundingClientRect()
     const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
       && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
-    if(!isInDialog) { onClose() }
+    if(!isInDialog) {
+      modal.current.close()
+    }
   }
 
   useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
-  useEventListener(modal.current, 'close', ()=> { if(open) { onClose() }})
+  useEventListener(modal.current, 'close', onClose)
 
   useEffect(() => {
-    if(modal.current) {
-      if(open && (modal.current.open === false)) { onOpen(); modal.current.showModal() }
-      if(!open && (modal.current.open === true)) { modal.current.close() }
+    if(modal.current && open && !modal.current.open) {
+      onOpen()
+      modal.current.showModal()
     }
   })
 
@@ -33,7 +35,7 @@ const Modal = ({ open, onClose, onOpen, variant, extraClass, children, ...props 
       { open &&
         <>
           {children}
-          <ButtonIcon type="button" onClick={onClose} extraClass={'ola_modal-close'}>
+          <ButtonIcon type="button" onClick={() => modal.current.close()} extraClass={'ola_modal-close'}>
             <Icon name="close" />
           </ButtonIcon>
         </>
