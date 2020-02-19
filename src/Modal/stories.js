@@ -120,6 +120,22 @@ storiesOf('Modal')
     </>
   )
 
+  .add('Not closable', () =>
+    <>
+      <Modal open closable={false}>
+        <ModalHeader title="Modal center not closable" />
+        <ModalContent>
+          Lorem ipsum
+        </ModalContent>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
   .add('Full width', () =>
     <>
       <Modal open>

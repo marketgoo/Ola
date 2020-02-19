@@ -6,23 +6,25 @@ import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
-const Modal = ({ open, onClose, onOpen, variant, extraClass, children, ...props }) => {
+const Modal = ({ open, closable, onClose, onOpen, variant, extraClass, children, ...props }) => {
 
   const modal = useRef(null)
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
   const clickOutside = event => {
-    const rect = modal.current.getBoundingClientRect()
-    const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-      && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
-    if(!isInDialog) {
-      modal.current.close()
+    if(closable) {
+      const rect = modal.current.getBoundingClientRect()
+      const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
+      if(!isInDialog) {
+        modal.current.close()
+      }
     }
   }
 
+  useEventListener(modal, 'cancel', event => { if(!closable) event.preventDefault() })
+  useEventListener(modal, 'close', onClose)
   useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
-  useEventListener(modal.current, 'close', onClose)
-
   useEffect(() => {
     if(modal.current && open && !modal.current.open) {
       onOpen()
@@ -35,9 +37,11 @@ const Modal = ({ open, onClose, onOpen, variant, extraClass, children, ...props 
       { open &&
         <>
           {children}
+          { closable &&
           <ButtonIcon type="button" onClick={() => modal.current.close()} extraClass={'ola_modal-close'}>
             <Icon name="close" />
           </ButtonIcon>
+          }
         </>
       }
     </dialog>
@@ -49,7 +53,8 @@ Modal.defaultProps = {
   open: false,
   variant: null,
   onOpen: () => {},
-  onClose: () => {}
+  onClose: () => {},
+  closable: true
 }
 
 Modal.propTypes = {
@@ -57,6 +62,8 @@ Modal.propTypes = {
   extraClass: PT.string,
   /** open */
   open: PT.bool,
+  /** closable */
+  closable: PT.bool,
   /** Close event */
   onClose: PT.func,
   /** Open event */
