@@ -1,6 +1,15 @@
 .ola_tooltip {
+    --pointer: var(--size-5);
+    --width: var(--size-11);
+
     display: inline-block;
     position: relative;
+
+    &.is-wide {
+        @media (--from-width-1) {
+            --width: var(--size-12);
+        }
+    }
 }
 .ola_tooltip-trigger {
     list-style: none;
@@ -11,13 +20,13 @@
 }
 .ola_tooltip-content {
     will-change: opacity, transform;
-    --size: var(--size-5);
     position: absolute;
     filter: drop-shadow(var(--shadow-2)) drop-shadow(var(--shadow-line));
     background: var(--white);
     border-radius: var(--radius);
     padding: var(--size-6);
-    width: var(--size-11);
+    max-width: var(--width);
+    width: max-content;
     box-sizing: border-box;
     z-index: 5;
 
@@ -30,44 +39,44 @@
     &.is-bottomright,
     &.is-bottomcenter,
     &.is-bottomleft {
-        margin-top: var(--size-3);
+        margin-top: calc(var(--pointer) / 2);
 
         &::before {
-            border-bottom: solid var(--size) white;
-            border-right: solid var(--size) transparent;
-            border-left: solid var(--size) transparent;
-            top: calc(var(--size) * -1);
+            border-bottom: solid var(--pointer) white;
+            border-right: solid var(--pointer) transparent;
+            border-left: solid var(--pointer) transparent;
+            top: calc(var(--pointer) * -1);
         }
     }
     &.is-topright,
     &.is-topcenter,
     &.is-topleft {
         bottom: 100%;
-        margin-bottom: var(--size-3);
+        margin-bottom: calc(var(--pointer) / 2);
 
         &::before {
-            border-top: solid var(--size) white;
-            border-right: solid var(--size) transparent;
-            border-left: solid var(--size) transparent;
-            bottom: calc(var(--size) * -1);
+            border-top: solid var(--pointer) white;
+            border-right: solid var(--pointer) transparent;
+            border-left: solid var(--pointer) transparent;
+            bottom: calc(var(--pointer) * -1);
         }
     }
 
     &.is-topright,
     &.is-bottomright {
-        left: calc(50% - var(--size) * 2);
+        left: calc(50% - var(--pointer) * 2);
 
         &::before {
-            left: var(--size);
+            left: var(--pointer);
         }
     }
 
     &.is-topleft,
     &.is-bottomleft {
-        right: calc(50% - var(--size) * 2);
+        right: calc(50% - var(--pointer) * 2);
 
         &::before {
-            right: var(--size);
+            right: var(--pointer);
         }
     }
     &.is-topcenter,
@@ -75,7 +84,7 @@
         left: calc(50% - var(--size-11) / 2);
 
         &::before {
-            right: calc(50% - var(--size));
+            right: calc(50% - var(--pointer));
         }
     }
 }

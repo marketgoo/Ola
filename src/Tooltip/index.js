@@ -18,7 +18,7 @@ const getClassPosition = ref => {
   return `${heightPosition}${widthPosition}`
 }
 
-const Tooltip = ({ trigger, children }) => {
+const Tooltip = ({ variant, extraClass, trigger, children }) => {
 
   const [position, setPosition] = useState(null)
   const tooltipRef = useRef(null)
@@ -31,14 +31,21 @@ const Tooltip = ({ trigger, children }) => {
   const toggle = () => tooltipRef.current.open ? setPosition( getClassPosition(tooltipRef) ) : setPosition(null)
 
   return (
-    <details className={cx('ola_tooltip')} onToggle={toggle} ref={tooltipRef}>
+    <details className={cx('ola_tooltip', extraClass, {[`is-${variant}`]: variant})} onToggle={toggle} ref={tooltipRef}>
       <summary className="ola_tooltip-trigger">{trigger}</summary>
       <div className={cx('ola_tooltip-content', position && `is-${position}`)}>{children}</div>
     </details>
   )
 }
 
+Tooltip.defaultProps = {
+  variant: null,
+  extraClass: null
+}
+
 Tooltip.propTypes = {
+  /** Tooltip variants */
+  variant: PT.oneOf(['wide']),
   /** Trigger nodes */
   trigger: PT.oneOfType([
     PT.string,
@@ -50,7 +57,9 @@ Tooltip.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ]).isRequired,
+  /** Extra className */
+  extraClass: PT.string
 }
 
 export default Tooltip
