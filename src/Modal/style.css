@@ -56,7 +56,7 @@
   grid-column-gap: var(--column-gap);
   grid-row-gap: var(--size-3);
   flex: 0 0 auto;
-  padding: var(--inner-gap) var(--inner-gap) var(--size-3);
+  padding: var(--inner-gap);
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
@@ -90,7 +90,7 @@
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: var(--size-3) var(--inner-gap);
+    padding: 0 var(--inner-gap);
     min-height: 0;
     overflow-y: auto;
 
@@ -102,7 +102,7 @@
     }
 }
 .ola_modal-footer {
-    padding: var(--size-3)  var(--inner-gap) var(--inner-gap);
+    padding: var(--inner-gap);
     flex: 0 0 auto;
 }
 
