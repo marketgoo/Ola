@@ -79,8 +79,15 @@
         }
     }
 }
-.ola_tooltip[open] .ola_tooltip-content {
-    animation: tooltip-show 200ms;
+.ola_tooltip[open] {
+    & .ola_tooltip-trigger .ola_buttonIcon,
+    & .ola_tooltip-trigger .ola_button {
+        color: var(--color-hover);
+        background-color: var(--background-hover);
+    }
+    &.ola_tooltip-content {
+        animation: tooltip-show 200ms;
+    }
 }
 
 @keyframes tooltip-show {

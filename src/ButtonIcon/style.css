@@ -1,9 +1,17 @@
 .ola_buttonIcon {
+    --color: currentColor;
+    --background: transparent;
+    --color-hover: var(--black);
+    --background-hover: var(--gray-xlight);
+    --shadow-focus: var(--accent-focus);
+    --background-active: var(--gray-light);
+
     display: inline-block;
     min-height: var(--size-6);
     min-width: var(--size-6);
     background: none;
-    color: currentColor;
+    background-color: var(--background);
+    color: var(--color);
     border: none;
     cursor: pointer;
     padding: 0;
@@ -15,16 +23,16 @@
     }
 
     &:focus {
-        box-shadow: 0 0 0 4px var(--brand-focus);
+        box-shadow: 0 0 0 4px var(--shadow-focus);
     }
 
     &:hover {
-        color: var(--black);
-        background-color: var(--gray-xlight);
+        color: var(--color-hover);
+        background-color: var(--background-hover);
     }
 
     &:active {
-        background: var(--gray-light);
+        background: var(--background-active);
     }
 
     & > svg {
@@ -35,7 +43,4 @@
         padding: var(--size-3);
     }
 }
-details[open] summary .ola_buttonIcon {
-  color: var(--black);
-  background-color: var(--gray-xlight);
-}
+

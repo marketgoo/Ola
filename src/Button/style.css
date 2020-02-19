@@ -3,7 +3,7 @@
     --background: transparent;
     --color-hover: var(--accent-dark);
     --background-hover: var(--gray-xlight);
-    --focus: var(--accent-focus);
+    --shadow-focus: var(--accent-focus);
     --background-active: var(--accent-focus);
 
     display: inline-flex;
@@ -40,7 +40,7 @@
     }
 
     &:focus {
-        box-shadow: 0 0 0 4px var(--focus);
+        box-shadow: 0 0 0 4px var(--shadow-focus);
     }
 
     &:active {
@@ -52,7 +52,7 @@
         --background: var(--accent);
         --color-hover: var(--white);
         --background-hover: var(--accent-dark);
-        --focus: var(--accent-focus);
+        --shadow-focus: var(--accent-focus);
         --background-active: var(--black);
     }
 
@@ -69,13 +69,13 @@
         --background: var(--error);
         --color-hover: var(--white);
         --background-hover: var(--error-dark);
-        --focus: var(--error-focus);
+        --shadow-focus: var(--error-focus);
         --background-active: var(--black);
     }
 
     &.is-destructive {
         --color: var(--error);
-        --focus: var(--error-focus);
+        --shadow-focus: var(--error-focus);
         --color-hover: var(--error-dark);
         --background-active: var(--error-focus);
 
@@ -91,7 +91,7 @@
         --background: var(--pro);
         --color-hover: var(--white);
         --background-hover: var(--pro-dark);
-        --focus: var(--pro-focus);
+        --shadow-focus: var(--pro-focus);
         --background-active: var(--black);
     }
 
@@ -118,9 +118,9 @@
     }
 
     &.is-link {
-        --background-hover: transparent;
         --color: var(--brand);
-        --focus: var(--brand-focus);
+        --background-hover: transparent;
+        --shadow-focus: var(--brand-focus);
         --background-active: var(--brand-focus);
 
         cursor: pointer;
@@ -199,9 +199,4 @@
 
 summary:focus .ola_button {
   box-shadow: 0 0 0 4px var(--focus);
-}
-
-details[open] summary .ola_button {
-  color: var(--color-hover);
-  background-color: var(--background-hover);
 }
