@@ -31,6 +31,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Decrease padding in Check areas in columns.
 - Check with variant "option" should be bold on checked [#68]
 - Disabled buttons styles
+- Lot of css details like spacing in the modal, buttons status colors, etc.
 
 ## [0.3.0] - 2019-12-19
 ### Added
