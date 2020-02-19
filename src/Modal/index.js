@@ -12,7 +12,7 @@ const Modal = ({ open, closable, onClose, onOpen, variant, extraClass, children,
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
   const clickOutside = event => {
-    if(closable) {
+    if(closable && modal && modal.current === event.target) {
       const rect = modal.current.getBoundingClientRect()
       const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
         && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
