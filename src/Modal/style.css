@@ -90,7 +90,7 @@
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: 0 var(--inner-gap);
+    padding: var(--size-2) var(--inner-gap);
     min-height: 0;
     overflow-y: auto;
 
