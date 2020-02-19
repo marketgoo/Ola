@@ -112,9 +112,42 @@ storiesOf('Modal')
 
   .add('Center', () =>
     <>
-      <Modal open extraClass="is-center">
+      <Modal open variant="center">
         <ModalContent>
           Lorem ipsum
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Not closable', () =>
+    <>
+      <Modal open closable={false}>
+        <ModalHeader title="Modal center not closable" />
+        <ModalContent>
+          Lorem ipsum
+        </ModalContent>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Full width', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Modal Header"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+          <ProgressBar value="20" max="100" />
+        </ModalHeader>
+        <ModalContent variant="fullwidth">
+          <PanelContent title="Conten Title">
+            Panel content
+          </PanelContent>
         </ModalContent>
       </Modal>
     </>

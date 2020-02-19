@@ -6,36 +6,42 @@ import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
-const Modal = ({ open, onClose, onOpen, extraClass, children, ...props }) => {
+const Modal = ({ open, closable, onClose, onOpen, variant, extraClass, children, ...props }) => {
 
   const modal = useRef(null)
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
   const clickOutside = event => {
-    const rect = modal.current.getBoundingClientRect()
-    const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-      && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
-    if(!isInDialog) { onClose() }
+    if(closable && modal && modal.current === event.target) {
+      const rect = modal.current.getBoundingClientRect()
+      const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
+        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
+      if(!isInDialog) {
+        modal.current.close()
+      }
+    }
   }
 
+  useEventListener(modal, 'cancel', event => { if(!closable) event.preventDefault() })
+  useEventListener(modal, 'close', onClose)
   useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
-  useEventListener(modal.current, 'close', ()=> { if(open) { onClose() }})
-
   useEffect(() => {
-    if(modal.current) {
-      if(open && (modal.current.open === false)) { onOpen(); modal.current.showModal() }
-      if(!open && (modal.current.open === true)) { modal.current.close() }
+    if(modal.current && open && !modal.current.open) {
+      onOpen()
+      modal.current.showModal()
     }
   })
 
   return (
-    <dialog className={cx('ola_modal', extraClass)} {...props} ref={modal} onClick={clickOutside}>
+    <dialog className={cx('ola_modal', variant && `is-${variant}`, extraClass)} {...props} ref={modal} onClick={clickOutside}>
       { open &&
         <>
           {children}
-          <ButtonIcon type="button" onClick={onClose} extraClass={'ola_modal-close'}>
+          { closable &&
+          <ButtonIcon type="button" onClick={() => modal.current.close()} extraClass={'ola_modal-close'}>
             <Icon name="close" />
           </ButtonIcon>
+          }
         </>
       }
     </dialog>
@@ -45,8 +51,10 @@ const Modal = ({ open, onClose, onOpen, extraClass, children, ...props }) => {
 
 Modal.defaultProps = {
   open: false,
+  variant: null,
   onOpen: () => {},
-  onClose: () => {}
+  onClose: () => {},
+  closable: true
 }
 
 Modal.propTypes = {
@@ -54,10 +62,14 @@ Modal.propTypes = {
   extraClass: PT.string,
   /** open */
   open: PT.bool,
+  /** closable */
+  closable: PT.bool,
   /** Close event */
   onClose: PT.func,
   /** Open event */
   onOpen: PT.func,
+  /** Modal variants */
+  variant: PT.oneOf(['center']),
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,
