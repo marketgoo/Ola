@@ -26,8 +26,8 @@
         margin-left: calc(var(--size-2) * -1);
 
         & > * {
-            max-width: 200px;
-            flex: 0 0 100%;
+            width: 200px;
+            flex: 0 0 auto;
         }
         & > .ola_check {
             display: flex;
