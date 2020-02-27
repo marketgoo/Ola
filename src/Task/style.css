@@ -159,6 +159,12 @@
         color: inherit;
     }
 
+    & h3 {
+      font: var(--font-body);
+      color: var(--black);
+      margin: var(--size-7) 0 var(--size-3);
+    }
+
     & li + li,
     & p + p,
     & p + ul {
