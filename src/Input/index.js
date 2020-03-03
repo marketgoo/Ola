@@ -15,7 +15,7 @@ Input.defaultProps = {
 }
 
 Input.propTypes = {
-  /** Input valid types (texarea return texarea html tag) */
+  /** Input valid types (textarea returns textarea html tag) */
   type: PT.oneOf([
     'date',
     'datetime-local',

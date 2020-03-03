@@ -27,7 +27,8 @@
         opacity: 1;
     }
 
-    &:focus {
+    &:focus,
+    &:focus-within {
         --border: var(--brand);
         box-shadow: 0 0 0 4px var(--focus);
     }
