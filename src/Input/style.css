@@ -43,7 +43,8 @@
         --color: var(--error);
         box-shadow: none;
 
-        &:focus {
+        &:focus,
+        &:focus-within {
             box-shadow: 0 0 0 4px var(--error-focus);
         }
 

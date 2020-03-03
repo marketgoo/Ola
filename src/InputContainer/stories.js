@@ -11,12 +11,13 @@ storiesOf('InputContainer')
   .add('Icon as prefix', () => (
     <InputContainer prefix={<Icon name="error" />} error={true} placeholder="Text placeholder" />
   ))
-  .add('Empty disabled', () => (
-    <InputContainer placeholder="Text placeholder" disabled />
+  .add('Icon as suffix', () => (
+    <InputContainer suffix={<Icon name="error" />} error={true} placeholder="Text placeholder" />
   ))
-  .add('Filled', () => (
-    <InputContainer defaultValue="louis@gmail.com" />
+  .add('Long prefix', () => (
+    <InputContainer prefix="Lorem ipsum dolor sit amet, consectetur adipiscing elit." placeholder="Text placeholder" />
   ))
-  .add('Textarea', () => (
-    <InputContainer type="textarea" />
+  .add('Long suffix', () => (
+    <InputContainer suffix="Lorem ipsum dolor sit amet, consectetur adipiscing elit." placeholder="Text placeholder" />
   ))
+  

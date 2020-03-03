@@ -16,5 +16,23 @@
 }
 .ola_inputContainer-prefix,
 .ola_inputContainer-suffix {
-    color: var(--gray);
+    white-space: nowrap;
+    max-width: 50%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+
+    & .ola_icon {
+        display: block;
+    }
+}
+.ola_inputContainer-prefix {
+    & .ola_icon {
+        margin-right: var(--size-4);
+    }
+}
+.ola_inputContainer-suffix {
+    & .ola_icon {
+        margin-left: var(--size-4);
+    }
 }
