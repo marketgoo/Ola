@@ -81,7 +81,7 @@
     }
     &.is-topcenter,
     &.is-bottomcenter {
-        left: calc(50% - var(--size-11) / 2);
+        left: calc(50% - var(--width) / 2);
 
         &::before {
             right: calc(50% - var(--pointer));
