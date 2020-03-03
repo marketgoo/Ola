@@ -5,7 +5,9 @@ import Table from './'
 import TableRow from './Row'
 import TableCell from './Cell'
 import Button from '../Button'
+import ButtonIcon from '../ButtonIcon'
 import Check from '../Check'
+import Icon from '../Icon'
 
 const data = [
   {
@@ -34,7 +36,7 @@ const data = [
     links: '7668132',
     popularity: 'low',
     checked: true,
-    action: <Button>Edit</Button>
+    action: <ButtonIcon><Icon name="close"/></ButtonIcon>
   }
 ]
 
