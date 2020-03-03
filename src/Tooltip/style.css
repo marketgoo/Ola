@@ -25,8 +25,7 @@
     background: var(--white);
     border-radius: var(--radius);
     padding: var(--size-6);
-    max-width: var(--width);
-    width: max-content;
+    width: var(--width);
     box-sizing: border-box;
     z-index: 5;
 
