@@ -25,6 +25,7 @@ storiesOf('Icon')
         'close',
         'error',
         'home',
+        'null',
         'page',
         'search',
         'success',
