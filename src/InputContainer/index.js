@@ -4,12 +4,12 @@ import cx from 'classnames'
 
 const InputContainer = ({ extraClass, error, type, prefix, suffix, ...props }) => {
   return <label className={ cx('ola_input ola_inputContainer', {'is-invalid': error}, extraClass) }>
-        { prefix && <div className="ola_inputContainer-prefix">{ prefix }</div> }
-        { type === 'textarea' ?
-        ( <textarea type={type} {...props} /> ) :
-        ( <input type={type} {...props} /> ) }
-        { suffix && <div className="ola_inputContainer-suffix">{ suffix }</div> }
-    </label>
+    { prefix && <div className="ola_inputContainer-prefix">{ prefix }</div> }
+    { type === 'textarea' ?
+      ( <textarea type={type} {...props} /> ) :
+      ( <input type={type} {...props} /> ) }
+    { suffix && <div className="ola_inputContainer-suffix">{ suffix }</div> }
+  </label>
 }
 
 InputContainer.defaultProps = {
