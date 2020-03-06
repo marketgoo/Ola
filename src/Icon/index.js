@@ -12,6 +12,7 @@ import Close from './Close'
 import Error from './Error'
 import Help from './Help'
 import Home from './Home'
+import Null from './Null'
 import Page from './Page'
 import Search from './Search'
 import Success from './Success'
@@ -28,6 +29,7 @@ const ICONS = {
   'error': Error,
   'help': Help,
   'home': Home,
+  'null': Null,
   'page': Page,
   'search': Search,
   'success': Success,
@@ -63,6 +65,7 @@ Icon.propTypes = {
     'error',
     'help',
     'home',
+    'null',
     'page',
     'search',
     'success',
