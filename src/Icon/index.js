@@ -14,6 +14,7 @@ import Help from './Help'
 import Home from './Home'
 import Null from './Null'
 import Page from './Page'
+import Plus from './Plus'
 import Search from './Search'
 import Success from './Success'
 import User from './User'
@@ -31,6 +32,7 @@ const ICONS = {
   'home': Home,
   'null': Null,
   'page': Page,
+  'plus': Plus,
   'search': Search,
   'success': Success,
   'user': User,
@@ -67,6 +69,7 @@ Icon.propTypes = {
     'home',
     'null',
     'page',
+    'plus',
     'search',
     'success',
     'user',

@@ -5,11 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.5.0] - Unreleased
+### Added
+- New icon `Plus` [#90]
+
 ## [0.4.0] - 2020-03-06
 ### Added
 - Property `extraClass` to `Switch`, `ModalHeader`, `PanelHeader`.
 - `Field`: Added support for html in `description` and `hint` properties. [#67]
 - New component `Tooltip` [#72]
+- New icon `Null` [#83], [#86]
 
 ### Changed
 - `Switch`: Removed `label` and `htmlLabel` properties. Use `children` to define the label content [#28]
@@ -22,7 +27,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `Task`: Removed the property `htmlTitle`. The prop `title` accepts strings and nodes as values [#28]
 - `PanelContent`: Removed de wrapper `div`, the component returns a fragment and the `extraClass` is applied directly to `.ola_panel-content` [#11], [#70]
 - `Modal` component was changed to use the native `<dialog>` element [#74], [#75]
-- New icon `Null` [#83], [#86]
 
 ### Removed
 - `FieldDescription` component. Now you can use html in the `description` property of `Field` [#67]
@@ -215,7 +219,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#75]: https://github.com/marketgoo/Ola/issues/75
 [#83]: https://github.com/marketgoo/Ola/issues/83
 [#86]: https://github.com/marketgoo/Ola/issues/86
+[#90]: https://github.com/marketgoo/Ola/issues/90
 
+[0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
