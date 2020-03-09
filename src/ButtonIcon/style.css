@@ -1,5 +1,5 @@
 .ola_buttonIcon {
-    --color: currentColor;
+    --color: var(--gray);
     --background: transparent;
     --color-hover: var(--black);
     --background-hover: var(--gray-xlight);
@@ -42,6 +42,13 @@
 
     & .ola_icon.is-medium {
         padding: var(--size-3);
+    }
+
+    &.is-destructive {
+        --color: var(--error);
+        --shadow-focus: var(--error-focus);
+        --color-hover: var(--error-dark);
+        --background-active: var(--error-focus);
     }
 }
 
