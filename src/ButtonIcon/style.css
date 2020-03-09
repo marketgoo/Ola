@@ -40,6 +40,9 @@
         display: block;
     }
 
+    & .ola_icon.is-small {
+        padding: var(--size-2);
+    }
     & .ola_icon.is-medium {
         padding: var(--size-3);
     }
