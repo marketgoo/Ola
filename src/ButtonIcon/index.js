@@ -15,7 +15,8 @@ const ButtonIcon = ({ as, extraClass, children, variant, ...props }) => {
 }
 
 ButtonIcon.defaultProps = {
-  as: 'button'
+  as: 'button',
+  variant: null
 }
 
 ButtonIcon.propTypes = {
