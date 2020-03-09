@@ -14,3 +14,14 @@ it('Close Button icon', () => {
 
   expect(tree).toMatchSnapshot()
 })
+it('Destructive button icon', () => {
+  const tree = renderer
+    .create(
+      <ButtonIcon variant="destructive">
+        <Icon name="close" />
+      </ButtonIcon>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})

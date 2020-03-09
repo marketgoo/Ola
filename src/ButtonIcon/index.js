@@ -8,7 +8,7 @@ const ButtonIcon = ({ as, extraClass, children, variant, ...props }) => {
   delete props['as']
   const styles = cx(
     'ola_buttonIcon',
-    {[`is-${variant}`]: variant },
+    `is-${variant}`,
     extraClass
   )
   return (<ElementType {...props} className={styles}>{children}</ElementType>)
@@ -16,7 +16,7 @@ const ButtonIcon = ({ as, extraClass, children, variant, ...props }) => {
 
 ButtonIcon.defaultProps = {
   as: 'button',
-  variant: null
+  variant: 'normal'
 }
 
 ButtonIcon.propTypes = {

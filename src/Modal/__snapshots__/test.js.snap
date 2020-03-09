@@ -40,7 +40,7 @@ exports[`Default Modal 1`] = `
     This is the footer
   </div>
   <button
-    className="ola_buttonIcon ola_modal-close"
+    className="ola_buttonIcon is-normal ola_modal-close"
     onClick={[Function]}
     type="button"
   >
