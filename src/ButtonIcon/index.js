@@ -23,7 +23,7 @@ ButtonIcon.propTypes = {
   /** Render ButtonIcon with any html tag */
   as: PT.string,
   /** Button variants */
-  variant: PT.oneOf(['normal', 'destructive']),
+  variant: PT.oneOf(['normal', 'destructive', 'chevron']),
   /** Extra className */
   extraClass: PT.string,
   /** Childen nodes */

@@ -12,8 +12,8 @@ storiesOf('ButtonIcon')
     <figure>
       <ButtonIcon
         onClick={action('onClick event')}
-        variant={radios('Variant', ['normal', 'destructive'], 'normal')}>
-        <Icon name="close" />
+        variant={radios('Variant', ['normal', 'destructive', 'chevron'], 'normal')}>
+        <Icon name="user" />
       </ButtonIcon>
     </figure>
   ))
