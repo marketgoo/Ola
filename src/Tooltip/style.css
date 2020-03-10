@@ -4,6 +4,8 @@
 
     display: inline-block;
     position: relative;
+    white-space: initial;
+    text-align: left;
 
     &.is-wide {
         @media (--from-width-1) {
@@ -28,6 +30,8 @@
     width: var(--width);
     box-sizing: border-box;
     z-index: 5;
+    font: var(--font-caption);
+    color: var(--black);
 
     &::before {
         content: "";

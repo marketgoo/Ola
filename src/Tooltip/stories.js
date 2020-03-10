@@ -6,6 +6,8 @@ import Tooltip from './'
 import Button from '../Button'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
+import Table from '../Table'
+import TableCell from '../Table/Cell'
 
 storiesOf('Tooltip')
   .add('Default', () => (
@@ -32,5 +34,44 @@ storiesOf('Tooltip')
         Nam id blandit turpis. Cras eleifend accumsan nisi vitae luctus.
         Donec ultricies auctor sodales.
       </Tooltip>
+    </figure>
+  ))
+  .add('In a table', () => (
+    <figure>
+      <Table caption="Superheros and sidekicks" stiky>
+        <thead>
+          <tr>
+            <TableCell header>
+              Your current page title
+              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+            </TableCell>
+            <TableCell header variant="right">
+              Incoming links
+              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+            </TableCell>
+            <TableCell header variant="center">
+              Popularity
+              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+            </TableCell>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <TableCell>value</TableCell>
+            <TableCell variant="right">value</TableCell>
+            <TableCell variant="center">value</TableCell>
+          </tr>
+          <tr>
+            <TableCell>value</TableCell>
+            <TableCell variant="right">value</TableCell>
+            <TableCell variant="center">value</TableCell>
+          </tr>
+          <tr>
+            <TableCell>value</TableCell>
+            <TableCell variant="right">value</TableCell>
+            <TableCell variant="center">value</TableCell>
+          </tr>
+        </tbody>
+      </Table>
     </figure>
   ))
