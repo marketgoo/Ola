@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New icon `Plus` [#90]
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
+- `disabled` and `busy` states to `ButtonIcon` [#94]
 
 ### Fixed
 - Component `Tooltip` in a `Table` was not showing properly [#93]
@@ -227,6 +228,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#90]: https://github.com/marketgoo/Ola/issues/90
 [#92]: https://github.com/marketgoo/Ola/issues/92
 [#93]: https://github.com/marketgoo/Ola/issues/93
+[#94]: https://github.com/marketgoo/Ola/issues/94
 
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0

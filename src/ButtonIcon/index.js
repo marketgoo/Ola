@@ -3,20 +3,30 @@ import {default as PT} from 'prop-types'
 import { getElementType } from '../utils'
 import cx from 'classnames'
 
-const ButtonIcon = ({ as, extraClass, children, variant, ...props }) => {
+import Spinner from '../Spinner'
+
+const ButtonIcon = ({ as, extraClass, children, busy, disabled, variant, ...props }) => {
   const ElementType = getElementType(ButtonIcon, { as: as, ...props })
   delete props['as']
   const styles = cx(
     'ola_buttonIcon',
     `is-${variant}`,
+    {'is-busy': busy},
+    {'is-disabled': disabled && !busy},
     extraClass
   )
-  return (<ElementType {...props} className={styles}>{children}</ElementType>)
+  return (
+    <ElementType {...props} disabled={busy ? true : disabled} className={styles}>
+      {busy ? <Spinner /> : children}
+    </ElementType>
+  )
 }
 
 ButtonIcon.defaultProps = {
   as: 'button',
-  variant: 'primary'
+  variant: 'primary',
+  busy: false,
+  disabled: false
 }
 
 ButtonIcon.propTypes = {
@@ -31,7 +41,9 @@ ButtonIcon.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ]).isRequired,
+  busy: PT.bool,
+  disabled: PT.bool,
 }
 
 export default ButtonIcon
