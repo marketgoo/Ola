@@ -98,7 +98,6 @@
     &.is-busy {
         color: var(--white);
         background-color: var(--gray);
-        cursor: default;
         min-width: 0;
         cursor: wait;
         pointer-events: none;

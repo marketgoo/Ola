@@ -3,6 +3,7 @@
 exports[`Close Button icon 1`] = `
 <button
   className="ola_buttonIcon is-primary"
+  disabled={false}
 >
   <svg
     className="ola_icon is-medium"
@@ -21,6 +22,7 @@ exports[`Close Button icon 1`] = `
 exports[`Destructive button icon 1`] = `
 <button
   className="ola_buttonIcon is-destructive"
+  disabled={false}
 >
   <svg
     className="ola_icon is-medium"

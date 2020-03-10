@@ -41,6 +41,7 @@ exports[`Default Modal 1`] = `
   </div>
   <button
     className="ola_buttonIcon is-primary ola_modal-close"
+    disabled={false}
     onClick={[Function]}
     type="button"
   >
