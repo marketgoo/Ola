@@ -17,7 +17,7 @@ storiesOf('Accordion')
       <Accordion title={
         <>
             This is the title
-            <Tag>23</Tag>
+          <Tag>23</Tag>
         </>
       }>
         <p>Lorem ipsum dolor sit amet</p>
