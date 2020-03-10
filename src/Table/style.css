@@ -19,6 +19,10 @@
         color: var(--black);
         padding-left: var(--size-2);
         padding-right: var(--size-2);
+
+        & > * {
+            vertical-align: middle;
+        }
     }
 
     & td {

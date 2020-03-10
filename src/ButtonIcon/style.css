@@ -47,6 +47,10 @@
         padding: var(--size-3);
     }
 
+    &.is-secondary {
+        --color: var(--gray-light);
+    }
+
     &.is-destructive {
         --color: var(--error);
         --shadow-focus: var(--error-focus);

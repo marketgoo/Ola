@@ -39,7 +39,8 @@
         --background: var(--pro);
     }
 
-    & > * {
-        margin-left: .5em;
+    & > .ola_buttonIcon {
+        margin: calc(var(--size-2) * -1);
+        margin-left: var(--size-2);
     }
 }

@@ -42,16 +42,16 @@ storiesOf('Tooltip')
         <thead>
           <tr>
             <TableCell header>
-              Your current page title
-              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+              <span>Your current page title</span>
+              <Tooltip trigger={<ButtonIcon as="span" variant="secondary"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
             </TableCell>
             <TableCell header variant="right">
-              Incoming links
-              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+              <span>Incoming links</span>
+              <Tooltip trigger={<ButtonIcon as="span" variant="secondary"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
             </TableCell>
             <TableCell header variant="center">
-              Popularity
-              <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
+              <span>Popularity</span>
+              <Tooltip trigger={<ButtonIcon as="span" variant="secondary"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
             </TableCell>
           </tr>
         </thead>

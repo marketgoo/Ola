@@ -16,14 +16,14 @@ const ButtonIcon = ({ as, extraClass, children, variant, ...props }) => {
 
 ButtonIcon.defaultProps = {
   as: 'button',
-  variant: 'normal'
+  variant: 'primary'
 }
 
 ButtonIcon.propTypes = {
   /** Render ButtonIcon with any html tag */
   as: PT.string,
   /** Button variants */
-  variant: PT.oneOf(['normal', 'destructive', 'chevron']),
+  variant: PT.oneOf(['primary', 'secondary', 'destructive', 'chevron']),
   /** Extra className */
   extraClass: PT.string,
   /** Childen nodes */
