@@ -14,9 +14,19 @@ storiesOf('Select')
       ]} />
     </figure>
   ))
+  .add('Option with defaulValue', () => (
+    <figure>
+      <Select defaultValue='strawberry' options={[
+        { value: 'chocolate', label: 'Chocolate' },
+        { value: 'strawberry', label: 'Strawberry' },
+        { value: 'vanilla', label: 'Vanilla' },
+        { value: '', label: 'None' }
+      ]} />
+    </figure>
+  ))
   .add('Empty option', () => (
     <figure>
-      <Select emptyOption="Select yout flavor" options={[
+      <Select emptyOption="Select yout flavor" onChange={() => {}} options={[
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' },
@@ -26,7 +36,7 @@ storiesOf('Select')
   ))
   .add('Empty option with selected element', () => (
     <figure>
-      <Select emptyOption="Select yout flavor" value="vanilla" options={[
+      <Select emptyOption="Select yout flavor" value="vanilla" onChange={() => {}} options={[
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' },
