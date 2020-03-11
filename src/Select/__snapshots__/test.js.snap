@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Page 1`] = `
+<select
+  className="ola_select"
+>
+  <option
+    value="chocolate"
+  >
+    Chocolate
+  </option>
+  <option
+    value="strawberry"
+  >
+    Strawberry
+  </option>
+  <option
+    value="vanilla"
+  >
+    Vanilla
+  </option>
+  <option
+    value=""
+  >
+    None
+  </option>
+</select>
+`;
+
+exports[`Default defaultValue 1`] = `
+<select
+  className="ola_select"
+  defaultValue="strawberry"
+>
+  <option
+    value="chocolate"
+  >
+    Chocolate
+  </option>
+  <option
+    value="strawberry"
+  >
+    Strawberry
+  </option>
+  <option
+    value="vanilla"
+  >
+    Vanilla
+  </option>
+  <option
+    value=""
+  >
+    None
+  </option>
+</select>
+`;
+
+exports[`Default with value 1`] = `
+<select
+  className="ola_select"
+  value="vanilla"
+>
+  <option
+    value="chocolate"
+  >
+    Chocolate
+  </option>
+  <option
+    value="strawberry"
+  >
+    Strawberry
+  </option>
+  <option
+    value="vanilla"
+  >
+    Vanilla
+  </option>
+  <option
+    value=""
+  >
+    None
+  </option>
+</select>
+`;
