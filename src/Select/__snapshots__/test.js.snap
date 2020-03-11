@@ -3,7 +3,6 @@
 exports[`Default Page 1`] = `
 <select
   className="ola_select"
-  defaultValue=""
 >
   <option
     value="chocolate"
@@ -56,44 +55,10 @@ exports[`Default defaultValue 1`] = `
 </select>
 `;
 
-exports[`Default with empty option 1`] = `
-<select
-  className="ola_select"
-  defaultValue=""
->
-  <option
-    disabled={true}
-    value=""
-  >
-    Empty option
-  </option>
-  <option
-    value="chocolate"
-  >
-    Chocolate
-  </option>
-  <option
-    value="strawberry"
-  >
-    Strawberry
-  </option>
-  <option
-    value="vanilla"
-  >
-    Vanilla
-  </option>
-  <option
-    value=""
-  >
-    None
-  </option>
-</select>
-`;
-
 exports[`Default with value 1`] = `
 <select
   className="ola_select"
-  defaultValue="vanilla"
+  value="vanilla"
 >
   <option
     value="chocolate"

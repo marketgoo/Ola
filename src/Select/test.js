@@ -30,10 +30,3 @@ it('Default with value', () => {
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
-
-it('Default with empty option', () => {
-  const tree = renderer
-    .create(<Select options={testOptions} emptyOption="Empty option" />)
-    .toJSON()
-  expect(tree).toMatchSnapshot()
-})
