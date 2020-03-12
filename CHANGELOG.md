@@ -11,8 +11,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
 - `disabled` and `busy` states to `ButtonIcon` [#94]
 
+### Removed
+- `emptyOption` prop in `Select` component [#96] [#71]
+
 ### Fixed
 - Component `Tooltip` in a `Table` was not showing properly [#93]
+- Styles of `<ol>` elements in `Task` [#97]
 
 ## [0.4.0] - 2020-03-06
 ### Added
@@ -219,6 +223,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#67]: https://github.com/marketgoo/Ola/issues/67
 [#68]: https://github.com/marketgoo/Ola/issues/68
 [#70]: https://github.com/marketgoo/Ola/issues/70
+[#71]: https://github.com/marketgoo/Ola/issues/71
 [#72]: https://github.com/marketgoo/Ola/issues/72
 [#74]: https://github.com/marketgoo/Ola/issues/74
 [#75]: https://github.com/marketgoo/Ola/issues/75
@@ -229,6 +234,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#92]: https://github.com/marketgoo/Ola/issues/92
 [#93]: https://github.com/marketgoo/Ola/issues/93
 [#94]: https://github.com/marketgoo/Ola/issues/94
+[#96]: https://github.com/marketgoo/Ola/issues/96
+[#97]: https://github.com/marketgoo/Ola/issues/97
 
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0

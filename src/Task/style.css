@@ -153,7 +153,8 @@
 
     & p,
     & li,
-    & ul {
+    & ul,
+    & ol {
         margin: 0;
         font: inherit;
         color: inherit;
@@ -166,8 +167,7 @@
     }
 
     & li + li,
-    & p + p,
-    & p + ul {
+    & :matches(p, ul, ol) + :matches(p, ul, ol) {
         margin-top: 0.8em;
     }
 
@@ -175,25 +175,36 @@
         color: var(--black);
     }
 
+    & ol {
+        margin-left: 0;
+        padding-left: var(--size-7);
+
+        & li::marker {
+            font: var(--font-callout);
+            font-weight: var(--bold);
+            color: var(--gray-light);
+        }
+    }
+
     & ul {
         margin-left: 0;
         padding-left: 0;
-    }
 
-    & li {
-        list-style: none;
-        position: relative;
-        padding-left: var(--size-7);
+        & li {
+            list-style: none;
+            position: relative;
+            padding-left: var(--size-7);
 
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: .4em;
-            width: var(--size-3);
-            height: var(--size-3);
-            background: var(--gray-light);
-            border-radius: 50%;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: .4em;
+                width: var(--size-3);
+                height: var(--size-3);
+                background: var(--gray-light);
+                border-radius: 50%;
+            }
         }
     }
 
