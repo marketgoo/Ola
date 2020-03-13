@@ -88,3 +88,35 @@ storiesOf('Table')
       </Table>
     </figure>
   ))
+  .add('Responsive', () => (
+    <figure>
+      <Table caption="Superheros and sidekicks" responsive stiky>
+        <thead>
+          <tr>
+            <TableCell header>Your current page title</TableCell>
+            <TableCell header variant="right">Incoming links</TableCell>
+            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="action">Actions</TableCell>
+            <TableCell header>Your current page title</TableCell>
+            <TableCell header variant="right">Incoming links</TableCell>
+            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="action">Actions</TableCell>
+          </tr>
+        </thead>
+        <tbody>
+          { data.map( (row, idx) => (
+            <tr key={idx}>
+              <TableCell>{row.title}</TableCell>
+              <TableCell variant="numeric">{row.links}</TableCell>
+              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="action">{row.action}</TableCell>
+              <TableCell>{row.title}</TableCell>
+              <TableCell variant="numeric">{row.links}</TableCell>
+              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="action">{row.action}</TableCell>
+            </tr>
+          ) ) }
+        </tbody>
+      </Table>
+    </figure>
+  ))

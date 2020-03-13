@@ -54,6 +54,18 @@ it('Can be stiky', () => {
   expect(tree).toMatchSnapshot()
 })
 
+it('Can be responsive', () => {
+  const tree = renderer
+    .create(
+      <Table responsive>
+        <tbody></tbody>
+      </Table>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
 it('Default Cell', () => {
   const tree = renderer
     .create(

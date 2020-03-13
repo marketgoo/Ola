@@ -5,13 +5,11 @@
     width: 100%;
     border-collapse: collapse;
     position: relative;
-    overflow-x: auto;
 
     & td,
     & th {
         border: none;
         height: var(--size-8);
-        white-space: nowrap;
     }
 
     & th {
@@ -32,7 +30,6 @@
 
     & thead {
         & th {
-            white-space: nowrap;
             border-bottom: solid 1px var(--gray-light);
         }
     }
@@ -53,10 +50,15 @@
           }
         }
     }
+
 }
 
-.ola_table-container {
+.ola_table-container.is-responsive {
   overflow-x: auto;
+  & td,
+  & th {
+      white-space: nowrap;
+  }
 }
 
 .ola_tableRow {
