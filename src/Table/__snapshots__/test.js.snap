@@ -23,6 +23,18 @@ exports[`Align center Cell 1`] = `
 </td>
 `;
 
+exports[`Can be responsive 1`] = `
+<div
+  className="ola_table-container is-responsive"
+>
+  <table
+    className="ola_table"
+  >
+    <tbody />
+  </table>
+</div>
+`;
+
 exports[`Can be stiky 1`] = `
 <div
   className="ola_table-container"
