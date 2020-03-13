@@ -7,7 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.5.0] - Unreleased
 ### Added
-- New icon `Plus` [#90]
+- New icon `plus` [#90]
+- New icons `arrowUp` and `arrowDown` [#98]
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
 - `disabled` and `busy` states to `ButtonIcon` [#94]
 
@@ -236,6 +237,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#94]: https://github.com/marketgoo/Ola/issues/94
 [#96]: https://github.com/marketgoo/Ola/issues/96
 [#97]: https://github.com/marketgoo/Ola/issues/97
+[#98]: https://github.com/marketgoo/Ola/issues/98
 
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0

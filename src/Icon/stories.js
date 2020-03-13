@@ -16,6 +16,8 @@ storiesOf('Icon')
   .add('Viewer', () => (
     <figure>
       <Icon size={select('Size', ['medium', 'small', 'big'])} name={select('Name', [
+        'arrowUp',
+        'arrowDown',
         'help',
         'chevronDown',
         'chevronUp',
