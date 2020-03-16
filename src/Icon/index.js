@@ -3,6 +3,8 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 // Icons
+import ArrowDown from './ArrowDown'
+import ArrowUp from './ArrowUp'
 import ChevronDown from './ChevronDown'
 import ChevronUp from './ChevronUp'
 import ChevronLeft from './ChevronLeft'
@@ -21,6 +23,8 @@ import User from './User'
 import Warning from './Warning'
 
 const ICONS = {
+  'arrowDown': ArrowDown,
+  'arrowUp': ArrowUp,
   'chevronDown': ChevronDown,
   'chevronUp': ChevronUp,
   'chevronLeft': ChevronLeft,
@@ -58,6 +62,8 @@ Icon.defaultProps = {
 Icon.propTypes = {
   /** Icons */
   name: PT.oneOf([
+    'arrowDown',
+    'arrowUp',
     'chevronDown',
     'chevronUp',
     'chevronLeft',
