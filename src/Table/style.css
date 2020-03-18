@@ -1,3 +1,6 @@
+.ola_table-container {
+    overflow-x: auto;
+}
 .ola_table {
     font: var(--font-callout);
     color: var(--gray);
@@ -54,7 +57,6 @@
 }
 
 .ola_table-container.is-responsive {
-  overflow-x: auto;
   & td,
   & th {
       white-space: nowrap;
@@ -86,6 +88,9 @@
     &.is-action {
         text-align: right;
         padding-right: 0;
+        position: sticky;
+        right: 0;
+        background: linear-gradient(to right, transparent, var(--white) var(--size-8));
     }
     &.is-check {
         padding-left: var(--size-4);
