@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New icons `arrowUp` and `arrowDown` [#98]
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
 - `disabled` and `busy` states to `ButtonIcon` [#94]
+- The `TableCell variant=action` is sticky to right, to ensure it's always visible
 
 ### Removed
 - `emptyOption` prop in `Select` component [#96] [#71]
@@ -25,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `Field`: Added support for html in `description` and `hint` properties. [#67]
 - New component `Tooltip` [#72]
 - New icon `Null` [#83], [#86]
+- Added `responsive` prop to `Table` component [#99], [#100]
 
 ### Changed
 - `Switch`: Removed `label` and `htmlLabel` properties. Use `children` to define the label content [#28]
@@ -238,6 +240,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#96]: https://github.com/marketgoo/Ola/issues/96
 [#97]: https://github.com/marketgoo/Ola/issues/97
 [#98]: https://github.com/marketgoo/Ola/issues/98
+[#99]: https://github.com/marketgoo/Ola/issues/99
+[#100]: https://github.com/marketgoo/Ola/issues/100
 
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0
