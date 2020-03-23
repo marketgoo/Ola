@@ -44,9 +44,9 @@ it('ProgressCircle Busy', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with className', () => {
+it('ProgressCircle with extraClass', () => {
   const tree = renderer
-    .create(<ProgressCircle className='className' />)
+    .create(<ProgressCircle className='test' />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

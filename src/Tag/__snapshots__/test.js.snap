@@ -18,7 +18,7 @@ exports[`Tag with error variant 1`] = `
 
 exports[`Tag with extraClass 1`] = `
 <span
-  className="ola_tag extraClass"
+  className="ola_tag test"
 >
   Test
 </span>
