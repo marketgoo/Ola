@@ -58,7 +58,7 @@ it('Group with two buttons in reverse order centered', () => {
 it('Group with two buttons in reverse order and extra class', () => {
   const tree = renderer
     .create(
-      <ButtonGroup variant="reversed" extraClass="is-extra">
+      <ButtonGroup variant="reversed" className="is-extra">
         <Button variant="primary">Main button</Button>
         <Button variant="secondary">Secondary button</Button>
       </ButtonGroup>

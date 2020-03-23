@@ -60,7 +60,7 @@ it('Busy button', () => {
 
 it('Primary button with extra class', () => {
   const tree = renderer
-    .create(<Button variant="primary" extraClass="is-extra">Click here</Button>)
+    .create(<Button variant="primary" className="is-extra">Click here</Button>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()

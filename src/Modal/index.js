@@ -6,7 +6,7 @@ import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
-const Modal = ({ open, closable, onClose, onOpen, variant, extraClass, children, ...props }) => {
+const Modal = ({ open, closable, onClose, onOpen, variant, className, children, ...props }) => {
 
   const modal = useRef(null)
 
@@ -33,12 +33,12 @@ const Modal = ({ open, closable, onClose, onOpen, variant, extraClass, children,
   })
 
   return (
-    <dialog className={cx('ola_modal', variant && `is-${variant}`, extraClass)} {...props} ref={modal} onClick={clickOutside}>
+    <dialog className={cx('ola_modal', variant && `is-${variant}`, className)} {...props} ref={modal} onClick={clickOutside}>
       { open &&
         <>
           {children}
           { closable &&
-          <ButtonIcon type="button" onClick={() => modal.current.close()} extraClass={'ola_modal-close'}>
+          <ButtonIcon type="button" onClick={() => modal.current.close()} className={'ola_modal-close'}>
             <Icon name="close" />
           </ButtonIcon>
           }
@@ -59,7 +59,7 @@ Modal.defaultProps = {
 
 Modal.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** open */
   open: PT.bool,
   /** closable */

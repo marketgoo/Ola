@@ -30,9 +30,9 @@ it('Big Spinner', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('Spinner with extraClasss', () => {
+it('Spinner with classNames', () => {
   const tree = renderer
-    .create(<Spinner extraClasss="extraclass" />)
+    .create(<Spinner classNames="className" />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

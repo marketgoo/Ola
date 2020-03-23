@@ -2,9 +2,9 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const ModalContent = ({ extraClass, variant, children, ...props }) => {
+const ModalContent = ({ className, variant, children, ...props }) => {
   return (
-    <div className={cx('ola_modal-content', variant && `is-${variant}`, extraClass)} {...props}>
+    <div className={cx('ola_modal-content', variant && `is-${variant}`, className)} {...props}>
       {children}
     </div>
   )
@@ -16,7 +16,7 @@ ModalContent.defaultProps = {
 
 ModalContent.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** ModalContent variants */
   variant: PT.oneOf(['fullwidth']),
   /** Childen nodes */

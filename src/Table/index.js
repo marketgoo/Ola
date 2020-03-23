@@ -2,9 +2,9 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Table = ({ caption, sticky, responsive, extraClass, children }) =>
+const Table = ({ caption, sticky, responsive, className, children }) =>
   <div className={cx('ola_table-container', responsive && 'is-responsive')}>
-    <table className={cx('ola_table', sticky && 'is-sticky', extraClass)}>
+    <table className={cx('ola_table', sticky && 'is-sticky', className)}>
       { caption && <caption>{ caption }</caption> }
       {children}
     </table>
@@ -28,7 +28,7 @@ Table.propTypes = {
   /** Table responsive */
   responsive: PT.bool,
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

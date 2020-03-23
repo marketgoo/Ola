@@ -2,9 +2,9 @@ import React from 'react'
 import cx from 'classnames'
 import {default as PT} from 'prop-types'
 
-const Switch = ({ children, extraClass, ...props }) => {
+const Switch = ({ children, className, ...props }) => {
   return (
-    <label className={cx('ola_switch', extraClass)}>
+    <label className={cx('ola_switch', className)}>
       <input type="checkbox" className="ola_switch-input" {...props} />
       <div className="ola_switch-label">
         { children && <div className="ola_switch-label-content">{ children }</div> }
@@ -19,7 +19,7 @@ Switch.defaultProps = {
 
 Switch.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

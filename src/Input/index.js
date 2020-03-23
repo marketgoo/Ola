@@ -2,15 +2,15 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Input = ({ extraClass, error, type, ...props }) => {
+const Input = ({ className, error, type, ...props }) => {
   return type === 'textarea' ?
-    ( <textarea type={type} className={ cx('ola_input', {'is-invalid': error}, extraClass) } {...props} /> ) :
-    ( <input type={type} className={ cx('ola_input', {'is-invalid': error}, extraClass) } {...props} /> )
+    ( <textarea type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> ) :
+    ( <input type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> )
 }
 
 Input.defaultProps = {
   type: 'text',
-  extraClass: null,
+  className: null,
   error: false
 }
 
@@ -32,7 +32,7 @@ Input.propTypes = {
     'week'
   ]),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Input is invalid */
   error: PT.bool
 }
