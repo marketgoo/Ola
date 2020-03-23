@@ -160,15 +160,6 @@
                 }
             }
         }
-
-        /*
-        Wavy style is buggy in blink
-        */
-        @supports (text-underline-offset: 4px) {
-            &:hover {
-                text-decoration-style: wavy;
-            }
-        }
     }
 
     &.is-disabled,

@@ -28,15 +28,6 @@
         color: var(--black);
     }
 
-    /*
-    Wavy style is buggy in blink
-    */
-    @supports (text-underline-offset: 4px) {
-        &:hover .ola_accordion-title {
-            text-decoration-style: wavy;
-        }
-    }
-
     & .ola_tag {
         margin-left: var(--size-3);
     }
