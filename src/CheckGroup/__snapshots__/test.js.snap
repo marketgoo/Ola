@@ -191,3 +191,93 @@ exports[`Default checkGroup 1`] = `
   </label>
 </div>
 `;
+
+exports[`Not error prop when it is used with error Field 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="field-error"
+  >
+    Test
+    <span
+      className="ola_field-hint"
+    >
+      (optional)
+    </span>
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <div
+      className="ola_checkGroup is-column"
+      disabled={false}
+      id="field-error"
+      role="radiogroup"
+    >
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={1}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            Option 1
+          </div>
+        </div>
+      </label>
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={2}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            Option 2
+          </div>
+        </div>
+      </label>
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={3}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            <strong>
+              Option 3
+            </strong>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+  <p
+    className="ola_field-error"
+  >
+    Test description
+  </p>
+</div>
+`;
