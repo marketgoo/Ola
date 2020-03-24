@@ -55,7 +55,7 @@ it('Checkgroup in list', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('Not error prop when it is used with error Field', () => {
+it('Checkgroup with error', () => {
   const tree = renderer
     .create(
       <Field

@@ -128,71 +128,7 @@ exports[`Checkgroup in list 1`] = `
 </div>
 `;
 
-exports[`Default checkGroup 1`] = `
-<div
-  className="ola_checkGroup is-row"
-  role="radiogroup"
->
-  <label
-    className="ola_check is-area"
-  >
-    <input
-      className="ola_check-input"
-      type="checkbox"
-      value={1}
-    />
-    <div
-      className="ola_check-label"
-    >
-      <div
-        className="ola_check-label-content"
-      >
-        Option 1
-      </div>
-    </div>
-  </label>
-  <label
-    className="ola_check is-area"
-  >
-    <input
-      className="ola_check-input"
-      type="checkbox"
-      value={2}
-    />
-    <div
-      className="ola_check-label"
-    >
-      <div
-        className="ola_check-label-content"
-      >
-        Option 2
-      </div>
-    </div>
-  </label>
-  <label
-    className="ola_check is-area"
-  >
-    <input
-      className="ola_check-input"
-      type="checkbox"
-      value={3}
-    />
-    <div
-      className="ola_check-label"
-    >
-      <div
-        className="ola_check-label-content"
-      >
-        <strong>
-          Option 3
-        </strong>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Not error prop when it is used with error Field 1`] = `
+exports[`Checkgroup with error 1`] = `
 <div
   className="ola_field is-invalid"
 >
@@ -211,7 +147,7 @@ exports[`Not error prop when it is used with error Field 1`] = `
     className="ola_field-input"
   >
     <div
-      className="ola_checkGroup is-column"
+      className="ola_checkGroup is-column is-invalid"
       disabled={false}
       id="field-error"
       role="radiogroup"
@@ -279,5 +215,69 @@ exports[`Not error prop when it is used with error Field 1`] = `
   >
     Test description
   </p>
+</div>
+`;
+
+exports[`Default checkGroup 1`] = `
+<div
+  className="ola_checkGroup is-row"
+  role="radiogroup"
+>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={1}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 1
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={2}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        Option 2
+      </div>
+    </div>
+  </label>
+  <label
+    className="ola_check is-area"
+  >
+    <input
+      className="ola_check-input"
+      type="checkbox"
+      value={3}
+    />
+    <div
+      className="ola_check-label"
+    >
+      <div
+        className="ola_check-label-content"
+      >
+        <strong>
+          Option 3
+        </strong>
+      </div>
+    </div>
+  </label>
 </div>
 `;
