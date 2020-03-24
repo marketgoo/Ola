@@ -20,7 +20,7 @@ it('Open accordion', () => {
 
 it('Accordion with extra class', () => {
   const tree = renderer
-    .create(<Accordion title="See more" extraClass="foo">Lorem ipsum dolor sit amet</Accordion>)
+    .create(<Accordion title="See more" className="foo">Lorem ipsum dolor sit amet</Accordion>)
     .toJSON()
 
   expect(tree).toMatchSnapshot()

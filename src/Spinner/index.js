@@ -20,9 +20,9 @@ const sizes = {
   }
 }
 
-const Spinner = ({size, extraClass, ...props }) => {
+const Spinner = ({size, className, ...props }) => {
   const sizeProps = sizes[size]
-  const styles = cx('ola_spinner', sizeProps.className, extraClass)
+  const styles = cx('ola_spinner', sizeProps.className, className)
   return (
     <svg {...props} className={styles} width={sizeProps.size} height={sizeProps.size} viewBox={`0 0 ${sizeProps.size} ${sizeProps.size}`}>
       <circle r={sizeProps.radio} cx={sizeProps.size/2} cy={sizeProps.size/2}></circle>
@@ -32,14 +32,14 @@ const Spinner = ({size, extraClass, ...props }) => {
 
 Spinner.defaultProps = {
   size: 'small',
-  extraClass: null,
+  className: null,
 }
 
 Spinner.propTypes = {
   /** Spinner sizes */
   size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
 }
 
 export default Spinner

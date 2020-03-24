@@ -4,8 +4,8 @@ import cx from 'classnames'
 
 import Icon from '../Icon'
 
-const Accordion = ({ children, title, extraClass, ...props }) => {
-  const styles = cx('ola_accordion', extraClass)
+const Accordion = ({ children, title, className, ...props }) => {
+  const styles = cx('ola_accordion', className)
   return (
     <details className={styles} {...props}>
       <summary className="ola_accordion-header">
@@ -21,10 +21,6 @@ const Accordion = ({ children, title, extraClass, ...props }) => {
   )
 }
 
-Accordion.defaultProps = {
-  extraClass: null
-}
-
 Accordion.propTypes = {
   /** Title */
   title: PT.oneOfType([
@@ -33,7 +29,7 @@ Accordion.propTypes = {
     PT.node
   ]).isRequired,
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

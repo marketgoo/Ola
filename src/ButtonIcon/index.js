@@ -5,7 +5,7 @@ import cx from 'classnames'
 
 import Spinner from '../Spinner'
 
-const ButtonIcon = ({ as, extraClass, children, busy, disabled, variant, ...props }) => {
+const ButtonIcon = ({ as, className, children, busy, disabled, variant, ...props }) => {
   const ElementType = getElementType(ButtonIcon, { as: as, ...props })
   delete props['as']
   const styles = cx(
@@ -13,7 +13,7 @@ const ButtonIcon = ({ as, extraClass, children, busy, disabled, variant, ...prop
     `is-${variant}`,
     {'is-busy': busy},
     {'is-disabled': disabled && !busy},
-    extraClass
+    className
   )
   return (
     <ElementType {...props} disabled={busy ? true : disabled} className={styles}>
@@ -35,7 +35,7 @@ ButtonIcon.propTypes = {
   /** Button variants */
   variant: PT.oneOf(['primary', 'secondary', 'destructive', 'chevron']),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

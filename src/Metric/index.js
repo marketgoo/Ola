@@ -13,17 +13,17 @@ const defaultIcons = {
 const MetricValue = ({busy=false, variant, valueIcon, children}) => {
   return (
     <strong className="ola_metric-value">
-      { busy && <Spinner extraClass="ola_metric-icon" /> }
-      { (variant === 'error') && <Icon name={defaultIcons.error} extraClass="ola_metric-icon" /> }
-      { (valueIcon && variant && variant !== 'error') && <Icon name={defaultIcons[variant]} extraClass="ola_metric-icon" /> }
+      { busy && <Spinner className="ola_metric-icon" /> }
+      { (variant === 'error') && <Icon name={defaultIcons.error} className="ola_metric-icon" /> }
+      { (valueIcon && variant && variant !== 'error') && <Icon name={defaultIcons[variant]} className="ola_metric-icon" /> }
       {children}
     </strong>
   )
 }
 
-const Metric = ({ title, value, description, variant, valueIcon, busy, extraClass, footer, ...props }) => {
+const Metric = ({ title, value, description, variant, valueIcon, busy, className, footer, ...props }) => {
   return (
-    <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', footer && 'is-centered', extraClass)} {...props}>
+    <div className={cx('ola_metric', variant && `is-${variant}`, busy && 'is-busy', footer && 'is-centered', className)} {...props}>
       <strong className="ola_metric-title">{title}</strong>
       { description && !footer && <p className="ola_metric-description">{description}</p> }
       <MetricValue busy={busy} variant={variant} valueIcon={valueIcon}>
@@ -38,7 +38,7 @@ Metric.defaultProps = {
   title: null,
   description: null,
   value: null,
-  extraClass: null,
+  className: null,
   variant: null,
   valueIcon: false,
   busy: false,
@@ -53,7 +53,7 @@ Metric.propTypes = {
   /** Metric value */
   value: PT.string,
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Tag variants */
   variant: PT.oneOf(['error', 'positive', 'negative']),
   /** Icon for value variants */

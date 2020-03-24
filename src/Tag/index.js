@@ -2,8 +2,8 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Tag = ({ variant, extraClass, children }) =>
-  <span className={cx('ola_tag', variant && `is-${variant}`, extraClass)}>
+const Tag = ({ variant, className, children }) =>
+  <span className={cx('ola_tag', variant && `is-${variant}`, className)}>
     {children}
   </span>
 
@@ -15,7 +15,7 @@ Tag.propTypes = {
   /** Tag variants */
   variant: PT.oneOf(['invert', 'error', 'pro', 'success', 'warning']),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

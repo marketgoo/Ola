@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const TaskGroup = ({ extraClass, children }) => {
+const TaskGroup = ({ className, children }) => {
 
   const childrenWrapper = React.Children.map(children, child => {
     return (
@@ -11,7 +11,7 @@ const TaskGroup = ({ extraClass, children }) => {
   })
 
   return (
-    <ul className={cx('ola_task-group', extraClass)}>
+    <ul className={cx('ola_task-group', className)}>
       { childrenWrapper }
     </ul>
   )
@@ -19,12 +19,12 @@ const TaskGroup = ({ extraClass, children }) => {
 
 
 TaskGroup.defaultProps = {
-  extraClass: null
+  className: null
 }
 
 TaskGroup.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

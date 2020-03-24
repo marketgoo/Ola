@@ -5,7 +5,7 @@ import { getElementType } from '../utils'
 
 import Spinner from '../Spinner'
 
-const Button = ({ variant, children, disabled, busy, extraClass, as, ...props }) => {
+const Button = ({ variant, children, disabled, busy, className, as, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
   delete props['as']
   const styles = cx(
@@ -13,7 +13,7 @@ const Button = ({ variant, children, disabled, busy, extraClass, as, ...props })
     {[`is-${variant}`]: variant },
     {'is-busy': busy},
     {'is-disabled': disabled && !busy},
-    extraClass
+    className
   )
   return (
     <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
@@ -27,7 +27,7 @@ Button.defaultProps = {
   as: 'button',
   variant: null,
   busy: null,
-  extraClass: null,
+  className: null,
   disabled: false
 }
 
@@ -42,7 +42,7 @@ Button.propTypes = {
     PT.bool
   ]),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

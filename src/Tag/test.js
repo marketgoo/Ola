@@ -33,6 +33,6 @@ it('Tag with warning variant', () => {
 })
 
 it('Tag with extraClass', () => {
-  const tree = renderer.create(<Tag extraClass="extraClass">Test</Tag>).toJSON()
+  const tree = renderer.create(<Tag className="test">Test</Tag>).toJSON()
   expect(tree).toMatchSnapshot()
 })

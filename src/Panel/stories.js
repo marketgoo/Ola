@@ -54,7 +54,7 @@ storiesOf('Panel')
       >
         Optional extra content
       </PanelHeader>
-      <PanelContent extraClass="extraclass" title={<>Conten Titles with <a href="#">a link</a></>}>
+      <PanelContent className="className" title={<>Conten Titles with <a href="#">a link</a></>}>
         <p>Panel content</p>
       </PanelContent>
       <PanelFooter>

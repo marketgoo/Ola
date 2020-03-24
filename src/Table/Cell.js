@@ -2,10 +2,10 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const TableCell = ({ header, variant, extraClass, children, ...props }) => {
+const TableCell = ({ header, variant, className, children, ...props }) => {
   const Component = header ? 'th' : 'td'
   return (
-    <Component className={cx('ola_tableCell', `is-${variant}`, extraClass)} {...props}>
+    <Component className={cx('ola_tableCell', `is-${variant}`, className)} {...props}>
       {children}
     </Component>
   )
@@ -18,7 +18,7 @@ TableCell.defaultProps = {
 
 TableCell.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Content type */
   variant: PT.oneOf(['left', 'center', 'right', 'numeric', 'action', 'check']),
   /** Whether is a header */

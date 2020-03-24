@@ -2,9 +2,9 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const ModalFooter = ({ extraClass, children, ...props }) => {
+const ModalFooter = ({ className, children, ...props }) => {
   return (
-    <div className={cx('ola_modal-footer', extraClass)} {...props}>
+    <div className={cx('ola_modal-footer', className)} {...props}>
       { children }
     </div>
   )
@@ -12,7 +12,7 @@ const ModalFooter = ({ extraClass, children, ...props }) => {
 
 ModalFooter.propTypes = {
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

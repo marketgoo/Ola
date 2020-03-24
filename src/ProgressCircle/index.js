@@ -8,14 +8,14 @@ const progressCircleValue = (value) => {
   return ((100 - value) / 100) * diameter
 }
 
-const ProgressCircle = ({ variant, value, busy, label, extraClass, ...props }) => {
+const ProgressCircle = ({ variant, value, busy, label, className, ...props }) => {
 
   const circleStyle = {
     strokeDashoffset: progressCircleValue(value)
   }
 
   return (
-    <div className={cx('ola_progressCircle', variant && `is-${variant}`, {'is-busy': busy}, extraClass)} {...props}>
+    <div className={cx('ola_progressCircle', variant && `is-${variant}`, {'is-busy': busy}, className)} {...props}>
       { label &&  <span className="ola_progressCircle-label">{label}</span> }
       { (value !== null) &&  <strong className="ola_progressCircle-value">{value}<span>%</span></strong> }
       <svg className="ola_progressCircle-circle" width="140" height="140" viewBox="0 0 140 140">
@@ -32,7 +32,7 @@ ProgressCircle.defaultProps = {
   value: null,
   label: null,
   busy: false,
-  extraClass: null
+  className: null
 }
 
 ProgressCircle.propTypes = {
@@ -43,7 +43,7 @@ ProgressCircle.propTypes = {
   /** Busy or loading */
   busy: PT.bool,
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Label */
   label: PT.string
 }

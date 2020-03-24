@@ -16,7 +16,7 @@ it('Default Switch', () => {
 it('Extra class Switch', () => {
   const tree = renderer
     .create(
-      <Switch extraClass="foo">Label text</Switch>
+      <Switch className="foo">Label text</Switch>
     )
     .toJSON()
 

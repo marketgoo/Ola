@@ -95,7 +95,7 @@ exports[`ProgressCircle with error variant 1`] = `
 
 exports[`ProgressCircle with extraClass 1`] = `
 <div
-  className="ola_progressCircle extraclass"
+  className="ola_progressCircle test"
 >
   <svg
     className="ola_progressCircle-circle"

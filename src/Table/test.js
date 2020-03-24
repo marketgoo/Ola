@@ -21,7 +21,7 @@ it('Default Table', () => {
 it('Table with extra class', () => {
   const tree = renderer
     .create(
-      <Table extraClass="extra-class">
+      <Table className="extra-class">
         <tbody></tbody>
       </Table>
     )

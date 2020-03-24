@@ -60,10 +60,9 @@ exports[`Small Spinner 1`] = `
 </svg>
 `;
 
-exports[`Spinner with extraClasss 1`] = `
+exports[`Spinner with extraClass 1`] = `
 <svg
-  className="ola_spinner"
-  extraClasss="extraclass"
+  className="ola_spinner test"
   height={28}
   viewBox="0 0 28 28"
   width={28}

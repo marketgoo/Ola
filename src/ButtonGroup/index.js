@@ -2,12 +2,12 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const ButtonGroup = ({ variant, extraClass, children, ...props }) => {
+const ButtonGroup = ({ variant, className, children, ...props }) => {
   const styles = cx(
     'ola_buttonGroup',
     { 'is-center': variant && (variant == 'center' || variant == 'reversed-center') },
     { 'is-reversed': variant && (variant == 'reversed' || variant == 'reversed-center') },
-    extraClass
+    className
   )
   return (
     <div className={styles} {...props}>
@@ -18,14 +18,14 @@ const ButtonGroup = ({ variant, extraClass, children, ...props }) => {
 
 ButtonGroup.defaultProps = {
   variant: 'default',
-  extraClass: null
+  className: null
 }
 
 ButtonGroup.propTypes = {
   /** Variants: Center or Reversed button order ( helper for tabulation problems ) */
   variant: PT.oneOf(['default', 'reversed', 'center', 'reversed-center']),
   /** Extra className */
-  extraClass: PT.string,
+  className: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,
