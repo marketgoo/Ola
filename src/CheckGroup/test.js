@@ -2,6 +2,7 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import CheckGroup from './'
 import Check from '../Check'
+import Field from '../Field'
 
 const options = [
   {
@@ -48,6 +49,25 @@ it('Checkgroup in list', () => {
       <CheckGroup variant="list">
         { options.map((option, key) => <Check key={key} variant="option" value={option.value}>{option.label}</Check>)}
       </CheckGroup>
+    )
+    .toJSON()
+
+  expect(tree).toMatchSnapshot()
+})
+
+it('Checkgroup with error', () => {
+  const tree = renderer
+    .create(
+      <Field
+        id="field-error"
+        error
+        label="Test"
+        description="Test description"
+        hint="(optional)">
+        <CheckGroup variant="column">
+          { options.map((option, key) => <Check key={key} variant="area" value={option.value}>{option.label}</Check>)}
+        </CheckGroup>
+      </Field>
     )
     .toJSON()
 

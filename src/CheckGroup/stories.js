@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react'
 
 import CheckGroup from './'
 import Check from '../Check'
+import Field from '../Field'
 
 const options = [
   {
@@ -102,4 +103,21 @@ storiesOf('CheckGroup')
       </CheckGroup>
     </figure>
   ))
-
+  .add('With Field Warning', () => (
+    <figure>
+      <Field
+        id="field-error"
+        error
+        label="Test"
+        description="Test description"
+        hint="(optional)">
+        <CheckGroup variant="list">
+          {options.map((option, key) => (
+            <Check key={key} value={option.value} variant="option">
+              {option.label}
+            </Check>
+          ))}
+        </CheckGroup>
+      </Field>
+    </figure>
+  ))

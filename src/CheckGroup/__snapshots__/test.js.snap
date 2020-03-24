@@ -128,6 +128,96 @@ exports[`Checkgroup in list 1`] = `
 </div>
 `;
 
+exports[`Checkgroup with error 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="field-error"
+  >
+    Test
+    <span
+      className="ola_field-hint"
+    >
+      (optional)
+    </span>
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <div
+      className="ola_checkGroup is-column is-invalid"
+      disabled={false}
+      id="field-error"
+      role="radiogroup"
+    >
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={1}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            Option 1
+          </div>
+        </div>
+      </label>
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={2}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            Option 2
+          </div>
+        </div>
+      </label>
+      <label
+        className="ola_check is-area"
+      >
+        <input
+          className="ola_check-input"
+          type="checkbox"
+          value={3}
+        />
+        <div
+          className="ola_check-label"
+        >
+          <div
+            className="ola_check-label-content"
+          >
+            <strong>
+              Option 3
+            </strong>
+          </div>
+        </div>
+      </label>
+    </div>
+  </div>
+  <p
+    className="ola_field-error"
+  >
+    Test description
+  </p>
+</div>
+`;
+
 exports[`Default checkGroup 1`] = `
 <div
   className="ola_checkGroup is-row"
