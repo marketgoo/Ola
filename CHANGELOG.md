@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Component `Tooltip` in a `Table` was not showing properly [#93]
 - Styles of `<ol>` elements in `Task` [#97]
 - Removed `wavy` text decoration style of links because looks buggy
+- Improved `Table` styles to be no required to add `<th>` to all columns.
 
 ## [0.4.0] - 2020-03-06
 ### Added
