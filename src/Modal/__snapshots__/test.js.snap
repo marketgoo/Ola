@@ -2,7 +2,7 @@
 
 exports[`Default Modal 1`] = `
 <dialog
-  className="ola_modal"
+  className="ola_modal is-closable"
   onClick={[Function]}
 >
   <header

@@ -123,7 +123,9 @@ storiesOf('Modal')
   .add('Not closable', () =>
     <>
       <Modal open closable={false}>
-        <ModalHeader title="Modal center not closable" />
+        <ModalHeader title="Modal center not closable">
+          <ProgressBar value="20" max="100" />
+        </ModalHeader>
         <ModalContent>
           Lorem ipsum
         </ModalContent>

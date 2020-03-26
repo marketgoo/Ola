@@ -33,6 +33,12 @@
         margin-top: 0;
         transform: translateY(-50%);
     }
+
+    &.is-closable {
+        & .ola_modal-extra {
+            margin-top: var(--size-7);
+        }
+    }
 }
 
 .ola_modal::backdrop {

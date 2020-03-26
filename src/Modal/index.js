@@ -33,7 +33,7 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
   })
 
   return (
-    <dialog className={cx('ola_modal', variant && `is-${variant}`, className)} {...props} ref={modal} onClick={clickOutside}>
+    <dialog className={cx('ola_modal', variant && `is-${variant}`, {'is-closable': closable}, className)} {...props} ref={modal} onClick={clickOutside}>
       { open &&
         <>
           {children}
