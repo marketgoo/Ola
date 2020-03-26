@@ -72,7 +72,6 @@ storiesOf('Table')
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
-            <TableCell header variant="action">Actions</TableCell>
           </tr>
         </thead>
         <tbody>

@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
 - `disabled` and `busy` states to `ButtonIcon` [#94]
 - The `TableCell variant=action` is sticky to right, to ensure it's always visible
+- New property `error` to `CheckGroup` [#77], [#104]
+
+### Changed
+- Renamed the property `extraClass` of all components to `className` [#27], [#103]
 
 ### Removed
 - `emptyOption` prop in `Select` component [#96] [#71]
@@ -207,6 +211,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#20]: https://github.com/marketgoo/Ola/issues/20
 [#21]: https://github.com/marketgoo/Ola/issues/21
 [#23]: https://github.com/marketgoo/Ola/issues/23
+[#27]: https://github.com/marketgoo/Ola/issues/27
 [#28]: https://github.com/marketgoo/Ola/issues/28
 [#30]: https://github.com/marketgoo/Ola/issues/30
 [#32]: https://github.com/marketgoo/Ola/issues/32
@@ -231,6 +236,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#72]: https://github.com/marketgoo/Ola/issues/72
 [#74]: https://github.com/marketgoo/Ola/issues/74
 [#75]: https://github.com/marketgoo/Ola/issues/75
+[#77]: https://github.com/marketgoo/Ola/issues/77
 [#83]: https://github.com/marketgoo/Ola/issues/83
 [#86]: https://github.com/marketgoo/Ola/issues/86
 [#89]: https://github.com/marketgoo/Ola/issues/89
@@ -243,6 +249,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#98]: https://github.com/marketgoo/Ola/issues/98
 [#99]: https://github.com/marketgoo/Ola/issues/99
 [#100]: https://github.com/marketgoo/Ola/issues/100
+[#103]: https://github.com/marketgoo/Ola/issues/103
+[#104]: https://github.com/marketgoo/Ola/issues/104
 
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0
