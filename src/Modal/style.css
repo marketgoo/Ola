@@ -97,12 +97,12 @@
 }
 .ola_modal-content {
     padding: var(--size-2) var(--inner-gap);
-    min-height: 0;
-    overflow-y: auto;
+    flex-shrink: 0;
 
     &:first-child {
         padding-top: var(--inner-gap);
     }
+
     &:nth-last-child(2) {
         padding-bottom: var(--inner-gap);
     }
@@ -110,6 +110,12 @@
     &.is-fullwidth {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    &.is-scroll {
+        flex-shrink: 1;
+        min-height: 0;
+        overflow-y: auto;
     }
 }
 .ola_modal-footer {

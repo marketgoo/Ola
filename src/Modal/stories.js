@@ -14,7 +14,7 @@ import PanelContent from '../Panel/Content'
 import ProgressBar from '../ProgressBar'
 
 storiesOf('Modal')
-  .add('Default', () => {
+  .add('Scroll', () => {
 
     const [isOpen, setIsOpen] = useState()
 
@@ -68,6 +68,9 @@ storiesOf('Modal')
             <ProgressBar value="20" max="100" />
           </ModalHeader>
           <ModalContent>
+            <h1>No scroll panel content</h1>
+          </ModalContent>
+          <ModalContent variant="scroll">
             <h1>Panel content</h1>
             <h1>Panel content</h1>
             <h1>Panel content</h1>

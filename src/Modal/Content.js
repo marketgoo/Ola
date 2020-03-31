@@ -18,7 +18,7 @@ ModalContent.propTypes = {
   /** Extra className */
   className: PT.string,
   /** ModalContent variants */
-  variant: PT.oneOf(['fullwidth']),
+  variant: PT.oneOf(['fullwidth', 'scroll']),
   /** Childen nodes */
   children: PT.oneOfType([
     PT.arrayOf(PT.node),
