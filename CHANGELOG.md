@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `disabled` and `busy` states to `ButtonIcon` [#94]
 - The `TableCell variant=action` is sticky to right, to ensure it's always visible
 - New property `error` to `CheckGroup` [#77], [#104]
+- New `menu` component
 
 ### Changed
 - Renamed the property `extraClass` of all components to `className` [#27], [#103]
