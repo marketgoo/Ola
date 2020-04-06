@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
-const Option = ({ as, className, separator, children, ...props }) => {
+const MenuOption = ({ as, className, separator, children, ...props }) => {
   const ElementType = getElementType(Option, { as: as, ...props })
   delete props['as']
   return (
@@ -16,12 +16,12 @@ const Option = ({ as, className, separator, children, ...props }) => {
 }
 
 
-Option.defaultProps = {
+MenuOption.defaultProps = {
   variant: null,
-  as: 'a',
+  as: 'button',
 }
 
-Option.propTypes = {
+MenuOption.propTypes = {
   /** Render Item with any html tag */
   as: PT.string,
   /** Separator */
@@ -36,4 +36,4 @@ Option.propTypes = {
   ]).isRequired
 }
 
-export default Option
+export default MenuOption

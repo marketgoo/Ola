@@ -7,22 +7,22 @@ exports[`Default Menu with Options 1`] = `
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 1
-    </a>
+    </button>
   </li>
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 2
-    </a>
+    </button>
   </li>
 </ul>
 `;
@@ -34,42 +34,42 @@ exports[`Default Menu with separator items 1`] = `
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 1
-    </a>
+    </button>
   </li>
   <li
     className="ola_menu-separator"
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 2
-    </a>
+    </button>
   </li>
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 3
-    </a>
+    </button>
   </li>
   <li
     className="ola_menu-separator"
   >
-    <a
+    <button
       className="ola_menu-option"
       variant={null}
     >
       Option 4
-    </a>
+    </button>
   </li>
 </ul>
 `;
@@ -81,24 +81,24 @@ exports[`Options are links 1`] = `
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       href="link1"
       variant={null}
     >
       Option 1
-    </a>
+    </button>
   </li>
   <li
     className=""
   >
-    <a
+    <button
       className="ola_menu-option"
       href="link2"
       variant={null}
     >
       Option 2
-    </a>
+    </button>
   </li>
 </ul>
 `;

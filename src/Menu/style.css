@@ -15,6 +15,13 @@
     text-decoration: none;
     padding: var(--size-4) var(--size-6);
     outline: 0;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
 
     &:hover,
     &:focus {
@@ -40,4 +47,5 @@
 .ola_tooltip-content .ola_menu-option {
     margin-left: calc(var(--size-6) * -1);
     margin-right: calc(var(--size-6) * -1);
+    width: calc(100% + var(--size-6) * 2);
 }

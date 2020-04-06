@@ -5,24 +5,24 @@ import Icon from '../Icon'
 import Tooltip from '../Tooltip'
 
 import Menu from './'
-import Option from './Option'
+import MenuOption from './Option'
 
 storiesOf('Menu')
   .add('Default', () => (
     <figure>
       <Menu>
-        <Option>
+        <MenuOption>
           <Icon name="user" />
           <strong>Profile</strong>
-        </Option>
-        <Option href="#">
+        </MenuOption>
+        <MenuOption href="#">
           <Icon name="help" />
           <strong>Help</strong>
-        </Option>
-        <Option separator>
+        </MenuOption>
+        <MenuOption separator>
           <Icon name="error" />
           <strong>Logout</strong>
-        </Option>
+        </MenuOption>
       </Menu>
     </figure>
   ))
@@ -30,18 +30,18 @@ storiesOf('Menu')
     <figure>
       <Tooltip trigger={<ButtonIcon as="span"><Icon name="user" /></ButtonIcon>}>
         <Menu>
-          <Option>
+          <MenuOption>
             <Icon name="user" />
             <strong>Profile</strong>
-          </Option>
-          <Option href="#">
+          </MenuOption>
+          <MenuOption href="#">
             <Icon name="help" />
             <strong>Help</strong>
-          </Option>
-          <Option separator>
+          </MenuOption>
+          <MenuOption separator>
             <Icon name="error" />
             <strong>Logout</strong>
-          </Option>
+          </MenuOption>
         </Menu>
       </Tooltip>
     </figure>
