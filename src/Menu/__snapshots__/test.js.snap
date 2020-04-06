@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Menu with Items 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 1
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 2
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Default Menu with separator items 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 1
+    </span>
+  </li>
+  <li
+    className="ola_menu-separator"
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 2
+    </span>
+  </li>
+  <li
+    className=""
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 3
+    </span>
+  </li>
+  <li
+    className="ola_menu-separator"
+  >
+    <span
+      className="ola_menu-option"
+    >
+      Item 4
+    </span>
+  </li>
+</ul>
+`;
+
+exports[`Items are links 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <a
+      className="ola_menu-option"
+      href="link1"
+    >
+      Item 1
+    </a>
+  </li>
+  <li
+    className=""
+  >
+    <a
+      className="ola_menu-option"
+      href="link2"
+    >
+      Item 2
+    </a>
+  </li>
+</ul>
+`;
