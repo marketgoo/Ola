@@ -1,14 +1,14 @@
 import React from 'react'
 import Menu from './'
-import Item from './Item'
+import Option from './Option'
 import renderer from 'react-test-renderer'
 
-it('Default Menu with Items', () => {
+it('Default Menu with Options', () => {
   const tree = renderer
     .create(
       <Menu>
-        <Item>Item 1</Item>
-        <Item>Item 2</Item>
+        <Option>Option 1</Option>
+        <Option>Option 2</Option>
       </Menu>
     )
     .toJSON()
@@ -16,12 +16,12 @@ it('Default Menu with Items', () => {
   expect(tree).toMatchSnapshot()
 })
 
-it('Items are links', () => {
+it('Options are links', () => {
   const tree = renderer
     .create(
       <Menu>
-        <Item href="link1">Item 1</Item>
-        <Item href="link2">Item 2</Item>
+        <Option href="link1">Option 1</Option>
+        <Option href="link2">Option 2</Option>
       </Menu>
     )
     .toJSON()
@@ -32,10 +32,10 @@ it('Default Menu with separator items', () => {
   const tree = renderer
     .create(
       <Menu>
-        <Item>Item 1</Item>
-        <Item variant="separator">Item 2</Item>
-        <Item>Item 3</Item>
-        <Item variant="separator">Item 4</Item>
+        <Option>Option 1</Option>
+        <Option separator>Option 2</Option>
+        <Option>Option 3</Option>
+        <Option separator>Option 4</Option>
       </Menu>
     )
     .toJSON()

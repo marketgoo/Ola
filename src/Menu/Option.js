@@ -3,11 +3,11 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
-const Item = ({ as, className, variant, children, ...props }) => {
-  const ElementType = getElementType(Item, { as: as, ...props })
+const Option = ({ as, className, separator, children, ...props }) => {
+  const ElementType = getElementType(Option, { as: as, ...props })
   delete props['as']
   return (
-    <li className={cx(variant && `ola_menu-${variant}`)}>
+    <li className={cx(separator && 'ola_menu-separator')}>
       <ElementType className={ cx('ola_menu-option', className) } {...props}>
         {children}
       </ElementType>
@@ -16,16 +16,16 @@ const Item = ({ as, className, variant, children, ...props }) => {
 }
 
 
-Item.defaultProps = {
+Option.defaultProps = {
   variant: null,
-  as: 'span',
+  as: 'a',
 }
 
-Item.propTypes = {
+Option.propTypes = {
   /** Render Item with any html tag */
   as: PT.string,
-  /** Item variants */
-  variant: PT.oneOf(['separator']),
+  /** Separator */
+  separator: PT.bool,
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
@@ -36,4 +36,4 @@ Item.propTypes = {
   ]).isRequired
 }
 
-export default Item
+export default Option

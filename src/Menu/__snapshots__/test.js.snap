@@ -1,26 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Default Menu with Items 1`] = `
+exports[`Default Menu with Options 1`] = `
 <ul
   className="ola_menu"
 >
   <li
     className=""
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 1
-    </span>
+      Option 1
+    </a>
   </li>
   <li
     className=""
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 2
-    </span>
+      Option 2
+    </a>
   </li>
 </ul>
 `;
@@ -32,43 +34,47 @@ exports[`Default Menu with separator items 1`] = `
   <li
     className=""
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 1
-    </span>
+      Option 1
+    </a>
   </li>
   <li
     className="ola_menu-separator"
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 2
-    </span>
+      Option 2
+    </a>
   </li>
   <li
     className=""
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 3
-    </span>
+      Option 3
+    </a>
   </li>
   <li
     className="ola_menu-separator"
   >
-    <span
+    <a
       className="ola_menu-option"
+      variant={null}
     >
-      Item 4
-    </span>
+      Option 4
+    </a>
   </li>
 </ul>
 `;
 
-exports[`Items are links 1`] = `
+exports[`Options are links 1`] = `
 <ul
   className="ola_menu"
 >
@@ -78,8 +84,9 @@ exports[`Items are links 1`] = `
     <a
       className="ola_menu-option"
       href="link1"
+      variant={null}
     >
-      Item 1
+      Option 1
     </a>
   </li>
   <li
@@ -88,8 +95,9 @@ exports[`Items are links 1`] = `
     <a
       className="ola_menu-option"
       href="link2"
+      variant={null}
     >
-      Item 2
+      Option 2
     </a>
   </li>
 </ul>
