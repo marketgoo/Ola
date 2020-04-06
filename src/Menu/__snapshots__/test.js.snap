@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Menu with Options 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 1
+    </button>
+  </li>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 2
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Default Menu with separator items 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 1
+    </button>
+  </li>
+  <li
+    className="ola_menu-separator"
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 2
+    </button>
+  </li>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 3
+    </button>
+  </li>
+  <li
+    className="ola_menu-separator"
+  >
+    <button
+      className="ola_menu-option"
+      variant={null}
+    >
+      Option 4
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Options are links 1`] = `
+<ul
+  className="ola_menu"
+>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      href="link1"
+      variant={null}
+    >
+      Option 1
+    </button>
+  </li>
+  <li
+    className=""
+  >
+    <button
+      className="ola_menu-option"
+      href="link2"
+      variant={null}
+    >
+      Option 2
+    </button>
+  </li>
+</ul>
+`;

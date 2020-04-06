@@ -1,0 +1,51 @@
+.ola_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ola_menu-option {
+    --color: var(--gray);
+    --background: var(--white);
+
+    font: var(--font-callout);
+    color: var(--color);
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: var(--size-4) var(--size-6);
+    outline: 0;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+
+    &::-moz-focus-inner {
+        border: 0;
+    }
+
+    &:hover,
+    &:focus {
+        --color: var(--black);
+        --background: var(--gray-xlight);
+    }
+
+    &:active {
+        --color: var(--black);
+        --background: var(--brand-focus);
+    }
+
+    & .ola_icon {
+        flex: 0 0 auto;
+        margin-right: var(--size-4);
+    }
+}
+.ola_menu-separator {
+    border-top: solid 1px var(--gray-light);
+    margin-top: var(--size-3);
+    padding-top: var(--size-3);
+}
+.ola_tooltip-content .ola_menu-option {
+    margin-left: calc(var(--size-6) * -1);
+    margin-right: calc(var(--size-6) * -1);
+    width: calc(100% + var(--size-6) * 2);
+}
