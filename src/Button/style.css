@@ -17,6 +17,7 @@
     background: none;
     color: var(--color);
     background-color: var(--background);
+    cursor: pointer;
     border-radius: var(--radius-big);
     font: var(--font-callout);
     padding: 0 var(--size-7);
@@ -181,10 +182,6 @@
     text-overflow: ellipsis;
     padding-top: 4px;
     padding-bottom: 4px;
-}
-
-.ola_button:not(button):not(a) {
-    cursor: default;
 }
 
 summary:focus .ola_button {

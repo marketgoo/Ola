@@ -81,6 +81,7 @@
     transition-property: color, background-color;
     transition-duration: var(--duration);
     z-index: 2;
+    cursor: pointer;
 }
 .ola_check-input:checked ~ .ola_check-label img {
     filter: none;

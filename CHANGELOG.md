@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Renamed the property `extraClass` of all components to `className` [#27], [#103]
 - Removed scroll in the `ModalContent` component and added a `scroll` variant to enable it [#106]
+- Added cursor `pointer` to some interactive components like `Button`, `ButtonIcon`, `Check`, `Accordion` and `MenuOption`
 
 ### Removed
 - `emptyOption` prop in `Select` component [#96] [#71]

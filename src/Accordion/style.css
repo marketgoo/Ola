@@ -11,7 +11,7 @@
 }
 .ola_accordion-header {
     display: inline-block;
-    cursor: default;
+    cursor: pointer;
     outline: 0;
     list-style: none;
     border-radius: var(--radius);
