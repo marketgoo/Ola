@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.5.0] - Unreleased
+## [0.5.0] - 2020-04-07
 ### Added
 - New icon `plus` [#90]
 - New icons `arrowUp` and `arrowDown` [#98]
@@ -13,11 +13,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `disabled` and `busy` states to `ButtonIcon` [#94]
 - The `TableCell variant=action` is sticky to right, to ensure it's always visible
 - New property `error` to `CheckGroup` [#77], [#104]
-- New `menu` component
+- New `Menu` component [#105]
 
 ### Changed
 - Renamed the property `extraClass` of all components to `className` [#27], [#103]
-- Removed scroll in the `ModalContent` component and added a `scroll` variant to enable it.
+- Removed scroll in the `ModalContent` component and added a `scroll` variant to enable it [#106]
 
 ### Removed
 - `emptyOption` prop in `Select` component [#96] [#71]
@@ -255,8 +255,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#100]: https://github.com/marketgoo/Ola/issues/100
 [#103]: https://github.com/marketgoo/Ola/issues/103
 [#104]: https://github.com/marketgoo/Ola/issues/104
+[#105]: https://github.com/marketgoo/Ola/issues/105
+[#106]: https://github.com/marketgoo/Ola/issues/106
 
-[0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...HEAD
+[0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0
 [0.2.2]: https://github.com/marketgoo/Ola/compare/v0.2.1...v0.2.2
