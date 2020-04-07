@@ -95,6 +95,11 @@ const Example = () => (
 - [Design specs](https://zeroheight.com/22mjgbuf6/p/01a560)
 - [Storybook](https://marketgoo.github.io/Ola/?path=/story/level--no-value)
 
+### Menu
+
+- [Design specs](https://zeroheight.com/22mjgbuf6/p/88cf8e-tooltip)
+- [Storybook](https://marketgoo.github.io/Ola/?path=/story/menu--default)
+
 ### Metric
 
 - [Design specs](https://zeroheight.com/22mjgbuf6/p/621cfc)
