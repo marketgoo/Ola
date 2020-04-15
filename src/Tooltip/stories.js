@@ -25,6 +25,15 @@ storiesOf('Tooltip')
       <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" /></ButtonIcon>}>Lorem ipsum</Tooltip>
     </figure>
   ))
+  .add('Within a scrollable element', () => (
+    <figure>
+      <div style={{height: '300px', width: '300px', overflow: 'auto', padding: '1em', border: 'solid'}}>
+        <div style={{padding: '250px'}}>
+          <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" /></ButtonIcon>}>Lorem ipsum</Tooltip>
+        </div>
+      </div>
+    </figure>
+  ))
   .add('Variants', () => (
     <figure>
       <Tooltip variant={radios('Variant', ['', 'wide'], '')} trigger={<ButtonIcon as="span"><Icon name="help" /></ButtonIcon>}>

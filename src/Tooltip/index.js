@@ -3,21 +3,6 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import useOutsideEvent from '../hooks/useOutsideEvent'
 
-const getClassPosition = ref => {
-
-  const win_width = window.innerWidth
-  const win_height = window.innerHeight
-
-  const { top, left, width, height } = ref.current.getClientRects()[0]
-  const el_left = left + (width / 2)
-  const el_top = top + (height / 2)
-
-  const heightPosition = ((win_height * 0.5) < el_top ) ? 'top' : 'bottom'
-  const widthPosition = ((win_width * 0.33) > el_left) ? 'right' : ((win_width * 0.66) > el_left) ? 'center' : 'left'
-
-  return `${heightPosition}${widthPosition}`
-}
-
 const Tooltip = ({ variant, className, trigger, children }) => {
 
   const [position, setPosition] = useState(null)
@@ -28,7 +13,7 @@ const Tooltip = ({ variant, className, trigger, children }) => {
     setPosition(null)
   })
 
-  const toggle = () => tooltipRef.current.open ? setPosition( getClassPosition(tooltipRef) ) : setPosition(null)
+  const toggle = () => tooltipRef.current.open ? setPosition( getClassPosition(tooltipRef.current) ) : setPosition(null)
 
   return (
     <details className={cx('ola_tooltip', className, {[`is-${variant}`]: variant})} onToggle={toggle} ref={tooltipRef}>
@@ -63,3 +48,56 @@ Tooltip.propTypes = {
 }
 
 export default Tooltip
+
+function isScrollable (element) {
+  const hasScrollableContent = element.scrollHeight > element.clientHeight
+
+  if (!hasScrollableContent) {
+    return false
+  }
+
+  const overflowYStyle = window.getComputedStyle(element).overflowY
+
+  return overflowYStyle.indexOf('auto') !== -1 || overflowYStyle.indexOf('scroll') !== -1
+}
+
+function getScrollableParent (element) {
+  return (!element || element === document.body)
+    ? document.body
+    : (isScrollable(element) ? element : getScrollableParent(element.parentNode))
+}
+
+function getClassPosition (element) {
+  const { top, left, width, height, parentWidth, parentHeight} = getElementPosition(element)
+
+  const el_left = left + (width / 2)
+  const el_top = top + (height / 2)
+
+  const heightPosition = ((parentHeight * 0.5) < el_top ) ? 'top' : 'bottom'
+  const widthPosition = ((parentWidth * 0.33) > el_left) ? 'right' : ((parentWidth * 0.66) > el_left) ? 'center' : 'left'
+
+  return `${heightPosition}${widthPosition}`
+}
+
+function getElementPosition(element) {
+  const { top, left, width, height } = element.getClientRects()[0]
+  const parentWidth = window.innerWidth
+  const parentHeight = window.innerHeight
+
+  const parent = getScrollableParent(element)
+
+  if (!parent || parent === window.document) {
+    return { top, left, width, height, parentWidth, parentHeight }
+  }
+
+  const parentRect = parent.getClientRects()[0]
+
+  return {
+    top: top - parentRect.top,
+    left: left - parentRect.left,
+    width,
+    height,
+    parentWidth: parentRect.width,
+    parentHeight: parentRect.height
+  }
+}
