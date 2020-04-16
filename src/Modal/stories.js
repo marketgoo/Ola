@@ -149,10 +149,35 @@ storiesOf('Modal')
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
           <ProgressBar value="20" max="100" />
         </ModalHeader>
-        <ModalContent variant="fullwidth">
-          <PanelContent title="Conten Title">
-            Panel content
-          </PanelContent>
+        <ModalContent variant="fullwidth" style={{ background: 'var(--gray-xlight)'}}>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent variant="fullwidth-scroll" style={{ background: 'var(--gray-xlight)'}}>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
         </ModalContent>
       </Modal>
     </>

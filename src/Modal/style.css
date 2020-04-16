@@ -105,13 +105,17 @@
 
     &:nth-last-child(2) {
         padding-bottom: var(--inner-gap);
+        border-bottom-right-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
     }
 
+    &.is-fullwidth-scroll,
     &.is-fullwidth {
         padding-left: 0;
         padding-right: 0;
     }
 
+    &.is-fullwidth-scroll,
     &.is-scroll {
         flex-shrink: 1;
         min-height: 0;
