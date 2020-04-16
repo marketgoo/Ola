@@ -48,10 +48,10 @@
           & th {
             position: sticky;
             background: white;
+            top: 0;
           }
         }
     }
-
 }
 
 .ola_table-container.is-responsive {

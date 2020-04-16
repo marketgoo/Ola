@@ -49,22 +49,16 @@ Tooltip.propTypes = {
 
 export default Tooltip
 
-function isScrollable (element) {
-  const hasScrollableContent = element.scrollHeight > element.clientHeight
+function isOverflowVisible (element) {
+  const value = window.getComputedStyle(element).overflowY
 
-  if (!hasScrollableContent) {
-    return false
-  }
-
-  const overflowYStyle = window.getComputedStyle(element).overflowY
-
-  return overflowYStyle.indexOf('auto') !== -1 || overflowYStyle.indexOf('scroll') !== -1
+  return value.indexOf('visible') !== -1
 }
 
-function getScrollableParent (element) {
+function getNotOverflowVisibleParent (element) {
   return (!element || element === document.body)
     ? document.body
-    : (isScrollable(element) ? element : getScrollableParent(element.parentNode))
+    : (isOverflowVisible(element) ? getNotOverflowVisibleParent(element.parentNode) : element)
 }
 
 function getClassPosition (element) {
@@ -84,9 +78,9 @@ function getElementPosition(element) {
   const parentWidth = window.innerWidth
   const parentHeight = window.innerHeight
 
-  const parent = getScrollableParent(element)
+  const parent = getNotOverflowVisibleParent(element)
 
-  if (!parent || parent === window.document) {
+  if (!parent || parent === document.body) {
     return { top, left, width, height, parentWidth, parentHeight }
   }
 

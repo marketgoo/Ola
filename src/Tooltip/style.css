@@ -32,6 +32,7 @@
     z-index: 5;
     font: var(--font-caption);
     color: var(--black);
+    display: none;
 
     &::before {
         content: "";
@@ -97,8 +98,18 @@
         color: var(--color-hover);
         background-color: var(--background-hover);
     }
-    &.ola_tooltip-content {
-        animation: tooltip-show 200ms;
+    & .ola_tooltip-content {
+        display: block;
+
+        &.is-bottomright,
+        &.is-bottomcenter,
+        &.is-bottomleft,
+        &.is-topright,
+        &.is-topcenter,
+        &.is-topleft {
+            display: block;
+            animation: tooltip-show 200ms;
+        }
     }
 }
 

@@ -150,9 +150,7 @@ storiesOf('Modal')
           <ProgressBar value="20" max="100" />
         </ModalHeader>
         <ModalContent variant="fullwidth">
-          <PanelContent title="Conten Title">
             Panel content
-          </PanelContent>
         </ModalContent>
       </Modal>
     </>
