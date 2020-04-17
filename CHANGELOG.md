@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.6.0] - Unreleased
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
+- New Component `TaskSmall` [#107]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -262,6 +263,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#104]: https://github.com/marketgoo/Ola/issues/104
 [#105]: https://github.com/marketgoo/Ola/issues/105
 [#106]: https://github.com/marketgoo/Ola/issues/106
+[#107]: https://github.com/marketgoo/Ola/issues/107
 [#112]: https://github.com/marketgoo/Ola/issues/112
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD

@@ -6,6 +6,7 @@ import TaskBody from './Body'
 import TaskFooter from './Footer'
 import TaskInfo from './Info'
 import TaskGroup from '../TaskGroup'
+import TaskSmall from './Small'
 
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
@@ -165,6 +166,19 @@ storiesOf('Task')
             </TaskFooter>
           </Task>
 
+        </TaskGroup>
+      </PanelContent>
+    </Panel>
+  ))
+  .add('Small', () => (
+    <Panel>
+      <PanelContent>
+        <TaskGroup>
+          <TaskSmall>Task title</TaskSmall>
+          <TaskSmall variant="suggested" href="#">Task title</TaskSmall>
+          <TaskSmall variant="warning">Task title</TaskSmall>
+          <TaskSmall variant="success" href="#">Task title</TaskSmall>
+          <TaskSmall variant="error">Task title</TaskSmall>
         </TaskGroup>
       </PanelContent>
     </Panel>

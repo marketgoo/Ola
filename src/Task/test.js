@@ -1,5 +1,6 @@
 import React from 'react'
 import Task from './'
+import TaskSmall from './Small'
 import Button from './../Button'
 import renderer from 'react-test-renderer'
 
@@ -70,6 +71,25 @@ it('Task with Extra', () => {
         title="Task title 6" 
         variant="error" 
         extra={<Button onClick={() => false}>Fix now</Button>}/>
+    )
+    .toJSON()
+          
+  expect(tree).toMatchSnapshot()
+})
+
+it('Task small', () => {
+  const tree = renderer
+    .create(
+      <TaskSmall variant="error">Task title 7</TaskSmall>
+    )
+    .toJSON()
+          
+  expect(tree).toMatchSnapshot()
+})
+it('Task small with link', () => {
+  const tree = renderer
+    .create(
+      <TaskSmall variant="error" href="#">Task title 8</TaskSmall>
     )
     .toJSON()
           
