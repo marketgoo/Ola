@@ -127,7 +127,6 @@ storiesOf('Modal')
     <>
       <Modal open closable={false}>
         <ModalHeader title="Modal center not closable">
-          <ProgressBar value="20" max="100" />
         </ModalHeader>
         <ModalContent>
           Lorem ipsum

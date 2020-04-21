@@ -6,7 +6,7 @@
     padding-bottom: 0.1px;
 
     & > .ola_panel-header {
-        padding: var(--inner-gap) var(--inner-gap) 0;
+        padding: var(--row-xpadding) var(--column-xpadding) 0;
     }
 
     & > *:first-child {
@@ -21,10 +21,9 @@
 }
 .ola_panel-header {
     display: grid;
-    grid-template-areas: "title" "intro";
-    grid-column-gap: var(--inner-gap);
 
     &.has-extra {
+        grid-column-gap: var(--column-gap);
         grid-template-areas: "title" "intro" "extra";
 
         @media (--from-width-2) {
@@ -59,16 +58,16 @@
 }
 
 .ola_panel-subtitle {
-    padding: var(--size-3) var(--inner-gap);
-    margin: var(--size-7) 0 0;
+    padding: var(--size-3) var(--column-xpadding);
+    margin: var(--row-gap) 0 0;
     background-color: var(--gray-xlight);
     font: var(--font-body);
     font-weight: var(--regular);
 }
 
 .ola_panel-content {
-    margin: var(--size-8) 0;
-    padding: 0 var(--inner-gap);
+    margin: var(--row-xgap) 0;
+    padding: 0 var(--column-xpadding);
 
     &.is-fullwidth {
         padding-left: 0;
@@ -79,23 +78,15 @@
         background-color: var(--gray-xlight);
         margin-top: 0;
         margin-bottom: 0;
-        padding-top: var(--size-8);
-        padding-bottom: var(--size-8);
-    }
-}
-.ola_panel-subtitle + .ola_panel-content {
-    margin-top: var(--size-7);
-
-    &.is-highlight {
-        margin-top: 0;
-        padding-top: var(--size-7);
+        padding-top: var(--row-padding);
+        padding-bottom: var(--row-padding);
     }
 }
 
 .ola_panel-footer {
     background: var(--gray-xlight);
     border-radius: 0 0 var(--radius) var(--radius);
-    padding: var(--inner-gap);
+    padding: var(--row-padding) var(--column-xpadding);
 
     @media (--from-width-1) {
         padding-top: var(--size-3);

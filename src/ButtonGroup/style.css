@@ -4,7 +4,7 @@
     max-width: 100%;
 
     & .ola_button + .ola_button {
-        margin-top: var(--inner-gap);
+        margin-top: var(--row-gap);
     }
 
     &.is-reversed {
@@ -12,7 +12,7 @@
 
         & .ola_button + .ola_button {
             margin-top: 0;
-            margin-bottom: var(--inner-gap);
+            margin-bottom: var(--row-gap);
         }
     }
 
