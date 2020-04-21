@@ -9,10 +9,16 @@
     border-collapse: collapse;
     position: relative;
 
+    & tr {
+        --background: var(--white);
+        background: var(--background);
+    }
+
     & td,
     & th {
         border: none;
         height: var(--size-8);
+        background: var(--background);
     }
 
     & th {
@@ -47,7 +53,6 @@
         & thead {
           & th {
             position: sticky;
-            background: white;
           }
         }
     }
@@ -64,7 +69,7 @@
 .ola_tableRow {
     &.is-selectable:hover,
     &.is-checked {
-        background-color: var(--gray-xlight);
+        --background: var(--gray-xlight);
         color: var(--black);
     }
 }
@@ -88,7 +93,7 @@
         padding-right: 0;
         position: sticky;
         right: 0;
-        background: linear-gradient(to right, transparent, var(--white) var(--size-8));
+        background: linear-gradient(to right, transparent, var(--background) var(--size-8));
     }
     &.is-check {
         padding-left: var(--size-4);

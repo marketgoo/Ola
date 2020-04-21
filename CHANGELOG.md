@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
 
+### Fixed
+- Background of `TableCell` in a `TableRow` with `is-selectable` class.
+
 ## [0.5.0] - 2020-04-07
 ### Added
 - New icon `plus` [#90]
