@@ -59,7 +59,7 @@
   display: grid;
   grid-template-areas: "title" "intro";
   grid-template-columns: 1fr auto;
-  grid-column-gap: var(--column-gap);
+  grid-column-gap: var(--size-8);
   grid-row-gap: var(--size-3);
   flex: 0 0 auto;
   padding: var(--inner-gap);
@@ -97,6 +97,7 @@
 }
 .ola_modal-content {
     padding: var(--size-2) var(--inner-gap);
+    margin-right: var(--size-1);
     flex-shrink: 0;
 
     &:first-child {

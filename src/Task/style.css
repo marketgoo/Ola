@@ -26,16 +26,14 @@
     }
 
     & .ola_task-title {
-            flex: 1 1 auto;
-            @media (--to-width-1) {
-                text-overflow: ellipsis;
-                overflow: hidden;
-                white-space: nowrap;
-            }
+        flex: 1 1 auto;
     }
 
     & .ola_task-extra {
         margin-left: var(--size-6);
+        @media (--to-width-1) {
+            display: none;
+        }
     }
 
     &[open] {
@@ -75,15 +73,6 @@
 
         & .ola_task-extra {
             display: none;
-        }
-
-        & .ola_task-title {
-            @media (--to-width-1) {
-                text-overflow: initial;
-                overflow: auto;
-                white-space: initial;
-                padding-right: 0;
-            }
         }
 
         @media (--to-width-2) {
