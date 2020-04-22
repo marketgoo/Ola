@@ -1,5 +1,5 @@
 .ola_tooltip {
-    --pointer: var(--size-5);
+    --pointer: var(--size-4);
     --width: var(--size-11);
 
     display: inline-block;
@@ -41,8 +41,10 @@
     }
 
     &.is-bottomright,
+    &.is-bottomright-extra,
     &.is-bottomcenter,
-    &.is-bottomleft {
+    &.is-bottomleft,
+    &.is-bottomleft-extra {
         margin-top: calc(var(--pointer) / 2);
 
         &::before {
@@ -52,9 +54,12 @@
             top: calc(var(--pointer) * -1);
         }
     }
+
     &.is-topright,
+    &.is-topright-extra,
     &.is-topcenter,
-    &.is-topleft {
+    &.is-topleft,
+    &.is-topleft-extra {
         bottom: 100%;
         margin-bottom: calc(var(--pointer) / 2);
 
@@ -75,6 +80,22 @@
         }
     }
 
+    &.is-topright-extra,
+    &.is-bottomright-extra {
+        left: 0;
+
+        &::before {
+            left: calc(var(--pointer) / 2);
+        }
+    }
+
+    &.is-topright-extra {
+        border-bottom-left-radius: 0;
+    }
+    &.is-bottomright-extra {
+        border-top-left-radius: 0;
+    }
+
     &.is-topleft,
     &.is-bottomleft {
         right: calc(50% - var(--pointer) * 2);
@@ -82,6 +103,20 @@
         &::before {
             right: var(--pointer);
         }
+    }
+    &.is-topleft-extra,
+    &.is-bottomleft-extra {
+        right: 0;
+
+        &::before {
+            right: calc(var(--pointer) / 2);
+        }
+    }
+    &.is-topleft-extra {
+        border-bottom-right-radius: 0;
+    }
+    &.is-bottomleft-extra {
+        border-top-right-radius: 0;
     }
     &.is-topcenter,
     &.is-bottomcenter {
@@ -102,11 +137,15 @@
         display: block;
 
         &.is-bottomright,
+        &.is-bottomright-extra,
         &.is-bottomcenter,
         &.is-bottomleft,
+        &.is-bottomleft-extra,
         &.is-topright,
+        &.is-topright-extra,
         &.is-topcenter,
-        &.is-topleft {
+        &.is-topleft,
+        &.is-topleft-extra {
             display: block;
             animation: tooltip-show 200ms;
         }

@@ -66,11 +66,13 @@ function getClassPosition (element) {
 
   const el_left = left + (width / 2)
   const el_top = top + (height / 2)
+  const extraMargin = 40;
 
   const heightPosition = ((parentHeight * 0.5) < el_top ) ? 'top' : 'bottom'
   const widthPosition = ((parentWidth * 0.33) > el_left) ? 'right' : ((parentWidth * 0.66) > el_left) ? 'center' : 'left'
+  const extraPosition = (left < extraMargin) || (left + width) > (parentWidth - extraMargin) ? '-extra' : '';
 
-  return `${heightPosition}${widthPosition}`
+  return `${heightPosition}${widthPosition}${extraPosition}`
 }
 
 function getElementPosition(element) {
