@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Background of `TableCell` in a `TableRow` with `is-selectable` class.
 - `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
+- Improved position calculation of the `Tooltip` within a scrollable element [#109], [#110]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -266,6 +267,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#104]: https://github.com/marketgoo/Ola/issues/104
 [#105]: https://github.com/marketgoo/Ola/issues/105
 [#106]: https://github.com/marketgoo/Ola/issues/106
+[#109]: https://github.com/marketgoo/Ola/issues/109
+[#110]: https://github.com/marketgoo/Ola/issues/110
 [#112]: https://github.com/marketgoo/Ola/issues/112
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
