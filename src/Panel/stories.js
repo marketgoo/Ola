@@ -58,7 +58,7 @@ storiesOf('Panel')
         <p>Panel content</p>
       </PanelContent>
       <PanelFooter>
-        <ButtonGroup reversed>
+        <ButtonGroup variant="reversed">
           <Button variant='primary'>Primary</Button>
           <Button variant='secondary'>Default Button</Button>
         </ButtonGroup>

@@ -125,6 +125,21 @@
 .ola_modal-footer {
     padding: var(--inner-gap);
     flex: 0 0 auto;
+
+    @media (--from-width-1) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (--from-width-2) {
+        flex-wrap: nowrap;
+    }
+
+    & > .is-reversed {
+        margin-left: auto;
+    }
 }
 
 @keyframes modal-show {

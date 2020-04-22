@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Background of `TableCell` in a `TableRow` with `is-selectable` class.
+- `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
 
 ## [0.5.0] - 2020-04-07
 ### Added

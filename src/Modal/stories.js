@@ -133,6 +133,9 @@ storiesOf('Modal')
           Lorem ipsum
         </ModalContent>
         <ModalFooter>
+          <div>
+            Text in the footer
+          </div>
           <ButtonGroup variant='reversed'>
             <Button variant='primary'>Close</Button>
           </ButtonGroup>
