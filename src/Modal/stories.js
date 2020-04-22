@@ -8,6 +8,7 @@ import ModalContent from './Content'
 import ModalFooter from './Footer'
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
+import SearchField from '../SearchField'
 
 import Panel from '../Panel'
 import PanelContent from '../Panel/Content'
@@ -68,7 +69,7 @@ storiesOf('Modal')
             <ProgressBar value="20" max="100" />
           </ModalHeader>
           <ModalContent>
-            <h1>No scroll panel content</h1>
+            <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
           </ModalContent>
           <ModalContent variant="scroll">
             <h1>Panel content</h1>

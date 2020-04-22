@@ -66,7 +66,7 @@
   display: grid;
   grid-row-gap: var(--row-gap);
   flex: 0 0 auto;
-  padding: var(--row-xpadding) var(--column-xpadding);
+  padding: var(--row-xpadding) var(--column-xpadding) 0;
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
@@ -105,7 +105,8 @@
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: var(--row-gap) var(--column-xpadding);
+    padding: 0 var(--column-xpadding);
+    margin: var(--row-xgap) 0 0;
     flex-shrink: 0;
 
     &:first-child {
@@ -128,7 +129,7 @@
     }
 }
 .ola_modal-footer {
-    padding: var(--row-gap) var(--column-xpadding) var(--row-xpadding);
+    padding: var(--row-xgap) var(--column-xpadding) var(--row-xpadding);
     flex: 0 0 auto;
 }
 
