@@ -40,6 +40,11 @@
                 margin-top: var(--size-8);
             }
         }
+        @media (--to-width-2) {
+            & .ola_modal-title {
+                margin-right: var(--size-8);
+            }
+        }
     }
 }
 

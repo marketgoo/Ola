@@ -144,7 +144,7 @@ storiesOf('Modal')
     <>
       <Modal open>
         <ModalHeader
-          title="Modal Header"
+          title="Do you want to remove"
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
           <ProgressBar value="20" max="100" />
         </ModalHeader>
