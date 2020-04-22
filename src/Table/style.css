@@ -53,10 +53,10 @@
         & thead {
           & th {
             position: sticky;
+            top: 0;
           }
         }
     }
-
 }
 
 .ola_table-container.is-responsive {
