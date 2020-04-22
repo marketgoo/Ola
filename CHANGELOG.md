@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.6.0] - Unreleased
+### Added
+- New variant `fullwidth-scroll` to `ModalContent` [#112]
+
+### Fixed
+- Background of `TableCell` in a `TableRow` with `is-selectable` class.
+- `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
+
 ## [0.5.0] - 2020-04-07
 ### Added
 - New icon `plus` [#90]
@@ -258,7 +266,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#104]: https://github.com/marketgoo/Ola/issues/104
 [#105]: https://github.com/marketgoo/Ola/issues/105
 [#106]: https://github.com/marketgoo/Ola/issues/106
+[#112]: https://github.com/marketgoo/Ola/issues/112
 
+[0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/marketgoo/Ola/compare/v0.2.2...v0.3.0

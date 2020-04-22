@@ -105,13 +105,17 @@
 
     &:nth-last-child(2) {
         padding-bottom: var(--inner-gap);
+        border-bottom-right-radius: var(--radius);
+        border-bottom-left-radius: var(--radius);
     }
 
+    &.is-fullwidth-scroll,
     &.is-fullwidth {
         padding-left: 0;
         padding-right: 0;
     }
 
+    &.is-fullwidth-scroll,
     &.is-scroll {
         flex-shrink: 1;
         min-height: 0;
@@ -121,6 +125,21 @@
 .ola_modal-footer {
     padding: var(--inner-gap);
     flex: 0 0 auto;
+
+    @media (--from-width-1) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (--from-width-2) {
+        flex-wrap: nowrap;
+    }
+
+    & > .is-reversed {
+        margin-left: auto;
+    }
 }
 
 @keyframes modal-show {
