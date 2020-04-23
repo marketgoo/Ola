@@ -69,35 +69,35 @@
     }
 
     & > * {
-        padding-left: var(--column-xpadding);
-        padding-right: var(--column-xpadding);
+        padding-left: var(--column-gap-3);
+        padding-right: var(--column-gap-3);
     }
 
     & > :first-child {
-        margin-top: var(--row-xpadding);
+        margin-top: var(--row-gap-3);
     }
     & > :last-child {
-        margin-bottom: var(--row-xpadding);
+        margin-bottom: var(--row-gap-3);
     }
 
     & > * + * {
-        margin-top: var(--row-gap);
+        margin-top: var(--row-gap-2);
     }
 
     & > .ola_modal-header + *,
     & > * + .ola_modal-footer {
-        margin-top: var(--row-xgap);
+        margin-top: var(--row-gap-3);
     }
 }
 
 .ola_modal-header {
   display: grid;
-  grid-row-gap: var(--row-gap);
+  grid-row-gap: var(--row-gap-1);
   flex: 0 0 auto;
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
-        grid-column-gap: var(--column-gap);
+        grid-column-gap: var(--column-gap-2);
 
         @media (--from-width-2) {
             grid-template-areas: "title extra" "intro extra";

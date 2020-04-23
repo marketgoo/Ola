@@ -4,7 +4,7 @@
     max-width: 100%;
 
     & .ola_button + .ola_button {
-        margin-top: var(--row-gap);
+        margin-top: var(--row-gap-1);
     }
 
     &.is-reversed {
@@ -12,7 +12,7 @@
 
         & .ola_button + .ola_button {
             margin-top: 0;
-            margin-bottom: var(--row-gap);
+            margin-bottom: var(--row-gap-1);
         }
     }
 
@@ -25,7 +25,7 @@
         align-items: center;
 
         & .ola_button + .ola_button {
-            margin-left: var(--size-6);
+            margin-left: var(--column-gap-1);
             margin-top: 0;
         }
 
@@ -35,7 +35,7 @@
             & .ola_button + .ola_button {
                 margin-left: 0;
                 margin-bottom: 0;
-                margin-right: var(--size-6);
+                margin-right: var(--column-gap-1);
             }
         }
     }
