@@ -185,3 +185,100 @@ storiesOf('Modal')
       </Modal>
     </>
   )
+
+  .add('Only header', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+      </Modal>
+    </>
+  )
+
+  .add('Only header + footer', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only footer', () =>
+    <>
+      <Modal open>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only content', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Two contents', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Only content + footer', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only header + content', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
