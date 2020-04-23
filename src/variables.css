@@ -86,15 +86,15 @@
     @media (--from-width-1) {
         --column-gap: var(--size-5);
         --column-xgap: var(--size-6);
-        --column-padding: var(--size-5);
-        --column-xpadding: var(--size-6);
+        --column-padding: var(--size-6);
+        --column-xpadding: var(--size-7);
     }
 
     @media (--from-height-1) {
         --row-gap: var(--size-5);
         --row-xgap: var(--size-6);
-        --row-padding: var(--size-5);
-        --row-xpadding: var(--size-6);
+        --row-padding: var(--size-6);
+        --row-xpadding: var(--size-7);
     }
 
     @media (--from-width-2) {

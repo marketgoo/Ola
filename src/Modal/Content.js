@@ -4,9 +4,9 @@ import cx from 'classnames'
 
 const ModalContent = ({ className, variant, children, ...props }) => {
   return (
-    <section className={cx('ola_modal-content', variant && `is-${variant}`, className)} {...props}>
+    <div className={cx('ola_modal-content', variant && `is-${variant}`, className)} {...props}>
       {children}
-    </section>
+    </div>
   )
 }
 

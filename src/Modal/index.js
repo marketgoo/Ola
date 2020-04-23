@@ -36,7 +36,7 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
     <dialog className={cx('ola_modal', variant && `is-${variant}`, {'is-closable': closable}, className)} {...props} ref={modal} onClick={clickOutside}>
       { open &&
         <>
-          {children}
+          <div className="ola_modal-container">{children}</div>
           { closable &&
           <ButtonIcon type="button" onClick={() => modal.current.close()} className={'ola_modal-close'}>
             <Icon name="close" />

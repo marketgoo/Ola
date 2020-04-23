@@ -4,12 +4,10 @@
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
     max-width: 850px;
-    max-height: calc(100vh - 5vw);
     width: calc(100% - 5vw);
     margin: 2.5vw auto 0;
     position: fixed;
     display: none;
-    flex-direction: column;
     box-sizing: border-box;
     top: 0;
     left: 0;
@@ -17,7 +15,7 @@
     padding: 0;
 
     &[open] {
-        display: flex;
+        display: block;
         animation: fadeIn var(--duration);
         animation-fill-mode: both;
     }
@@ -25,7 +23,6 @@
     @media (--from-width-1) {
         margin: 5vh auto 0;
         width: calc(100% - 10vw);
-        max-height: calc(100vh - 10vh);
     }
 
     &.is-center {
@@ -46,10 +43,6 @@
             }
         }
     }
-    
-    & section.ola_modal-content:only-of-type{
-        padding-bottom: var(--row-xgap);
-    }
 }
 
 .ola_modal::backdrop {
@@ -66,11 +59,41 @@
   top: 0; right: 0; bottom: 0; left: 0;
 }
 
+.ola_modal-container {
+    flex-direction: column;
+    display: flex;
+    max-height: calc(100vh - 5vw);
+
+    @media (--from-width-1) {
+        max-height: calc(100vh - 10vh);
+    }
+
+    & > * {
+        padding-left: var(--column-xpadding);
+        padding-right: var(--column-xpadding);
+    }
+
+    & > :first-child {
+        margin-top: var(--row-xpadding);
+    }
+    & > :last-child {
+        margin-bottom: var(--row-xpadding);
+    }
+
+    & > * + * {
+        margin-top: var(--row-gap);
+    }
+
+    & > .ola_modal-header + *,
+    & > * + .ola_modal-footer {
+        margin-top: var(--row-xgap);
+    }
+}
+
 .ola_modal-header {
   display: grid;
   grid-row-gap: var(--row-gap);
   flex: 0 0 auto;
-  padding: var(--row-xpadding) var(--column-xpadding) var(--row-padding);
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
@@ -109,15 +132,7 @@
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: 0 var(--column-xpadding);
-    margin: var(--row-xgap) 0 0;
     flex-shrink: 0;
-
-    &:nth-last-child(2) {
-        margin-bottom: var(--row-xpadding);
-        border-bottom-right-radius: var(--radius);
-        border-bottom-left-radius: var(--radius);
-    }
 
     &.is-fullwidth-scroll,
     &.is-fullwidth {
@@ -133,7 +148,6 @@
     }
 }
 .ola_modal-footer {
-    padding: var(--row-xgap) var(--column-xpadding) var(--row-xpadding);
     flex: 0 0 auto;
 
     @media (--from-width-1) {
