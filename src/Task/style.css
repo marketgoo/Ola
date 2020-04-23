@@ -194,6 +194,13 @@
         }
     }
 
+    & img,
+    & video,
+    & iframe {
+        max-width: 100%;
+        height: auto;
+    }
+
     @media (--to-width-1) {
         padding-left: var(--size-6);
         padding-right: var(--size-6);

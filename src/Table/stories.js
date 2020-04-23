@@ -45,12 +45,12 @@ storiesOf('Table')
     <figure>
       <Table caption="Superheros and sidekicks" stiky>
         <thead>
-          <tr>
+          <TableRow>
             <TableCell header variant="check"></TableCell>
             <TableCell header>Page</TableCell>
             <TableCell header variant="numeric">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
-          </tr>
+          </TableRow>
         </thead>
         <tbody>
           { data.map( (row, idx) => (
@@ -68,20 +68,20 @@ storiesOf('Table')
     <figure>
       <Table caption="Superheros and sidekicks" stiky>
         <thead>
-          <tr>
+          <TableRow>
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
-          </tr>
+          </TableRow>
         </thead>
         <tbody>
           { data.map( (row, idx) => (
-            <tr key={idx}>
+            <TableRow key={idx}>
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
               <TableCell variant="action">{row.action}</TableCell>
-            </tr>
+            </TableRow>
           ) ) }
         </tbody>
       </Table>
@@ -91,7 +91,7 @@ storiesOf('Table')
     <figure>
       <Table caption="Superheros and sidekicks" responsive stiky>
         <thead>
-          <tr>
+          <TableRow>
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
@@ -100,11 +100,11 @@ storiesOf('Table')
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
             <TableCell header variant="action">Actions</TableCell>
-          </tr>
+          </TableRow>
         </thead>
         <tbody>
           { data.map( (row, idx) => (
-            <tr key={idx}>
+            <TableRow key={idx}>
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
@@ -113,7 +113,7 @@ storiesOf('Table')
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
               <TableCell variant="action">{row.action}</TableCell>
-            </tr>
+            </TableRow>
           ) ) }
         </tbody>
       </Table>

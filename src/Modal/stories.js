@@ -133,6 +133,9 @@ storiesOf('Modal')
           Lorem ipsum
         </ModalContent>
         <ModalFooter>
+          <div>
+            Text in the footer
+          </div>
           <ButtonGroup variant='reversed'>
             <Button variant='primary'>Close</Button>
           </ButtonGroup>
@@ -149,8 +152,35 @@ storiesOf('Modal')
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
           <ProgressBar value="20" max="100" />
         </ModalHeader>
-        <ModalContent variant="fullwidth">
-            Panel content
+        <ModalContent variant="fullwidth" style={{ background: 'var(--gray-xlight)'}}>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent variant="fullwidth-scroll" style={{ background: 'var(--gray-xlight)'}}>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
+          <p>Modal content</p>
         </ModalContent>
       </Modal>
     </>
