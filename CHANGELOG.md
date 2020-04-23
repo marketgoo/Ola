@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Background of `TableCell` in a `TableRow` with `is-selectable` class.
 - `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
 - Improved position calculation of the `Tooltip` within a scrollable element [#109], [#110]
+- Fixed big images overflow in `TaskBody`.
 
 ## [0.5.0] - 2020-04-07
 ### Added
