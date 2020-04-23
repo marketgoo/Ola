@@ -46,6 +46,10 @@
             }
         }
     }
+    
+    & section.ola_modal-content:only-of-type{
+        padding-bottom: var(--row-xgap);
+    }
 }
 
 .ola_modal::backdrop {
@@ -66,7 +70,7 @@
   display: grid;
   grid-row-gap: var(--row-gap);
   flex: 0 0 auto;
-  padding: var(--row-xpadding) var(--column-xpadding) 0;
+  padding: var(--row-xpadding) var(--column-xpadding) var(--row-padding);
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
@@ -109,12 +113,8 @@
     margin: var(--row-xgap) 0 0;
     flex-shrink: 0;
 
-    &:first-child {
-        padding-top: var(--row-padding);
-    }
-
     &:nth-last-child(2) {
-        padding-bottom: var(--row-padding);
+        margin-bottom: var(--row-xpadding);
     }
 
     &.is-fullwidth {
