@@ -4,12 +4,10 @@
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
     max-width: 850px;
-    max-height: calc(100vh - 5vw);
     width: calc(100% - 5vw);
     margin: 2.5vw auto 0;
     position: fixed;
     display: none;
-    flex-direction: column;
     box-sizing: border-box;
     top: 0;
     left: 0;
@@ -17,7 +15,7 @@
     padding: 0;
 
     &[open] {
-        display: flex;
+        display: block;
         animation: fadeIn var(--duration);
         animation-fill-mode: both;
     }
@@ -25,7 +23,6 @@
     @media (--from-width-1) {
         margin: 5vh auto 0;
         width: calc(100% - 10vw);
-        max-height: calc(100vh - 10vh);
     }
 
     &.is-center {
@@ -35,8 +32,15 @@
     }
 
     &.is-closable {
-        & .ola_modal-extra {
-            margin-top: var(--size-7);
+        @media (--from-width-2) {
+            & .ola_modal-extra {
+                margin-top: var(--size-8);
+            }
+        }
+        @media (--to-width-2) {
+            & .ola_modal-title {
+                margin-right: var(--size-8);
+            }
         }
     }
 }
@@ -55,59 +59,80 @@
   top: 0; right: 0; bottom: 0; left: 0;
 }
 
+.ola_modal-container {
+    flex-direction: column;
+    display: flex;
+    max-height: calc(100vh - 5vw);
+
+    @media (--from-width-1) {
+        max-height: calc(100vh - 10vh);
+    }
+
+    & > * {
+        padding-left: var(--column-gap-3);
+        padding-right: var(--column-gap-3);
+    }
+
+    & > :first-child {
+        margin-top: var(--row-gap-3);
+    }
+    & > :last-child {
+        margin-bottom: var(--row-gap-3);
+    }
+
+    & > * + * {
+        margin-top: var(--row-gap-2);
+    }
+
+    & > .ola_modal-header + *,
+    & > * + .ola_modal-footer {
+        margin-top: var(--row-gap-3);
+    }
+}
+
 .ola_modal-header {
   display: grid;
-  grid-template-areas: "title" "intro";
-  grid-template-columns: 1fr auto;
-  grid-column-gap: var(--column-gap);
-  grid-row-gap: var(--size-3);
+  grid-row-gap: var(--row-gap-1);
   flex: 0 0 auto;
-  padding: var(--inner-gap);
 
   &.has-extra {
         grid-template-areas: "title" "intro" "extra";
+        grid-column-gap: var(--column-gap-2);
 
         @media (--from-width-2) {
             grid-template-areas: "title extra" "intro extra";
             grid-template-columns: 1fr auto;
         }
-    }
-}
 
-.ola_modal-extra {
-    grid-area: extra;
+        & .ola_modal-title {
+            grid-area: title;
+        }
+        & .ola_modal-intro {
+            grid-area: intro;
+        }
+        & .ola_modal-extra {
+            grid-area: extra;
+        }
+    }
 }
 
 .ola_modal-close {
     position: absolute;
-    top: var(--size-4);
-    right: var(--size-4);
+    top: var(--size-5);
+    right: var(--size-5);
 }
 .ola_modal-title {
-    grid-area: title;
     margin: 0;
     font: var(--font-headline);
     font-weight: var(--regular);
 }
 .ola_modal-intro {
-    grid-area: intro;
     margin: 0;
     font: var(--font-callout);
     color: var(--gray);
 }
 .ola_modal-content {
-    padding: var(--size-2) var(--inner-gap);
     flex-shrink: 0;
-
-    &:first-child {
-        padding-top: var(--inner-gap);
-    }
-
-    &:nth-last-child(2) {
-        padding-bottom: var(--inner-gap);
-        border-bottom-right-radius: var(--radius);
-        border-bottom-left-radius: var(--radius);
-    }
 
     &.is-fullwidth-scroll,
     &.is-fullwidth {
@@ -123,7 +148,6 @@
     }
 }
 .ola_modal-footer {
-    padding: var(--inner-gap);
     flex: 0 0 auto;
 
     @media (--from-width-1) {

@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
 - Improved position calculation of the `Tooltip` within a scrollable element [#109], [#110]
 - Fixed big images overflow in `TaskBody`.
+- Refactored the css code for padding/margin/gaps using the new css variables `--row-gap-1`, `--row-gap-2`, `--row-gap-3`, `--column-gap-1`, `--column-gap-2`, `--column-gap-3`, and improved the responsiveness.
+
+### Removed
+- The css variable `--inner-gap`
 
 ## [0.5.0] - 2020-04-07
 ### Added

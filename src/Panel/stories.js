@@ -52,7 +52,6 @@ storiesOf('Panel')
         title={<>Title with <strong>Strong</strong></>}
         intro={<>Lorem ipsum for testing intro with <em>cursive</em></>}
       >
-        Optional extra content
       </PanelHeader>
       <PanelContent className="className" title={<>Conten Titles with <a href="#">a link</a></>}>
         <p>Panel content</p>

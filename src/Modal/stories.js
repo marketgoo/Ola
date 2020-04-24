@@ -8,6 +8,7 @@ import ModalContent from './Content'
 import ModalFooter from './Footer'
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
+import SearchField from '../SearchField'
 
 import Panel from '../Panel'
 import PanelContent from '../Panel/Content'
@@ -68,7 +69,7 @@ storiesOf('Modal')
             <ProgressBar value="20" max="100" />
           </ModalHeader>
           <ModalContent>
-            <h1>No scroll panel content</h1>
+            <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
           </ModalContent>
           <ModalContent variant="scroll">
             <h1>Panel content</h1>
@@ -127,7 +128,6 @@ storiesOf('Modal')
     <>
       <Modal open closable={false}>
         <ModalHeader title="Modal center not closable">
-          <ProgressBar value="20" max="100" />
         </ModalHeader>
         <ModalContent>
           Lorem ipsum
@@ -148,7 +148,7 @@ storiesOf('Modal')
     <>
       <Modal open>
         <ModalHeader
-          title="Modal Header"
+          title="Do you want to remove"
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
           <ProgressBar value="20" max="100" />
         </ModalHeader>
@@ -180,6 +180,103 @@ storiesOf('Modal')
           <p>Modal content</p>
           <p>Modal content</p>
           <p>Modal content</p>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Only header', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+      </Modal>
+    </>
+  )
+
+  .add('Only header + footer', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only footer', () =>
+    <>
+      <Modal open>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only content', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Two contents', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
+  .add('Only content + footer', () =>
+    <>
+      <Modal open>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalFooter>
+          <ButtonGroup variant='reversed'>
+            <Button variant='primary'>Close</Button>
+          </ButtonGroup>
+        </ModalFooter>
+      </Modal>
+    </>
+  )
+
+  .add('Only header + content', () =>
+    <>
+      <Modal open>
+        <ModalHeader
+          title="Do you want to remove"
+          intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
+        </ModalHeader>
+        <ModalContent>
+          <p>Modal content</p>
+        </ModalContent>
+        <ModalContent>
           <p>Modal content</p>
         </ModalContent>
       </Modal>

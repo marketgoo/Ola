@@ -5,39 +5,43 @@ exports[`Default Modal 1`] = `
   className="ola_modal is-closable"
   onClick={[Function]}
 >
-  <header
-    className="ola_modal-header has-extra"
+  <div
+    className="ola_modal-container"
   >
-    <h2
-      className="ola_modal-title"
+    <header
+      className="ola_modal-header has-extra"
     >
-      Modal Header
-    </h2>
-    <p
-      className="ola_modal-intro"
-    >
-      <strong>
-        Lorem ipsum
-      </strong>
-       for testing intro
-    </p>
+      <h2
+        className="ola_modal-title"
+      >
+        Modal Header
+      </h2>
+      <p
+        className="ola_modal-intro"
+      >
+        <strong>
+          Lorem ipsum
+        </strong>
+         for testing intro
+      </p>
+      <div
+        className="ola_modal-extra"
+      >
+        This is the extra content
+      </div>
+    </header>
     <div
-      className="ola_modal-extra"
+      className="ola_modal-content"
     >
-      This is the extra content
+      <p>
+        Modal content
+      </p>
     </div>
-  </header>
-  <div
-    className="ola_modal-content"
-  >
-    <p>
-      Modal content
-    </p>
-  </div>
-  <div
-    className="ola_modal-footer"
-  >
-    This is the footer
+    <div
+      className="ola_modal-footer"
+    >
+      This is the footer
+    </div>
   </div>
   <button
     className="ola_buttonIcon is-primary ola_modal-close"
