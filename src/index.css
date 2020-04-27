@@ -1,6 +1,5 @@
 @import './variables.css';
 @import './defaults.css';
-@import './utils/utils.css';
 
 /* Components */
 @import './Accordion/style.css';
@@ -29,6 +28,9 @@
 @import './Task/style.css';
 @import './TaskGroup/style.css';
 @import './Tooltip/style.css';
+
+/* Helpers */
+@import './utils/utils.css';
 
 /* Layouts */
 @import './layouts/ly-imgContent.css';

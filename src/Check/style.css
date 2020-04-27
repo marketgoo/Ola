@@ -1,6 +1,7 @@
 .ola_check {
     padding: var(--size-3) 0;
     display: inline-block;
+    font: var(--font-callout);
 
     &.is-area {
         display: block;
@@ -50,7 +51,6 @@
     opacity: 0;
 }
 .ola_check-label {
-    font: var(--font-callout);
     display: flex;
     align-items: center;
 
@@ -101,7 +101,11 @@
 .ola_check-input:hover ~ .ola_check-label::before {
     --color: var(--brand-dark);
 }
-
+.ola_check-input:disabled ~ .ola_check-label::before {
+    cursor: not-allowed;
+    pointer-events: none;
+    --color: var(--gray-xlight);
+}
 /* Changes for radio */
 .ola_check-input[type="radio"] {
     & ~ .ola_check-label::before {
