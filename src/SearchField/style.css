@@ -80,6 +80,11 @@
 
     &:disabled {
         border: solid 2px;
+        border-left: none;
+    }
+
+    &.is-busy {
+        border: none;
     }
 
     & .ola_spinner {
