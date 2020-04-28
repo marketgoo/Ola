@@ -73,8 +73,11 @@
 }
 
 .ola_panel-content {
+    --background: var(--white);
+
     margin: var(--row-gap-2) 0;
     padding: 0 var(--column-gap-3);
+    background: var(--background);
 
     &.is-fullwidth {
         padding-left: 0;
@@ -82,7 +85,8 @@
     }
 
     &.is-highlight {
-        background-color: var(--gray-xlight);
+        --background: var(--gray-xlight);
+
         margin-top: 0;
         margin-bottom: 0;
         padding-top: var(--row-gap-2);

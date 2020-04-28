@@ -8,6 +8,9 @@ import PanelFooter from './Footer'
 import ProgressBar from '../ProgressBar'
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
+import Table from '../Table'
+import TableCell from '../Table/Cell'
+import TableRow from '../Table/Row'
 
 
 storiesOf('Panel')
@@ -36,7 +39,22 @@ storiesOf('Panel')
         <p>Panel content full width</p>
       </PanelContent>
       <PanelContent title="Conten Title" variant="highlight">
-        <p>Panel content highlight</p>
+        <Table caption="Superheros and sidekicks" stiky>
+          <thead>
+            <TableRow>
+              <TableCell header>Page</TableCell>
+              <TableCell header variant="numeric">Incoming links</TableCell>
+              <TableCell header variant="center">Popularity</TableCell>
+            </TableRow>
+          </thead>
+          <tbody>
+            <TableRow>
+              <TableCell>Page title</TableCell>
+              <TableCell variant="numeric">23K</TableCell>
+              <TableCell variant="center">55K</TableCell>
+            </TableRow>
+          </tbody>
+        </Table>
       </PanelContent>
       <PanelFooter>
         <ButtonGroup>
