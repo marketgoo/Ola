@@ -78,8 +78,5 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "dialog-polyfill": "^0.5.1"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
   }
 }
