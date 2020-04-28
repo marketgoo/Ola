@@ -17,7 +17,7 @@ const SearchField = ({ id, textButton, busy, placeholder, description, ...props 
           <ButtonIcon tabIndex="-1" variant="secondary" className="ola_searchField-icon"><Icon name="search" /></ButtonIcon>
           {busy && <Spinner />}
         </div>
-        { textButton && <Button variant="primary" disabled busy={busy && textButton} className="ola_searchField-button" tabIndex="-1">{ textButton }</Button> }
+        { textButton && <Button variant="primary" busy={busy && textButton} className="ola_searchField-button" tabIndex="-1">{ textButton }</Button> }
       </div>
       { description && <p className="ola_searchField-description">{description}</p> }
     </div>
