@@ -21,6 +21,7 @@
     top: 0;
     left: 0;
 
+    &:disabled,
     &:active,
     &:hover {
         background: none;
@@ -33,7 +34,7 @@
     & .ola_spinner {
         position: absolute;
         top: var(--size-3);
-        right: var(--size-3);
+        left: var(--size-3);
         color: var(--gray-light);
     }
 
@@ -76,11 +77,6 @@
 
     &:focus {
         box-shadow: none;
-    }
-
-    &:disabled {
-        border: solid 2px;
-        border-left: none;
     }
 
     &.is-busy {

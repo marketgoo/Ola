@@ -7,17 +7,16 @@ import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 import Spinner from '../Spinner'
 
-const SearchField = ({ id, textButton, busy, placeholder, description, ...props }) => {
+const SearchField = ({ id, textButton, busy, placeholder, description, disabled, ...props }) => {
   return (
     <div className="ola_searchField">
       <div className="ola_searchField-form">
         <div className="ola_searchField-field">
           <label htmlFor={id} className="ola_searchField-label">{ placeholder }</label>
-          <Input type="search" id={id} className="ola_searchField-input" placeholder={placeholder} {...props} />
-          <ButtonIcon tabIndex="-1" variant="secondary" className="ola_searchField-icon"><Icon name="search" /></ButtonIcon>
-          {busy && <Spinner />}
+          <Input type="search" id={id} className="ola_searchField-input" disabled={disabled} placeholder={placeholder} {...props} />
+          { busy ? <Spinner /> : <ButtonIcon tabIndex="-1" variant="secondary" className="ola_searchField-icon" disabled={disabled}><Icon name="search" /></ButtonIcon> }
         </div>
-        { textButton && <Button variant="primary" busy={busy && textButton} className="ola_searchField-button" tabIndex="-1">{ textButton }</Button> }
+        { textButton && <Button variant="primary" disabled={disabled} busy={busy && textButton} className="ola_searchField-button" tabIndex="-1">{ textButton }</Button> }
       </div>
       { description && <p className="ola_searchField-description">{description}</p> }
     </div>
@@ -27,6 +26,7 @@ const SearchField = ({ id, textButton, busy, placeholder, description, ...props 
 SearchField.defaultProps = {
   textButton: null,
   description: null,
+  disabled: false,
   busy: false
 }
 
@@ -37,6 +37,8 @@ SearchField.propTypes = {
   textButton: PT.string,
   /** Placeholder ( required because works like label )*/
   placeholder: PT.string.isRequired,
+  /** Disabled */
+  disabled: PT.bool,
   /** Description */
   description: PT.oneOfType([
     PT.arrayOf(PT.node),
