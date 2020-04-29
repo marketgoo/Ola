@@ -8,6 +8,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.6.0] - Unreleased
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
+- Improvements in `SearchField` [#119], [#120], #121:
+  - Added `disabled` prop
+  - Added `description` prop
+  - Added the search icon at the left
+  - Moved the spinner of `busy` state to the left.
+
+### Removed
+- The css variable `--inner-gap`
 
 ### Fixed
 - Background of `TableCell` in a `TableRow` with `is-selectable` class.
@@ -17,9 +25,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Refactored the css code for padding/margin/gaps using the new css variables `--row-gap-1`, `--row-gap-2`, `--row-gap-3`, `--column-gap-1`, `--column-gap-2`, `--column-gap-3`, and improved the responsiveness.
 - Added styles for disabled state to `Check`.
 - Allow to override the default text style of the `Check` label
-
-### Removed
-- The css variable `--inner-gap`
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -277,6 +282,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#109]: https://github.com/marketgoo/Ola/issues/109
 [#110]: https://github.com/marketgoo/Ola/issues/110
 [#112]: https://github.com/marketgoo/Ola/issues/112
+[#119]: https://github.com/marketgoo/Ola/issues/119
+[#120]: https://github.com/marketgoo/Ola/issues/120
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
