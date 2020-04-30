@@ -8,9 +8,12 @@ storiesOf('SearchField')
     <figure><SearchField id="search" busy placeholder="Filter elements" /></figure>
   ))
   .add('Busy with button', () => (
-    <figure><SearchField id="search-loading" busy placeholder="Filter elements" textButton="Test Search" /></figure>
+    <figure><SearchField id="search-loading" busy placeholder="Filter elements" textButton="Searching..." /></figure>
   ))
-  .add('Default', () => (
-    <figure><SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" /></figure>
+  .add('Disabled', () => (
+    <figure><SearchField id="search" disabled placeholder="Filter elements" textButton="Search" /></figure>
+  ))
+  .add('Default with description', () => (
+    <figure><SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" description="Use commas to search for more than one keyword" /></figure>
   ))
   

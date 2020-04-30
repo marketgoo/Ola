@@ -2,6 +2,8 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Tag from './'
+import ButtonIcon from '../ButtonIcon'
+import Icon from '../Icon'
 
 storiesOf('Tag')
   .add('Default', () => (
@@ -21,4 +23,12 @@ storiesOf('Tag')
   ))
   .add('Pro', () => (
     <figure><Tag variant='pro'>Pro Tag</Tag></figure>
+  ))
+  .add('With a ButtonIcon', () => (
+    <figure>
+      <Tag variant='invert'>
+        Pro Tag
+        <ButtonIcon><Icon size="small" name="close" /></ButtonIcon>
+      </Tag>
+    </figure>
   ))

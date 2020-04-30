@@ -1,4 +1,7 @@
 .ola_searchField {
+    
+}
+.ola_searchField-form {
     display: flex;
     border-radius: var(--radius-big);
     transition-property: box-shadow;
@@ -8,6 +11,22 @@
         box-shadow: 0 0 0 4px var(--brand-focus);
     }
 }
+.ola_searchField-description {
+    font: var(--font-caption);
+    margin-top: var(--size-2);
+    color: var(--gray);
+}
+.ola_searchField-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:disabled,
+    &:active,
+    &:hover {
+        background: none;
+    }
+}
 .ola_searchField-field {
     position: relative;
     flex: 1 1 auto;
@@ -15,7 +34,7 @@
     & .ola_spinner {
         position: absolute;
         top: var(--size-3);
-        right: var(--size-3);
+        left: var(--size-3);
         color: var(--gray-light);
     }
 
@@ -39,6 +58,7 @@
 .ola_searchField-input {
     border-radius: var(--radius-big) 0 0 var(--radius-big);
     padding-right: var(--size-8);
+    padding-left: var(--size-8);
     appearance: textField;
 
     &:focus {
@@ -57,6 +77,10 @@
 
     &:focus {
         box-shadow: none;
+    }
+
+    &.is-busy {
+        border: none;
     }
 
     & .ola_spinner {
