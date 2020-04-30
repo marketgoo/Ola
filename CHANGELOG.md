@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Added styles for disabled state to `Check`.
 - Allow to override the default text style of the `Check` label
 - Color conflicts of `ButtonIcon` inside a `Tag`component [#123]
+- Border issue in `TableCell` with variant `action` [#122]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -285,6 +286,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#112]: https://github.com/marketgoo/Ola/issues/112
 [#119]: https://github.com/marketgoo/Ola/issues/119
 [#120]: https://github.com/marketgoo/Ola/issues/120
+[#122]: https://github.com/marketgoo/Ola/issues/122
 [#123]: https://github.com/marketgoo/Ola/issues/123
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
