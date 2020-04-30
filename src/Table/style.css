@@ -93,7 +93,7 @@
         padding-right: 0;
         position: sticky;
         right: 0;
-        background: linear-gradient(to right, transparent, var(--table-background) var(--size-8));
+        background: linear-gradient(to right, transparent, var(--table-background) var(--size-8)) no-repeat;
     }
     &.is-check {
         padding-left: var(--size-4);
