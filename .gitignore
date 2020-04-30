@@ -10,8 +10,6 @@ coverage
 .coverage
 .vscode
 .cache
-package-lock.json
-yarn.lock
 storybook-static
 *.tgz
 lib
