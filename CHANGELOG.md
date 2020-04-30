@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Refactored the css code for padding/margin/gaps using the new css variables `--row-gap-1`, `--row-gap-2`, `--row-gap-3`, `--column-gap-1`, `--column-gap-2`, `--column-gap-3`, and improved the responsiveness.
 - Added styles for disabled state to `Check`.
 - Allow to override the default text style of the `Check` label
+- Color conflicts of `ButtonIcon` inside a `Tag`component [#123]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -284,6 +285,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#112]: https://github.com/marketgoo/Ola/issues/112
 [#119]: https://github.com/marketgoo/Ola/issues/119
 [#120]: https://github.com/marketgoo/Ola/issues/120
+[#123]: https://github.com/marketgoo/Ola/issues/123
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
