@@ -49,7 +49,7 @@ storiesOf('Table')
             <TableCell header variant="check"></TableCell>
             <TableCell header>Page</TableCell>
             <TableCell header variant="numeric">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="numeric">Popularity</TableCell>
           </TableRow>
         </thead>
         <tbody>
@@ -57,7 +57,7 @@ storiesOf('Table')
             <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="numeric">{row.popularity}</TableCell>
             </TableRow>
           ) ) }
         </tbody>
