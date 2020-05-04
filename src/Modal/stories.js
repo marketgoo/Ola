@@ -124,6 +124,16 @@ storiesOf('Modal')
     </>
   )
 
+  .add('Narrow', () =>
+    <>
+      <Modal open variant="narrow">
+        <ModalContent>
+          Lorem ipsum
+        </ModalContent>
+      </Modal>
+    </>
+  )
+
   .add('Not closable', () =>
     <>
       <Modal open closable={false}>

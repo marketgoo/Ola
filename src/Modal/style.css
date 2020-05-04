@@ -25,10 +25,15 @@
         width: calc(100% - 10vw);
     }
 
+    &.is-narrow,
     &.is-center {
         top: 50%;
         margin-top: 0;
         transform: translateY(-50%);
+    }
+
+    &.is-narrow {
+        max-width: var(--size-12);
     }
 
     &.is-closable {

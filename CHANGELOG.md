@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.6.0] - Unreleased
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
+- New variant `narrow` to `Modal`
 - Improvements in `SearchField` [#119], [#120], #121:
   - Added `disabled` prop
   - Added `description` prop

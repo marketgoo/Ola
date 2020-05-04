@@ -69,7 +69,7 @@ Modal.propTypes = {
   /** Open event */
   onOpen: PT.func,
   /** Modal variants */
-  variant: PT.oneOf(['center']),
+  variant: PT.oneOf(['center', 'narrow']),
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,
