@@ -18,7 +18,8 @@
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist --ignore 'src/**/stories.js','src/**/test.js' && postcss src/index.css -o dist/index.css",
     "build:storybook": "build-storybook",
     "publish:storybook": "npm run build:storybook && gh-pages -d storybook-static",
-    "prepack": "npm test && npm run build"
+    "prepack": "npm test && npm run build",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
   "keywords": [
@@ -47,6 +48,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
+    "@percy/storybook": "^3.3.0",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
