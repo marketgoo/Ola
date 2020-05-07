@@ -18,7 +18,7 @@ storiesOf('ProgressCircle')
       <ProgressCircle
         variant="warning"
         value="75"
-        busy="Checking ..."
+        busy="Checking your page..."
         label="Your score" />
     </figure>
   ))

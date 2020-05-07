@@ -63,6 +63,8 @@
     transition: opacity 200ms;
     z-index: 1;
     display: block;
+    padding: 0 var(--size-5);
+    text-align: center;
 }
 
 .ola_progressCircle-circle {
