@@ -4,6 +4,7 @@
     font-weight: var(--regular);
     color: var(--black);
     text-rendering: auto;
+    overflow-wrap: break-word;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 

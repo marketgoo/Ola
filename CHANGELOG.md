@@ -28,6 +28,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Allow to override the default text style of the `Check` label
 - Color conflicts of `ButtonIcon` inside a `Tag`component [#123]
 - Border issue in `TableCell` with variant `action` [#122]
+- Overflow long words in Chrome [#126]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -289,6 +290,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#120]: https://github.com/marketgoo/Ola/issues/120
 [#122]: https://github.com/marketgoo/Ola/issues/122
 [#123]: https://github.com/marketgoo/Ola/issues/123
+[#126]: https://github.com/marketgoo/Ola/issues/126
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
