@@ -62,6 +62,42 @@ exports[`ProgressCircle Busy 1`] = `
 </div>
 `;
 
+exports[`ProgressCircle Busy with content 1`] = `
+<div
+  className="ola_progressCircle is-busy"
+>
+  <span
+    className="ola_progressCircle-busy"
+  >
+    Checking ...
+  </span>
+  <svg
+    className="ola_progressCircle-circle"
+    height="140"
+    viewBox="0 0 140 140"
+    width="140"
+  >
+    <circle
+      className="ola_progressCircle-circle-background"
+      cx="70"
+      cy="70"
+      r="62"
+    />
+    <circle
+      className="ola_progressCircle-circle-value"
+      cx="70"
+      cy="70"
+      r="62"
+      style={
+        Object {
+          "strokeDashoffset": 389.55748904513433,
+        }
+      }
+    />
+  </svg>
+</div>
+`;
+
 exports[`ProgressCircle with error variant 1`] = `
 <div
   className="ola_progressCircle is-error"

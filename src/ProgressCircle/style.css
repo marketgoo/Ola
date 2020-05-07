@@ -56,6 +56,15 @@
     display: block;
 }
 
+.ola_progressCircle-busy {
+    font: var(--font-caption);
+    color: var(--gray);
+    position: relative;
+    transition: opacity 200ms;
+    z-index: 1;
+    display: block;
+}
+
 .ola_progressCircle-circle {
     position: absolute;
     top: 0;
