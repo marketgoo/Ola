@@ -13,6 +13,15 @@ storiesOf('ProgressCircle')
         label="Your score" />
     </figure>
   ))
+  .add('Busy with content', () => (
+    <figure>
+      <ProgressCircle
+        variant="warning"
+        value="75"
+        busy="Checking your page..."
+        label="Your score" />
+    </figure>
+  ))
   .add('Viewer', () => (
     <figure>
       <ProgressCircle
@@ -21,4 +30,3 @@ storiesOf('ProgressCircle')
         busy={boolean('Busy', false)} />
     </figure>
   ))
-  
