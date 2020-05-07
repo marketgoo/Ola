@@ -75,6 +75,10 @@ strong {
 .ola-pro {
     color: var(--pro);
 }
+.ola-black-bolds b,
+.ola-black-bolds strong {
+    color: var(--black);
+}
 
 /* Background colors */
 .ola-bg-brand {

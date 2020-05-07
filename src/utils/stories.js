@@ -45,3 +45,10 @@ storiesOf('Utils')
       <div className="ola-bg-pro ola-white ola-title">Pro</div>
     </figure>
   ))
+  .add('Black bolds', () => (
+    <figure>
+      <div className="ola-callout ola-gray ola-black-bolds">
+        Lorem ipsum <strong>dolor sit amet,</strong> consectetur <b>adipiscing</b> elit. In velit sapien, venenatis id tincidunt ac, interdum a ipsum. Phasellus et ante libero. Etiam molestie metus a blandit viverra.
+      </div>
+    </figure>
+  ))

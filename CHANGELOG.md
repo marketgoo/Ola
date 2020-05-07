@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - Added `description` prop
   - Added the search icon at the left
   - Moved the spinner of `busy` state to the left.
+- New css helper `.ola-black-bolds`
 
 ### Removed
 - The css variable `--inner-gap`
