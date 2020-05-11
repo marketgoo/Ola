@@ -13,6 +13,7 @@ const PanelHeader = ({ title, intro, className, children, ...props }) => {
 }
 
 PanelHeader.defaultProps = {
+  className: null,
   intro: null,
   children: null
 }
