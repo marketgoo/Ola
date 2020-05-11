@@ -60,10 +60,7 @@
 }
 
 .ola_table-container.is-responsive {
-  & td,
-  & th {
-      white-space: nowrap;
-  }
+    white-space: nowrap;
 }
 
 .ola_tableRow {
@@ -77,6 +74,9 @@
 .ola_tableCell {
     &.is-left {
         text-align: left;
+    }
+    &.is-multiline {
+        white-space: normal;
     }
     &.is-right {
         text-align: right;

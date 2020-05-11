@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
 - New variant `narrow` to `Modal`
+- New variant `multiline` to `TableCell`
 - Improvements in `SearchField` [#119], [#120], #121:
   - Added `disabled` prop
   - Added `description` prop

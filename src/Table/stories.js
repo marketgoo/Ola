@@ -95,7 +95,6 @@ storiesOf('Table')
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
-            <TableCell header variant="action">Actions</TableCell>
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
@@ -108,8 +107,31 @@ storiesOf('Table')
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
-              <TableCell variant="action">{row.action}</TableCell>
               <TableCell>{row.title}</TableCell>
+              <TableCell variant="numeric">{row.links}</TableCell>
+              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="action">{row.action}</TableCell>
+            </TableRow>
+          ) ) }
+        </tbody>
+      </Table>
+    </figure>
+  ))
+  .add('Responsive multiline', () => (
+    <figure>
+      <Table caption="Superheros and sidekicks" responsive stiky>
+        <thead>
+          <TableRow>
+            <TableCell header variant="multiline">Your current page title</TableCell>
+            <TableCell header variant="right">Incoming links</TableCell>
+            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="action">Actions</TableCell>
+          </TableRow>
+        </thead>
+        <tbody>
+          { data.map( (row, idx) => (
+            <TableRow key={idx}>
+              <TableCell variant="multiline">{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
               <TableCell variant="action">{row.action}</TableCell>
