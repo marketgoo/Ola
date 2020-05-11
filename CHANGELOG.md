@@ -18,6 +18,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New css helper `.ola-black-bolds`
 - `className` property to  `PanelFooter`
 
+### Changed
+- Styles of `TableCell` with variant `action` for more clearness and fix issues in Safari.
+
 ### Removed
 - The css variable `--inner-gap`
 

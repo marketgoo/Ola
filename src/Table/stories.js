@@ -125,7 +125,6 @@ storiesOf('Table')
             <TableCell header variant="multiline">Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
-            <TableCell header variant="action">Actions</TableCell>
           </TableRow>
         </thead>
         <tbody>
@@ -134,7 +133,7 @@ storiesOf('Table')
               <TableCell variant="multiline">{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
-              <TableCell variant="action">{row.action}</TableCell>
+              <TableCell variant="action"><ButtonIcon><Icon name="close"/></ButtonIcon></TableCell>
             </TableRow>
           ) ) }
         </tbody>

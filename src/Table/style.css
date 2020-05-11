@@ -72,6 +72,10 @@
 }
 
 .ola_tableCell {
+    & + .ola_tableCell {
+        padding-left: var(--size-8);
+    }
+
     &.is-left {
         text-align: left;
     }
@@ -90,10 +94,20 @@
     }
     &.is-action {
         text-align: right;
-        padding-right: 0;
+        padding: 0;
         position: sticky;
         right: 0;
-        background: linear-gradient(to right, transparent, var(--table-background) var(--size-8)) no-repeat;
+        width: 10px;
+        background: linear-gradient(var(--table-background), var(--table-background) var(--size-8)) no-repeat;
+        box-shadow: inset 1px 0 0 var(--gray-xlight);
+
+        & .ola_buttonIcon {
+            margin: 0 var(--size-4);
+        }
+
+        & .ola_button {
+            margin-left: var(--size-4);
+        }
     }
     &.is-check {
         padding-left: var(--size-4);
@@ -102,10 +116,6 @@
         & + .ola_tableCell {
             padding-left: var(--size-4);
         }
-    }
-
-    & + .ola_tableCell {
-        padding-left: var(--size-8);
     }
 }
 th.ola_tableCell.is-action {
