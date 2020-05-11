@@ -209,13 +209,13 @@ storiesOf('Modal')
 
   .add('Only header + footer', () =>
     <>
-      <Modal open>
+      <Modal open variant="narrow">
         <ModalHeader
           title="Do you want to remove"
           intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
         </ModalHeader>
         <ModalFooter>
-          <ButtonGroup variant='reversed'>
+          <ButtonGroup variant='center'>
             <Button variant='primary'>Close</Button>
           </ButtonGroup>
         </ModalFooter>
@@ -227,7 +227,7 @@ storiesOf('Modal')
     <>
       <Modal open>
         <ModalFooter>
-          <ButtonGroup variant='reversed'>
+          <ButtonGroup>
             <Button variant='primary'>Close</Button>
           </ButtonGroup>
         </ModalFooter>

@@ -169,6 +169,10 @@
     & > .is-reversed {
         margin-left: auto;
     }
+
+    & > .is-center {
+        flex: 1 1 auto;
+    }
 }
 
 @keyframes modal-show {

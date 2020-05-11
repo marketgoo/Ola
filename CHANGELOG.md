@@ -30,6 +30,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Color conflicts of `ButtonIcon` inside a `Tag`component [#123]
 - Border issue in `TableCell` with variant `action` [#122]
 - Overflow long words in Chrome [#126]
+- `ButtonGroup` with variant `center` inside `PanelFooter` and `ModalFooter`
 
 ## [0.5.0] - 2020-04-07
 ### Added
