@@ -20,7 +20,7 @@ TableCell.propTypes = {
   /** Extra className */
   className: PT.string,
   /** Content type */
-  variant: PT.oneOf(['left', 'center', 'right', 'numeric', 'action', 'check']),
+  variant: PT.oneOf(['left', 'center', 'right', 'numeric', 'action', 'check', 'multiline']),
   /** Whether is a header */
   header: PT.bool,
   /** Childen nodes */
