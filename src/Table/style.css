@@ -106,7 +106,7 @@
         text-align: right;
     }
     &.is-action {
-        text-align: right;
+        text-align: center;
         padding: 0;
         position: sticky;
         right: 0;
