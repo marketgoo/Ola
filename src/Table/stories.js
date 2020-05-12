@@ -49,7 +49,7 @@ storiesOf('Table')
             <TableCell header variant="check"></TableCell>
             <TableCell header>Page</TableCell>
             <TableCell header variant="numeric">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="numeric">Popularity</TableCell>
           </TableRow>
         </thead>
         <tbody>
@@ -57,7 +57,7 @@ storiesOf('Table')
             <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="numeric">{row.popularity}</TableCell>
             </TableRow>
           ) ) }
         </tbody>
@@ -87,29 +87,31 @@ storiesOf('Table')
       </Table>
     </figure>
   ))
-  .add('Responsive', () => (
+  .add('Responsive selectable', () => (
     <figure>
-      <Table caption="Superheros and sidekicks" responsive stiky>
+      <Table responsive stiky>
         <thead>
-          <TableRow>
+          <TableRow className="is-selectable">
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
             <TableCell header>Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
             <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header>Popularity</TableCell>
             <TableCell header variant="action">Actions</TableCell>
           </TableRow>
         </thead>
         <tbody>
           { data.map( (row, idx) => (
-            <TableRow key={idx}>
+            <TableRow key={idx} className="is-selectable">
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
               <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="action"></TableCell>
               <TableCell>{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="numeric">{row.popularity}</TableCell>
               <TableCell variant="action">{row.action}</TableCell>
             </TableRow>
           ) ) }
@@ -119,12 +121,13 @@ storiesOf('Table')
   ))
   .add('Responsive multiline', () => (
     <figure>
-      <Table caption="Superheros and sidekicks" responsive stiky>
+      <Table responsive stiky>
         <thead>
           <TableRow>
             <TableCell header variant="multiline">Your current page title</TableCell>
             <TableCell header variant="right">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
+            <TableCell header variant="numeric">Popularity</TableCell>
+            <TableCell header variant="action"></TableCell>
           </TableRow>
         </thead>
         <tbody>
@@ -132,7 +135,7 @@ storiesOf('Table')
             <TableRow key={idx}>
               <TableCell variant="multiline">{row.title}</TableCell>
               <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
+              <TableCell variant="numeric">{row.popularity}</TableCell>
               <TableCell variant="action"><ButtonIcon><Icon name="close"/></ButtonIcon></TableCell>
             </TableRow>
           ) ) }
