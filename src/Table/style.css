@@ -8,6 +8,7 @@
     width: 100%;
     border-collapse: collapse;
     position: relative;
+    border-bottom: solid 1px var(--gray-light);
 
     & tr {
         --table-background: var(--background, var(--white));
@@ -24,8 +25,8 @@
     & th {
         font-weight: var(--bold);
         color: var(--black);
-        padding-left: var(--size-2);
-        padding-right: var(--size-2);
+        padding-left: var(--size-4);
+        padding-right: var(--size-4);
 
         & > * {
             vertical-align: middle;
@@ -33,7 +34,7 @@
     }
 
     & td {
-        padding: var(--size-3) var(--size-2);
+        padding: var(--size-3) var(--size-4);
         border-top: solid 1px var(--gray-xlight);
     }
 
@@ -44,7 +45,6 @@
     & caption {
         font: var(--font-caption);
         caption-side: bottom;
-        border-top: solid 1px var(--gray-light);
         padding-top: var(--size-3);
         text-align: right;
     }
@@ -64,16 +64,29 @@
 }
 
 .ola_tableRow {
-    &.is-selectable:hover,
-    &.is-checked {
+    &.is-selectable:hover td,
+    &.is-checked td {
         --table-background: var(--gray-xlight);
         color: var(--black);
+    }
+
+    &.is-selectable {
+        & .ola_tableCell:last-child {
+            padding-right: var(--size-4);
+        }
+
+        & .ola_tableCell:first-child {
+            padding-left: var(--size-4);
+        }
     }
 }
 
 .ola_tableCell {
-    & + .ola_tableCell {
-        padding-left: var(--size-8);
+    &:first-child {
+        padding-left: 0;
+    }
+    &:last-child {
+        padding-right: 0;
     }
 
     &.is-left {
@@ -102,22 +115,19 @@
         box-shadow: inset 1px 0 0 var(--gray-xlight);
 
         & .ola_buttonIcon {
-            margin: 0 var(--size-4);
+            margin: 0 var(--size-3);
         }
 
         & .ola_button {
-            margin-left: var(--size-4);
+            margin-left: var(--size-3);
         }
     }
     &.is-check {
         padding-left: var(--size-4);
         width: var(--size-7);
-
-        & + .ola_tableCell {
-            padding-left: var(--size-4);
-        }
     }
 }
 th.ola_tableCell.is-action {
     padding-right: var(--size-7);
+    box-shadow: none;
 }
