@@ -8,7 +8,6 @@
     width: 100%;
     border-collapse: collapse;
     position: relative;
-    border-bottom: solid 1px var(--gray-light);
 
     & tr {
         --table-background: var(--background, var(--white));
@@ -47,6 +46,7 @@
         caption-side: bottom;
         padding-top: var(--size-3);
         text-align: right;
+        border-top: solid 1px var(--gray-light);
     }
 
     &.is-sticky {
