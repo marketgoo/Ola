@@ -1,5 +1,5 @@
 .ola_tooltip {
-    --pointer: var(--size-4);
+    --pointer: var(--size-3);
     --width: var(--size-11);
 
     display: inline-block;
@@ -38,6 +38,9 @@
         content: "";
         display: block;
         position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
     }
 
     &.is-bottomright,
@@ -48,9 +51,6 @@
         margin-top: calc(var(--pointer) / 2);
 
         &::before {
-            border-bottom: solid var(--pointer) white;
-            border-right: solid var(--pointer) transparent;
-            border-left: solid var(--pointer) transparent;
             top: calc(var(--pointer) * -1);
         }
     }
@@ -64,60 +64,28 @@
         margin-bottom: calc(var(--pointer) / 2);
 
         &::before {
-            border-top: solid var(--pointer) white;
-            border-right: solid var(--pointer) transparent;
-            border-left: solid var(--pointer) transparent;
             bottom: calc(var(--pointer) * -1);
-        }
-    }
-
-    &.is-topright,
-    &.is-bottomright {
-        left: calc(50% - var(--pointer) * 2);
-
-        &::before {
-            left: var(--pointer);
         }
     }
 
     &.is-topright-extra,
     &.is-bottomright-extra {
-        left: 0;
+        left: 50%;
 
         &::before {
-            left: calc(var(--pointer) / 2);
+            left: 0;
         }
     }
 
-    &.is-topright-extra {
-        border-bottom-left-radius: 0;
-    }
-    &.is-bottomright-extra {
-        border-top-left-radius: 0;
-    }
-
-    &.is-topleft,
-    &.is-bottomleft {
-        right: calc(50% - var(--pointer) * 2);
+    &.is-topright,
+    &.is-bottomright {
+        left: calc(50% - var(--pointer) * 4);
 
         &::before {
-            right: var(--pointer);
+            left: calc(var(--pointer) * 3);
         }
     }
-    &.is-topleft-extra,
-    &.is-bottomleft-extra {
-        right: 0;
 
-        &::before {
-            right: calc(var(--pointer) / 2);
-        }
-    }
-    &.is-topleft-extra {
-        border-bottom-right-radius: 0;
-    }
-    &.is-bottomleft-extra {
-        border-top-right-radius: 0;
-    }
     &.is-topcenter,
     &.is-bottomcenter {
         left: calc(50% - var(--width) / 2);
@@ -126,7 +94,74 @@
             right: calc(50% - var(--pointer));
         }
     }
+
+    &.is-topleft,
+    &.is-bottomleft {
+        right: calc(50% - var(--pointer) * 4);
+
+        &::before {
+            right: calc(var(--pointer) * 3);
+        }
+    }
+    &.is-topleft-extra,
+    &.is-bottomleft-extra {
+        right: 50%;
+
+        &::before {
+            right: 0;
+        }
+    }
+
+    &.is-topright-extra {
+        border-bottom-left-radius: 0;
+
+        &::before {
+            border-width: var(--pointer) var(--pointer) 0 0;
+            border-color: white transparent transparent transparent;
+        }
+    }
+    &.is-bottomright-extra {
+        border-top-left-radius: 0;
+
+        &::before {
+            border-width: var(--pointer) 0 0 var(--pointer);
+            border-color: transparent transparent transparent white;
+        }
+    }
+    &.is-topleft-extra {
+        border-bottom-right-radius: 0;
+
+        &::before {
+            border-width: 0 var(--pointer) var(--pointer) 0;
+            border-color: transparent white transparent transparent;
+        }
+    }
+    &.is-bottomleft-extra {
+        border-top-right-radius: 0;
+
+        &::before {
+            border-width: 0 0 var(--pointer) var(--pointer);
+            border-color: transparent transparent white transparent;
+        }
+    }
+    &.is-topleft,
+    &.is-topcenter,
+    &.is-topright {
+        &::before {
+            border-width: var(--pointer) var(--pointer) 0 var(--pointer);
+            border-color: white transparent transparent transparent;
+        }
+    }
+    &.is-bottomleft,
+    &.is-bottomcenter,
+    &.is-bottomright {
+        &::before {
+            border-width: 0 var(--pointer) var(--pointer) var(--pointer);
+            border-color: transparent transparent white transparent;
+        }
+    }
 }
+
 .ola_tooltip[open] {
     & .ola_tooltip-trigger .ola_buttonIcon,
     & .ola_tooltip-trigger .ola_button {

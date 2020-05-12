@@ -66,7 +66,7 @@ storiesOf('Tooltip')
                   <span>Incoming links</span>
                   <Tooltip trigger={<ButtonIcon as="span" variant="secondary"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
                 </TableCell>
-                <TableCell header variant="center">
+                <TableCell header variant="right">
                   <span>Popularity</span>
                   <Tooltip trigger={<ButtonIcon as="span" variant="secondary"><Icon name="help" size="small" /></ButtonIcon>}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</Tooltip>
                 </TableCell>
