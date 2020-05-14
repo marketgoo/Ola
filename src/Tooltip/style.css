@@ -169,8 +169,6 @@
         background-color: var(--background-hover);
     }
     & .ola_tooltip-content {
-        display: block;
-
         &.is-bottomright,
         &.is-bottomright-extra,
         &.is-bottomcenter,
