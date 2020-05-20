@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - Moved the spinner of `busy` state to the left.
 - New css helper `.ola-black-bolds`
 - `className` property to  `PanelFooter`
+- New prop `size` to `Tag` component with three sizes: small, medium and big [#130]
 
 ### Changed
 - Styles of `TableCell` with variant `action` for more clearness and fix issues in Safari.
@@ -37,6 +38,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Border issue in `TableCell` with variant `action` [#122]
 - Overflow long words in Chrome [#126]
 - `ButtonGroup` with variant `center` inside `PanelFooter` and `ModalFooter`
+- Fixed Tag overflow issues and used `<strong>` instead `<span>`
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -299,6 +301,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#122]: https://github.com/marketgoo/Ola/issues/122
 [#123]: https://github.com/marketgoo/Ola/issues/123
 [#126]: https://github.com/marketgoo/Ola/issues/126
+[#130]: https://github.com/marketgoo/Ola/issues/130
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0

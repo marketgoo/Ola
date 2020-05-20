@@ -3,16 +3,21 @@
     --background: var(--gray-xlight);
 
     display: inline-flex;
+    align-items: center;
     white-space: nowrap;
-    height: var(--size-6);
-    font: var(--font-caption);
-    font-weight: var(--bold);
     color: var(--color);
     background-color: var(--background);
     padding: 0 var(--size-3);
     border-radius: var(--radius-small);
     vertical-align: middle;
     cursor: default;
+    max-width: 100%;
+
+    & > span {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        min-width: 0;
+    }
 
     &.is-success {
         --color: var(--white);
@@ -39,10 +44,30 @@
         --background: var(--pro);
     }
 
+    &.is-small {
+        height: var(--size-6);
+        font: var(--font-caption);
+        font-weight: var(--bold);
+    }
+
+    &.is-medium {
+        height: var(--size-7);
+        font: var(--font-callout);
+        font-weight: var(--bold);
+    }
+
+    &.is-big {
+        height: var(--size-8);
+        font: var(--font-body);
+        font-weight: var(--bold);
+        padding: 0 var(--size-4);
+    }
+
     & > .ola_buttonIcon {
-        margin: calc(var(--size-2) * -1);
+        margin-right: calc(var(--size-2) * -1);
         margin-left: var(--size-3);
         --color: var(--color);
+        flex: 0 0 auto;
 
         &:hover {
             box-shadow: var(--shadow-1);

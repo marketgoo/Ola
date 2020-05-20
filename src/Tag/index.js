@@ -2,18 +2,21 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Tag = ({ variant, className, children }) =>
-  <span className={cx('ola_tag', variant && `is-${variant}`, className)}>
+const Tag = ({ variant, className, size, children }) =>
+  <strong className={cx('ola_tag', variant && `is-${variant}`, `is-${size}`, className)}>
     {children}
-  </span>
+  </strong>
 
 Tag.defaultProps = {
-  variant: null
+  variant: null,
+  size: 'small'
 }
 
 Tag.propTypes = {
   /** Tag variants */
   variant: PT.oneOf(['invert', 'error', 'pro', 'success', 'warning']),
+  /** Tag sizes */
+  size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
