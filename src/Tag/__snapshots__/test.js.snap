@@ -1,57 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Default Tag 1`] = `
-<span
-  className="ola_tag"
+<strong
+  className="ola_tag is-small"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with error variant 1`] = `
-<span
-  className="ola_tag is-error"
+<strong
+  className="ola_tag is-error is-small"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with extraClass 1`] = `
-<span
-  className="ola_tag test"
+<strong
+  className="ola_tag is-small test"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with invert variant 1`] = `
-<span
-  className="ola_tag is-invert"
+<strong
+  className="ola_tag is-invert is-small"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with pro variant 1`] = `
-<span
-  className="ola_tag is-pro"
+<strong
+  className="ola_tag is-pro is-small"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with success variant 1`] = `
-<span
-  className="ola_tag is-success"
+<strong
+  className="ola_tag is-success is-small"
 >
   Test
-</span>
+</strong>
 `;
 
 exports[`Tag with warning variant 1`] = `
-<span
-  className="ola_tag is-warning"
+<strong
+  className="ola_tag is-warning is-small"
 >
   Test
-</span>
+</strong>
 `;

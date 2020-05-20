@@ -1,5 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
+import { text, radios } from '@storybook/addon-knobs'
 
 import Tag from './'
 import ButtonIcon from '../ButtonIcon'
@@ -9,25 +10,21 @@ storiesOf('Tag')
   .add('Default', () => (
     <figure><Tag>Default Tag</Tag></figure>
   ))
-  .add('Invert', () => (
-    <figure><Tag variant='invert'>Invert Tag</Tag></figure>
-  ))
-  .add('Success', () => (
-    <figure><Tag variant='success'>Sucess Tag</Tag></figure>
-  ))
-  .add('Warning', () => (
-    <figure><Tag variant='warning'>Warning Tag</Tag></figure>
-  ))
-  .add('Error', () => (
-    <figure><Tag variant='error'>Error Tag</Tag></figure>
-  ))
-  .add('Pro', () => (
-    <figure><Tag variant='pro'>Pro Tag</Tag></figure>
+  .add('Viewer', () => (
+    <figure>
+      <Tag
+        size={radios('Size', ['small', 'medium', 'big'], 'small')}
+        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
+        <span>{ text('Label', 'This is a tag') }</span>
+      </Tag>
+    </figure>
   ))
   .add('With a ButtonIcon', () => (
     <figure>
-      <Tag variant='invert'>
-        Pro Tag
+      <Tag
+        size={radios('Size', ['small', 'medium', 'big'], 'small')}
+        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
+        <span>{ text('Label', 'This is a tag') }</span>
         <ButtonIcon><Icon size="small" name="close" /></ButtonIcon>
       </Tag>
     </figure>
