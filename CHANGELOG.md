@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Styles of `TableCell` with variant `action` for more clearness and fix issues in Safari.
+- The label text of `Check` component is `gray-light` on `disabled` state [#129]
 
 ### Removed
 - The css variable `--inner-gap`
@@ -39,6 +40,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Overflow long words in Chrome [#126]
 - `ButtonGroup` with variant `center` inside `PanelFooter` and `ModalFooter`
 - Fixed Tag overflow issues and used `<strong>` instead `<span>`
+- Changed the label of `Check` components to gray-light on disabled state [#129]
+- Removed cursor pointer style to label (applied by Wordpress) [#129]
 
 ## [0.5.0] - 2020-04-07
 ### Added
@@ -301,7 +304,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#122]: https://github.com/marketgoo/Ola/issues/122
 [#123]: https://github.com/marketgoo/Ola/issues/123
 [#126]: https://github.com/marketgoo/Ola/issues/126
+[#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
+
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
