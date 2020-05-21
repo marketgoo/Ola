@@ -127,7 +127,7 @@ strong {
     text-align: right;
 }
 
-/* Misc */
+/* Margins and spaces */
 .ola-nomargin {
     margin: 0;
 }
@@ -136,6 +136,42 @@ strong {
 }
 .ola-nomargin-bottom {
     margin-bottom: 0;
+}
+.ola-margin-top-1 {
+    margin-top: var(--row-gap-1);
+}
+.ola-margin-top-2 {
+    margin-top: var(--row-gap-2);
+}
+.ola-margin-top-3 {
+    margin-top: var(--row-gap-3);
+}
+.ola-margin-bottom-1 {
+    margin-bottom: var(--row-gap-1);
+}
+.ola-margin-bottom-2 {
+    margin-bottom: var(--row-gap-2);
+}
+.ola-margin-bottom-3 {
+    margin-bottom: var(--row-gap-3);
+}
+.ola-margin-left-1 {
+    margin-left: var(--column-gap-1);
+}
+.ola-margin-left-2 {
+    margin-left: var(--column-gap-2);
+}
+.ola-margin-left-3 {
+    margin-left: var(--column-gap-3);
+}
+.ola-margin-right-1 {
+    margin-right: var(--column-gap-1);
+}
+.ola-margin-right-2 {
+    margin-right: var(--column-gap-2);
+}
+.ola-margin-right-3 {
+    margin-right: var(--column-gap-3);
 }
 .ola-bold {
     font-weight: var(--bold);
