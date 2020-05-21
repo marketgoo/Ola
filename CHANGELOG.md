@@ -43,6 +43,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Fixed Tag overflow issues and used `<strong>` instead `<span>`
 - Changed the label of `Check` components to gray-light on disabled state [#129]
 - Removed cursor pointer style to label (applied by Wordpress) [#129]
+- Sometimes the `Tooltip` changes the heigh of the flex container on open.
 
 ## [0.5.0] - 2020-04-07
 ### Added
