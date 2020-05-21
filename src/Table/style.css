@@ -120,6 +120,7 @@
 
         & .ola_button {
             margin-left: var(--size-3);
+            margin-right: var(--size-2);
         }
     }
     &.is-check {
