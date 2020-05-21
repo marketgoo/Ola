@@ -3,9 +3,9 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 const Tag = ({ variant, className, size, children }) =>
-  <strong className={cx('ola_tag', variant && `is-${variant}`, `is-${size}`, className)}>
+  <span className={cx('ola_tag', variant && `is-${variant}`, `is-${size}`, className)}>
     {children}
-  </strong>
+  </span>
 
 Tag.defaultProps = {
   variant: null,
