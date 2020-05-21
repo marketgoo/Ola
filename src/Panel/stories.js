@@ -93,5 +93,8 @@ storiesOf('Panel')
       <PanelContent title="Panel 3">
         <p>Panel content</p>
       </PanelContent>
+      <PanelContent title="Panel 2" variant="highlight">
+        <p>Panel content fullwidth</p>
+      </PanelContent>
     </Panel>
   ))
