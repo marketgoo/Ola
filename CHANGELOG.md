@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New css helper `.ola-black-bolds`
 - `className` property to  `PanelFooter`
 - New prop `size` to `Tag` component with three sizes: small, medium and big [#130]
+- Added the variable `--ola-version` to see the version of Ola used currently in any project.
 
 ### Changed
 - Styles of `TableCell` with variant `action` for more clearness and fix issues in Safari.
@@ -306,7 +307,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#126]: https://github.com/marketgoo/Ola/issues/126
 [#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
-
 
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...HEAD
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0

@@ -1,3 +1,5 @@
+const version = require('./package.json').version;
+
 module.exports = {
   plugins: {
     'postcss-import': {},
@@ -11,6 +13,9 @@ module.exports = {
     'postcss-prefix-selector': {
       prefix: '.ola',
       exclude: ['.ola', '.ola_util-bg', /^\.ola\s/]
+    },
+    'postcss-inject': {
+      cssPlainText: `:root { --ola-version: "${version}"; }`
     },
     'cssnano': {}
   }
