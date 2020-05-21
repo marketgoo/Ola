@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - Padding top and bottom to `PanelContent` when it's the first/last child.
 
+### Fixed
+- `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
+
 ## [0.6.0] - 2020-05-21
 ### Added
 - New variant `fullwidth-scroll` to `ModalContent` [#112]

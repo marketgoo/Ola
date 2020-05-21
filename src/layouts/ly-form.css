@@ -2,5 +2,5 @@
 
 .ola_ly-form {
     display: grid;
-    grid-row-gap: var(--size-7);
+    grid-row-gap: var(--row-gap-2);
 }

@@ -2,7 +2,7 @@
 
 .ola_ly-imgContent {
     display: grid;
-    grid-column-gap: var(--size-8);
+    grid-column-gap: var(--column-gap-3);
     grid-template-columns: auto 1fr;
 
     & > img {

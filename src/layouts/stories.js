@@ -100,7 +100,7 @@ storiesOf('Layout')
         <p className="ola-callout ola-gray">This is a introductory text of this process</p>
       </header>
   
-      <div>
+      <div className="ola_ly-form">
         <Field id="field-name2" label="Email">
           <Input type="email" placeholder="name@example.com" />
         </Field>

@@ -2,7 +2,7 @@
 
 .ola_ly-columns {
     column-width: var(--size-11);
-    column-gap: var(--size-9);
+    column-gap: calc(var(--column-gap-3) * 2);
     column-rule: solid 4px var(--gray-xlight);
 
     & > * {
