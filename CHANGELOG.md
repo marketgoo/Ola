@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - Padding top and bottom to `PanelContent` when it's the first/last child.
+- New helpers: `ola-nomargin-top` and `ola-nomargin-bottom`
 
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.

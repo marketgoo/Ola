@@ -131,6 +131,12 @@ strong {
 .ola-nomargin {
     margin: 0;
 }
+.ola-nomargin-top {
+    margin-top: 0;
+}
+.ola-nomargin-bottom {
+    margin-bottom: 0;
+}
 .ola-bold {
     font-weight: var(--bold);
 }
