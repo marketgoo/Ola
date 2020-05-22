@@ -10,6 +10,7 @@ storiesOf('Utils')
       <h3 className="ola-headline ola-nomargin">Headline Bold</h3>
       <p className="ola-body ola-nomargin">Body</p>
       <p className="ola-callout ola-nomargin">Callout</p>
+      <h2 className="ola-callout ola-nomargin">Callout Bold</h2>
       <p className="ola-caption ola-nomargin">Caption</p>
       <p className="ola-caption ola-nomargin ola-bold">Caption Bold</p>
       <strong className="ola-caption">Caption Bold</strong>
@@ -49,6 +50,34 @@ storiesOf('Utils')
     <figure>
       <div className="ola-callout ola-gray ola-black-bolds">
         Lorem ipsum <strong>dolor sit amet,</strong> consectetur <b>adipiscing</b> elit. In velit sapien, venenatis id tincidunt ac, interdum a ipsum. Phasellus et ante libero. Etiam molestie metus a blandit viverra.
+      </div>
+    </figure>
+  ))
+  .add('Margins', () => (
+    <figure>
+      <p className="ola-nomargin">No margin</p>
+      <p className="ola-nomargin-bottom">No margin bottom</p>
+      <p className="ola-nomargin-top">No margin top</p>
+
+      <div style={{ display: 'flex', alignItems: 'start', border: 'solid 1px', margin: '1em 0'}}>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-top-1">Margin top 1</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-bottom-1">Margin bottom 1</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-left-1">Margin left 1</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-right-1">Margin right 1</div>
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'start', border: 'solid 1px', margin: '1em 0'}}>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-top-2">Margin top 2</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-bottom-2">Margin bottom 2</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-left-2">Margin left 2</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-right-2">Margin right 2</div>
+      </div>
+
+      <div style={{ display: 'flex', alignItems: 'start', border: 'solid 1px', margin: '1em 0'}}>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-top-3">Margin top 3</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-bottom-3">Margin bottom 3</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-left-3">Margin left 3</div>
+        <div style={{background: 'yellow', border: 'solid'}} className="ola-margin-right-3">Margin right 3</div>
       </div>
     </figure>
   ))

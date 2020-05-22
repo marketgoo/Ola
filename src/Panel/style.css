@@ -105,7 +105,6 @@
 
 .ola_panel-footer {
     background: var(--gray-xlight);
-    border-radius: 0 0 var(--radius) var(--radius);
     padding: var(--row-gap-1) var(--column-gap-3);
 
     @media (--from-width-1) {
