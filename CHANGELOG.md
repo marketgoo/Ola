@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
 - Cropped shadow of focused buttons in tables [#132]
+- Border radius of `PanelFooter` when is not the last child [#137]
 
 ## [0.6.0] - 2020-05-21
 ### Added
@@ -333,6 +334,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
 [#132]: https://github.com/marketgoo/Ola/issues/132
+[#137]: https://github.com/marketgoo/Ola/issues/137
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.6.0...HEAD
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0

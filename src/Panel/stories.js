@@ -82,6 +82,27 @@ storiesOf('Panel')
       </PanelFooter>
     </Panel>
   ))
+  .add('Footer in the middle', () => (
+    <Panel>
+      <PanelHeader
+        title="Title"
+        intro="Intro"
+      >
+      </PanelHeader>
+      <PanelContent className="className" title={<>Conten Titles with <a href="#">a link</a></>}>
+        <p>Panel content</p>
+      </PanelContent>
+      <PanelFooter>
+        <ButtonGroup variant="center">
+          <Button variant='primary'>Primary</Button>
+          <Button variant='secondary'>Default Button</Button>
+        </ButtonGroup>
+      </PanelFooter>
+      <PanelContent variant="highlight">
+        <p>Panel content</p>
+      </PanelContent>
+    </Panel>
+  ))
   .add('No header/footer', () => (
     <Panel>
       <PanelContent title="Panel 1">
