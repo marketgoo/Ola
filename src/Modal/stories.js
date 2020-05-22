@@ -72,35 +72,35 @@ storiesOf('Modal')
             <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
           </ModalContent>
           <ModalContent variant="scroll">
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
-            <h1>Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
+            <h1 className="ola-body">Panel content</h1>
           </ModalContent>
           <ModalFooter>
             <ButtonGroup variant='reversed'>

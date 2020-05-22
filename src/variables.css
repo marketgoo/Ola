@@ -57,6 +57,15 @@
     --font-callout: var(--size-5) / 1.38 var(--font-ui);
     --font-caption: var(--size-4) / 1.42 var(--font-ui);
 
+    @supports (font-size: clamp(var(--size-8), 12vw, var(--size-9))) {
+        --font-display: var(--font-display-weight) clamp(var(--size-9) * .6, 12vw, var(--size-9)) / 1 var(--font-brand);
+        --font-title: var(--font-title-weight) clamp(var(--size-8) * .7, 9vw, var(--size-8)) / 1.05 var(--font-brand);
+        --font-headline: clamp(var(--size-7) * .8, 6vw, var(--size-7)) / 1.28 var(--font-ui);
+        --font-body: clamp(var(--size-6) * .9, 4vw, var(--size-6)) / 1.3 var(--font-ui);
+        --font-callout: clamp(var(--size-5) * .95, 3vw, var(--size-5)) / 1.38 var(--font-ui);
+    }
+
+
     /* Shadows */
     --shadow-line: 0 0 1px #0006;
     --shadow-1: 0 1px 3px #0003;
