@@ -24,6 +24,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `.ola-margin-right-2`
   - `.ola-margin-right-3`
 
+### Changed
+- Font sizes in narrow screens (mobile) are smaller [#135] [#136]
+
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
 - Cropped shadow of focused buttons in tables [#132]
@@ -334,6 +337,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
 [#132]: https://github.com/marketgoo/Ola/issues/132
+[#135]: https://github.com/marketgoo/Ola/issues/135
+[#136]: https://github.com/marketgoo/Ola/issues/136
 [#137]: https://github.com/marketgoo/Ola/issues/137
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.6.0...HEAD
