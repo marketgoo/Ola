@@ -6,7 +6,8 @@ const ButtonGroup = ({ variant, className, children, ...props }) => {
   const styles = cx(
     'ola_buttonGroup',
     { 'is-center': variant && (variant == 'center' || variant == 'reversed-center') },
-    { 'is-reversed': variant && (variant == 'reversed' || variant == 'reversed-center') },
+    { 'is-reversed': variant && (variant == 'reversed' || variant == 'reversed-center' || variant == 'reversed-narrow') },
+    { 'is-narrow': variant && (variant == 'narrow' || variant == 'reversed-narrow') },
     className
   )
   return (
@@ -23,7 +24,7 @@ ButtonGroup.defaultProps = {
 
 ButtonGroup.propTypes = {
   /** Variants: Center or Reversed button order ( helper for tabulation problems ) */
-  variant: PT.oneOf(['default', 'reversed', 'center', 'reversed-center']),
+  variant: PT.oneOf(['default', 'reversed', 'center', 'reversed-center', 'narrow', 'reversed-narrow']),
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
