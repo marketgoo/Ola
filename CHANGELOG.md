@@ -26,6 +26,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 - Font sizes in narrow screens (mobile) are smaller [#135] [#136]
+- The `Modal` component blocks the document scroll while it's open [#140]
 
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
@@ -340,6 +341,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#135]: https://github.com/marketgoo/Ola/issues/135
 [#136]: https://github.com/marketgoo/Ola/issues/136
 [#137]: https://github.com/marketgoo/Ola/issues/137
+[#140]: https://github.com/marketgoo/Ola/issues/140
 
 [Unreleased]: https://github.com/marketgoo/Ola/compare/v0.6.0...HEAD
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0
