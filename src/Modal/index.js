@@ -6,9 +6,12 @@ import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
+const scrollBarWidth = getScrollbarWidth()
+
 const Modal = ({ open, closable, onClose, onOpen, variant, className, children, ...props }) => {
 
   const modal = useRef(null)
+  const scrollingElement = document.scrollingElement
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
   const clickOutside = event => {
@@ -23,11 +26,15 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
   }
 
   useEventListener(modal, 'cancel', event => { if(!closable) event.preventDefault() })
-  useEventListener(modal, 'close', onClose)
+  useEventListener(modal, 'close', () => {
+    onClose()
+    releaseScroll(scrollingElement)
+  })
   useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
   useEffect(() => {
     if(modal.current && open && !modal.current.open) {
       onOpen()
+      blockScroll(scrollingElement)
       modal.current.showModal()
     }
   })
@@ -79,3 +86,29 @@ Modal.propTypes = {
 }
 
 export default Modal
+
+function getScrollbarWidth() {
+  const outer = document.createElement('div')
+  outer.style.visibility = 'hidden'
+  outer.style.overflow = 'scroll'
+  const inner = document.createElement('div')
+  outer.appendChild(inner)
+
+  document.body.appendChild(outer)
+  const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth)
+  outer.parentNode.removeChild(outer)
+
+  return scrollbarWidth
+}
+
+function blockScroll(element) {
+  if (element.scrollHeight > element.clientHeight) {
+    element.style.overflow = 'hidden'
+    element.style.paddingRight = `${scrollBarWidth}px`
+  }
+}
+
+function releaseScroll(element) {
+  element.style.overflow = null
+  element.style.paddingRight = null
+}
