@@ -27,6 +27,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Font sizes in narrow screens (mobile) are smaller [#135] [#136]
 - The `Modal` component blocks the document scroll while it's open [#140]
+- Changed some variables in buttons component to ease the theme customization
 
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.

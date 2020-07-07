@@ -5,6 +5,8 @@
     --background-hover: var(--gray-xlight);
     --shadow-focus: var(--accent-focus);
     --background-active: var(--accent-focus);
+    --border: var(--gray-light);
+    --border-hover: currentColor;
 
     display: inline-flex;
     align-items: center;
@@ -14,6 +16,7 @@
     min-width: var(--size-8);
     max-width: 100%;
     border: none;
+    border-color: var(--border);
     background: none;
     color: var(--color);
     background-color: var(--background);
@@ -38,6 +41,7 @@
     &:hover {
         color: var(--color-hover);
         background-color: var(--background-hover);
+        border-color: var(--border-hover);
     }
 
     &:focus {
@@ -58,11 +62,8 @@
     }
 
     &.is-secondary {
-        border: solid 1px var(--gray-light);
-
-        &:hover {
-            border-color: currentColor;
-        }
+        border-style: solid;
+        border-width: 1px;
     }
 
     &.is-destructive-primary {
@@ -80,11 +81,8 @@
         --color-hover: var(--error-dark);
         --background-active: var(--error-focus);
 
-        border: solid 1px var(--gray-light);
-
-        &:hover {
-            border-color: currentColor;
-        }
+        border-style: solid;
+        border-width: 1px;
     }
 
     &.is-pro {
@@ -119,6 +117,7 @@
 
     &.is-link {
         --color: var(--brand);
+        --color-hover: var(--black);
         --background-hover: transparent;
         --shadow-focus: var(--brand-focus);
         --background-active: var(--brand-focus);
@@ -131,10 +130,6 @@
         text-decoration: underline;
         text-underline-offset: 4px;
         text-decoration-thickness: 1px;
-
-        &:hover {
-            color: var(--black);
-        }
 
         &.is-disabled,
         &:disabled {
