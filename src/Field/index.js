@@ -1,8 +1,14 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import Input from '../Input/index'
 
 const Field = ({ id, label, hint, error, description, disabled, children }) => {
+
+  const handleContent = (ev) => {
+    console.log(ev.target.value)    
+  }
+
   return (
     <div className={cx('ola_field', {'is-invalid': error}, {'is-disabled': disabled})}>
       <label htmlFor={id} className="ola_field-label">
@@ -10,7 +16,8 @@ const Field = ({ id, label, hint, error, description, disabled, children }) => {
         {hint && <span className="ola_field-hint">{ hint }</span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, { id: id, error, disabled })}
+        {React.cloneElement(children, { id: id, error, disabled, })}
+        <Input onChange={handleContent}/>
       </div>
       {description && <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p>}
     </div>

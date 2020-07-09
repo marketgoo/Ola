@@ -11,7 +11,8 @@ storiesOf('Field')
       id="field-test"
       label="Test"
       description="Test description"
-      hint="(optional)">
+      hint="(optional)"
+    >
       <Input placeholder="Text placeholder" />
     </Field>
   ))
@@ -21,7 +22,8 @@ storiesOf('Field')
       error
       label="Test"
       description="Test description"
-      hint="(optional)">
+      hint="(optional)"
+    >
       <Input placeholder="Text placeholder" />
     </Field>
   ))
@@ -31,7 +33,8 @@ storiesOf('Field')
       disabled
       label="Test"
       description="Test description"
-      hint="(optional)">
+      hint="(optional)"
+    >
       <Input placeholder="Text placeholder" />
     </Field>
   ))
@@ -40,10 +43,27 @@ storiesOf('Field')
       <Field
         id="field-cutsom-description"
         label="Test"
-        description={<>Test custom content with <a href="#" onClick={action('onClick event')}>link</a></>}
-        hint={<strong>(optional)</strong>}>
+        description={
+          <>
+            Test custom content with{' '}
+            <a href="#" onClick={action('onClick event')}>
+              link
+            </a>
+          </>
+        }
+        hint={<strong>(optional)</strong>}
+      >
         <Input placeholder="Text placeholder" />
       </Field>
     </figure>
   ))
-
+  .add('Character counter', () => (
+    <Field
+      id="field-counter"
+      label="Test"
+      description="Test description"
+      hint="(optional)"
+    >
+      <Input placeholder="Text placeholder" value="value" onChange={action('handleContent')} />
+    </Field>
+  ))
