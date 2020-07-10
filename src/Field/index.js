@@ -3,21 +3,26 @@ import { default as PT } from "prop-types";
 import cx from "classnames";
 
 const Field = ({id,label,hint,error,description,disabled,children,maxCharacter,}) => {
-  let str;
   const handleContent = (ev) => {
+    const str = ev.target.value.length;
+    let charRemain = maxCharacter - str;
+    console.log(charRemain)
     if (maxCharacter) {
-      str = ev.target.value.length;
-      if (ev.target.value.length > maxCharacter) {
-        console.log("limit");
+      if (charRemain < 0) {
+        document.querySelector('.ola_field-hint').innerHTML = "No puedes escribir"
+      } else {
+        document.querySelector('.ola_field-hint').innerHTML = charRemain
+
       }
-      return str;
     }
   };
 
   if (maxCharacter) {
     return (
       <div className={cx("ola_field", { error }, { "is-disabled": disabled })}>
-        <label htmlFor={id} className="ola_field-label"> {hint && (<span className="ola_field-hint">hola </span>)}
+        <label htmlFor={id} className="ola_field-label"> 
+        {label}
+        {hint && (<span className="ola_field-hint"> </span>)}
         </label>
         <div className="ola_field-input">
           {React.cloneElement(children, {id: id,error,disabled,onChange: handleContent,})}
@@ -64,6 +69,6 @@ Field.propTypes = {
   error: PT.bool,
   /** Childen input node */
   children: PT.oneOfType([PT.arrayOf(PT.node), PT.node]).isRequired,
-};
+}
 
 export default Field;
