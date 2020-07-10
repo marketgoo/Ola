@@ -62,8 +62,10 @@ storiesOf('Field')
       id="field-counter"
       label="Test"
       description="Test description"
-      hint="(optional)"
+      hint={<strong>Max Character:</strong>}
+      maxCharacter={20}
+      message = "null"
     >
-      <Input placeholder="Text placeholder" value="value" onChange={action('handleContent')} />
+      <Input placeholder="Text placeholder" />
     </Field>
   ))
