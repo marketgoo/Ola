@@ -63,7 +63,7 @@ storiesOf('Field')
       label="Test"
       description="Test description"
       hint={<strong>Max Character:</strong>}
-      maxCharacter={20}
+      maxCharacter={30}
       message = "null"
     >
       <Input placeholder="Text placeholder" />

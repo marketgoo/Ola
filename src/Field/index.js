@@ -1,66 +1,61 @@
-import React from "react";
-import { default as PT } from "prop-types";
-import cx from "classnames";
+import React, {useState} from "react"
+import { default as PT } from "prop-types"
+import cx from "classnames"
 
-const Field = ({id,label,hint,error,description,disabled,children,maxCharacter,}) => {
+const Field = ({id,label,hint,error,description,disabled,children,maxCharacter}) => {
+
+  const [remain, setRemain] = useState(maxCharacter)
+  const [str, setStr] = useState(null) 
+  console.log(remain)
+
+
   const handleContent = (ev) => {
-    const str = ev.target.value.length;
-    let charRemain = maxCharacter - str;
-    const field = document.querySelector('.ola_field')
-    const input = document.querySelector('.ola_input') 
-    let classError= 'is-invalid'
-    console.log(charRemain)
-    if (maxCharacter) {
-      document.querySelector('.ola_field-hint').innerHTML = `${charRemain} / ${maxCharacter}`
-      input.setAttribute('maxlength', maxCharacter)
-      if (charRemain === 0) {
+    const str = ev.target.value.length
+    let charRemain = maxCharacter - str
+
+    setRemain(charRemain)
+    setStr(str)
+    // const field = document.querySelector('.ola_field')
+    // const input = document.querySelector('.ola_input') 
+    // let classError= 'is-invalid'
+    // console.log(charRemain)
+
+    // document.querySelector('.ola_field-hint').innerHTML = `${charRemain} / ${maxCharacter}`
+    // input.setAttribute('maxlength', maxCharacter)
+    // if (charRemain === 0) {
       
-        field.classList.add(classError)
-        input.classList.add(classError)
+    //   field.classList.add(classError)
+    //   input.classList.add(classError)
 
         
-      } else {
-        field.classList.remove(classError)
-        input.classList.remove(classError)
-      }
-    }
-  };
+    // } else {
+    //   field.classList.remove(classError)
+    //   input.classList.remove(classError)
+    // }
 
-  if (maxCharacter) {
-    return (
-      <div className={cx("ola_field", { "is-invalid": error }, { "is-disabled": disabled })}>
-        <label htmlFor={id} className="ola_field-label"> 
-        {label}
-        {hint && (<span className="ola_field-hint">{`Max ${maxCharacter} characters`} </span>)}
-        </label>
-        <div className="ola_field-input">
-          {React.cloneElement(children, {id: id,error,disabled,onChange: handleContent,})}
-        </div>
-        {description && (<p className={cx({"ola_field-error": error,"ola_field-description": !error,})}>{description}</p>
-        )}
-      </div>
-    );
   }
+
   return (
-    <div className={cx("ola_field",{ "is-invalid": error },{ "is-disabled": disabled })}>
+    <div className={cx("ola_field",{ "is-invalid": error || {maxCharacter} && remain === 0},{ "is-disabled": disabled })}>
       <label htmlFor={id} className="ola_field-label">
         {label}
-        {hint && <span className="ola_field-hint">{hint}</span>}
+        {maxCharacter && str > 0  ? <span className="ola_field-hint"> {remain} / {maxCharacter} </span> :
+          hint && <span className="ola_field-hint">{hint}</span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, {id: id,error,disabled})}
+        {React.cloneElement(children, {id: id,error,disabled,onChange: handleContent})}
       </div>
       {description && (<p className={cx({"ola_field-error": error,"ola_field-description": !error,})}>{description}</p>)}
     </div>
-  );
+  )
 };
 
 Field.defaultProps = {
   error: false,
   hint: null,
   description: null,
-  disabled: false,
-};
+  disabled: false,  
+}
 
 Field.propTypes = {
   /** Id for Input and Label*/
@@ -75,8 +70,10 @@ Field.propTypes = {
   description: PT.oneOfType([PT.arrayOf(PT.node), PT.node, PT.string]),
   /** Error variant */
   error: PT.bool,
+  /** Character counter */
+  maxCharacter: PT.number,
   /** Childen input node */
   children: PT.oneOfType([PT.arrayOf(PT.node), PT.node]).isRequired,
 }
 
-export default Field;
+export default Field
