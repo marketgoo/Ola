@@ -7,20 +7,21 @@ const Field = ({id,label,hint,error,description,disabled,children,maxCharacter,}
     const str = ev.target.value.length;
     let charRemain = maxCharacter - str;
     const field = document.querySelector('.ola_field')
-    let classes = ['is-invalid', 'ola_field-error']
+    const input = document.querySelector('.ola_input') 
+    let classError= 'is-invalid'
     console.log(charRemain)
     if (maxCharacter) {
-      if (charRemain < 0) {
-        const input = document.querySelector('.ola_input')
-        // input.setAttribute('disabled', '')
-        
-        
-        field.classList.add(...classes)
-        input.setAttribute('maxlength', maxCharacter)
+      document.querySelector('.ola_field-hint').innerHTML = `${charRemain} / ${maxCharacter}`
+      input.setAttribute('maxlength', maxCharacter)
+      if (charRemain === 0) {
+      
+        field.classList.add(classError)
+        input.classList.add(classError)
+
         
       } else {
-        document.querySelector('.ola_field-hint').innerHTML = `${charRemain} / ${maxCharacter}`
-        field.classList.remove(...classes)
+        field.classList.remove(classError)
+        input.classList.remove(classError)
       }
     }
   };
@@ -41,14 +42,13 @@ const Field = ({id,label,hint,error,description,disabled,children,maxCharacter,}
     );
   }
   return (
-    <div
-      className={cx("ola_field",{ "is-invalid": error },{ "is-disabled": disabled })}>
+    <div className={cx("ola_field",{ "is-invalid": error },{ "is-disabled": disabled })}>
       <label htmlFor={id} className="ola_field-label">
         {label}
         {hint && <span className="ola_field-hint">{hint}</span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, {id: id,error,disabled,onChange: handleContent,})}
+        {React.cloneElement(children, {id: id,error,disabled})}
       </div>
       {description && (<p className={cx({"ola_field-error": error,"ola_field-description": !error,})}>{description}</p>)}
     </div>
