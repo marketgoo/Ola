@@ -141,6 +141,8 @@ exports[`Checkgroup with error 1`] = `
       className="ola_field-hint"
     >
       (optional)
+       
+      <strong />
     </span>
   </label>
   <div
@@ -150,6 +152,8 @@ exports[`Checkgroup with error 1`] = `
       className="ola_checkGroup is-column is-invalid"
       disabled={false}
       id="field-error"
+      maxLength={null}
+      onChange={[Function]}
       role="radiogroup"
     >
       <label
