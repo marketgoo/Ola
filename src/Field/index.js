@@ -6,46 +6,25 @@ const Field = ({id,label,hint,error,description,disabled,children,maxCharacter})
 
   const [remain, setRemain] = useState(maxCharacter)
   const [str, setStr] = useState(null) 
-  console.log(remain)
-
-
+ 
   const handleContent = (ev) => {
     const str = ev.target.value.length
     let charRemain = maxCharacter - str
-
     setRemain(charRemain)
     setStr(str)
-    // const field = document.querySelector('.ola_field')
-    // const input = document.querySelector('.ola_input') 
-    // let classError= 'is-invalid'
-    // console.log(charRemain)
-
-    // document.querySelector('.ola_field-hint').innerHTML = `${charRemain} / ${maxCharacter}`
-    // input.setAttribute('maxlength', maxCharacter)
-    // if (charRemain === 0) {
-      
-    //   field.classList.add(classError)
-    //   input.classList.add(classError)
-
-        
-    // } else {
-    //   field.classList.remove(classError)
-    //   input.classList.remove(classError)
-    // }
-
   }
 
   return (
     <div className={cx("ola_field",{ "is-invalid": error || {maxCharacter} && remain === 0},{ "is-disabled": disabled })}>
       <label htmlFor={id} className="ola_field-label">
         {label}
-        {maxCharacter && str > 0  ? <span className="ola_field-hint"> {remain} / {maxCharacter} </span> :
-          hint && <span className="ola_field-hint">{hint}</span>}
+        {maxCharacter && str > 0  ? <span className="ola_field-hint"> {remain} / {maxCharacter} </span> :    
+          hint && <span className="ola_field-hint">{hint} <strong>{maxCharacter}</strong></span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, {id: id,error,disabled,onChange: handleContent})}
+        {React.cloneElement(children,{id:id,error: id === "field-error" || ({maxCharacter} && remain === 0 ),disabled,maxlength:maxCharacter, onChange:handleContent,})}
       </div>
-      {description && (<p className={cx({"ola_field-error": error,"ola_field-description": !error,})}>{description}</p>)}
+      {description && (<p className={cx({"ola_field-error": error || {maxCharacter} && remain === 0,"ola_field-description": !error || remain > 0})}>{description}</p>)}
     </div>
   )
 };

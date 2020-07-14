@@ -62,7 +62,7 @@ storiesOf('Field')
       id="field-counter"
       label="Test"
       description="Test description"
-      hint={<strong>Max Character:</strong>}
+      hint={<strong>Max Character</strong>}
       maxCharacter={30}
       message = "null"
     >
