@@ -44,3 +44,9 @@ it('Field with custom description with error', () => {
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
+it('Field with character counter', () => {
+  const tree = renderer
+    .create(<Field id="test" label="Test label" error={true} maxCharacter={true}><Input /></Field>)
+    .toJSON()
+  expect(tree).toMatchSnapshot()
+})
