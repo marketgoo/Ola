@@ -2,6 +2,8 @@
     display: inline-block;
     vertical-align: top;
 
+   
+
     &.is-error {
         & .ola_metric-value {
             color: var(--gray-light);
@@ -33,6 +35,13 @@
 
     &.is-centered {
         text-align: center;
+    }
+    &.is-size {
+        & .ola_metric-value{
+        font: var(--font-callout);
+        width: var(--size-6);
+        height: var(--size-6);
+        }
     }
 }
 .ola_metric-title {
