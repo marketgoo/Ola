@@ -24,7 +24,7 @@ const Field = ({ id, label, hint, error, description, disabled, children, maxCha
           hint && <span className="ola_field-hint">{hint} <strong>{maxCharacter}</strong></span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, { id: id, error: id === 'field-error' || (maxCharacter && charRemain === 0), disabled, maxlength: maxCharacter, onChange: handleContent})}
+        {React.cloneElement(children, { id: id, error: id === 'field-error' || (maxCharacter && charRemain === 0), disabled, maxLength: maxCharacter, onChange: handleContent})}
       </div>
       {description && <p className={ cx({'ola_field-error': showError, 'ola_field-description': !showError }) }>{ description }</p>}
     </div>
@@ -36,7 +36,8 @@ Field.defaultProps = {
   error: false,
   hint: null,
   description: null,
-  disabled: false
+  disabled: false,
+  maxCharacter: null
 }
 
 Field.propTypes = {

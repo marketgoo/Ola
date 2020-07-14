@@ -40,7 +40,7 @@ exports[`Field with character counter 1`] = `
       className="ola_input"
       disabled={false}
       id="test"
-      maxlength={true}
+      maxLength={true}
       onChange={[Function]}
       type="text"
     />

@@ -3,6 +3,7 @@ import Field from './'
 import Input from '../Input'
 import renderer from 'react-test-renderer'
 
+
 it('Default Field', () => {
   const tree = renderer
     .create(<Field id="test" label="Test label"><Input /></Field>)
@@ -47,7 +48,7 @@ it('Field with custom description with error', () => {
 
 it('Field with character counter', () => {
   const tree = renderer
-    .create(<Field id="test" label="Test label" error={true} maxCharacter={true}><Input /></Field>)
+    .create(<Field id="test" label="Test label" error={true} maxCharacter={null}><Input /></Field>)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
