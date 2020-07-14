@@ -23,6 +23,31 @@ exports[`Default Field 1`] = `
 </div>
 `;
 
+exports[`Field with character counter 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      maxlength={true}
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
 exports[`Field with custom description 1`] = `
 <div
   className="ola_field"

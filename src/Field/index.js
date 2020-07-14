@@ -1,6 +1,6 @@
-import React, { useState } from "react"
-import { default as PT } from "prop-types"
-import cx from "classnames"
+import React, { useState } from 'react'
+import { default as PT } from 'prop-types'
+import cx from 'classnames'
 
 const Field = ({ id, label, hint, error, description, disabled, children, maxCharacter }) => {
 
@@ -14,26 +14,29 @@ const Field = ({ id, label, hint, error, description, disabled, children, maxCha
     setCharacter(character)
   }
 
+  const showError = error || ( maxCharacter && charRemain === 0 )
+
   return (
-    <div className={cx("ola_field", { "is-invalid": error || {maxCharacter} && charRemain === 0 }, { "is-disabled": disabled })}>
+    <div className={cx('ola_field', { 'is-invalid': showError }, { 'is-disabled': disabled })}>
       <label htmlFor={id} className="ola_field-label">
         {label}
         {maxCharacter && character > 0 ? <span className="ola_field-hint"> {charRemain}  / {maxCharacter} </span> :
           hint && <span className="ola_field-hint">{hint} <strong>{maxCharacter}</strong></span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, { id: id, error: id === "field-error" || ({maxCharacter} && charRemain === 0), disabled, maxlength: maxCharacter, onChange: handleContent,})}
+        {React.cloneElement(children, { id: id, error: id === 'field-error' || (maxCharacter && charRemain === 0), disabled, maxlength: maxCharacter, onChange: handleContent})}
       </div>
-      {description && <p className={ error || { maxCharacter } && charRemain === 0 ? "ola_field-error" : "ola_field-description" }>{ description }</p>}
+      {description && <p className={ cx({'ola_field-error': showError, 'ola_field-description': !showError }) }>{ description }</p>}
     </div>
   )
-};
+}
+
 
 Field.defaultProps = {
   error: false,
   hint: null,
   description: null,
-  disabled: false,
+  disabled: false
 }
 
 Field.propTypes = {
@@ -52,7 +55,7 @@ Field.propTypes = {
   /** Character counter */
   maxCharacter: PT.number,
   /** Childen input node */
-  children: PT.oneOfType([PT.arrayOf(PT.node), PT.node]).isRequired,
+  children: PT.oneOfType([PT.arrayOf(PT.node), PT.node]).isRequired
 }
 
 export default Field
