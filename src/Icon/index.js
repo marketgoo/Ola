@@ -21,6 +21,8 @@ import Search from './Search'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
+import ExternalLink from './ExternalLink'
+
 
 const ICONS = {
   'arrowDown': ArrowDown,
@@ -40,7 +42,8 @@ const ICONS = {
   'search': Search,
   'success': Success,
   'user': User,
-  'warning': Warning
+  'warning': Warning,
+  'externalLink': ExternalLink
 }
 
 const Icon = ({ name, size, className, ...props }) => {
@@ -79,7 +82,8 @@ Icon.propTypes = {
     'search',
     'success',
     'user',
-    'warning'
+    'warning', 
+    'externalLink'
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),
