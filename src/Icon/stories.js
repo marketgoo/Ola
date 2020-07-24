@@ -33,7 +33,8 @@ storiesOf('Icon')
         'search',
         'success',
         'user',
-        'warning'
+        'warning',
+        'iconLink'
       ])} />
     </figure>
   ))

@@ -1,5 +1,5 @@
 import React from 'react'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
 // Icons
@@ -21,7 +21,7 @@ import Search from './Search'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
-import ExternalLink from './ExternalLink'
+import IconLink from './IconLink'
 
 
 const ICONS = {
@@ -43,7 +43,7 @@ const ICONS = {
   'success': Success,
   'user': User,
   'warning': Warning,
-  'externalLink': ExternalLink
+  'iconLink': IconLink
 }
 
 const Icon = ({ name, size, className, ...props }) => {
@@ -82,7 +82,7 @@ Icon.propTypes = {
     'search',
     'success',
     'user',
-    'warning', 
+    'warning',
     'externalLink'
   ]),
   /** Size */

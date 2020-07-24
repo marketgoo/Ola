@@ -160,14 +160,14 @@
 
     &.is-disabled,
     &:disabled {
-      color: var(--gray-light);
-      --background: var(--gray-xlight);
-      --background-hover: var(--gray-xlight);
-      --background-active: var(--gray-xlight);
-      border: none;
-      cursor: not-allowed;
-      pointer-events: none;
-      box-shadow: none;
+        color: var(--gray-light);
+        --background: var(--gray-xlight);
+        --background-hover: var(--gray-xlight);
+        --background-active: var(--gray-xlight);
+        border: none;
+        cursor: not-allowed;
+        pointer-events: none;
+        box-shadow: none;
     }
 }
 
@@ -180,5 +180,9 @@
 }
 
 summary:focus .ola_button {
-  box-shadow: 0 0 0 4px var(--focus);
+    box-shadow: 0 0 0 4px var(--focus);
+}
+
+.ola_icon svg {
+    vertical-align: middle;
 }

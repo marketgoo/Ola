@@ -1,5 +1,5 @@
 import React from 'react'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
@@ -11,9 +11,9 @@ const Button = ({ variant, children, disabled, busy, className, iconLink, as, ..
   delete props['as']
   const styles = cx(
     'ola_button',
-    {[`is-${variant}`]: variant },
-    {'is-busy': busy},
-    {'is-disabled': disabled && !busy},
+    { [`is-${variant}`]: variant },
+    { 'is-busy': busy },
+    { 'is-disabled': disabled && !busy },
     className
   )
   const isIcon = (variant === 'link' && iconLink)
@@ -21,7 +21,7 @@ const Button = ({ variant, children, disabled, busy, className, iconLink, as, ..
     <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
       {busy && <Spinner />}
       <span className="ola_button-text">{!busy ? children : busy}</span>
-      {isIcon && <Icon name="externalLink"/> }
+      {isIcon && <Icon name="iconLink" />}
     </ElementType>
   )
 }
@@ -32,7 +32,7 @@ Button.defaultProps = {
   busy: null,
   className: null,
   disabled: false,
-  iconLink : false
+  iconLink: false
 }
 
 Button.propTypes = {
