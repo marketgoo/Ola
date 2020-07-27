@@ -21,7 +21,7 @@ import Search from './Search'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
-import IconLink from './IconLink'
+import Link from './Link'
 
 
 const ICONS = {
@@ -43,7 +43,7 @@ const ICONS = {
   'success': Success,
   'user': User,
   'warning': Warning,
-  'iconLink': IconLink
+  'link': Link
 }
 
 const Icon = ({ name, size, className, ...props }) => {
@@ -83,7 +83,7 @@ Icon.propTypes = {
     'success',
     'user',
     'warning',
-    'externalLink'
+    'Link'
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),

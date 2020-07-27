@@ -3,8 +3,6 @@ import { storiesOf } from '@storybook/react'
 import { text, radios } from '@storybook/addon-knobs'
 
 import Tag from './'
-import ButtonIcon from '../ButtonIcon'
-import Icon from '../Icon'
 
 storiesOf('Tag')
   .add('Default', () => (
@@ -15,7 +13,7 @@ storiesOf('Tag')
       <Tag
         size={radios('Size', ['small', 'medium', 'big'], 'small')}
         variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
-        <span>{ text('Label', 'This is a tag') }</span>
+        <span>{text('Label', 'This is a tag')}</span>
       </Tag>
     </figure>
   ))
@@ -23,9 +21,10 @@ storiesOf('Tag')
     <figure>
       <Tag
         size={radios('Size', ['small', 'medium', 'big'], 'small')}
-        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
-        <span>{ text('Label', 'This is a tag') }</span>
-        <ButtonIcon><Icon size="small" name="close" /></ButtonIcon>
+        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}
+        icon="close"
+      >
+        <span>{text('Label', 'This is a tag')}</span>
       </Tag>
     </figure>
   ))

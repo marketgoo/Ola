@@ -6,7 +6,7 @@ import { getElementType } from '../utils'
 import Spinner from '../Spinner'
 import Icon from '../Icon'
 
-const Button = ({ variant, children, disabled, busy, className, iconLink, as, ...props }) => {
+const Button = ({ variant, children, disabled, busy, className, icon, as, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
   delete props['as']
   const styles = cx(
@@ -16,12 +16,12 @@ const Button = ({ variant, children, disabled, busy, className, iconLink, as, ..
     { 'is-disabled': disabled && !busy },
     className
   )
-  const isIcon = (variant === 'link' && iconLink)
+
   return (
     <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
       {busy && <Spinner />}
       <span className="ola_button-text">{!busy ? children : busy}</span>
-      {isIcon && <Icon name="iconLink" />}
+      {icon && <Icon name={icon} />}
     </ElementType>
   )
 }
@@ -32,7 +32,7 @@ Button.defaultProps = {
   busy: null,
   className: null,
   disabled: false,
-  iconLink: false
+  icon: null
 }
 
 Button.propTypes = {
@@ -56,7 +56,7 @@ Button.propTypes = {
   /** Button is disabled */
   disabled: PT.bool,
   /**Icon is a Bolean  */
-  iconLink: PT.bool
+  icon: PT.string
 }
 
 export default Button
