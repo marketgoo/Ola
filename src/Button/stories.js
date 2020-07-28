@@ -11,7 +11,29 @@ storiesOf('Button')
       onClick={action('onClick event')}
       disabled={boolean('Disabled', false)}
       busy={select('Busy', [false, 'Please, wait...'])}
-      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link'])}>
+      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link'])}
+      icon={select('Icon', [
+        undefined,
+        'arrowUp',
+        'arrowDown',
+        'help',
+        'chevronDown',
+        'chevronUp',
+        'chevronLeft',
+        'chevronRight',
+        'clock',
+        'close',
+        'error',
+        'home',
+        'null',
+        'page',
+        'plus',
+        'search',
+        'success',
+        'user',
+        'warning',
+        'link'
+      ])}>
       {text('Label', 'Button')}
     </Button>
   ))
