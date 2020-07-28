@@ -21,7 +21,7 @@ const Button = ({ variant, children, disabled, busy, className, icon, as, ...pro
     <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
       {busy && <Spinner />}
       <span className="ola_button-text">{!busy ? children : busy}</span>
-      {icon && <Icon name={icon} />}
+      {icon && <Icon name={icon} size="small" />}
     </ElementType>
   )
 }

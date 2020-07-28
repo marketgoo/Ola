@@ -1,13 +1,11 @@
 import React from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
-import Icon from '../Icon'
-import ButtonIcon from '../ButtonIcon'
 
-const Tag = ({ variant, className, size, children, icon }) =>
+
+const Tag = ({ variant, className, size, children }) =>
   <span className={cx('ola_tag', variant && `is-${variant}`, `is-${size}`, className)}>
     {children}
-    <ButtonIcon><Icon name={icon} size="small" /></ButtonIcon>
   </span>
 
 
@@ -23,8 +21,6 @@ Tag.propTypes = {
   size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
   className: PT.string,
-  /** icon name */
-  icon: PT.string,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

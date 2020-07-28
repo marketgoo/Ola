@@ -83,7 +83,7 @@ Icon.propTypes = {
     'success',
     'user',
     'warning',
-    'Link'
+    'link'
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),

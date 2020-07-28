@@ -34,7 +34,7 @@ storiesOf('Icon')
         'success',
         'user',
         'warning',
-        'iconLink'
+        'link'
       ])} />
     </figure>
   ))
