@@ -27,13 +27,14 @@ storiesOf('Icon')
         'close',
         'error',
         'home',
+        'newWindow',
         'null',
         'page',
         'plus',
         'search',
         'success',
         'user',
-        'warning'
+        'warning',
       ])} />
     </figure>
   ))

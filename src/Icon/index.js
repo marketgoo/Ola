@@ -1,5 +1,5 @@
 import React from 'react'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
 // Icons
@@ -21,6 +21,8 @@ import Search from './Search'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
+import NewWindow from './NewWindow'
+
 
 const ICONS = {
   'arrowDown': ArrowDown,
@@ -40,7 +42,8 @@ const ICONS = {
   'search': Search,
   'success': Success,
   'user': User,
-  'warning': Warning
+  'warning': Warning,
+  'newWindow': NewWindow
 }
 
 const Icon = ({ name, size, className, ...props }) => {
@@ -73,13 +76,14 @@ Icon.propTypes = {
     'error',
     'help',
     'home',
+    'newWindow',
     'null',
     'page',
     'plus',
     'search',
     'success',
     'user',
-    'warning'
+    'warning',
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),
