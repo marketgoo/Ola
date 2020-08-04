@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.8.0] - Unreleased
 ### Added
 - New prop `description` to `ProgressCircle` [#145], [#146]
+- New prop `icon` to `Button` [#133], [#144]
+- New icon `NewWindow` [#133], [#144]
 
 ## [0.7.0] - 2020-07-08
 ### Added
@@ -344,10 +346,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
 [#132]: https://github.com/marketgoo/Ola/issues/132
+[#133]: https://github.com/marketgoo/Ola/issues/133
 [#135]: https://github.com/marketgoo/Ola/issues/135
 [#136]: https://github.com/marketgoo/Ola/issues/136
 [#137]: https://github.com/marketgoo/Ola/issues/137
 [#140]: https://github.com/marketgoo/Ola/issues/140
+[#144]: https://github.com/marketgoo/Ola/issues/144
 [#145]: https://github.com/marketgoo/Ola/issues/145
 [#146]: https://github.com/marketgoo/Ola/issues/146
 
