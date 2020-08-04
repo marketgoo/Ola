@@ -1,0 +1,25 @@
+/* Common pattern of a content with an aside menu */
+
+.ola_ly-asideMenu {
+    box-sizing: border-box;
+    display: grid;
+    grid-row-gap: var(--row-gap-3);
+    grid-column-gap: var(--column-gap-3);
+    padding-left: var(--column-gap-3);
+    padding-right: var(--column-gap-3);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+
+    @media (--from-width-2) {
+      grid-template-columns: minmax(33%, var(--size-11)) 1fr;
+
+      & > * {
+        grid-column: 2;
+
+        &:first-child {
+          grid-column: 1;
+        }
+      }
+    }
+}

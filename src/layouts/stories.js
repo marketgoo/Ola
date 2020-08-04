@@ -137,3 +137,14 @@ storiesOf('Layout')
       </footer>
     </section>
   ))
+  .add('ola_ly-asideMenu', () => (
+    <section className="ola_ly-asideMenu">
+      <nav>
+        This is the navigation
+      </nav>
+  
+      <div>
+        And this is the content
+      </div>
+    </section>
+  ))

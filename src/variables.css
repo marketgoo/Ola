@@ -44,6 +44,8 @@
     --size-11: 268px;
     --size-12: 524px;
 
+    --max-width: 1200px;
+
     /* Font styles */
     --font-display-spacing: -0.03em;
     --font-display-weight: 500;
