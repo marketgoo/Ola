@@ -11,8 +11,30 @@ storiesOf('Button')
       onClick={action('onClick event')}
       disabled={boolean('Disabled', false)}
       busy={select('Busy', [false, 'Please, wait...'])}
-      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link'])}>
-      { text('Label', 'Button') }
+      variant={radios('Variant', ['primary', 'secondary', 'destructive-primary', 'destructive', 'pro', 'link'])}
+      icon={select('Icon', [
+        undefined,
+        'arrowUp',
+        'arrowDown',
+        'help',
+        'chevronDown',
+        'chevronUp',
+        'chevronLeft',
+        'chevronRight',
+        'clock',
+        'close',
+        'error',
+        'home',
+        'newWindow',
+        'null',
+        'page',
+        'plus',
+        'search',
+        'success',
+        'user',
+        'warning',
+      ])}>
+      {text('Label', 'Button')}
     </Button>
   ))
   .add('As links', () => (
@@ -20,7 +42,7 @@ storiesOf('Button')
       <figure><Button href="#" variant="primary" target="_blank">Link</Button></figure>
       <figure><Button href="#" variant="primary" disabled>Link disabled</Button></figure>
       <figure><Button href="#" variant="primary" busy='Link busy ...' disabled>Hide text by busy text</Button></figure>
-      <figure><Button href="#" variant="link">Link style</Button></figure>
+      <figure><Button href="#" variant="link" icon="newWindow">Link style</Button></figure>
     </div>
   ))
   .add('Busy', () => (
