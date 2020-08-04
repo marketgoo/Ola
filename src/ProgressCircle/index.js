@@ -53,7 +53,10 @@ ProgressCircle.propTypes = {
   /** Value of progress */
   value: PT.number,
   /** Description of progress */
-  description: PT.oneOfType[PT.string, PT.node],
+  description: PT.oneOfType([
+    PT.string, 
+    PT.node
+  ]),
   /** Busy or loading */
   busy: PT.oneOfType([
     PT.string,
