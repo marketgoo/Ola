@@ -21,7 +21,7 @@ import Search from './Search'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
-import Link from './Link'
+import NewWindow from './NewWindow'
 
 
 const ICONS = {
@@ -43,7 +43,7 @@ const ICONS = {
   'success': Success,
   'user': User,
   'warning': Warning,
-  'link': Link
+  'newWindow': NewWindow
 }
 
 const Icon = ({ name, size, className, ...props }) => {
@@ -76,6 +76,7 @@ Icon.propTypes = {
     'error',
     'help',
     'home',
+    'newWindow',
     'null',
     'page',
     'plus',
@@ -83,7 +84,6 @@ Icon.propTypes = {
     'success',
     'user',
     'warning',
-    'link'
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),

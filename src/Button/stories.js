@@ -25,6 +25,7 @@ storiesOf('Button')
         'close',
         'error',
         'home',
+        'newWindow',
         'null',
         'page',
         'plus',
@@ -32,7 +33,6 @@ storiesOf('Button')
         'success',
         'user',
         'warning',
-        'link'
       ])}>
       {text('Label', 'Button')}
     </Button>
@@ -42,7 +42,7 @@ storiesOf('Button')
       <figure><Button href="#" variant="primary" target="_blank">Link</Button></figure>
       <figure><Button href="#" variant="primary" disabled>Link disabled</Button></figure>
       <figure><Button href="#" variant="primary" busy='Link busy ...' disabled>Hide text by busy text</Button></figure>
-      <figure><Button href="#" variant="link" icon="link">Link style</Button></figure>
+      <figure><Button href="#" variant="link" icon="newWindow">Link style</Button></figure>
     </div>
   ))
   .add('Busy', () => (

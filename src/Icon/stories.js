@@ -27,6 +27,7 @@ storiesOf('Icon')
         'close',
         'error',
         'home',
+        'newWindow',
         'null',
         'page',
         'plus',
@@ -34,7 +35,6 @@ storiesOf('Icon')
         'success',
         'user',
         'warning',
-        'link'
       ])} />
     </figure>
   ))
