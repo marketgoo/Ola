@@ -12,7 +12,7 @@
     max-width: var(--max-width);
 
     @media (--from-width-2) {
-      grid-template-columns: minmax(33%, var(--size-11)) 1fr;
+      grid-template-columns: minmax(33%, var(--size-11)) minmax(0, 1fr);
 
       & > * {
         grid-column: 2;
