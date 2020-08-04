@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.8.0] - Unreleased
+### Added
+- New prop `description` to `ProgressCircle` [#145], [#146]
+
 ## [0.7.0] - 2020-07-08
 ### Added
 - Padding top and bottom to `PanelContent` when it's the first/last child.
@@ -344,7 +348,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#136]: https://github.com/marketgoo/Ola/issues/136
 [#137]: https://github.com/marketgoo/Ola/issues/137
 [#140]: https://github.com/marketgoo/Ola/issues/140
+[#145]: https://github.com/marketgoo/Ola/issues/145
+[#146]: https://github.com/marketgoo/Ola/issues/146
 
+[0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
