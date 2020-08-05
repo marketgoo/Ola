@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.8.0] - Unreleased
 ### Added
+- New component `Section` [#150], [#151] including some subcomponents:
+  - `SectionHeader`
+  - `SectionContent`
+  - `SectionSubheader`
+  - `SectionFooter`
 - New prop `description` to `ProgressCircle` [#145], [#146]
 - New prop `icon` to `Button` [#133], [#144]
 - New icon `NewWindow` [#133], [#144]
@@ -354,6 +359,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#144]: https://github.com/marketgoo/Ola/issues/144
 [#145]: https://github.com/marketgoo/Ola/issues/145
 [#146]: https://github.com/marketgoo/Ola/issues/146
+[#150]: https://github.com/marketgoo/Ola/issues/150
+[#151]: https://github.com/marketgoo/Ola/issues/151
 
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
