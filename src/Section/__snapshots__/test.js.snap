@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Section 1`] = `
+<section
+  className="ola_section"
+>
+  <header
+    className="ola_section-header"
+  >
+    <h1
+      className="ola_section-title"
+    >
+      Section Header
+    </h1>
+    <div
+      className="ola_section-intro"
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis eros quam, vitae consectetur leo vehicula ut. Etiam et ullamcorper turpis.
+    </div>
+  </header>
+  <div
+    className="ola_section-content"
+  >
+    <p>
+      Section content
+    </p>
+    <hr />
+    <div
+      className="ola_section-subheader"
+    >
+      <h2
+        className="ola_section-subtitle"
+      >
+        Your SEO website manager
+      </h2>
+      <div
+        className="ola_section-intro"
+      >
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis eros quam, vitae consectetur leo vehicula ut. Etiam et ullamcorper turpis.
+      </div>
+    </div>
+    <p>
+      Section content
+    </p>
+  </div>
+  <footer
+    className="ola_section-footer"
+  >
+    Section footer content
+  </footer>
+</section>
+`;
