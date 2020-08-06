@@ -24,10 +24,20 @@
         border: 0;
     }
 
+    &.is-nav {
+        --color: var(--accent);
+        border-top: solid 1px var(--gray-xlight);
+    }
+
+    &.is-selected,
     &:hover,
     &:focus {
         --color: var(--black);
         --background: var(--gray-xlight);
+    }
+
+    &.is-selected {
+        border-left: solid var(--size-1) var(--gray-light);
     }
 
     &:active {

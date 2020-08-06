@@ -46,3 +46,24 @@ storiesOf('Menu')
       </Tooltip>
     </figure>
   ))
+  .add('Aside', () => (
+    <figure>
+      <Menu>
+        <MenuOption href="#" variant="nav" selected>
+          <strong>General</strong>
+        </MenuOption>
+        <MenuOption href="#" variant="nav">
+          <strong>Keywords</strong>
+        </MenuOption>
+        <MenuOption href="#" variant="nav">
+          <strong>Competitors</strong>
+        </MenuOption>
+        <MenuOption href="#" variant="nav">
+          <strong>Notifications</strong>
+        </MenuOption>
+        <MenuOption href="#" variant="nav">
+          <strong>Connections</strong>
+        </MenuOption>
+      </Menu>
+    </figure>
+  ))
