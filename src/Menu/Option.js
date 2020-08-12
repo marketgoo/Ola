@@ -6,9 +6,10 @@ import { getElementType } from '../utils'
 const MenuOption = ({ as, className, separator, children, variant, selected, ...props }) => {
   const ElementType = getElementType(Option, { as: as, ...props })
   delete props['as']
+
   return (
     <li className={cx(separator && 'ola_menu-separator')}>
-      <ElementType className={ cx(
+      <ElementType aria-current={selected} className={ cx(
         'ola_menu-option',
         className,
         {

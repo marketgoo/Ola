@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New prop `description` to `ProgressCircle` [#145], [#146]
 - New prop `icon` to `Button` [#133], [#144]
 - New icon `NewWindow` [#133], [#144]
+- New props `variant` and `selected` to `MenuOption` [#149]
 
 ## [0.7.0] - 2020-07-08
 ### Added
@@ -359,6 +360,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#144]: https://github.com/marketgoo/Ola/issues/144
 [#145]: https://github.com/marketgoo/Ola/issues/145
 [#146]: https://github.com/marketgoo/Ola/issues/146
+[#149]: https://github.com/marketgoo/Ola/issues/149
 [#150]: https://github.com/marketgoo/Ola/issues/150
 [#151]: https://github.com/marketgoo/Ola/issues/151
 

@@ -27,6 +27,7 @@
     &.is-nav {
         --color: var(--accent);
         border-top: solid 1px var(--gray-xlight);
+        font-weight: var(--bold);
     }
 
     &.is-selected,

@@ -50,19 +50,19 @@ storiesOf('Menu')
     <figure>
       <Menu>
         <MenuOption href="#" variant="nav" selected>
-          <strong>General</strong>
+          General
         </MenuOption>
         <MenuOption href="#" variant="nav">
-          <strong>Keywords</strong>
+          Keywords
         </MenuOption>
         <MenuOption href="#" variant="nav">
-          <strong>Competitors</strong>
+          Competitors
         </MenuOption>
         <MenuOption href="#" variant="nav">
-          <strong>Notifications</strong>
+          Notifications
         </MenuOption>
         <MenuOption href="#" variant="nav">
-          <strong>Connections</strong>
+          Connections
         </MenuOption>
       </Menu>
     </figure>
