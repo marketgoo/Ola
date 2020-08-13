@@ -30,7 +30,7 @@ Tooltip.defaultProps = {
 
 Tooltip.propTypes = {
   /** Tooltip variants */
-  variant: PT.oneOf(['wide']),
+  variant: PT.oneOf(['wide', 'narrow']),
   /** Trigger nodes */
   trigger: PT.oneOfType([
     PT.string,

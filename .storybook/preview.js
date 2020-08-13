@@ -1,12 +1,15 @@
 import React from 'react'
-import { addDecorator } from '@storybook/react'
-import { withKnobs, select } from '@storybook/addon-knobs'
+import '../src/index.css'
+import { addDecorator, addParameters } from '@storybook/react'
+import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks'
 
-// global decorators
-const themes = { 
-  default: {},
-  green: {'--accent': '#5BC500', '--accent-focus': '#5BC50033', '--accent-dark': '#449400'}
-}
+addDecorator(story => 
+  <div className="ola">{story()}</div>
+)
 
-addDecorator(withKnobs)
-addDecorator(story => <div className="ola" style={select('Theme', themes)}>{story()}</div>)
+addParameters({
+  docs: {
+    container: DocsContainer,
+    page: DocsPage,
+  },
+})

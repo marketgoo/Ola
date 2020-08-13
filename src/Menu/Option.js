@@ -32,7 +32,7 @@ MenuOption.propTypes = {
   /** Render Item with any html tag */
   as: PT.string,
   /** Option variants */
-  variant: PT.oneOf(['nav']),
+  variant: PT.oneOf(['option', 'nav']),
   /** Separator */
   separator: PT.bool,
   /** Selected */

@@ -1,6 +1,4 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-
 import Table from './'
 import TableRow from './Row'
 import TableCell from './Cell'
@@ -40,106 +38,40 @@ const data = [
   }
 ]
 
-storiesOf('Table')
-  .add('Selectable', () => (
-    <figure>
-      <Table caption="Superheros and sidekicks" stiky>
-        <thead>
-          <TableRow>
-            <TableCell header variant="check"></TableCell>
-            <TableCell header>Page</TableCell>
-            <TableCell header variant="numeric">Incoming links</TableCell>
-            <TableCell header variant="numeric">Popularity</TableCell>
-          </TableRow>
-        </thead>
-        <tbody>
-          { data.map( (row, idx) => (
-            <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
-              <TableCell>{row.title}</TableCell>
-              <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="numeric">{row.popularity}</TableCell>
-            </TableRow>
-          ) ) }
-        </tbody>
-      </Table>
-    </figure>
-  ))
-  .add('Default', () => (
-    <figure>
-      <Table caption="Superheros and sidekicks" stiky>
-        <thead>
-          <TableRow>
-            <TableCell header>Your current page title</TableCell>
-            <TableCell header variant="right">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
-          </TableRow>
-        </thead>
-        <tbody>
-          { data.map( (row, idx) => (
-            <TableRow key={idx}>
-              <TableCell>{row.title}</TableCell>
-              <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
-              <TableCell variant="action">{row.action}</TableCell>
-            </TableRow>
-          ) ) }
-        </tbody>
-      </Table>
-    </figure>
-  ))
-  .add('Responsive selectable', () => (
-    <figure>
-      <Table responsive stiky>
-        <thead>
-          <TableRow className="is-selectable">
-            <TableCell header>Your current page title</TableCell>
-            <TableCell header variant="right">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
-            <TableCell header>Your current page title</TableCell>
-            <TableCell header variant="right">Incoming links</TableCell>
-            <TableCell header variant="center">Popularity</TableCell>
-            <TableCell header>Popularity</TableCell>
-            <TableCell header variant="action">Actions</TableCell>
-          </TableRow>
-        </thead>
-        <tbody>
-          { data.map( (row, idx) => (
-            <TableRow key={idx} className="is-selectable">
-              <TableCell>{row.title}</TableCell>
-              <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="center">{row.popularity}</TableCell>
-              <TableCell variant="action"></TableCell>
-              <TableCell>{row.title}</TableCell>
-              <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="numeric">{row.popularity}</TableCell>
-              <TableCell variant="action">{row.action}</TableCell>
-            </TableRow>
-          ) ) }
-        </tbody>
-      </Table>
-    </figure>
-  ))
-  .add('Responsive multiline', () => (
-    <figure>
-      <Table responsive stiky>
-        <thead>
-          <TableRow>
-            <TableCell header variant="multiline">Your current page title</TableCell>
-            <TableCell header variant="right">Incoming links</TableCell>
-            <TableCell header variant="numeric">Popularity</TableCell>
-            <TableCell header variant="action"></TableCell>
-          </TableRow>
-        </thead>
-        <tbody>
-          { data.map( (row, idx) => (
-            <TableRow key={idx}>
-              <TableCell variant="multiline">{row.title}</TableCell>
-              <TableCell variant="numeric">{row.links}</TableCell>
-              <TableCell variant="numeric">{row.popularity}</TableCell>
-              <TableCell variant="action"><ButtonIcon><Icon name="close"/></ButtonIcon></TableCell>
-            </TableRow>
-          ) ) }
-        </tbody>
-      </Table>
-    </figure>
-  ))
+export default {
+  title: 'Table',
+  component: Table,
+  args: {
+    caption: ''
+  },
+  argTypes: {
+    children: { control: { disable: true }}
+  }
+}
+
+export const Base = (args) => 
+  <Table {...args}>
+    <thead>
+      <TableRow>
+        <TableCell header variant="check"></TableCell>
+        <TableCell header>Page</TableCell>
+        <TableCell header variant="numeric">Incoming links</TableCell>
+        <TableCell header variant="numeric">Popularity</TableCell>
+        <TableCell header>Page</TableCell>
+        <TableCell header variant="numeric">Incoming links</TableCell>
+        <TableCell header variant="numeric">Popularity</TableCell>
+      </TableRow>
+    </thead>
+    <tbody>
+      { data.map( (row, idx) => (
+        <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
+          <TableCell>{row.title}</TableCell>
+          <TableCell variant="numeric">{row.links}</TableCell>
+          <TableCell variant="numeric">{row.popularity}</TableCell>
+          <TableCell>{row.title}</TableCell>
+          <TableCell variant="numeric">{row.links}</TableCell>
+          <TableCell variant="numeric">{row.popularity}</TableCell>
+        </TableRow>
+      ) ) }
+    </tbody>
+  </Table>
