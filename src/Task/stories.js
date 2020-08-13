@@ -15,6 +15,7 @@ export default {
   argTypes: {
     children: { control: { disable: true }},
     extra: { control: { disable: true }},
+    onToggle: { action: 'toggled' },
   }
 }
 

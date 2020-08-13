@@ -7,6 +7,12 @@ export default {
   args: {
     disabled: false,
     readOnly: false
+  },
+  argTypes: {
+    onClick: { action: 'clicked' },
+    onFocus: { action: 'focused' },
+    onBlur: { action: 'blurred' },
+    onInput: { action: 'input' },
   }
 }
 

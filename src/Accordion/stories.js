@@ -10,6 +10,8 @@ export default {
     children: 'This is the content'
   },
   argTypes: {
+    onClick: { action: 'clicked' },
+    onToggle: { action: 'toogled' },
     open: {control: 'boolean'}
   }
 };

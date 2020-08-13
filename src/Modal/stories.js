@@ -16,6 +16,8 @@ export default {
     open: true
   },
   argTypes: {
+    onOpen: { action: 'opened' },
+    onClose: { action: 'closed' },
     children: { control: { disable: true }}
   }
 }

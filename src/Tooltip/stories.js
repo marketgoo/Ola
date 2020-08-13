@@ -10,7 +10,7 @@ export default {
   component: Tooltip,
   argTypes: {
     trigger: { control: { disable: true }},
-    children: { control: { disable: true }}
+    children: { control: { disable: true }},
   }
 }
 

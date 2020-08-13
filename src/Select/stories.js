@@ -12,6 +12,10 @@ export default {
       { value: 'vanilla', label: 'Vanilla' },
       { value: '', label: 'None' }
     ]
+  },
+  argTypes: {
+    onClick: { action: 'clicked' },
+    onChange: { action: 'changed' },
   }
 }
 

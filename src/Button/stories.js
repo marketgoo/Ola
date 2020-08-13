@@ -8,6 +8,8 @@ export default {
     children: 'Button',
   },
   argTypes: {
+    onClick: { action: 'clicked' },
+    onFocus: { action: 'focused' },
     busy: { control: 'text' },
     as: { 
       control: {

@@ -7,6 +7,9 @@ export default {
   args: {
     children: 'This is a check',
     checked: false
+  },
+  argTypes: {
+    onClick: { action: 'clicked' }
   }
 }
 

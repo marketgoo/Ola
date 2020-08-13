@@ -7,6 +7,10 @@ export default {
   args: {
     children: 'Switch',
     checked: false,
+  },
+  argTypes: {
+    onClick: { action: 'clicked' },
+    onChange: { action: 'changed' },
   }
 }
 

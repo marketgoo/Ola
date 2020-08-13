@@ -8,6 +8,10 @@ export default {
     id: 'search',
     placeholder: 'Search by name',
     description: ''
+  },
+  argTypes: {
+    onFocus: { action: 'focused' },
+    onBlur: { action: 'blurred' },
   }
 }
 

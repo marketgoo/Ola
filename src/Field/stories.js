@@ -10,7 +10,7 @@ export default {
     label: 'Label of the field',
     description: 'This is a description',
     hint: '(optional)',
-  }
+  },
 }
 
 export const Base = (args) => <Field {...args}>
