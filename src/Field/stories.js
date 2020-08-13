@@ -14,8 +14,8 @@ export default {
 }
 
 export const Base = (args) => <Field {...args}>
-    <Input placeholder="Text placeholder" />
-  </Field>
+  <Input placeholder="Text placeholder" />
+</Field>
 
 Base.argTypes = {
   children: { control: { disable: true }}

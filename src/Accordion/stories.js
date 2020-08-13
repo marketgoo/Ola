@@ -14,7 +14,7 @@ export default {
     onToggle: { action: 'toogled' },
     open: {control: 'boolean'}
   }
-};
+}
 
 export const Base = (args) => <Accordion { ...args}>{args.children}</Accordion>
 

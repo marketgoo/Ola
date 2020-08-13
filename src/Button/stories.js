@@ -18,6 +18,6 @@ export default {
       }
     }
   }
-};
+}
 
-export const Base = (args) => <Button {...args}>{args.children}</Button>;
+export const Base = (args) => <Button {...args}>{args.children}</Button>

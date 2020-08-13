@@ -15,9 +15,9 @@ export default {
 }
 
 export const Base = (args) => <ButtonIcon {...args}>
-    <Icon name="user" />
-  </ButtonIcon>
+  <Icon name="user" />
+</ButtonIcon>
 
 export const TagWithButton = () => <Tag>
     Tag with ButtonIcon <ButtonIcon><Icon name="close" size="small" /></ButtonIcon>
-  </Tag>
+</Tag>

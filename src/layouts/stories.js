@@ -1,12 +1,8 @@
 import React from 'react'
 import Button from '../Button'
 import ButtonGroup from '../ButtonGroup'
-import Panel from '../Panel'
-import PanelContent from '../Panel/Content'
 import Field from '../Field'
 import Input from '../Input'
-import CheckGroup from '../CheckGroup'
-import Check from '../Check'
 
 export default {
   title: 'Layouts'
