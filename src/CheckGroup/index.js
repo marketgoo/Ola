@@ -17,7 +17,7 @@ CheckGroup.defaultProps = {
 }
 
 CheckGroup.propTypes = {
-  variant: PT.oneOf(['row', 'column', 'list']),
+  variant: PT.oneOf(['row', 'column', 'list', 'full-list']),
   /** Extra className */
   className: PT.string,
   /** Input is invalid */

@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New props `variant` and `selected` to `MenuOption` [#149]
 - New layout `ly-asideMenu` [#148]
 - New helpers `ola-width-narrow` and `ola-width-medium`
+- New variant `full-list` to `CheckGroup` to remove scroll and max-height
 
 ## [0.7.0] - 2020-07-08
 ### Added
@@ -362,6 +363,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#144]: https://github.com/marketgoo/Ola/issues/144
 [#145]: https://github.com/marketgoo/Ola/issues/145
 [#146]: https://github.com/marketgoo/Ola/issues/146
+[#148]: https://github.com/marketgoo/Ola/issues/148
 [#149]: https://github.com/marketgoo/Ola/issues/149
 [#150]: https://github.com/marketgoo/Ola/issues/150
 [#151]: https://github.com/marketgoo/Ola/issues/151
