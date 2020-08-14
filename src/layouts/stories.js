@@ -65,8 +65,10 @@ export const pageCenter = () =>
     <div className="is-fullwidth">
       A full-width block
     </div>
-  
-    <footer>
-        Footer
-    </footer>
+  </section>
+
+export const asideMenu = () => 
+  <section className="ola_ly-asideMenu">
+    <nav>This is the navigation</nav>
+    <div>And this is the content</div>
   </section>
