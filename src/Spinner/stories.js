@@ -1,12 +1,9 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { radios } from '@storybook/addon-knobs'
-
 import Spinner from './'
 
-storiesOf('Spinner')
-  .add('Viewer', () => (
-    <figure>
-      <Spinner size={radios('Size', ['small', 'medium', 'big'], 'big')} />
-    </figure>
-  ))
+export default {
+  title: 'Spinner',
+  component: Spinner
+}
+
+export const Base = (args) => <Spinner {...args}/>

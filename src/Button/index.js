@@ -46,15 +46,15 @@ Button.propTypes = {
   ]),
   /** Extra className */
   className: PT.string,
-  /** Childen nodes */
+  /** Button content */
   children: PT.oneOfType([
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
   ]).isRequired,
-  /** Button is disabled */
+  /** Whether the button is disabled */
   disabled: PT.bool,
-  /**Icon is a Bolean  */
+  /** Icon name  */
   icon: PT.string
 }
 
