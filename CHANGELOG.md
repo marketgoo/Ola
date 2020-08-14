@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New prop `icon` to `Button` [#133], [#144]
 - New icon `NewWindow` [#133], [#144]
 - New props `variant` and `selected` to `MenuOption` [#149]
+- New layout `ly-asideMenu` [#148]
+- New helpers `ola-width-narrow` and `ola-width-medium`
 
 ## [0.7.0] - 2020-07-08
 ### Added

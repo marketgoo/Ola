@@ -176,3 +176,9 @@ strong {
 .ola-bold {
     font-weight: var(--bold);
 }
+.ola-width-narrow {
+    max-width: var(--size-11);
+}
+.ola-width-medium {
+    max-width: var(--size-12);
+}
