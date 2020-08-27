@@ -9,6 +9,8 @@ export default {
   title: 'Tooltip',
   component: Tooltip,
   argTypes: {
+    onOpen: { action: 'open!' },
+    onClose: { action: 'close!' },
     trigger: { control: { disable: true }},
     children: { control: { disable: true }},
   }
