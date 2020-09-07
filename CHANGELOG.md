@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New icon `NewWindow` [#133], [#144]
 - New props `variant` and `selected` to `MenuOption` [#149]
 - New layout `ly-asideMenu` [#148]
+- New layout `ly-asideHeader`
 - New helpers `ola-width-narrow` and `ola-width-medium`
 - New variant `full-list` to `CheckGroup` to remove scroll and max-height
 

@@ -130,3 +130,6 @@
 
 @custom-media --from-width-2 (min-width: 783px);
 @custom-media --from-height-2 (min-height: 783px);
+
+@custom-media --to-width-3 (max-width: 959px);
+@custom-media --from-width-3 (min-width: 960px);

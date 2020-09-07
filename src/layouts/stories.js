@@ -55,7 +55,7 @@ export const pageCenter = () =>
   <section className="ola_ly-pageCenter">
     <header>
       <h1 className="ola-title">Welcome to this page</h1>
-      <p className="ola-callout ola-gray">This is a introductory text of this process</p>
+      <p className="ola-callout ola-gray">This is a introductory tegit xt of this process</p>
     </header>
   
     <div>
@@ -70,5 +70,15 @@ export const pageCenter = () =>
 export const asideMenu = () => 
   <section className="ola_ly-asideMenu">
     <nav>This is the navigation</nav>
+    <div>And this is the content</div>
+  </section>
+
+export const asideHeader = () => 
+  <section className="ola_ly-asideHeader">
+    <header>
+      <h2 className="ola-title ola-nomargin">This is the header</h2>
+      <p className="ola-callout ola-gray">This is an intro</p>
+    </header>
+
     <div>And this is the content</div>
   </section>
