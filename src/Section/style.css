@@ -15,6 +15,10 @@
 }
 .ola_section-subheader {
     margin: var(--row-gap-3) 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 .ola_section-subtitle {
     font: var(--font-headline);
