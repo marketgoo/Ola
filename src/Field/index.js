@@ -12,13 +12,9 @@ const Field = ({ id, label, hint, error, description, disabled, children }) => {
         {hint && <span className="ola_field-hint">{ hint }</span>}
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(elements[0], { id: id, error, disabled })}
+        {React.cloneElement(elements.shift(), { id: id, error, disabled })}  
       </div>
-      {elements.map((item,idx) => {
-        if (idx >= 1) {
-          return item
-        }
-      })}
+      {elements}
       {description && <p className={ cx({ 'ola_field-error': error, 'ola_field-description': !error }) }>{description}</p>}
     </div>
   )
