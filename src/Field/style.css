@@ -34,7 +34,7 @@
 .ola_field-description,
 .ola_field-error {
     font: var(--font-caption);
-    margin-top: 0;
+    margin-top: var(--size-2);
     color: var(--gray);
 }
 .ola_field-error {
