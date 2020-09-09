@@ -21,6 +21,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New helpers `ola-width-narrow` and `ola-width-medium`
 - New variant `full-list` to `CheckGroup` to remove scroll and max-height
 
+### Fixed
+- Field component can have multiple child elements [#154] [#155]
+
 ## [0.7.0] - 2020-07-08
 ### Added
 - Padding top and bottom to `PanelContent` when it's the first/last child.
@@ -368,6 +371,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#149]: https://github.com/marketgoo/Ola/issues/149
 [#150]: https://github.com/marketgoo/Ola/issues/150
 [#151]: https://github.com/marketgoo/Ola/issues/151
+[#154]: https://github.com/marketgoo/Ola/issues/154
+[#155]: https://github.com/marketgoo/Ola/issues/155
 
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
