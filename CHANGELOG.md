@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Fixed
 - Field component can have multiple child elements [#154] [#155]
+- Modal must restore the scroll on unmount [#156] [#157]
 
 ## [0.7.0] - 2020-07-08
 ### Added
@@ -373,6 +374,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#151]: https://github.com/marketgoo/Ola/issues/151
 [#154]: https://github.com/marketgoo/Ola/issues/154
 [#155]: https://github.com/marketgoo/Ola/issues/155
+[#156]: https://github.com/marketgoo/Ola/issues/156
+[#157]: https://github.com/marketgoo/Ola/issues/157
 
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
