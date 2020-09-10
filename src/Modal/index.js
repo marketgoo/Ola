@@ -30,7 +30,12 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
     onClose()
     releaseScroll(scrollingElement)
   })
-  useEffect(() => { dialogPolyfill.registerDialog(modal.current) }, [])
+  useEffect(() => { 
+    dialogPolyfill.registerDialog(modal.current)
+    return () => {
+      if( scrollingElement.style.overflow !== null ) releaseScroll(scrollingElement)
+    }
+  }, [])
   useEffect(() => {
     if(modal.current && open && !modal.current.open) {
       onOpen()
