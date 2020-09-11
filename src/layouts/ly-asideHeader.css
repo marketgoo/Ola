@@ -10,6 +10,7 @@
   max-width: var(--max-width);
   align-items: start;
   justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
 
   & > *:first-child {
     max-width: var(--size-12);
