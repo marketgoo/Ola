@@ -25,6 +25,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Field component can have multiple child elements [#154] [#155]
 - Modal must restore the scroll on unmount [#156] [#157]
 - Apply separation gap to any element in a `ButtonGroup`, instead only to `Button`.
+- `ProgressCircle` component display `0` as description when the value is `0`.
 
 ## [0.7.0] - 2020-07-08
 ### Added
