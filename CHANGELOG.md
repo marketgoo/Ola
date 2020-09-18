@@ -20,9 +20,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New layout `ly-asideHeader`
 - New helpers `ola-width-narrow` and `ola-width-medium`
 - New variant `full-list` to `CheckGroup` to remove scroll and max-height
+- New props `open` and `close` to `Tooltip` [#152] [#153]
 
 ### Fixed
-- Field component can have multiple child elements [#154] [#155]
+- `Field` component can have multiple child elements [#154] [#155]
 - Modal must restore the scroll on unmount [#156] [#157]
 - Apply separation gap to any element in a `ButtonGroup`, instead only to `Button`.
 - `ProgressCircle` component display `0` as description when the value is `0`.
@@ -374,6 +375,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#149]: https://github.com/marketgoo/Ola/issues/149
 [#150]: https://github.com/marketgoo/Ola/issues/150
 [#151]: https://github.com/marketgoo/Ola/issues/151
+[#152]: https://github.com/marketgoo/Ola/issues/152
+[#153]: https://github.com/marketgoo/Ola/issues/153
 [#154]: https://github.com/marketgoo/Ola/issues/154
 [#155]: https://github.com/marketgoo/Ola/issues/155
 [#156]: https://github.com/marketgoo/Ola/issues/156
