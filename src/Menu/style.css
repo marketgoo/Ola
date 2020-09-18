@@ -26,7 +26,7 @@
     }
 
     &.is-nav {
-        --color: var(--accent);
+        --color: var(--brand);
         border-top: solid 1px var(--gray-xlight);
         font-weight: var(--bold);
     }
