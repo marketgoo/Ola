@@ -8,7 +8,7 @@
     margin: 0;
 }
 .ola_section-intro {
-    font: var(--font-callout);
+    font: var(--font-body);
     color: var(--gray);
     margin-top: var(--size-2);
     max-width: 40em;
@@ -18,6 +18,10 @@
 
     &:first-child {
         margin-top: 0;
+    }
+
+    & .ola_section-intro {
+        font: var(--font-callout);
     }
 }
 .ola_section-subtitle {
