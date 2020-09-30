@@ -1,0 +1,23 @@
+.ola_kpi {
+    display: inline-block;
+}
+
+.ola_kpi-title {
+    font: var(--font-body);
+    font-weight: var(--regular);
+    color: var(--black);
+    margin: 0 0;
+}
+
+.ola_kpi-value {
+    display: block;
+    font: var(--font-title);
+    color: var(--black);
+    margin: var(--size-3) 0 0;
+}
+
+.ola_kpi-description {
+    font: var(--font-caption);
+    color: var(--gray);
+    margin: var(--size-1) 0 0;
+}
