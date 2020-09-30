@@ -1,5 +1,18 @@
 .ola_kpi {
     display: inline-block;
+
+    &.is-positive {
+        & .ola_kpi-description {
+            color: var(--success);
+        }
+    }
+
+    &.is-negative {
+        & .ola_kpi-description {
+            color: var(--error);
+        }
+    }
+
 }
 
 .ola_kpi-title {
@@ -18,6 +31,7 @@
 
 .ola_kpi-description {
     font: var(--font-caption);
+    font-weight: var(--bold);
     color: var(--gray);
     margin: var(--size-1) 0 0;
 }

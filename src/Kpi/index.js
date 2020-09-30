@@ -16,9 +16,9 @@ const MetricValue = ({busy=false, variant, valueIcon, children}) => {
 const Kpi = ({ title, value, description, variant, busy, className, ...props }) => {
     return (
         <div className={cx('ola_kpi', variant && `is-${variant}`, busy && 'is-busy', className)} {...props}>
-            <p className="ola_kpi-title">{title}</p>
+            <div className="ola_kpi-title">{title}</div>
             <div className="ola_kpi-value">{value}</div>
-            <p className="ola_kpi-description">{description}</p>
+            { description && <div className="ola_kpi-description">{description}</div> }
         </div>
     )
 }
@@ -31,5 +31,32 @@ Kpi.defaultProps = {
     busy: false,
     className: null
 }
+
+Kpi.propTypes = {
+    /** Kpi title */
+    title: PT.oneOfType([
+        PT.string,
+        PT.arrayOf(PT.node),
+        PT.node
+    ]).isRequired,
+    /** Kpi Value */
+    value: PT.oneOfType([
+        PT.string,
+        PT.arrayOf(PT.node),
+        PT.node
+    ]).isRequired,
+    /** Kpi Description */
+    description: PT.oneOfType([
+        PT.string,
+        PT.arrayOf(PT.node),
+        PT.node
+    ]),
+    /** Kpi variants */
+    variant: PT.oneOf(['positive', 'negative']),
+    /** Busy state */
+    busy: PT.bool,
+    /** Extra className */
+    className: PT.string,
+  }
 
 export default Kpi
