@@ -2,23 +2,23 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Kpi = ({ title, value, description, mode, className, ...props }) => {
+const Kpi = ({ title, value, description, status, className, ...props }) => {
   const styles = cx(
     'ola_kpi',
-    { 'ola-skeleton': mode !== 'data' },
-    { 'is-loading': mode === 'loading' },
+    { 'ola-skeleton': status !== 'loaded' },
+    { 'is-loading': status === 'loading' },
     className
-  );
+  )
 
   return (
     <div className={cx(styles)} {...props}>
-      { mode === 'data'
-      ? <>
+      { status === 'loaded'
+        ? <>
           <div className="ola_kpi-title">{title}</div> 
           <div className="ola_kpi-value">{value}</div>
           { description && <div className="ola_kpi-description">{description}</div>}
         </>
-      : <>
+        : <>
           <div className="ola_kpi-title"></div> 
           <div className="ola_kpi-value"></div>
           <div className="ola_kpi-description"></div>
@@ -32,7 +32,7 @@ Kpi.defaultProps = {
   title: null,
   value: null,
   description: null,
-  mode: 'data',
+  status: 'loaded',
   className: null
 }
 
@@ -55,8 +55,8 @@ Kpi.propTypes = {
     PT.arrayOf(PT.node),
     PT.node
   ]),
-  /** Kpi mode */
-  mode: PT.oneOf(['data', 'loading', 'empty']),
+  /** Kpi status */
+  status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Extra className */
   className: PT.string,
 }

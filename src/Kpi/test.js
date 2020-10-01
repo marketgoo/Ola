@@ -8,8 +8,6 @@ it('Default Kpi', () => {
       title='Estimated monthly visits comming from search engines'
       value='166 visits'
       description='55% more than in May'
-      variant='positive'
-      loading={false}
     />)
     .toJSON()
   expect(tree).toMatchSnapshot()
@@ -21,8 +19,7 @@ it('Kpi Loading', () => {
       title='Estimated monthly visits comming from search engines'
       value='166 visits'
       description='55% more than in May'
-      variant='positive'
-      loading={true}
+      status='loading'
     />)
     .toJSON()
   expect(tree).toMatchSnapshot()

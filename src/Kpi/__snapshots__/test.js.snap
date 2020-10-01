@@ -2,7 +2,7 @@
 
 exports[`Default Kpi 1`] = `
 <div
-  className="ola_kpi is-positive"
+  className="ola_kpi"
 >
   <div
     className="ola_kpi-title"
@@ -24,6 +24,16 @@ exports[`Default Kpi 1`] = `
 
 exports[`Kpi Loading 1`] = `
 <div
-  className="ola_kpi is-positive is-loading"
-/>
+  className="ola_kpi ola-skeleton is-loading"
+>
+  <div
+    className="ola_kpi-title"
+  />
+  <div
+    className="ola_kpi-value"
+  />
+  <div
+    className="ola_kpi-description"
+  />
+</div>
 `;
