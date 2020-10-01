@@ -8,7 +8,8 @@ export default {
     title: 'Estimated monthly visits comming from search engines',
     value: '166 visits',
     description: '55% more than in May',
-    variant: 'positive'
+    variant: 'positive',
+    loading: false
   }
 }
 
