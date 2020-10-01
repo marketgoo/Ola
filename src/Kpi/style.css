@@ -1,27 +1,27 @@
 .ola_kpi {
 
-    --skeleton-height: 50px;
+    --skeleton-height: 200px;
 
     --title-height: var(--size-6);
     --title-width: var(--size-11);
-    --title-position: 10px 10px;
+    --title-position: 0px 0px;
     --title-skeleton: linear-gradient(var(--gray-xlight) var(--title-height), transparent 0);
 
-    --value-height: var(--size-8);
+    --value-height: var(--size-9);
     --value-width: var(--size-10);
-    --value-position: 10px 40px;
+    --value-position: 0px 27px;
     --value-skeleton: linear-gradient(var(--gray-xlight) var(--value-height), transparent 0);
 
     --description-height: var(--size-4);
-    --description-width: var(--size-10);
-    --description-position: 10px 90px;
+    --description-width: var(--size-9);
+    --description-position: 0px 110px;
     --description-skeleton: linear-gradient(var(--gray-xlight) var(--description-height), transparent 0);
-
+    
     --skeleton-animation: linear-gradient(
         90deg, 
-        rgba(255,255,255, 0) 0,
-        rgba(255,255,255,.8) 50%,
-        rgba(255,255,255,0) 100%,
+        rgba(255,255,255,.8) 0,
+        rgba(255,255,255,0) 50%,
+        rgba(255,255,255,.8) 100%,
         transparent 0
     );
     --blur-width: 200px;
@@ -47,20 +47,24 @@
         width: 100%;
         min-height: 150px;
         background-image: 
+            var(--skeleton-animation),
             var(--title-skeleton), 
             var(--value-skeleton),
             var(--description-skeleton);
         background-size: 
+            var(--title-width) var(--skeleton-height), 
             var(--title-width) var(--title-height), 
             var(--value-width) var(--value-height), 
             var(--description-width) var(--description-height), 
             100% 100%;
         background-position: 
+            0 0, 
             var(--title-position), 
             var(--value-position),
             var(--description-position), 
             0 0;
         background-repeat: no-repeat;
+        animation: loading 1.5s infinite;
     }
 
 }
@@ -85,3 +89,15 @@
     color: var(--gray);
     margin: var(--size-1) 0 0;
 }
+
+@keyframes loading {
+    to {
+      background-position:
+        360% 0,        
+        var(--title-position), 
+        var(--value-position),
+        var(--description-position), 
+        0 0
+      ;
+    }
+  }

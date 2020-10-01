@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Kpi 1`] = `
+<div
+  className="ola_kpi is-positive"
+>
+  <div
+    className="ola_kpi-title"
+  >
+    Estimated monthly visits comming from search engines
+  </div>
+  <div
+    className="ola_kpi-value"
+  >
+    166 visits
+  </div>
+  <div
+    className="ola_kpi-description"
+  >
+    55% more than in May
+  </div>
+</div>
+`;
+
+exports[`Kpi Loading 1`] = `
+<div
+  className="ola_kpi is-positive is-loading"
+/>
+`;
