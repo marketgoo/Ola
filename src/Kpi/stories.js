@@ -9,7 +9,6 @@ export default {
     value: '166 visits',
     description: '55% more than in May',
     variant: 'positive',
-    loading: false
   }
 }
 
@@ -19,7 +18,7 @@ export const WithTag = () =>
   <div className="ola_ly-columns">
     <div>
       <Kpi 
-        value={<p style={{margin: 0}}><img src="http://lorempixel.com/300/100/"/></p> }
+        value={<>2 <em>Visits</em></> }
         title={<p style={{margin: 0}}>Estimated <strong>monthly</strong> visits comming from search engines</p>} 
         description={<p style={{margin: 0}}>Estimated monthly visits comming from search engines</p>}
         variant="negative" />
