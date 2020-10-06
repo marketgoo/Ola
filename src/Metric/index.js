@@ -54,7 +54,7 @@ Metric.propTypes = {
   value: PT.string,
   /** Extra className */
   className: PT.string,
-  /** Tag variants */
+  /** Metric variants */
   variant: PT.oneOf(['error', 'positive', 'negative']),
   /** Icon for value variants */
   valueIcon: PT.bool,

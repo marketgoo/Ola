@@ -1,0 +1,34 @@
+.ola_kpi {
+    display: inline-block;
+}
+
+.ola_kpi-title {
+    --skeleton-width: 7em;
+
+    font: var(--font-callout);
+    font-weight: var(--regular);
+    color: var(--gray);
+    margin: 0 0;
+}
+
+.ola_kpi-value {
+    --skeleton-width: 5em;
+
+    display: block;
+    font: var(--font-title);
+    color: var(--black);
+    margin: var(--size-3) 0 0;
+
+    & em {
+        font: var(--font-headline);
+    }
+}
+
+.ola_kpi-description {
+    --skeleton-width: 12em;
+
+    font: var(--font-caption);
+    font-weight: var(--bold);
+    color: var(--gray);
+    margin: var(--size-1) 0 0;
+}
