@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.9.0] - Unreleased
+### Added
+- New component `Kpi`
+- The layout `ly-columns` allows to customize the column-width with the `--column-width` variable
+
 ## [0.8.0] - 2020-09-29
 ### Added
 - New component `Section` [#150], [#151] including some subcomponents:
@@ -382,6 +387,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#156]: https://github.com/marketgoo/Ola/issues/156
 [#157]: https://github.com/marketgoo/Ola/issues/157
 
+[0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...HEAD
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0
