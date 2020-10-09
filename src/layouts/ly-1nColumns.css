@@ -1,0 +1,18 @@
+/*
+ * "Holy Albatross" pattern of one to n columns using a breakpoint
+ * More info: https://heydonworks.com/article/the-flexbox-holy-albatross-reincarnated/
+ */
+
+.ola_ly-1nColumns {
+    --breakpoint: 30rem;
+    --margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(var(--margin) * -1);
+}
+
+.ola_ly-1nColumns > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--breakpoint) - 100%) * 999);
+    margin: var(--margin);
+}
