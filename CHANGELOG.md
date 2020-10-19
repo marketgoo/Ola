@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Kpi`
 - The layout `ly-columns` allows to customize the column-width with the `--column-width` variable
 - New layout `ly-1nColumns` implementing the "Holy albatross" pattern.
+- New props `status`, `className` and `..props` to `Page` component
+- New `.ola-skeleton` util
 
 ## [0.8.0] - 2020-09-29
 ### Added

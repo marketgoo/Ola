@@ -85,10 +85,10 @@ export const asideHeader = () =>
 
 export const the1nColumns = () => 
   <section className="ola_ly-1nColumns">
-    <div style={{ backgroundColor: "yellow"}}>
+    <div style={{ backgroundColor: 'yellow'}}>
       This is column 1
     </div>
-    <div style={{ backgroundColor: "green"}}>
+    <div style={{ backgroundColor: 'green'}}>
       This is column 2
     </div>
   </section>

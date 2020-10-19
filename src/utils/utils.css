@@ -188,6 +188,8 @@ strong {
 
 /* Skeletor */
 .ola-skeleton {
+    overflow: hidden;
+    
     & > :empty::before {
         content: "\00a0";
         display: block;

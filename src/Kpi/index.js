@@ -11,7 +11,7 @@ const Kpi = ({ title, value, description, status, className, ...props }) => {
   )
 
   return (
-    <div className={cx(styles)} {...props}>
+    <div className={styles} {...props}>
       { status === 'loaded'
         ? <>
           <div className="ola_kpi-title">{title}</div> 
@@ -42,7 +42,7 @@ Kpi.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired,
+  ]),
   /** Kpi Value */
   value: PT.oneOfType([
     PT.string,
