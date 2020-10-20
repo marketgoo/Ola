@@ -41,6 +41,9 @@ strong {
     }
 }
 
+.ola-normal {
+    font-weight: var(--normal) !important; /* Overrides the previous ruleset */
+}
 .ola-bold {
     font-weight: var(--bold);
 }

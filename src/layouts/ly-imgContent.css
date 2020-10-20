@@ -1,12 +1,26 @@
 /* Common pattern of a img + content */
 
 .ola_ly-imgContent {
+    --img-width: var(--size-11);
+    --gap: var(--column-gap-3);
+
     display: grid;
-    grid-column-gap: var(--column-gap-3);
+    grid-column-gap: var(--gap);
     grid-template-columns: auto 1fr;
 
     & > img {
-        width: var(--size-11);
+        width: var(--img-width);
         height: auto;
+    }
+
+    @media (--to-width-1) {
+        &.is-responsive {
+            grid-row-gap: var(--gap);
+            grid-template-columns: auto;
+
+            & > img {
+                justify-self: center;
+            }
+        }
     }
 }

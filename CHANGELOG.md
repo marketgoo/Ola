@@ -8,10 +8,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.9.0] - Unreleased
 ### Added
 - New component `Kpi`
-- The layout `ly-columns` allows to customize the column-width with the `--column-width` variable
+- The layout `ly-columns` allows to customize the column-width and column-gap with the `--column-width` and `--gap` variables
+- The layout `ly-imgContent` allows to customize the image-width and gap with the `--image-width` and `--gap` variables. Added also the `.is-responsive` modifier for narrow screens.
 - New layout `ly-1nColumns` implementing the "Holy albatross" pattern.
 - New props `status`, `className` and `..props` to `Page` component
 - New `.ola-skeleton` util
+- New `--row-gap-4` variable for bigger row spacing
 
 ## [0.8.0] - 2020-09-29
 ### Added

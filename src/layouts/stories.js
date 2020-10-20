@@ -92,3 +92,11 @@ export const the1nColumns = () =>
       This is column 2
     </div>
   </section>
+
+export const list = () => 
+  <ul className="ola_ly-list">
+    <li>First element</li>
+    <li>Second element</li>
+    <li>Third element</li>
+    <li>Fourth element</li>
+  </ul>
