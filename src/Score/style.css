@@ -106,14 +106,14 @@
 
 @keyframes score-loading {
     0% {
-        stroke-dasharray: 10 390;
+        stroke-dasharray: 10 540;
         transform: rotate(0deg);
     }
     50% {
-        stroke-dasharray: 390 390;
+        stroke-dasharray: 540 540;
     }
     100% {
-        stroke-dasharray: 10 390;
+        stroke-dasharray: 10 540;
         transform: rotate(1080deg);
     }
 }
