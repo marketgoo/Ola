@@ -30,6 +30,7 @@
 @import './TaskGroup/style.css';
 @import './Tooltip/style.css';
 @import './TreeList/style.css';
+@import './Kpi/style.css';
 
 /* Helpers */
 @import './utils/utils.css';
@@ -38,6 +39,8 @@
 @import './layouts/ly-imgContent.css';
 @import './layouts/ly-form.css';
 @import './layouts/ly-columns.css';
+@import './layouts/ly-1nColumns.css';
 @import './layouts/ly-pageCenter.css';
 @import './layouts/ly-asideHeader.css';
 @import './layouts/ly-asideMenu.css';
+@import './layouts/ly-list.css';

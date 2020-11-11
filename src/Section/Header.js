@@ -2,9 +2,16 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const SectionHeader = ({ title, className, children, ...props }) => {
+const SectionHeader = ({ title, img, variant, className, children, ...props }) => {
+  const styles = cx(
+    'ola_section-header',
+    { [`is-${variant}`]: variant },
+    className
+  )
+
   return (
-    <header className={cx('ola_section-header', className)} {...props}>
+    <header className={styles} {...props}>
+      { img && <div className="ola_section-img">{ img }</div> }
       <h1 className="ola_section-title">{title}</h1>
       { children && <div className="ola_section-intro">{ children }</div> }
     </header>
@@ -13,13 +20,19 @@ const SectionHeader = ({ title, className, children, ...props }) => {
 
 SectionHeader.defaultProps = {
   className: null,
+  variant: null,
   title: null,
+  img: null,
   children: null
 }
 
 SectionHeader.propTypes = {
   /** Extra className */
   className: PT.string,
+  /** Variants variants */
+  variant: PT.oneOf(['center']),
+  /** Optional image */
+  img: PT.node,
   /** Title of header */
   title: PT.oneOfType([
     PT.string,

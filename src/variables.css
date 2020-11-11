@@ -90,6 +90,7 @@
     --row-gap-1: var(--size-3);
     --row-gap-2: var(--size-5);
     --row-gap-3: var(--size-6);
+    --row-gap-4: var(--size-8);
 
     @media (--from-width-1) {
         --column-gap-1: var(--size-4);
@@ -101,6 +102,7 @@
         --row-gap-1: var(--size-4);
         --row-gap-2: var(--size-6);
         --row-gap-3: var(--size-7);
+        --row-gap-4: var(--size-9);
     }
 
     @media (--from-width-2) {
