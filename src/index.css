@@ -31,6 +31,7 @@
 @import './Task/style.css';
 @import './TaskGroup/style.css';
 @import './Tooltip/style.css';
+@import './TreeList/style.css';
 @import './Kpi/style.css';
 
 /* Helpers */
