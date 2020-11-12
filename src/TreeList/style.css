@@ -53,6 +53,9 @@
     &:hover {
         background-color: var(--gray-xlight);
     }
+    &:active {
+        background-color: var(--gray-light);
+    }
     &:focus {
         outline: 0;
         box-shadow: none; /* This is due WordPress */
@@ -63,6 +66,11 @@
     }
 }
 .ola_treeList-option .ola_treeList-option > a {
+    max-width: max-content;
     background-image: none;
     border-radius: var(--radius);
+    margin-left: calc(var(--size-2) * -1);
+    padding-right: var(--size-3);
+    padding-top: var(--size-3);
+    padding-bottom: var(--size-3);
 }
