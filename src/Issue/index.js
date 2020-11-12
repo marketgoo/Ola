@@ -1,5 +1,6 @@
 import React from 'react'
 import { default as PT } from 'prop-types'
+import cx from 'classnames'
 import Icon from '../Icon'
 
 const IssueIcon = ({ variant, size }) =>
@@ -9,23 +10,17 @@ const IssueIcon = ({ variant, size }) =>
     suggested: <Icon name="help" size={size} className="ola_issue-status" />,
   }[variant] || <Icon name="error" size={size} className="ola_issue-status" />)
 
-const IssueTitle = ({ title, link, size }) => (
-  <>
-    <span className={'ola_issue-title ola-bold ' + (size === 'small' ? 'ola-callout' : 'ola-body')}>{title}</span>
-    {link && <Icon name="chevronRight" />}
-  </>
-)
-
-const Issue = ({ title, variant, link, size }) => (
-  <div href={link} className={`ola_issue is-${variant}`}>
+const Issue = ({ title, variant, size, className, ...props }) => (
+  <div className={cx(`ola_issue is-${variant} is-${size}`, className)} {...props}>
     <div className="ola_issue-header">
       <IssueIcon variant={variant} size={size} />
-      <IssueTitle title={title} link={link} size={size} />
+      <strong className="ola_issue-title">{title}</strong>
     </div>
   </div>
 )
 
 Issue.defaultProps = {
+  className: null,
   variant: 'error',
   size: 'medium'
 }
@@ -35,10 +30,10 @@ Issue.propTypes = {
   variant: PT.oneOf(['success', 'error', 'suggested', 'warning']),
   /** Title of header */
   title: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
-  /** Title right component  */
-  link: PT.string,
   /** Size variant */
-  size: PT.oneOf(['small', 'medium'])
+  size: PT.oneOf(['small', 'medium']),
+  /** Extra className */
+  className: PT.string
 }
 
 export default Issue

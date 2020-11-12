@@ -1,7 +1,6 @@
 .ola_issue {
-    margin: var(--size-1) 0;
+    margin: 0;
     text-decoration: none;
-    background: var(--white);
     display: block;
 
     &.is-success {
@@ -24,49 +23,49 @@
             fill: var(--gray);
         }
     }
-
-    & .ola_issue-title {
-        flex: 1 1 auto;
-    }
-
-    & .ola_issue-extra {
-        margin-left: var(--size-6);
-        @media (--to-width-1) {
-            display: none;
+    &.is-small {
+        & .ola_issue-title {
+            font: var(--font-callout);
+            font-weight: var(--bold);
         }
     }
-
 }
 
 .ola_issue-header {
-    font: var(--font-body);
-    color: var(--black);
-    list-style: none;
     display: flex;
     align-items: center;
-    padding: 0 var(--column-gap-3);
     position: relative;
     z-index: 1;
-    min-height: 52px;
+}
 
-    @media (--to-width-2) {
-        padding: 0 var(--size-6);
-    }
+.ola_issue-title {
+    flex: 1 1 auto;
+    font: var(--font-body);
+    color: var(--black);
+    font-weight: var(--bold);
 }
 
 .ola_issue-status {
     flex: 0 0 auto;
-    margin-right: var(--size-5);
+    margin-right: var(--column-gap-1);
 }
 
-.ola_issue-icon {
-    flex: 0 0 auto;
-    margin-left: auto;
-    margin-right: calc(var(--size-7) * -1);
-    display: none;
-    color: var(--gray);
-
-    @media (--to-width-2) {
-        margin-right: 0;
+.ola_issue-dropdown {
+    &.is-small .ola_issue-content {
+        padding-left: calc(var(--size-2) + var(--size-6) + var(--column-gap-1));
     }
+}
+.ola_issue-summary {
+    list-style: none;
+    cursor: pointer;
+    outline: 0;
+    padding: var(--size-3) var(--size-2);
+    transition: background-color var(--duration);
+
+    &:hover {
+        background: var(--gray-xlight);
+    }
+}
+.ola_issue-content {
+    padding-left: calc(var(--size-2) + var(--size-7) + var(--column-gap-1));
 }

@@ -1,16 +1,19 @@
 import React from 'react'
 import Issue from './'
+import IssueDropDown from './DropDown'
 
 export default {
-  title: 'Issue',
-  component: Issue,
+  title: 'IssueDropDown',
+  component: IssueDropDown,
   args: {
     title: 'This is the title of the issue',
   },
 }
 
-export const Base = (args) => <Issue {...args} />
+export const DropDown = (args) => <IssueDropDown {...args}>
+  <p>This is the content of the issue</p>
+</IssueDropDown>
 
-export const WithLink = (args) => (
-  <Issue link={'http://www.google.com'} {...args} />
+export const OnlyTitle = (args) => (
+  <Issue {...args} />
 )
