@@ -45,7 +45,6 @@
     display: flex;
     align-items: center;
     padding: 0 var(--column-gap-3);
-    cursor: default;
     position: relative;
     z-index: 1;
     min-height: 52px;
