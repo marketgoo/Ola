@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.9.0] - Unreleased
 ### Added
 - New component `Kpi`
+- New component `Score` [#164]
 - The layout `ly-columns` allows to customize the column-width and column-gap with the `--column-width` and `--gap` variables
 - The layout `ly-imgContent` allows to customize the image-width and gap with the `--image-width` and `--gap` variables. Added also the `.is-responsive` modifier for narrow screens.
 - New layout `ly-1nColumns` implementing the "Holy albatross" pattern.
@@ -391,6 +392,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#155]: https://github.com/marketgoo/Ola/issues/155
 [#156]: https://github.com/marketgoo/Ola/issues/156
 [#157]: https://github.com/marketgoo/Ola/issues/157
+[#164]: https://github.com/marketgoo/Ola/issues/164
 
 [0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...HEAD
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
