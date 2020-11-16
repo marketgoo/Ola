@@ -39,6 +39,7 @@
 }
 
 .ola_issue-title {
+    --skeleton-width: 16em;
     flex: 1 1 auto;
     font: var(--font-body);
     color: var(--black);

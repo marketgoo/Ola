@@ -3,8 +3,12 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import Issue from './'
 
-const IssueDropDown = ({ title, variant, size, className, children, ...props }) =>
-  <details className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
+const IssueDropDown = ({ title, variant, size, className, status, children, ...props }) => {
+  if (status !== 'loaded') {
+    return <Issue variant={variant} size={size} status={status} />
+  }
+
+  return <details className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
     <summary className="ola_issue-summary">
       <Issue title={title} variant={variant} size={size} />
     </summary>
@@ -12,12 +16,13 @@ const IssueDropDown = ({ title, variant, size, className, children, ...props }) 
       { children }
     </div>
   </details>
-
+}
 
 IssueDropDown.defaultProps = { 
   className: null,
   variant: 'error',
-  size: 'medium'
+  size: 'medium',
+  status: 'loaded',
 }
 
 IssueDropDown.propTypes = {
@@ -37,6 +42,8 @@ IssueDropDown.propTypes = {
   ]),
   /** Open or close the Task */
   open: PT.bool,
+  /** Kpi status */
+  status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** on toggle event */
   onToggle: PT.func
 }
