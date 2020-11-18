@@ -13,7 +13,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The layout `ly-columns` allows to customize the column-width and column-gap with the `--column-width` and `--gap` variables
 - The layout `ly-imgContent` allows to customize the image-width and gap with the `--image-width` and `--gap` variables. Added also the `.is-responsive` modifier for narrow screens.
 - New layout `ly-1nColumns` implementing the "Holy albatross" pattern.
-- New props `status`, `className` and `..props` to `Page` component
+- New prop `status`, `className` and `..props` to `Page` component
+- New prop `status` to `Icon` component [#165]
 - New `.ola-skeleton` util
 - New `--row-gap-4` variable for bigger row spacing
 
@@ -396,6 +397,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#161]: https://github.com/marketgoo/Ola/issues/161
 [#162]: https://github.com/marketgoo/Ola/issues/162
 [#164]: https://github.com/marketgoo/Ola/issues/164
+[#165]: https://github.com/marketgoo/Ola/issues/165
 
 [0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...HEAD
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
