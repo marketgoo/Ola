@@ -63,6 +63,10 @@
     padding: var(--size-3) var(--size-2);
     transition: background-color var(--duration);
 
+    &::-webkit-details-marker {
+        display: none;
+    }
+
     &:hover {
         background: var(--gray-xlight);
     }
