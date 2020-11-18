@@ -46,11 +46,23 @@ const ICONS = {
   'newWindow': NewWindow
 }
 
-const Icon = ({ name, size, className, ...props }) => {
+const Icon = ({ name, size, status, className, ...props }) => {
   const SpecificIcon = ICONS[name]
-  const IconClasses = cx('ola_icon', `is-${size}`, className)
+
+  const styles = cx(
+    'ola_icon',
+    `is-${size}`,
+    { 'ola-skeleton': status !== 'loaded' },
+    { 'is-loading': status === 'loading' },
+    className
+  )
+
+  if (status !== 'loaded') {
+    return <div className={styles}><span></span></div>
+  }
+
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fillRule="evenodd" className={IconClasses} {...props}>
+    <svg width="28" height="28" viewBox="0 0 28 28" fillRule="evenodd" className={styles} {...props}>
       <SpecificIcon />
     </svg>
   )
@@ -59,7 +71,8 @@ const Icon = ({ name, size, className, ...props }) => {
 Icon.defaultProps = {
   name: 'help',
   size: 'medium',
-  className: null
+  className: null,
+  status: 'loaded'
 }
 
 Icon.propTypes = {
@@ -87,6 +100,8 @@ Icon.propTypes = {
   ]),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),
+  /** Kpi status */
+  status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Extra className */
   className: PT.string
 }

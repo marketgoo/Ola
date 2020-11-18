@@ -1,13 +1,24 @@
 .ola_icon {
     fill: currentColor;
+    --size: var(--size-8);
+    --skeleton-width: var(--size);
+    --skeleton-height: var(--size);
+    width: var(--size);
+    height: var(--size);
 
     &.is-small {
-        width: var(--size-6);
-        height: var(--size-6);
+        --size: var(--size-6);
+    }
+
+    &.is-medium {
+        --size: var(--size-7);
     }
 
     &.is-big {
-        width: var(--size-9);
-        height: var(--size-9);
+        --size: var(--size-8);
+    }
+
+    & > span {
+        display: block;
     }
 }

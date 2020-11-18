@@ -198,6 +198,7 @@ strong {
         display: block;
         background-color: var(--gray-xlight);
         width: var(--skeleton-width, 5em);
+        height: var(--skeleton-height, 1em);
     }
 
     &.is-loading {

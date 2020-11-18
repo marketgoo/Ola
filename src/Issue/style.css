@@ -39,6 +39,7 @@
 }
 
 .ola_issue-title {
+    --skeleton-width: 16em;
     flex: 1 1 auto;
     font: var(--font-body);
     color: var(--black);
@@ -61,6 +62,10 @@
     outline: 0;
     padding: var(--size-3) var(--size-2);
     transition: background-color var(--duration);
+
+    &::-webkit-details-marker {
+        display: none;
+    }
 
     &:hover {
         background: var(--gray-xlight);
