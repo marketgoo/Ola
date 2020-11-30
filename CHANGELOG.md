@@ -5,7 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.8.0] - Unreleased
+### Added
+- New component `Section` [#150], [#151] including some subcomponents:
+  - `SectionHeader`
+  - `SectionContent`
+  - `SectionSubheader`
+  - `SectionFooter`
+- New prop `description` to `ProgressCircle` [#145], [#146]
+- New prop `icon` to `Button` [#133], [#144]
+- New icon `NewWindow` [#133], [#144]
+- New props `variant` and `selected` to `MenuOption` [#149]
+- New layout `ly-asideMenu` [#148]
+- New layout `ly-asideHeader`
+- New helpers `ola-width-narrow` and `ola-width-medium`
+- New variant `full-list` to `CheckGroup` to remove scroll and max-height
+
+### Fixed
+- Field component can have multiple child elements [#154] [#155]
+- Modal must restore the scroll on unmount [#156] [#157]
+- Apply separation gap to any element in a `ButtonGroup`, instead only to `Button`.
+- `ProgressCircle` component display `0` as description when the value is `0`.
+
+## [0.7.0] - 2020-07-08
 ### Added
 - Padding top and bottom to `PanelContent` when it's the first/last child.
 - New helpers:
@@ -27,11 +49,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - Font sizes in narrow screens (mobile) are smaller [#135] [#136]
 - The `Modal` component blocks the document scroll while it's open [#140]
+- Changed some variables in buttons component to ease the theme customization
 
 ### Fixed
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
 - Cropped shadow of focused buttons in tables [#132]
 - Border radius of `PanelFooter` when is not the last child [#137]
+- Updated some devDependencies.
 
 ## [0.6.0] - 2020-05-21
 ### Added
@@ -338,12 +362,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#129]: https://github.com/marketgoo/Ola/issues/129
 [#130]: https://github.com/marketgoo/Ola/issues/130
 [#132]: https://github.com/marketgoo/Ola/issues/132
+[#133]: https://github.com/marketgoo/Ola/issues/133
 [#135]: https://github.com/marketgoo/Ola/issues/135
 [#136]: https://github.com/marketgoo/Ola/issues/136
 [#137]: https://github.com/marketgoo/Ola/issues/137
 [#140]: https://github.com/marketgoo/Ola/issues/140
+[#144]: https://github.com/marketgoo/Ola/issues/144
+[#145]: https://github.com/marketgoo/Ola/issues/145
+[#146]: https://github.com/marketgoo/Ola/issues/146
+[#148]: https://github.com/marketgoo/Ola/issues/148
+[#149]: https://github.com/marketgoo/Ola/issues/149
+[#150]: https://github.com/marketgoo/Ola/issues/150
+[#151]: https://github.com/marketgoo/Ola/issues/151
+[#154]: https://github.com/marketgoo/Ola/issues/154
+[#155]: https://github.com/marketgoo/Ola/issues/155
+[#156]: https://github.com/marketgoo/Ola/issues/156
+[#157]: https://github.com/marketgoo/Ola/issues/157
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.6.0...HEAD
+[0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/marketgoo/Ola/compare/v0.3.0...v0.4.0

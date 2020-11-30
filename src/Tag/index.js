@@ -1,11 +1,13 @@
 import React from 'react'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import cx from 'classnames'
+
 
 const Tag = ({ variant, className, size, children }) =>
   <span className={cx('ola_tag', variant && `is-${variant}`, `is-${size}`, className)}>
     {children}
   </span>
+
 
 Tag.defaultProps = {
   variant: null,
@@ -24,7 +26,7 @@ Tag.propTypes = {
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
-  ]).isRequired
+  ]).isRequired,
 }
 
 export default Tag

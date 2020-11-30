@@ -1,0 +1,27 @@
+.ola_section {
+    display: grid;
+    row-gap: var(--row-gap-3);
+}
+.ola_section-title {
+    font: var(--font-title);
+    letter-spacing: var(--font-title-spacing);
+    margin: 0;
+}
+.ola_section-intro {
+    font: var(--font-callout);
+    color: var(--gray);
+    margin-top: var(--size-2);
+    max-width: 40em;
+}
+.ola_section-subheader {
+    margin: var(--row-gap-3) 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.ola_section-subtitle {
+    font: var(--font-headline);
+    font-weight: var(--bold);
+    margin: 0;
+}

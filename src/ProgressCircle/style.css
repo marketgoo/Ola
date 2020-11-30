@@ -47,7 +47,8 @@
     }
 }
 
-.ola_progressCircle-label {
+.ola_progressCircle-label,
+.ola_progressCircle-description {
     font: var(--font-caption);
     color: var(--gray);
     position: relative;

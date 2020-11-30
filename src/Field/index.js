@@ -1,32 +1,31 @@
 import React, { useState } from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
+import Counter from '../Counter'
 
 const Field = ({ id, label, hint, error, description, disabled, children, maxCharacter }) => {
 
-  const [charRemain, setCharRemain] = useState(maxCharacter)
   const [character, setCharacter] = useState(null)
-
-  const handleContent = (ev) => {
-    const character = ev.target.value.length
-    let charRemain = maxCharacter - character
-    setCharRemain(charRemain)
-    setCharacter(character)
+  const handleInputValue = (numOfCharacters) => {
+    setCharacter(numOfCharacters)    
   }
 
-  const showError = error || ( maxCharacter && charRemain === 0 )
-
+  let elements = React.Children.toArray(children)
   return (
-    <div className={cx('ola_field', { 'is-invalid': showError }, { 'is-disabled': disabled })}>
+    <div className={cx('ola_field', {'is-invalid': error} , { 'is-disabled': disabled })}>
       <label htmlFor={id} className="ola_field-label">
-        {label}
-        {maxCharacter && character > 0 ? <span className="ola_field-hint"> {charRemain}  / {maxCharacter} </span> :
-          hint && <span className="ola_field-hint">{hint} <strong>{maxCharacter}</strong></span>}
+        {label}        
+        <span className="ola_field-hint">
+          {hint && maxCharacter ?
+            <Counter character={character} maxCharacter={maxCharacter}  />
+            : hint }
+        </span>  
       </label>
       <div className="ola_field-input">
-        {React.cloneElement(children, { id: id, error: id === 'field-error' || (maxCharacter && charRemain === 0), disabled, maxLength: maxCharacter, onChange: handleContent})}
+        {React.cloneElement(elements.shift(), { id: id, error, disabled, maxCharacter, handleInputValue })}
       </div>
-      {description && <p className={ cx({'ola_field-error': showError, 'ola_field-description': !showError }) }>{ description }</p>}
+      {elements}
+      {description && <p className={cx({ 'ola_field-error': error, 'ola_field-description': !error })}>{description}</p>}
     </div>
   )
 }

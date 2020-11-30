@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import useOutsideEvent from '../hooks/useOutsideEvent'
 
-const Tooltip = ({ variant, className, trigger, children }) => {
+const Tooltip = ({ variant, className, trigger, onOpen, onClose, children }) => {
 
   const [position, setPosition] = useState(null)
   const tooltipRef = useRef(null)
@@ -13,7 +13,15 @@ const Tooltip = ({ variant, className, trigger, children }) => {
     setPosition(null)
   })
 
-  const toggle = () => tooltipRef.current.open ? setPosition( getClassPosition(tooltipRef.current) ) : setPosition(null)
+  const toggle = () => {
+    if(tooltipRef.current.open) {
+      setPosition( getClassPosition(tooltipRef.current) )
+      onOpen()
+    } else {
+      setPosition(null)
+      onClose()
+    }
+  } 
 
   return (
     <details className={cx('ola_tooltip', className, {[`is-${variant}`]: variant})} onToggle={toggle} ref={tooltipRef}>
@@ -30,13 +38,17 @@ Tooltip.defaultProps = {
 
 Tooltip.propTypes = {
   /** Tooltip variants */
-  variant: PT.oneOf(['wide']),
+  variant: PT.oneOf(['wide', 'narrow']),
   /** Trigger nodes */
   trigger: PT.oneOfType([
     PT.string,
     PT.arrayOf(PT.node),
     PT.node
   ]).isRequired,
+  /** Close event */
+  onClose: PT.func,
+  /** Open event */
+  onOpen: PT.func,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,

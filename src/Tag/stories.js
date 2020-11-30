@@ -1,31 +1,16 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { text, radios } from '@storybook/addon-knobs'
-
-import Tag from './'
 import ButtonIcon from '../ButtonIcon'
 import Icon from '../Icon'
+import Tag from './'
 
-storiesOf('Tag')
-  .add('Default', () => (
-    <figure><Tag>Default Tag</Tag></figure>
-  ))
-  .add('Viewer', () => (
-    <figure>
-      <Tag
-        size={radios('Size', ['small', 'medium', 'big'], 'small')}
-        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
-        <span>{ text('Label', 'This is a tag') }</span>
-      </Tag>
-    </figure>
-  ))
-  .add('With a ButtonIcon', () => (
-    <figure>
-      <Tag
-        size={radios('Size', ['small', 'medium', 'big'], 'small')}
-        variant={radios('Variant', ['invert', 'error', 'pro', 'success', 'warning'])}>
-        <span>{ text('Label', 'This is a tag') }</span>
-        <ButtonIcon><Icon size="small" name="close" /></ButtonIcon>
-      </Tag>
-    </figure>
-  ))
+export default {
+  title: 'Tag',
+  component: Tag,
+  args: {
+    children: 'This is a tag'
+  }
+}
+
+export const Base = (args) => <Tag {...args}>{args.children}</Tag>
+
+export const WithButtonIcon = (args) => <Tag {...args}>{args.children} <ButtonIcon><Icon name="close" size="small" /></ButtonIcon></Tag>

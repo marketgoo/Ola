@@ -41,6 +41,10 @@ strong {
     }
 }
 
+.ola-bold {
+    font-weight: var(--bold);
+}
+
 /* Colors */
 .ola-brand {
     color: var(--brand);
@@ -173,6 +177,11 @@ strong {
 .ola-margin-right-3 {
     margin-right: var(--column-gap-3);
 }
-.ola-bold {
-    font-weight: var(--bold);
+
+/* Widths */
+.ola-width-narrow {
+    max-width: var(--size-11);
+}
+.ola-width-medium {
+    max-width: var(--size-12);
 }

@@ -1,0 +1,32 @@
+/* Common pattern of a content with an aside header */
+
+.ola_ly-asideHeader {
+  box-sizing: border-box;
+  display: grid;
+  grid-row-gap: var(--row-gap-3);
+  grid-column-gap: var(--column-gap-3);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
+
+  & > *:first-child {
+    max-width: var(--size-12);
+  }
+
+  @media (--from-width-3) {
+    grid-template-columns: 300px minmax(0, 1fr);
+
+    & > * {
+      grid-column: 2;
+
+      &:first-child {
+        grid-column: 1;
+        position: sticky;
+        top: 50px;
+      }
+    }
+  }
+}

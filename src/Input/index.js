@@ -2,10 +2,14 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Input = ({ className, error, type, ...props }) => {
+const Input = ({ className, error, type, handleInputValue, maxCharacter, ...props }) => {
+  
+  const handleChange = (event) => {
+    handleInputValue(event.target.value.length)
+  }
   return type === 'textarea' ?
     ( <textarea type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> ) :
-    ( <input type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> )
+    ( <input maxLength={maxCharacter} type={type} onChange={handleChange}  className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> )
 }
 
 Input.defaultProps = {
@@ -34,7 +38,10 @@ Input.propTypes = {
   /** Extra className */
   className: PT.string,
   /** Input is invalid */
-  error: PT.bool
+  error: PT.bool,
+  /** Counter props  */
+  handleInputValue: PT.func,
+  maxCharacter: PT.number
 }
 
 export default Input

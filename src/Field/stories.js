@@ -1,70 +1,23 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
-
 import Field from './'
 import Input from '../Input'
 
-storiesOf('Field')
-  .add('Default', () => (
-    <Field
-      id="field-test"
-      label="Test"
-      description="Test description"
-      hint="(optional)"
-    >
-      <Input placeholder="Text placeholder" />
-    </Field>
-  ))
-  .add('Error', () => (
-    <Field
-      id="field-error"
-      error
-      label="Test"
-      description="Test description"
-      hint="(optional)"
-    >
-      <Input placeholder="Text placeholder" />
-    </Field>
-  ))
-  .add('Disabled', () => (
-    <Field
-      id="field-disabled"
-      disabled
-      label="Test"
-      description="Test description"
-      hint="(optional)"
-    >
-      <Input placeholder="Text placeholder" />
-    </Field>
-  ))
-  .add('Description and hint with html', () => (
-    <figure>
-      <Field
-        id="field-cutsom-description"
-        label="Test"
-        description={
-          <>
-            Test custom content with{' '}
-            <a href="#" onClick={action('onClick event')}>
-              link
-            </a>
-          </>
-        }
-        hint={<strong>(optional)</strong>}
-      >
-        <Input placeholder="Text placeholder" />
-      </Field>
-    </figure>
-  ))
-  .add('Character counter', () => (
-    <Field
-      id="field-counter"
-      label="Test"
-      description="Test description"
-      hint={<strong>Max Character</strong>}
-      maxCharacter={20}
-    >
-      <Input placeholder="Text placeholder" />
-    </Field>
-  ))
+export default {
+  title: 'Field',
+  component: Field,
+  args: {
+    id: 'field-test',
+    label: 'Label of the field',
+    description: 'This is a description',
+    hint: '(optional)',
+    maxCharacter: 20
+  },
+}
+
+export const Base = (args) => <Field {...args}>
+  <Input placeholder="Text placeholder" />
+</Field>
+
+Base.argTypes = {
+  children: { control: { disable: true }}
+}

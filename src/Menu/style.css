@@ -12,6 +12,7 @@
     background: var(--background);
     display: flex;
     align-items: center;
+    text-align: left;
     text-decoration: none;
     padding: var(--size-4) var(--size-6);
     outline: 0;
@@ -24,10 +25,21 @@
         border: 0;
     }
 
+    &.is-nav {
+        --color: var(--accent);
+        border-top: solid 1px var(--gray-xlight);
+        font-weight: var(--bold);
+    }
+
+    &.is-selected,
     &:hover,
     &:focus {
         --color: var(--black);
         --background: var(--gray-xlight);
+    }
+
+    &.is-selected {
+        border-left: solid var(--size-1) var(--gray-light);
     }
 
     &:active {

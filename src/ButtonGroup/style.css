@@ -3,14 +3,14 @@
     flex-direction: column;
     max-width: 100%;
 
-    & .ola_button + .ola_button {
+    & > * + * {
         margin-top: var(--row-gap-1);
     }
 
     &.is-reversed {
         flex-direction: column-reverse;
 
-        & .ola_button + .ola_button {
+        & > * + * {
             margin-top: 0;
             margin-bottom: var(--row-gap-1);
         }
@@ -29,7 +29,7 @@
             flex-direction: row;
             align-items: center;
 
-            & .ola_button + .ola_button {
+            & > * + * {
                 margin-left: var(--column-gap-1);
                 margin-top: 0;
             }
@@ -37,7 +37,7 @@
             &.is-reversed {
                 flex-direction: row-reverse;
 
-                & .ola_button + .ola_button {
+                & > * + * {
                     margin-left: 0;
                     margin-bottom: 0;
                     margin-right: var(--column-gap-1);
