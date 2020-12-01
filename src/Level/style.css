@@ -1,12 +1,14 @@
 .ola_level {
     --background: var(--gray-xlight);
+    --size: 12px;
+    --height: var(--size-6);
 
     display: inline-flex;
     vertical-align: middle;
-    width: 12px;
-    height: var(--size-6);
-    border-left: 12px solid;
-    border-right: 12px solid;
+    width: var(--size);
+    height: var(--height);
+    border-left: var(--size) solid;
+    border-right: var(--size) solid;
     border-color: var(--background);
     border-radius: var(--radius-small);
     padding: 0 var(--size-1);
@@ -17,6 +19,11 @@
         display: block;
         background: var(--background);
         flex: 1 1 auto;
+    }
+
+    &.is-small {
+        --size: 8px;
+        --height: var(--size-4);
     }
 
     &.is-low {
