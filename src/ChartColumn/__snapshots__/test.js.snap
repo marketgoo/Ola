@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Kpi 1`] = `
+<div
+  className="ola_chartColumn"
+>
+  <div
+    className="ola_chartColumn-column"
+    style={
+      Object {
+        "--value": 0.4444444444444444,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      5 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-column"
+    style={
+      Object {
+        "--value": 0.1111111111111111,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      2 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-column"
+    style={
+      Object {
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      1 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-column"
+    style={
+      Object {
+        "--value": 1,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      10 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+</div>
+`;

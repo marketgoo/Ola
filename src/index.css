@@ -33,6 +33,7 @@
 @import './Tooltip/style.css';
 @import './TreeList/style.css';
 @import './Kpi/style.css';
+@import './ChartColumn/style.css';
 
 /* Helpers */
 @import './utils/utils.css';
