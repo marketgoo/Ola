@@ -4,6 +4,7 @@
     grid-column-gap: var(--size-4);
 }
 .ola_page-title {
+    --skeleton-width: 20em;
     font: var(--font-callout);
     font-weight: var(--bold);
     display: block;
@@ -11,6 +12,7 @@
     grid-row: 1;
 }
 .ola_page-url {
+    --skeleton-width: 14em;
     font: var(--font-caption);
     display: block;
     grid-column: 2;
@@ -26,4 +28,13 @@ span.ola_page-url {
     max-width: var(--size-8);
     align-self: center;
     color: var(--gray-light);
+}
+.ola-skeleton {
+    & .ola_page-icon {
+        --skeleton-width: var(--size-8);
+
+        &:before {
+            height: var(--skeleton-width);
+        }
+    }
 }

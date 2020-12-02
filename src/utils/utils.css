@@ -41,6 +41,9 @@ strong {
     }
 }
 
+.ola-normal {
+    font-weight: var(--normal) !important; /* Overrides the previous ruleset */
+}
 .ola-bold {
     font-weight: var(--bold);
 }
@@ -184,4 +187,34 @@ strong {
 }
 .ola-width-medium {
     max-width: var(--size-12);
+}
+
+/* Skeletor */
+.ola-skeleton {
+    overflow: hidden;
+    
+    & > :empty::before {
+        content: "\00a0";
+        display: block;
+        background-color: var(--gray-xlight);
+        width: var(--skeleton-width, 5em);
+        height: var(--skeleton-height, 1em);
+    }
+
+    &.is-loading {
+        & > :empty::before {
+            background: linear-gradient(to right, var(--gray-xlight) 40%, var(--white), var(--gray-xlight) 60%);
+            background-size: 800px 100%;
+            animation: loadingSkeleton 2s linear infinite;
+        }
+    }
+}
+
+@keyframes loadingSkeleton {
+    from {
+        background-position: 0 0;
+    }
+    to {
+      background-position: 800px 0;
+    }
 }

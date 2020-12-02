@@ -5,6 +5,7 @@ exports[`Group with two buttons 1`] = `
   className="ola_buttonGroup"
 >
   <button
+    aria-pressed={null}
     className="ola_button is-primary"
     disabled={false}
   >
@@ -15,6 +16,7 @@ exports[`Group with two buttons 1`] = `
     </span>
   </button>
   <button
+    aria-pressed={null}
     className="ola_button is-secondary"
     disabled={false}
   >
@@ -32,6 +34,7 @@ exports[`Group with two buttons center 1`] = `
   className="ola_buttonGroup is-center"
 >
   <button
+    aria-pressed={null}
     className="ola_button is-primary"
     disabled={false}
   >
@@ -42,6 +45,7 @@ exports[`Group with two buttons center 1`] = `
     </span>
   </button>
   <button
+    aria-pressed={null}
     className="ola_button is-secondary"
     disabled={false}
   >
@@ -59,6 +63,7 @@ exports[`Group with two buttons in reverse order 1`] = `
   className="ola_buttonGroup is-reversed"
 >
   <button
+    aria-pressed={null}
     className="ola_button is-primary"
     disabled={false}
   >
@@ -69,6 +74,7 @@ exports[`Group with two buttons in reverse order 1`] = `
     </span>
   </button>
   <button
+    aria-pressed={null}
     className="ola_button is-secondary"
     disabled={false}
   >
@@ -86,6 +92,7 @@ exports[`Group with two buttons in reverse order and extra class 1`] = `
   className="ola_buttonGroup is-reversed is-extra"
 >
   <button
+    aria-pressed={null}
     className="ola_button is-primary"
     disabled={false}
   >
@@ -96,6 +103,7 @@ exports[`Group with two buttons in reverse order and extra class 1`] = `
     </span>
   </button>
   <button
+    aria-pressed={null}
     className="ola_button is-secondary"
     disabled={false}
   >
@@ -113,6 +121,7 @@ exports[`Group with two buttons in reverse order centered 1`] = `
   className="ola_buttonGroup is-center is-reversed"
 >
   <button
+    aria-pressed={null}
     className="ola_button is-primary"
     disabled={false}
   >
@@ -123,6 +132,7 @@ exports[`Group with two buttons in reverse order centered 1`] = `
     </span>
   </button>
   <button
+    aria-pressed={null}
     className="ola_button is-secondary"
     disabled={false}
   >

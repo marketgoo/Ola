@@ -1,0 +1,52 @@
+.ola_chartColumn {
+    --height: 150px;
+    --color: var(--gray);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.ola_chartColumn-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.ola_chartColumn-graphic {
+    color: var(--color);
+    background-color: var(--color);
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    margin: var(--size-2) 0;
+}
+
+@media (--to-width-1) {
+    .ola_chartColumn-value + .ola_chartColumn-value {
+        margin-top: var(--size-7);
+    }
+
+    .ola_chartColumn-graphic {
+        width: calc(100% * var(--value));
+        height: var(--size-5);
+        border-top-right-radius: var(--radius-small);
+        border-bottom-right-radius: var(--radius-small);
+    }
+}
+
+@media (--from-width-1) {
+    .ola_chartColumn {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .ola_chartColumn-value {
+        padding: 0 var(--size-2);
+    }
+
+    .ola_chartColumn-graphic {
+        height: calc(var(--height) * var(--value));
+        border-top-right-radius: var(--radius-small);
+        border-top-left-radius: var(--radius-small);
+    }
+}

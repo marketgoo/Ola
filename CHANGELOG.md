@@ -5,7 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.8.0] - Unreleased
+## [0.9.0] - Unreleased
+### Added
+- New component `Kpi`
+- New component `Score` [#164]
+- New components `Issue` and `IssueDropDown` [#162] [#161]
+- The layout `ly-columns` allows to customize the column-width and column-gap with the `--column-width` and `--gap` variables
+- The layout `ly-imgContent` allows to customize the image-width and gap with the `--image-width` and `--gap` variables. Added also the `.is-responsive` modifier for narrow screens.
+- New layout `ly-1nColumns` implementing the "Holy albatross" pattern.
+- New prop `status`, `className` and `..props` to `Page` component
+- New prop `status` to `Icon` component [#165]
+- New `.ola-skeleton` util
+- New `--row-gap-4` variable for bigger row spacing
+- New component `ChartColumn`, including the subcomponent `ChartColumnValue` [#167] [#168]
+- New component `Segment` [#171] [#172]
+- New property `size` to the component `Level` [#169] [#170]
+
+### Fixed
+- Reduced the width of the `.ola_section-intro` element
+
+## [0.8.0] - 2020-09-29
 ### Added
 - New component `Section` [#150], [#151] including some subcomponents:
   - `SectionHeader`
@@ -20,9 +39,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New layout `ly-asideHeader`
 - New helpers `ola-width-narrow` and `ola-width-medium`
 - New variant `full-list` to `CheckGroup` to remove scroll and max-height
+- New props `open` and `close` to `Tooltip` [#152] [#153]
 
 ### Fixed
-- Field component can have multiple child elements [#154] [#155]
+- `Field` component can have multiple child elements [#154] [#155]
 - Modal must restore the scroll on unmount [#156] [#157]
 - Apply separation gap to any element in a `ButtonGroup`, instead only to `Button`.
 - `ProgressCircle` component display `0` as description when the value is `0`.
@@ -374,12 +394,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#149]: https://github.com/marketgoo/Ola/issues/149
 [#150]: https://github.com/marketgoo/Ola/issues/150
 [#151]: https://github.com/marketgoo/Ola/issues/151
+[#152]: https://github.com/marketgoo/Ola/issues/152
+[#153]: https://github.com/marketgoo/Ola/issues/153
 [#154]: https://github.com/marketgoo/Ola/issues/154
 [#155]: https://github.com/marketgoo/Ola/issues/155
 [#156]: https://github.com/marketgoo/Ola/issues/156
 [#157]: https://github.com/marketgoo/Ola/issues/157
+[#161]: https://github.com/marketgoo/Ola/issues/161
+[#162]: https://github.com/marketgoo/Ola/issues/162
+[#164]: https://github.com/marketgoo/Ola/issues/164
+[#165]: https://github.com/marketgoo/Ola/issues/165
+[#167]: https://github.com/marketgoo/Ola/issues/167
+[#168]: https://github.com/marketgoo/Ola/issues/168
+[#169]: https://github.com/marketgoo/Ola/issues/169
+[#170]: https://github.com/marketgoo/Ola/issues/170
+[#171]: https://github.com/marketgoo/Ola/issues/171
+[#172]: https://github.com/marketgoo/Ola/issues/172
 
-[0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...HEAD
+[0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...HEAD
+[0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/marketgoo/Ola/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/marketgoo/Ola/compare/v0.4.0...v0.5.0

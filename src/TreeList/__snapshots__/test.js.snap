@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default treeList 1`] = `
+<ul
+  className="ola_treeList"
+>
+  <li
+    className="ola_treeList-option"
+  >
+    Option 1
+  </li>
+  <li
+    className="ola_treeList-option"
+  >
+    Option 2
+  </li>
+</ul>
+`;

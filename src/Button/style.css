@@ -1,12 +1,15 @@
 .ola_button {
     --color: var(--accent);
-    --background: transparent;
     --color-hover: var(--accent-dark);
+    --color-selected: var(--black);
+    --background: transparent;
     --background-hover: var(--gray-xlight);
-    --shadow-focus: var(--accent-focus);
     --background-active: var(--accent-focus);
+    --background-selected: var(--gray-xlight);
+    --shadow-focus: var(--accent-focus);
     --border: var(--gray-light);
     --border-hover: currentColor;
+    --border-selected: var(--gray-light);
 
     display: inline-flex;
     align-items: center;
@@ -23,7 +26,7 @@
     cursor: pointer;
     border-radius: var(--radius-big);
     font: var(--font-callout);
-    padding: 0 var(--size-7);
+    padding: 0 var(--column-gap-2);
     font-weight: var(--bold);
     transition-property: background-color, color, box-shadow;
     transition-duration: var(--duration);
@@ -168,6 +171,14 @@
         cursor: not-allowed;
         pointer-events: none;
         box-shadow: none;
+    }
+
+    &[aria-pressed="true"] {
+        color: var(--color-selected);
+        background-color: var(--background-selected);
+        border-color: var(--border-selected);
+        cursor: default;
+        pointer-events: none;
     }
 }
 

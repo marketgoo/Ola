@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChartColumn and ChartColumnValue 1`] = `
+<div
+  className="ola_chartColumn"
+>
+  <div
+    className="ola_chartColumn-value"
+    style={
+      Object {
+        "--color": null,
+        "--value": 0.4444444444444444,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      5 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-value"
+    style={
+      Object {
+        "--color": null,
+        "--value": 0.1111111111111111,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      2 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-value"
+    style={
+      Object {
+        "--color": null,
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      1 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+  <div
+    className="ola_chartColumn-value"
+    style={
+      Object {
+        "--color": null,
+        "--value": 1,
+      }
+    }
+  >
+    <div
+      className="ola_chartColumn-label"
+    >
+      10 keywords
+    </div>
+    <div
+      className="ola_chartColumn-graphic"
+    />
+  </div>
+</div>
+`;
+
+exports[`Default ChartColumn 1`] = `
+<div
+  className="ola_chartColumn"
+>
+  Test
+</div>
+`;
+
+exports[`Default ChartColumnValue 1`] = `
+<div
+  className="ola_chartColumn-value"
+  style={
+    Object {
+      "--color": null,
+      "--value": 0,
+    }
+  }
+>
+  <div
+    className="ola_chartColumn-label"
+  />
+  <div
+    className="ola_chartColumn-graphic"
+  />
+</div>
+`;

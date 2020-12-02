@@ -2,6 +2,7 @@
 
 exports[`Busy button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-primary is-busy"
   disabled={true}
 >
@@ -25,6 +26,7 @@ exports[`Busy button 1`] = `
 
 exports[`Destructive button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-destructive"
   disabled={false}
 >
@@ -38,6 +40,7 @@ exports[`Destructive button 1`] = `
 
 exports[`Disabled link button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-link is-disabled"
   disabled={true}
 >
@@ -51,6 +54,7 @@ exports[`Disabled link button 1`] = `
 
 exports[`Disabled primary button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-primary is-disabled"
   disabled={true}
 >
@@ -64,6 +68,7 @@ exports[`Disabled primary button 1`] = `
 
 exports[`No variant button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button"
   disabled={false}
 >
@@ -77,6 +82,7 @@ exports[`No variant button 1`] = `
 
 exports[`PRO button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-pro"
   disabled={false}
 >
@@ -90,6 +96,7 @@ exports[`PRO button 1`] = `
 
 exports[`Primary button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-primary"
   disabled={false}
 >
@@ -103,6 +110,7 @@ exports[`Primary button 1`] = `
 
 exports[`Primary button with extra class 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-primary is-extra"
   disabled={false}
 >
@@ -116,6 +124,7 @@ exports[`Primary button with extra class 1`] = `
 
 exports[`Primary destructive button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-destructive-primary"
   disabled={false}
 >
@@ -129,6 +138,7 @@ exports[`Primary destructive button 1`] = `
 
 exports[`Secondary button 1`] = `
 <button
+  aria-pressed={null}
   className="ola_button is-secondary"
   disabled={false}
 >
