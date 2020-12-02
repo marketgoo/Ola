@@ -35,7 +35,7 @@
     font: var(--font-body);
     color: var(--gray);
     margin-top: var(--size-2);
-    max-width: 40em;
+    max-width: var(--size-12);
 }
 .ola_section-subheader {
     margin: var(--row-gap-3) 0;

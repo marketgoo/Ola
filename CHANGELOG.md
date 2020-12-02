@@ -17,6 +17,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New prop `status` to `Icon` component [#165]
 - New `.ola-skeleton` util
 - New `--row-gap-4` variable for bigger row spacing
+- New component `ChartColumn`, including the subcomponent `ChartColumnValue` [#167] [#168]
+- New component `Segment` [#171] [#172]
+- New property `size` to the component `Level` [#169] [#170]
+
+### Fixed
+- Reduced the width of the `.ola_section-intro` element
 
 ## [0.8.0] - 2020-09-29
 ### Added
@@ -398,6 +404,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#162]: https://github.com/marketgoo/Ola/issues/162
 [#164]: https://github.com/marketgoo/Ola/issues/164
 [#165]: https://github.com/marketgoo/Ola/issues/165
+[#167]: https://github.com/marketgoo/Ola/issues/167
+[#168]: https://github.com/marketgoo/Ola/issues/168
+[#169]: https://github.com/marketgoo/Ola/issues/169
+[#170]: https://github.com/marketgoo/Ola/issues/170
+[#171]: https://github.com/marketgoo/Ola/issues/171
+[#172]: https://github.com/marketgoo/Ola/issues/172
 
 [0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...HEAD
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
