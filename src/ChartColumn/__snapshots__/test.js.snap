@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Default Kpi 1`] = `
+exports[`ChartColumn and ChartColumnValue 1`] = `
 <div
   className="ola_chartColumn"
 >
@@ -72,5 +72,31 @@ exports[`Default Kpi 1`] = `
       className="ola_chartColumn-graphic"
     />
   </div>
+</div>
+`;
+
+exports[`Default ChartColumn 1`] = `
+<div
+  className="ola_chartColumn"
+>
+  Test
+</div>
+`;
+
+exports[`Default ChartColumnValue 1`] = `
+<div
+  className="ola_chartColumn-column"
+  style={
+    Object {
+      "--value": 0,
+    }
+  }
+>
+  <div
+    className="ola_chartColumn-label"
+  />
+  <div
+    className="ola_chartColumn-graphic"
+  />
 </div>
 `;

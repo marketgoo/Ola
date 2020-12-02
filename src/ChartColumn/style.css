@@ -18,7 +18,7 @@
     border-bottom: solid 1px;
 }
 
-.ola_chartColumn-label {
+.ola_chartColumn-label, .ola_chartColumn-footer {
     margin: var(--size-2) 0;
     text-align: center;
 }
@@ -33,7 +33,7 @@
         color: var(--gray);
         border-left: solid 1px;
     }
-    .ola_chartColumn-label {
+    .ola_chartColumn-label, .ola_chartColumn-footer {
         margin-top: var(--size-7);
         text-align: left;
     }
