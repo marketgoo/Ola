@@ -1,5 +1,7 @@
 .ola_chartColumn {
     --height: 150px;
+    --color: var(--gray);
+
     display: flex;
     flex-direction: column;
 }
@@ -12,8 +14,6 @@
 }
 
 .ola_chartColumn-graphic {
-    --color: var(--gray);
-
     color: var(--color);
     background-color: var(--color);
     border-bottom: solid 1px;
