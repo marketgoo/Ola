@@ -30,5 +30,5 @@ export { getElementType }
  * @param {min} Min value of all elements 
  * @returns {number} 
 */
-const normalizeRange = (val, max, min) => (val - min) / (max - min)
+const normalizeRange = (val, max, min = 0) => (val - min) / (max - min)
 export { normalizeRange }

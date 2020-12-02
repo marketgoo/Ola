@@ -5,20 +5,20 @@ import { normalizeRange } from '../utils'
 
 const mockData = [
   {
-    value: 5,
-    label: '5 keywords'
+    value: 50,
+    label: '50 keywords'
   },
   {
-    value: 2,
-    label: '2 keywords'
-  },
-  {
-    value: 1,
-    label: '1 keywords'
+    value: 20,
+    label: '20 keywords'
   },
   {
     value: 10,
     label: '10 keywords'
+  },
+  {
+    value: 100,
+    label: '100 keywords'
   }
 ]
 
@@ -33,7 +33,7 @@ export const Base = () => {
   return (
     <ChartColumn>
       { mockData.map((row, idx) => {
-        const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
+        const normalizedValue = normalizeRange(row.value, Math.max(...extractValues))
         return (
           <ChartColumnValue key={idx} value={normalizedValue}>{row.label}</ChartColumnValue>
         )
