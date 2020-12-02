@@ -135,6 +135,7 @@ exports[`Task with Extra 1`] = `
       className="ola_task-extra"
     >
       <button
+        aria-pressed={null}
         className="ola_button"
         disabled={false}
         onClick={[Function]}
