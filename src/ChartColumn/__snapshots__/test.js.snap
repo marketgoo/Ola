@@ -5,7 +5,7 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
   className="ola_chartColumn"
 >
   <div
-    className="ola_chartColumn-column"
+    className="ola_chartColumn-value"
     style={
       Object {
         "--value": 0.4444444444444444,
@@ -22,7 +22,7 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     />
   </div>
   <div
-    className="ola_chartColumn-column"
+    className="ola_chartColumn-value"
     style={
       Object {
         "--value": 0.1111111111111111,
@@ -39,7 +39,7 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     />
   </div>
   <div
-    className="ola_chartColumn-column"
+    className="ola_chartColumn-value"
     style={
       Object {
         "--value": 0,
@@ -56,7 +56,7 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     />
   </div>
   <div
-    className="ola_chartColumn-column"
+    className="ola_chartColumn-value"
     style={
       Object {
         "--value": 1,
@@ -85,7 +85,7 @@ exports[`Default ChartColumn 1`] = `
 
 exports[`Default ChartColumnValue 1`] = `
 <div
-  className="ola_chartColumn-column"
+  className="ola_chartColumn-value"
   style={
     Object {
       "--value": 0,

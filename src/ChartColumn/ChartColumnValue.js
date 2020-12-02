@@ -3,10 +3,10 @@ import {default as PT} from 'prop-types'
 
 const ChartColumnValue = ({ value, footer, children,  }) => {
   return (
-    <div className="ola_chartColumn-column" style={{ '--value': value }}>
+    <div className="ola_chartColumn-value" style={{ '--value': value }}>
       <div className="ola_chartColumn-label">{ children }</div>
       <div className="ola_chartColumn-graphic"></div>
-      <div className="ola_chartColumn-footer">{ footer }</div>
+      { footer && <div className="ola_chartColumn-footer">{ footer }</div> }
     </div>
   )
 }

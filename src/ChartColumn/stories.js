@@ -49,7 +49,7 @@ export const HtmlLabels = () => {
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
         return (
-          <ChartColumnValue key={idx} value={normalizedValue}><div><p>{row.label}</p><p>{row.label}</p></div></ChartColumnValue>
+          <ChartColumnValue key={idx} value={normalizedValue}><div><strong>{row.label}</strong><br />{row.label}</div></ChartColumnValue>
         )
       })}
     </ChartColumn>
@@ -58,17 +58,18 @@ export const HtmlLabels = () => {
 
 export const ColumnsWithFooter = () => {
   const extractValues = mockData.map( data => data.value )
+  const footer = ['one', 'two', 'tree', 'four']
+
   return (
     <ChartColumn>
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
-        const footer = ["one", "two", "tree", "four"]
         return (
           <ChartColumnValue 
             key={idx}
             footer={footer[idx]}
             value={normalizedValue}>
-              <div><p>{row.label}</p><p>{row.label}</p></div>
+            <div><strong>{row.label}</strong><br />{row.label}</div>
           </ChartColumnValue>
         )
       })}
