@@ -6,7 +6,7 @@ import { getElementType } from '../utils'
 import Spinner from '../Spinner'
 import Icon from '../Icon'
 
-const Button = ({ variant, children, disabled, busy, className, icon, as, ...props }) => {
+const Button = ({ variant, children, disabled, busy, className, icon, as, selected, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
   delete props['as']
   const styles = cx(
@@ -17,8 +17,10 @@ const Button = ({ variant, children, disabled, busy, className, icon, as, ...pro
     className
   )
 
+  const pressed = selected === null ? null : (selected ? 'true' : 'false')
+
   return (
-    <ElementType className={styles} disabled={busy ? true : disabled} {...props}>
+    <ElementType className={styles} disabled={busy ? true : disabled} aria-pressed={pressed} {...props}>
       {busy ? <Spinner /> : icon &&  <Icon name={icon} size="small" className="ola_button-icon" /> }
       <span className="ola_button-text">{!busy ? children : busy}</span>
     </ElementType>
@@ -31,6 +33,7 @@ Button.defaultProps = {
   busy: null,
   className: null,
   disabled: false,
+  selected: null,
   icon: null
 }
 
@@ -54,6 +57,8 @@ Button.propTypes = {
   ]).isRequired,
   /** Whether the button is disabled */
   disabled: PT.bool,
+  /** Whether the button is selected */
+  selected: PT.bool,
   /** Icon name  */
   icon: PT.string
 }
