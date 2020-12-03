@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const ChartColumnValue = ({ value, footer, children, className, color }) => {
+const Column = ({ value, footer, children, className, color }) => {
   const styles = cx('ola_chartColumn-value', className)
   return (
     <div className={styles} style={{ '--value': value, '--color': color }}>
@@ -13,13 +13,13 @@ const ChartColumnValue = ({ value, footer, children, className, color }) => {
   )
 }
 
-ChartColumnValue.defaultProps = {
+Column.defaultProps = {
   value: 0,
   className: null,
   color: null
 }
 
-ChartColumnValue.propTypes = {
+Column.propTypes = {
   /** Value between 0 and 1 */
   value: PT.number,
   /** Extra className */
@@ -38,4 +38,4 @@ ChartColumnValue.propTypes = {
   ])
 }
 
-export default ChartColumnValue
+export default Column

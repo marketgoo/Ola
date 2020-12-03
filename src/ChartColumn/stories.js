@@ -1,6 +1,6 @@
 import React from 'react'
 import ChartColumn from './'
-import ChartColumnValue from './ChartColumnValue'
+import ChartColumnValue from './Column'
 import { normalizeRange } from '../utils'
 
 const mockData = [
