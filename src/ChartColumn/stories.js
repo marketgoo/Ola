@@ -64,7 +64,7 @@ export const ColumnsWithFooter = () => {
   return (
     <ChartColumn>
       { mockData.map((row, idx) => {
-        const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
+        const normalizedValue = normalizeRange(row.value, Math.max(...extractValues))
         return (
           <ChartColumnValue 
             key={idx}

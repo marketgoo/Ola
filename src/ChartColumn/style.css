@@ -1,6 +1,6 @@
 .ola_chartColumn {
     --height: 150px;
-    --color: var(--gray);
+    --color: var(--gray-light);
 
     display: flex;
     flex-direction: column;
@@ -18,7 +18,17 @@
     background-color: var(--color);
     border-bottom: solid 1px;
     border-left: solid 1px;
-    margin: var(--size-2) 0;
+}
+
+.ola_chartColumn-footer {
+    padding-top: var(--size-2);
+    font: var(--callout);
+    font-weight: var(--bold);
+    color: var(--gray);
+}
+.ola_chartColumn-label {
+    padding-bottom: var(--size-2);
+    font: var(--callout);
 }
 
 @media (--to-width-1) {
@@ -40,13 +50,15 @@
         text-align: center;
     }
 
-    .ola_chartColumn-value {
-        padding: 0 var(--size-2);
+    .ola_chartColumn-footer {
+        border-top: solid 1px var(--gray);
     }
 
     .ola_chartColumn-graphic {
         height: calc(var(--height) * var(--value));
         border-top-right-radius: var(--radius-small);
         border-top-left-radius: var(--radius-small);
+        margin-left: var(--size-3);
+        margin-right: var(--size-3);
     }
 }
