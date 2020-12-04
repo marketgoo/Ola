@@ -1,0 +1,47 @@
+.ola_chartLine {
+    --height: 150px;
+    --color: var(--gray-light);
+
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: flex-end;
+}
+
+.ola_chartLine-svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(var(--height) + 10px);
+    background: linear-gradient(to bottom, var(--gray-light), var(--gray-xlight) 66%, var(--white));
+    padding-bottom: 28px;
+}
+.ola_chartLine-svg-background {
+    fill: var(--white);
+    stroke: none;
+}
+.ola_chartLine-svg-line {
+    fill: none;
+    stroke: var(--brand);
+    stroke-width: 4px;
+}
+
+.ola_chartLine-label {
+    z-index: 1;
+    position: relative;
+    flex-grow: 1;
+    font: var(--callout);
+    padding-bottom: calc((var(--height) * var(--value)) - 3px + 28px);
+
+    &::after {
+        content: "";
+        display: block;
+        margin: 14px auto 0;
+        border: solid 4px var(--brand);
+        background: white;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+}

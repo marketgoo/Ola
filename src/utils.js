@@ -32,3 +32,8 @@ export { getElementType }
 */
 const normalizeRange = (val, max, min = 0) => (val - min) / (max - min)
 export { normalizeRange }
+
+export function getRanges(values) {
+  const max = Math.max(...values)
+  return values.map(value => normalizeRange(value, max))
+}

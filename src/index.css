@@ -35,6 +35,7 @@
 @import './TreeList/style.css';
 @import './Kpi/style.css';
 @import './ChartColumn/style.css';
+@import './ChartLine/style.css';
 
 /* Helpers */
 @import './utils/utils.css';
