@@ -4,7 +4,7 @@ import cx from 'classnames'
 import { getElementType } from '../utils'
 
 const MenuOption = ({ as, className, separator, children, variant, selected, ...props }) => {
-  const ElementType = getElementType(Option, { as: as, ...props })
+  const ElementType = getElementType(MenuOption, { as: as, ...props })
   delete props['as']
 
   return (

@@ -14,7 +14,7 @@
     "watch": "concurrently npm:watch:js npm:watch:css",
     "watch:js": "babel ./src -d dist --ignore 'src/**/stories.js','src/**/test.js' --watch",
     "watch:css": "postcss src/index.css -o dist/index.css --watch",
-    "guide": "start-storybook -p 6006",
+    "guide": "start-storybook -p 6006 --ci",
     "build": "rm -rf dist && mkdir dist && babel ./src -d dist --ignore 'src/**/stories.js','src/**/test.js' && postcss src/index.css -o dist/index.css",
     "prepack": "npm test && npm run build"
   },
