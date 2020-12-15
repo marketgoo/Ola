@@ -75,22 +75,22 @@ exports[`Options are links 1`] = `
   <li
     className=""
   >
-    <button
+    <a
       className="ola_menu-option"
       href="link1"
     >
       Option 1
-    </button>
+    </a>
   </li>
   <li
     className=""
   >
-    <button
+    <a
       className="ola_menu-option"
       href="link2"
     >
       Option 2
-    </button>
+    </a>
   </li>
 </ul>
 `;
