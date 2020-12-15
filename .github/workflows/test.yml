@@ -1,0 +1,26 @@
+name: Test
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    name: Node.js ${{ matrix.node-version }} test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 10
+          - 11
+          - 12
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      - name: Install Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        uses: bahmutov/npm-install@v1
+      - name: Run unit tests
+        run: npm test
+  
