@@ -19,6 +19,10 @@
     &::-webkit-details-marker {
         display: none;
     }
+
+    & .ola_button {
+        display: flex;
+    }
 }
 .ola_tooltip-content {
     will-change: opacity, transform;
@@ -46,6 +50,7 @@
     &.is-bottomright,
     &.is-bottomright-extra,
     &.is-bottomcenter,
+    &.is-bottomcenter-extra,
     &.is-bottomleft,
     &.is-bottomleft-extra {
         margin-top: calc(var(--pointer) / 2);
@@ -58,6 +63,7 @@
     &.is-topright,
     &.is-topright-extra,
     &.is-topcenter,
+    &.is-topcenter-extra,
     &.is-topleft,
     &.is-topleft-extra {
         bottom: 100%;
@@ -87,12 +93,19 @@
     }
 
     &.is-topcenter,
-    &.is-bottomcenter {
+    &.is-bottomcenter,
+    &.is-topcenter-extra,
+    &.is-bottomcenter-extra {
         left: calc(50% - var(--width) / 2);
 
         &::before {
             right: calc(50% - var(--pointer));
         }
+    }
+
+    &.is-topcenter-extra,
+    &.is-bottomcenter-extra {
+        max-width: 90vh;
     }
 
     &.is-topleft,
@@ -146,6 +159,7 @@
     }
     &.is-topleft,
     &.is-topcenter,
+    &.is-topcenter-extra,
     &.is-topright {
         &::before {
             border-width: var(--pointer) var(--pointer) 0 var(--pointer);
@@ -154,6 +168,7 @@
     }
     &.is-bottomleft,
     &.is-bottomcenter,
+    &.is-bottomcenter-extra,
     &.is-bottomright {
         &::before {
             border-width: 0 var(--pointer) var(--pointer) var(--pointer);
@@ -172,15 +187,18 @@
         &.is-bottomright,
         &.is-bottomright-extra,
         &.is-bottomcenter,
+        &.is-bottomcenter-extra,
         &.is-bottomleft,
         &.is-bottomleft-extra,
         &.is-topright,
         &.is-topright-extra,
         &.is-topcenter,
+        &.is-topcenter-extra,
         &.is-topleft,
         &.is-topleft-extra {
             display: block;
             animation: tooltip-show 200ms;
+            animation-fill-mode: both;
         }
     }
 }
@@ -190,10 +208,8 @@
         opacity: 0;
         transform: translateY(10px);
     }
-    50% {
-        opacity: 1;
-    }
     to {
+        opacity: 1;
         transform: translateY(0);
     }
 }

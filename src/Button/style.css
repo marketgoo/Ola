@@ -188,6 +188,7 @@
     text-overflow: ellipsis;
     padding-top: 4px;
     padding-bottom: 4px;
+    user-select: none;
 }
 
 .ola_button-icon {

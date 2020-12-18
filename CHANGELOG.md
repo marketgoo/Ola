@@ -27,6 +27,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Reduced the width of the `.ola_section-intro` element
 - `MenuOption` with `href` is not converted to `<a>` element
+- `Tooltip` button inside a `ButtonGroup` should be responsive
+- `Tooltip` position when is centered in narrow screens
 
 ## [0.8.0] - 2020-09-29
 ### Added
