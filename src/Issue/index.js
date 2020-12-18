@@ -48,7 +48,7 @@ Issue.propTypes = {
   /** Title of header */
   title: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
   /** Size variant */
-  size: PT.oneOf(['small', 'medium']),
+  size: PT.oneOf(['small', 'medium', 'big']),
   /** Kpi status */
   status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Extra className */

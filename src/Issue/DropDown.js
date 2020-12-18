@@ -31,7 +31,7 @@ IssueDropDown.propTypes = {
   /** Title of header */
   title: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
   /** Size variant */
-  size: PT.oneOf(['small', 'medium']),
+  size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
