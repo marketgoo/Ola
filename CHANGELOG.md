@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `ChartColumn`, including the subcomponent `ChartColumnValue` [#167] [#168]
 - New component `Segment` [#171] [#172]
 - New property `size` to the component `Level` [#169] [#170]
+- New icons based in WordPress:
+  - `post`
+  - `staticPage`
 
 ### Fixed
 - Reduced the width of the `.ola_section-intro` element

@@ -17,7 +17,9 @@ import Home from './Home'
 import Null from './Null'
 import Page from './Page'
 import Plus from './Plus'
+import Post from './Post'
 import Search from './Search'
+import StaticPage from './StaticPage'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
@@ -39,7 +41,9 @@ const ICONS = {
   'null': Null,
   'page': Page,
   'plus': Plus,
+  'post': Post,
   'search': Search,
+  'staticPage': StaticPage,
   'success': Success,
   'user': User,
   'warning': Warning,
@@ -77,27 +81,7 @@ Icon.defaultProps = {
 
 Icon.propTypes = {
   /** Icons */
-  name: PT.oneOf([
-    'arrowDown',
-    'arrowUp',
-    'chevronDown',
-    'chevronUp',
-    'chevronLeft',
-    'chevronRight',
-    'clock',
-    'close',
-    'error',
-    'help',
-    'home',
-    'newWindow',
-    'null',
-    'page',
-    'plus',
-    'search',
-    'success',
-    'user',
-    'warning',
-  ]),
+  name: PT.oneOf(Object.keys(ICONS)),
   /** Size */
   size: PT.oneOf(['small', 'medium', 'big']),
   /** Kpi status */
