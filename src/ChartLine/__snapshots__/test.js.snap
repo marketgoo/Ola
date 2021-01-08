@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChartLine and ChartLineLabel 1`] = `
+<div
+  className="ola_chartLine"
+>
+  <div
+    className="ola_chartLine-label"
+    style={
+      Object {
+        "--value": 0.5,
+      }
+    }
+  >
+    5 keywords
+  </div>
+  <div
+    className="ola_chartLine-label"
+    style={
+      Object {
+        "--value": 0.2,
+      }
+    }
+  >
+    2 keywords
+  </div>
+  <div
+    className="ola_chartLine-label"
+    style={
+      Object {
+        "--value": 0.1,
+      }
+    }
+  >
+    1 keywords
+  </div>
+  <div
+    className="ola_chartLine-label"
+    style={
+      Object {
+        "--value": 1,
+      }
+    }
+  >
+    10 keywords
+  </div>
+  <svg
+    className="ola_chartLine-svg"
+    preserveAspectRatio="none"
+    role="img"
+    viewBox="0 0 100 160"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      className="ola_chartLine-svg-background"
+      d="M 0 0 M 0 NaN L 100 NaN V 0 H 0 Z"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+    <path
+      className="ola_chartLine-svg-line"
+      d="M 0 0 M 0 NaN L 100 NaN"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Default ChartLine 1`] = `
+<div
+  className="ola_chartLine"
+>
+  Test
+  <svg
+    className="ola_chartLine-svg"
+    preserveAspectRatio="none"
+    role="img"
+    viewBox="0 0 100 160"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      className="ola_chartLine-svg-background"
+      d="M 0 0 M 0 NaN L 100 NaN V 0 H 0 Z"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+    <path
+      className="ola_chartLine-svg-line"
+      d="M 0 0 M 0 NaN L 100 NaN"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Default ChartLineLabel 1`] = `
+<div
+  className="ola_chartLine-label"
+  style={
+    Object {
+      "--value": 0,
+    }
+  }
+/>
+`;
