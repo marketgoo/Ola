@@ -1,6 +1,6 @@
 {
   "name": "@marketgoo/ola",
-  "version": "0.9.0-beta.10",
+  "version": "0.9.0-beta.11",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
   "styles": "dist/index.css",
