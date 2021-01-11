@@ -19,7 +19,7 @@ const mockData = [
   },
   {
     value: 100,
-    label: '100 keywords',
+    label: '100 keywords and a long text with multiple lines',
   }
 ]
 
