@@ -33,7 +33,13 @@ export { getElementType }
 const normalizeRange = (val, max, min = 0) => (val - min) / (max - min)
 export { normalizeRange }
 
-export function getRanges(values) {
-  const max = Math.max(...values)
-  return values.map(value => normalizeRange(value, max))
+export function getRanges(...rows) {
+  let max = 0
+  rows.forEach((row) => max = Math.max(max, ...row))
+
+  return new Array(rows[0].length)
+    .fill([])
+    .map((value, index) =>
+      rows.map((row) => normalizeRange(row[index], max))
+    )
 }

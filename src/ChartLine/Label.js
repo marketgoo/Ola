@@ -5,7 +5,7 @@ import cx from 'classnames'
 const Label = ({ value, children, className }) => {
   const styles = cx('ola_chartLine-label', className)
   return (
-    <div className={styles} style={{ '--value': value }}>
+    <div className={styles} style={{ '--value': Math.max(...value) }}>
       { children }
     </div>
   )
@@ -18,7 +18,7 @@ Label.defaultProps = {
 
 Label.propTypes = {
   /** Value between 0 and 1 */
-  value: PT.number,
+  value: PT.arrayOf(PT.number),
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
