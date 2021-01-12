@@ -12,13 +12,13 @@ const Label = ({ value, children, className }) => {
 }
 
 Label.defaultProps = {
-  value: 0,
+  value: [0],
   className: null
 }
 
 Label.propTypes = {
   /** Value between 0 and 1 */
-  value: PT.arrayOf(PT.number),
+  value: PT.arrayOf(PT.number).isRequired,
   /** Extra className */
   className: PT.string,
   /** Childen nodes */

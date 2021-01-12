@@ -1,11 +1,24 @@
 .ola_chartLine {
     --height: 150px;
-    --color: var(--gray-light);
+    --color: var(--brand);
 
     display: flex;
     position: relative;
     text-align: center;
     align-items: flex-end;
+
+    &.ola-skeleton {
+        --color: var(--gray-xlight);
+
+        & .ola_chartLine-label::before {
+            visibility: hidden;
+        }
+        &.is-loading .ola_chartLine-svg {
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 60%), linear-gradient(to bottom, var(--gray-xlight), var(--gray-xlight) 66%, var(--white));
+            background-size: 800px 100%;
+            animation: loadingSkeleton 2s linear infinite;
+        }
+    }
 }
 
 .ola_chartLine-svg {
@@ -22,7 +35,6 @@
     stroke: none;
 }
 .ola_chartLine-svg-line {
-    --color: var(--brand);
     fill: none;
     stroke: var(--color);
     stroke-width: 4px;
@@ -39,7 +51,7 @@
         content: "";
         display: block;
         margin: 14px auto 0;
-        border: solid 4px var(--brand);
+        border: solid 4px var(--color);
         background: white;
         width: 8px;
         height: 8px;

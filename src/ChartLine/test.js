@@ -41,7 +41,7 @@ it('ChartLine and ChartLineLabel', () => {
   const ranges = getRanges(mockData.map(data => data.value))
   const tree = renderer
     .create(
-      <ChartLine>
+      <ChartLine ranges={ ranges }>
         { mockData.map((row, idx) => 
           <ChartLineLabel key={idx} value={ranges[idx]}>{row.label}</ChartLineLabel>
         )}

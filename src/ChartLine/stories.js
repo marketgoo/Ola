@@ -51,7 +51,21 @@ const colors = [
 export default {
   title: 'ChartLine',
   component: ChartLine,
-  args: {}
+  args: {
+    ranges: getRanges(mockData.map( data => data.value ))
+  }
+}
+
+export const Empty = (args) => {
+  return (
+    <ChartLine {...args}>
+      { mockData.map((row, idx) => 
+        <ChartLineLabel key={idx} value={args.ranges[idx]}>
+          {row.label}
+        </ChartLineLabel>
+      )}
+    </ChartLine>
+  )
 }
 
 export const Base = () => {
