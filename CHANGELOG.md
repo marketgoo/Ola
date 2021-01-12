@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `MenuOption` with `href` is not converted to `<a>` element
 - `Tooltip` button inside a `ButtonGroup` should be responsive
 - `Tooltip` position when is centered in narrow screens
+- Prevent multiple lines and use `text-overflow: ellipsis` for the urls in the `Page` component
 
 ## [0.8.0] - 2020-09-29
 ### Added

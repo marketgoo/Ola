@@ -18,6 +18,10 @@
     grid-column: 2;
     grid-row: 2;
     justify-self: start;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 span.ola_page-url {
     color: var(--gray);
