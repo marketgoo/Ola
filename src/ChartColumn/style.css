@@ -51,6 +51,18 @@
         text-align: center;
     }
 
+    .ola_chartColumn-value {
+        max-width: var(--size-11);
+    }
+
+    .ola_chartColumn {
+        justify-content: center;
+    }
+
+    .ola_chartColumn-value + .ola_chartColumn-value {
+        margin-left: var(--size-4);
+    }
+
     .ola_chartColumn-footer {
         border-top: solid 1px var(--gray);
     }
@@ -59,7 +71,5 @@
         height: calc(var(--height) * var(--value));
         border-top-right-radius: var(--radius-small);
         border-top-left-radius: var(--radius-small);
-        margin-left: var(--size-3);
-        margin-right: var(--size-3);
     }
 }
