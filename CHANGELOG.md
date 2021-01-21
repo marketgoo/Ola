@@ -24,6 +24,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `post`
   - `staticPage`
 
+### Changed
+- `ButtonIcon` appearance inside a `Tag` component.
+
 ### Fixed
 - Reduced the width of the `.ola_section-intro` element
 - `MenuOption` with `href` is not converted to `<a>` element
