@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: calc(var(--height) + 10px);
-    background: linear-gradient(to bottom, var(--gray-light), var(--gray-xlight) 66%, var(--white));
+    background: linear-gradient(to bottom, var(--gray-light), var(--gray-xlight) 50%, var(--gray-xlight) 75%, var(--white));
     padding-bottom: 28px;
 }
 .ola_chartLine-svg-background {
