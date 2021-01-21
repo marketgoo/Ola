@@ -8,7 +8,7 @@ const Column = ({ value, footer, children, className, color }) => {
     <div className={styles} style={{ '--value': value, '--color': color }}>
       <div className="ola_chartColumn-label">{ children }</div>
       <div className="ola_chartColumn-graphic"></div>
-      { footer && <div className="ola_chartColumn-footer">{ footer }</div> }
+      { <div className="ola_chartColumn-footer">{ footer }</div> }
     </div>
   )
 }

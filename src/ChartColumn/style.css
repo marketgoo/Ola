@@ -59,15 +59,19 @@
         justify-content: center;
     }
 
-    .ola_chartColumn-value + .ola_chartColumn-value {
-        margin-left: var(--size-4);
-    }
-
     .ola_chartColumn-footer {
         border-top: solid 1px var(--gray);
+        height: 1em;
+
+        &:empty {
+            height: 0;
+            padding-top: 0;
+        }
     }
 
     .ola_chartColumn-graphic {
+        margin-left: var(--size-4);
+        margin-right: var(--size-4);
         height: calc(var(--height) * var(--value));
         border-top-right-radius: var(--radius-small);
         border-top-left-radius: var(--radius-small);

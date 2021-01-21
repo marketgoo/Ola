@@ -59,7 +59,7 @@ export const HtmlLabels = () => {
 
 export const ColumnsWithFooter = () => {
   const extractValues = mockData.map( data => data.value )
-  const footer = ['one', 'two', 'tree', 'four']
+  const footer = ['one with a long text that may generate multiple lines', 'two', 'tree', 'four']
 
   return (
     <ChartColumn>
