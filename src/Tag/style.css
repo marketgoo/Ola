@@ -11,7 +11,7 @@
     padding: 0 var(--padding);
     border-radius: var(--radius-small);
     border: solid 1px var(--background);
-    vertical-align: middle;
+    vertical-align: baseline;
     cursor: default;
     max-width: 100%;
     letter-spacing: 0;
