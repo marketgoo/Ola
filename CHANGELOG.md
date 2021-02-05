@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.9.1] - Unreleased
+## [0.9.1] - 2021-02-05
 ### Added
 - Property `className` to `ChartColumn`
 - Property `status` to `ChartColumnValue` to allow to set empty states and loading states
@@ -430,7 +430,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#171]: https://github.com/marketgoo/Ola/issues/171
 [#172]: https://github.com/marketgoo/Ola/issues/172
 
-[0.9.1]: https://github.com/marketgoo/Ola/compare/v0.9.0...HEAD
+[0.9.1]: https://github.com/marketgoo/Ola/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/marketgoo/Ola/compare/v0.6.0...v0.7.0
