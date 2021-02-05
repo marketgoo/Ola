@@ -2,8 +2,14 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Column = ({ value, footer, children, className, color }) => {
-  const styles = cx('ola_chartColumn-value', className)
+const Column = ({ value, footer, children, className, status, color }) => {
+  const styles = cx(
+    'ola_chartColumn-value',
+    { 'ola-skeleton': status !== 'loaded' },
+    { 'is-loading': status === 'loading' },
+    className
+  )
+
   return (
     <div className={styles} style={{ '--value': value, '--color': color }}>
       <div className="ola_chartColumn-label">{ children }</div>
@@ -16,7 +22,8 @@ const Column = ({ value, footer, children, className, color }) => {
 Column.defaultProps = {
   value: 0,
   className: null,
-  color: null
+  color: null,
+  status: 'loaded'
 }
 
 Column.propTypes = {
@@ -35,7 +42,9 @@ Column.propTypes = {
   children: PT.oneOfType([
     PT.arrayOf(PT.node),
     PT.node
-  ])
+  ]),
+  /** Value status */
+  status: PT.oneOf(['loaded', 'loading', 'empty']),
 }
 
 export default Column

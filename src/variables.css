@@ -119,6 +119,7 @@
 
     /* Transitions */
     --duration: 100ms;
+    --slow-duration: 500ms;
 }
 
 @custom-media --to-width-1 (max-width: 523px);

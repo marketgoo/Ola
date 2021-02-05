@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.9.1] - Unreleased
+### Added
+- Property `className` to `ChartColumn`
+- Property `status` to `ChartColumnValue` to allow to set empty states and loading states
+- A small transition on change the values of a `ChartColumnValue`
+
 ### Fixed
 - Changed the icon of links in `TreeList`. Use an arrow instead a chevron.
 
