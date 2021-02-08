@@ -81,7 +81,7 @@ exports[`Default ChartLine 1`] = `
   >
     <path
       className="ola_chartLine-svg-background"
-      d="M 0 0 M 0 0 L 100 0 V 0 H 0 Z"
+      d="M 0 0 M 0 155 L 100 155 V 0 H 0 Z"
       strokeLinejoin="round"
       vectorEffect="non-scaling-stroke"
     />
