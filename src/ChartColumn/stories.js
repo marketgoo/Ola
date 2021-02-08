@@ -29,10 +29,10 @@ export default {
   args: {}
 }
 
-export const Base = () => {
+export const Base = (args) => {
   const extractValues = mockData.map( data => data.value )
   return (
-    <ChartColumn>
+    <ChartColumn {...args}>
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues))
         return (
@@ -43,10 +43,10 @@ export const Base = () => {
   )
 }
  
-export const HtmlLabels = () => {
+export const HtmlLabels = (args) => {
   const extractValues = mockData.map( data => data.value )
   return (
-    <ChartColumn>
+    <ChartColumn {...args}>
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
         return (
@@ -57,12 +57,12 @@ export const HtmlLabels = () => {
   )
 }
 
-export const ColumnsWithFooter = () => {
+export const ColumnsWithFooter = (args) => {
   const extractValues = mockData.map( data => data.value )
-  const footer = ['one', 'two', 'tree', 'four']
+  const footer = ['one with a long text that may generate multiple lines', 'two', 'tree', 'four']
 
   return (
-    <ChartColumn>
+    <ChartColumn {...args}>
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues))
         return (
@@ -74,6 +74,26 @@ export const ColumnsWithFooter = () => {
           </ChartColumnValue>
         )
       })}
+    </ChartColumn>
+  )
+}
+
+export const EmptyState = () => {
+  return (
+    <ChartColumn>
+      <ChartColumnValue status="empty" footer="oi" value="0.1">he</ChartColumnValue>
+      <ChartColumnValue status="empty" footer="oi" value="0.9">ha</ChartColumnValue>
+      <ChartColumnValue status="empty" footer="oi" value="0.4">ho</ChartColumnValue>
+    </ChartColumn>
+  )
+}
+
+export const Loading = () => {
+  return (
+    <ChartColumn>
+      <ChartColumnValue status="loading" footer="oi" value="0.1"></ChartColumnValue>
+      <ChartColumnValue status="loading" footer="oi" value="0.9"></ChartColumnValue>
+      <ChartColumnValue status="loading" footer="oi" value="0.4"></ChartColumnValue>
     </ChartColumn>
   )
 }

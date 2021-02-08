@@ -7,9 +7,13 @@
     --skeleton-width: 20em;
     font: var(--font-callout);
     font-weight: var(--bold);
-    display: block;
     grid-column: 2;
     grid-row: 1;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .ola_page-url {
     --skeleton-width: 14em;
@@ -18,6 +22,10 @@
     grid-column: 2;
     grid-row: 2;
     justify-self: start;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 span.ola_page-url {
     color: var(--gray);

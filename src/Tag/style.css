@@ -1,15 +1,17 @@
 .ola_tag {
     --color: var(--gray);
     --background: var(--gray-xlight);
+    --padding: var(--size-3);
 
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
     color: var(--color);
     background-color: var(--background);
-    padding: 0 var(--size-3);
+    padding: 0 var(--padding);
     border-radius: var(--radius-small);
-    vertical-align: middle;
+    border: solid 1px var(--background);
+    vertical-align: baseline;
     cursor: default;
     max-width: 100%;
     letter-spacing: 0;
@@ -58,20 +60,23 @@
     }
 
     &.is-big {
+        --padding: var(--size-4);
         height: var(--size-8);
         font: var(--font-body);
         font-weight: var(--bold);
-        padding: 0 var(--size-4);
     }
 
     & > .ola_buttonIcon {
-        margin-right: calc(var(--size-2) * -1);
+        margin-right: calc(var(--padding) * -1);
         margin-left: var(--size-3);
         --color: var(--color);
         flex: 0 0 auto;
+        border-radius: 0 var(--radius-small) var(--radius-small) 0;
+        height: 100%;
 
-        &:hover {
-            box-shadow: var(--shadow-1);
+        & .ola_icon {
+            padding-top: 0;
+            padding-bottom: 0;
         }
     }
 }

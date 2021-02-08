@@ -8,6 +8,7 @@ const ChartLine = ({ status, children, ranges, colors, className }) => {
     'ola_chartLine',
     { 'ola-skeleton': status !== 'loaded' },
     { 'is-loading': status === 'loading' },
+    { 'is-multiple': ranges[0] && ranges[0].length > 1 },
     className
   )
 
@@ -83,7 +84,7 @@ function drawPath(values) {
 
 function getYPosition(value) {
   if (!value) {
-    return 0
+    return 155
   }
   return 150 - (value * 150) + 5
 }

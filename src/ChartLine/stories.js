@@ -52,27 +52,16 @@ export default {
   title: 'ChartLine',
   component: ChartLine,
   args: {
-    ranges: getRanges(mockData.map( data => data.value ))
+    data: mockData,
+    colors: colors
   }
 }
 
-export const Empty = (args) => {
+export const Base = (args) => {
+  const ranges = getRanges(args.data.map( data => data.value ))
   return (
-    <ChartLine {...args}>
-      { mockData.map((row, idx) => 
-        <ChartLineLabel key={idx} value={args.ranges[idx]}>
-          {row.label}
-        </ChartLineLabel>
-      )}
-    </ChartLine>
-  )
-}
-
-export const Base = () => {
-  const ranges = getRanges(mockData.map( data => data.value ))
-  return (
-    <ChartLine ranges={ranges} colors={colors}>
-      { mockData.map((row, idx) => 
+    <ChartLine ranges={ranges} colors={args.colors}>
+      { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]}>
           {row.label}
         </ChartLineLabel>
@@ -81,27 +70,13 @@ export const Base = () => {
   )
 }
 
-export const Multiple = () => {
-  const ranges = getRanges(mockData.map( data => data.value ), mockData2.map( data => data.value ))
+export const Multiple = (args) => {
+  const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
-    <ChartLine ranges={ranges} colors={colors}>
-      { mockData.map((row, idx) => 
+    <ChartLine ranges={ranges} colors={args.colors}>
+      { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]}>
           {row.label} <br/> from {mockData2[idx].label}
-        </ChartLineLabel>
-      )}
-    </ChartLine>
-  )
-}
-
-export const HtmlLabels = () => {
-  const ranges = getRanges(mockData.map( data => data.value ))
-
-  return (
-    <ChartLine ranges={ranges}>
-      { mockData.map((row, idx) => 
-        <ChartLineLabel key={idx} value={ranges[idx]}>
-          <div><strong>{row.label}</strong><br />{row.label}</div>
         </ChartLineLabel>
       )}
     </ChartLine>

@@ -19,6 +19,15 @@
             animation: loadingSkeleton 2s linear infinite;
         }
     }
+
+    &.is-multiple {
+        & .ola_chartLine-svg-background {
+            fill: none;
+        }
+        & .ola_chartLine-svg {
+            background: linear-gradient(to top, var(--gray-xlight) 50%, var(--gray-xlight) 75%, var(--white));
+        }
+    }
 }
 
 .ola_chartLine-svg {
@@ -27,7 +36,7 @@
     left: 0;
     width: 100%;
     height: calc(var(--height) + 10px);
-    background: linear-gradient(to bottom, var(--gray-xlight), var(--gray-xlight) 66%, var(--white));
+    background: linear-gradient(to bottom, var(--gray-light), var(--gray-xlight) 50%, var(--gray-xlight) 75%, var(--white));
     padding-bottom: 28px;
 }
 .ola_chartLine-svg-background {

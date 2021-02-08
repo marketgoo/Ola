@@ -21,6 +21,9 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     <div
       className="ola_chartColumn-graphic"
     />
+    <div
+      className="ola_chartColumn-footer"
+    />
   </div>
   <div
     className="ola_chartColumn-value"
@@ -38,6 +41,9 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     </div>
     <div
       className="ola_chartColumn-graphic"
+    />
+    <div
+      className="ola_chartColumn-footer"
     />
   </div>
   <div
@@ -57,6 +63,9 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     <div
       className="ola_chartColumn-graphic"
     />
+    <div
+      className="ola_chartColumn-footer"
+    />
   </div>
   <div
     className="ola_chartColumn-value"
@@ -74,6 +83,9 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     </div>
     <div
       className="ola_chartColumn-graphic"
+    />
+    <div
+      className="ola_chartColumn-footer"
     />
   </div>
 </div>
@@ -102,6 +114,9 @@ exports[`Default ChartColumnValue 1`] = `
   />
   <div
     className="ola_chartColumn-graphic"
+  />
+  <div
+    className="ola_chartColumn-footer"
   />
 </div>
 `;
