@@ -8,7 +8,7 @@ exports[`Default Menu with Options 1`] = `
     className=""
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 1
     </button>
@@ -17,7 +17,7 @@ exports[`Default Menu with Options 1`] = `
     className=""
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 2
     </button>
@@ -33,7 +33,7 @@ exports[`Default Menu with separator items 1`] = `
     className=""
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 1
     </button>
@@ -42,7 +42,7 @@ exports[`Default Menu with separator items 1`] = `
     className="ola_menu-separator"
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 2
     </button>
@@ -51,7 +51,7 @@ exports[`Default Menu with separator items 1`] = `
     className=""
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 3
     </button>
@@ -60,7 +60,7 @@ exports[`Default Menu with separator items 1`] = `
     className="ola_menu-separator"
   >
     <button
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
     >
       Option 4
     </button>
@@ -76,7 +76,7 @@ exports[`Options are links 1`] = `
     className=""
   >
     <a
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
       href="link1"
     >
       Option 1
@@ -86,7 +86,7 @@ exports[`Options are links 1`] = `
     className=""
   >
     <a
-      className="ola_menu-option"
+      className="ola_menu-option is-big"
       href="link2"
     >
       Option 2

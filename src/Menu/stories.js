@@ -24,6 +24,19 @@ export const Base = (args) =>
     </MenuOption>
   </ul>
 
+export const InList = (args) => 
+  <ul style={{listStyle: 'none'}}>
+    <MenuOption {...args}>
+      {args.children}
+    </MenuOption>
+    <MenuOption {...args}>
+      {args.children}
+    </MenuOption>
+    <MenuOption {...args}>
+      {args.children}
+    </MenuOption>
+  </ul>
+
 export const InMenu = () => 
   <Menu>
     <MenuOption>

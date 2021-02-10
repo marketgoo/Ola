@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import { getElementType } from '../utils'
 
-const MenuOption = ({ as, className, separator, children, variant, selected, ...props }) => {
+const MenuOption = ({ as, className, separator, children, variant, size, selected, ...props }) => {
   const ElementType = getElementType(MenuOption, { as: as, ...props })
   delete props['as']
 
@@ -14,6 +14,7 @@ const MenuOption = ({ as, className, separator, children, variant, selected, ...
         className,
         {
           [`is-${variant}`]: variant,
+          [`is-${size}`]: size,
           ['is-selected']: selected 
         }) } {...props}>
         {children}
@@ -25,6 +26,7 @@ const MenuOption = ({ as, className, separator, children, variant, selected, ...
 
 MenuOption.defaultProps = {
   variant: null,
+  size: 'big',
   as: 'button',
 }
 
@@ -33,6 +35,8 @@ MenuOption.propTypes = {
   as: PT.string,
   /** Option variants */
   variant: PT.oneOf(['option', 'nav']),
+  /** Size variant */
+  size: PT.oneOf(['small', 'big']),
   /** Separator */
   separator: PT.bool,
   /** Selected */
