@@ -42,6 +42,10 @@
         border-left: solid var(--size-1) var(--gray-light);
     }
 
+    &.is-small {
+        padding: var(--size-2) var(--size-4);
+    }
+
     &:active {
         --color: var(--black);
         --background: var(--brand-focus);
