@@ -30,6 +30,11 @@
     --accent-dark: var(--brand-dark);
     --accent-focus: var(--brand-focus);
 
+    --chart-1: #F48498;
+    --chart-2: #7FD8BE;
+    --chart-3: #FFD266;
+    --chart-4: #95B8D1;
+
     /* Space units */
     --size-1: 2px;
     --size-2: 4px;

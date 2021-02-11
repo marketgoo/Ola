@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Thumbnail 1`] = `
+<div
+  className="ola_thumbnail"
+  style={
+    Object {
+      "--color": null,
+    }
+  }
+>
+  <img
+    className="ola_thumbnail-image"
+  />
+</div>
+`;
