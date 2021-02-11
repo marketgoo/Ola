@@ -26,7 +26,7 @@ const MenuOption = ({ as, className, separator, children, variant, size, selecte
 
 MenuOption.defaultProps = {
   variant: null,
-  size: 'big',
+  size: 'medium',
   as: 'button',
 }
 
@@ -36,7 +36,7 @@ MenuOption.propTypes = {
   /** Option variants */
   variant: PT.oneOf(['option', 'nav']),
   /** Size variant */
-  size: PT.oneOf(['small', 'big']),
+  size: PT.oneOf(['small', 'medium']),
   /** Separator */
   separator: PT.bool,
   /** Selected */
