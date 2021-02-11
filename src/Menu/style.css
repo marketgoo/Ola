@@ -43,6 +43,7 @@
     }
 
     &.is-small {
+        font: var(--font-caption);
         padding: var(--size-2) var(--size-4);
     }
 
