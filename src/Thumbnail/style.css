@@ -1,0 +1,9 @@
+.ola_thumbnail {
+
+}
+
+.ola_thumbnail-image {
+    border: var(--size-2) solid rgb(14, 185, 23);
+    box-shadow: var(--shadow-2), var(--shadow-line);
+    border-radius: var(--radius);
+}
