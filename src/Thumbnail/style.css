@@ -1,9 +1,20 @@
 .ola_thumbnail {
-    --color: var(--brand);
+    --color: transparent;
+    display: inline-block;
+    position: relative;
 }
 
 .ola_thumbnail-image {
-    border: var(--size-2) solid var(--color);
-    box-shadow: var(--shadow-2), var(--shadow-line);
+    box-shadow: var(--shadow-2), var(--shadow-line), 0 0 0 6px var(--color);
     border-radius: var(--radius);
+    background: var(--white);
+    display: block;
+    max-width: 100%;
+
+    & path {
+        fill: var(--gray-light);
+    }
+    & circle {
+        fill: var(--white);
+    }
 }
