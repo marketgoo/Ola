@@ -1,6 +1,7 @@
 .ola_progressBar {
   --color: var(--brand);
   --background: var(--white);
+  --color-empty: var(--gray-xlight);
 
   width: 100%;
   display: flex;
@@ -46,8 +47,8 @@
     }
 
     &:indeterminate {
-        --background: var(--gray-xlight);
-        --color: var(--background);
+        --background: var(--color-empty);
+        --color: var(--color-empty);
     }
 }
 
@@ -89,8 +90,8 @@
         background: var(--error);
     }
     &:not([value]) {
-        --background: var(--gray-xlight);
-        --color: var(--background);
+        --background: var(--color-empty);
+        --color: var(--color-empty);
     }
 }
 /* Only firefox */
