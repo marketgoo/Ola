@@ -1,4 +1,6 @@
 .ola_progressBar {
+  --color: var(--brand);
+  --background: var(--white);
 
   width: 100%;
   display: flex;
@@ -10,7 +12,6 @@
     flex-wrap: nowrap;
     white-space: nowrap;
   }
-
 }
 
 .ola_progressBar-description {
@@ -25,15 +26,12 @@
 }
 
 .ola_progressBar progress {
-
-    --color: var(--brand);
-
     appearance: none;
     border: solid 1px var(--color);
     height: 10px;
     width: 100%;
     min-width: 100px;
-    background: var(--white);
+    background: var(--background);
     border-radius: 6px;
     box-sizing: border-box;
 
@@ -46,15 +44,18 @@
     &::-moz-progress-bar {
         background: var(--color);
     }
+
+    &:indeterminate {
+        --color: var(--gray-xlight);
+        --background: var(--gray-xlight);
+    }
 }
 
 .ola_progressBar meter {
-    --color: var(--brand);
-
     -moz-appearance: none;
     border-radius: 6px;
     box-sizing: border-box;
-    background: var(--white);
+    background: var(--background);
     width: 100%;
     height: 10px;
 
@@ -76,10 +77,10 @@
         height: 10px;
         border-radius: 6px;
         background: none;
-        border: solid 1px var(--brand);
+        border: solid 1px var(--color);
     }
     &::-webkit-meter-optimum-value {
-        background: var(--brand);
+        background: var(--color);
     }
     &::-webkit-meter-suboptimum-value {
         background: var(--warning);
@@ -87,10 +88,14 @@
     &::-webkit-meter-even-less-good-value {
         background: var(--error);
     }
+    &:not(value) {
+        --color: var(--gray-xlight);
+        --background: var(--gray-xlight);
+    }
 }
 /* Only firefox */
 @-moz-document url-prefix() {
     .ola_progressBar meter {
-        border: solid 1px var(--brand);
+        border: solid 1px var(--color);
     }
 }
