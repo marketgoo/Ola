@@ -46,8 +46,8 @@
     }
 
     &:indeterminate {
-        --color: var(--gray-xlight);
         --background: var(--gray-xlight);
+        --color: var(--background);
     }
 }
 
@@ -88,9 +88,9 @@
     &::-webkit-meter-even-less-good-value {
         background: var(--error);
     }
-    &:not(value) {
-        --color: var(--gray-xlight);
+    &:not([value]) {
         --background: var(--gray-xlight);
+        --color: var(--background);
     }
 }
 /* Only firefox */
