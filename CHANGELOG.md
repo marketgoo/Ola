@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.10.0] - Unreleased
+### Added
+- Support for indeterminate state to `ProgressBar` [#181]
+- New component `Thumbnail` [#180], [#182]
+- New property `size` to `MenuOption` with `small` and `medium` values [#178] [#179]
+
+### Changed
+- The `ChartLine` component accepts multiple values to multiple lines. [#177]
+
 ## [0.9.1] - 2021-02-05
 ### Added
 - Property `className` to `ChartColumn`
@@ -429,7 +438,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#170]: https://github.com/marketgoo/Ola/issues/170
 [#171]: https://github.com/marketgoo/Ola/issues/171
 [#172]: https://github.com/marketgoo/Ola/issues/172
+[#177]: https://github.com/marketgoo/Ola/issues/177
+[#178]: https://github.com/marketgoo/Ola/issues/178
+[#179]: https://github.com/marketgoo/Ola/issues/179
+[#180]: https://github.com/marketgoo/Ola/issues/180
+[#181]: https://github.com/marketgoo/Ola/issues/181
+[#182]: https://github.com/marketgoo/Ola/issues/182
 
+[0.10.0]: https://github.com/marketgoo/Ola/compare/v0.9.1...HEAD
 [0.9.1]: https://github.com/marketgoo/Ola/compare/v0.9.0...v0.9.1
 [0.9.0]: https://github.com/marketgoo/Ola/compare/v0.8.0...v0.9.0
 [0.8.0]: https://github.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
