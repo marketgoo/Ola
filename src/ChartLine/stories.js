@@ -1,6 +1,7 @@
 import React from 'react'
 import ChartLine from './'
 import ChartLineLabel from './Label'
+import ChartLineAxis from './Axis'
 import { getRanges } from '../utils'
 
 const mockData = [
@@ -60,7 +61,7 @@ export default {
 export const Base = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ))
   return (
-    <ChartLine ranges={ranges} colors={args.colors}>
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]}>
           {row.label}
@@ -73,7 +74,7 @@ export const Base = (args) => {
 export const Multiple = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
-    <ChartLine ranges={ranges} colors={args.colors}>
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]}>
           {row.label} <br/> from {mockData2[idx].label}
@@ -81,4 +82,25 @@ export const Multiple = (args) => {
       )}
     </ChartLine>
   )
+}
+
+export const MultipleWithRuleAndAxis = (args) => {
+  const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
+  return (
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
+      <ChartLineAxis max="100"/>
+      { args.data.map((row, idx) => 
+        <ChartLineLabel key={idx} value={ranges[idx]}>
+          {row.label} <br/> from {mockData2[idx].label}
+        </ChartLineLabel>
+      )}
+    </ChartLine>
+  )
+}
+
+MultipleWithRuleAndAxis.args = {
+  rule: {
+    name: 'Average',
+    value: 0.5
+  }
 }

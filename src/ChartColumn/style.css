@@ -5,6 +5,7 @@
 
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .ola_chartColumn-value {
@@ -48,13 +49,25 @@
 
 .ola_chartColumn-footer {
     padding-top: var(--size-2);
-    font: var(--callout);
+    font: var(--font-callout);
     font-weight: var(--bold);
     color: var(--gray);
 }
 .ola_chartColumn-label {
     padding-bottom: var(--size-2);
-    font: var(--callout);
+    font: var(--font-callout);
+}
+.ola_chartColumn-rule {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: dashed 1px var(--gray-light);
+    padding-bottom: var(--size-2);
+    bottom: calc(var(--value) * var(--height));
+    text-align: right;
+    mix-blend-mode: multiply;
+    font: var(--font-caption);
+    color: var(--gray);
 }
 
 @media (--to-width-1) {
@@ -68,6 +81,9 @@
         transition: width var(--slow-duration);
         border-top-right-radius: var(--radius-small);
         border-bottom-right-radius: var(--radius-small);
+    }
+    .ola_chartColumn-rule {
+        display: none;
     }
 }
 

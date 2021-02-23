@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Support for indeterminate state to `ProgressBar` [#181]
 - New component `Thumbnail` [#180], [#182]
 - New property `size` to `MenuOption` with `small` and `medium` values [#178] [#179]
+- New component `ChartLineAxis` to insert a lateral axis
+- New property `rule` for `ChartLine` and `ChartColumn` to add an horizontal rule (for example, for average).
 
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]

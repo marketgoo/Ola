@@ -56,6 +56,26 @@ export const HtmlLabels = (args) => {
     </ChartColumn>
   )
 }
+ 
+export const WithRule = (args) => {
+  const extractValues = mockData.map( data => data.value )
+  return (
+    <ChartColumn {...args}>
+      { mockData.map((row, idx) => {
+        const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
+        return (
+          <ChartColumnValue key={idx} value={normalizedValue}><div><strong>{row.label}</strong><br />{row.label}</div></ChartColumnValue>
+        )
+      })}
+    </ChartColumn>
+  )
+}
+WithRule.args = {
+  rule: {
+    name: 'Average',
+    value: 0.5
+  }
+}
 
 export const ColumnsWithFooter = (args) => {
   const extractValues = mockData.map( data => data.value )
