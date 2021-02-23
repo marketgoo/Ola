@@ -110,7 +110,7 @@
         padding: 0;
         position: sticky;
         right: 0;
-        width: 10px;
+        width: var(--size-8);
         background: linear-gradient(var(--table-background), var(--table-background) var(--size-8)) no-repeat;
         box-shadow: inset 1px 0 0 var(--gray-xlight);
 
