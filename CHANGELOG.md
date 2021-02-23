@@ -16,6 +16,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
 
+### Fixed
+- Fixed `buttonIcon` size in `tableCell` with the variant `action`.
+
 ## [0.9.1] - 2021-02-05
 ### Added
 - Property `className` to `ChartColumn`
