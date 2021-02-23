@@ -37,7 +37,6 @@
     width: 100%;
     height: calc(var(--height) + 10px);
     background: linear-gradient(to bottom, var(--gray-light), var(--gray-xlight) 50%, var(--gray-xlight) 75%, var(--white));
-    padding-bottom: 28px;
 }
 .ola_chartLine-svg-background {
     fill: var(--white);
@@ -53,8 +52,8 @@
     z-index: 1;
     position: relative;
     flex-grow: 1;
-    font: var(--callout);
-    padding-bottom: calc((var(--height) * var(--value)) - 3px + 28px);
+    font: var(--font-callout);
+    padding-bottom: calc((var(--height) * var(--value)) - 3px);
 
     &::after {
         content: "";
@@ -65,5 +64,47 @@
         width: 8px;
         height: 8px;
         border-radius: 50%;
+    }
+}
+.ola_chartLine-rule {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    border-bottom: dashed 1px var(--gray-light);
+    padding-bottom: var(--size-2);
+    bottom: calc(var(--value) * (var(--height) + 5px));
+    text-align: right;
+    mix-blend-mode: multiply;
+    font: var(--font-caption);
+    color: var(--gray);
+}
+.ola_chartLine-axis {
+    position: relative;
+    display: none;
+    flex-direction: column-reverse;
+    z-index: 1;
+    align-self: flex-end;
+    height: calc(var(--height) + var(--size-4));
+    background: var(--white);
+    justify-content: space-between;
+
+    border-right: solid 1px var(--gray-light);
+    text-align: right;
+    font: var(--font-caption);
+    color: var(--gray);
+    padding-right: var(--size-3);
+    width: var(--size-8);
+    white-space: nowrap;
+    box-sizing: border-box;
+    flex-shrink: 0;
+
+
+    @media (min-width: 500px) {
+        display: flex;
+
+        & ~ .ola_chartLine-svg {
+            left: var(--size-8);
+            width: calc(100% - var(--size-8));
+        }
     }
 }

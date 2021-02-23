@@ -3,7 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import Label from './Label'
 
-const ChartLine = ({ status, children, ranges, colors, className }) => {
+const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
   const styles = cx(
     'ola_chartLine',
     { 'ola-skeleton': status !== 'loaded' },
@@ -38,6 +38,7 @@ const ChartLine = ({ status, children, ranges, colors, className }) => {
           }
         </svg>
       }
+      { rule && <span className="ola_chartLine-rule" style={{ '--value': rule.value }}>{ rule.name} </span> }
     </div>
   )
 }
@@ -62,7 +63,12 @@ ChartLine.propTypes = {
   children: PT.oneOfType([
     PT.arrayOf(PT.node),
     PT.node
-  ])
+  ]),
+  /** Horizontal rule */
+  rule: PT.exact({
+    name: PT.string,
+    value: PT.number,
+  })
 }
 
 export default ChartLine
