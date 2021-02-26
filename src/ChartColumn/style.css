@@ -63,7 +63,7 @@
     width: 100%;
     border-bottom: dashed 1px var(--gray-light);
     padding-bottom: var(--size-2);
-    bottom: calc(var(--value) * var(--height));
+    bottom: calc((var(--value) * var(--height)) + 1px);
     text-align: right;
     mix-blend-mode: multiply;
     font: var(--font-caption);
@@ -91,10 +91,15 @@
     .ola_chartColumn {
         flex-direction: row;
         text-align: center;
+
+        &.has-rule {
+            padding-right: var(--size-8);
+        }
     }
 
     .ola_chartColumn-value {
         max-width: var(--size-11);
+        border-bottom: solid 1px var(--gray);
     }
 
     .ola_chartColumn {
@@ -102,13 +107,10 @@
     }
 
     .ola_chartColumn-footer {
-        border-top: solid 1px var(--gray);
-        height: 1em;
-
-        &:empty {
-            height: 0;
-            padding-top: 0;
-        }
+        height: 0;
+        padding-top: 0;
+        position: relative;
+        top: var(--size-2);
     }
 
     .ola_chartColumn-graphic {

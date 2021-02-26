@@ -59,12 +59,15 @@ export const HtmlLabels = (args) => {
  
 export const WithRule = (args) => {
   const extractValues = mockData.map( data => data.value )
+  const footer = ['one with a long text that may generate multiple lines', 'two', 'tree', 'four']
   return (
     <ChartColumn {...args}>
       { mockData.map((row, idx) => {
         const normalizedValue = normalizeRange(row.value, Math.max(...extractValues), Math.min(...extractValues))
         return (
-          <ChartColumnValue key={idx} value={normalizedValue}><div><strong>{row.label}</strong><br />{row.label}</div></ChartColumnValue>
+          <ChartColumnValue key={idx} value={normalizedValue} footer={footer[idx]}>
+            <div><strong>{row.label}</strong><br />{row.label}</div>
+          </ChartColumnValue>
         )
       })}
     </ChartColumn>

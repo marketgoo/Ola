@@ -3,7 +3,11 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 const ChartColumn = ({ children, className, rule }) => {
-  const styles = cx('ola_chartColumn', className)
+  const styles = cx(
+    'ola_chartColumn',
+    { 'has-rule': rule },
+    className
+  )
 
   return (
     <div className={styles}>
