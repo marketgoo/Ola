@@ -18,6 +18,8 @@
     &.ola-skeleton {
         --skeleton-width: 100%;
         --skeleton-height: 100%;
+        border-color: var(--gray-xlight);
+        overflow: visible;
 
         & .ola_chartColumn-graphic {
             border: none;
@@ -25,7 +27,7 @@
         }
         & .ola_chartColumn-footer {
             color: var(--gray-xlight);
-            border-color: currentColor;
+
             &::before {
                 display: none;
             }
