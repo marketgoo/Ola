@@ -19,7 +19,7 @@ const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
   }
 
   const lines = separateRanges(ranges)
-  lines.forEach((line, index) => line.color = colors[index]);
+  lines.forEach((line, index) => line.color = colors[index])
   const max = ranges.map(range => Math.max(...range))
   const fillD = `M 0 0 ${drawPath(max)} V 0 H 0 Z`
 
