@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Fixed `buttonIcon` size in `TableCell` with the variant `action`.
 - Fixed `buttonIcon` border-radius in a `Tag`.
+- The gray background gradient of ChartLine was too dark.
 
 ## [0.9.1] - 2021-02-05
 ### Added

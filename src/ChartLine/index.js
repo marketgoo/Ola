@@ -19,6 +19,7 @@ const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
   }
 
   const lines = separateRanges(ranges)
+  lines.forEach((line, index) => line.color = colors[index]);
   const max = ranges.map(range => Math.max(...range))
   const fillD = `M 0 0 ${drawPath(max)} V 0 H 0 Z`
 
@@ -29,10 +30,10 @@ const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
         <svg role="img" viewBox="0 0 100 160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" className="ola_chartLine-svg">
           <path d={fillD} vectorEffect="non-scaling-stroke" strokeLinejoin="round" className="ola_chartLine-svg-background" />
           {
-            lines.map((line, index) => {
+            lines.reverse().map((line, index) => {
               const draw = drawPath(line)
               const lineD = `M 0 0 ${draw}`
-              const style = colors[index] ? {'--color': colors[index]} : undefined
+              const style = line.color ? {'--color': line.color} : undefined
               return <path key={index} d={lineD} vectorEffect="non-scaling-stroke" strokeLinejoin="round" className="ola_chartLine-svg-line" style={style} />
             })
           }
