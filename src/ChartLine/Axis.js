@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Axis = ({ max, steps, className }) => {
+const ChartLineAxis = ({ max, steps, className }) => {
   const styles = cx('ola_chartLine-axis', className)
   const step = max / steps
   const children = new Array(steps + 1).fill(null)
@@ -15,13 +15,13 @@ const Axis = ({ max, steps, className }) => {
   )
 }
 
-Axis.defaultProps = {
+ChartLineAxis.defaultProps = {
   steps: 4,
   max: null,
   className: null
 }
 
-Axis.propTypes = {
+ChartLineAxis.propTypes = {
   /** Max value */
   max: PT.number.isRequired,
   /** Number of steps */
@@ -30,4 +30,4 @@ Axis.propTypes = {
   className: PT.string,
 }
 
-export default Axis
+export default ChartLineAxis

@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const Label = ({ value, children, className, colors }) => {
+const ChartLineLabel = ({ value, children, className, colors }) => {
   const styles = cx('ola_chartLine-label', className)
   const values = value.map((v, i) => {
     return {value: v, color: colors[i]}
@@ -15,13 +15,13 @@ const Label = ({ value, children, className, colors }) => {
   )
 }
 
-Label.defaultProps = {
+ChartLineLabel.defaultProps = {
   value: [0],
   className: null,
   colors: []
 }
 
-Label.propTypes = {
+ChartLineLabel.propTypes = {
   /** Value between 0 and 1 */
   value: PT.arrayOf(PT.number).isRequired,
   /** Colors for every value */
@@ -35,4 +35,4 @@ Label.propTypes = {
   ])
 }
 
-export default Label
+export default ChartLineLabel

@@ -1,7 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import Label from './Label'
+import ChartLineLabel from './Label'
 
 const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
   const styles = cx(
@@ -15,7 +15,7 @@ const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
   if (status !== 'loaded') {
     ranges = [[0.6], [0.3], [0.8]]
     colors = []
-    children = ranges.map((value, index) => <Label value={ value } key={ index }></Label>)
+    children = ranges.map((value, index) => <ChartLineLabel value={ value } key={ index }></ChartLineLabel>)
   }
 
   const lines = separateRanges(ranges)
