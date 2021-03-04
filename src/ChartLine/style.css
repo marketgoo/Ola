@@ -52,19 +52,22 @@
     z-index: 1;
     position: relative;
     flex-grow: 1;
+    flex-basis: 10px;
     font: var(--font-callout);
-    padding-bottom: calc((var(--height) * var(--value)) - 3px);
-
-    &::after {
-        content: "";
-        display: block;
-        margin: 14px auto 0;
-        border: solid 4px var(--color);
-        background: white;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-    }
+    padding-bottom: calc((var(--height) * var(--value)) + var(--size-6));
+}
+.ola_chartLine-point {
+    border: solid 4px var(--color);
+    background: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -8px;
+    bottom: calc((var(--height) * var(--value)) - 3px);
 }
 .ola_chartLine-rule {
     position: absolute;
