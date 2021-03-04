@@ -10,7 +10,7 @@ const Label = ({ value, children, className, colors }) => {
   return (
     <div className={styles} style={{ '--value': Math.max(...value) }}>
       { children }
-      { values.reverse().map((v) => <span className="ola_chartLine-point" style={{ '--value': v.value, '--color': v.color }}></span>) }
+      { values.reverse().map((v, i) => <span key={i} className="ola_chartLine-point" style={{ '--value': v.value, '--color': v.color }}></span>) }
     </div>
   )
 }
