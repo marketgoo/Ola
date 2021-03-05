@@ -30,10 +30,22 @@
     --accent-dark: var(--brand-dark);
     --accent-focus: var(--brand-focus);
 
-    --chart-1: #F48498;
-    --chart-2: #7FD8BE;
-    --chart-3: #FFD266;
-    --chart-4: #95B8D1;
+    --pict-yellow: #FFD266;
+    --pict-yellow-light: #FFE9B3;
+    --pict-red: #F48498;
+    --pict-red-light: #FACCD4;
+    --pict-gray: #457AA0;
+    --pict-gray-light: #95B8D1;
+    --pict-gray-dark: #2E526B;
+    --pict-green: #7FD8BE;
+    --pict-green-dark: #309C7D;
+    --pict-brown: #A16A45;
+
+    --chart-0: var(--brand);
+    --chart-1: var(--pict-red);
+    --chart-2: var(--pict-green);
+    --chart-3: var(--pict-yellow);
+    --chart-4: var(--pict-gray-light);
 
     /* Space units */
     --size-1: 2px;
@@ -48,8 +60,9 @@
     --size-10: 140px;
     --size-11: 268px;
     --size-12: 524px;
+    --size-13: 1036px;
 
-    --max-width: 1200px;
+    --max-width: var(--size-13);
 
     /* Font styles */
     --font-display-spacing: -0.03em;

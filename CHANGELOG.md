@@ -12,9 +12,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New property `size` to `MenuOption` with `small` and `medium` values [#178] [#179]
 - New component `ChartLineAxis` to insert a lateral axis
 - New property `rule` for `ChartLine` and `ChartColumn` to add an horizontal rule (for example, for average).
+- New css variable `--size-13`
+- New css variables for colors for illustrations and charts (`--pict-*` and `--chart-*`)
 
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
+- The css variable `--max-width` has changed to `--size-13` (1036px, previously it was 1200px)
 
 ### Fixed
 - Fixed `buttonIcon` size in `TableCell` with the variant `action`.
