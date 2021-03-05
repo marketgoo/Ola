@@ -25,8 +25,7 @@ const mockData = [
 
 const mockData2 = [
   {
-    value: 23,
-    label: '23 sites',
+    value: null,
   },
   {
     value: 10,
@@ -37,8 +36,8 @@ const mockData2 = [
     label: '0 sites',
   },
   {
-    value: 90,
-    label: '90 sites',
+    value: null,
+    label: 'no sites',
   }
 ]
 
@@ -86,6 +85,7 @@ export const Multiple = (args) => {
 
 export const MultipleWithRuleAndAxis = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
+
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       <ChartLineAxis max="100"/>

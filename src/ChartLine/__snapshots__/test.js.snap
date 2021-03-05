@@ -95,7 +95,7 @@ exports[`ChartLine and ChartLineLabel 1`] = `
     />
     <path
       className="ola_chartLine-svg-line"
-      d="M 0 0 M 0 80 L 12.5 80 L 37.5 125 L 62.5 140 L 87.5 5 L 100 5"
+      d="M 0 80 L 12.5 80 L 37.5 125 L 62.5 140 L 87.5 5 L 100 5"
       strokeLinejoin="round"
       vectorEffect="non-scaling-stroke"
     />
@@ -117,7 +117,7 @@ exports[`Default ChartLine 1`] = `
   >
     <path
       className="ola_chartLine-svg-background"
-      d="M 0 0 M 0 155 L 100 155 V 0 H 0 Z"
+      d="M 0 0  V 0 H 0 Z"
       strokeLinejoin="round"
       vectorEffect="non-scaling-stroke"
     />

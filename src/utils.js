@@ -30,7 +30,7 @@ export { getElementType }
  * @param {min} Min value of all elements 
  * @returns {number} 
 */
-const normalizeRange = (val, max, min = 0) => (val - min) / (max - min)
+const normalizeRange = (val, max, min = 0) => (val === null || val === undefined) ? null : (val - min) / (max - min)
 export { normalizeRange }
 
 export function getRanges(...rows) {

@@ -32,7 +32,7 @@ const ChartLine = ({ status, children, ranges, colors, className, rule }) => {
           {
             lines.reverse().map((line, index) => {
               const draw = drawPath(line)
-              const lineD = `M 0 0 ${draw}`
+              const lineD = `${draw}`
               const style = line.color ? {'--color': line.color} : undefined
               return <path key={index} d={lineD} vectorEffect="non-scaling-stroke" strokeLinejoin="round" className="ola_chartLine-svg-line" style={style} />
             })
@@ -76,15 +76,24 @@ export default ChartLine
 
 function drawPath(values) {
   const distance = 100 / values.length
-  const commands = [`M 0 ${getYPosition(values[0])}`]
+  const commands = []
   let x = distance / 2
 
-  values.forEach((value) => {
-    commands.push(`L ${x} ${getYPosition(value)}`)
+  values.forEach((value, index) => {
+    if (typeof value === 'number') {
+      if (!commands.length) {
+        commands.push(`M ${index > 0 ? x : 0} ${getYPosition(value)}`)
+      }
+  
+      commands.push(`L ${x} ${getYPosition(value)}`)
+
+      if (index === values.length - 1) {
+        commands.push(`L 100 ${getYPosition(values[values.length - 1])}`)
+      }
+    }
+
     x += distance
   })
-
-  commands.push(`L 100 ${getYPosition(values[values.length - 1])}`)
 
   return commands.join(' ')
 }
