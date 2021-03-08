@@ -2,6 +2,7 @@ import React from 'react'
 import ChartLine from './'
 import ChartLineLabel from './Label'
 import ChartLineAxis from './Axis'
+import Tooltip from '../Tooltip'
 import { getRanges } from '../utils'
 
 const mockData = [
@@ -76,7 +77,10 @@ export const Multiple = (args) => {
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]} colors={args.colors}>
-          {row.label} <br/> from {mockData2[idx].label}
+          <Tooltip trigger={<span>{row.label} <br/> from {mockData2[idx].label}</span>}>
+            Content of this tooltip
+          </Tooltip>
+          
         </ChartLineLabel>
       )}
     </ChartLine>

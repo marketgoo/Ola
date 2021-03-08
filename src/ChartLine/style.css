@@ -37,6 +37,7 @@
     width: 100%;
     height: calc(var(--height) + 10px);
     background: linear-gradient(to bottom, var(--gray-xlight) 33%, var(--white));
+    z-index: -1;
 }
 .ola_chartLine-svg-background {
     fill: var(--white);
@@ -49,7 +50,6 @@
 }
 
 .ola_chartLine-label {
-    z-index: 1;
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
