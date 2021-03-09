@@ -81,6 +81,7 @@
     mix-blend-mode: multiply;
     font: var(--font-caption);
     color: var(--gray);
+    pointer-events: none;
 }
 .ola_chartLine-axis {
     position: relative;

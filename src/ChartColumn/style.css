@@ -70,6 +70,7 @@
     mix-blend-mode: multiply;
     font: var(--font-caption);
     color: var(--gray);
+    pointer-events: none;
 }
 
 @media (--to-width-1) {
