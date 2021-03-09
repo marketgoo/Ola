@@ -23,7 +23,7 @@ export { getElementType }
 /**
  * normalizeRange
  *
- * Returns a number with a normalizade range based on the max and min value.
+ * Returns a number with a normalized range based on the max and min value.
  * Useful for calculating ChartColumnValue values where is a number between 0 and 1.
  * @param {val} Value of current element
  * @param {max} Max value of all elements 

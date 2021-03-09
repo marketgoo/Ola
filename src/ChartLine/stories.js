@@ -92,7 +92,7 @@ export const MultipleWithRuleAndAxis = (args) => {
 
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      <ChartLineAxis max="100"/>
+      <ChartLineAxis max="13"/>
       { args.data.map((row, idx) => 
         <ChartLineLabel key={idx} value={ranges[idx]} colors={args.colors}>
           {row.label} <br/> from {mockData2[idx].label}

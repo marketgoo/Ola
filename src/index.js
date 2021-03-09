@@ -52,3 +52,6 @@ export { default as TaskGroup } from './TaskGroup'
 export { default as TaskInfo } from './Task/Info'
 export { default as Tooltip } from './Tooltip'
 export { default as Thumbnail } from './Thumbnail'
+
+// Utils
+export { normalizeRange, getRanges } from './utils'

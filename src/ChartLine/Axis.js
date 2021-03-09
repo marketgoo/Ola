@@ -4,9 +4,14 @@ import cx from 'classnames'
 
 const ChartLineAxis = ({ max, steps, className }) => {
   const styles = cx('ola_chartLine-axis', className)
+
+  if (max < steps * 2) {
+    steps = Math.min(max, steps);
+  }
+
   const step = max / steps
   const children = new Array(steps + 1).fill(null)
-    .map((v, index) => <span key={index}>{Math.round(index * step)}</span>)
+    .map((v, index) => <span key={index}>{Math.round(index * step * 10) / 10}</span>)
   
   return (
     <div className={styles}>
