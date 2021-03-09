@@ -6,7 +6,7 @@ const ChartLineAxis = ({ max, steps, className }) => {
   const styles = cx('ola_chartLine-axis', className)
 
   steps = Math.min(max, steps)
-  const decimals = max < steps * steps ? 10 : 1;
+  const decimals = max < steps * steps ? 10 : 1
 
   const step = max / steps
   const children = new Array(steps + 1).fill(null)
