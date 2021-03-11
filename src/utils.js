@@ -30,9 +30,24 @@ export { getElementType }
  * @param {min} Min value of all elements 
  * @returns {number} 
 */
-const normalizeRange = (val, max, min = 0) => (val === null || val === undefined) ? null : (val - min) / (max - min)
-export { normalizeRange }
+export function normalizeRange (val, max, min = 0) {
+  if (val === null || val === undefined) {
+    return null
+  }
+  if (max === min) {
+    return 0
+  }
+  return (val - min) / (max - min)
+}
 
+/**
+ * getRanges
+ * 
+ * Execute normalizeRange to an array or multiple arrays for multiple values
+ * 
+ * @param  {...array} rows 
+ * @returns {array}
+ */
 export function getRanges(...rows) {
   let max = 0
   rows.forEach((row) => max = Math.max(max, ...row))

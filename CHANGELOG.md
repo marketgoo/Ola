@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New property `rule` for `ChartLine` and `ChartColumn` to add an horizontal rule (for example, for average).
 - New css variable `--size-13`
 - New css variables for colors for illustrations and charts (`--pict-*` and `--chart-*`)
+- Helpers `normalizeRange` and `getRanges` to work with data values for `ChartColumn` and `ChartLine`
 
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]

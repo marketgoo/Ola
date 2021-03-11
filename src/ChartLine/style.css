@@ -7,6 +7,7 @@
     text-align: center;
     align-items: flex-end;
     z-index: 1;
+    min-height: calc(var(--height) + 10px);
 
     &.ola-skeleton {
         --color: var(--gray-xlight);

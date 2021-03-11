@@ -71,6 +71,22 @@ export const Base = (args) => {
   )
 }
 
+export const ZeroValues = (args) => {
+  const ranges = getRanges(args.data)
+  return (
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
+      { args.data.map((val, idx) => 
+        <ChartLineLabel key={idx} value={ranges[idx]}>
+          {val}
+        </ChartLineLabel>
+      )}
+    </ChartLine>
+  )
+}
+ZeroValues.args = {
+  data: [0, 0, 0]
+}
+
 export const Multiple = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
