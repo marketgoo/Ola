@@ -1,22 +1,11 @@
 .ola_segment {
     display: inline-flex;
     max-width: 100%;
+    border: solid 1px var(--gray-light);
+    border-radius: var(--radius-big);
 
     & > .ola_button {
-        border-radius: 0;
+        border: solid 2px white;
         flex-shrink: 1;
-
-        & + .ola_button {
-            border-left: none;
-        }
-    }
-
-    & > .ola_button:first-child {
-        border-top-left-radius: var(--radius-big);
-        border-bottom-left-radius: var(--radius-big);
-    }
-    & > .ola_button:last-child {
-        border-top-right-radius: var(--radius-big);
-        border-bottom-right-radius: var(--radius-big);
     }
 }
