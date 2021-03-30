@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
 - The css variable `--max-width` has changed to `--size-13` (1036px, previously it was 1200px)
+- `Segment` styles
 
 ### Fixed
 - Fixed `buttonIcon` size in `TableCell` with the variant `action`.
