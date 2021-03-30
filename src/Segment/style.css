@@ -1,11 +1,14 @@
 .ola_segment {
     display: inline-flex;
     max-width: 100%;
-    border: solid 1px var(--gray-light);
+    border: solid 2px var(--gray-light);
     border-radius: var(--radius-big);
+    height: var(--size-8);
+    box-sizing: border-box;
 
     & > .ola_button {
-        border: solid 2px white;
+        border: none;
         flex-shrink: 1;
+        height: 100%;
     }
 }
