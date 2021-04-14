@@ -84,33 +84,29 @@
     height: 100%;
 }
 
-.ola_speedmeter-circle-value,
-.ola_speedmeter-circle-value-high,
-.ola_speedmeter-circle-value-medium,
-.ola_speedmeter-circle-value-low {
+.ola_speedmeter-circle-background,
+.ola_speedmeter-circle-value {
     fill: none;
     stroke-width: 8;
     stroke-linecap: round;
-    /* stroke-dashoffset: 0; */
-    /* stroke-dasharray: 272; */
-    transform-origin: center center;
-}
-
-.ola_speedmeter-circle-background,
-.ola_speedmeter-circle-mask {
-    stroke-width: 9;
-    stroke: var(--gray-xlight);
-    fill: none;
-    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 272;
     transform-origin: center center;
 }
 
 .ola_speedmeter-circle-background {
+    stroke: var(--gray-xlight);
     transition: stroke 200ms;
 }
 .ola_speedmeter-circle-value {
     stroke: var(--color);
     transition: opacity 200ms, stroke-dashoffset 400ms;
+}
+
+.ola_speedmeter-triangle {
+    fill: var(--color);
+    transform-origin: 94px 94px;
+    transition: transform 400ms;
 }
 
 @keyframes score-loading {
