@@ -54,8 +54,8 @@ export { default as Tooltip } from './Tooltip'
 export { default as Thumbnail } from './Thumbnail'
 export { default as TreeList } from './TreeList'
 export { default as TreeListOption } from './TreeList/Option'
-export { default as TabSelector } from './Tabs'
-export { default as TabContent } from './Tabs/Content'
+export { default as Tabs } from './Tabs'
+export { default as Tab } from './Tabs/Content'
 
 // Utils
 export { normalizeRange, getRanges } from './utils'

@@ -1,10 +1,9 @@
-.ola_tab-selector {
+.ola_tabs {
     display: inline-flex;
     max-width: 100%;
     height: var(--size-8);
     box-sizing: border-box;
     margin-bottom: var(--row-gap-1);
-    border-bottom: solid 1px var(--gray-light);
 
     & > .ola_button {
         border: none;
@@ -13,11 +12,11 @@
         border-radius: 0;
         background-color: transparent;
         border-color: transparent;
-        border-bottom: solid 3px transparent;
+        border-bottom: solid 1px var(--gray-light);
 
         &[aria-pressed="true"] {
           color: var(--brand);
-          border-bottom-color: var(--brand);
+          border-bottom: solid 3px var(--brand);
         }
 
         &:focus {
@@ -30,10 +29,10 @@
     }
 }
 
-.ola_tab-content {
+.ola_tab {
   width: 100%;
   display: none;
-  
+
   &.selected {
     display: block;
   }

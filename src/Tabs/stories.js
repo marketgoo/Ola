@@ -1,28 +1,22 @@
-import React, { useState } from 'react'
-import Button from '../Button'
-import TabSelector from './'
-import TabContent from './Content'
+import React from 'react'
+import Tabs from './'
+import Tab from './Content'
 
 export default {
   title: 'Tabs',
-  component: TabSelector,
+  component: Tabs,
 }
 
 export const Base = (args) => {
-  const [selected, setSelected] = useState(1)
   return (
-    <>
-      <TabSelector {...args}>
-        <Button selected={selected === 1} variant="secondary" onClick={() => setSelected(1)}>
-          Tab 1
-        </Button>
-        <Button selected={selected === 2} variant="secondary" onClick={() => setSelected(2)}>
-          Tab 2
-        </Button>
-      </TabSelector>
-      <TabContent selected={selected === 1}>Tab content 1</TabContent>
-      <TabContent selected={selected === 2}>Tab content 2</TabContent>
-    </>
+    <Tabs {...args}>
+      <Tab label="Tab 1">
+        Tab 1 content
+      </Tab>
+      <Tab label="Tab 2">
+        Tab 2 content
+      </Tab>
+    </Tabs>
   )
 }
 

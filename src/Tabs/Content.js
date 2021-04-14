@@ -2,23 +2,17 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const TabContent = ({ className, selected, children, ...props }) => {
+const Tab = ({ className, children, ...props }) => {
   return (
-    <div className={cx('ola_tab-content', selected && 'selected', className)} {...props}>
+    <div className={cx('ola_tab', className)} {...props}>
       {children}
     </div>
   )
 }
 
-TabContent.defaultProps = {
-  selected: null
-}
-
-TabContent.propTypes = {
+Tab.propTypes = {
   /** Extra className */
   className: PT.string,
-  /** TabContent selected */
-  selected: PT.bool,
   /** Childen nodes */
   children: PT.oneOfType([
     PT.arrayOf(PT.node),
@@ -26,4 +20,4 @@ TabContent.propTypes = {
   ]).isRequired
 }
 
-export default TabContent
+export default Tab
