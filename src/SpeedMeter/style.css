@@ -1,21 +1,23 @@
 .ola_speedmeter {
     --color: var(--gray);
 
-    width: 188px;
-    height: 94px;
+    width: 190px;
+    height: 110px;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
 
     &.is-busy {
-        & .ola_speedmeter-value,
-        & .ola_speedmeter-circle-value {
+        & .ola_speedmeter-metric,
+        & .ola_speedmeter-circle-value,
+        & .ola_speedmeter-triangle,
+        & .ola_speedmeter-breakpoint {
             opacity: 0;
         }
         & .ola_speedmeter-circle-background {
-            animation: score-loading 2s linear infinite;
+            animation: speedmeter-loading 2s linear infinite;
             animation-fill-mode: both;
             stroke: var(--gray-light);
         }
@@ -35,34 +37,25 @@
 
 }
 
-.ola_speedmeter-value {
-    font: var(--font-display);
+.ola_speedmeter-metric {
     color: var(--black);
     position: relative;
     transition: opacity 200ms;
-    z-index: 1;
-
-    & > sup {
-        font: var(--font-title);
-        vertical-align: baseline;
-        color: var(--gray-light);
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 46px;
+}
+.ola_speedmeter-value {
+    font: var(--font-headline);
+    font-weight: var(--bold);
+    line-height: 0.6;
+    text-align: center;
 }
 
-.ola_speedmeter-title {
+.ola_speedmeter-unit {
     font: var(--font-caption);
     font-weight: var(--bold);
-    color: var(--gray);
-    position: relative;
-    transition: opacity 200ms;
-    z-index: 1;
-    display: block;
-}
-.ola_speedmeter-description {
-    position: relative;
-    transition: opacity 200ms;
-    z-index: 1;
-    display: block;
 }
 
 .ola_speedmeter-busy {
@@ -113,16 +106,14 @@
     transform-origin: 94px 94px;
 }
 
-@keyframes score-loading {
+@keyframes speedmeter-loading {
     0% {
-        stroke-dasharray: 10 540;
-        transform: rotate(0deg);
+        stroke-dasharray: 10 280;
     }
     50% {
-        stroke-dasharray: 540 540;
+        stroke-dasharray: 280 280;
     }
     100% {
-        stroke-dasharray: 10 540;
-        transform: rotate(1080deg);
+        stroke-dasharray: 10 280;
     }
 }

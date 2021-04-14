@@ -31,11 +31,12 @@ const showBusyContent = (busy) => {
   return false
 }
 
-const SpeedMeter = ({ breakpoint, value, level, busy, title, className, ...props }) => {
+const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
   let decimal
 
   if (!Number.isInteger(value)) {
-    decimal = (value % 1).toFixed(1).substr(1)
+    decimal = (value % 1).toFixed(1).substr(1).toString().replace(/\./g,',')
+
     value = Math.floor(value)
   }
 
@@ -52,6 +53,11 @@ const SpeedMeter = ({ breakpoint, value, level, busy, title, className, ...props
 
   return (
     <div className={cx('ola_speedmeter', `is-${variant}`, { 'is-busy': busy }, className)} {...props}>
+      {!busy && (value !== null) && <div className="ola_speedmeter-metric">
+        <strong className="ola_speedmeter-value">{value}{decimal}</strong>
+        <strong className="ola_speedmeter-unit">{unit}</strong>
+      </div>}
+      { showBusyContent(busy) && <span className="ola_score-busy">{busy}</span> }
       <svg viewBox="0 0 190 110" width="190" height="110">
         <path className="ola_speedmeter-circle-background" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95" />
         <path className="ola_speedmeter-circle-value" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"  style={circleStyle} />
@@ -65,26 +71,26 @@ const SpeedMeter = ({ breakpoint, value, level, busy, title, className, ...props
 
 SpeedMeter.defaultProps = {
   value: null,
-  title: null,
-  level: null,
+  breakpoint: null,
+  unit: null,
   busy: false,
   className: null
 }
 
 SpeedMeter.propTypes = {
-  /** Value of score */
+  /** Breakpoint of speedmeter */
+  breakpoint: PT.number,
+  /** Value of speedmeter */
   value: PT.number,
-  /** Level of score */
-  level: PT.string,
+  /** Unit of value speedmeter */
+  unit: PT.string,
   /** Busy or loading */
   busy: PT.oneOfType([
     PT.string,
     PT.bool
   ]),
   /** Extra className */
-  className: PT.string,
-  /** Title */
-  title: PT.string
+  className: PT.string
 }
 
 export default SpeedMeter

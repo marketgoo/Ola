@@ -6,9 +6,8 @@ export default {
   component: SpeedMeter,
   args: {
     breakpoint: 7,
-    value: 34,
-    title: 'Your SpeedMeter',
-    level: 'low',
+    value: 12,
+    unit: 'seconds',
     busy: '',
   }
 }
