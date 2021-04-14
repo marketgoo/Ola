@@ -109,6 +109,10 @@
     transition: transform 400ms;
 }
 
+.ola_speedmeter-breakpoint {
+    transform-origin: 94px 94px;
+}
+
 @keyframes score-loading {
     0% {
         stroke-dasharray: 10 540;
