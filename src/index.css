@@ -37,6 +37,7 @@
 @import './Kpi/style.css';
 @import './ChartColumn/style.css';
 @import './ChartLine/style.css';
+@import './Tabs/style.css';
 
 /* Helpers */
 @import './utils/utils.css';

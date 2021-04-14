@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Segment with two buttons 1`] = `
+Array [
+  <nav
+    className="ola_tab-selector"
+  >
+    <button
+      aria-pressed="true"
+      className="ola_button is-secondary"
+      disabled={false}
+    >
+      <span
+        className="ola_button-text"
+      >
+        Tab 1
+      </span>
+    </button>
+    <button
+      aria-pressed={null}
+      className="ola_button is-secondary"
+      disabled={false}
+    >
+      <span
+        className="ola_button-text"
+      >
+        Tab 2
+      </span>
+    </button>
+  </nav>,
+  <div
+    className="ola_tab-content selected"
+  >
+    Tab content 1
+  </div>,
+  <div
+    className="ola_tab-content"
+  >
+    Tab content 2
+  </div>,
+]
+`;
