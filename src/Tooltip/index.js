@@ -33,7 +33,9 @@ const Tooltip = ({ variant, className, trigger, onOpen, onClose, children }) => 
 
 Tooltip.defaultProps = {
   variant: null,
-  className: null
+  className: null,
+  onOpen: () => false,
+  onClose: () => false
 }
 
 Tooltip.propTypes = {
