@@ -4,8 +4,12 @@ import cx from 'classnames'
 
 const scoreValue = (value) => {
   value = Math.min(100, Math.max(0, value))
-  const diameter = Math.PI * 90
+  const diameter = Math.PI * 88
   return ((100 - value) / 100) * (- diameter)
+}
+const angleValue = (value) => {
+  value = Math.min(100, Math.max(0, value));
+  return -(90 - (180 * (value / 100)));
 }
 
 const scoreLevel = (value, breakpoint) => {
@@ -40,18 +44,16 @@ const SpeedMeter = ({ breakpoint, value, level, busy, title, className, ...props
   }
   const variant = scoreLevel(value, breakpoint)
   const positionArrow = {
-    transform: 'rotate(' + (scoreValue(value) -180) + 'deg)'
+    transform: 'rotate(' + (angleValue(value)) + 'deg)'
   }
 
   return (
     <div className={cx('ola_speedmeter', `is-${variant}`, { 'is-busy': busy }, className)} {...props}>
-      <svg viewBox="0 0 188 94" width="188" height="94">
-        <g fillRule="nonzero" fill="none">
-          <path className="ola_speedmeter-circle-background" d="M184 90c0-45.475-40.295-82.34-90-82.34S4 44.525 4 90" />
-          <path className="ola_speedmeter-circle-value" d="M184 90c0-45.475-40.295-82.34-90-82.34S4 44.525 4 90" style={circleStyle}/>
-          <path className="ola_speedmeter-triangle" d="M94 19.149l10.465 13.404h-20.93z" style={positionArrow}/>
-          <path className="ola_speedmeter-breakpoint" stroke="#979797" strokeWidth="2" fill="#979797" d="M94 0v15.319"/>
-        </g>
+      <svg viewBox="0 0 190 110" width="190" height="110">
+        <path className="ola_speedmeter-circle-background" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95" />
+        <path className="ola_speedmeter-circle-value" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"  style={circleStyle} />
+        <polygon className="ola_speedmeter-triangle" points="95 14 103 26 87 26" style={positionArrow} />
+        <line className="ola_speedmeter-breakpoint" x1="95" y1="2" x2="95" y2="12" stroke="#979797" stroke-width="2"></line>
       </svg>
     </div>
   )
