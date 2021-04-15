@@ -2,21 +2,29 @@ import React from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
-const scoreValue = (value) => {
+const scoreValue = (value, breakpoint) => {
   value = Math.min(100, Math.max(0, value))
+  value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+
   const diameter = Math.PI * 88
   return ((100 - value) / 100) * (- diameter)
 }
-const angleValue = (value) => {
+const angleValue = (value, breakpoint) => {
   value = Math.min(100, Math.max(0, value))
-  return -(90 - (180 * (value / 100)))
+  value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+  breakpoint = ((breakpoint - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+
+  return {
+    value: -(90 - (180 * (value / 100))),
+    breakpoint: -(90 - (180 * (breakpoint / 100)))
+  }
 }
 
 const scoreLevel = (value, breakpoint) => {
-  if (value < breakpoint) {
+  if (value < breakpoint - 1) {
     return 'success'
   }
-  if (value >= breakpoint * 2) {
+  if (value > breakpoint) {
     return 'error'
   }
   return 'warning'
@@ -41,14 +49,14 @@ const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
   }
 
   const circleStyle = {
-    strokeDashoffset: scoreValue(value)
+    strokeDashoffset: scoreValue(value, breakpoint)
   }
   const variant = scoreLevel(value, breakpoint)
   const positionArrow = {
-    transform: 'rotate(' + (angleValue(value)) + 'deg)'
+    transform: 'rotate(' + (angleValue(value, breakpoint)['value']) + 'deg)'
   }
   const positionBreakpoint = {
-    transform: 'rotate(' + (angleValue(breakpoint)) + 'deg)'
+    transform: 'rotate(' + (angleValue(value, breakpoint)['breakpoint']) + 'deg)'
   }
 
   return (
