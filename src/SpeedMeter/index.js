@@ -3,15 +3,16 @@ import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
 const scoreValue = (value, breakpoint) => {
-  value = Math.min(100, Math.max(0, value))
+  value = Math.min(breakpoint*2, Math.max(0, value))
   value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
 
   const diameter = Math.PI * 88
   return ((100 - value) / 100) * (- diameter)
 }
 const angleValue = (value, breakpoint) => {
-  value = Math.min(100, Math.max(0, value))
+  value = Math.min(breakpoint*2, Math.max(0, value))
   value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+
   breakpoint = ((breakpoint - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
 
   return {
