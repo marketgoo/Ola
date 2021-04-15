@@ -2,33 +2,18 @@ import React from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
-const scoreValue = (value, breakpoint) => {
-  value = Math.min(breakpoint*2, Math.max(0, value))
-  value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+const scoreValue = (value, min, max) => {
+  value = Math.min(max, Math.max(min, value))
+  value = ((value - Math.min(min, max))/(Math.max(min, max) - Math.min(min, max)))*100
 
   const diameter = Math.PI * 88
   return ((100 - value) / 100) * (- diameter)
 }
-const angleValue = (value, breakpoint) => {
-  value = Math.min(breakpoint*2, Math.max(0, value))
-  value = ((value - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
+const angleValue = (value, min, max) => {
+  value = Math.min(max, Math.max(min, value))
+  value = ((value - Math.min(min, max))/(Math.max(min, max) - Math.min(min, max)))*100
 
-  breakpoint = ((breakpoint - Math.min(0, breakpoint*2))/(Math.max(0, breakpoint*2) - Math.min(0, breakpoint*2)))*100
-
-  return {
-    value: -(90 - (180 * (value / 100))),
-    breakpoint: -(90 - (180 * (breakpoint / 100)))
-  }
-}
-
-const scoreLevel = (value, breakpoint) => {
-  if (value < breakpoint - 1) {
-    return 'success'
-  }
-  if (value > breakpoint) {
-    return 'error'
-  }
-  return 'warning'
+  return -(90 - (180 * (value / 100)))
 }
 
 const showBusyContent = (busy) => {
@@ -40,7 +25,7 @@ const showBusyContent = (busy) => {
   return false
 }
 
-const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
+const SpeedMeter = ({ breakpoint, value, min, max, unit, busy, variant, className, ...props }) => {
   let decimal
 
   if (!Number.isInteger(value)) {
@@ -50,14 +35,14 @@ const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
   }
 
   const circleStyle = {
-    strokeDashoffset: scoreValue(value, breakpoint)
+    strokeDashoffset: scoreValue(value, min, max)
   }
-  const variant = scoreLevel(value, breakpoint)
+
   const positionArrow = {
-    transform: 'rotate(' + (angleValue(value, breakpoint)['value']) + 'deg)'
+    transform: 'rotate(' + angleValue(value, min, max) + 'deg)'
   }
   const positionBreakpoint = {
-    transform: 'rotate(' + (angleValue(value, breakpoint)['breakpoint']) + 'deg)'
+    transform: 'rotate(' + angleValue(breakpoint, min, max) + 'deg)'
   }
 
   return (
@@ -79,10 +64,13 @@ const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
 
 
 SpeedMeter.defaultProps = {
-  value: null,
   breakpoint: null,
+  value: null,
+  min: 0,
+  max: 100,
   unit: null,
   busy: false,
+  variant: null,
   className: null
 }
 
@@ -91,6 +79,10 @@ SpeedMeter.propTypes = {
   breakpoint: PT.number,
   /** Value of speedmeter */
   value: PT.number,
+  /** Min value of speedmeter */
+  min: PT.number,
+  /** Max value of speedmeter */
+  max: PT.number,
   /** Unit of value speedmeter */
   unit: PT.string,
   /** Busy or loading */
@@ -98,6 +90,8 @@ SpeedMeter.propTypes = {
     PT.string,
     PT.bool
   ]),
+  /** Unit of value speedmeter */
+  variant: PT.string,
   /** Extra className */
   className: PT.string
 }
