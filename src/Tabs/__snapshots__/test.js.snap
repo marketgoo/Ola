@@ -3,12 +3,14 @@
 exports[`Segment with two buttons 1`] = `
 Array [
   <nav
-    className="ola_tab-selector"
+    className="ola_tabs"
   >
     <button
       aria-pressed="true"
       className="ola_button is-secondary"
       disabled={false}
+      onClick={[Function]}
+      type="button"
     >
       <span
         className="ola_button-text"
@@ -17,9 +19,11 @@ Array [
       </span>
     </button>
     <button
-      aria-pressed={null}
+      aria-pressed="false"
       className="ola_button is-secondary"
       disabled={false}
+      onClick={[Function]}
+      type="button"
     >
       <span
         className="ola_button-text"
@@ -29,14 +33,16 @@ Array [
     </button>
   </nav>,
   <div
-    className="ola_tab-content selected"
+    className="ola_tab selected"
+    label="Tab 1"
   >
-    Tab content 1
+    Tab 1 content
   </div>,
   <div
-    className="ola_tab-content"
+    className="ola_tab"
+    label="Tab 2"
   >
-    Tab content 2
+    Tab 2 content
   </div>,
 ]
 `;

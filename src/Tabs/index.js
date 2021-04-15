@@ -18,13 +18,14 @@ const Tabs = ({ className, children, ...props }) => {
             type="button" 
             variant="secondary"
             onClick={() => setSelectedTab(index)}>
-            {item.props.label}
+            {item.props.label || ''}
           </Button>
         ) }
       </nav>
       {children.map((item, index) => {
         return React.cloneElement(item, {
-          className: index === selectedTab && 'selected'
+          className: cx({selected : index === selectedTab}),
+          key: index
         })
       } )}
     </>
