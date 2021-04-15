@@ -44,6 +44,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    top: var(--size-6);
 }
 .ola_speedmeter-value {
     font: var(--font-title);
