@@ -74,6 +74,10 @@
         padding-left: calc(var(--size-2) + var(--size-8) + var(--column-gap-1));
         font: var(--font-body);
     }
+    & .ola_issue-summary {
+      display: flex;
+      justify-content: space-between;
+    }
 }
 .ola_issue-summary {
     list-style: none;

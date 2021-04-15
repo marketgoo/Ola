@@ -1,16 +1,43 @@
-import React from 'react'
+import React, { useRef, useEffect, useState, useCallback } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import Issue from './'
+import Icon from '../Icon'
 
 const IssueDropDown = ({ title, variant, size, className, status, children, ...props }) => {
+  
+  const details = useRef()
+  const [isOpen, setIsOpen] = useState()
+
+  const listenerFn = useCallback(
+    () => {
+      setIsOpen(!isOpen)
+    },
+    [isOpen],
+  )
+
+
+  useEffect(() => {
+
+    if (details && details.current) {
+
+      details.current.addEventListener('toggle', listenerFn)
+
+      return () => {
+        details.current.removeEventListener('toggle', listenerFn)
+      }
+    }
+
+  }, [listenerFn])
+
   if (status !== 'loaded') {
     return <Issue variant={variant} size={size} status={status} />
   }
 
-  return <details className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
+  return <details ref={details} className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
     <summary className="ola_issue-summary">
       <Issue title={title} variant={variant} size={size} />
+      <Icon name={isOpen ? 'chevronLeft' : 'chevronDown'} size={size} />
     </summary>
     <div className='ola_issue-content'>
       { children }
