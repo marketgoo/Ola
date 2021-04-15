@@ -1,7 +1,7 @@
 .ola_speedmeter {
     --color: var(--gray);
 
-    width: 190px;
+    width: var(--size-11);
     height: 110px;
     position: relative;
     display: flex;
@@ -44,17 +44,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    bottom: 46px;
 }
 .ola_speedmeter-value {
-    font: var(--font-headline);
-    font-weight: var(--bold);
+    font: var(--font-title);
     line-height: 0.6;
     text-align: center;
 }
 
 .ola_speedmeter-unit {
-    font: var(--font-caption);
+    font: var(--font-body);
     font-weight: var(--bold);
 }
 

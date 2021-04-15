@@ -58,7 +58,7 @@ const SpeedMeter = ({ breakpoint, value, unit, busy, className, ...props }) => {
         <strong className="ola_speedmeter-unit">{unit}</strong>
       </div>}
       { showBusyContent(busy) && <span className="ola_score-busy">{busy}</span> }
-      <svg viewBox="0 0 190 110" width="190" height="110">
+      <svg className="ola_speedmeter-circle" viewBox="0 0 190 110" width="190" height="110">
         <path className="ola_speedmeter-circle-background" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95" />
         <path className="ola_speedmeter-circle-value" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"  style={circleStyle} />
         <polygon className="ola_speedmeter-triangle" points="95 14 103 26 87 26" style={positionArrow} />
