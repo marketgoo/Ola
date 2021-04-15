@@ -48,7 +48,7 @@
 }
 .ola_speedmeter-value {
     font: var(--font-title);
-    line-height: 0.6;
+    line-height: 0.8;
     text-align: center;
 }
 
