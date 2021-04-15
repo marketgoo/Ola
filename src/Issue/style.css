@@ -78,6 +78,11 @@
       display: flex;
       justify-content: space-between;
     }
+    &[open] {
+      & .ola_icon:not(.ola_issue-status) {
+          transform: rotate(90deg);
+      }
+    }
 }
 .ola_issue-summary {
     list-style: none;
