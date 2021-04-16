@@ -1,0 +1,39 @@
+.ola_tabs {
+    display: inline-flex;
+    max-width: 100%;
+    height: var(--size-8);
+    box-sizing: border-box;
+    margin-bottom: var(--row-gap-1);
+
+    & > .ola_button {
+        border: none;
+        height: 100%;
+        color: var(--gray);
+        border-radius: 0;
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: solid 1px var(--gray-light);
+
+        &[aria-pressed="true"] {
+          color: var(--brand);
+          border-bottom: solid 3px var(--brand);
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:hover {
+          background-color: var(--gray-xlight);
+        }
+    }
+}
+
+.ola_tab {
+  width: 100%;
+  display: none;
+
+  &.selected {
+    display: block;
+  }
+}
