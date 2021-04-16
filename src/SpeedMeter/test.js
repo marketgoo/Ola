@@ -1,66 +1,59 @@
 import React from 'react'
-import ProgressCircle from '.'
+import SpeedMeter from '.'
 import renderer from 'react-test-renderer'
 
-it('Default ProgressCircle', () => {
+it('Default SpeedMeter', () => {
   const tree = renderer
-    .create(<ProgressCircle />)
+    .create(<SpeedMeter />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with error variant', () => {
+it('SpeedMeter with error variant', () => {
   const tree = renderer
-    .create(<ProgressCircle variant="error" />)
+    .create(<SpeedMeter variant="error" />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with success variant', () => {
+it('SpeedMeter with success variant', () => {
   const tree = renderer
-    .create(<ProgressCircle variant="success" />)
+    .create(<SpeedMeter variant="success" />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with warning variant', () => {
+it('SpeedMeter with warning variant', () => {
   const tree = renderer
-    .create(<ProgressCircle variant="warning" />)
+    .create(<SpeedMeter variant="warning" />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with value', () => {
+it('SpeedMeter with value', () => {
   const tree = renderer
-    .create(<ProgressCircle value={20} />)
+    .create(<SpeedMeter value={8} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle Busy', () => {
+it('SpeedMeter Busy', () => {
   const tree = renderer
-    .create(<ProgressCircle busy={true} />)
+    .create(<SpeedMeter busy={true} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle Busy with content', () => {
+it('SpeedMeter with extraClass', () => {
   const tree = renderer
-    .create(<ProgressCircle busy={'Checking ...'} />)
+    .create(<SpeedMeter className='test' />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
 
-it('ProgressCircle with extraClass', () => {
+it('SpeedMeter with breakpoint and value', () => {
   const tree = renderer
-    .create(<ProgressCircle className='test' />)
-    .toJSON()
-  expect(tree).toMatchSnapshot()
-})
-
-it('ProgressCircle with label and value', () => {
-  const tree = renderer
-    .create(<ProgressCircle label='Your score' value={75} />)
+    .create(<SpeedMeter breakpoint={7} value={6} />)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

@@ -39,6 +39,69 @@ exports[`Default ProgressCircle 1`] = `
 </div>
 `;
 
+exports[`Default SpeedMeter 1`] = `
+<div
+  className="ola_speedmeter is-null"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      0
+      ,0
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
 exports[`ProgressCircle Busy 1`] = `
 <div
   className="ola_score is-error is-busy"
@@ -339,6 +402,432 @@ exports[`ProgressCircle with warning variant 1`] = `
           "strokeDashoffset": 540.3539364174444,
         }
       }
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter Busy 1`] = `
+<div
+  className="ola_speedmeter is-null is-busy"
+>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with breakpoint and value 1`] = `
+<div
+  className="ola_speedmeter is-null"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      6
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -259.87254430494767,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-79.2deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-77.4deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with error variant 1`] = `
+<div
+  className="ola_speedmeter is-error"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      0
+      ,0
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with extraClass 1`] = `
+<div
+  className="ola_speedmeter is-null test"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      0
+      ,0
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with success variant 1`] = `
+<div
+  className="ola_speedmeter is-success"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      0
+      ,0
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with value 1`] = `
+<div
+  className="ola_speedmeter is-null"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      8
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -254.34334123462963,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-75.6deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
+    />
+  </svg>
+</div>
+`;
+
+exports[`SpeedMeter with warning variant 1`] = `
+<div
+  className="ola_speedmeter is-warning"
+>
+  <div
+    className="ola_speedmeter-metric"
+  >
+    <strong
+      className="ola_speedmeter-value"
+    >
+      0
+      ,0
+    </strong>
+    <strong
+      className="ola_speedmeter-unit"
+    />
+  </div>
+  <svg
+    className="ola_speedmeter-circle"
+    height="110"
+    viewBox="0 0 190 110"
+    width="190"
+  >
+    <path
+      className="ola_speedmeter-circle-background"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+    />
+    <path
+      className="ola_speedmeter-circle-value"
+      d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95"
+      style={
+        Object {
+          "strokeDashoffset": -276.46015351590177,
+        }
+      }
+    />
+    <polygon
+      className="ola_speedmeter-triangle"
+      points="95 14 103 26 87 26"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+    />
+    <line
+      className="ola_speedmeter-breakpoint"
+      stroke="#979797"
+      strokeWidth="2"
+      style={
+        Object {
+          "transform": "rotate(-90deg)",
+        }
+      }
+      x1="95"
+      x2="95"
+      y1="2"
+      y2="12"
     />
   </svg>
 </div>
