@@ -1,0 +1,118 @@
+.ola_speedmeter {
+    --color: var(--gray);
+
+    width: var(--size-11);
+    height: 110px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    &.is-busy {
+        & .ola_speedmeter-metric,
+        & .ola_speedmeter-circle-value,
+        & .ola_speedmeter-triangle,
+        & .ola_speedmeter-breakpoint {
+            opacity: 0;
+        }
+        & .ola_speedmeter-circle-background {
+            animation: speedmeter-loading 2s linear infinite;
+            animation-fill-mode: both;
+            stroke: var(--gray-light);
+        }
+    }
+
+    &.is-success {
+        --color: var(--success);
+    }
+
+    &.is-error {
+        --color: var(--error);
+    }
+
+    &.is-warning {
+        --color: var(--warning);
+    }
+
+}
+
+.ola_speedmeter-metric {
+    color: var(--black);
+    position: relative;
+    transition: opacity 200ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: var(--size-6);
+}
+.ola_speedmeter-value {
+    font: var(--font-title);
+    line-height: 0.8;
+    text-align: center;
+}
+
+.ola_speedmeter-unit {
+    font: var(--font-body);
+    font-weight: var(--bold);
+}
+
+.ola_speedmeter-busy {
+    font: var(--font-caption);
+    color: var(--gray);
+    position: relative;
+    transition: opacity 200ms;
+    z-index: 1;
+    display: block;
+    padding: 0 var(--size-5);
+    text-align: center;
+}
+
+.ola_speedmeter-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ola_speedmeter-circle-background,
+.ola_speedmeter-circle-value {
+    fill: none;
+    stroke-width: 8;
+    stroke-linecap: round;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 280 278;
+    transform-origin: center center;
+}
+
+.ola_speedmeter-circle-background {
+    stroke: var(--gray-xlight);
+    transition: stroke 200ms;
+}
+.ola_speedmeter-circle-value {
+    stroke: var(--color);
+    transition: opacity 200ms, stroke-dashoffset 400ms;
+}
+
+.ola_speedmeter-triangle {
+    fill: var(--color);
+    transform-origin: 94px 94px;
+    transition: transform 400ms;
+}
+
+.ola_speedmeter-breakpoint {
+    transform-origin: 94px 94px;
+}
+
+@keyframes speedmeter-loading {
+    0% {
+        stroke-dasharray: 10 280;
+    }
+    50% {
+        stroke-dasharray: 280 280;
+    }
+    100% {
+        stroke-dasharray: 10 280;
+    }
+}
