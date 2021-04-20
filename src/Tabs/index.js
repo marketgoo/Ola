@@ -21,7 +21,6 @@ const Tabs = ({ className, children, ...props }) => {
             {item.props.label || ''}
           </Button>
         ) }
-        <div></div>
       </nav>
       {children.map((item, index) => {
         return React.cloneElement(item, {

@@ -31,7 +31,6 @@ Array [
         Tab 2
       </span>
     </button>
-    <div />
   </nav>,
   <div
     className="ola_tab selected"
