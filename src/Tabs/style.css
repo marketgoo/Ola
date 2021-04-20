@@ -1,6 +1,5 @@
 .ola_tabs {
-    display: inline-flex;
-    width: 100%;
+    display: flex;
     height: var(--size-8);
     box-sizing: border-box;
     margin-bottom: var(--row-gap-1);
