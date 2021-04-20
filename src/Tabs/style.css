@@ -1,5 +1,5 @@
 .ola_tabs {
-    display: inline-flex;
+    display: flex;
     max-width: 100%;
     height: var(--size-8);
     box-sizing: border-box;
@@ -26,6 +26,13 @@
         &:hover {
           background-color: var(--gray-xlight);
         }
+    }
+
+    & > div {
+      content: "";
+      display: block;
+      flex: 1;
+      border-bottom: 1px solid var(--gray-light);
     }
 }
 
