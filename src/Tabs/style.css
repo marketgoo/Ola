@@ -1,9 +1,9 @@
 .ola_tabs {
-    display: inline-flex;
-    max-width: 100%;
+    display: flex;
     height: var(--size-8);
     box-sizing: border-box;
     margin-bottom: var(--row-gap-1);
+    border-bottom: 1px solid var(--gray-xlight);
 
     & > .ola_button {
         border: none;
@@ -12,11 +12,12 @@
         border-radius: 0;
         background-color: transparent;
         border-color: transparent;
-        border-bottom: solid 1px var(--gray-light);
+        border-bottom: 3px solid transparent;
+        margin-top: 1px;
 
         &[aria-pressed="true"] {
           color: var(--brand);
-          border-bottom: solid 3px var(--brand);
+          border-bottom: 3px solid var(--brand);
         }
 
         &:focus {
@@ -27,6 +28,7 @@
           background-color: var(--gray-xlight);
         }
     }
+
 }
 
 .ola_tab {
