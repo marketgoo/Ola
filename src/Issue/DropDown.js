@@ -13,7 +13,7 @@ const IssueDropDown = ({ title, variant, size, className, status, children, ...p
   return <details className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
     <summary className="ola_issue-summary">
       <Issue title={title} variant={variant} size={size} />
-      <Icon name={'chevronRight'} size={size} />
+      <Icon name={'chevronDown'} size={size} />
     </summary>
     <div className='ola_issue-content'>
       { children }

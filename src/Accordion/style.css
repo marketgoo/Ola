@@ -1,7 +1,7 @@
 .ola_accordion {
     &[open] {
         & .ola_accordion-marker {
-            transform: rotate(90deg);
+            transform: rotate(180deg);
         }
         & .ola_accordion-title {
             color: var(--black);
