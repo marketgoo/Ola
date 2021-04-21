@@ -60,7 +60,7 @@ const SpeedMeter = ({ breakpoint, value, min, max, unit, busy, variant, classNam
         <path className="ola_speedmeter-circle-value" d="M183,95 C183,46.398942 143.601058,7 95,7 C46.398942,7 7,46.398942 7,95" style={circleStyle} />
         <polygon className="ola_speedmeter-triangle" points="95 14 103 26 87 26" style={positionArrow} />
         <line className="ola_speedmeter-breakpoint" x1="95" y1="0" x2="95" y2="13" stroke="#979797" strokeWidth="3" strokeLinecap="round" style={positionBreakpoint}></line>
-        <line className="ola_speedmeter-line" x1="0.5" y1="109.5" x2="188.5" y2="109.5" strokeWidth="1" strokeLinecap="square"></line>
+        <line className="ola_speedmeter-line" x1="0.5" y1="106.5" x2="188.5" y2="106.5" strokeWidth="1" strokeLinecap="square"></line>
       </svg>
     </div>
   )
