@@ -92,17 +92,21 @@
 }
 .ola_speedmeter-circle-value {
     stroke: var(--color);
-    transition: opacity 200ms, stroke-dashoffset 400ms;
+    transition: opacity 200ms, stroke-dashoffset var(--slow-duration);
 }
 
 .ola_speedmeter-triangle {
     fill: var(--color);
     transform-origin: 94px 94px;
-    transition: transform 400ms;
+    transition: transform var(--slow-duration);
 }
 
 .ola_speedmeter-breakpoint {
     transform-origin: 94px 94px;
+}
+
+.ola_speedmeter-line {
+    stroke: var(--gray-xlight);
 }
 
 @keyframes speedmeter-loading {
