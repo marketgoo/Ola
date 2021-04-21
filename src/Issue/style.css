@@ -80,7 +80,7 @@
     }
     &[open] {
       & .ola_icon:not(.ola_issue-status) {
-          transform: rotate(90deg);
+          transform: rotate(180deg);
           transition: transform var(--duration);
       }
     }
