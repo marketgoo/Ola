@@ -4,8 +4,8 @@ import cx from 'classnames'
 
 const scoreValue = (value, min, max) => {
   value = Math.min(max, Math.max(min, value))
-  if (value > 0 && value < 1) {
-    value = (max - min)/ 100
+  if (value > 0) {
+    value = Math.max((max - min) / 100, value)
   }
   value = ((value - Math.min(min, max)) / (Math.max(min, max) - Math.min(min, max))) * 100
 
@@ -14,8 +14,8 @@ const scoreValue = (value, min, max) => {
 }
 const angleValue = (value, min, max) => {
   value = Math.min(max, Math.max(min, value))
-  if (value > 0 && value < 1) {
-    value = (max - min)/ 100
+  if (value > 0) {
+    value = Math.max((max - min) / 100, value)
   }
   value = ((value - Math.min(min, max)) / (Math.max(min, max) - Math.min(min, max))) * 100
 
