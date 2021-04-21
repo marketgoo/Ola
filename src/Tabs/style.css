@@ -1,6 +1,6 @@
 .ola_tabs {
     display: flex;
-    height: var(--size-8);
+    height: calc(var(--size-8)*1.4);
     box-sizing: border-box;
     margin-bottom: var(--row-gap-1);
     border-bottom: 1px solid var(--gray-xlight);
