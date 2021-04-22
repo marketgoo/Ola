@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import Button from '../Button'
+import TabOption from './Option'
 
 const Tabs = ({ className, children, ...props }) => {
   
@@ -10,18 +10,16 @@ const Tabs = ({ className, children, ...props }) => {
 
   return (
     <>
-      <nav className={styles} {...props}>
+      <ul className={styles} {...props}>
         { children.map((item, index) =>
-          <Button 
+          <TabOption 
             key={index} 
             selected={index === selectedTab} 
-            type="button" 
-            variant="secondary"
             onClick={() => setSelectedTab(index)}>
             {item.props.label || ''}
-          </Button>
+          </TabOption>
         ) }
-      </nav>
+      </ul>
       {children.map((item, index) => {
         return React.cloneElement(item, {
           className: cx({selected : index === selectedTab}),
