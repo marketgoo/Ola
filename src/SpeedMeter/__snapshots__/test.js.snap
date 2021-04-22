@@ -11,7 +11,6 @@ exports[`Default SpeedMeter 1`] = `
       className="ola_speedmeter-value"
     >
       0
-      ,0
     </strong>
     <strong
       className="ola_speedmeter-unit"
@@ -47,8 +46,6 @@ exports[`Default SpeedMeter 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -56,8 +53,8 @@ exports[`Default SpeedMeter 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -97,8 +94,6 @@ exports[`SpeedMeter Busy 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -106,8 +101,8 @@ exports[`SpeedMeter Busy 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -159,8 +154,6 @@ exports[`SpeedMeter with breakpoint and value 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-77.4deg)",
@@ -168,8 +161,8 @@ exports[`SpeedMeter with breakpoint and value 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -186,7 +179,6 @@ exports[`SpeedMeter with error variant 1`] = `
       className="ola_speedmeter-value"
     >
       0
-      ,0
     </strong>
     <strong
       className="ola_speedmeter-unit"
@@ -222,8 +214,6 @@ exports[`SpeedMeter with error variant 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -231,8 +221,8 @@ exports[`SpeedMeter with error variant 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -249,7 +239,6 @@ exports[`SpeedMeter with extraClass 1`] = `
       className="ola_speedmeter-value"
     >
       0
-      ,0
     </strong>
     <strong
       className="ola_speedmeter-unit"
@@ -285,8 +274,6 @@ exports[`SpeedMeter with extraClass 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -294,8 +281,8 @@ exports[`SpeedMeter with extraClass 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -312,7 +299,6 @@ exports[`SpeedMeter with success variant 1`] = `
       className="ola_speedmeter-value"
     >
       0
-      ,0
     </strong>
     <strong
       className="ola_speedmeter-unit"
@@ -348,8 +334,6 @@ exports[`SpeedMeter with success variant 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -357,8 +341,8 @@ exports[`SpeedMeter with success variant 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -410,8 +394,6 @@ exports[`SpeedMeter with value 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -419,8 +401,8 @@ exports[`SpeedMeter with value 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
@@ -437,7 +419,6 @@ exports[`SpeedMeter with warning variant 1`] = `
       className="ola_speedmeter-value"
     >
       0
-      ,0
     </strong>
     <strong
       className="ola_speedmeter-unit"
@@ -473,8 +454,6 @@ exports[`SpeedMeter with warning variant 1`] = `
     />
     <line
       className="ola_speedmeter-breakpoint"
-      stroke="#979797"
-      strokeWidth="2"
       style={
         Object {
           "transform": "rotate(-90deg)",
@@ -482,8 +461,8 @@ exports[`SpeedMeter with warning variant 1`] = `
       }
       x1="95"
       x2="95"
-      y1="2"
-      y2="12"
+      y1="0"
+      y2="16"
     />
   </svg>
 </div>
