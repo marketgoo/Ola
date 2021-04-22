@@ -17,6 +17,8 @@
             opacity: 0;
         }
         & .ola_speedmeter-circle-background {
+            stroke-dasharray: 8;
+            stroke-linecap: butt;
             animation: speedmeter-loading 2s linear infinite;
             animation-fill-mode: both;
             stroke: var(--gray-light);
@@ -111,12 +113,9 @@
 
 @keyframes speedmeter-loading {
     0% {
-        stroke-dasharray: 10 280;
-    }
-    50% {
-        stroke-dasharray: 280 280;
+        stroke-dashoffset: 0;
     }
     100% {
-        stroke-dasharray: 10 280;
+        stroke-dashoffset: 80;
     }
 }
