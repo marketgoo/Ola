@@ -2,36 +2,28 @@
 
 exports[`Segment with two buttons 1`] = `
 Array [
-  <nav
+  <ul
     className="ola_tabs"
   >
-    <button
-      aria-pressed="true"
-      className="ola_button is-secondary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="ola_button-text"
+    <li>
+      <button
+        aria-current={true}
+        className="ola_tab-option is-selected"
+        onClick={[Function]}
       >
         Tab 1
-      </span>
-    </button>
-    <button
-      aria-pressed="false"
-      className="ola_button is-secondary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <span
-        className="ola_button-text"
+      </button>
+    </li>
+    <li>
+      <button
+        aria-current={false}
+        className="ola_tab-option"
+        onClick={[Function]}
       >
         Tab 2
-      </span>
-    </button>
-  </nav>,
+      </button>
+    </li>
+  </ul>,
   <div
     className="ola_tab selected"
     label="Tab 1"
