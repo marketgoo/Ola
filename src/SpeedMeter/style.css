@@ -5,8 +5,7 @@
     height: 110px;
     position: relative;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 
     &.is-busy {
@@ -17,6 +16,8 @@
             opacity: 0;
         }
         & .ola_speedmeter-circle-background {
+            stroke-dasharray: 8;
+            stroke-linecap: butt;
             animation: speedmeter-loading 2s linear infinite;
             animation-fill-mode: both;
             stroke: var(--gray-light);
@@ -39,12 +40,13 @@
 
 .ola_speedmeter-metric {
     color: var(--black);
-    position: relative;
-    transition: opacity 200ms;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: var(--size-6);
+    transition: opacity var(--duration);
+    text-align: center;
+    margin-bottom: var(--size-2);
+
+    & > * {
+        display: block;
+    }
 }
 .ola_speedmeter-value {
     font: var(--font-title);
@@ -61,7 +63,7 @@
     font: var(--font-caption);
     color: var(--gray);
     position: relative;
-    transition: opacity 200ms;
+    transition: opacity var(--duration);
     z-index: 1;
     display: block;
     padding: 0 var(--size-5);
@@ -92,27 +94,31 @@
 }
 .ola_speedmeter-circle-value {
     stroke: var(--color);
-    transition: opacity 200ms, stroke-dashoffset 400ms;
+    transition: opacity 200ms, stroke-dashoffset var(--slow-duration);
 }
 
 .ola_speedmeter-triangle {
     fill: var(--color);
     transform-origin: 94px 94px;
-    transition: transform 400ms;
+    transition: transform var(--slow-duration);
 }
 
 .ola_speedmeter-breakpoint {
     transform-origin: 94px 94px;
+    stroke: var(--gray);
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.ola_speedmeter-line {
+    stroke: var(--gray-xlight);
 }
 
 @keyframes speedmeter-loading {
     0% {
-        stroke-dasharray: 10 280;
-    }
-    50% {
-        stroke-dasharray: 280 280;
+        stroke-dashoffset: 0;
     }
     100% {
-        stroke-dasharray: 10 280;
+        stroke-dashoffset: 80;
     }
 }
