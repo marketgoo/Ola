@@ -43,7 +43,7 @@
 
 .ola_issue-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
     z-index: 1;
 }
