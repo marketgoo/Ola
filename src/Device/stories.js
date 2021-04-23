@@ -7,7 +7,10 @@ export default {
   args: {
     variant: '',
     url:'',
-    busy: null
+  },
+  argTypes: {
+    busy: { control: 'text'},
+    
   }
 }
 

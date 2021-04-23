@@ -20,6 +20,7 @@ const Device = ({variant, url, className,busy,...props})=> {
           src={url} /> : busy &&
           <div className={'ola_device-content ola_device-spinner'}>
             <Spinner size="medium"/>
+            <span className="ola_device-text">{busy}</span>
           </div>}
       </div>
       <div className="ola_device-stripe"></div>
@@ -32,7 +33,7 @@ const Device = ({variant, url, className,busy,...props})=> {
 }
 Device.defaultProps = {
   className: null,
-  busy: null,
+  busy: false,
   variant: 'iphone-8',
 }
 

@@ -12,7 +12,6 @@
   position: relative;
   z-index: 1;
 }
-
 .ola_device .ola_device-frame {
     z-index: 1; 
   }
@@ -21,9 +20,19 @@
     background-position: center center;
     background-size: cover;
     object-fit: cover;
+    object-position: center top;
     position: relative;
     background-color: var(--gray-xlight);
   }
+  .ola_device-text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: inherit;
+    padding:4px;
+    user-select: none;
+    text-align: center;
+}
   
 /* iphone-8 styles */
   .ola_device-iphone-8 {
@@ -46,6 +55,7 @@
   }
   .ola_device-spinner {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: var(--brand)
