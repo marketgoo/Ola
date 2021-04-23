@@ -47,6 +47,11 @@ exports[`Device Busy 1`] = `
           r={34}
         />
       </svg>
+      <span
+        className="ola_device-text"
+      >
+        Test
+      </span>
     </div>
   </div>
   <div

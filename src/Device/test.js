@@ -10,7 +10,7 @@ it('Default Device', () => {
 
 it('Device Busy', () => {
   const tree = renderer
-    .create(<Device busy={true} />)
+    .create(<Device busy="Test"/>)
     .toJSON()
   expect(tree).toMatchSnapshot()
 })
