@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Device 1`] = `
+<div
+  className="ola_device ola_device-iphone-8"
+>
+  <div
+    className="ola_device-frame"
+  />
+  <div
+    className="ola_device-stripe"
+  />
+  <div
+    className="ola_device-header"
+  />
+  <div
+    className="ola_device-sensors"
+  />
+  <div
+    className="ola_device-btns"
+  />
+  <div
+    className="ola_device-power"
+  />
+</div>
+`;
+
+exports[`Device Busy 1`] = `
+<div
+  className="ola_device ola_device-iphone-8 is-busy"
+>
+  <div
+    className="ola_device-frame"
+  >
+    <div
+      className="ola_device-content ola_device-spinner"
+    >
+      <svg
+        className="ola_spinner is-medium"
+        height={76}
+        viewBox="0 0 76 76"
+        width={76}
+      >
+        <circle
+          cx={38}
+          cy={38}
+          r={34}
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    className="ola_device-stripe"
+  />
+  <div
+    className="ola_device-header"
+  />
+  <div
+    className="ola_device-sensors"
+  />
+  <div
+    className="ola_device-btns"
+  />
+  <div
+    className="ola_device-power"
+  />
+</div>
+`;
+
+exports[`Device with url 1`] = `
+<div
+  className="ola_device ola_device-iphone-8"
+>
+  <div
+    className="ola_device-frame"
+  >
+    <img
+      className="ola_device-content"
+      src="https://via.placeholder.com/150"
+    />
+  </div>
+  <div
+    className="ola_device-stripe"
+  />
+  <div
+    className="ola_device-header"
+  />
+  <div
+    className="ola_device-sensors"
+  />
+  <div
+    className="ola_device-btns"
+  />
+  <div
+    className="ola_device-power"
+  />
+</div>
+`;
