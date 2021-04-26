@@ -32,6 +32,8 @@
     padding:4px;
     user-select: none;
     text-align: center;
+    color: var(--gray);
+    font: var(--callout);
 }
   
 /* iphone-8 styles */
