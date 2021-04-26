@@ -1,14 +1,14 @@
-import React from "react";
-import TreeList from "./";
-import Page from "../Page";
-import Icon from "../Icon";
-import TreeListOption from "./Option";
-import Issue from "../Issue";
+import React from 'react'
+import TreeList from './'
+import Page from '../Page'
+import Icon from '../Icon'
+import TreeListOption from './Option'
+import Issue from '../Issue'
 
 export default {
-  title: "TreeList",
+  title: 'TreeList',
   component: TreeList,
-};
+}
 
 export const Base = (args) => (
   <TreeList {...args}>
@@ -68,4 +68,4 @@ export const Base = (args) => (
       </div>
     </TreeListOption>
   </TreeList>
-);
+)
