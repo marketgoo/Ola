@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `SpeedMeter` [#186]
 - New component `Tabs` [#187]
 - Add chevron icon to dropdown issue component [#188]
+- New component `Device`[#194]
 
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
