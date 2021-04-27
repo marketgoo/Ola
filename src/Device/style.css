@@ -147,8 +147,8 @@
     background: #c8cacb;
     height: calc(80px * var(--scale));
     position: absolute;
-    right: calc(-2 * var(--scale));
-    top: 160px;
+    right: calc(-2px*var(--scale));
+    top: calc(160px*var(--scale));
     width: calc(3px * var(--scale));
   }
   .ola_device-iphone-8.ola_device-gold .ola_device-frame {
