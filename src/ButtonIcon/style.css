@@ -6,16 +6,16 @@
     --shadow-focus: var(--accent-focus);
     --background-active: var(--gray-light);
 
-    display: inline-block;
+    display: inline-flex;
     min-height: var(--size-6);
     min-width: var(--size-6);
+    align-items: center;
+    justify-content: center;
     background: none;
-    background-color: var(--background);
     color: var(--color);
     border: none;
     cursor: pointer;
     padding: 0;
-    border-radius: 50%;
     outline: 0;
     vertical-align: middle;
 
@@ -23,23 +23,29 @@
         border: 0;
     }
 
-    &:focus {
+    & > svg {
+        display: block;
+        flex-shrink: 0;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+        fill: var(--color);
+        background-color: var(--background);
+        transition: background-color var(--duration);
+    }
+
+    &:focus-visible svg {
+        fill: var(--color-hover);
         box-shadow: 0 0 0 4px var(--shadow-focus);
     }
 
-    &:hover {
-        color: var(--color-hover);
-        background-color: var(--background-hover);
+    &:hover svg {
+        fill: var(--color-hover);
+        background: var(--background-hover);
     }
 
-    &:active {
-        background: var(--background-active);
-    }
-
-    & > svg {
-        display: block;
-        max-height: 100%;
-        max-width: 100%;
+    &:active svg {
+        fill: var(--background-active);
     }
 
     & .ola_icon.is-small {

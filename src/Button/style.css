@@ -47,7 +47,7 @@
         border-color: var(--border-hover);
     }
 
-    &:focus {
+    &:focus-visible {
         box-shadow: 0 0 0 4px var(--shadow-focus);
     }
 
@@ -196,7 +196,7 @@
     position: relative;
 }
 
-summary:focus .ola_button {
+summary:focus-visible .ola_button {
     box-shadow: 0 0 0 4px var(--focus);
 }
 
