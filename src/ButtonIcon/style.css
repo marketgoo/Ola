@@ -45,7 +45,7 @@
     }
 
     &:active svg {
-        fill: var(--background-active);
+        background: var(--background-active);
     }
 
     & .ola_icon.is-small {
