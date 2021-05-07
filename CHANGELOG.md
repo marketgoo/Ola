@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.10.0] - Unreleased
+## [0.10.0] - 2021-05-07
 ### Added
 - Support for indeterminate state to `ProgressBar` [#181]
 - New component `Thumbnail` [#180], [#182]
@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Tabs` [#187]
 - Add chevron icon to dropdown issue component [#188]
 - New component `Device`[#194]
+- New component `Keyword`[#197]
 
 ### Changed
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
@@ -463,8 +464,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#186]: https://githubl.com/marketgoo/Ola/issues/186
 [#187]: https://githubl.com/marketgoo/Ola/issues/187
 [#188]: https://githubl.com/marketgoo/Ola/issues/188
+[#194]: https://githubl.com/marketgoo/Ola/issues/194
+[#197]: https://githubl.com/marketgoo/Ola/issues/197
 
-[0.10.0]: https://githubl.com/marketgoo/Ola/compare/v0.9.1...HEAD
+[0.10.0]: https://githubl.com/marketgoo/Ola/compare/v0.9.1...v0.10.0
 [0.9.1]: https://githubl.com/marketgoo/Ola/compare/v0.9.0...v0.9.1
 [0.9.0]: https://githubl.com/marketgoo/Ola/compare/v0.8.0...v0.9.0
 [0.8.0]: https://githubl.com/marketgoo/Ola/compare/v0.7.0...v0.8.0
