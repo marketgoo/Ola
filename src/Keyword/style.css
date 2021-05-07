@@ -1,0 +1,34 @@
+.ola_keyword {
+    --color: var(--gray);
+    --background: var(--gray-xlight);
+
+    display: flex;
+    align-items: center;
+    color: var(--color);
+    background-color: var(--background);
+    border-radius: var(--radius-small);
+    vertical-align: baseline;
+    cursor: default;
+    max-width: max-content;
+    min-height: var(--size-8);
+    letter-spacing: 0;
+}
+
+.ola_keyword-text {
+    font: var(--font-caption);
+    font-weight: var(--bold);
+    padding: 0.8em var(--column-gap-1);
+}
+
+.ola_keyword-button {
+    --color: var(--color);
+    flex: 0 0 auto;
+    align-self: flex-start;
+
+    & .ola_buttonIcon {
+        min-width: var(--size-8);
+        min-height: var(--size-8);
+        border-radius: var(--radius-small);
+        --background-hover: var(--gray-light);
+    }
+}

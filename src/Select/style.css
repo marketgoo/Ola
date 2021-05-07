@@ -29,7 +29,7 @@
         border-color: var(--brand-dark);
     }
 
-    &:focus {
+    &:focus-visible {
         color: var(--black);
         border-color: var(--brand);
         box-shadow: 0 0 0 4px var(--brand-focus);
@@ -44,7 +44,7 @@
         border-color: var(--error);
         box-shadow: none;
 
-        &:focus {
+        &:focus-visible {
             box-shadow: 0 0 0 4px var(--error-focus);
         }
     }
