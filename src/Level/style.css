@@ -2,94 +2,53 @@
   --background: var(--gray-xlight);
   --size: 12px;
   --height: var(--size-6);
+  --width: 54px;
 
   display: inline-flex;
   vertical-align: middle;
   height: var(--height);
+  width: var(--width);
+  gap: var(--size-1);
   border-color: var(--background);
   margin: var(--size-1);
 
-  &.is-three_levels {
+  & span {
+    background-color: var(--background);
     width: var(--size);
-    border-left: var(--size) solid var(--background);
-    border-right: var(--size) solid var(--background);
-    border-radius: var(--radius-small);
-    padding: 0 var(--size-1);
-    &::after {
-      content: '';
-      display: block;
-      background: var(--background);
-      flex: 1 1 auto;
+    height: var(--height);
+    &:first-child {
+      border-top-left-radius: var(--size-1);
+      border-bottom-left-radius: var(--size-1);
     }
-    &.is-small {
-      --size: 8px;
-      --height: var(--size-4);
+    &:last-child {
+      border-top-right-radius: var(--size-1);
+      border-bottom-right-radius: var(--size-1);
     }
-
-    &.is-low {
-      border-left-color: var(--error);
+  }
+  &.is-small {
+    --size: 8px;
+    --height: var(--size-4);
+  }
+  &.is-low {
+    & span:first-child {
+      --background: var(--error);
     }
-
-    &.is-medium {
-      border-left-color: var(--warning);
-
-      &::after {
-        background-color: var(--warning);
-      }
-    }
-
-    &.is-high {
-      border-color: var(--success);
-
-      &::after {
-        background-color: var(--success);
-      }
+  }
+  &.is-medium {
+    --background: var(--warning);
+    & span:nth-child(n + 3) {
+      background-color: var(--gray-xlight);
     }
   }
 
-  &.is-four_levels {
-    --width: 54px;
+  &.is-high {
+    --background: var(--success);
+    & span:last-child {
+      background-color: var(--gray-xlight);
+    }
+  }
 
-    width: var(--width);
-    gap: var(--size-1);
-    & span {
-      background-color: var(--background);
-      width: var(--size);
-      height: var(--height);
-      &:first-child {
-        border-top-left-radius: var(--size-1);
-        border-bottom-left-radius: var(--size-1);
-      }
-      &:last-child {
-        border-top-right-radius: var(--size-1);
-        border-bottom-right-radius: var(--size-1);
-      }
-    }
-    &.is-small {
-      --size: 8px;
-      --height: var(--size-4);
-    }
-    &.is-low {
-      & span:first-child {
-        --background: var(--error);
-      }
-    }
-    &.is-medium {
-      & span:first-child,
-      & span:nth-child(2) {
-        --background: var(--warning);
-      }
-    }
-
-    &.is-high {
-      --background: var(--success);
-      & span:last-child {
-        background-color: var(--gray-xlight);
-      }
-    }
-
-    &.is-highest {
-      --background: var(--highest);
-    }
+  &.is-highest {
+    --background: var(--success-dark);
   }
 }
