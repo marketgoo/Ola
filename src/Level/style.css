@@ -8,7 +8,6 @@
   display: inline-flex;
   vertical-align: middle;
   height: var(--height);
-  width: var(--width);
   gap: var(--gap);
   border-color: var(--background);
   margin: var(--size-1);
@@ -43,7 +42,7 @@
     --color: var(--error);
 
     & span:first-child {
-      background: var(--color);
+      background-color: var(--color);
     }
   }
   &.is-medium {
