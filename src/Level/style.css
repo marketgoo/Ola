@@ -89,7 +89,7 @@
     }
 
     &.is-highest {
-      --background: #0e7232;
+      --background: var(--highest);
     }
   }
 }
