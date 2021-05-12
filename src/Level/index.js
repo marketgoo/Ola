@@ -6,7 +6,7 @@ const Level = ({ variant, size }) => {
   const styles = cx(
     'ola_level',
     variant && `is-${variant}`,
-    size === 'medium' ? null : `is-${size}`
+    `is-${size}`
   )
 
   return (
@@ -28,7 +28,7 @@ Level.propTypes = {
   /** Level variants */
   variant: PT.oneOf(['low', 'medium', 'high', 'highest']),
   /** Level sizes */
-  size: PT.oneOf(['small', 'medium']),
+  size: PT.oneOf(['small', 'medium', 'xbig']),
 }
 
 export default Level
