@@ -6,7 +6,7 @@ const Level = ({ variant, size }) => {
   const styles = cx(
     'ola_level',
     variant && `is-${variant}`,
-    `is-${size}`
+    `is-size_${size}`
   )
 
   return (
