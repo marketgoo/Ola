@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.11.0] - 2021-05-13
 ### Changed
 - The `Level` component now has 4 levels [#198]
 
@@ -472,7 +472,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#197]: https://githubl.com/marketgoo/Ola/issues/197
 [#198]: https://githubl.com/marketgoo/Ola/issues/198
 
-[Unreleased]: https://githubl.com/marketgoo/Ola/compare/v0.10.0...HEAD
+[0.11.0]: https://githubl.com/marketgoo/Ola/compare/v0.10.0...v0.11.0
 [0.10.0]: https://githubl.com/marketgoo/Ola/compare/v0.9.1...v0.10.0
 [0.9.1]: https://githubl.com/marketgoo/Ola/compare/v0.9.0...v0.9.1
 [0.9.0]: https://githubl.com/marketgoo/Ola/compare/v0.8.0...v0.9.0
