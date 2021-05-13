@@ -1,48 +1,71 @@
 .ola_level {
-    --background: var(--gray-xlight);
-    --size: 12px;
-    --height: var(--size-6);
+  --background: var(--gray-xlight);
+  --color: var(--gray-xlight);
+  --size: 12px;
+  --gap: 1px;
+  --height: var(--size-6);
 
-    display: inline-flex;
-    vertical-align: middle;
+  display: inline-flex;
+  vertical-align: middle;
+  height: var(--height);
+  gap: var(--gap);
+  border-color: var(--background);
+  margin: var(--size-1);
+
+  & span {
+    background-color: var(--background);
     width: var(--size);
     height: var(--height);
-    border-left: var(--size) solid;
-    border-right: var(--size) solid;
-    border-color: var(--background);
-    border-radius: var(--radius-small);
-    padding: 0 var(--size-1);
-    margin: var(--size-1);
-
-    &::after {
-        content: "";
-        display: block;
-        background: var(--background);
-        flex: 1 1 auto;
+    &:first-child {
+      border-top-left-radius: var(--radius);
+      border-bottom-left-radius: var(--radius);
     }
-
-    &.is-small {
-        --size: 8px;
-        --height: var(--size-4);
+    &:last-child {
+      border-top-right-radius: var(--radius);
+      border-bottom-right-radius: var(--radius);
     }
+  }
+  &.is-small {
+    --size: 8px;
+    --height: var(--size-4);
+    --radius: 1px;
+  }
+  &.is-medium {
+    --radius: var(--radius-small);
+  }
+  &.is-xbig {
+    --size: var(--size-8);
+    --height: var(--size-8);
+    --gap: 2px;
+  }
+  &.is-low {
+    --color: var(--error);
 
-    &.is-low {
-        border-left-color: var(--error);
+    & span:first-child {
+      background-color: var(--color);
     }
+  }
+  &.is-medium {
+    --color: var(--warning);
 
-    &.is-medium {
-        border-left-color: var(--warning);
-
-        &::after {
-            background-color: var(--warning);
-        }
+    & span:nth-child(-n + 2) {
+      background-color: var(--color);
     }
+  }
 
-    &.is-high {
-        border-color: var(--success);
+  &.is-high {
+    --color: var(--success);
 
-        &::after {
-            background-color: var(--success);
-        }
+    & span:nth-child(-n + 3) {
+      background-color: var(--color);
     }
+  }
+
+  &.is-highest {
+    --color: var(--success-dark);
+
+    & span {
+      background-color: var(--color);
+    }
+  }
 }
