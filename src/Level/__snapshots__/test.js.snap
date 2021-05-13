@@ -2,7 +2,7 @@
 
 exports[`Default Level 1`] = `
 <div
-  className="ola_level is-medium"
+  className="ola_level is-size_medium"
 >
   <span />
   <span />
@@ -13,7 +13,7 @@ exports[`Default Level 1`] = `
 
 exports[`Level Variant High 1`] = `
 <div
-  className="ola_level is-high is-medium"
+  className="ola_level is-high is-size_medium"
 >
   <span />
   <span />
@@ -24,7 +24,7 @@ exports[`Level Variant High 1`] = `
 
 exports[`Level Variant Low 1`] = `
 <div
-  className="ola_level is-low is-medium"
+  className="ola_level is-low is-size_medium"
 >
   <span />
   <span />
@@ -35,7 +35,7 @@ exports[`Level Variant Low 1`] = `
 
 exports[`Level Variant Medium 1`] = `
 <div
-  className="ola_level is-medium is-medium"
+  className="ola_level is-medium is-size_medium"
 >
   <span />
   <span />
