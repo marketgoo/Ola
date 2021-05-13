@@ -28,7 +28,7 @@
   &.is-small {
     --size: 8px;
     --height: var(--size-4);
-    --radius: 0;
+    --radius: 1px;
   }
   &.is-medium {
     --radius: var(--radius-small);
