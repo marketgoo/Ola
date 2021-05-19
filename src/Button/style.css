@@ -1,205 +1,218 @@
 .ola_button {
-    --color: var(--accent);
-    --color-hover: var(--accent-dark);
-    --color-selected: var(--black);
-    --background: transparent;
-    --background-hover: var(--gray-xlight);
-    --background-active: var(--accent-focus);
-    --background-selected: var(--gray-xlight);
+  --color: var(--accent);
+  --color-hover: var(--accent-dark);
+  --color-selected: var(--black);
+  --color-unselected: var(--accent);
+  --background: transparent;
+  --background-hover: var(--gray-xlight);
+  --background-active: var(--accent-focus);
+  --background-selected: var(--gray-xlight);
+  --background-unselected: var(--white);
+  --shadow-focus: var(--accent-focus);
+  --border: var(--gray-light);
+  --border-hover: currentColor;
+  --border-selected: var(--gray-light);
+  --border-unselected: currentColor;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: var(--size-8);
+  min-width: var(--size-8);
+  max-width: 100%;
+  border: none;
+  border-color: var(--border);
+  background: none;
+  color: var(--color);
+  background-color: var(--background);
+  cursor: pointer;
+  border-radius: var(--radius-big);
+  font: var(--font-callout);
+  padding: 0 var(--column-gap-2);
+  font-weight: var(--bold);
+  transition-property: background-color, color, box-shadow;
+  transition-duration: var(--duration);
+  outline: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  box-sizing: border-box;
+  vertical-align: middle;
+  flex: 0 0 auto;
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  &:hover {
+    color: var(--color-hover);
+    background-color: var(--background-hover);
+    border-color: var(--border-hover);
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 4px var(--shadow-focus);
+  }
+
+  &:active {
+    background-color: var(--background-active);
+  }
+
+  &.is-primary {
+    --color: var(--white);
+    --background: var(--accent);
+    --color-hover: var(--white);
+    --background-hover: var(--accent-dark);
     --shadow-focus: var(--accent-focus);
-    --border: var(--gray-light);
-    --border-hover: currentColor;
-    --border-selected: var(--gray-light);
+    --background-active: var(--black);
+  }
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: var(--size-8);
-    min-width: var(--size-8);
-    max-width: 100%;
+  &.is-secondary {
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  &.is-destructive-primary {
+    --color: var(--white);
+    --background: var(--error);
+    --color-hover: var(--white);
+    --background-hover: var(--error-dark);
+    --shadow-focus: var(--error-focus);
+    --background-active: var(--black);
+  }
+
+  &.is-destructive {
+    --color: var(--error);
+    --shadow-focus: var(--error-focus);
+    --color-hover: var(--error-dark);
+    --background-active: var(--error-focus);
+
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  &.is-pro {
+    --color: var(--white);
+    --background: var(--pro);
+    --color-hover: var(--white);
+    --background-hover: var(--pro-dark);
+    --shadow-focus: var(--pro-focus);
+    --background-active: var(--black);
+  }
+
+  &.is-busy {
+    color: var(--white);
+    background-color: var(--gray);
+    min-width: 0;
+    cursor: wait;
+    pointer-events: none;
     border: none;
-    border-color: var(--border);
-    background: none;
-    color: var(--color);
-    background-color: var(--background);
+
+    & .ola_spinner {
+      position: relative;
+
+      &:first-child {
+        right: var(--size-6);
+      }
+
+      &:last-child {
+        left: var(--size-6);
+      }
+    }
+  }
+
+  &.is-link {
+    --color: var(--brand);
+    --color-hover: var(--black);
+    --background-hover: transparent;
+    --shadow-focus: var(--brand-focus);
+    --background-active: var(--brand-focus);
+
     cursor: pointer;
-    border-radius: var(--radius-big);
-    font: var(--font-callout);
-    padding: 0 var(--column-gap-2);
-    font-weight: var(--bold);
-    transition-property: background-color, color, box-shadow;
-    transition-duration: var(--duration);
-    outline: 0;
-    white-space: nowrap;
-    text-decoration: none;
-    box-sizing: border-box;
-    vertical-align: middle;
-    flex: 0 0 auto;
-
-    &::-moz-focus-inner {
-        border: 0;
-    }
-
-    &:hover {
-        color: var(--color-hover);
-        background-color: var(--background-hover);
-        border-color: var(--border-hover);
-    }
-
-    &:focus-visible {
-        box-shadow: 0 0 0 4px var(--shadow-focus);
-    }
-
-    &:active {
-        background-color: var(--background-active);
-    }
-
-    &.is-primary {
-        --color: var(--white);
-        --background: var(--accent);
-        --color-hover: var(--white);
-        --background-hover: var(--accent-dark);
-        --shadow-focus: var(--accent-focus);
-        --background-active: var(--black);
-    }
-
-    &.is-secondary {
-        border-style: solid;
-        border-width: 1px;
-    }
-
-    &.is-destructive-primary {
-        --color: var(--white);
-        --background: var(--error);
-        --color-hover: var(--white);
-        --background-hover: var(--error-dark);
-        --shadow-focus: var(--error-focus);
-        --background-active: var(--black);
-    }
-
-    &.is-destructive {
-        --color: var(--error);
-        --shadow-focus: var(--error-focus);
-        --color-hover: var(--error-dark);
-        --background-active: var(--error-focus);
-
-        border-style: solid;
-        border-width: 1px;
-    }
-
-    &.is-pro {
-        --color: var(--white);
-        --background: var(--pro);
-        --color-hover: var(--white);
-        --background-hover: var(--pro-dark);
-        --shadow-focus: var(--pro-focus);
-        --background-active: var(--black);
-    }
-
-    &.is-busy {
-        color: var(--white);
-        background-color: var(--gray);
-        min-width: 0;
-        cursor: wait;
-        pointer-events: none;
-        border: none;
-
-        & .ola_spinner {
-            position: relative;
-
-            &:first-child {
-                right: var(--size-6);
-            }
-
-            &:last-child {
-                left: var(--size-6);
-            }
-        }
-    }
-
-    &.is-link {
-        --color: var(--brand);
-        --color-hover: var(--black);
-        --background-hover: transparent;
-        --shadow-focus: var(--brand-focus);
-        --background-active: var(--brand-focus);
-
-        cursor: pointer;
-        min-width: 0;
-        padding-left: 0;
-        padding-right: 0;
-        border-radius: 0;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        text-decoration-thickness: 1px;
-
-        &.is-disabled,
-        &:disabled {
-            color: var(--gray-light);
-            text-decoration: none;
-            background: none;
-        }
-
-        &.is-busy {
-            color: var(--gray);
-            text-decoration: none;
-            background: none;
-            cursor: wait;
-
-            & .ola_spinner {
-                position: static;
-
-                &:first-child {
-                    margin-right: var(--size-4);
-                }
-
-                &:last-child {
-                    margin-left: var(--size-4);
-                }
-            }
-        }
-    }
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
 
     &.is-disabled,
     &:disabled {
-        color: var(--gray-light);
-        --background: var(--gray-xlight);
-        --background-hover: var(--gray-xlight);
-        --background-active: var(--gray-xlight);
-        border: none;
-        cursor: not-allowed;
-        pointer-events: none;
-        box-shadow: none;
+      color: var(--gray-light);
+      text-decoration: none;
+      background: none;
     }
 
-    &[aria-pressed="true"] {
-        color: var(--color-selected);
-        background-color: var(--background-selected);
-        border-color: var(--border-selected);
-        cursor: default;
-        pointer-events: none;
+    &.is-busy {
+      color: var(--gray);
+      text-decoration: none;
+      background: none;
+      cursor: wait;
+
+      & .ola_spinner {
+        position: static;
+
+        &:first-child {
+          margin-right: var(--size-4);
+        }
+
+        &:last-child {
+          margin-left: var(--size-4);
+        }
+      }
     }
+  }
+
+  &.is-disabled,
+  &:disabled {
+    color: var(--gray-light);
+    --background: var(--gray-xlight);
+    --background-hover: var(--gray-xlight);
+    --background-active: var(--gray-xlight);
+    border: none;
+    cursor: not-allowed;
+    pointer-events: none;
+    box-shadow: none;
+  }
+
+  &[aria-pressed="true"] {
+    color: var(--color-selected);
+    background-color: var(--background-selected);
+    border-color: var(--border-selected);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &[aria-pressed="false"] {
+    color: var(--color-unselected);
+    background-color: var(--background-unselected);
+    border-color: var(--border-unselected);
+    &:hover {
+      color: var(--accent-dark);
+      background-color: var(--background-selected);
+    }
+  }
 }
 
 .ola_button-text {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  user-select: none;
 }
 
 .ola_button-icon {
-    right: var(--size-4);
-    position: relative;
+  right: var(--size-4);
+  position: relative;
 }
 
 summary:focus-visible .ola_button {
-    box-shadow: 0 0 0 4px var(--focus);
+  box-shadow: 0 0 0 4px var(--focus);
 }
 
 .ola_icon svg {
-    vertical-align: middle;
+  vertical-align: middle;
 }
