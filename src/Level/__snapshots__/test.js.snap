@@ -1,25 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Default Level 1`] = `
-<span
-  className="ola_level"
-/>
+<div
+  className="ola_level is-size_medium"
+>
+  <span />
+  <span />
+  <span />
+  <span />
+</div>
 `;
 
 exports[`Level Variant High 1`] = `
-<span
-  className="ola_level is-high"
-/>
+<div
+  className="ola_level is-high is-size_medium"
+>
+  <span />
+  <span />
+  <span />
+  <span />
+</div>
 `;
 
 exports[`Level Variant Low 1`] = `
-<span
-  className="ola_level is-low"
-/>
+<div
+  className="ola_level is-low is-size_medium"
+>
+  <span />
+  <span />
+  <span />
+  <span />
+</div>
 `;
 
 exports[`Level Variant Medium 1`] = `
-<span
-  className="ola_level is-medium"
-/>
+<div
+  className="ola_level is-medium is-size_medium"
+>
+  <span />
+  <span />
+  <span />
+  <span />
+</div>
 `;

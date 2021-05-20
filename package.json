@@ -1,6 +1,6 @@
 {
   "name": "@marketgoo/ola",
-  "version": "0.10.0",
+  "version": "0.12.0",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
   "styles": "dist/index.css",
@@ -19,23 +19,12 @@
     "prepack": "npm test && npm run build"
   },
   "homepage": "https://github.com/marketgoo/Ola.git",
-  "keywords": [
-    "react",
-    "design-system",
-    "ola",
-    "component-library"
-  ],
+  "keywords": ["react", "design-system", "ola", "component-library"],
   "repository": {
     "type": "git",
     "url": "https://github.com/marketgoo/Ola.git"
   },
-  "files": [
-    "dist",
-    "src",
-    "*.md",
-    "ola.png",
-    "LICENSE"
-  ],
+  "files": ["dist", "src", "*.md", "ola.png", "LICENSE"],
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.8.6"
