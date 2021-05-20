@@ -475,7 +475,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#194]: https://githubl.com/marketgoo/Ola/issues/194
 [#197]: https://githubl.com/marketgoo/Ola/issues/197
 [#198]: https://githubl.com/marketgoo/Ola/issues/198
+[#201]: https://githubl.com/marketgoo/Ola/issues/201
 
+[0.12.0]: https://githubl.com/marketgoo/Ola/compare/v0.11.0...v0.12.0
 [0.11.0]: https://githubl.com/marketgoo/Ola/compare/v0.10.0...v0.11.0
 [0.10.0]: https://githubl.com/marketgoo/Ola/compare/v0.9.1...v0.10.0
 [0.9.1]: https://githubl.com/marketgoo/Ola/compare/v0.9.0...v0.9.1
