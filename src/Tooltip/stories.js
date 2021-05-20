@@ -11,17 +11,77 @@ export default {
   argTypes: {
     onOpen: { action: 'open!' },
     onClose: { action: 'close!' },
-    trigger: { control: { disable: true }},
-    children: { control: { disable: true }},
-  }
+    children: { control: { disable: true } },
+    hover: { control: { disable: false } },
+  },
 }
 
-export const Base = (args) => <Tooltip trigger={<p>Click for show content</p>} {...args}>Content</Tooltip>
-export const WithButton = (args) => <Tooltip trigger={<Button as="span" variant="primary">Click</Button>} {...args}>Content</Tooltip>
-export const WithButtonIcon = (args) => <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" /></ButtonIcon>} {...args}>Content</Tooltip>
-export const InAScrollableElement = () => 
-  <div style={{height: '300px', width: '300px', overflow: 'auto', padding: '1em', border: 'solid'}}>
-    <div style={{padding: '300px'}}>
-      <Tooltip trigger={<ButtonIcon as="span"><Icon name="help" /></ButtonIcon>}>Lorem ipsum</Tooltip>
+export const Base = (args) => (
+  <Tooltip {...args} trigger={<p>Click for show content</p>}>
+    Content
+  </Tooltip>
+)
+
+export const WithButtonIconHover = (args) => (
+  <Tooltip
+    {...args}
+    hover
+    trigger={
+      <ButtonIcon as="span">
+        <Icon name="help" />
+      </ButtonIcon>
+    }
+  >
+    Content
+  </Tooltip>
+)
+
+export const WithButtonIcon = (args) => (
+  <Tooltip
+    {...args}
+    trigger={
+      <ButtonIcon as="span">
+        <Icon name="help" />
+      </ButtonIcon>
+    }
+  >
+    Content
+  </Tooltip>
+)
+
+export const WithButton = (args) => (
+  <Tooltip
+    {...args}
+    trigger={
+      <Button as="span" variant="primary">
+        Click
+      </Button>
+    }
+  >
+    Content
+  </Tooltip>
+)
+
+export const InAScrollableElement = () => (
+  <div
+    style={{
+      height: '300px',
+      width: '300px',
+      overflow: 'auto',
+      padding: '1em',
+      border: 'solid',
+    }}
+  >
+    <div style={{ padding: '300px' }}>
+      <Tooltip
+        trigger={
+          <ButtonIcon as="span">
+            <Icon name="help" />
+          </ButtonIcon>
+        }
+      >
+        Lorem ipsum
+      </Tooltip>
     </div>
   </div>
+)
