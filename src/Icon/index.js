@@ -26,7 +26,6 @@ import User from './User'
 import Warning from './Warning'
 import NewWindow from './NewWindow'
 
-
 const ICONS = {
   arrowDown: ArrowDown,
   arrowUp: ArrowUp,
