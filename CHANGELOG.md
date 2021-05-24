@@ -6,8 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.12.1] - 2021-05-24
-### Added
-- New icon `waiting` for `Icon` component
+### Changed
+- Replaced icon `clock` for `Icon` component
 
 ## [0.12.0] - 2021-05-20
 ### Changed

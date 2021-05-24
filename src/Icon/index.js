@@ -22,7 +22,6 @@ import Search from './Search'
 import StaticPage from './StaticPage'
 import Success from './Success'
 import User from './User'
-import Waiting from './Waiting'
 import Warning from './Warning'
 import NewWindow from './NewWindow'
 
@@ -46,7 +45,6 @@ const ICONS = {
   staticPage: StaticPage,
   success: Success,
   user: User,
-  waiting: Waiting,
   warning: Warning,
   newWindow: NewWindow,
 }
