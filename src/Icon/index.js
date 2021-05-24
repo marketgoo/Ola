@@ -22,32 +22,33 @@ import Search from './Search'
 import StaticPage from './StaticPage'
 import Success from './Success'
 import User from './User'
+import Waiting from './Waiting'
 import Warning from './Warning'
 import NewWindow from './NewWindow'
 
-
 const ICONS = {
-  'arrowDown': ArrowDown,
-  'arrowUp': ArrowUp,
-  'chevronDown': ChevronDown,
-  'chevronUp': ChevronUp,
-  'chevronLeft': ChevronLeft,
-  'chevronRight': ChevronRight,
-  'clock': Clock,
-  'close': Close,
-  'error': Error,
-  'help': Help,
-  'home': Home,
-  'null': Null,
-  'page': Page,
-  'plus': Plus,
-  'post': Post,
-  'search': Search,
-  'staticPage': StaticPage,
-  'success': Success,
-  'user': User,
-  'warning': Warning,
-  'newWindow': NewWindow
+  arrowDown: ArrowDown,
+  arrowUp: ArrowUp,
+  chevronDown: ChevronDown,
+  chevronUp: ChevronUp,
+  chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
+  clock: Clock,
+  close: Close,
+  error: Error,
+  help: Help,
+  home: Home,
+  null: Null,
+  page: Page,
+  plus: Plus,
+  post: Post,
+  search: Search,
+  staticPage: StaticPage,
+  success: Success,
+  user: User,
+  waiting: Waiting,
+  warning: Warning,
+  newWindow: NewWindow,
 }
 
 const Icon = ({ name, size, status, className, ...props }) => {
@@ -62,11 +63,22 @@ const Icon = ({ name, size, status, className, ...props }) => {
   )
 
   if (status !== 'loaded') {
-    return <div className={styles}><span></span></div>
+    return (
+      <div className={styles}>
+        <span></span>
+      </div>
+    )
   }
 
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" fillRule="evenodd" className={styles} {...props}>
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fillRule="evenodd"
+      className={styles}
+      {...props}
+    >
       <SpecificIcon />
     </svg>
   )
@@ -76,7 +88,7 @@ Icon.defaultProps = {
   name: 'help',
   size: 'medium',
   className: null,
-  status: 'loaded'
+  status: 'loaded',
 }
 
 Icon.propTypes = {
@@ -87,7 +99,7 @@ Icon.propTypes = {
   /** Kpi status */
   status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Extra className */
-  className: PT.string
+  className: PT.string,
 }
 
 export default Icon
