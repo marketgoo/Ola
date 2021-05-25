@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.12.4] - 2021-05-25
+### Fixed
+- Level component with `size=xbig`.
+- Replaced wrong `clock` svg for `Icon` component.
+
+## [0.12.2] - 2021-05-25
+### Changed
+- Add `link` icon component
+
 ## [0.12.1] - 2021-05-24
 ### Changed
 - Replaced icon `clock` for `Icon` component
@@ -145,7 +154,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - Added the search icon at the left
   - Moved the spinner of `busy` state to the left.
 - New css helper `.ola-black-bolds`
-- `className` property to  `PanelFooter`
+- `className` property to `PanelFooter`
 - New prop `size` to `Tag` component with three sizes: small, medium and big [#130]
 - Added the variable `--ola-version` to see the version of Ola used currently in any project.
 
@@ -481,6 +490,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
+[0.12.4]: https://github.com/marketgoo/Ola/compare/v0.12.2...v0.12.4
+[0.12.2]: https://github.com/marketgoo/Ola/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/marketgoo/Ola/compare/v0.12.0...v0.12.1
 [0.12.0]: https://github.com/marketgoo/Ola/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/marketgoo/Ola/compare/v0.10.0...v0.11.0

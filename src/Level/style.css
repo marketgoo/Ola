@@ -33,7 +33,7 @@
   &.is-size_medium {
     --radius: var(--radius-small);
   }
-  &.is-xbig {
+  &.is-size_xbig {
     --size: var(--size-8);
     --height: var(--size-8);
     --gap: 2px;
