@@ -14,6 +14,7 @@ import Close from './Close'
 import Error from './Error'
 import Help from './Help'
 import Home from './Home'
+import Link from './Link'
 import Null from './Null'
 import Page from './Page'
 import Plus from './Plus'
@@ -37,6 +38,7 @@ const ICONS = {
   error: Error,
   help: Help,
   home: Home,
+  link: Link,
   null: Null,
   page: Page,
   plus: Plus,
@@ -46,7 +48,8 @@ const ICONS = {
   success: Success,
   user: User,
   warning: Warning,
-  newWindow: NewWindow,
+  newWindow: NewWindow
+
 }
 
 const Icon = ({ name, size, status, className, ...props }) => {
