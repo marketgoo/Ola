@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Fixed
 - Level component with `size=xbig`.
+- Level component `Page` with the new `Level` icon that is wider.
 
 ## [0.12.2] - 2021-05-25
 ### Changed

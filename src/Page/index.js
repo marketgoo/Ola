@@ -7,6 +7,7 @@ const Page = ({ title, url, icon, status, className, link, ...props }) => {
     'ola_page',
     { 'ola-skeleton': status !== 'loaded' },
     { 'is-loading': status === 'loading' },
+    { 'has-icon': icon },
     className
   )
 

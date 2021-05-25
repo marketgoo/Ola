@@ -19,7 +19,7 @@ exports[`Default Page 1`] = `
 
 exports[`Page with Icon 1`] = `
 <p
-  className="ola_page"
+  className="ola_page has-icon"
 >
   <span
     className="ola_page-icon"
