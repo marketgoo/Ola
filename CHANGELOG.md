@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- New `multiline` property to `Button` to wrap the text in multiple lines instead using ellipsis.
+
 ### Fixed
 - Level component `Page` with the new `Level` icon that is wider.
 

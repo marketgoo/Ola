@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: var(--size-8);
+  min-height: var(--size-8);
   min-width: var(--size-8);
   max-width: 100%;
   border: none;
@@ -199,9 +199,12 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: var(--size-2);
+  padding-bottom: var(--size-2);
   user-select: none;
+}
+.ola_button.is-multiline .ola_button-text {
+  white-space: normal;
 }
 
 .ola_button-icon {

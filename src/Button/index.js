@@ -6,13 +6,14 @@ import { getElementType } from '../utils'
 import Spinner from '../Spinner'
 import Icon from '../Icon'
 
-const Button = ({ variant, children, disabled, busy, className, icon, as, selected, ...props }) => {
+const Button = ({ variant, children, disabled, multiline, busy, className, icon, as, selected, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
   delete props['as']
   const styles = cx(
     'ola_button',
     { [`is-${variant}`]: variant },
     { 'is-busy': busy },
+    { 'is-multiline': multiline },
     { 'is-disabled': disabled && !busy },
     className
   )
@@ -33,6 +34,7 @@ Button.defaultProps = {
   busy: null,
   className: null,
   disabled: false,
+  multiline: null,
   selected: null,
   icon: null
 }
@@ -57,10 +59,13 @@ Button.propTypes = {
   ]).isRequired,
   /** Whether the button is disabled */
   disabled: PT.bool,
+  /** Whether the button include multiline text */
+  multiline: PT.bool,
   /** Whether the button is selected */
   selected: PT.bool,
   /** Icon name  */
   icon: PT.string
+  
 }
 
 export default Button
