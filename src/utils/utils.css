@@ -1,6 +1,9 @@
-/* Deprecated, use .ola-bg-gray-xlight instead */
 .ola-bg {
     background-color: var(--gray-xlight);
+
+    & > * {
+        --gray-xlight: var(--gray-xlight-dark);
+    }
 }
 
 /* Text sizes */

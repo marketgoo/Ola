@@ -7,3 +7,4 @@ export default {
 }
 
 export const Base = (args) => <Level {...args}/>
+export const Background = (args) => <div className="ola-bg"><Level {...args}/></div>

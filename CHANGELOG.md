@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - New `multiline` property to `Button` to wrap the text in multiple lines instead using ellipsis.
+- Restored `ola-bg` helper that not only apply a `gray-xlight` background to the element, but also override the inner `gray-xlight` variable with the new `gray-xlight-dark` color (a darker value).
 
 ### Fixed
 - Level component `Page` with the new `Level` icon that is wider.

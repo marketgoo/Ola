@@ -10,8 +10,11 @@ export default {
   component: TreeList,
 }
 
-export const Base = (args) => (
-  <TreeList {...args}>
+export const Base = (args) => <Content {...args} />
+export const Background = (args) => <div className="ola-bg"><Content {...args} /></div>
+
+function Content(...args) {
+  return <TreeList {...args}>
     <TreeListOption>
       <a href="">
         <Issue title="This is the title of an issue" />
@@ -68,4 +71,4 @@ export const Base = (args) => (
       </div>
     </TreeListOption>
   </TreeList>
-)
+}
