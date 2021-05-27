@@ -7,8 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Fixed
-- Level component with `size=xbig`.
 - Level component `Page` with the new `Level` icon that is wider.
+
+## [0.12.4] - 2021-05-25
+### Fixed
+- Level component with `size=xbig`.
+- Replaced wrong `clock` svg for `Icon` component.
 
 ## [0.12.2] - 2021-05-25
 ### Changed
@@ -490,7 +494,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.12.2...HEAD
+[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.12.4...HEAD
+[0.12.4]: https://github.com/marketgoo/Ola/compare/v0.12.2...v0.12.4
 [0.12.2]: https://github.com/marketgoo/Ola/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/marketgoo/Ola/compare/v0.12.0...v0.12.1
 [0.12.0]: https://github.com/marketgoo/Ola/compare/v0.11.0...v0.12.0
