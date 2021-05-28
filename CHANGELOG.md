@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.12.5] - 2021-05-28
 ### Added
 - New `multiline` property to `Button` to wrap the text in multiple lines instead using ellipsis.
 - Restored `ola-bg` helper that not only apply a `gray-xlight` background to the element, but also override the inner `gray-xlight` variable with the new `gray-xlight-dark` color (a darker value).
@@ -498,7 +498,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
-[Unreleased]: https://github.com/marketgoo/Ola/compare/v0.12.4...HEAD
+[0.12.5]: https://github.com/marketgoo/Ola/compare/v0.12.4...v0.12.5
 [0.12.4]: https://github.com/marketgoo/Ola/compare/v0.12.2...v0.12.4
 [0.12.2]: https://github.com/marketgoo/Ola/compare/v0.12.1...v0.12.2
 [0.12.1]: https://github.com/marketgoo/Ola/compare/v0.12.0...v0.12.1
