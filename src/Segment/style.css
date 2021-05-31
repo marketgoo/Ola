@@ -9,6 +9,6 @@
   & > .ola_button {
     border: none;
     flex-shrink: 1;
-    height: 100%;
+    min-height: 100%;
   }
 }

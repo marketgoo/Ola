@@ -69,12 +69,12 @@
     & > .ola_buttonIcon {
         margin-right: calc(var(--padding) * -1);
         margin-left: var(--size-3);
-        --color: var(--color);
+        --color: currentColor;
         flex: 0 0 auto;
-        border-radius: 0 calc(var(--radius-small) - 1px) calc(var(--radius-small) - 1px) 0;
         height: 100%;
 
         & .ola_icon {
+            border-radius: 0 calc(var(--radius-small) - 1px) calc(var(--radius-small) - 1px) 0;
             padding-top: 0;
             padding-bottom: 0;
         }
