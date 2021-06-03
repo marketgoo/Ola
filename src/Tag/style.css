@@ -42,6 +42,11 @@
         --background: var(--gray);
     }
 
+    &.is-info {
+      --color: var(--white);
+      --background: var(--brand);
+  }
+
     &.is-pro {
         --color: var(--white);
         --background: var(--pro);
