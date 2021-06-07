@@ -30,7 +30,7 @@
     }
     &.is-done {
       & .ola_issue-status {
-        fill: var(--brand);
+        fill: var(--info);
         transform: rotate(360deg);
         transition-property: fill, transform;
         transition-duration: 800ms;

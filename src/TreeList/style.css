@@ -43,10 +43,10 @@
   display: block;
   color: inherit;
   text-decoration: none;
-  background-image: url('data:image/svg+xml;utf-8,<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z" fill="%2C333E"></path></svg>');
+  background-image: url('data:image/svg+xml;utf-8,<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M26 14L16.708 3.293a1 1 0 00-1.5 1.319L22.5 13H3a1 1 0 00-.117 1.993L22.5 15l-7.207 8.292c-.36.36-.405 1.036-.02 1.408.386.37.946.395 1.339.09L26 14z" fill="%23BBC2CE"></path></svg>');
   background-repeat: no-repeat;
   background-position: right var(--size-4) center;
-  background-size: var(--size-7) var(--size-7);
+  background-size: var(--size-6) var(--size-6);
   padding-right: var(--size-8);
   padding-left: var(--size-3);
   padding-top: var(--size-4);

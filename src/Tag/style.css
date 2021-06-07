@@ -44,7 +44,7 @@
 
     &.is-info {
       --color: var(--white);
-      --background: var(--brand);
+      --background: var(--info);
   }
 
     &.is-pro {
