@@ -27,6 +27,8 @@
     --pro-dark: #811287;
     --pro-focus: #AC18B433;
     --premium: #F1D34B;
+    
+    --info: var(--brand);
 
     --accent: var(--brand);
     --accent-dark: var(--brand-dark);

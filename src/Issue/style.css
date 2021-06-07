@@ -23,6 +23,20 @@
             fill: var(--gray);
         }
     }
+    &.is-pending {
+      & .ola_issue-status {
+          fill: var(--gray-xlight);
+      }
+    }
+    &.is-done {
+      & .ola_issue-status {
+        fill: var(--info);
+        transform: rotate(360deg);
+        transition-property: fill, transform;
+        transition-duration: 800ms;
+        transition-timing-function: ease-in-out;
+      }
+    }
     &.is-small {
         & .ola_issue-title {
             font: var(--font-callout);
@@ -74,7 +88,7 @@
         padding-left: calc(var(--size-2) + var(--size-8) + var(--column-gap-1));
         font: var(--font-body);
     }
-    & .ola_issue-summary {
+    & .ola_issue-summary-content {
       display: flex;
       justify-content: space-between;
     }

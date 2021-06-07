@@ -25,10 +25,12 @@ import Success from './Success'
 import User from './User'
 import Warning from './Warning'
 import NewWindow from './NewWindow'
+import ArrowRight from './ArrowRight'
 
 const ICONS = {
   arrowDown: ArrowDown,
   arrowUp: ArrowUp,
+  arrowRight: ArrowRight,
   chevronDown: ChevronDown,
   chevronUp: ChevronUp,
   chevronLeft: ChevronLeft,

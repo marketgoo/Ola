@@ -12,8 +12,10 @@ const IssueDropDown = ({ title, variant, size, className, status, children, ...p
 
   return <details className={cx('ola_issue-dropdown', `is-${variant}`, `is-${size}`, className)} {...props}>
     <summary className="ola_issue-summary">
-      <Issue title={title} variant={variant} size={size} />
-      <Icon name={'chevronDown'} size={size} />
+      <div className="ola_issue-summary-content">
+        <Issue title={title} variant={variant} size={size} />
+        <Icon name={'chevronDown'} size={size} />
+      </div>
     </summary>
     <div className='ola_issue-content'>
       { children }
@@ -30,7 +32,7 @@ IssueDropDown.defaultProps = {
 
 IssueDropDown.propTypes = {
   /** Issue variants */
-  variant: PT.oneOf(['success', 'error', 'suggested', 'warning']),
+  variant: PT.oneOf(['success', 'error', 'suggested', 'warning', 'pending', 'done']),
   /** Title of header */
   title: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
   /** Size variant */

@@ -8,6 +8,8 @@ const getIssueIcon = (variant) =>
     success: 'success',
     warning: 'warning',
     suggested: 'help',
+    pending: 'success',
+    done: 'success'
   }[variant] || 'error')
 
 const Issue = ({ title, variant, size, status, className, ...props }) => {
@@ -44,7 +46,7 @@ Issue.defaultProps = {
 
 Issue.propTypes = {
   /** Issue variants */
-  variant: PT.oneOf(['success', 'error', 'suggested', 'warning']),
+  variant: PT.oneOf(['success', 'error', 'suggested', 'warning', 'pending', 'done']),
   /** Title of header */
   title: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
   /** Size variant */
