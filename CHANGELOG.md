@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.12.7] - 2021-06-08
+### Added
+- New icon `site`
+
 ## [0.12.6] - 2021-05-31
 ### Fixed
 - The `Button` size in `Segment` component.
@@ -503,6 +507,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
+[0.12.7]: https://github.com/marketgoo/Ola/compare/v0.12.6...v0.12.7
 [0.12.6]: https://github.com/marketgoo/Ola/compare/v0.12.5...v0.12.6
 [0.12.5]: https://github.com/marketgoo/Ola/compare/v0.12.4...v0.12.5
 [0.12.4]: https://github.com/marketgoo/Ola/compare/v0.12.2...v0.12.4
