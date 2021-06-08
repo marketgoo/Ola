@@ -26,6 +26,7 @@ import User from './User'
 import Warning from './Warning'
 import NewWindow from './NewWindow'
 import ArrowRight from './ArrowRight'
+import Site from './Site'
 
 const ICONS = {
   arrowDown: ArrowDown,
@@ -50,7 +51,9 @@ const ICONS = {
   success: Success,
   user: User,
   warning: Warning,
-  newWindow: NewWindow
+  newWindow: NewWindow,
+  site: Site
+
 
 }
 
