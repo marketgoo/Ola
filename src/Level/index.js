@@ -10,12 +10,12 @@ const Level = ({ variant, size }) => {
   )
 
   return (
-    <div className={styles}>
+    <span className={styles}>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-    </div>
+    </span>
   )
 }
 
