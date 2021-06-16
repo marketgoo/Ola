@@ -122,3 +122,11 @@
         margin-top: .5em;
     }
 }
+
+.ola-bg-hover:hover {
+  & .ola_issue.is-pending {
+    & .ola_issue-status{
+      fill: var(--white);
+    }
+  }
+}
