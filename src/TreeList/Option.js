@@ -5,6 +5,7 @@ import cx from 'classnames'
 const TreeListOption = ({ className, variant, children, ...props }) => {
   const styles = cx(
     'ola_treeList-option',
+    'ola-bg-hover',
     { [`is-${variant}`]: variant },
     className
   )

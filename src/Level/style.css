@@ -74,3 +74,7 @@
 .ola-bg .ola_level {
   --background: var(--white);
 }
+
+.ola-bg-hover:hover .ola_icon{
+  fill: var(--white);
+}
