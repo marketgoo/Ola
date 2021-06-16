@@ -77,3 +77,13 @@
   padding-top: var(--size-3);
   padding-bottom: var(--size-3);
 }
+
+.ola_treeList-option {
+  &:hover {
+    & .ola_issue.is-pending {
+      & .ola_icon {
+        fill: var(--white);
+      }
+    }
+  }
+}

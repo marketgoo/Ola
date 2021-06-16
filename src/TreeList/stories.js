@@ -22,7 +22,7 @@ function Content(...args) {
     </TreeListOption>
     <TreeListOption>
       <a href="">
-        <Issue title="This is the title of an issue" />
+        <Issue title="This is the title of an issue type pending" variant="pending" />
       </a>
     </TreeListOption>
     <TreeListOption>
