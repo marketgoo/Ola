@@ -123,7 +123,7 @@
     }
 }
 
-.ola-bg-hover:hover {
+.ola-bg-hover:hover, .ola-bg {
   & .ola_issue.is-pending {
     & .ola_issue-status{
       fill: var(--white);
