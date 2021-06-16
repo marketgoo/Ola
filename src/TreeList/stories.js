@@ -2,6 +2,8 @@ import React from 'react'
 import TreeList from './'
 import Page from '../Page'
 import Icon from '../Icon'
+import Level from '../Level'
+import Tag from '../Tag'
 import TreeListOption from './Option'
 import Issue from '../Issue'
 
@@ -31,7 +33,7 @@ function Content(...args) {
       </a>
     </TreeListOption>
     <TreeListOption>
-      <a href="">Option 4 with link</a>
+      <a href="" className="ola-bg-hover"><Level /> Option 4 with level <Tag>and a tag</Tag></a>
     </TreeListOption>
     <TreeListOption>
       <a href="">Option 5 with link</a>

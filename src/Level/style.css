@@ -70,6 +70,7 @@
   }
 }
 
+.ola-bg-hover:hover .ola_level,
 .ola-bg .ola_level {
   --background: var(--white);
 }
