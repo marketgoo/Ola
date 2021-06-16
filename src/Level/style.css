@@ -75,6 +75,12 @@
   --background: var(--white);
 }
 
-.ola-bg-hover:hover .ola_icon{
-  fill: var(--white);
+
+.ola-bg-hover:hover {
+  & .ola_issue.is-pending {
+    & .ola_issue-status{
+      fill: var(--white);
+    }
+  }
 }
+
