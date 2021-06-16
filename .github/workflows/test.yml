@@ -9,9 +9,8 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 10
-          - 11
           - 12
+          - 14
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
