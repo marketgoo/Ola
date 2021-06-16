@@ -5,6 +5,13 @@
         --gray-xlight: var(--gray-xlight-dark);
     }
 }
+.ola-bg-hover:hover {
+    background-color: var(--gray-xlight);
+
+    & > * {
+        --gray-xlight: var(--gray-xlight-dark);
+    }
+}
 
 /* Text sizes */
 .ola-display {
