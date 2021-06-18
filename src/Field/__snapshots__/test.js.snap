@@ -17,6 +17,33 @@ exports[`Default Field 1`] = `
       className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Field with character counter 1`] = `
+<div
+  className="ola_field is-invalid"
+>
+  <label
+    className="ola_field-label"
+    htmlFor="test"
+  >
+    Test label
+  </label>
+  <div
+    className="ola_field-input"
+  >
+    <input
+      className="ola_input"
+      disabled={false}
+      id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>
@@ -40,6 +67,8 @@ exports[`Field with custom description 1`] = `
       className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>
@@ -67,9 +96,11 @@ exports[`Field with custom description with error 1`] = `
     className="ola_field-input"
   >
     <input
-      className="ola_input is-invalid"
+      className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>
@@ -100,6 +131,8 @@ exports[`Field with description 1`] = `
       className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>
@@ -125,9 +158,11 @@ exports[`Field with error 1`] = `
     className="ola_field-input"
   >
     <input
-      className="ola_input is-invalid"
+      className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>
@@ -147,6 +182,8 @@ exports[`Field with hint 1`] = `
       className="ola_field-hint"
     >
       Test hint
+       
+      <strong />
     </span>
   </label>
   <div
@@ -156,6 +193,8 @@ exports[`Field with hint 1`] = `
       className="ola_input"
       disabled={false}
       id="test"
+      maxLength={null}
+      onChange={[Function]}
       type="text"
     />
   </div>

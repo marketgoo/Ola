@@ -36,11 +36,13 @@
 @import './TaskGroup/style.css';
 @import './Thumbnail/style.css';
 @import './Tooltip/style.css';
+@import './Counter/style.css';
 @import './TreeList/style.css';
 @import './Kpi/style.css';
 @import './ChartColumn/style.css';
 @import './ChartLine/style.css';
 @import './Tabs/style.css';
+
 
 /* Helpers */
 @import './utils/utils.css';
