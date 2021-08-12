@@ -10,6 +10,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New color variable `--gray-xxlight`.
 - Changed color variable `--gray-xlight` to be a bit more darker.
 
+### Changed
+- The element `Page` with long titles show ellipsis.
+
 ## [0.12.9] - 2021-06-16
 ### Added
 - New color variables and renamed some others
