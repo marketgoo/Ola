@@ -20,8 +20,8 @@ exports[`Align center Cell 1`] = `
   className="ola_tableCell is-center"
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 >
@@ -59,8 +59,8 @@ exports[`ColSpan Cell 1`] = `
   colSpan={8}
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 />
@@ -71,8 +71,8 @@ exports[`Default Cell 1`] = `
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 >
@@ -97,8 +97,8 @@ exports[`Empty Cell 1`] = `
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 />
@@ -109,8 +109,8 @@ exports[`Header Cell 1`] = `
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 >
@@ -123,8 +123,8 @@ exports[`Numeric Cell 1`] = `
   className="ola_tableCell is-numeric"
   style={
     Object {
-      "--borderColor": undefined,
-      "--table-background": undefined,
+      "--borderColor": null,
+      "--table-background": null,
     }
   }
 >
@@ -140,8 +140,8 @@ exports[`Table row 1`] = `
     className="ola_tableCell is-check"
     style={
       Object {
-        "--borderColor": undefined,
-        "--table-background": undefined,
+        "--borderColor": null,
+        "--table-background": null,
       }
     }
   >
@@ -161,8 +161,8 @@ exports[`Table row 1`] = `
     className="ola_tableCell is-left"
     style={
       Object {
-        "--borderColor": undefined,
-        "--table-background": undefined,
+        "--borderColor": null,
+        "--table-background": null,
       }
     }
   >

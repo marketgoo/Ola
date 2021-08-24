@@ -49,7 +49,7 @@ export default {
   }
 }
 
-export const Base = (args) => 
+export const Base = (args) =>
   <Table {...args}>
     <thead>
       <TableRow>

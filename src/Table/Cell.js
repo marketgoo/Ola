@@ -13,7 +13,9 @@ const TableCell = ({ header, variant, backgroundColor, borderColor, className, c
 
 TableCell.defaultProps = {
   variant: 'left',
-  header: false
+  header: false,
+  backgroundColor: null,
+  borderColor: null
 }
 
 TableCell.propTypes = {
