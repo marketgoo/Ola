@@ -17,7 +17,13 @@ exports[`Add caption 1`] = `
 
 exports[`Align center Cell 1`] = `
 <td
-  className="ola_tableCell is-center"
+  className="ola_tableCell is-center has-undefined"
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 >
   Test content
 </td>
@@ -49,14 +55,26 @@ exports[`Can be stiky 1`] = `
 
 exports[`ColSpan Cell 1`] = `
 <td
-  className="ola_tableCell is-left"
+  className="ola_tableCell is-left has-undefined"
   colSpan={8}
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 />
 `;
 
 exports[`Default Cell 1`] = `
 <td
-  className="ola_tableCell is-left"
+  className="ola_tableCell is-left has-undefined"
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 >
   Test content
 </td>
@@ -76,13 +94,25 @@ exports[`Default Table 1`] = `
 
 exports[`Empty Cell 1`] = `
 <td
-  className="ola_tableCell is-left"
+  className="ola_tableCell is-left has-undefined"
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 />
 `;
 
 exports[`Header Cell 1`] = `
 <th
-  className="ola_tableCell is-left"
+  className="ola_tableCell is-left has-undefined"
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 >
   Content
 </th>
@@ -90,7 +120,13 @@ exports[`Header Cell 1`] = `
 
 exports[`Numeric Cell 1`] = `
 <td
-  className="ola_tableCell is-numeric"
+  className="ola_tableCell is-numeric has-undefined"
+  style={
+    Object {
+      "--borderColor": undefined,
+      "--table-background": undefined,
+    }
+  }
 >
   8
 </td>
@@ -101,7 +137,13 @@ exports[`Table row 1`] = `
   className="ola_tableRow is-selectable"
 >
   <td
-    className="ola_tableCell is-check"
+    className="ola_tableCell is-check has-undefined"
+    style={
+      Object {
+        "--borderColor": undefined,
+        "--table-background": undefined,
+      }
+    }
   >
     <label
       className="ola_check"
@@ -116,7 +158,13 @@ exports[`Table row 1`] = `
     </label>
   </td>
   <td
-    className="ola_tableCell is-left"
+    className="ola_tableCell is-left has-undefined"
+    style={
+      Object {
+        "--borderColor": undefined,
+        "--table-background": undefined,
+      }
+    }
   >
     First column
   </td>

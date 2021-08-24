@@ -26,6 +26,8 @@
         color: var(--black);
         padding-left: var(--size-4);
         padding-right: var(--size-4);
+        --borderColor: none;
+        border-bottom: var(--borderColor) 5px solid;
 
         & > * {
             vertical-align: middle;
