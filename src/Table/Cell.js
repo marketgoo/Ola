@@ -5,7 +5,7 @@ import cx from 'classnames'
 const TableCell = ({ header, variant, backgroundColor, borderColor, className, children, ...props }) => {
   const Component = header ? 'th' : 'td'
   return (
-    <Component className={cx('ola_tableCell', `is-${variant}`, `has-${backgroundColor}`, className)} style={{ '--table-background': backgroundColor, '--borderColor': borderColor }} {...props}>
+    <Component className={cx('ola_tableCell', `is-${variant}`, className)} style={{ '--table-background': backgroundColor, '--borderColor': borderColor }} {...props}>
       {children}
     </Component>
   )

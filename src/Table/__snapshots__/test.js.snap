@@ -17,7 +17,7 @@ exports[`Add caption 1`] = `
 
 exports[`Align center Cell 1`] = `
 <td
-  className="ola_tableCell is-center has-undefined"
+  className="ola_tableCell is-center"
   style={
     Object {
       "--borderColor": undefined,
@@ -55,7 +55,7 @@ exports[`Can be stiky 1`] = `
 
 exports[`ColSpan Cell 1`] = `
 <td
-  className="ola_tableCell is-left has-undefined"
+  className="ola_tableCell is-left"
   colSpan={8}
   style={
     Object {
@@ -68,7 +68,7 @@ exports[`ColSpan Cell 1`] = `
 
 exports[`Default Cell 1`] = `
 <td
-  className="ola_tableCell is-left has-undefined"
+  className="ola_tableCell is-left"
   style={
     Object {
       "--borderColor": undefined,
@@ -94,7 +94,7 @@ exports[`Default Table 1`] = `
 
 exports[`Empty Cell 1`] = `
 <td
-  className="ola_tableCell is-left has-undefined"
+  className="ola_tableCell is-left"
   style={
     Object {
       "--borderColor": undefined,
@@ -106,7 +106,7 @@ exports[`Empty Cell 1`] = `
 
 exports[`Header Cell 1`] = `
 <th
-  className="ola_tableCell is-left has-undefined"
+  className="ola_tableCell is-left"
   style={
     Object {
       "--borderColor": undefined,
@@ -120,7 +120,7 @@ exports[`Header Cell 1`] = `
 
 exports[`Numeric Cell 1`] = `
 <td
-  className="ola_tableCell is-numeric has-undefined"
+  className="ola_tableCell is-numeric"
   style={
     Object {
       "--borderColor": undefined,
@@ -137,7 +137,7 @@ exports[`Table row 1`] = `
   className="ola_tableRow is-selectable"
 >
   <td
-    className="ola_tableCell is-check has-undefined"
+    className="ola_tableCell is-check"
     style={
       Object {
         "--borderColor": undefined,
@@ -158,7 +158,7 @@ exports[`Table row 1`] = `
     </label>
   </td>
   <td
-    className="ola_tableCell is-left has-undefined"
+    className="ola_tableCell is-left"
     style={
       Object {
         "--borderColor": undefined,
