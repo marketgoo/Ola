@@ -58,3 +58,20 @@ export function getRanges(...rows) {
       rows.map((row) => normalizeRange(row[index], max))
     )
 }
+
+/**
+ * getNumberFormat
+ *
+ * Returns a formatted number.
+ * Useful for numbers depending language notation.
+ * @param {number} Value of current element
+ * @param {format}  value of the language. 
+ * @param {options} NumberFormat method values. 
+ * @returns {number} 
+*/
+
+export const getNumberFormat= (number,
+  language = 'en-US',
+  options = { notation: 'compact',
+    maximumFractionDigits: 2 }
+) => new Intl.NumberFormat(language, options).format(number)
