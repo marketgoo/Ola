@@ -1,0 +1,72 @@
+/**
+ * This is the basic layout for the application.
+ * All pages should include this layout.
+ *
+ * 1. With navbar:
+ * <div class="ly-main has-navbar">
+ *     <nav class="ly-navbar"></nav>
+ *     <main></main>
+ * </div>
+ *
+ * 2. Without navbar:
+ * <div class="ly-main">
+ *     <main></main>
+ * </div>
+ *
+ * 3. Width centered content:
+ * <div class="ly-main">
+ *     <main class="is-center">
+ *         <div>Content</div>
+ *     </main>
+ * </div>
+ */
+.ly-main {
+  --ly-maxWidth: 1036px;
+  --ly-mainColumns: 1fr minmax(300px, var(--ly-maxWidth)) 1fr;
+
+  display: grid;
+  grid-template-columns: var(--ly-mainColumns);
+  grid-auto-rows: 1fr;
+  column-gap: var(--column-gap-3);
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  &.has-navbar {
+    grid-template-rows: var(--size-9);
+  }
+}
+.ly-main > * {
+  grid-column: 2;
+  align-content: start;
+}
+.ly-main > .is-center {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, var(--size-12)) 1fr;
+  grid-row-gap: var(--row-gap-3);
+  align-content: center;
+  padding-top: var(--row-gap-3);
+  padding-bottom: var(--row-gap-3);
+
+  & > * {
+      grid-column-start: 2;
+  }
+}
+.ly-main-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: white;
+  box-shadow: var(--shadow-1);
+}
+
+.ly-main-navbar {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-template-columns: var(--ly-mainColumns);
+  column-gap: var(--column-gap-3);
+
+  & > * {
+    grid-column: 2;
+  }
+}

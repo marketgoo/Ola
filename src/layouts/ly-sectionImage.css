@@ -1,0 +1,39 @@
+/**
+ * Layout to display a section with a image
+ *
+ * 1. Example
+ * <div class="ly-main">
+ *   <main class="ly-sectionImage">
+ *     <header class="ly-sectionImage-header"></header>
+ *     <figure class="ly-sectionImage-image"></figure>
+ *     <div class="ly-sectionImage-content"></div>
+ *   </main>
+ * </div>
+ */
+.ly-sectionImage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--row-gap-3);
+  column-gap: var(--column-gap-3);
+
+  @media (min-width: 700px) {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  }
+}
+.ly-sectionImage-header {
+  align-self: end;
+}
+.ly-sectionImage-image {
+  margin: 0;
+
+  & img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 45vw;
+  }
+}
+.ly-sectionImage-content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}

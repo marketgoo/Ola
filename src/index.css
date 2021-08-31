@@ -54,3 +54,10 @@
 @import './layouts/ly-asideHeader.css';
 @import './layouts/ly-asideMenu.css';
 @import './layouts/ly-list.css';
+
+/* New layouts */
+@import './layouts/ly-highlight.css';
+@import './layouts/ly-main.css';
+@import './layouts/ly-sectionCompact.css';
+@import './layouts/ly-sectionImage.css';
+@import './layouts/ly-sectionSimple.css';

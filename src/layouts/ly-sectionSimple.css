@@ -1,0 +1,19 @@
+/**
+ * Layout to display a simple section
+ *
+ * 1. Example
+ * <div class="ly-main">
+ *   <main class="ly-sectionSimple">
+ *     <header class="ly-sectionSimple-header"></header>
+ *     <div>Content</div>
+ *   </main>
+ * </div>
+ */
+.ly-sectionSimple {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--row-gap-3);
+}
+.ly-sectionSimple-header {
+  max-width: calc(var(--ly-maxWidth) * 0.666);
+}

@@ -1,0 +1,32 @@
+/**
+ * Layout to apply a gray background to a section
+ *
+ * 1. Example:
+ * <div class="ly-main">
+ *   <div class="ly-highlight">
+ *     <div>Content</div>
+ *   </div>
+ * </div>
+ */
+.ly-highlight {
+  padding-top: var(--column-gap-3);
+  padding-bottom: var(--column-gap-3);
+  background-color: var(--gray-xxlight);
+
+  & .ly-highlight {
+    background-color: var(--white);
+    padding: var(--row-gap-2) var(--column-gap-2);
+  }
+}
+
+.ly-main > .ly-highlight {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-template-columns: var(--ly-mainColumns);
+  column-gap: var(--column-gap-3);
+
+  & > * {
+    grid-column: 2;
+  }
+}
