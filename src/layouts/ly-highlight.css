@@ -1,13 +1,26 @@
 /**
- * Layout to apply a gray background to a section
+ * Wrapper to apply a gray background to a section
  *
- * 1. Example:
- * <div class="ly-main">
- *   <div class="ly-highlight">
- *     <div>Content</div>
- *   </div>
- * </div>
+ * 1. Example with a section:
+ *    <div class="ly-main">
+ *      <div class="ly-highlight">
+ *        <div>Content</div>
+ *      </div>
+ *    </div>
+ *
+ * 2. Example with a highlight inside a highlight:
+ *    <div class="ly-main">
+ *      <div class="ly-highlight">
+ *        <div>
+ *          Content
+ *          <div class="ly-highlight">
+ *            Highlighted content
+ *          </div>
+ *        </div>
+ *      </div>
+ *    </div>
  */
+
 .ly-highlight {
   padding-top: var(--column-gap-3);
   padding-bottom: var(--column-gap-3);

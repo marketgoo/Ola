@@ -3,22 +3,22 @@
  * All pages should include this layout.
  *
  * 1. With navbar:
- * <div class="ly-main has-navbar">
- *     <nav class="ly-navbar"></nav>
- *     <main></main>
- * </div>
+ *    <div class="ly-main has-navbar">
+ *      <nav class="ly-navbar"></nav>
+ *      <main></main>
+ *    </div>
  *
  * 2. Without navbar:
- * <div class="ly-main">
- *     <main></main>
- * </div>
+ *    <div class="ly-main">
+ *      <main></main>
+ *    </div>
  *
  * 3. Width centered content:
- * <div class="ly-main">
- *     <main class="is-center">
- *         <div>Content</div>
- *     </main>
- * </div>
+ *    <div class="ly-main">
+ *      <main class="is-center">
+ *        <div>Content</div>
+ *      </main>
+ *    </div>
  */
 .ly-main {
   --ly-maxWidth: 1036px;

@@ -58,6 +58,4 @@
 /* New layouts */
 @import './layouts/ly-highlight.css';
 @import './layouts/ly-main.css';
-@import './layouts/ly-sectionCompact.css';
-@import './layouts/ly-sectionImage.css';
-@import './layouts/ly-sectionSimple.css';
+@import './layouts/ly-section.css';
