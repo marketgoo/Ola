@@ -2,10 +2,13 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const TableCell = ({ header, variant, backgroundColor, borderColor, className, children, ...props }) => {
+const TableCell = ({ header, variant, highlight, className, children, ...props }) => {
+
   const Component = header ? 'th' : 'td'
+  const backgroundColor = highlight ? 'var(--gray-xxlight)' : 'transparent'
+
   return (
-    <Component className={cx('ola_tableCell', `is-${variant}`, className)} style={{ '--table-background': backgroundColor, '--borderColor': borderColor }} {...props}>
+    <Component className={cx('ola_tableCell', `is-${variant}`, className)} style={{ '--table-background': backgroundColor}} {...props}>
       {children}
     </Component>
   )
@@ -15,7 +18,7 @@ TableCell.defaultProps = {
   variant: 'left',
   header: false,
   backgroundColor: null,
-  borderColor: null
+  borderColor: false
 }
 
 TableCell.propTypes = {
@@ -24,9 +27,7 @@ TableCell.propTypes = {
   /** Content type */
   variant: PT.oneOf(['left', 'center', 'right', 'numeric', 'action', 'check', 'multiline']),
   /** Cell with background */
-  backgroundColor: PT.string,
-  /** Cell with borderColor bottom */
-  borderColor: PT.string,
+  highlight: PT.bool,
   /** Whether is a header */
   header: PT.bool,
   /** Childen nodes */
