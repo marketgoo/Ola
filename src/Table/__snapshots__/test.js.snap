@@ -17,11 +17,12 @@ exports[`Add caption 1`] = `
 
 exports[`Align center Cell 1`] = `
 <td
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-center"
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 >
@@ -55,12 +56,13 @@ exports[`Can be stiky 1`] = `
 
 exports[`ColSpan Cell 1`] = `
 <td
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-left"
   colSpan={8}
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 />
@@ -68,11 +70,12 @@ exports[`ColSpan Cell 1`] = `
 
 exports[`Default Cell 1`] = `
 <td
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 >
@@ -94,11 +97,12 @@ exports[`Default Table 1`] = `
 
 exports[`Empty Cell 1`] = `
 <td
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 />
@@ -106,11 +110,12 @@ exports[`Empty Cell 1`] = `
 
 exports[`Header Cell 1`] = `
 <th
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-left"
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 >
@@ -120,11 +125,12 @@ exports[`Header Cell 1`] = `
 
 exports[`Numeric Cell 1`] = `
 <td
+  backgroundColor={null}
+  borderColor={false}
   className="ola_tableCell is-numeric"
   style={
     Object {
-      "--borderColor": null,
-      "--table-background": null,
+      "--table-background": "transparent",
     }
   }
 >
@@ -137,11 +143,12 @@ exports[`Table row 1`] = `
   className="ola_tableRow is-selectable"
 >
   <td
+    backgroundColor={null}
+    borderColor={false}
     className="ola_tableCell is-check"
     style={
       Object {
-        "--borderColor": null,
-        "--table-background": null,
+        "--table-background": "transparent",
       }
     }
   >
@@ -158,11 +165,12 @@ exports[`Table row 1`] = `
     </label>
   </td>
   <td
+    backgroundColor={null}
+    borderColor={false}
     className="ola_tableCell is-left"
     style={
       Object {
-        "--borderColor": null,
-        "--table-background": null,
+        "--table-background": "transparent",
       }
     }
   >
