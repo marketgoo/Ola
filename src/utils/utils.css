@@ -1,15 +1,15 @@
 .ola-bg {
-    background-color: var(--gray-xlight);
+    background-color: var(--gray-xxlight);
 
     & > * {
-        --gray-xlight: var(--gray-xlight-dark);
+        --gray-xxlight: var(--gray-xlight);
     }
 }
 .ola-bg-hover:hover {
-    background-color: var(--gray-xlight);
+    background-color: var(--gray-xxlight);
 
     & > * {
-        --gray-xlight: var(--gray-xlight-dark);
+        --gray-xxlight: var(--gray-xlight);
     }
 }
 
@@ -80,6 +80,9 @@ strong {
 .ola-gray-xlight {
     color: var(--gray-xlight);
 }
+.ola-gray-xxlight {
+    color: var(--gray-xxlight);
+}
 .ola-error {
     color: var(--error);
 }
@@ -118,6 +121,9 @@ strong {
 }
 .ola-bg-gray-xlight {
     background-color: var(--gray-xlight);
+}
+.ola-bg-gray-xxlight {
+    background-color: var(--gray-xxlight);
 }
 .ola-bg-error {
     background-color: var(--error);
