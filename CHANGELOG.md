@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.13.0] - 2021-09-02
+### Added
+- New color variable `--gray-xxlight`.
+- Changed color variable `--gray-xlight` to be a bit more darker.
+- Number formatting helper called getNumberFormat.
+- Format prop into ChartLineAxis to return value number.
+
+### Changed
+- The element `Page` with long titles show ellipsis.
+
 ## [0.12.9] - 2021-06-16
 ### Added
 - New color variables and renamed some others
@@ -518,6 +528,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
+[0.13.0]: https://github.com/marketgoo/Ola/compare/v0.12.9...v0.13.0
 [0.12.9]: https://github.com/marketgoo/Ola/compare/v0.12.8...v0.12.9
 [0.12.8]: https://github.com/marketgoo/Ola/compare/v0.12.7...v0.12.8
 [0.12.7]: https://github.com/marketgoo/Ola/compare/v0.12.6...v0.12.7
