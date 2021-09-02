@@ -1,0 +1,22 @@
+/* Common pattern of a content centered in the page */
+
+.ola_ly-pageCenter {
+    display: grid;
+    grid-template-columns: var(--column-gap-2) 1fr minmax(0, var(--size-12)) 1fr var(--column-gap-2);
+    grid-row-gap: var(--row-gap-3);
+    min-height: 100%;
+    box-sizing: border-box;
+    align-content: center;
+
+    & > * {
+        grid-column: 3 / span 1;
+        box-sizing: border-box;
+    }
+
+    & > *.is-fullwidth {
+        grid-column: 2 / -2;
+        max-width: max-content;
+        width: 100%;
+        justify-self: center;
+    }
+}
