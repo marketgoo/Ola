@@ -70,8 +70,9 @@ export function getRanges(...rows) {
  * @returns {number} 
 */
 
-export const getNumberFormat= (number,
+export function getNumberFormat(number,
   language = 'en-US',
   options = { notation: 'compact',
-    maximumFractionDigits: 2 }
-) => new Intl.NumberFormat(language, options).format(number)
+    maximumFractionDigits: 2 }) {
+  return new Intl.NumberFormat(language, options).format(number)
+}
