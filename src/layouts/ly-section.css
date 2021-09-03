@@ -1,0 +1,73 @@
+/**
+ * Layout to display a section
+ *
+ * 1. Simple section
+ *    <section class="ly-section">
+ *      <header class="ly-section-header"></header>
+ *      <div class="ly-section-content">Content</div>
+ *    </section>
+ *
+ * 2. With image
+ *    <section class="ly-section has-image">
+ *      <header class="ly-section-header"></header>
+ *      <figure class="ly-section-image"></figure>
+ *      <div class="ly-section-content"></div>
+ *    </section>
+ *
+ * 3. Compact mode
+ *    <section class="ly-section is-compact">
+ *      <header class="ly-section-header"></header>
+ *      <div class="ly-section-content"></div>
+ *    </section>
+ */
+
+.ly-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--row-gap-3);
+  column-gap: var(--column-gap-3);
+
+  &.has-image {
+    @media (min-width: 700px) {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    }
+
+    & .ly-section-header {
+      align-self: end;
+    }
+  }
+
+  &.is-compact {
+    @media (min-width: 900px) {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+
+      & .ly-section-content {
+        grid-column-start: 2;
+      }
+    }
+
+    & .ly-section-header {
+      max-width: calc(var(--ly-maxWidth) * 0.5);
+    }
+  }
+}
+
+.ly-section-header {
+  max-width: calc(var(--ly-maxWidth) * 0.666);
+}
+
+.ly-section-image {
+  margin: 0;
+
+  & img {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 45vw;
+  }
+}
+
+.ly-section-content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
