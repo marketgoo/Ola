@@ -21,7 +21,7 @@
  *    </section>
  */
 
-.ly-section {
+.ola_ly-section {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   row-gap: var(--row-gap-3);
@@ -32,7 +32,7 @@
       grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
     }
 
-    & .ly-section-header {
+    & .ola_ly-section-header {
       align-self: end;
     }
   }
@@ -41,22 +41,22 @@
     @media (min-width: 900px) {
       grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 
-      & .ly-section-content {
+      & .ola_ly-section-content {
         grid-column-start: 2;
       }
     }
 
-    & .ly-section-header {
+    & .ola_ly-section-header {
       max-width: calc(var(--ly-maxWidth) * 0.5);
     }
   }
 }
 
-.ly-section-header {
+.ola_ly-section-header {
   max-width: calc(var(--ly-maxWidth) * 0.666);
 }
 
-.ly-section-image {
+.ola_ly-section-image {
   margin: 0;
 
   & img {
@@ -67,7 +67,7 @@
   }
 }
 
-.ly-section-content {
+.ola_ly-section-content {
   grid-column-start: 1;
   grid-column-end: -1;
 }
