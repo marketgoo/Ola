@@ -21,7 +21,7 @@
  *    </div>
  */
 
-.ly-highlight {
+.ola_ly-highlight {
   padding-top: var(--column-gap-3);
   padding-bottom: var(--column-gap-3);
   background-color: var(--gray-xxlight);
@@ -32,7 +32,7 @@
   }
 }
 
-.ly-main > .ly-highlight {
+.ola_ly-main > .ola_ly-highlight {
   display: grid;
   grid-column-start: 1;
   grid-column-end: -1;

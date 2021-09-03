@@ -20,7 +20,7 @@
  *      </main>
  *    </div>
  */
-.ly-main {
+.ola_ly-main {
   --ly-maxWidth: 1036px;
   --ly-mainColumns: 1fr minmax(300px, var(--ly-maxWidth)) 1fr;
 
@@ -35,11 +35,11 @@
     grid-template-rows: var(--size-9);
   }
 }
-.ly-main > * {
+.ola_ly-main > * {
   grid-column: 2;
   align-content: start;
 }
-.ly-main > .is-center {
+.ola_ly-main > .is-center {
   display: grid;
   grid-template-columns: 1fr minmax(0, var(--size-12)) 1fr;
   grid-row-gap: var(--row-gap-3);
@@ -51,7 +51,7 @@
       grid-column-start: 2;
   }
 }
-.ly-main-navbar {
+.ola_ly-main-navbar {
   position: sticky;
   top: 0;
   z-index: 2;
@@ -59,7 +59,7 @@
   box-shadow: var(--shadow-1);
 }
 
-.ly-main-navbar {
+.ola_ly-main-navbar {
   display: grid;
   grid-column-start: 1;
   grid-column-end: -1;
