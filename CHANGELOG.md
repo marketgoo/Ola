@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.31.1] - 2021-09-03
+
+## [0.13.1] - 2021-09-03
+### Added
+- New standar layouts: ly-hightlight,ly-main, ly-section
+
+### Changed
+- Refactor getNumberFormat function.
+
 ## [0.13.0] - 2021-09-02
 ### Added
 - New color variable `--gray-xxlight`.
@@ -528,6 +537,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
+[0.31.1]: https://github.com/marketgoo/Ola/compare/v0.13.1...v0.31.1
+[0.13.1]: https://github.com/marketgoo/Ola/compare/v0.13.0...v0.13.1
 [0.13.0]: https://github.com/marketgoo/Ola/compare/v0.12.9...v0.13.0
 [0.12.9]: https://github.com/marketgoo/Ola/compare/v0.12.8...v0.12.9
 [0.12.8]: https://github.com/marketgoo/Ola/compare/v0.12.7...v0.12.8
