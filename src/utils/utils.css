@@ -1,9 +1,12 @@
 .ola-bg {
-    background-color: var(--gray-xxlight);
+    background-color: var(--gray-xxlight) !important; /* Ensures that it is always applied, regardless of the styles that exist. */
 
     & > * {
         --gray-xxlight: var(--gray-xlight);
     }
+}
+td.ola-bg {
+    background-color: var(--gray-xxlight);
 }
 .ola-bg-hover:hover {
     background-color: var(--gray-xxlight);
@@ -208,7 +211,7 @@ strong {
 /* Skeletor */
 .ola-skeleton {
     overflow: hidden;
-    
+
     & > :empty::before {
         content: "\00a0";
         display: block;
