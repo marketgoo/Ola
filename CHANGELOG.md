@@ -5,6 +5,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.13.3] - 2021-09-06
+### Changed
+- Add importat into ola-bg class to ensures that it is always applied.
+- Export getNumberFormat function into index.js.
+
 ## [0.13.2] - 2021-09-03
 ### Changed
 - Prefix new layouts with `ola_ly`.
@@ -540,6 +545,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
 
+[0.13.3]: https://github.com/marketgoo/Ola/compare/v0.13.2...v0.13.3
 [0.13.2]: https://github.com/marketgoo/Ola/compare/v0.13.1...v0.13.2
 [0.13.1]: https://github.com/marketgoo/Ola/compare/v0.13.0...v0.13.1
 [0.13.0]: https://github.com/marketgoo/Ola/compare/v0.12.9...v0.13.0
