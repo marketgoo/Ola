@@ -61,4 +61,4 @@ export { default as Tabs } from './Tabs'
 export { default as Tab } from './Tabs/Content'
 
 // Utils
-export { normalizeRange, getRanges } from './utils'
+export { normalizeRange, getRanges, getNumberFormat } from './utils'
