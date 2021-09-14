@@ -41,6 +41,7 @@
 @import './ChartColumn/style.css';
 @import './ChartLine/style.css';
 @import './Tabs/style.css';
+@import './Carousel/style.css';
 
 /* Helpers */
 @import './utils/utils.css';

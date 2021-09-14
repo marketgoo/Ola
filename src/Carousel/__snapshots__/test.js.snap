@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Carousel 1`] = `
+<div
+  className="ola_carousel"
+>
+  <div
+    className="ola_carousel-container"
+  >
+    <button
+      className="ola_buttonIcon is-secondary is-disabled"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <svg
+        className="ola_icon is-big"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M12.414 14l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L12.414 14z"
+        />
+      </svg>
+    </button>
+    <p>
+      item 1
+    </p>
+    <button
+      className="ola_buttonIcon is-primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        className="ola_icon is-big"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    className="ola_carousel-dots"
+  >
+    <div
+      className="ola_carousel-dots-item selected"
+      onClick={[Function]}
+    />
+    <div
+      className="ola_carousel-dots-item"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Extra class Carousel 1`] = `
+<div
+  className="ola_carousel ola-margin-top-2"
+>
+  <div
+    className="ola_carousel-container"
+  >
+    <button
+      className="ola_buttonIcon is-secondary is-disabled"
+      disabled={true}
+      onClick={[Function]}
+    >
+      <svg
+        className="ola_icon is-big"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M12.414 14l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L12.414 14z"
+        />
+      </svg>
+    </button>
+    <p>
+      item 1
+    </p>
+    <button
+      className="ola_buttonIcon is-primary"
+      disabled={false}
+      onClick={[Function]}
+    >
+      <svg
+        className="ola_icon is-big"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </button>
+  </div>
+  <div
+    className="ola_carousel-dots"
+  >
+    <div
+      className="ola_carousel-dots-item selected"
+      onClick={[Function]}
+    />
+    <div
+      className="ola_carousel-dots-item"
+      onClick={[Function]}
+    />
+  </div>
+</div>
+`;
