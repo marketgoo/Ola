@@ -27,8 +27,10 @@ import Warning from './Warning'
 import NewWindow from './NewWindow'
 import ArrowRight from './ArrowRight'
 import Site from './Site'
+import Add from './Add'
 
 const ICONS = {
+  add: Add,
   arrowDown: ArrowDown,
   arrowUp: ArrowUp,
   arrowRight: ArrowRight,
