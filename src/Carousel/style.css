@@ -31,6 +31,6 @@
   cursor: pointer;
 }
 
-.ola_carousel-dots-item.selected {
+.ola_carousel-dots-item.is-selected {
   background: var(--gray);
 }

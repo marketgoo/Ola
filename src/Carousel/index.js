@@ -28,7 +28,6 @@ const Carousel = ({ children, className }) => {
         <ButtonIcon
           onClick={() => moveNext(-1)}
           disabled={!canMoveLeft}
-          variant={canMoveLeft ? 'primary' : 'secondary'}
         >
           <Icon name="chevronLeft" size="big" />
         </ButtonIcon>
@@ -40,7 +39,6 @@ const Carousel = ({ children, className }) => {
         <ButtonIcon
           onClick={() => moveNext()}
           disabled={!canMoveRight}
-          variant={canMoveRight ? 'primary' : 'secondary'}
         >
           <Icon name="chevronRight" size="big" />
         </ButtonIcon>
@@ -50,7 +48,7 @@ const Carousel = ({ children, className }) => {
           <div
             key={i}
             onClick={() => setItemSelected(i)}
-            className={cx('ola_carousel-dots-item', i === itemSelected && 'selected')} />
+            className={cx('ola_carousel-dots-item', i === itemSelected && 'is-selected')} />
         ))}
       </div>
     </div>
