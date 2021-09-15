@@ -1,0 +1,36 @@
+.ola_carousel {
+  background: var(--white);
+  border-radius: var(--radius-big);
+  padding-top: var(--size-7);
+  padding-bottom: var(--size-7);
+  padding-left: var(--size-5);
+  padding-right: var(--size-5);
+}
+
+.ola_carousel-container {
+  display: grid;
+  align-items: center;
+  column-gap: var(--column-gap-1);
+  grid-template-columns: auto 1fr auto;
+}
+
+.ola_carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--row-gap-2);
+}
+
+.ola_carousel-dots-item {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  margin-left: var(--size-2);
+  margin-right: var(--size-2);
+  background: var(--gray-light);
+  cursor: pointer;
+}
+
+.ola_carousel-dots-item.is-selected {
+  background: var(--gray);
+}

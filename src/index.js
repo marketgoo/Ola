@@ -59,6 +59,7 @@ export { default as TreeList } from './TreeList'
 export { default as TreeListOption } from './TreeList/Option'
 export { default as Tabs } from './Tabs'
 export { default as Tab } from './Tabs/Content'
+export { default as Carousel } from './Carousel'
 
 // Utils
 export { normalizeRange, getRanges, getNumberFormat } from './utils'
