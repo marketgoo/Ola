@@ -53,3 +53,14 @@
     font-weight: var(--bold);
     margin: 0;
 }
+.ola_section_action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--column-gap-2);
+  @media (--to-width-1) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: var(--row-gap-2);
+  }
+}

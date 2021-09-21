@@ -8,7 +8,7 @@ exports[`Default Carousel 1`] = `
     className="ola_carousel-container"
   >
     <button
-      className="ola_buttonIcon is-secondary is-disabled"
+      className="ola_buttonIcon is-primary is-disabled"
       disabled={true}
       onClick={[Function]}
     >
@@ -49,7 +49,7 @@ exports[`Default Carousel 1`] = `
     className="ola_carousel-dots"
   >
     <div
-      className="ola_carousel-dots-item selected"
+      className="ola_carousel-dots-item is-selected"
       onClick={[Function]}
     />
     <div
@@ -68,7 +68,7 @@ exports[`Extra class Carousel 1`] = `
     className="ola_carousel-container"
   >
     <button
-      className="ola_buttonIcon is-secondary is-disabled"
+      className="ola_buttonIcon is-primary is-disabled"
       disabled={true}
       onClick={[Function]}
     >
@@ -109,7 +109,7 @@ exports[`Extra class Carousel 1`] = `
     className="ola_carousel-dots"
   >
     <div
-      className="ola_carousel-dots-item selected"
+      className="ola_carousel-dots-item is-selected"
       onClick={[Function]}
     />
     <div
