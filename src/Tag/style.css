@@ -37,6 +37,31 @@
         --background: var(--warning);
     }
 
+    &.is-chart-0 {
+        --color: var(--white);
+        --background: var(--chart-0);
+    }
+
+    &.is-chart-1 {
+        --color: var(--white);
+        --background: var(--chart-1);
+    }
+
+    &.is-chart-2 {
+        --color: var(--white);
+        --background: var(--chart-2);
+    }
+
+    &.is-chart-3 {
+        --color: var(--white);
+        --background: var(--chart-3);
+    }
+
+    &.is-chart-4 {
+        --color: var(--white);
+        --background: var(--chart-4);
+    }
+
     &.is-invert {
         --color: var(--white);
         --background: var(--gray);

@@ -16,7 +16,7 @@ Tag.defaultProps = {
 
 Tag.propTypes = {
   /** Tag variants */
-  variant: PT.oneOf(['invert', 'error', 'pro', 'success', 'warning', 'info']),
+  variant: PT.oneOf(['invert', 'error', 'pro', 'success', 'warning', 'info', 'chart-0', 'chart-1', 'chart-2', 'chart-3', 'chart-4']),
   /** Tag sizes */
   size: PT.oneOf(['small', 'medium', 'big']),
   /** Extra className */
