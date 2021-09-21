@@ -37,11 +37,15 @@
         border-top: solid 1px var(--gray-xlight);
     }
 
+    & tbody > tr:first-child td {
+      border-top: none;
+    }
+
     & thead + tbody > tr:first-child td {
         border-top: solid 1px var(--gray-light);
     }
 
-    & thead + tbody > tr:last-child td {
+    & tbody > tr:last-child td {
       border-bottom: solid 1px var(--gray-xlight);
     }
 
