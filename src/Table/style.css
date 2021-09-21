@@ -41,6 +41,10 @@
         border-top: solid 1px var(--gray-light);
     }
 
+    & thead + tbody > tr:last-child td {
+      border-bottom: solid 1px var(--gray-xlight);
+    }
+
     & caption {
         font: var(--font-caption);
         caption-side: bottom;
