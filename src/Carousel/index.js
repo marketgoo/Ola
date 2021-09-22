@@ -15,10 +15,8 @@ const Carousel = ({ children, className }) => {
   const canMoveLeft = itemSelected > 0
 
   if (!children.length) return (
-    <div className={cx('ola_carousel', className)}>
-      <div className="ola_carousel-container">
-        {children}
-      </div>
+    <div className={cx('ola_carousel is-alone', className)}>
+      {children}
     </div>
   )
 

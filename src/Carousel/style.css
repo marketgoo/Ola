@@ -5,6 +5,11 @@
   padding-bottom: var(--size-7);
   padding-left: var(--size-5);
   padding-right: var(--size-5);
+
+  &.is-alone {
+    padding-left: var(--size-8);
+    padding-right: var(--size-8);
+  }
 }
 
 .ola_carousel-container {
