@@ -5,7 +5,6 @@
     display: flex;
     position: relative;
     text-align: center;
-    align-items: flex-end;
     z-index: 1;
     min-height: calc(var(--height) + 10px);
 
@@ -46,12 +45,19 @@
     stroke-width: 4px;
 }
 
-.ola_chartLine-label {
+.ola_chartLine-value {
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
     font: var(--font-callout);
-    padding-bottom: calc((var(--height) * var(--value)) + var(--size-6));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: solid 1px var(--gray-xlight);
+}
+.ola_chartLine-space {
+    height: calc((var(--height) * var(--value)) + var(--size-6));
+    flex-shrink: 0;
 }
 .ola_chartLine-point {
     border: solid 4px var(--color);
@@ -64,7 +70,12 @@
     position: absolute;
     left: 50%;
     margin-left: -8px;
-    bottom: calc((var(--height) * var(--value)) - 3px);
+    bottom: calc((var(--height) * var(--value)) - 4px);
+}
+.ola_chartLine-footer {
+    height: 0;
+    position: relative;
+    top: var(--size-3);
 }
 .ola_chartLine-rule {
     position: absolute;

@@ -9,18 +9,22 @@ const mockData = [
   {
     value: 50,
     label: '50 keywords',
+    footer: 'January',
   },
   {
     value: 20,
     label: '20 keywords',
+    footer: 'February',
   },
   {
     value: 0,
     label: '0 keywords',
+    footer: 'March',
   },
   {
     value: 100,
     label: '100 keywords',
+    footer: 'April',
   }
 ]
 
@@ -63,7 +67,7 @@ export const Base = (args) => {
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       { args.data.map((row, idx) => 
-        <ChartLineLabel key={idx} value={ranges[idx]}>
+        <ChartLineLabel key={idx} value={ranges[idx]} footer={row.footer}>
           {row.label}
         </ChartLineLabel>
       )}
