@@ -172,6 +172,9 @@ strong {
 .ola-margin-top-3 {
     margin-top: var(--row-gap-3);
 }
+.ola-margin-top-4 {
+    margin-top: var(--row-gap-4);
+}
 .ola-margin-bottom-1 {
     margin-bottom: var(--row-gap-1);
 }
@@ -180,6 +183,9 @@ strong {
 }
 .ola-margin-bottom-3 {
     margin-bottom: var(--row-gap-3);
+}
+.ola-margin-bottom-4 {
+    margin-bottom: var(--row-gap-4);
 }
 .ola-margin-left-1 {
     margin-left: var(--column-gap-1);
