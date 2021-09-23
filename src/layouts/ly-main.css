@@ -26,7 +26,6 @@
 
   display: grid;
   grid-template-columns: var(--ly-mainColumns);
-  grid-auto-rows: 1fr;
   column-gap: var(--column-gap-3);
   min-height: 100vh;
   box-sizing: border-box;
