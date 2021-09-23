@@ -11,6 +11,7 @@ const Tooltip = ({
   onOpen,
   trigger,
   variant,
+  open
 }) => {
   const [position, setPosition] = useState(null)
   const tooltipRef = useRef(null)
@@ -46,6 +47,7 @@ const Tooltip = ({
       className={cx('ola_tooltip', className, { [`is-${variant}`]: variant })}
       onToggle={toggle}
       ref={tooltipRef}
+      open={open}
     >
       <summary className="ola_tooltip-trigger">{trigger}</summary>
       <div className={cx('ola_tooltip-content', position && `is-${position}`)}>
@@ -61,13 +63,14 @@ Tooltip.defaultProps = {
   hover: false,
   onOpen: () => false,
   onClose: () => false,
+  open: false
 }
 
 Tooltip.propTypes = {
   /** Tooltip variants */
   variant: PT.oneOf(['wide', 'narrow']),
   /** Trigger nodes */
-  trigger: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
+  trigger: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
   /** Hover property */
   hover: PT.bool,
   /** Close event */
@@ -78,6 +81,8 @@ Tooltip.propTypes = {
   children: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
   /** Extra className */
   className: PT.string,
+  //** prop to open or close the tooltip */
+  open: PT.bool
 }
 
 export default Tooltip

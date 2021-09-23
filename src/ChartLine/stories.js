@@ -30,18 +30,18 @@ const mockData = [
 
 const mockData2 = [
   {
-    value: null,
+    value: 25,
   },
   {
-    value: 10,
+    value: 35,
     label: '10 sites',
   },
   {
-    value: 0,
+    value: 55,
     label: '0 sites',
   },
   {
-    value: null,
+    value: 80,
     label: 'no sites',
   }
 ]
@@ -118,6 +118,22 @@ export const MultipleWithRuleAndAxis = (args) => {
         <ChartLineLabel key={idx} value={ranges[idx]} colors={args.colors}>
           {row.label} <br/> from {mockData2[idx].label}
         </ChartLineLabel>
+      )}
+    </ChartLine>
+  )
+}
+
+export const WithTooltip = (args) => {
+  const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
+  return (
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
+      { args.data.map((row, idx) => 
+        <ChartLineLabel 
+          key={idx} 
+          value={ranges[idx]} 
+          colors={args.colors} 
+          footer={row.footer} 
+          tooltip={<span>{`Visits ${args.data[idx].value}`}</span>} />
       )}
     </ChartLine>
   )
