@@ -11,6 +11,7 @@ const Tooltip = ({
   onOpen,
   trigger,
   variant,
+  force,
   open
 }) => {
   const [position, setPosition] = useState(null)
@@ -34,7 +35,7 @@ const Tooltip = ({
 
   const toggle = () => {
     if (tooltipRef.current.open) {
-      setPosition(getClassPosition(tooltipRef.current))
+      setPosition(getClassPosition(tooltipRef.current, force))
       onOpen()
     } else {
       setPosition(null)
@@ -63,6 +64,7 @@ Tooltip.defaultProps = {
   hover: false,
   onOpen: () => false,
   onClose: () => false,
+  force: [],
   open: false
 }
 
@@ -79,6 +81,8 @@ Tooltip.propTypes = {
   onOpen: PT.func,
   /** Childen nodes */
   children: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
+  /** Force any of this position */
+  force: PT.arrayOf(PT.string),
   /** Extra className */
   className: PT.string,
   //** prop to open or close the tooltip */
@@ -101,7 +105,7 @@ function getNotOverflowVisibleParent(element) {
       : element
 }
 
-function getClassPosition(element) {
+function getClassPosition(element, force = []) {
   const {
     top,
     left,
@@ -114,14 +118,30 @@ function getClassPosition(element) {
   const el_left = left + width / 2
   const el_top = top + height / 2
   const extraMargin = 40
+console.log({force});
+  let heightPosition = '', widthPosition = '';
 
-  const heightPosition = parentHeight * 0.5 < el_top ? 'top' : 'bottom'
-  const widthPosition =
-    parentWidth * 0.33 > el_left
-      ? 'right'
-      : parentWidth * 0.66 > el_left
-        ? 'center'
-        : 'left'
+  if (force.includes('top')) {
+    heightPosition = 'top'
+  } else if (force.includes('bottom')) {
+    heightPosition = 'bottom'
+  } else {
+    heightPosition = parentHeight * 0.5 < el_top ? 'top' : 'bottom';
+  }
+
+  if (force.includes('left')) {
+    widthPosition = 'left'
+  } else if (force.includes('right')) {
+    widthPosition = 'right'
+  } else {
+    widthPosition =
+      parentWidth * 0.33 > el_left
+        ? 'right'
+        : parentWidth * 0.66 > el_left
+          ? 'center'
+          : 'left'
+  }
+
   const extraPosition =
     left < extraMargin || left + width > parentWidth - extraMargin
       ? '-extra'

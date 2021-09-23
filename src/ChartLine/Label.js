@@ -16,11 +16,11 @@ const ChartLineLabel = ({ ID, value, footer, children, className, colors, toolti
   return (
     <div className={styles} style={{ '--value': Math.max(...value) }} onMouseEnter={tooltip && onEnter} onMouseLeave={tooltip && onLeave}>
       <div className="ols_chartLine-label">
-        { children }
-        {tooltip &&  
-          <Tooltip open={showTooltip}>
-            {tooltip}
-          </Tooltip>
+        {tooltip  
+          ? <Tooltip open={showTooltip} trigger={children} force={["top"]}>
+              {tooltip}
+            </Tooltip>
+          : children
         }
       </div>
       { values.reverse().map((v, i) => v.value === null ? null : <span key={i} className="ola_chartLine-point" style={{ '--value': v.value, '--color': v.color }}></span>)}
