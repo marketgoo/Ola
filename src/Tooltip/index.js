@@ -118,15 +118,14 @@ function getClassPosition(element, force = []) {
   const el_left = left + width / 2
   const el_top = top + height / 2
   const extraMargin = 40
-console.log({force});
-  let heightPosition = '', widthPosition = '';
+  let heightPosition = '', widthPosition = ''
 
   if (force.includes('top')) {
     heightPosition = 'top'
   } else if (force.includes('bottom')) {
     heightPosition = 'bottom'
   } else {
-    heightPosition = parentHeight * 0.5 < el_top ? 'top' : 'bottom';
+    heightPosition = parentHeight * 0.5 < el_top ? 'top' : 'bottom'
   }
 
   if (force.includes('left')) {

@@ -124,6 +124,22 @@ export const MultipleWithRuleAndAxis = (args) => {
 }
 
 export const WithTooltip = (args) => {
+  const ranges = getRanges(args.data.map( data => data.value ))
+  return (
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
+      { args.data.map((row, idx) => 
+        <ChartLineLabel 
+          key={idx} 
+          value={ranges[idx]} 
+          colors={args.colors} 
+          footer={row.footer} 
+          tooltip={<span>{`Visits ${args.data[idx].value}`}</span>} />
+      )}
+    </ChartLine>
+  )
+}
+
+export const WithTooltipMultiple = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>

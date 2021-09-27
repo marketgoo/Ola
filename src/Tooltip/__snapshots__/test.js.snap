@@ -4,6 +4,7 @@ exports[`Default Tooltip 1`] = `
 <details
   className="ola_tooltip"
   onToggle={[Function]}
+  open={false}
 >
   <summary
     className="ola_tooltip-trigger"
@@ -22,6 +23,7 @@ exports[`Tooltip with nodes 1`] = `
 <details
   className="ola_tooltip"
   onToggle={[Function]}
+  open={false}
 >
   <summary
     className="ola_tooltip-trigger"

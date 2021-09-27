@@ -3,9 +3,9 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import Tooltip from '../Tooltip'
 
-const ChartLineLabel = ({ ID, value, footer, children, className, colors, tooltip }) => {
+const ChartLineLabel = ({ value, footer, children, className, colors, tooltip }) => {
   const [showTooltip, setShowTooltip] = useState()
-  const styles = cx('ola_chartLine-value', className)
+  const styles = cx('ola_chartLine-value', className, { 'has-tooltip': tooltip })
   const values = value.map((v, i) => {
     return {value: v, color: colors[i]}
   })
@@ -17,9 +17,9 @@ const ChartLineLabel = ({ ID, value, footer, children, className, colors, toolti
     <div className={styles} style={{ '--value': Math.max(...value) }} onMouseEnter={tooltip && onEnter} onMouseLeave={tooltip && onLeave}>
       <div className="ols_chartLine-label">
         {tooltip  
-          ? <Tooltip open={showTooltip} trigger={children} force={["top"]}>
-              {tooltip}
-            </Tooltip>
+          ? <Tooltip open={showTooltip} trigger={children} force={['top']}>
+            {tooltip}
+          </Tooltip>
           : children
         }
       </div>

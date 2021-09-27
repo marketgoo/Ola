@@ -20,10 +20,11 @@
         }
     }
 
-    &.is-multiple {
-        & .ola_chartLine-svg-background {
-            fill: none;
-        }
+    &.is-multiple .ola_chartLine-value.has-tooltip:hover {
+        background-image: linear-gradient(var(--vertical-line-color), var(--vertical-line-color));
+        background-position: center bottom;
+        background-size: 2px calc((var(--height) * var(--value)) + var(--size-6));
+        background-repeat: no-repeat;
     }
 }
 
@@ -46,6 +47,7 @@
 }
 
 .ola_chartLine-value {
+    --vertical-line-color: var(--gray-xlight);
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
