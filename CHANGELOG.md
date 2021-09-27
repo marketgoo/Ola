@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.14.0] - Unreleased
+## [0.14.0] - 2021-09-27
 ### Added
 - Updated CSS variables for colors.
 - New `Carousel` component [#220].
@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - Removed gray gradient
   - Added footers
 - Property `progress` to Button.
+- Property `action` to `SectionHeader` [#224].
 
 ### Changed
 - `Button` colors to match the latest changes in Ola.
@@ -572,9 +573,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#220]: https://github.com/marketgoo/Ola/issues/220
 [#221]: https://github.com/marketgoo/Ola/issues/221
 [#222]: https://github.com/marketgoo/Ola/issues/222
+[#224]: https://github.com/marketgoo/Ola/issues/224
 [#225]: https://github.com/marketgoo/Ola/issues/225
 
-[0.14.0]: https://github.com/marketgoo/Ola/compare/v0.13.4...HEAD
+[0.14.0]: https://github.com/marketgoo/Ola/compare/v0.13.4...v0.14.0
 [0.13.4]: https://github.com/marketgoo/Ola/compare/v0.13.3...v0.13.4
 [0.13.3]: https://github.com/marketgoo/Ola/compare/v0.13.2...v0.13.3
 [0.13.2]: https://github.com/marketgoo/Ola/compare/v0.13.1...v0.13.2
