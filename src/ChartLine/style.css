@@ -5,7 +5,6 @@
     display: flex;
     position: relative;
     text-align: center;
-    align-items: flex-end;
     z-index: 1;
     min-height: calc(var(--height) + 10px);
 
@@ -16,19 +15,16 @@
             visibility: hidden;
         }
         &.is-loading .ola_chartLine-svg {
-            background: linear-gradient(to right, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 60%), linear-gradient(to bottom, var(--gray-xlight), var(--gray-xlight) 66%, var(--white));
             background-size: 800px 100%;
             animation: loadingSkeleton 2s linear infinite;
         }
     }
 
-    &.is-multiple {
-        & .ola_chartLine-svg-background {
-            fill: none;
-        }
-        & .ola_chartLine-svg {
-            background: linear-gradient(to top, var(--gray-xlight) 33%, var(--white));
-        }
+    &.is-multiple .ola_chartLine-value.has-tooltip:hover {
+        background-image: linear-gradient(var(--vertical-line-color), var(--vertical-line-color));
+        background-position: center bottom;
+        background-size: 2px calc((var(--height) * var(--value)) + var(--size-6));
+        background-repeat: no-repeat;
     }
 }
 
@@ -38,7 +34,6 @@
     left: 0;
     width: 100%;
     height: calc(var(--height) + 10px);
-    background: linear-gradient(to bottom, var(--gray-xlight) 33%, var(--white));
     z-index: -1;
 }
 .ola_chartLine-svg-background {
@@ -51,12 +46,20 @@
     stroke-width: 4px;
 }
 
-.ola_chartLine-label {
+.ola_chartLine-value {
+    --vertical-line-color: var(--gray-xlight);
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
     font: var(--font-callout);
-    padding-bottom: calc((var(--height) * var(--value)) + var(--size-6));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-bottom: solid 1px var(--gray-xlight);
+}
+.ola_chartLine-space {
+    height: calc((var(--height) * var(--value)) + var(--size-6));
+    flex-shrink: 0;
 }
 .ola_chartLine-point {
     border: solid 4px var(--color);
@@ -69,7 +72,12 @@
     position: absolute;
     left: 50%;
     margin-left: -8px;
-    bottom: calc((var(--height) * var(--value)) - 3px);
+    bottom: calc((var(--height) * var(--value)) - 4px);
+}
+.ola_chartLine-footer {
+    height: 0;
+    position: relative;
+    top: var(--size-3);
 }
 .ola_chartLine-rule {
     position: absolute;

@@ -5,14 +5,18 @@ exports[`ChartLine and ChartLineLabel 1`] = `
   className="ola_chartLine"
 >
   <div
-    className="ola_chartLine-label"
+    className="ola_chartLine-value"
     style={
       Object {
         "--value": 0.5,
       }
     }
   >
-    5 keywords
+    <div
+      className="ols_chartLine-label"
+    >
+      5 keywords
+    </div>
     <span
       className="ola_chartLine-point"
       style={
@@ -22,16 +26,26 @@ exports[`ChartLine and ChartLineLabel 1`] = `
         }
       }
     />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
   </div>
   <div
-    className="ola_chartLine-label"
+    className="ola_chartLine-value"
     style={
       Object {
         "--value": 0.2,
       }
     }
   >
-    2 keywords
+    <div
+      className="ols_chartLine-label"
+    >
+      2 keywords
+    </div>
     <span
       className="ola_chartLine-point"
       style={
@@ -41,16 +55,26 @@ exports[`ChartLine and ChartLineLabel 1`] = `
         }
       }
     />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
   </div>
   <div
-    className="ola_chartLine-label"
+    className="ola_chartLine-value"
     style={
       Object {
         "--value": 0.1,
       }
     }
   >
-    1 keywords
+    <div
+      className="ols_chartLine-label"
+    >
+      1 keywords
+    </div>
     <span
       className="ola_chartLine-point"
       style={
@@ -60,16 +84,26 @@ exports[`ChartLine and ChartLineLabel 1`] = `
         }
       }
     />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
   </div>
   <div
-    className="ola_chartLine-label"
+    className="ola_chartLine-value"
     style={
       Object {
         "--value": 1,
       }
     }
   >
-    10 keywords
+    <div
+      className="ols_chartLine-label"
+    >
+      10 keywords
+    </div>
     <span
       className="ola_chartLine-point"
       style={
@@ -78,6 +112,12 @@ exports[`ChartLine and ChartLineLabel 1`] = `
           "--value": 1,
         }
       }
+    />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
     />
   </div>
   <svg
@@ -127,13 +167,16 @@ exports[`Default ChartLine 1`] = `
 
 exports[`Default ChartLineLabel 1`] = `
 <div
-  className="ola_chartLine-label"
+  className="ola_chartLine-value"
   style={
     Object {
       "--value": 0,
     }
   }
 >
+  <div
+    className="ols_chartLine-label"
+  />
   <span
     className="ola_chartLine-point"
     style={
@@ -142,6 +185,12 @@ exports[`Default ChartLineLabel 1`] = `
         "--value": 0,
       }
     }
+  />
+  <div
+    className="ola_chartLine-space"
+  />
+  <div
+    className="ola_chartLine-footer"
   />
 </div>
 `;
