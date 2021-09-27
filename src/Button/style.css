@@ -1,10 +1,11 @@
 .ola_button {
   --color: var(--accent);
   --color-hover: var(--accent-dark);
+  --color-active: var(--accent-xdark);
   --color-selected: var(--black);
   --color-unselected: var(--accent);
   --background: transparent;
-  --background-hover: var(--gray-xlight);
+  --background-hover: transparent;
   --background-active: var(--accent-focus);
   --background-selected: var(--gray-xlight);
   --background-unselected: var(--white);
@@ -55,6 +56,7 @@
   }
 
   &:active {
+    color: var(--color-active);
     background-color: var(--background-active);
   }
 
@@ -64,7 +66,8 @@
     --color-hover: var(--white);
     --background-hover: var(--accent-dark);
     --shadow-focus: var(--accent-focus);
-    --background-active: var(--black);
+    --color-active: var(--white);
+    --background-active: var(--accent-xdark);
   }
 
   &.is-secondary {
@@ -78,13 +81,15 @@
     --color-hover: var(--white);
     --background-hover: var(--error-dark);
     --shadow-focus: var(--error-focus);
-    --background-active: var(--black);
+    --color-active: var(--white);
+    --background-active: var(--error-xdark);
   }
 
   &.is-destructive {
     --color: var(--error);
     --shadow-focus: var(--error-focus);
     --color-hover: var(--error-dark);
+    --color-active: var(--error-xdark);
     --background-active: var(--error-focus);
 
     border-style: solid;
@@ -97,33 +102,13 @@
     --color-hover: var(--white);
     --background-hover: var(--pro-dark);
     --shadow-focus: var(--pro-focus);
-    --background-active: var(--black);
-  }
-
-  &.is-busy {
-    color: var(--white);
-    background-color: var(--gray);
-    min-width: 0;
-    cursor: wait;
-    pointer-events: none;
-    border: none;
-
-    & .ola_spinner {
-      position: relative;
-
-      &:first-child {
-        right: var(--size-6);
-      }
-
-      &:last-child {
-        left: var(--size-6);
-      }
-    }
+    --color-active: var(--white);
+    --background-active: var(--pro-xdark);
   }
 
   &.is-link {
     --color: var(--brand);
-    --color-hover: var(--black);
+    --color-hover: var(--brand-xdark);
     --background-hover: transparent;
     --shadow-focus: var(--brand-focus);
     --background-active: var(--brand-focus);
@@ -136,6 +121,7 @@
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
+    min-height: auto;
 
     &.is-disabled,
     &:disabled {
@@ -164,9 +150,30 @@
     }
   }
 
+  &:disabled.is-busy {
+    color: var(--gray-xlight);
+    background-color: var(--gray);
+    min-width: 0;
+    cursor: wait;
+    pointer-events: none;
+    border: none;
+
+    & .ola_spinner {
+      position: relative;
+
+      &:first-child {
+        right: var(--size-6);
+      }
+
+      &:last-child {
+        left: var(--size-6);
+      }
+    }
+  }
+
   &.is-disabled,
   &:disabled {
-    color: var(--gray-light);
+    color: var(--gray);
     --background: var(--gray-xlight);
     --background-hover: var(--gray-xlight);
     --background-active: var(--gray-xlight);
@@ -210,6 +217,11 @@
 .ola_button-icon {
   right: var(--size-4);
   position: relative;
+}
+.ola_button-progress {
+  margin-left: var(--size-3);
+  flex-shrink: 0;
+  width: 2em;
 }
 
 summary:focus-visible .ola_button {

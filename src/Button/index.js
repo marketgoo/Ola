@@ -6,7 +6,7 @@ import { getElementType } from '../utils'
 import Spinner from '../Spinner'
 import Icon from '../Icon'
 
-const Button = ({ variant, children, disabled, multiline, busy, className, icon, as, selected, ...props }) => {
+const Button = ({ variant, children, disabled, multiline, busy, className, icon, as, selected, progress, ...props }) => {
   const ElementType = getElementType(Button, { as: as, ...props })
   delete props['as']
   const styles = cx(
@@ -24,6 +24,7 @@ const Button = ({ variant, children, disabled, multiline, busy, className, icon,
     <ElementType className={styles} disabled={busy ? true : disabled} aria-pressed={pressed} {...props}>
       {busy ? <Spinner /> : icon &&  <Icon name={icon} size="small" className="ola_button-icon" /> }
       <span className="ola_button-text">{!busy ? children : busy}</span>
+      { typeof progress === 'number' ? <span className="ola_button-progress">{ clamp(progress) }%</span> : null }
     </ElementType>
   )
 }
@@ -36,6 +37,7 @@ Button.defaultProps = {
   disabled: false,
   multiline: null,
   selected: null,
+  progress: null,
   icon: null
 }
 
@@ -63,9 +65,15 @@ Button.propTypes = {
   multiline: PT.bool,
   /** Whether the button is selected */
   selected: PT.bool,
+  /** The percentage progress */
+  progress: PT.number,
   /** Icon name  */
   icon: PT.string
   
 }
 
 export default Button
+
+function clamp(number) {
+  return Math.min(Math.max(number, 0), 100)
+}

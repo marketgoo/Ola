@@ -8,6 +8,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.13.5] - Unreleased
 ### Added
 - New helpers `ola-margin-top-4` and `ola-margin-bottom-4`.
+- Improved ChartLine #225.
+  - Added Tooltips
+  - Removed gray gradient
+  - Added footers
+- Property `progress` to Button.
+
+### Changed
+- `Button` colors to match the latest changes in Ola.
+- `Button` of variant `link` has a `height: auto`.
 
 ### Fixed
 - `Thumbnail` component with fixed height.
