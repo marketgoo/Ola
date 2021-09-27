@@ -2,7 +2,7 @@ import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
-const SectionHeader = ({ title, img, variant, className, children, ...props }) => {
+const SectionHeader = ({ title, img, action, variant, className, children, ...props }) => {
   const styles = cx(
     'ola_section-header',
     { [`is-${variant}`]: variant },
@@ -12,7 +12,13 @@ const SectionHeader = ({ title, img, variant, className, children, ...props }) =
   return (
     <header className={styles} {...props}>
       { img && <div className="ola_section-img">{ img }</div> }
-      <h1 className="ola_section-title">{title}</h1>
+      {action ? 
+        <div className="ola_section_action">
+          <h1 className="ola_section-title">{title}</h1>
+          {action}
+        </div> :
+        <h1 className="ola_section-title">{title}</h1>
+      }
       { children && <div className="ola_section-intro">{ children }</div> }
     </header>
   )
@@ -23,7 +29,8 @@ SectionHeader.defaultProps = {
   variant: null,
   title: null,
   img: null,
-  children: null
+  children: null,
+  action: null
 }
 
 SectionHeader.propTypes = {
@@ -42,6 +49,11 @@ SectionHeader.propTypes = {
   /** Childen nodes */
   children: PT.oneOfType([
     PT.string,
+    PT.arrayOf(PT.node),
+    PT.node
+  ]),
+  /** Extra element positioned at right */
+  action: PT.oneOfType([
     PT.arrayOf(PT.node),
     PT.node
   ])

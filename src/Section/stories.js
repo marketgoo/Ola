@@ -14,7 +14,7 @@ export default {
 
 export const AllElements = () => 
   <Section>
-    <SectionHeader title="Section Header">
+    <SectionHeader title="Section Header" action={<a href="#">I am a link</a>}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis eros quam, vitae consectetur leo vehicula ut. Etiam et ullamcorper turpis.
     </SectionHeader>
 
