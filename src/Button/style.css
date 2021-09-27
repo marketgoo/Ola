@@ -130,7 +130,7 @@
       background: none;
     }
 
-    &.is-busy {
+    &:disabled.is-busy {
       color: var(--gray);
       text-decoration: none;
       background: none;
