@@ -47,7 +47,7 @@ Page.defaultProps = {
 Page.propTypes = {
   icon: PT.element,
   /** Page Title*/
-  title: PT.oneOfType([PT.string, PT.element]).isRequired,
+  title: PT.oneOfType([PT.string, PT.element, PT.node]).isRequired,
   /** Page Url */
   url: PT.string.isRequired,
   /** Url link */

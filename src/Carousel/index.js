@@ -59,7 +59,7 @@ Carousel.propTypes = {
   /** Extra className */
   className: PT.string,
   /** Childen nodes */
-  children: PT.arrayOf(PT.node)
+  children: PT.oneOfType([PT.arrayOf(PT.node), PT.node]).isRequired
 }
 
 export default Carousel
