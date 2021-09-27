@@ -5,10 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.13.5] - Unreleased
+## [0.14.0] - Unreleased
 ### Added
+- Updated CSS variables for colors.
+- New `Carousel` component [#220].
+- New Icon `add` [#221].
 - New helpers `ola-margin-top-4` and `ola-margin-bottom-4`.
-- Improved ChartLine #225.
+- Improved ChartLine [#225].
   - Added Tooltips
   - Removed gray gradient
   - Added footers
@@ -17,6 +20,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Changed
 - `Button` colors to match the latest changes in Ola.
 - `Button` of variant `link` has a `height: auto`.
+- Improved some styles of `Table` [#222].
 
 ### Fixed
 - `Thumbnail` component with fixed height.
@@ -565,8 +569,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#197]: https://github.com/marketgoo/Ola/issues/197
 [#198]: https://github.com/marketgoo/Ola/issues/198
 [#201]: https://github.com/marketgoo/Ola/issues/201
+[#220]: https://github.com/marketgoo/Ola/issues/220
+[#221]: https://github.com/marketgoo/Ola/issues/221
+[#222]: https://github.com/marketgoo/Ola/issues/222
+[#225]: https://github.com/marketgoo/Ola/issues/225
 
-[0.13.5]: https://github.com/marketgoo/Ola/compare/v0.13.4...HEAD
+[0.14.0]: https://github.com/marketgoo/Ola/compare/v0.13.4...HEAD
 [0.13.4]: https://github.com/marketgoo/Ola/compare/v0.13.3...v0.13.4
 [0.13.3]: https://github.com/marketgoo/Ola/compare/v0.13.2...v0.13.3
 [0.13.2]: https://github.com/marketgoo/Ola/compare/v0.13.1...v0.13.2

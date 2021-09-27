@@ -10,7 +10,7 @@
   --background-selected: var(--gray-xlight);
   --background-unselected: var(--white);
   --shadow-focus: var(--accent-focus);
-  --border: var(--gray-light);
+  --border: currentColor;
   --border-hover: currentColor;
   --border-selected: var(--gray-light);
   --border-unselected: currentColor;
