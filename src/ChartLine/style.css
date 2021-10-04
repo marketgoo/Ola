@@ -115,6 +115,7 @@
 
     @media (min-width: 500px) {
         display: flex;
+        align-items: end;
 
         & ~ .ola_chartLine-svg {
             left: var(--size-8);
