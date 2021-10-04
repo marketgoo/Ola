@@ -40,5 +40,5 @@ export const Border = (args) => (
 )
 
 export const OnError = (args) => (
-  <Thumbnail {...args} url="https://estaurlnoexisite.it/100x100" />
+  <Thumbnail {...args} url="https://estaurlnoexiste.it/100x100" errorImage="https://via.placeholder.com/100/000000" />
 )
