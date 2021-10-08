@@ -9,30 +9,27 @@ exports[`Default Thumbnail 1`] = `
     }
   }
 >
-  <svg
+  <img
     className="ola_thumbnail-image"
-    height="300"
-    viewBox="0 0 400 300"
-    width="400"
-  >
-    <path
-      d="M270 94a8 8 0 018 8v94a8 8 0 01-8 8H130a8 8 0 01-8-8v-94a8 8 0 018-8h140zm6 22H124v79a7 7 0 007 7h138a7 7 0 007-7v-79z"
-    />
-    <circle
-      cx="140"
-      cy="105"
-      r="5"
-    />
-    <circle
-      cx="159"
-      cy="105"
-      r="5"
-    />
-    <circle
-      cx="178"
-      cy="105"
-      r="5"
-    />
-  </svg>
+    onError={[Function]}
+    src={null}
+  />
+</div>
+`;
+
+exports[`Default props 1`] = `
+<div
+  className="ola_thumbnail"
+  style={
+    Object {
+      "--color": null,
+    }
+  }
+>
+  <img
+    className="ola_thumbnail-image"
+    onError={[Function]}
+    src={null}
+  />
 </div>
 `;

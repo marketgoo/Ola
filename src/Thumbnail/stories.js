@@ -6,7 +6,7 @@ export default {
   component: Thumbnail,
 }
 
-export const Base = (args) => <Thumbnail {...args} />
+export const Base = () => <Thumbnail url="https://via.placeholder.com/100/000000" />
 export const Border = (args) => (
   <div
     style={{
@@ -19,26 +19,30 @@ export const Border = (args) => (
     <Thumbnail
       {...args}
       borderColor={'#F48498'}
-      url="https://placehold.it/100x100"
+      url="https://via.placeholder.com/100/000000"
     />
     <Thumbnail
       {...args}
       borderColor={'#7FD8BE'}
-      url="https://placehold.it/100x100"
+      url="https://via.placeholder.com/100/000000"
     />
     <Thumbnail
       {...args}
       borderColor={'#FFD266'}
-      url="https://placehold.it/100x100"
+      url="https://via.placeholder.com/100/000000"
     />
     <Thumbnail
       {...args}
       borderColor={'#95B8D1'}
-      url="https://placehold.it/100x100"
+      url="https://via.placeholder.com/100/000000"
     />
   </div>
 )
 
-export const OnError = (args) => (
-  <Thumbnail {...args} url="https://estaurlnoexisite.it/100x100" />
+export const OnErrorWithErrorImage = (args) => (
+  <Thumbnail {...args} url="https://estaurlnoexiste.it/100x100" errorImage="https://via.placeholder.com/100/000000" />
+)
+
+export const OnErrorWithoutErrorImage = (args) => (
+  <Thumbnail {...args} url="https://estaurlnoexiste.it/100x100" />
 )

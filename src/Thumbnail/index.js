@@ -1,33 +1,21 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
-const Thumbnail = ({ className, url, borderColor, children }) => {
-  const [thumbnailUrl, setThumbnailUrl] = useState(url)
+const Thumbnail = ({ className, url, errorImage, borderColor, children }) => {
+  const imgError = useRef(null)
+
   return (
     <div
       className={cx('ola_thumbnail', className)}
       style={{ '--color': borderColor }}
     >
-      {thumbnailUrl ? (
-        <img
-          className={'ola_thumbnail-image'}
-          src={url}
-          onError={() => setThumbnailUrl(null)}
-        />
-      ) : (
-        <svg
-          className={'ola_thumbnail-image'}
-          width="400"
-          height="300"
-          viewBox="0 0 400 300"
-        >
-          <path d="M270 94a8 8 0 018 8v94a8 8 0 01-8 8H130a8 8 0 01-8-8v-94a8 8 0 018-8h140zm6 22H124v79a7 7 0 007 7h138a7 7 0 007-7v-79z" />
-          <circle cx="140" cy="105" r="5" />
-          <circle cx="159" cy="105" r="5" />
-          <circle cx="178" cy="105" r="5" />
-        </svg>
-      )}
+      <img
+        className={'ola_thumbnail-image'}
+        src={url}
+        onError={() => errorImage ? imgError.current.src = errorImage : null }
+        ref={imgError}
+      />
       {children}
     </div>
   )
@@ -37,7 +25,7 @@ export default Thumbnail
 
 Thumbnail.defaultProps = {
   className: null,
-  status: 'loaded',
+  url: null,
   borderColor: null,
 }
 
@@ -46,10 +34,10 @@ Thumbnail.propTypes = {
   className: PT.string,
   /** Image url */
   url: PT.string,
+  /** Error image */
+  errorImage: PT.string,
   /** Color of the column */
   borderColor: PT.string,
-  /** Url status */
-  status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Childen nodes */
   children: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
 }
