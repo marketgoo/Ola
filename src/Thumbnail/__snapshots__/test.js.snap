@@ -12,6 +12,24 @@ exports[`Default Thumbnail 1`] = `
   <img
     className="ola_thumbnail-image"
     onError={[Function]}
+    src={null}
+  />
+</div>
+`;
+
+exports[`Default props 1`] = `
+<div
+  className="ola_thumbnail"
+  style={
+    Object {
+      "--color": null,
+    }
+  }
+>
+  <img
+    className="ola_thumbnail-image"
+    onError={[Function]}
+    src={null}
   />
 </div>
 `;

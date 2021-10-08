@@ -13,7 +13,7 @@ const Thumbnail = ({ className, url, errorImage, borderColor, children }) => {
       <img
         className={'ola_thumbnail-image'}
         src={url}
-        onError={() => imgError.current.src = errorImage}
+        onError={() => errorImage ? imgError.current.src = errorImage : null }
         ref={imgError}
       />
       {children}
@@ -25,7 +25,7 @@ export default Thumbnail
 
 Thumbnail.defaultProps = {
   className: null,
-  status: 'loaded',
+  url: null,
   borderColor: null,
 }
 
@@ -38,8 +38,6 @@ Thumbnail.propTypes = {
   errorImage: PT.string,
   /** Color of the column */
   borderColor: PT.string,
-  /** Url status */
-  status: PT.oneOf(['loaded', 'loading', 'empty']),
   /** Childen nodes */
   children: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
 }
