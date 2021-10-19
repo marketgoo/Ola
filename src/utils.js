@@ -37,6 +37,9 @@ export function normalizeRange (val, max, min = 0) {
   if (max === min) {
     return 0
   }
+  if (val === min) {  
+    return val/max
+  }
   return (val - min) / (max - min)
 }
 

@@ -51,7 +51,7 @@ exports[`ChartColumn and ChartColumnValue 1`] = `
     style={
       Object {
         "--color": null,
-        "--value": 0,
+        "--value": 0.1,
       }
     }
   >
