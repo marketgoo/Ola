@@ -41,6 +41,7 @@
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
+    line-height: 0.8;
 
     & > sup {
         font: var(--font-title);
@@ -104,6 +105,9 @@
     stroke: var(--color);
     transform: rotate(-90deg);
     transition: opacity 200ms, stroke-dashoffset 400ms;
+}
+.ola_score-level .ola_tag {
+    margin-top: var(--size-2);
 }
 
 @keyframes score-loading {
