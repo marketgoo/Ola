@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.14.5] - 2021-11-05
+### Fixed
+- Fixed text spacing into `Score` component [#229].
+
 ## [0.14.3] - 2021-10-08
 ### Fixed
 - Fixed onError functionality into `Thumbnail` component [#226].
@@ -584,7 +588,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#224]: https://github.com/marketgoo/Ola/issues/224
 [#225]: https://github.com/marketgoo/Ola/issues/225
 [#226]: https://github.com/marketgoo/Ola/issues/226
+[#229]: https://github.com/marketgoo/Ola/issues/229
 
+[0.14.5]: https://github.com/marketgoo/Ola/compare/v0.14.3...v0.14.5
 [0.14.3]: https://github.com/marketgoo/Ola/compare/v0.14.2...v0.14.3
 [0.14.2]: https://github.com/marketgoo/Ola/compare/v0.14.0...v0.14.2
 [0.14.0]: https://github.com/marketgoo/Ola/compare/v0.13.4...v0.14.0
