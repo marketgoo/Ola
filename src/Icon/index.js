@@ -28,6 +28,7 @@ import NewWindow from './NewWindow'
 import ArrowRight from './ArrowRight'
 import Site from './Site'
 import Add from './Add'
+import Copy from './Copy'
 
 const ICONS = {
   add: Add,
@@ -54,9 +55,8 @@ const ICONS = {
   user: User,
   warning: Warning,
   newWindow: NewWindow,
-  site: Site
-
-
+  site: Site,
+  copy: Copy
 }
 
 const Icon = ({ name, size, status, className, ...props }) => {
