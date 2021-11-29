@@ -5,6 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.0] - 2021-11-29
+### Added
+- Added Copy icon.
 ## [0.14.5] - 2021-11-05
 ### Fixed
 - Fixed text spacing into `Score` component [#229].
