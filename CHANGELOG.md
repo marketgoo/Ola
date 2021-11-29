@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## [0.15.0] - 2021-11-29
 ### Added
 - Added Copy icon.
+
 ## [0.14.5] - 2021-11-05
 ### Fixed
 - Fixed text spacing into `Score` component [#229].
@@ -593,6 +594,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#226]: https://github.com/marketgoo/Ola/issues/226
 [#229]: https://github.com/marketgoo/Ola/issues/229
 
+[0.15.0]: https://github.com/marketgoo/Ola/compare/v0.14.5...v0.15.0
 [0.14.5]: https://github.com/marketgoo/Ola/compare/v0.14.3...v0.14.5
 [0.14.3]: https://github.com/marketgoo/Ola/compare/v0.14.2...v0.14.3
 [0.14.2]: https://github.com/marketgoo/Ola/compare/v0.14.0...v0.14.2
