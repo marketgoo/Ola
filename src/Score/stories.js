@@ -9,6 +9,8 @@ export default {
     title: 'Your score',
     level: 'low',
     busy: '',
+    backgroundColor: 'gray-xlight',
+    supColor: 'gray-light'
   }
 }
 
