@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.1] - 2021-12-01
+### Changed
+- Updated `Score` component. [#230]
+
 ## [0.15.0] - 2021-11-29
 ### Added
 - Added Copy icon.
@@ -593,7 +597,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#225]: https://github.com/marketgoo/Ola/issues/225
 [#226]: https://github.com/marketgoo/Ola/issues/226
 [#229]: https://github.com/marketgoo/Ola/issues/229
+[#230]: https://github.com/marketgoo/Ola/issues/230
 
+[0.15.1]: https://github.com/marketgoo/Ola/compare/v0.15.0...v0.15.1
 [0.15.0]: https://github.com/marketgoo/Ola/compare/v0.14.5...v0.15.0
 [0.14.5]: https://github.com/marketgoo/Ola/compare/v0.14.3...v0.14.5
 [0.14.3]: https://github.com/marketgoo/Ola/compare/v0.14.2...v0.14.3
