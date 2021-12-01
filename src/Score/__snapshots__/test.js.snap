@@ -8,7 +8,9 @@ exports[`Default ProgressCircle 1`] = `
     className="ola_score-value"
   >
     0
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       .0
     </sup>
   </strong>
@@ -19,7 +21,7 @@ exports[`Default ProgressCircle 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -50,7 +52,7 @@ exports[`ProgressCircle Busy 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -86,7 +88,7 @@ exports[`ProgressCircle Busy with content 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -115,7 +117,9 @@ exports[`ProgressCircle with error variant 1`] = `
     className="ola_score-value"
   >
     0
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       .0
     </sup>
   </strong>
@@ -126,7 +130,7 @@ exports[`ProgressCircle with error variant 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -154,7 +158,9 @@ exports[`ProgressCircle with extraClass 1`] = `
     className="ola_score-value"
   >
     0
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       .0
     </sup>
   </strong>
@@ -165,7 +171,7 @@ exports[`ProgressCircle with extraClass 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -194,7 +200,9 @@ exports[`ProgressCircle with label and value 1`] = `
     className="ola_score-value"
   >
     75
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       %
     </sup>
   </strong>
@@ -205,7 +213,7 @@ exports[`ProgressCircle with label and value 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -234,7 +242,9 @@ exports[`ProgressCircle with success variant 1`] = `
     className="ola_score-value"
   >
     0
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       .0
     </sup>
   </strong>
@@ -245,7 +255,7 @@ exports[`ProgressCircle with success variant 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -273,7 +283,9 @@ exports[`ProgressCircle with value 1`] = `
     className="ola_score-value"
   >
     20
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       %
     </sup>
   </strong>
@@ -284,7 +296,7 @@ exports[`ProgressCircle with value 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"
@@ -313,7 +325,9 @@ exports[`ProgressCircle with warning variant 1`] = `
     className="ola_score-value"
   >
     0
-    <sup>
+    <sup
+      className="is-gray-light"
+    >
       .0
     </sup>
   </strong>
@@ -324,7 +338,7 @@ exports[`ProgressCircle with warning variant 1`] = `
     width="180"
   >
     <circle
-      className="ola_score-circle-background"
+      className="ola_score-circle-background is-gray-xlight"
       cx="90"
       cy="90"
       r="86"

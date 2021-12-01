@@ -28,7 +28,7 @@ const showBusyContent = (busy) => {
   return false
 }
 
-const Score = ({ value, level, busy, title, className, ...props }) => {
+const Score = ({ value, level, busy, title, backgroundColor, supColor, className, ...props }) => {
   let decimal
 
   if (!Number.isInteger(value)) {
@@ -45,11 +45,11 @@ const Score = ({ value, level, busy, title, className, ...props }) => {
   return (
     <div className={cx('ola_score', `is-${variant}`, {'is-busy': busy}, className)} {...props}>
       { !busy && title && <strong className="ola_score-title">{title}</strong> }
-      { !busy && (value !== null) &&  <strong className="ola_score-value">{value}<sup>{ decimal || '%' }</sup></strong> }
+      { !busy && (value !== null) &&  <strong className="ola_score-value">{value}<sup className={`is-${supColor}`}>{ decimal || '%' }</sup></strong> }
       { !busy && (value !== null) && level && <div className="ola_score-level"><Tag variant={variant}>{level}</Tag></div> }
       { showBusyContent(busy) && <span className="ola_score-busy">{busy}</span> }
       <svg className="ola_score-circle" width="180" height="180" viewBox="0 0 180 180">
-        <circle r="86" cx="90" cy="90" className="ola_score-circle-background"></circle>
+        <circle r="86" cx="90" cy="90" className={`ola_score-circle-background is-${backgroundColor}`}></circle>
         <circle r="86" cx="90" cy="90" className="ola_score-circle-value" style={circleStyle}></circle>
       </svg>
     </div>
@@ -62,7 +62,9 @@ Score.defaultProps = {
   title: null,
   level: null,
   busy: false,
-  className: null
+  className: null,
+  backgroundColor: 'gray-xlight',
+  supColor: 'gray-light',
 }
 
 Score.propTypes = {
@@ -78,7 +80,9 @@ Score.propTypes = {
   /** Extra className */
   className: PT.string,
   /** Title */
-  title: PT.string
+  title: PT.string,
+  backgroundColor: PT.string,
+  supColor: PT.string
 }
 
 export default Score
