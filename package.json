@@ -76,6 +76,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "dialog-polyfill": "^0.5.3"
+    "dialog-polyfill": "^0.5.3",
+    "react-hook-form": "^7.21.0"
   }
 }
