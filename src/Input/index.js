@@ -1,17 +1,29 @@
 import React from 'react'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
-const Input = ({ className, error, type, ...props }) => {
-  return type === 'textarea' ?
-    ( <textarea type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> ) :
-    ( <input type={type} className={ cx('ola_input', {'is-invalid': error}, className) } {...props} /> )
-}
+const Input = React.forwardRef(({ className, error, type, ...props }, ref) => {
+  return type === 'textarea' ? (
+    <textarea
+      ref={ref}
+      type={type}
+      className={cx('ola_input', { 'is-invalid': error }, className)}
+      {...props}
+    />
+  ) : (
+    <input
+      type={type}
+      ref={ref}
+      className={cx('ola_input', { 'is-invalid': error }, className)}
+      {...props}
+    />
+  )
+})
 
 Input.defaultProps = {
   type: 'text',
   className: null,
-  error: false
+  error: false,
 }
 
 Input.propTypes = {
@@ -29,12 +41,14 @@ Input.propTypes = {
     'textarea',
     'time',
     'url',
-    'week'
+    'week',
   ]),
   /** Extra className */
   className: PT.string,
   /** Input is invalid */
-  error: PT.bool
+  error: PT.bool,
 }
+
+Input.displayName = 'Input'
 
 export default Input

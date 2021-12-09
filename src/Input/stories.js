@@ -6,14 +6,14 @@ export default {
   component: Input,
   args: {
     disabled: false,
-    readOnly: false
+    readOnly: false,
   },
   argTypes: {
     onClick: { action: 'clicked' },
     onFocus: { action: 'focused' },
     onBlur: { action: 'blurred' },
     onInput: { action: 'input' },
-  }
+  },
 }
 
-export const Base = (args) => <Input {...args}/>
+export const Base = (args) => <Input {...args} />
