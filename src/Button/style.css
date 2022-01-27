@@ -162,7 +162,7 @@
       position: relative;
 
       &:first-child {
-        right: var(--size-6);
+        right: var(--size-4);
       }
 
       &:last-child {
