@@ -19,6 +19,8 @@ Check.defaultProps = {
   className: null,
 }
 
+Check.displayName = 'Check'
+
 Check.propTypes = {
   /** Check Type */
   type: PT.oneOf(['checkbox', 'radio']),

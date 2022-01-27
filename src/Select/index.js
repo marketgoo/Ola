@@ -17,6 +17,8 @@ Select.defaultProps = {
   className: null,
 }
 
+Select.displayName = 'Select'
+
 Select.propTypes = {
   /** Select options (array {value: any, label: string} )*/
   options: PT.arrayOf(PT.shape({
