@@ -1,17 +1,17 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
 
 const SelectOption = ({ value, label, ...props }) =>  <option value={value} {...props}>{label}</option>
 
-const Select = ({ options, error, className, ...props }) => {
+const Select = forwardRef(({ options, error, className, ...props }, ref) => {
   const styles = cx('ola_select', {'is-invalid': error}, className)
   return (
-    <select className={styles} {...props}>
+    <select className={styles} ref={ref} {...props}>
       { options.map( ({ value, label }, idx) => <SelectOption key={idx} value={value} label={label} /> ) }
     </select>
   )
-}
+})
 
 Select.defaultProps = {
   className: null,
