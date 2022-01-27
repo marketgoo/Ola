@@ -5,9 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.3] - 2022-01-27
+### Changed
+- Exposing ref at `Check` component. 
+- Exposing ref at `Select` component.
+
 ## [0.15.2] - 2022-01-27
 ### Changed
-- Updated `Score` component. [#230]
+- Updated `Input` component.
 
 ## [0.15.1] - 2021-12-01
 ### Changed
