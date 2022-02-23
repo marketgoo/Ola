@@ -66,12 +66,58 @@ exports[`Disabled primary button 1`] = `
 </button>
 `;
 
+exports[`Icon button 1`] = `
+<button
+  aria-pressed={null}
+  className="ola_button is-secondary"
+  disabled={false}
+>
+  <span
+    className="ola_icon ola_button-icon is-small"
+  >
+    <img
+      src="https://placeholder.pics/svg/20"
+    />
+  </span>
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
 exports[`No variant button 1`] = `
 <button
   aria-pressed={null}
   className="ola_button"
   disabled={false}
 >
+  <span
+    className="ola_button-text"
+  >
+    Click here
+  </span>
+</button>
+`;
+
+exports[`Ola icon button 1`] = `
+<button
+  aria-pressed={null}
+  className="ola_button is-secondary"
+  disabled={false}
+>
+  <svg
+    className="ola_icon is-small ola_button-icon"
+    fillRule="evenodd"
+    height="28"
+    viewBox="0 0 28 28"
+    width="28"
+  >
+    <path
+      d="M14,2 C7.38326923,2 2,7.38326923 2,14 C2,20.6167308 7.38326923,26 14,26 C20.6167308,26 26,20.6167308 26,14 C26,7.38326923 20.6167308,2 14,2 Z M20.0018344,15.0161123 L15.0608255,15.0161123 L15.0608255,19.9803097 L13.0231809,19.9803097 L13.0231809,15.0161123 L8.01169143,15.0161123 L8.01169143,12.9724987 L13.0231809,12.9724987 L13.0231809,8.02789951 L15.0608255,8.02789951 L15.0608255,12.9724987 L20.0018344,12.9724987 L20.0018344,15.0161123 Z"
+    />
+  </svg>
   <span
     className="ola_button-text"
   >

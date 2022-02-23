@@ -10,13 +10,13 @@ export default {
   },
 }
 
-export const DropDown = (args) => <IssueDropDown {...args}>
-  <p>This is the content of the issue</p>
-</IssueDropDown>
-
-export const OnlyTitle = (args) => (
-  <Issue {...args} />
+export const DropDown = (args) => (
+  <IssueDropDown {...args}>
+    <p>This is the content of the issue</p>
+  </IssueDropDown>
 )
+
+export const OnlyTitle = (args) => <Issue {...args} />
 
 export const Permalink = () => (
   <article className="ola_issue-dropdown is-big">
