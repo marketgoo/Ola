@@ -11,13 +11,28 @@ export default {
     onClick: { action: 'clicked' },
     onFocus: { action: 'focused' },
     busy: { control: 'text' },
-    as: { 
+    icon: { control: 'text' },
+    as: {
       control: {
         type: 'inline-radio',
-        options: ['button', 'a', 'span']
-      }
-    }
-  }
+        options: ['button', 'a', 'span'],
+      },
+    },
+  },
 }
 
 export const Base = (args) => <Button {...args}>{args.children}</Button>
+export const WithOlaIcon = (args) => (
+  <Button variant="secondary" icon="add" {...args}>
+    {args.children}
+  </Button>
+)
+export const WithIcon = (args) => (
+  <Button
+    variant="secondary"
+    icon={<img src="https://placeholder.pics/svg/20" />}
+    {...args}
+  >
+    {args.children}
+  </Button>
+)
