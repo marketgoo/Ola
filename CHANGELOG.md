@@ -5,37 +5,59 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.15.3] - 2022-01-27
+## [0.15.4] - 2022-02-23
+
 ### Changed
-- Exposing ref at `Check` component. 
+
+- Update icon prop into `Button`component. [#233]
+
+## [0.15.3] - 2022-01-27
+
+### Changed
+
+- Exposing ref at `Check` component.
 - Exposing ref at `Select` component.
 
 ## [0.15.2] - 2022-01-27
+
 ### Changed
+
 - Updated `Input` component.
 
 ## [0.15.1] - 2021-12-01
+
 ### Changed
+
 - Updated `Score` component. [#230]
 
 ## [0.15.0] - 2021-11-29
+
 ### Added
+
 - Added Copy icon.
 
 ## [0.14.5] - 2021-11-05
+
 ### Fixed
+
 - Fixed text spacing into `Score` component [#229].
 
 ## [0.14.3] - 2021-10-08
+
 ### Fixed
+
 - Fixed onError functionality into `Thumbnail` component [#226].
 
 ## [0.14.2] - 2021-10-04
+
 ### Fixed
+
 - Fixed some styles of `Chartline` [#224].
 
 ## [0.14.0] - 2021-09-27
+
 ### Added
+
 - Updated CSS variables for colors.
 - New `Carousel` component [#220].
 - New Icon `add` [#221].
@@ -48,96 +70,134 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Property `action` to `SectionHeader` [#224].
 
 ### Changed
+
 - `Button` colors to match the latest changes in Ola.
 - `Button` of variant `link` has a `height: auto`.
 - Improved some styles of `Table` [#222].
 
 ### Fixed
+
 - `Thumbnail` component with fixed height.
 - Removed `1fr` size to auto rows of `ly-main`.
 
 ## [0.13.4] - 2021-09-06
+
 ### Changed
+
 - No changes, just publish new version.
 
 ## [0.13.3] - 2021-09-06
+
 ### Changed
+
 - Add importat into ola-bg class to ensures that it is always applied.
 - Export getNumberFormat function into index.js.
 
 ## [0.13.2] - 2021-09-03
+
 ### Changed
+
 - Prefix new layouts with `ola_ly`.
 - Restore ly_pageCenter removed accidentally in the previous version.
 
 ## [0.13.1] - 2021-09-03
+
 ### Added
+
 - New standar layouts: ly-hightlight,ly-main, ly-section
 
 ### Changed
+
 - Refactor getNumberFormat function.
 
 ## [0.13.0] - 2021-09-02
+
 ### Added
+
 - New color variable `--gray-xxlight`.
 - Changed color variable `--gray-xlight` to be a bit more darker.
 - Number formatting helper called getNumberFormat.
 - Format prop into ChartLineAxis to return value number.
 
 ### Changed
+
 - The element `Page` with long titles show ellipsis.
 
 ## [0.12.9] - 2021-06-16
+
 ### Added
+
 - New color variables and renamed some others
 
 ## [0.12.8] - 2021-06-16
+
 ### Added
+
 - New helper `.ola-bg-hover`.
 
 ### Fixed
+
 - The icon of `Issue` for the status `pending` should be white when it's on a gray background.
 
 ## [0.12.7] - 2021-06-08
+
 ### Added
+
 - New icon `site`
 
 ## [0.12.6] - 2021-05-31
+
 ### Fixed
+
 - The `Button` size in `Segment` component.
 - The `Button` color in `Tag` component.
 
 ## [0.12.5] - 2021-05-28
+
 ### Added
+
 - New `multiline` property to `Button` to wrap the text in multiple lines instead using ellipsis.
 - Restored `ola-bg` helper that not only apply a `gray-xlight` background to the element, but also override the inner `gray-xlight` variable with the new `gray-xlight-dark` color (a darker value).
 
 ### Fixed
+
 - Level component `Page` with the new `Level` icon that is wider.
 
 ## [0.12.4] - 2021-05-25
+
 ### Fixed
+
 - Level component with `size=xbig`.
 - Replaced wrong `clock` svg for `Icon` component.
 
 ## [0.12.2] - 2021-05-25
+
 ### Changed
+
 - Add `link` icon component
 
 ## [0.12.1] - 2021-05-24
+
 ### Changed
+
 - Replaced icon `clock` for `Icon` component
 
 ## [0.12.0] - 2021-05-20
+
 ### Changed
+
 - Component `Tooltip` has hover property trigger now [#201]
 
 ## [0.11.0] - 2021-05-13
+
 ### Changed
+
 - The `Level` component now has 4 levels [#198]
 
 ## [0.10.0] - 2021-05-07
+
 ### Added
+
 - Support for indeterminate state to `ProgressBar` [#181]
 - New component `Thumbnail` [#180], [#182]
 - New property `size` to `MenuOption` with `small` and `medium` values [#178] [#179]
@@ -153,26 +213,33 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New component `Keyword`[#197]
 
 ### Changed
+
 - The `ChartLine` component accepts multiple values to multiple lines. [#177]
 - The css variable `--max-width` has changed to `--size-13` (1036px, previously it was 1200px)
 - `Segment` styles
 
 ### Fixed
+
 - Fixed `buttonIcon` size in `TableCell` with the variant `action`.
 - Fixed `buttonIcon` border-radius in a `Tag`.
 - The gray background gradient of ChartLine was too dark.
 
 ## [0.9.1] - 2021-02-05
+
 ### Added
+
 - Property `className` to `ChartColumn`
 - Property `status` to `ChartColumnValue` to allow to set empty states and loading states
 - A small transition on change the values of a `ChartColumnValue`
 
 ### Fixed
+
 - Changed the icon of links in `TreeList`. Use an arrow instead a chevron.
 
 ## [0.9.0] - 2021-01-21
+
 ### Added
+
 - New component `Kpi`
 - New component `Score` [#164]
 - New components `Issue` and `IssueDropDown` [#162] [#161]
@@ -191,9 +258,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `staticPage`
 
 ### Changed
+
 - `ButtonIcon` appearance inside a `Tag` component.
 
 ### Fixed
+
 - Reduced the width of the `.ola_section-intro` element
 - `MenuOption` with `href` is not converted to `<a>` element
 - `Tooltip` button inside a `ButtonGroup` should be responsive
@@ -201,7 +270,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Prevent multiple lines and use `text-overflow: ellipsis` for the urls in the `Page` component, and allow 2 lines max for the title.
 
 ## [0.8.0] - 2020-09-29
+
 ### Added
+
 - New component `Section` [#150], [#151] including some subcomponents:
   - `SectionHeader`
   - `SectionContent`
@@ -218,13 +289,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New props `open` and `close` to `Tooltip` [#152] [#153]
 
 ### Fixed
+
 - `Field` component can have multiple child elements [#154] [#155]
 - Modal must restore the scroll on unmount [#156] [#157]
 - Apply separation gap to any element in a `ButtonGroup`, instead only to `Button`.
 - `ProgressCircle` component display `0` as description when the value is `0`.
 
 ## [0.7.0] - 2020-07-08
+
 ### Added
+
 - Padding top and bottom to `PanelContent` when it's the first/last child.
 - New helpers:
   - `.ola-nomargin-top`
@@ -243,18 +317,22 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
   - `.ola-margin-right-3`
 
 ### Changed
+
 - Font sizes in narrow screens (mobile) are smaller [#135] [#136]
 - The `Modal` component blocks the document scroll while it's open [#140]
 - Changed some variables in buttons component to ease the theme customization
 
 ### Fixed
+
 - `ola_ly-*` styles using `--column-gap-*` and `--row-gap-*` variables instead fixed sizes.
 - Cropped shadow of focused buttons in tables [#132]
 - Border radius of `PanelFooter` when is not the last child [#137]
 - Updated some devDependencies.
 
 ## [0.6.0] - 2020-05-21
+
 ### Added
+
 - New variant `fullwidth-scroll` to `ModalContent` [#112]
 - New variant `narrow` to `Modal`
 - New variant `multiline` to `TableCell`
@@ -269,13 +347,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Added the variable `--ola-version` to see the version of Ola used currently in any project.
 
 ### Changed
+
 - Styles of `TableCell` with variant `action` for more clearness and fix issues in Safari.
 - The label text of `Check` component is `gray-light` on `disabled` state [#129]
 
 ### Removed
+
 - The css variable `--inner-gap`
 
 ### Fixed
+
 - Background of `TableCell` in a `TableRow` with `is-selectable` class.
 - Paddings and alignments in tables.
 - `PanelFooter` and `ModalFooter` with multiple elements (not only `ButtonGroup`)
@@ -295,7 +376,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Set `letter-spacing` to `0` in the tags, preventing inherited values.
 
 ## [0.5.0] - 2020-04-07
+
 ### Added
+
 - New icon `plus` [#90]
 - New icons `arrowUp` and `arrowDown` [#98]
 - Variants to `ButtonIcon` (`primary`, `secondary`, `destructive`, `chevron`) [#89], [#92]
@@ -305,14 +388,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - New `Menu` component [#105]
 
 ### Changed
+
 - Renamed the property `extraClass` of all components to `className` [#27], [#103]
 - Removed scroll in the `ModalContent` component and added a `scroll` variant to enable it [#106]
 - Added cursor `pointer` to some interactive components like `Button`, `ButtonIcon`, `Check`, `Accordion` and `MenuOption`
 
 ### Removed
+
 - `emptyOption` prop in `Select` component [#96] [#71]
 
 ### Fixed
+
 - Component `Tooltip` in a `Table` was not showing properly [#93]
 - Styles of `<ol>` elements in `Task` [#97]
 - Removed `wavy` text decoration style of links because looks buggy
@@ -320,7 +406,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `Modal`: The close button conflicts with the extra content of the header
 
 ## [0.4.0] - 2020-03-06
+
 ### Added
+
 - Property `extraClass` to `Switch`, `ModalHeader`, `PanelHeader`.
 - `Field`: Added support for html in `description` and `hint` properties. [#67]
 - New component `Tooltip` [#72]
@@ -328,6 +416,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Added `responsive` prop to `Table` component [#99], [#100]
 
 ### Changed
+
 - `Switch`: Removed `label` and `htmlLabel` properties. Use `children` to define the label content [#28]
 - `ProgressBar`: Removed `description` and `htmlDescription` properties. Use `children` to define the description [#28]
 - The signature of `TableCell` component has changed. See [#37] and [#65] for more info.
@@ -340,9 +429,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `Modal` component was changed to use the native `<dialog>` element [#74], [#75]
 
 ### Removed
+
 - `FieldDescription` component. Now you can use html in the `description` property of `Field` [#67]
 
 ### Fixed
+
 - Removed `display:flex` to Check areas.
 - Decrease padding in Check areas in columns.
 - Check with variant "option" should be bold on checked [#68]
@@ -350,20 +441,25 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Lot of css details like spacing in the modal, buttons status colors, etc.
 
 ## [0.3.0] - 2019-12-19
+
 ### Added
+
 - New component `Accordion`
 - Property `extraClass` to `Check`
 - Property `variant` to `Check`
 - Property `label` to `ProgressCircle`
 
 ### Changed
+
 - `CheckGroup` component is now a container with no logic. It accepts three variants: `row`, `column` and `list`.
 - The children property of `Check` component is not required.
 
 ### Removed
+
 - `CheckArea` component. Use `CheckGroup` with `column` or `row` variant.
 
 ### Fixed
+
 - Added styles for `<hr>`
 - Fonts utils (`.ola-headline`, `.ola-body`, `.ola-callout`, `.ola-caption`) are now bold if they are applied to `hx`, `strong` or `bold`.
 - Default styles for task content [#54]
@@ -376,24 +472,31 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Do not include `test.js` and `stories.js` files in dist
 
 ## [0.2.2] - 2019-11-27
+
 ### Fixed
+
 - The publish of the previous version
 
 ## [0.2.1] - 2019-11-27
+
 ### Added
+
 - New css util `.ola-nomargin` to remove all default margins of an element
 - New css util `.ola-bold` to assing `bold` font-weight to an element
 - New css variables `--accent`, `--accent-dark` and `--accent-focus` applied to some elements that may not use the default `--brand` color [#47]
 - New css util `.ola-accent` and `.ola-bg-accent` to use the accent color
 
 ### Fixed
+
 - Fixed changelog for v0.2.0 [#44]
 - Some `focus` and `hover` styles of `Task` component for usability purposes.
 - Removed white background to the component `CheckArea` and added to each `Check` individually [#45]
 - The `name` property of `Check` is not longer "test" [#45]
 
 ## [0.2.0] - 2019-11-25
+
 ### Added
+
 - Component `Task`: new property `extra` to place elements next to title [#40], [#41]
 - Component `Button`: new variant `link` [#30], [#36]
 - Component `ButtonGroup`: new variant `center` [#34], [#35]
@@ -401,13 +504,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - CONTRIBUTING.md file [#39]
 
 ### Changed
+
 - The boolean property `reversed` of `ButtonGroup` is now a variant (`variant="reversed"`)
 
 ### Removed
+
 - Support for React < 16.2. Due the use of fragments, React ^16.2 is required.
 
 ## [0.1.2] - 2019-11-18
+
 ### Added
+
 - New component `Table` [#7]
 - New component `Page` [#8], [#13]
 - New component `Level` [#14], [#15]
@@ -442,24 +549,31 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - The component `Button` is a link if the href property is defined [#12]
 
 ### Changed
+
 - The `dist` folder exports the modules as CommonJS format instead ES6
 
 ### Fixed
+
 - Improved README adding demo links and browser support info
 - Task component doesn't look properly in Safari [#6]
 - All components are responsive [#16], [#17]
 - Strict value comparison in `CheckArea` and `CheckGroup` [#23]
 
 ## [0.1.1] - 2019-09-18
+
 ### Changed
+
 - Moved the repository from gitlab to github
 
 ### Fixed
+
 - Improved README documentation and links [#1], [#2]
 - Added the links to the repository and the homepage to package.json
 
 ## 0.1.0 - 2019-09-17
+
 ### Added
+
 - New component `Button`
 - New component `ButtonGroup`
 - New component `ButtonIcon`
@@ -607,7 +721,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#226]: https://github.com/marketgoo/Ola/issues/226
 [#229]: https://github.com/marketgoo/Ola/issues/229
 [#230]: https://github.com/marketgoo/Ola/issues/230
-
 [0.15.2]: https://github.com/marketgoo/Ola/compare/v0.15.1...v0.15.2
 [0.15.1]: https://github.com/marketgoo/Ola/compare/v0.15.0...v0.15.1
 [0.15.0]: https://github.com/marketgoo/Ola/compare/v0.14.5...v0.15.0
