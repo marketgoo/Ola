@@ -1,10 +1,10 @@
-import React from "react";
-import { default as PT } from "prop-types";
-import cx from "classnames";
-import { getElementType } from "../utils";
+import React from 'react'
+import { default as PT } from 'prop-types'
+import cx from 'classnames'
+import { getElementType } from '../utils'
 
-import Spinner from "../Spinner";
-import Icon, { ICONS } from "../Icon";
+import Spinner from '../Spinner'
+import Icon, { ICONS } from '../Icon'
 
 const Button = ({
   variant,
@@ -19,25 +19,25 @@ const Button = ({
   progress,
   ...props
 }) => {
-  const ElementType = getElementType(Button, { as: as, ...props });
-  delete props["as"];
+  const ElementType = getElementType(Button, { as: as, ...props })
+  delete props['as']
   const styles = cx(
-    "ola_button",
+    'ola_button',
     { [`is-${variant}`]: variant },
-    { "is-busy": busy },
-    { "is-multiline": multiline },
-    { "is-disabled": disabled && !busy },
+    { 'is-busy': busy },
+    { 'is-multiline': multiline },
+    { 'is-disabled': disabled && !busy },
     className
-  );
+  )
 
-  const pressed = selected === null ? null : selected ? "true" : "false";
+  const pressed = selected === null ? null : selected ? 'true' : 'false'
 
   const iconContent =
-    typeof icon === "string" ? (
+    typeof icon === 'string' ? (
       <Icon name={icon} size="small" className="ola_button-icon" />
     ) : (
       <span className="ola_icon ola_button-icon is-small">{icon}</span>
-    );
+    )
 
   return (
     <ElementType
@@ -48,15 +48,15 @@ const Button = ({
     >
       {busy ? <Spinner /> : icon && iconContent}
       <span className="ola_button-text">{!busy ? children : busy}</span>
-      {typeof progress === "number" ? (
+      {typeof progress === 'number' ? (
         <span className="ola_button-progress">{clamp(progress)}%</span>
       ) : null}
     </ElementType>
-  );
-};
+  )
+}
 
 Button.defaultProps = {
-  as: "button",
+  as: 'button',
   variant: null,
   busy: null,
   className: null,
@@ -65,19 +65,19 @@ Button.defaultProps = {
   selected: null,
   progress: null,
   icon: null,
-};
+}
 
 Button.propTypes = {
   /** Render Button with any html tag */
   as: PT.string,
   /** Button variants */
   variant: PT.oneOf([
-    "primary",
-    "secondary",
-    "destructive-primary",
-    "destructive",
-    "pro",
-    "link",
+    'primary',
+    'secondary',
+    'destructive-primary',
+    'destructive',
+    'pro',
+    'link',
   ]),
   /** Text for loading state */
   busy: PT.oneOfType([PT.string, PT.bool]),
@@ -99,10 +99,10 @@ Button.propTypes = {
   progress: PT.number,
   /** Icon name  */
   icon: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]),
-};
+}
 
-export default Button;
+export default Button
 
 function clamp(number) {
-  return Math.min(Math.max(number, 0), 100);
+  return Math.min(Math.max(number, 0), 100)
 }

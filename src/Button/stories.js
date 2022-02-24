@@ -1,31 +1,31 @@
-import React from "react";
-import Button from "./";
+import React from 'react'
+import Button from './'
 
 export default {
-  title: "Button",
+  title: 'Button',
   component: Button,
   args: {
-    children: "Button",
+    children: 'Button',
   },
   argTypes: {
-    onClick: { action: "clicked" },
-    onFocus: { action: "focused" },
-    busy: { control: "text" },
+    onClick: { action: 'clicked' },
+    onFocus: { action: 'focused' },
+    busy: { control: 'text' },
     as: {
       control: {
-        type: "inline-radio",
-        options: ["button", "a", "span"],
+        type: 'inline-radio',
+        options: ['button', 'a', 'span'],
       },
     },
   },
-};
+}
 
-export const Base = (args) => <Button {...args}>{args.children}</Button>;
+export const Base = (args) => <Button {...args}>{args.children}</Button>
 export const WithOlaIcon = (args) => (
   <Button variant="secondary" icon="add" {...args}>
     {args.children}
   </Button>
-);
+)
 export const WithIcon = (args) => (
   <Button
     variant="secondary"
@@ -34,4 +34,4 @@ export const WithIcon = (args) => (
   >
     {args.children}
   </Button>
-);
+)
