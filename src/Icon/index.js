@@ -13,6 +13,7 @@ import Clock from './Clock'
 import Close from './Close'
 import Error from './Error'
 import Help from './Help'
+import Analytics from './Analytics'
 import Home from './Home'
 import Link from './Link'
 import Null from './Null'
@@ -32,6 +33,7 @@ import Copy from './Copy'
 
 export const ICONS = {
   add: Add,
+  analytics: Analytics,
   arrowDown: ArrowDown,
   arrowUp: ArrowUp,
   arrowRight: ArrowRight,
