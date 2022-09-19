@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.6] - 2022-09-19
+
+### Added
+
+- Added `informationCircle` to `Icon` component
+
 ## [0.15.5] - 2022-09-08
 
 ### Added

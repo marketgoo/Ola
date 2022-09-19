@@ -3,62 +3,64 @@ import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
 // Icons
+import Add from './Add'
+import Analytics from './Analytics'
 import ArrowDown from './ArrowDown'
+import ArrowRight from './ArrowRight'
 import ArrowUp from './ArrowUp'
 import ChevronDown from './ChevronDown'
-import ChevronUp from './ChevronUp'
 import ChevronLeft from './ChevronLeft'
 import ChevronRight from './ChevronRight'
+import ChevronUp from './ChevronUp'
 import Clock from './Clock'
 import Close from './Close'
+import Copy from './Copy'
 import Error from './Error'
 import Help from './Help'
-import Analytics from './Analytics'
 import Home from './Home'
+import InformationCircle from './InformationCircle'
 import Link from './Link'
+import NewWindow from './NewWindow'
 import Null from './Null'
 import Page from './Page'
 import Plus from './Plus'
 import Post from './Post'
 import Search from './Search'
+import Site from './Site'
 import StaticPage from './StaticPage'
 import Success from './Success'
 import User from './User'
 import Warning from './Warning'
-import NewWindow from './NewWindow'
-import ArrowRight from './ArrowRight'
-import Site from './Site'
-import Add from './Add'
-import Copy from './Copy'
 
 export const ICONS = {
   add: Add,
   analytics: Analytics,
   arrowDown: ArrowDown,
-  arrowUp: ArrowUp,
   arrowRight: ArrowRight,
+  arrowUp: ArrowUp,
   chevronDown: ChevronDown,
-  chevronUp: ChevronUp,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
+  chevronUp: ChevronUp,
   clock: Clock,
   close: Close,
+  copy: Copy,
   error: Error,
   help: Help,
   home: Home,
+  informationCircle: InformationCircle,
   link: Link,
+  newWindow: NewWindow,
   null: Null,
   page: Page,
   plus: Plus,
   post: Post,
   search: Search,
+  site: Site,
   staticPage: StaticPage,
   success: Success,
   user: User,
   warning: Warning,
-  newWindow: NewWindow,
-  site: Site,
-  copy: Copy,
 }
 
 const Icon = ({ name, size, status, className, ...props }) => {
