@@ -66,7 +66,7 @@ export const Base = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ))
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      { args.data.map((row, idx) => 
+      { args.data.map((row, idx) =>
         <ChartLineLabel key={idx} value={ranges[idx]} footer={row.footer}>
           {row.label}
         </ChartLineLabel>
@@ -79,7 +79,7 @@ export const ZeroValues = (args) => {
   const ranges = getRanges(args.data)
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      { args.data.map((val, idx) => 
+      { args.data.map((val, idx) =>
         <ChartLineLabel key={idx} value={ranges[idx]}>
           {val}
         </ChartLineLabel>
@@ -91,16 +91,35 @@ ZeroValues.args = {
   data: [0, 0, 0]
 }
 
+export const ZeroValuesWithAxis = (args) => {
+  const ranges = getRanges(args.data)
+  const max = Math.max(...args.data)
+
+  return (
+    <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
+      <ChartLineAxis max={max} />
+      { args.data.map((val, idx) =>
+        <ChartLineLabel key={idx} value={ranges[idx]}>
+          {val}
+        </ChartLineLabel>
+      )}
+    </ChartLine>
+  )
+}
+ZeroValuesWithAxis.args = {
+  data: [0, 0, 0]
+}
+
 export const Multiple = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      { args.data.map((row, idx) => 
+      { args.data.map((row, idx) =>
         <ChartLineLabel key={idx} value={ranges[idx]} colors={args.colors}>
           <Tooltip trigger={<span>{row.label} <br/> from {mockData2[idx].label}</span>}>
             Content of this tooltip
           </Tooltip>
-          
+
         </ChartLineLabel>
       )}
     </ChartLine>
@@ -114,7 +133,7 @@ export const MultipleWithRuleAndAxis = (args) => {
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
       <ChartLineAxis max={max}/>
-      { args.data.map((row, idx) => 
+      { args.data.map((row, idx) =>
         <ChartLineLabel key={idx} value={ranges[idx]} colors={args.colors}>
           {row.label} <br/> from {mockData2[idx].label}
         </ChartLineLabel>
@@ -127,12 +146,12 @@ export const WithTooltip = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ))
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      { args.data.map((row, idx) => 
-        <ChartLineLabel 
-          key={idx} 
-          value={ranges[idx]} 
-          colors={args.colors} 
-          footer={row.footer} 
+      { args.data.map((row, idx) =>
+        <ChartLineLabel
+          key={idx}
+          value={ranges[idx]}
+          colors={args.colors}
+          footer={row.footer}
           tooltip={<span>{`Visits ${args.data[idx].value}`}</span>} />
       )}
     </ChartLine>
@@ -143,12 +162,12 @@ export const WithTooltipMultiple = (args) => {
   const ranges = getRanges(args.data.map( data => data.value ), mockData2.map( data => data.value ))
   return (
     <ChartLine ranges={ranges} colors={args.colors} rule={args.rule}>
-      { args.data.map((row, idx) => 
-        <ChartLineLabel 
-          key={idx} 
-          value={ranges[idx]} 
-          colors={args.colors} 
-          footer={row.footer} 
+      { args.data.map((row, idx) =>
+        <ChartLineLabel
+          key={idx}
+          value={ranges[idx]}
+          colors={args.colors}
+          footer={row.footer}
           tooltip={<span>{`Visits ${args.data[idx].value}`}</span>} />
       )}
     </ChartLine>
