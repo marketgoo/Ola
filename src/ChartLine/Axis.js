@@ -7,10 +7,10 @@ const ChartLineAxis = ({ max, steps, className, format }) => {
 
   steps = Math.min(max, steps)
   const decimals = max < steps * steps ? 10 : 1
-  const step = max / steps
+  const step = max > 0 ? max / steps : 0
   const children = new Array(steps + 1).fill(null)
     .map((v, index) => <span key={index}>{format(Math.round(index * step * decimals) / decimals)}</span>)
-  
+
   return (
     <div className={styles}>
       { children }

@@ -143,6 +143,121 @@ exports[`ChartLine and ChartLineLabel 1`] = `
 </div>
 `;
 
+exports[`ChartLineAxis with max value zero 1`] = `
+<div
+  className="ola_chartLine"
+>
+  <div
+    className="ola_chartLine-axis"
+  >
+    <span>
+      0
+    </span>
+  </div>
+  <div
+    className="ola_chartLine-value"
+    style={
+      Object {
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ols_chartLine-label"
+    />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
+  </div>
+  <div
+    className="ola_chartLine-value"
+    style={
+      Object {
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ols_chartLine-label"
+    />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
+  </div>
+  <div
+    className="ola_chartLine-value"
+    style={
+      Object {
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ols_chartLine-label"
+    />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
+  </div>
+  <div
+    className="ola_chartLine-value"
+    style={
+      Object {
+        "--value": 0,
+      }
+    }
+  >
+    <div
+      className="ols_chartLine-label"
+    />
+    <span
+      className="ola_chartLine-point"
+      style={
+        Object {
+          "--color": undefined,
+          "--value": 0,
+        }
+      }
+    />
+    <div
+      className="ola_chartLine-space"
+    />
+    <div
+      className="ola_chartLine-footer"
+    />
+  </div>
+  <svg
+    className="ola_chartLine-svg"
+    preserveAspectRatio="none"
+    role="img"
+    viewBox="0 0 100 160"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      className="ola_chartLine-svg-background"
+      d="M 0 0 M 0 155 L 12.5 155 L 37.5 155 L 62.5 155 L 87.5 155 L 100 155 V 0 H 0 Z"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+    <path
+      className="ola_chartLine-svg-line"
+      d="M 87.5 155 L 87.5 155 L 100 155"
+      strokeLinejoin="round"
+      vectorEffect="non-scaling-stroke"
+    />
+  </svg>
+</div>
+`;
+
 exports[`Default ChartLine 1`] = `
 <div
   className="ola_chartLine"
