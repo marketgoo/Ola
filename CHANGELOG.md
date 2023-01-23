@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.15.8] - 2023-01-23
+Added `Edit` to `Icon` component
+
+### Added
+- Added `informationCircle` to `Icon` component
+
 ## [0.15.7] - 2022-12-21
 ### Fixed
 - Avoid division by zero into `ChartLineAxis` component [#238]
@@ -474,7 +480,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Improved README documentation and links [#1], [#2]
 - Added the links to the repository and the homepage to package.json
 
-## 0.1.0 - 2019-09-17
+## [0.1.0] - 2019-09-17
 ### Added
 - New component `Button`
 - New component `ButtonGroup`
@@ -626,6 +632,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
+[0.15.8]: https://github.com/marketgoo/Ola/compare/v0.15.7...v0.15.8
 [0.15.7]: https://github.com/marketgoo/Ola/compare/v0.15.6...v0.15.7
 [0.15.6]: https://github.com/marketgoo/Ola/compare/v0.15.5...v0.15.6
 [0.15.5]: https://github.com/marketgoo/Ola/compare/v0.15.4...v0.15.5
@@ -667,3 +674,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/marketgoo/Ola/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
+[0.1.0]: https://github.com/marketgoo/Ola/releases/tag/v0.1.0
