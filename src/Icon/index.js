@@ -16,6 +16,7 @@ import Clock from './Clock'
 import Close from './Close'
 import Copy from './Copy'
 import Error from './Error'
+import Edit from './Edit'
 import Help from './Help'
 import Home from './Home'
 import InformationCircle from './InformationCircle'
@@ -46,6 +47,7 @@ export const ICONS = {
   close: Close,
   copy: Copy,
   error: Error,
+  edit: Edit,
   help: Help,
   home: Home,
   informationCircle: InformationCircle,
