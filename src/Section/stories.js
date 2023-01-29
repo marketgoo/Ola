@@ -40,7 +40,7 @@ export const AllElements = () =>
 
 export const CenteredHeaderWithImg = () => 
   <Section>
-    <SectionHeader title="Section Header" img={<img src="https://via.placeholder.com/60" />} variant="center">
+    <SectionHeader title="Section Header" img={<img src="https://placehold.it/60x60" />} variant="center">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis eros quam, vitae consectetur leo vehicula ut. Etiam et ullamcorper turpis.
     </SectionHeader>
 

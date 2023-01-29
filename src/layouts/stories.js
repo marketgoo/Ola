@@ -34,7 +34,7 @@ export const Form = () =>
 
 export const ImgContent = () => 
   <div className="ola_ly-imgContent">
-    <img src="https://via.placeholder.com/300" />
+    <img src="https://placehold.it/300x300" />
 
     <div>
       Lorem ipsum
