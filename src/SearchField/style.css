@@ -1,88 +1,96 @@
 .ola_searchField {
-    
 }
 .ola_searchField-form {
-    display: flex;
-    border-radius: var(--radius-big);
-    transition-property: box-shadow;
-    transition-duration: 200ms;
+  display: flex;
+  border-radius: var(--radius-big);
+  transition-property: box-shadow;
+  transition-duration: 200ms;
 
-    &:focus-within {
-        box-shadow: 0 0 0 4px var(--brand-focus);
-    }
+  &:focus-within {
+    box-shadow: 0 0 0 4px var(--brand-focus);
+  }
 }
 .ola_searchField-description {
-    font: var(--font-caption);
-    margin-top: var(--size-2);
-    color: var(--gray);
+  font: var(--font-caption);
+  margin-top: var(--size-2);
+  color: var(--gray);
 }
 .ola_searchField-icon {
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-    &:disabled,
-    &:active,
-    &:hover {
-        background: none;
-    }
+  &:disabled,
+  &:active,
+  &:hover {
+    background: none;
+  }
 }
 .ola_searchField-field {
-    position: relative;
-    flex: 1 1 auto;
+  position: relative;
+  flex: 1 1 auto;
 
-    & .ola_spinner {
-        position: absolute;
-        top: var(--size-3);
-        left: var(--size-3);
-        color: var(--gray-light);
-    }
+  & .ola_spinner {
+    position: absolute;
+    top: var(--size-3);
+    left: var(--size-3);
+    color: var(--gray-light);
+  }
 
-    &:last-child > .ola_searchField-input {
-        border-top-right-radius: var(--radius-big);
-        border-bottom-right-radius: var(--radius-big);
-    }
+  &:last-child > .ola_searchField-input {
+    border-top-right-radius: var(--radius-big);
+    border-bottom-right-radius: var(--radius-big);
+  }
 
-    &:not(:last-child) > .ola_searchField-input {
-        border-right: 0;
-    }
+  &:not(:last-child) > .ola_searchField-input {
+    border-right: 0;
+  }
 }
 /* Visually hidden but accessible */
 .ola_searchField-label {
-    position: absolute; 
-    overflow: hidden; 
-    clip: rect(0 0 0 0); 
-    height: 1px; width: 1px; 
-    margin: -1px; padding: 0; border: 0; 
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
 .ola_searchField-input {
-    border-radius: var(--radius-big) 0 0 var(--radius-big);
-    padding-left: var(--size-8);
-    appearance: textField;
+  border-radius: var(--radius-big) 0 0 var(--radius-big);
+  padding-left: var(--size-8);
+  appearance: textField;
 
-    &:focus {
-        box-shadow: none;
-    }
+  &:focus {
+    box-shadow: none;
+  }
 
-    /* hidden because React cannot handle 'input' events */
-    &::-webkit-search-cancel-button {
-        display: none;
-    }
+  /* hidden because React cannot handle 'input' events */
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
 }
 .ola_searchField-button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    margin: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
 
-    &:focus {
-        box-shadow: none;
-    }
+  &:focus {
+    box-shadow: none;
+  }
 
-    &.is-busy {
-        border: none;
-    }
+  &.is-busy {
+    border: none;
+  }
 
-    & .ola_spinner {
-      display: none;
-    }
+  & .ola_spinner {
+    display: none;
+  }
+}
+
+.ola_searchField-icon-close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
