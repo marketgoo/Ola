@@ -1,8 +1,13 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+
+## [0.15.10] - 2023-03-17
+### Changed
+- Add onRemove prop into `SearchField` component.
 
 ## [0.15.9] - 2023-02-09
 ### Added
@@ -483,7 +488,7 @@ Added `Edit` to `Icon` component
 - Improved README documentation and links [#1], [#2]
 - Added the links to the repository and the homepage to package.json
 
-## [0.1.0] - 2019-09-17
+## 0.1.0 - 2019-09-17
 ### Added
 - New component `Button`
 - New component `ButtonGroup`
@@ -635,6 +640,7 @@ Added `Edit` to `Icon` component
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
+[0.15.10]: https://github.com/marketgoo/Ola/compare/v0.15.9...v0.15.10
 [0.15.9]: https://github.com/marketgoo/Ola/compare/v0.15.8...v0.15.9
 [0.15.8]: https://github.com/marketgoo/Ola/compare/v0.15.7...v0.15.8
 [0.15.7]: https://github.com/marketgoo/Ola/compare/v0.15.6...v0.15.7
@@ -678,4 +684,3 @@ Added `Edit` to `Icon` component
 [0.2.0]: https://github.com/marketgoo/Ola/compare/v0.1.2...v0.2.0
 [0.1.2]: https://github.com/marketgoo/Ola/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/marketgoo/Ola/compare/v0.1.0...v0.1.1
-[0.1.0]: https://github.com/marketgoo/Ola/releases/tag/v0.1.0
