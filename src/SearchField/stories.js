@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import SearchField from './'
 
 export default {
@@ -7,12 +7,24 @@ export default {
   args: {
     id: 'search',
     placeholder: 'Search by name',
-    description: ''
+    description: '',
   },
   argTypes: {
     onFocus: { action: 'focused' },
     onBlur: { action: 'blurred' },
-  }
+  },
 }
 
-export const Base = (args) => <SearchField {...args}/>
+export const Base = (args) => <SearchField {...args} />
+
+export const ClearInput = (args) => {
+  const [value, setValue] = useState('pepe')
+  return (
+    <SearchField
+      {...args}
+      value={value}
+      onChange={(e) => setValue(e.target.value)}
+      onRemove={() => setValue('')}
+    />
+  )
+}
