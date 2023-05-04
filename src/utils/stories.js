@@ -105,6 +105,12 @@ export const FontStyles = () => {
 }
 
 export const Colors = () => {
+  const [styles, setStyles] = useState({ getPropertyValue: () => '' })
+
+  useEffect(() => {
+    setStyles(getComputedStyle(document.querySelector('.ola')))
+  }, [document])
+
   const colors = [
     {
       name: 'Brand',
@@ -173,8 +179,16 @@ export const Colors = () => {
       {
         colors.map((color, index) =>
           <tr key={index}>
-            <td onClick={() => _copyToClipboard(color.className)} style={{ cursor: 'pointer' }}><pre>{color.className}</pre></td>
-            <td><div className={`${color.className} ${color.extra}`}>{color.name}</div></td>
+            <td
+              onClick={() => _copyToClipboard(color.className)}
+              style={{ cursor: 'pointer' }}>
+              <pre>{color.className}</pre>
+            </td>
+            <td>
+              <div className={`${color.className} ${color.extra}`}>
+                {styles.getPropertyValue(color.className.replace('ola-', '--'))}
+              </div>
+            </td>
             <td><pre>&lt;div className=&quot;{color.className}&quot;&gt;...&lt;/div&gt;</pre></td>
           </tr>)
       }
@@ -182,6 +196,12 @@ export const Colors = () => {
 }
 
 export const BackgroundColors = () => {
+  const [styles, setStyles] = useState({ getPropertyValue: () => '' })
+
+  useEffect(() => {
+    setStyles(getComputedStyle(document.querySelector('.ola')))
+  }, [document])
+
   const bgs = [
     {
       name: 'Brand',
@@ -251,7 +271,9 @@ export const BackgroundColors = () => {
         bgs.map((bg, index) =>
           <tr key={index}>
             <td onClick={() => _copyToClipboard(bg.className)} style={{ cursor: 'pointer' }}><pre>{bg.className}</pre></td>
-            <td><div className={`${bg.className} ${bg.extra}`}>{bg.name}</div></td>
+            <td><div className={`${bg.className} ${bg.extra}`}>
+              {styles.getPropertyValue(bg.className.replace('ola-bg-', '--'))}
+            </div></td>
             <td><pre>&lt;div className=&quot;{bg.className}&quot;&gt;...&lt;/div&gt;</pre></td>
           </tr>)
       }
