@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import cx from 'classnames'
-import {default as PT} from 'prop-types'
+import { default as PT } from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
 import useEventListener from '../hooks/useEventListener'
 import Icon from '../Icon'
@@ -8,36 +8,50 @@ import ButtonIcon from '../ButtonIcon'
 
 const scrollBarWidth = getScrollbarWidth()
 
-const Modal = ({ open, closable, onClose, onOpen, variant, className, children, ...props }) => {
-
+const Modal = ({
+  open,
+  closable,
+  onClose,
+  onOpen,
+  variant,
+  className,
+  children,
+  ...props
+}) => {
   const modal = useRef(null)
   const scrollingElement = document.scrollingElement
 
   // We can't use useOutsideEvent hook. Dialog height and width is 100%
-  const clickOutside = event => {
-    if(closable && modal && modal.current === event.target) {
+  const clickOutside = (event) => {
+    if (closable && modal && modal.current === event.target) {
       const rect = modal.current.getBoundingClientRect()
-      const isInDialog = (rect.top <= event.clientY && event.clientY <= rect.top + rect.height
-        && rect.left <= event.clientX && event.clientX <= rect.left + rect.width)
-      if(!isInDialog) {
+      const isInDialog =
+        rect.top <= event.clientY &&
+        event.clientY <= rect.top + rect.height &&
+        rect.left <= event.clientX &&
+        event.clientX <= rect.left + rect.width
+      if (!isInDialog) {
         modal.current.close()
       }
     }
   }
 
-  useEventListener(modal, 'cancel', event => { if(!closable) event.preventDefault() })
+  useEventListener(modal, 'cancel', (event) => {
+    if (!closable) event.preventDefault()
+  })
   useEventListener(modal, 'close', () => {
     onClose()
     releaseScroll(scrollingElement)
   })
-  useEffect(() => { 
+  useEffect(() => {
     dialogPolyfill.registerDialog(modal.current)
     return () => {
-      if( scrollingElement.style.overflow !== null ) releaseScroll(scrollingElement)
+      if (scrollingElement.style.overflow !== null)
+        releaseScroll(scrollingElement)
     }
   }, [])
   useEffect(() => {
-    if(modal.current && open && !modal.current.open) {
+    if (modal.current && open && !modal.current.open) {
       onOpen()
       blockScroll(scrollingElement)
       modal.current.showModal()
@@ -45,20 +59,33 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
   })
 
   return (
-    <dialog className={cx('ola_modal', variant && `is-${variant}`, {'is-closable': closable}, className)} {...props} ref={modal} onClick={clickOutside}>
-      { open &&
+    open && (
+      <dialog
+        className={cx(
+          'ola_modal',
+          variant && `is-${variant}`,
+          { 'is-closable': closable },
+          className
+        )}
+        {...props}
+        ref={modal}
+        onClick={clickOutside}
+      >
         <>
           <div className="ola_modal-container">{children}</div>
-          { closable &&
-          <ButtonIcon type="button" onClick={() => modal.current.close()} className={'ola_modal-close'}>
-            <Icon name="close" />
-          </ButtonIcon>
-          }
+          {closable && (
+            <ButtonIcon
+              type="button"
+              onClick={() => modal.current.close()}
+              className={'ola_modal-close'}
+            >
+              <Icon name="close" />
+            </ButtonIcon>
+          )}
         </>
-      }
-    </dialog>
+      </dialog>
+    )
   )
-
 }
 
 Modal.defaultProps = {
@@ -66,7 +93,7 @@ Modal.defaultProps = {
   variant: null,
   onOpen: () => {},
   onClose: () => {},
-  closable: true
+  closable: true,
 }
 
 Modal.propTypes = {
@@ -83,11 +110,7 @@ Modal.propTypes = {
   /** Modal variants */
   variant: PT.oneOf(['center', 'narrow']),
   /** Childen nodes */
-  children: PT.oneOfType([
-    PT.string,
-    PT.arrayOf(PT.node),
-    PT.node
-  ]).isRequired
+  children: PT.oneOfType([PT.string, PT.arrayOf(PT.node), PT.node]).isRequired,
 }
 
 export default Modal
@@ -100,7 +123,7 @@ function getScrollbarWidth() {
   outer.appendChild(inner)
 
   document.body.appendChild(outer)
-  const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth)
+  const scrollbarWidth = outer.offsetWidth - inner.offsetWidth
   outer.parentNode.removeChild(outer)
 
   return scrollbarWidth
