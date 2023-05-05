@@ -30,15 +30,15 @@ export { getElementType }
  * @param {min} Min value of all elements 
  * @returns {number} 
 */
-export function normalizeRange (val, max, min = 0) {
+export function normalizeRange(val, max, min = 0) {
   if (val === null || val === undefined) {
     return null
   }
   if (max === min) {
     return 0
   }
-  if (val === min) {  
-    return val/max
+  if (val === min) {
+    return val / max
   }
   return (val - min) / (max - min)
 }
@@ -75,7 +75,26 @@ export function getRanges(...rows) {
 
 export function getNumberFormat(number,
   language = 'en-US',
-  options = { notation: 'compact',
-    maximumFractionDigits: 2 }) {
+  options = {
+    notation: 'compact',
+    maximumFractionDigits: 2
+  }) {
   return new Intl.NumberFormat(language, options).format(number)
+}
+
+/**
+ * Copy to clipboard a text.
+ * @param {String} text - text to copy
+ */
+export function copyToClipboard(text) {
+  if (navigator?.clipboard) {
+    navigator.clipboard.writeText(text)
+  } else {
+    const textArea = document.createElement('textarea')
+    textArea.value = text
+    document.body.appendChild(textArea)
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+  }
 }

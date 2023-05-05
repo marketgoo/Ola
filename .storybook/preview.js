@@ -2,6 +2,7 @@ import React from 'react'
 import '../src/index.css'
 import { addDecorator, addParameters } from '@storybook/react'
 import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks'
+import './styles.css'
 
 addDecorator(story => 
   <div className="ola">{story()}</div>

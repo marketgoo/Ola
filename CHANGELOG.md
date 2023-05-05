@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+### Added
+- Docs for css variables
+
+### Changed
+- Improve utils docs
+
 ## [0.15.10] - 2023-03-17
 ### Changed
 - Add onRemove prop into `SearchField` component.
