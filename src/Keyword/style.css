@@ -6,7 +6,7 @@
     align-items: center;
     color: var(--color);
     background-color: var(--background);
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     vertical-align: baseline;
     cursor: default;
     max-width: max-content;
@@ -28,7 +28,7 @@
     & .ola_buttonIcon {
         min-width: var(--size-5);
         min-height: var(--size-5);
-        border-radius: var(--radius-small);
+        border-radius: var(--radius-s);
         --background-hover: var(--color-neutral-400);
     }
 }

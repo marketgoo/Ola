@@ -9,7 +9,7 @@
     color: var(--color);
     background-color: var(--background);
     padding: 0 var(--padding);
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     border: solid 1px var(--background);
     vertical-align: baseline;
     cursor: default;
@@ -104,7 +104,7 @@
         height: 100%;
 
         & .ola_icon {
-            border-radius: 0 calc(var(--radius-small) - 1px) calc(var(--radius-small) - 1px) 0;
+            border-radius: 0 calc(var(--radius-s) - 1px) calc(var(--radius-s) - 1px) 0;
             padding-top: 0;
             padding-bottom: 0;
         }

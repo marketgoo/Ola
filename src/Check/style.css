@@ -10,7 +10,7 @@
 
         & .ola_check-label {
             background: var(--color-white-100);
-            border-radius: var(--radius-small);
+            border-radius: var(--radius-s);
             border: solid 2px var(--color-neutral-400);
             padding: var(--size-2);
             transition: background-color 200ms;
@@ -75,7 +75,7 @@
     width: 24px;
     height: 24px;
     border: solid 2px;
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     flex: 0 0 auto;
     margin-right: 10px;
     color: var(--color);

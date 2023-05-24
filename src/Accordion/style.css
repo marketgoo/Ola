@@ -14,7 +14,7 @@
     cursor: pointer;
     outline: 0;
     list-style: none;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
 
     &::-webkit-details-marker {
         display: none;

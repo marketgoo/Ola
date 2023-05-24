@@ -28,7 +28,7 @@
   color: var(--color);
   background-color: var(--background);
   cursor: pointer;
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-xl);
   font: var(--font-1-regular);
   padding: 0 var(--column-gap-2);
   font-weight: var(--font-weight-bold);

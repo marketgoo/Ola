@@ -1,8 +1,8 @@
 .ola_modal {
     background: var(--color-white-100);
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
     border: none;
-    box-shadow: var(--shadow-3), var(--shadow-line);
+    box-shadow: var(--shadow-level-3), var(--shadow-line);
     max-width: 850px;
     width: calc(100% - 5vw);
     margin: 2.5vw auto 0;

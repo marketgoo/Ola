@@ -12,7 +12,7 @@
     background: var(--color-white-100);
     color: var(--color);
     background-color: var(--background);
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     font: var(--font-1-regular);
     padding: 0 1em;
     margin: 0;

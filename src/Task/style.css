@@ -37,10 +37,10 @@
     &[open] {
         position: relative;
         z-index: 2;
-        box-shadow: var(--shadow-2), var(--shadow-line);
+        box-shadow: var(--shadow-level-2), var(--shadow-line);
         margin-left: calc(var(--size-2) * -1);
         margin-right: calc(var(--size-2) * -1);
-        border-radius: var(--radius);
+        border-radius: var(--radius-m);
         padding-top: var(--size-2);
         margin-top: calc(var(--size-2) * -1);
         margin-top: var(--size-2);

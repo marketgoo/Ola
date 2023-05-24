@@ -82,8 +82,8 @@
         width: calc(100% * var(--value));
         height: var(--size-2);
         transition: width var(--slow-duration);
-        border-top-right-radius: var(--radius-small);
-        border-bottom-right-radius: var(--radius-small);
+        border-top-right-radius: var(--radius-s);
+        border-bottom-right-radius: var(--radius-s);
     }
     .ola_chartColumn-rule {
         display: none;
@@ -120,8 +120,8 @@
         margin-left: var(--size-2);
         margin-right: var(--size-2);
         height: calc(var(--height) * var(--value));
-        border-top-right-radius: var(--radius-small);
-        border-top-left-radius: var(--radius-small);
+        border-top-right-radius: var(--radius-s);
+        border-top-left-radius: var(--radius-s);
         transition: height var(--slow-duration);
     }
 }

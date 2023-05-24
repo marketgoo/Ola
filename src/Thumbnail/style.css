@@ -5,8 +5,8 @@
 }
 
 .ola_thumbnail-image {
-    box-shadow: var(--shadow-2), var(--shadow-line), 0 0 0 6px var(--color);
-    border-radius: var(--radius);
+    box-shadow: var(--shadow-level-2), var(--shadow-line), 0 0 0 6px var(--color);
+    border-radius: var(--radius-m);
     background: var(--color-white-100);
     display: block;
     max-width: 100%;

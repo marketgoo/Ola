@@ -58,7 +58,7 @@
         width: 100%;
         border: solid 2px var(--border);
         background: var(--color-white-100);
-        border-radius: var(--radius-small);
+        border-radius: var(--radius-s);
         position: relative;
     }
 

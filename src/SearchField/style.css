@@ -2,7 +2,7 @@
 }
 .ola_searchField-form {
   display: flex;
-  border-radius: var(--radius-big);
+  border-radius: var(--radius-xl);
   transition-property: box-shadow;
   transition-duration: 200ms;
 
@@ -38,8 +38,8 @@
   }
 
   &:last-child > .ola_searchField-input {
-    border-top-right-radius: var(--radius-big);
-    border-bottom-right-radius: var(--radius-big);
+    border-top-right-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
   }
 
   &:not(:last-child) > .ola_searchField-input {
@@ -58,7 +58,7 @@
   border: 0;
 }
 .ola_searchField-input {
-  border-radius: var(--radius-big) 0 0 var(--radius-big);
+  border-radius: var(--radius-xl) 0 0 var(--radius-xl);
   padding-left: var(--size-5);
   appearance: textField;
 

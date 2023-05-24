@@ -55,7 +55,7 @@
   top: 0;
   z-index: 2;
   background: white;
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-level-1);
 }
 
 .ola_ly-main-navbar {
