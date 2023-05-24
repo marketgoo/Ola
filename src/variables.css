@@ -133,7 +133,7 @@
     --color-chart-0: #98A6EE;                       /* OLD --chart-0 */
     --color-chart-1: var(--color-pict-red-500);     /* OLD --chart-1 */
     --color-chart-2: var(--color-pict-green-500);   /* OLD --chart-2 */
-    --color-chart-3: var(--color-pict-yellow-500:); /* OLD --chart-3 */
+    --color-chart-3: var(--color-pict-yellow-500); /* OLD --chart-3 */
     --color-chart-4: var(--color-pict-blue-500);    /* OLD --chart-4 */
     --color-chart-5: var(--color-pict-brown-500);   /* OLD --chart-5 */
 
@@ -274,6 +274,10 @@
     --shadow-level-1: 0px 1px 3px 0px #00000033; /* OLD --shadow-1 */
     --shadow-level-2: 0px 2px 6px 0px #00000033; /* OLD --shadow-2 */
     --shadow-level-3: 0px 4px 12px 0px #00000033; /* OLD --shadow-3 */
+    --drop-shadow-line: 0px 0px 1px #00000066; /* for drop-shadow */
+    --drop-shadow-level-1: 0px 1px 3px #00000033; /* for drop-shadow */
+    --drop-shadow-level-2: 0px 2px 6px #00000033; /* for drop-shadow */
+    --drop-shadow-level-3: 0px 4px 12px #00000033; /* for drop-shadow */
     --shadow-focus: 0px 0px 0px 4px #0090DA33; 
     --shadow-focus-negative: 0px 0px 0px 4px var(--color-negative-100a);
     --shadow-focus-pro: 0px 0px 0px 4px #AC18B459;
