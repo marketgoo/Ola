@@ -8,7 +8,7 @@
 }
 .ola_switch-label {
     display: flex;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     align-items: center;
 }
 .ola_switch-label::before {

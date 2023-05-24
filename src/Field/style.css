@@ -18,14 +18,14 @@
     color: var(--color-neutral-900);
     display: flex;
     justify-content: space-between;
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     cursor: default;
 }
 .ola_field-hint {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     margin-left: 1em;
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
     color: var(--color-neutral-700);
 }
 .ola_field-input {
@@ -33,7 +33,7 @@
 }
 .ola_field-description,
 .ola_field-error {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     margin-top: var(--size-0);
     color: var(--color-neutral-700);
 }

@@ -128,12 +128,12 @@
 }
 .ola_modal-title {
     margin: 0;
-    font: var(--font-headline);
-    font-weight: var(--regular);
+    font: var(--font-3-regular);
+    font-weight: var(--font-weight-regular);
 }
 .ola_modal-intro {
     margin: 0;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color-neutral-700);
 }
 .ola_modal-content {

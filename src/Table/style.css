@@ -2,7 +2,7 @@
     overflow-x: auto;
 }
 .ola_table {
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color-neutral-700);
     text-align: left;
     width: 100%;
@@ -22,7 +22,7 @@
     }
 
     & th {
-        font-weight: var(--bold);
+        font-weight: var(--font-weight-bold);
         color: var(--color-neutral-900);
         padding-left: var(--size-2);
         padding-right: var(--size-2);
@@ -50,7 +50,7 @@
     }
 
     & caption {
-        font: var(--font-caption);
+        font: var(--font-0-regular);
         caption-side: bottom;
         padding-top: var(--size-1);
         text-align: right;

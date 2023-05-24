@@ -1,7 +1,7 @@
 .ola {
     scroll-behavior: smooth;
     font-family: var(--font-family-1);
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
     color: var(--color-neutral-900);
     text-rendering: auto;
     overflow-wrap: break-word;
@@ -10,7 +10,7 @@
 
     & b,
     & strong {
-        font-weight: var(--bold);
+        font-weight: var(--font-weight-bold);
     }
 
     & a {

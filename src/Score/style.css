@@ -40,7 +40,7 @@
 }
 
 .ola_score-value {
-  font: var(--font-display);
+  font: var(--font-8-medium);
   color: var(--color-neutral-900);
   position: relative;
   transition: opacity 200ms;
@@ -48,7 +48,7 @@
   line-height: 0.8;
 
   & > sup {
-    font: var(--font-title);
+    font: var(--font-5-medium);
     vertical-align: baseline;
     color: var(--sup-color);
     &.is-black {
@@ -58,8 +58,8 @@
 }
 
 .ola_score-title {
-  font: var(--font-caption);
-  font-weight: var(--bold);
+  font: var(--font-0-regular);
+  font-weight: var(--font-weight-bold);
   color: var(--color-neutral-700);
   position: relative;
   transition: opacity 200ms;
@@ -76,7 +76,7 @@
 }
 
 .ola_score-busy {
-  font: var(--font-caption);
+  font: var(--font-0-regular);
   color: var(--color-neutral-700);
   position: relative;
   transition: opacity 200ms;

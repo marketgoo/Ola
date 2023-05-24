@@ -29,9 +29,9 @@
   background-color: var(--background);
   cursor: pointer;
   border-radius: var(--radius-big);
-  font: var(--font-callout);
+  font: var(--font-1-regular);
   padding: 0 var(--column-gap-2);
-  font-weight: var(--bold);
+  font-weight: var(--font-weight-bold);
   transition-property: background-color, color, box-shadow;
   transition-duration: var(--duration);
   outline: 0;

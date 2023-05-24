@@ -45,16 +45,16 @@
 }
 .ola_panel-title {
     margin: 0;
-    font: var(--font-headline);
-    font-weight: var(--regular);
+    font: var(--font-3-regular);
+    font-weight: var(--font-weight-regular);
 }
 .ola_panel-display {
     margin: 0 0 var(--size-2) 0;
-    font: var(--font-title);
+    font: var(--font-5-medium);
 }
 .ola_panel-intro {
     margin-top: var(--size-1);
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color-neutral-700);
 }
 .ola_panel-extra {
@@ -68,8 +68,8 @@
     padding: var(--size-1) var(--column-gap-3);
     margin: var(--row-gap-1) 0 0;
     background-color: var(--color-neutral-200);
-    font: var(--font-body);
-    font-weight: var(--regular);
+    font: var(--font-2-regular);
+    font-weight: var(--font-weight-regular);
 }
 
 .ola_panel-content {

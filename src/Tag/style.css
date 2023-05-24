@@ -79,21 +79,21 @@
 
     &.is-small {
         height: var(--size-3);
-        font: var(--font-caption);
-        font-weight: var(--bold);
+        font: var(--font-0-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-medium {
         height: var(--size-4);
-        font: var(--font-callout);
-        font-weight: var(--bold);
+        font: var(--font-1-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-big {
         --padding: var(--size-2);
         height: var(--size-5);
-        font: var(--font-body);
-        font-weight: var(--bold);
+        font: var(--font-2-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     & > .ola_buttonIcon {

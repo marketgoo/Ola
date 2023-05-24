@@ -39,17 +39,17 @@
     }
     &.is-small {
         & .ola_issue-title {
-            font: var(--font-callout);
-            font-weight: var(--bold);
+            font: var(--font-1-regular);
+            font-weight: var(--font-weight-bold);
         }
     }
     &.is-big {
         & .ola_issue-title {
-            font: var(--font-title);
+            font: var(--font-5-medium);
 
             @media (--to-width-1) {
-                font: var(--font-headline);
-                font-weight: var(--bold);
+                font: var(--font-3-regular);
+                font-weight: var(--font-weight-bold);
             }
         }
     }
@@ -65,9 +65,9 @@
 .ola_issue-title {
     --skeleton-width: 16em;
     flex: 1 1 auto;
-    font: var(--font-body);
+    font: var(--font-2-regular);
     color: var(--color-neutral-900);
-    font-weight: var(--bold);
+    font-weight: var(--font-weight-bold);
 }
 
 .ola_issue-status {
@@ -78,7 +78,7 @@
 .ola_issue-dropdown {
     &.is-small .ola_issue-content {
         padding-left: calc(var(--size-0) + var(--size-3) + var(--column-gap-1));
-        font: var(--font-caption);
+        font: var(--font-0-regular);
 
         & > *:first-child {
             margin-top: 0;
@@ -86,7 +86,7 @@
     }
     &.is-big .ola_issue-content {
         padding-left: calc(var(--size-0) + var(--size-5) + var(--column-gap-1));
-        font: var(--font-body);
+        font: var(--font-2-regular);
     }
     & .ola_issue-summary-content {
       display: flex;
@@ -117,7 +117,7 @@
 .ola_issue-content {
     padding-left: calc(var(--size-0) + var(--size-4) + var(--column-gap-1));
     color: var(--color-neutral-700);
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     & > *:first-child {
         margin-top: .5em;
     }

@@ -18,24 +18,24 @@ td.ola-bg {
 
 /* Text sizes */
 .ola-display {
-    font: var(--font-display);
-    letter-spacing: var(--font-display-spacing);
+    font: var(--font-8-medium);
+    letter-spacing: var(--font-letter-spacing-7);
 }
 .ola-title {
-    font: var(--font-title);
-    letter-spacing: var(--font-title-spacing);
+    font: var(--font-5-medium);
+    letter-spacing: var(--font-letter-spacing-4);
 }
 .ola-headline {
-    font: var(--font-headline);
+    font: var(--font-3-regular);
 }
 .ola-body {
-    font: var(--font-body);
+    font: var(--font-2-regular);
 }
 .ola-callout {
-    font: var(--font-callout);
+    font: var(--font-1-regular);
 }
 .ola-caption {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
 }
 
 h1,
@@ -50,7 +50,7 @@ strong {
     &.ola-body,
     &.ola-callout,
     &.ola-caption {
-        font-weight: var(--bold);
+        font-weight: var(--font-weight-bold);
     }
 }
 
@@ -58,7 +58,7 @@ strong {
     font-weight: var(--normal) !important; /* Overrides the previous ruleset */
 }
 .ola-bold {
-    font-weight: var(--bold);
+    font-weight: var(--font-weight-bold);
 }
 
 /* Colors */

@@ -34,7 +34,7 @@
     width: var(--width);
     box-sizing: border-box;
     z-index: 5;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-900);
     display: none;
 

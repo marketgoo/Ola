@@ -1,7 +1,7 @@
 .ola_check {
     padding: var(--size-1) 0;
     display: inline-block;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     cursor: default;
 
     &.is-area {
@@ -43,7 +43,7 @@
         }
         & .ola_check-input:checked ~ .ola_check-label {
             background-color: var(--color-neutral-200);
-            font-weight: var(--bold);
+            font-weight: var(--font-weight-bold);
         }
     }
 }

@@ -51,13 +51,13 @@
 
 .ola_chartColumn-footer {
     padding-top: var(--size-0);
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     color: var(--color-neutral-700);
 }
 .ola_chartColumn-label {
     padding-bottom: var(--size-0);
-    font: var(--font-callout);
+    font: var(--font-1-regular);
 }
 .ola_chartColumn-rule {
     position: absolute;
@@ -68,7 +68,7 @@
     bottom: calc((var(--value) * var(--height)) + 1px);
     text-align: right;
     mix-blend-mode: multiply;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     pointer-events: none;
 }

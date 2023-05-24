@@ -51,7 +51,7 @@
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -88,7 +88,7 @@
     bottom: calc(var(--value) * (var(--height) + 5px));
     text-align: right;
     mix-blend-mode: multiply;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     pointer-events: none;
 }
@@ -104,7 +104,7 @@
 
     border-right: solid 1px var(--color-neutral-400);
     text-align: right;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     padding-right: var(--size-1);
     width: var(--size-5);

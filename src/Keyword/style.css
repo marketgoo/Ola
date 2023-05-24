@@ -15,8 +15,8 @@
 }
 
 .ola_keyword-text {
-    font: var(--font-caption);
-    font-weight: var(--bold);
+    font: var(--font-0-regular);
+    font-weight: var(--font-weight-bold);
     padding: 0.8em var(--column-gap-1);
 }
 

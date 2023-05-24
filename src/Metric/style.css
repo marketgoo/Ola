@@ -36,23 +36,23 @@
     }
 }
 .ola_metric-title {
-    font: var(--font-body);
-    font-weight: var(--regular);
+    font: var(--font-2-regular);
+    font-weight: var(--font-weight-regular);
     color: var(--color-neutral-900);
 }
 .ola_metric-description {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     margin: var(--size-0) 0 0;
 }
 .ola_metric-footer {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     margin: var(--size-2) 0 0;
 }
 .ola_metric-value {
     display: block;
-    font: var(--font-title);
+    font: var(--font-5-medium);
     color: var(--color-neutral-900);
     margin: var(--size-0) 0 0;
 }

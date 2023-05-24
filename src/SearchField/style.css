@@ -11,7 +11,7 @@
   }
 }
 .ola_searchField-description {
-  font: var(--font-caption);
+  font: var(--font-0-regular);
   margin-top: var(--size-0);
   color: var(--color-neutral-700);
 }

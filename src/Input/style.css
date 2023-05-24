@@ -13,14 +13,14 @@
     color: var(--color);
     background-color: var(--background);
     border-radius: var(--radius-small);
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     padding: 0 1em;
     margin: 0;
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: var(--duration);
     outline: 0;
     text-decoration: none;
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
 
     &::placeholder {
         color: var(--color-neutral-400);

@@ -7,7 +7,7 @@
     --color: var(--color-neutral-700);
     --background: var(--color-white-100);
 
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color);
     background: var(--background);
     display: flex;
@@ -28,7 +28,7 @@
     &.is-nav {
         --color: var(--color-primary-500);
         border-top: solid 1px var(--color-neutral-200);
-        font-weight: var(--bold);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-selected,
@@ -43,7 +43,7 @@
     }
 
     &.is-small {
-        font: var(--font-caption);
+        font: var(--font-0-regular);
         padding: var(--size-0) var(--size-2);
     }
 

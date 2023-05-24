@@ -16,14 +16,14 @@
 }
 
 .ola_progressBar-description {
-  font: var(--font-caption);
+  font: var(--font-0-regular);
   color: var(--color-neutral-700);
   margin: 0px 0px var(--size-1) var(--size-1);
 }
 
 .ola_progressBar-description strong {
   color: var(--color-neutral-900);
-  font-weight: var(--bold);
+  font-weight: var(--font-weight-bold);
 }
 
 .ola_progressBar progress {

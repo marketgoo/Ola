@@ -33,7 +33,7 @@
     user-select: none;
     text-align: center;
     color: var(--color-neutral-700);
-    font: var(--font-callout);
+    font: var(--font-1-regular);
 }
   
 /* iphone-8 styles */

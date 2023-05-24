@@ -36,7 +36,7 @@
 }
 
 .ola_progressCircle-value {
-    font: var(--font-title);
+    font: var(--font-5-medium);
     color: var(--color-neutral-900);
     position: relative;
     transition: opacity 200ms;
@@ -49,7 +49,7 @@
 
 .ola_progressCircle-label,
 .ola_progressCircle-description {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;
@@ -58,7 +58,7 @@
 }
 
 .ola_progressCircle-busy {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;

@@ -39,8 +39,8 @@
     padding-right: var(--size-2);
 }
 .ola_accordion-title {
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     color: var(--color-primary-500);
     text-decoration: underline;
     text-underline-offset: 4px;

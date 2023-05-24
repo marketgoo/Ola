@@ -80,7 +80,7 @@
 
 }
 .ola_task-header {
-    font: var(--font-body);
+    font: var(--font-2-regular);
     list-style: none;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@
 }
 .ola_task-body {
     padding: var(--row-gap-2) 0;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color-neutral-700);
 
     & p,
@@ -147,7 +147,7 @@
     }
 
     & h3 {
-      font: var(--font-body);
+      font: var(--font-2-regular);
       color: var(--color-neutral-900);
       margin: var(--size-4) 0 var(--size-1);
     }
@@ -166,8 +166,8 @@
         padding-left: var(--size-4);
 
         & li::marker {
-            font: var(--font-callout);
-            font-weight: var(--bold);
+            font: var(--font-1-regular);
+            font-weight: var(--font-weight-bold);
             color: var(--color-neutral-400);
         }
     }
@@ -212,7 +212,7 @@
 
 .ola_task-info {
     padding: 0 0 var(--row-gap-3);
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     color: var(--color-neutral-700);
     display: flex;
     flex-wrap: wrap;

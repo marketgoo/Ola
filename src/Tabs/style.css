@@ -12,8 +12,8 @@
   --color: var(--color-neutral-700);
   --background: transparent;
 
-  font: var(--font-callout);
-  font-weight: var(--bold);
+  font: var(--font-1-regular);
+  font-weight: var(--font-weight-bold);
   color: var(--color);
   background: var(--background);
   display: flex;

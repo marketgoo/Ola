@@ -13,8 +13,8 @@
 }
 .ola_page-title {
     --skeleton-width: 20em;
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     grid-row: 1;
     display: block;
     max-width: 100%;
@@ -24,7 +24,7 @@
 }
 .ola_page-url {
     --skeleton-width: 14em;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     display: block;
     grid-row: 2;
     justify-self: start;
