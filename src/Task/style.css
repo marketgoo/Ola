@@ -1,25 +1,25 @@
 .ola_task {
     margin: 0;
-    background: var(--white);
+    background: var(--color-white-100);
 
     &.is-success {
         & .ola_task-status {
-            fill: var(--success);
+            fill: var(--color-positive-500);
         }
     }
     &.is-error {
         & .ola_task-status {
-            fill: var(--error);
+            fill: var(--color-negative-500);
         }
     }
     &.is-warning {
         & .ola_task-status {
-            fill: var(--warning);
+            fill: var(--color-warning-500);
         }
     }
     &.is-suggested {
         & .ola_task-status {
-            fill: var(--gray);
+            fill: var(--color-neutral-700);
         }
     }
 
@@ -96,7 +96,7 @@
 }
 
 .ola_task-summary {
-    color: var(--black);
+    color: var(--color-neutral-900);
     cursor: pointer;
     transition: background-color var(--duration);
     outline: 0;
@@ -107,14 +107,14 @@
     }
 
     &:hover {
-        color: var(--brand-dark);
-        background-color: var(--gray-xlight);
+        color: var(--color-primary-600);
+        background-color: var(--color-neutral-200);
     }
 
     &:focus-visible {
         position: relative;
         z-index: 2;
-        box-shadow: 0 0 0 4px var(--brand-focus);
+        box-shadow: 0 0 0 4px var(--color-primary-100);
     }
 }
 .ola_task-status {
@@ -126,7 +126,7 @@
     margin-left: auto;
     margin-right: calc(var(--size-7) * -1);
     display: none;
-    color: var(--gray);
+    color: var(--color-neutral-700);
 
     @media (--to-width-2) {
         margin-right: 0;
@@ -135,7 +135,7 @@
 .ola_task-body {
     padding: var(--row-gap-2) 0;
     font: var(--font-callout);
-    color: var(--gray);
+    color: var(--color-neutral-700);
 
     & p,
     & li,
@@ -148,7 +148,7 @@
 
     & h3 {
       font: var(--font-body);
-      color: var(--black);
+      color: var(--color-neutral-900);
       margin: var(--size-7) 0 var(--size-3);
     }
 
@@ -158,7 +158,7 @@
     }
 
     & strong {
-        color: var(--black);
+        color: var(--color-neutral-900);
     }
 
     & ol {
@@ -168,7 +168,7 @@
         & li::marker {
             font: var(--font-callout);
             font-weight: var(--bold);
-            color: var(--gray-light);
+            color: var(--color-neutral-400);
         }
     }
 
@@ -188,7 +188,7 @@
                 top: .4em;
                 width: var(--size-3);
                 height: var(--size-3);
-                background: var(--gray-light);
+                background: var(--color-neutral-400);
                 border-radius: 50%;
             }
         }
@@ -213,7 +213,7 @@
 .ola_task-info {
     padding: 0 0 var(--row-gap-3);
     font: var(--font-caption);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     display: flex;
     flex-wrap: wrap;
 
@@ -223,7 +223,7 @@
     }
 
     & strong {
-        color: var(--black);
+        color: var(--color-neutral-900);
     }
 
     @media (--to-width-1) {

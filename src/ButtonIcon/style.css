@@ -1,10 +1,10 @@
 .ola_buttonIcon {
-    --color: var(--gray);
+    --color: var(--color-neutral-700);
     --background: transparent;
-    --color-hover: var(--black);
-    --background-hover: var(--gray-xlight);
-    --shadow-focus: var(--accent-focus);
-    --background-active: var(--gray-light);
+    --color-hover: var(--color-neutral-900);
+    --background-hover: var(--color-neutral-200);
+    --shadow-focus: var(--color-accent-100);
+    --background-active: var(--color-neutral-400);
 
     display: inline-flex;
     min-height: var(--size-6);
@@ -57,14 +57,14 @@
     }
 
     &.is-secondary {
-        --color: var(--gray-light);
+        --color: var(--color-neutral-400);
     }
 
     &.is-destructive {
-        --color: var(--error);
-        --shadow-focus: var(--error-focus);
-        --color-hover: var(--error-dark);
-        --background-active: var(--error-focus);
+        --color: var(--color-negative-500);
+        --shadow-focus: var(--color-negative-100);
+        --color-hover: var(--color-negative-600);
+        --background-active: var(--color-negative-100);
     }
 
     &.is-chevron {
@@ -79,10 +79,10 @@
 
     &.is-disabled,
     &:disabled {
-        color: var(--gray-xlight);
-        --background: var(--white);
-        --background-hover: var(--white);
-        --background-active: var(--white);
+        color: var(--color-neutral-200);
+        --background: var(--color-white-100);
+        --background-hover: var(--color-white-100);
+        --background-active: var(--color-white-100);
         cursor: not-allowed;
         pointer-events: none;
         box-shadow: none;
@@ -94,8 +94,8 @@
     }
 
     &.is-busy {
-        color: var(--white);
-        background-color: var(--gray);
+        color: var(--color-white-100);
+        background-color: var(--color-neutral-700);
         min-width: 0;
         cursor: wait;
         pointer-events: none;

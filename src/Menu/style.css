@@ -4,8 +4,8 @@
     padding: 0;
 }
 .ola_menu-option {
-    --color: var(--gray);
-    --background: var(--white);
+    --color: var(--color-neutral-700);
+    --background: var(--color-white-100);
 
     font: var(--font-callout);
     color: var(--color);
@@ -26,20 +26,20 @@
     }
 
     &.is-nav {
-        --color: var(--brand);
-        border-top: solid 1px var(--gray-xlight);
+        --color: var(--color-primary-500);
+        border-top: solid 1px var(--color-neutral-200);
         font-weight: var(--bold);
     }
 
     &.is-selected,
     &:hover,
     &:focus-visible {
-        --color: var(--black);
-        --background: var(--gray-xlight);
+        --color: var(--color-neutral-900);
+        --background: var(--color-neutral-200);
     }
 
     &.is-selected {
-        border-left: solid var(--size-1) var(--gray-light);
+        border-left: solid var(--size-1) var(--color-neutral-400);
     }
 
     &.is-small {
@@ -48,8 +48,8 @@
     }
 
     &:active {
-        --color: var(--black);
-        --background: var(--brand-focus);
+        --color: var(--color-neutral-900);
+        --background: var(--color-primary-100);
     }
 
     & .ola_icon {
@@ -58,7 +58,7 @@
     }
 }
 .ola_menu-separator {
-    border-top: solid 1px var(--gray-light);
+    border-top: solid 1px var(--color-neutral-400);
     margin-top: var(--size-3);
     padding-top: var(--size-3);
 }

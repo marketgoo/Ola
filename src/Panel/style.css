@@ -1,5 +1,5 @@
 .ola_panel {
-    background: var(--white);
+    background: var(--color-white-100);
     border-radius: var(--radius);
     box-shadow: var(--shadow-1), var(--shadow-line);
     padding-top: 0.1px;
@@ -55,7 +55,7 @@
 .ola_panel-intro {
     margin-top: var(--size-3);
     font: var(--font-callout);
-    color: var(--gray);
+    color: var(--color-neutral-700);
 }
 .ola_panel-extra {
 
@@ -67,13 +67,13 @@
 .ola_panel-subtitle {
     padding: var(--size-3) var(--column-gap-3);
     margin: var(--row-gap-1) 0 0;
-    background-color: var(--gray-xlight);
+    background-color: var(--color-neutral-200);
     font: var(--font-body);
     font-weight: var(--regular);
 }
 
 .ola_panel-content {
-    --background: var(--white);
+    --background: var(--color-white-100);
 
     margin: var(--row-gap-2) 0;
     padding: 0 var(--column-gap-3);
@@ -85,7 +85,7 @@
     }
 
     &.is-highlight {
-        --background: var(--gray-xlight);
+        --background: var(--color-neutral-200);
 
         margin-top: 0;
         margin-bottom: 0;
@@ -104,7 +104,7 @@
 }
 
 .ola_panel-footer {
-    background: var(--gray-xlight);
+    background: var(--color-neutral-200);
     padding: var(--row-gap-1) var(--column-gap-3);
 
     @media (--from-width-1) {

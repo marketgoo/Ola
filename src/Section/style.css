@@ -33,7 +33,7 @@
 }
 .ola_section-intro {
     font: var(--font-body);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     margin-top: var(--size-2);
     max-width: var(--size-12);
 }

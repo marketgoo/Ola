@@ -1,7 +1,7 @@
 .ola_progressBar {
-  --color: var(--brand);
-  --background: var(--white);
-  --color-empty: var(--gray-xlight);
+  --color: var(--color-primary-500);
+  --background: var(--color-white-100);
+  --color-empty: var(--color-neutral-200);
 
   width: 100%;
   display: flex;
@@ -17,12 +17,12 @@
 
 .ola_progressBar-description {
   font: var(--font-caption);
-  color: var(--gray);
+  color: var(--color-neutral-700);
   margin: 0px 0px var(--size-3) var(--size-3);
 }
 
 .ola_progressBar-description strong {
-  color: var(--black);
+  color: var(--color-neutral-900);
   font-weight: var(--bold);
 }
 
@@ -68,10 +68,10 @@
         background-color: var(--color);
     }
     &::-moz-meter-sub-optimum::-moz-meter-bar {
-        background-color: var(--warning);
+        background-color: var(--color-warning-500);
     }
     &::-moz-meter-sub-sub-optimum::-moz-meter-bar {
-        background-color: var(--error);
+        background-color: var(--color-negative-500);
     }
 
     &::-webkit-meter-bar {
@@ -84,10 +84,10 @@
         background: var(--color);
     }
     &::-webkit-meter-suboptimum-value {
-        background: var(--warning);
+        background: var(--color-warning-500);
     }
     &::-webkit-meter-even-less-good-value {
-        background: var(--error);
+        background: var(--color-negative-500);
     }
     &:not([value]) {
         --background: var(--color-empty);

@@ -1,6 +1,6 @@
 .ola_keyword {
-    --color: var(--gray);
-    --background: var(--gray-xlight);
+    --color: var(--color-neutral-700);
+    --background: var(--color-neutral-200);
 
     display: flex;
     align-items: center;
@@ -29,6 +29,6 @@
         min-width: var(--size-8);
         min-height: var(--size-8);
         border-radius: var(--radius-small);
-        --background-hover: var(--gray-light);
+        --background-hover: var(--color-neutral-400);
     }
 }

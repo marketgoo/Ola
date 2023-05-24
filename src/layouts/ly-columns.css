@@ -6,7 +6,7 @@
 
     column-width: var(--column-width);
     column-gap: calc(var(--gap) * 2);
-    column-rule: solid 4px var(--gray-xlight);
+    column-rule: solid 4px var(--color-neutral-200);
 
     & > * {
         break-inside: avoid;

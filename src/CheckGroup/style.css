@@ -1,6 +1,6 @@
 .ola_checkGroup {
 
-    --border: var(--gray-light);
+    --border: var(--color-neutral-400);
     box-sizing: border-box;
     min-height: var(--size-7);
     margin: var(--size-2) 0;
@@ -57,7 +57,7 @@
         box-sizing: border-box;
         width: 100%;
         border: solid 2px var(--border);
-        background: var(--white);
+        background: var(--color-white-100);
         border-radius: var(--radius-small);
         position: relative;
     }
@@ -69,9 +69,9 @@
 
     &:invalid,
     &.is-invalid {
-        --border: var(--error);
+        --border: var(--color-negative-500);
         &:hover {
-            --border: var(--error-dark);
+            --border: var(--color-negative-600);
         }
     }
 }

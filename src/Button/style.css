@@ -1,18 +1,18 @@
 .ola_button {
-  --color: var(--accent);
-  --color-hover: var(--accent-dark);
-  --color-active: var(--accent-xdark);
-  --color-selected: var(--black);
-  --color-unselected: var(--accent);
+  --color: var(--color-accent-500);
+  --color-hover: var(--color-accent-600);
+  --color-active: var(--color-accent-700);
+  --color-selected: var(--color-neutral-900);
+  --color-unselected: var(--color-accent-500);
   --background: transparent;
   --background-hover: transparent;
-  --background-active: var(--accent-focus);
-  --background-selected: var(--gray-xlight);
-  --background-unselected: var(--white);
-  --shadow-focus: var(--accent-focus);
+  --background-active: var(--color-accent-100);
+  --background-selected: var(--color-neutral-200);
+  --background-unselected: var(--color-white-100);
+  --shadow-focus: var(--color-accent-100);
   --border: currentColor;
   --border-hover: currentColor;
-  --border-selected: var(--gray-light);
+  --border-selected: var(--color-neutral-400);
   --border-unselected: currentColor;
 
   display: inline-flex;
@@ -61,13 +61,13 @@
   }
 
   &.is-primary {
-    --color: var(--white);
-    --background: var(--accent);
-    --color-hover: var(--white);
-    --background-hover: var(--accent-dark);
-    --shadow-focus: var(--accent-focus);
-    --color-active: var(--white);
-    --background-active: var(--accent-xdark);
+    --color: var(--color-white-100);
+    --background: var(--color-accent-500);
+    --color-hover: var(--color-white-100);
+    --background-hover: var(--color-accent-600);
+    --shadow-focus: var(--color-accent-100);
+    --color-active: var(--color-white-100);
+    --background-active: var(--color-accent-700);
   }
 
   &.is-secondary {
@@ -76,42 +76,42 @@
   }
 
   &.is-destructive-primary {
-    --color: var(--white);
-    --background: var(--error);
-    --color-hover: var(--white);
-    --background-hover: var(--error-dark);
-    --shadow-focus: var(--error-focus);
-    --color-active: var(--white);
-    --background-active: var(--error-xdark);
+    --color: var(--color-white-100);
+    --background: var(--color-negative-500);
+    --color-hover: var(--color-white-100);
+    --background-hover: var(--color-negative-600);
+    --shadow-focus: var(--color-negative-100);
+    --color-active: var(--color-white-100);
+    --background-active: var(--color-negative-700);
   }
 
   &.is-destructive {
-    --color: var(--error);
-    --shadow-focus: var(--error-focus);
-    --color-hover: var(--error-dark);
-    --color-active: var(--error-xdark);
-    --background-active: var(--error-focus);
+    --color: var(--color-negative-500);
+    --shadow-focus: var(--color-negative-100);
+    --color-hover: var(--color-negative-600);
+    --color-active: var(--color-negative-700);
+    --background-active: var(--color-negative-100);
 
     border-style: solid;
     border-width: 1px;
   }
 
   &.is-pro {
-    --color: var(--white);
-    --background: var(--pro);
-    --color-hover: var(--white);
-    --background-hover: var(--pro-dark);
-    --shadow-focus: var(--pro-focus);
-    --color-active: var(--white);
-    --background-active: var(--pro-xdark);
+    --color: var(--color-white-100);
+    --background: var(--color-pro-500);
+    --color-hover: var(--color-white-100);
+    --background-hover: var(--color-pro-600);
+    --shadow-focus: var(--color-pro-100a);
+    --color-active: var(--color-white-100);
+    --background-active: var(--color-pro-700);
   }
 
   &.is-link {
-    --color: var(--brand);
-    --color-hover: var(--brand-xdark);
+    --color: var(--color-primary-500);
+    --color-hover: var(--color-primary-700);
     --background-hover: transparent;
-    --shadow-focus: var(--brand-focus);
-    --background-active: var(--brand-focus);
+    --shadow-focus: var(--color-primary-100);
+    --background-active: var(--color-primary-100);
 
     cursor: pointer;
     min-width: 0;
@@ -125,13 +125,13 @@
 
     &.is-disabled,
     &:disabled {
-      color: var(--gray-light);
+      color: var(--color-neutral-400);
       text-decoration: none;
       background: none;
     }
 
     &:disabled.is-busy {
-      color: var(--gray);
+      color: var(--color-neutral-700);
       text-decoration: none;
       background: none;
       cursor: wait;
@@ -151,8 +151,8 @@
   }
 
   &:disabled.is-busy {
-    color: var(--gray-xlight);
-    background-color: var(--gray);
+    color: var(--color-neutral-200);
+    background-color: var(--color-neutral-700);
     min-width: 0;
     cursor: wait;
     pointer-events: none;
@@ -173,10 +173,10 @@
 
   &.is-disabled,
   &:disabled {
-    color: var(--gray);
-    --background: var(--gray-xlight);
-    --background-hover: var(--gray-xlight);
-    --background-active: var(--gray-xlight);
+    color: var(--color-neutral-700);
+    --background: var(--color-neutral-200);
+    --background-hover: var(--color-neutral-200);
+    --background-active: var(--color-neutral-200);
     border: none;
     cursor: not-allowed;
     pointer-events: none;
@@ -196,7 +196,7 @@
     background-color: var(--background-unselected);
     border-color: var(--border-unselected);
     &:hover {
-      color: var(--accent-dark);
+      color: var(--color-accent-600);
       background-color: var(--background-selected);
     }
   }

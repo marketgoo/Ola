@@ -5,32 +5,32 @@
 
     &.is-success {
         & .ola_issue-status {
-            fill: var(--success);
+            fill: var(--color-positive-500);
         }
     }
     &.is-error {
         & .ola_issue-status {
-            fill: var(--error);
+            fill: var(--color-negative-500);
         }
     }
     &.is-warning {
         & .ola_issue-status {
-            fill: var(--warning);
+            fill: var(--color-warning-500);
         }
     }
     &.is-suggested {
         & .ola_issue-status {
-            fill: var(--gray);
+            fill: var(--color-neutral-700);
         }
     }
     &.is-pending {
       & .ola_issue-status {
-          fill: var(--gray-xlight);
+          fill: var(--color-neutral-200);
       }
     }
     &.is-done {
       & .ola_issue-status {
-        fill: var(--info);
+        fill: var(--color-info);
         transform: rotate(360deg);
         transition-property: fill, transform;
         transition-duration: 800ms;
@@ -66,7 +66,7 @@
     --skeleton-width: 16em;
     flex: 1 1 auto;
     font: var(--font-body);
-    color: var(--black);
+    color: var(--color-neutral-900);
     font-weight: var(--bold);
 }
 
@@ -111,12 +111,12 @@
     }
 
     &:hover {
-        background: var(--gray-xlight);
+        background: var(--color-neutral-200);
     }
 }
 .ola_issue-content {
     padding-left: calc(var(--size-2) + var(--size-7) + var(--column-gap-1));
-    color: var(--gray);
+    color: var(--color-neutral-700);
     font: var(--font-callout);
     & > *:first-child {
         margin-top: .5em;
@@ -126,7 +126,7 @@
 .ola-bg-hover:hover, .ola-bg {
   & .ola_issue.is-pending {
     & .ola_issue-status{
-      fill: var(--white);
+      fill: var(--color-white-100);
     }
   }
 }

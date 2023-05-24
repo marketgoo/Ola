@@ -1,5 +1,5 @@
 .ola_progressCircle {
-    --color: var(--brand);
+    --color: var(--color-primary-500);
 
     width: var(--size-10);
     height: var(--size-10);
@@ -17,27 +17,27 @@
         & .ola_progressCircle-circle-background {
             animation: progressCircle-loading 2s linear infinite;
             animation-fill-mode: both;
-            stroke: var(--gray-light);
+            stroke: var(--color-neutral-400);
         }
     }
 
     &.is-success {
-        --color: var(--success);
+        --color: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--error);
+        --color: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--warning);
+        --color: var(--color-warning-500);
     }
 
 }
 
 .ola_progressCircle-value {
     font: var(--font-title);
-    color: var(--black);
+    color: var(--color-neutral-900);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
@@ -50,7 +50,7 @@
 .ola_progressCircle-label,
 .ola_progressCircle-description {
     font: var(--font-caption);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
@@ -59,7 +59,7 @@
 
 .ola_progressCircle-busy {
     font: var(--font-caption);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
@@ -87,7 +87,7 @@
 }
 
 .ola_progressCircle-circle-background {
-    stroke: var(--gray-xlight);
+    stroke: var(--color-neutral-200);
     transition: stroke 200ms;
 }
 .ola_progressCircle-circle-value {

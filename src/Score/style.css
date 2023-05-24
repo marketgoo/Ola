@@ -1,7 +1,7 @@
 .ola_score {
-  --color: var(--gray);
-  --stroke-color: var(--gray-xlight);
-  --sup-color: var(--gray-light);
+  --color: var(--color-neutral-700);
+  --stroke-color: var(--color-neutral-200);
+  --sup-color: var(--color-neutral-400);
 
   width: 180px;
   height: 180px;
@@ -12,7 +12,7 @@
   justify-content: center;
 
   &.is-busy {
-    -stroke-color: var(--gray-light);
+    -stroke-color: var(--color-neutral-400);
     & .ola_score-value,
     & .ola_score-circle-value {
       opacity: 0;
@@ -21,27 +21,27 @@
       animation: score-loading 2s linear infinite;
       animation-fill-mode: both;
       &.is-white {
-        --stroke--color: var(--white);
+        --stroke--color: var(--color-white-100);
       }
     }
   }
 
   &.is-success {
-    --color: var(--success);
+    --color: var(--color-positive-500);
   }
 
   &.is-error {
-    --color: var(--error);
+    --color: var(--color-negative-500);
   }
 
   &.is-warning {
-    --color: var(--warning);
+    --color: var(--color-warning-500);
   }
 }
 
 .ola_score-value {
   font: var(--font-display);
-  color: var(--black);
+  color: var(--color-neutral-900);
   position: relative;
   transition: opacity 200ms;
   z-index: 1;
@@ -52,7 +52,7 @@
     vertical-align: baseline;
     color: var(--sup-color);
     &.is-black {
-        --sup-color: var(--black);
+        --sup-color: var(--color-neutral-900);
     }
   }
 }
@@ -60,7 +60,7 @@
 .ola_score-title {
   font: var(--font-caption);
   font-weight: var(--bold);
-  color: var(--gray);
+  color: var(--color-neutral-700);
   position: relative;
   transition: opacity 200ms;
   z-index: 1;
@@ -77,7 +77,7 @@
 
 .ola_score-busy {
   font: var(--font-caption);
-  color: var(--gray);
+  color: var(--color-neutral-700);
   position: relative;
   transition: opacity 200ms;
   z-index: 1;
@@ -109,7 +109,7 @@
   stroke: var(--stroke-color);
 
   &.is-white {
-    --stroke-color: var(--white);
+    --stroke-color: var(--color-white-100);
   }
 }
 .ola_score-circle-value {

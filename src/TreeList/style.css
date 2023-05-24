@@ -4,10 +4,10 @@
   margin: 0;
 }
 .ola_treeList-option {
-  border-bottom: solid 1px var(--gray-xlight);
+  border-bottom: solid 1px var(--color-neutral-200);
 
   &:first-child {
-    border-top: solid 1px var(--gray-xlight);
+    border-top: solid 1px var(--color-neutral-200);
   }
 }
 .ola_treeList .ola_treeList .ola_treeList-option {
@@ -18,8 +18,8 @@
   &::before {
     content: "";
     position: absolute;
-    border-left: 2px solid var(--gray-light);
-    border-bottom: 2px solid var(--gray-light);
+    border-left: 2px solid var(--color-neutral-400);
+    border-bottom: 2px solid var(--color-neutral-400);
     height: 50%;
     min-height: var(--size-5);
     width: var(--size-5);
@@ -33,7 +33,7 @@
     position: absolute;
     width: 0;
     height: 100%;
-    border-left: 2px solid var(--gray-light);
+    border-left: 2px solid var(--color-neutral-400);
     top: 0;
     left: var(--size-5);
   }
@@ -53,10 +53,10 @@
   padding-bottom: var(--size-4);
 
   &:hover {
-    background-color: var(--gray-xlight);
+    background-color: var(--color-neutral-200);
   }
   &:active {
-    background-color: var(--gray-light);
+    background-color: var(--color-neutral-400);
   }
   &:focus {
     outline: 0;

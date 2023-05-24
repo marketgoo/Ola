@@ -2,14 +2,14 @@
     display: flex;
     box-sizing: border-box;
     margin-bottom: var(--row-gap-1);
-    border-bottom: 1px solid var(--gray-xlight);
+    border-bottom: 1px solid var(--color-neutral-200);
     list-style: none;
     padding-left: 0px;
     margin-top: 0px;
 }
 
 .ola_tab-option {
-  --color: var(--gray);
+  --color: var(--color-neutral-700);
   --background: transparent;
 
   font: var(--font-callout);
@@ -33,7 +33,7 @@
   }
 
   &:hover {
-      --background: var(--gray-xlight);
+      --background: var(--color-neutral-200);
   }
 
   & .ola_icon {
@@ -42,9 +42,9 @@
   }
 
   &.is-selected {
-    color: var(--brand);
-    --background: var(--white);
-    border-bottom: 3px solid var(--brand);
+    color: var(--color-primary-500);
+    --background: var(--color-white-100);
+    border-bottom: 3px solid var(--color-primary-500);
     cursor: unset;
   }
 }

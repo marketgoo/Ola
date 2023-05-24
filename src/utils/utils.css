@@ -1,18 +1,18 @@
 .ola-bg {
-    background-color: var(--gray-xxlight) !important; /* Ensures that it is always applied, regardless of the styles that exist. */
+    background-color: var(--color-neutral-100) !important; /* Ensures that it is always applied, regardless of the styles that exist. */
 
     & > * {
-        --gray-xxlight: var(--gray-xlight);
+        --color-neutral-100: var(--color-neutral-200);
     }
 }
 td.ola-bg {
-    background-color: var(--gray-xxlight);
+    background-color: var(--color-neutral-100);
 }
 .ola-bg-hover:hover {
-    background-color: var(--gray-xxlight);
+    background-color: var(--color-neutral-100);
 
     & > * {
-        --gray-xxlight: var(--gray-xlight);
+        --color-neutral-100: var(--color-neutral-200);
     }
 }
 
@@ -63,82 +63,82 @@ strong {
 
 /* Colors */
 .ola-brand {
-    color: var(--brand);
+    color: var(--color-primary-500);
 }
 .ola-accent {
-    color: var(--accent);
+    color: var(--color-accent-500);
 }
 .ola-white {
-    color: var(--white);
+    color: var(--color-white-100);
 }
 .ola-black {
-    color: var(--black);
+    color: var(--color-neutral-900);
 }
 .ola-gray {
-    color: var(--gray);
+    color: var(--color-neutral-700);
 }
 .ola-gray-light {
-    color: var(--gray-light);
+    color: var(--color-neutral-400);
 }
 .ola-gray-xlight {
-    color: var(--gray-xlight);
+    color: var(--color-neutral-200);
 }
 .ola-gray-xxlight {
-    color: var(--gray-xxlight);
+    color: var(--color-neutral-100);
 }
 .ola-error {
-    color: var(--error);
+    color: var(--color-negative-500);
 }
 .ola-warning {
-    color: var(--warning);
+    color: var(--color-warning-500);
 }
 .ola-success {
-    color: var(--success);
+    color: var(--color-positive-500);
 }
 .ola-pro {
-    color: var(--pro);
+    color: var(--color-pro-500);
 }
 .ola-black-bolds b,
 .ola-black-bolds strong {
-    color: var(--black);
+    color: var(--color-neutral-900);
 }
 
 /* Background colors */
 .ola-bg-brand {
-    background-color: var(--brand);
+    background-color: var(--color-primary-500);
 }
 .ola-bg-accent {
-    background-color: var(--accent);
+    background-color: var(--color-accent-500);
 }
 .ola-bg-white {
-    background-color: var(--white);
+    background-color: var(--color-white-100);
 }
 .ola-bg-black {
-    background-color: var(--black);
+    background-color: var(--color-neutral-900);
 }
 .ola-bg-gray {
-    background-color: var(--gray);
+    background-color: var(--color-neutral-700);
 }
 .ola-bg-gray-light {
-    background-color: var(--gray-light);
+    background-color: var(--color-neutral-400);
 }
 .ola-bg-gray-xlight {
-    background-color: var(--gray-xlight);
+    background-color: var(--color-neutral-200);
 }
 .ola-bg-gray-xxlight {
-    background-color: var(--gray-xxlight);
+    background-color: var(--color-neutral-100);
 }
 .ola-bg-error {
-    background-color: var(--error);
+    background-color: var(--color-negative-500);
 }
 .ola-bg-warning {
-    background-color: var(--warning);
+    background-color: var(--color-warning-500);
 }
 .ola-bg-success {
-    background-color: var(--success);
+    background-color: var(--color-positive-500);
 }
 .ola-bg-pro {
-    background-color: var(--pro);
+    background-color: var(--color-pro-500);
 }
 
 /* Alignment */
@@ -221,14 +221,14 @@ strong {
     & > :empty::before {
         content: "\00a0";
         display: block;
-        background-color: var(--gray-xlight);
+        background-color: var(--color-neutral-200);
         width: var(--skeleton-width, 5em);
         height: var(--skeleton-height, 1em);
     }
 
     &.is-loading {
         & > :empty::before {
-            background: linear-gradient(to right, var(--gray-xlight) 40%, var(--white), var(--gray-xlight) 60%);
+            background: linear-gradient(to right, var(--color-neutral-200) 40%, var(--color-white-100), var(--color-neutral-200) 60%);
             background-size: 800px 100%;
             animation: loadingSkeleton 2s linear infinite;
         }

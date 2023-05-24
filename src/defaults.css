@@ -1,8 +1,8 @@
 .ola {
     scroll-behavior: smooth;
-    font-family: var(--font-ui);
+    font-family: var(--font-family-1);
     font-weight: var(--regular);
-    color: var(--black);
+    color: var(--color-neutral-900);
     text-rendering: auto;
     overflow-wrap: break-word;
     -moz-osx-font-smoothing: grayscale;
@@ -14,10 +14,10 @@
     }
 
     & a {
-        color: var(--brand);
+        color: var(--color-primary-500);
 
         &:hover {
-            color: var(--black);
+            color: var(--color-neutral-900);
         }
     }
 

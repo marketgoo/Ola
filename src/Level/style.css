@@ -1,6 +1,6 @@
 .ola_level {
-  --background: var(--gray-xlight);
-  --color: var(--gray-xlight);
+  --background: var(--color-neutral-200);
+  --color: var(--color-neutral-200);
   --size: 12px;
   --gap: 1px;
   --height: var(--size-6);
@@ -39,14 +39,14 @@
     --gap: 2px;
   }
   &.is-low {
-    --color: var(--error);
+    --color: var(--color-negative-500);
 
     & span:first-child {
       background-color: var(--color);
     }
   }
   &.is-medium {
-    --color: var(--warning);
+    --color: var(--color-warning-500);
 
     & span:nth-child(-n + 2) {
       background-color: var(--color);
@@ -54,7 +54,7 @@
   }
 
   &.is-high {
-    --color: var(--success);
+    --color: var(--color-positive-500);
 
     & span:nth-child(-n + 3) {
       background-color: var(--color);
@@ -62,7 +62,7 @@
   }
 
   &.is-highest {
-    --color: var(--success-dark);
+    --color: var(--color-positive-600);
 
     & span {
       background-color: var(--color);
@@ -72,6 +72,6 @@
 
 .ola-bg-hover:hover .ola_level,
 .ola-bg .ola_level {
-  --background: var(--white);
+  --background: var(--color-white-100);
 }
 

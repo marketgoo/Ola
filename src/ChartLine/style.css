@@ -1,6 +1,6 @@
 .ola_chartLine {
     --height: 150px;
-    --color: var(--brand);
+    --color: var(--color-primary-500);
 
     display: flex;
     position: relative;
@@ -9,7 +9,7 @@
     min-height: calc(var(--height) + 10px);
 
     &.ola-skeleton {
-        --color: var(--gray-xlight);
+        --color: var(--color-neutral-200);
 
         & .ola_chartLine-label::before {
             visibility: hidden;
@@ -37,7 +37,7 @@
     z-index: -1;
 }
 .ola_chartLine-svg-background {
-    fill: var(--white);
+    fill: var(--color-white-100);
     stroke: none;
 }
 .ola_chartLine-svg-line {
@@ -47,7 +47,7 @@
 }
 
 .ola_chartLine-value {
-    --vertical-line-color: var(--gray-xlight);
+    --vertical-line-color: var(--color-neutral-200);
     position: relative;
     flex-grow: 1;
     flex-basis: 10px;
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-bottom: solid 1px var(--gray-xlight);
+    border-bottom: solid 1px var(--color-neutral-200);
 }
 .ola_chartLine-space {
     height: calc((var(--height) * var(--value)) + var(--size-6));
@@ -83,13 +83,13 @@
     position: absolute;
     left: 0;
     width: 100%;
-    border-bottom: dashed 1px var(--gray-light);
+    border-bottom: dashed 1px var(--color-neutral-400);
     padding-bottom: var(--size-2);
     bottom: calc(var(--value) * (var(--height) + 5px));
     text-align: right;
     mix-blend-mode: multiply;
     font: var(--font-caption);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     pointer-events: none;
 }
 .ola_chartLine-axis {
@@ -99,13 +99,13 @@
     z-index: 1;
     align-self: flex-end;
     height: calc(var(--height) + var(--size-4));
-    background: var(--white);
+    background: var(--color-white-100);
     justify-content: space-between;
 
-    border-right: solid 1px var(--gray-light);
+    border-right: solid 1px var(--color-neutral-400);
     text-align: right;
     font: var(--font-caption);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     padding-right: var(--size-3);
     width: var(--size-8);
     white-space: nowrap;

@@ -9,27 +9,27 @@
         padding: 0;
 
         & .ola_check-label {
-            background: var(--white);
+            background: var(--color-white-100);
             border-radius: var(--radius-small);
-            border: solid 2px var(--gray-light);
+            border: solid 2px var(--color-neutral-400);
             padding: var(--size-4);
             transition: background-color 200ms;
         }
 
         & .ola_check-label:hover {
-            border-color: var(--brand-dark);
+            border-color: var(--color-primary-600);
         }
 
         & .ola_check-input:checked ~ .ola_check-label {
-            border-color: var(--brand);
+            border-color: var(--color-primary-500);
         }
 
         & .ola_check-input:active ~ .ola_check-label {
-            border-color: var(--black);
+            border-color: var(--color-neutral-900);
         }
 
         & .ola_check-input:focus ~ .ola_check-label {
-            box-shadow: 0 0 0 4px var(--brand-focus);
+            box-shadow: 0 0 0 4px var(--color-primary-100);
         }
     }
 
@@ -42,7 +42,7 @@
             transition: background-color 200ms;
         }
         & .ola_check-input:checked ~ .ola_check-label {
-            background-color: var(--gray-xlight);
+            background-color: var(--color-neutral-200);
             font-weight: var(--bold);
         }
     }
@@ -67,7 +67,7 @@
     }
 }
 .ola_check-label::before {
-    --color: var(--gray-light);
+    --color: var(--color-neutral-400);
 
     content: "";
     display: block;
@@ -89,26 +89,26 @@
     opacity: 1;
 }
 .ola_check-input:checked ~ .ola_check-label::before {
-    --color: var(--brand);
+    --color: var(--color-primary-500);
     background-color: currentColor;
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.919 7c.298 0 .553.109.764.326.211.217.317.48.317.786 0 .307-.107.57-.32.79l-7.56 7.777a1.02 1.02 0 0 1-.76.321 1.03 1.03 0 0 1-.768-.321l-4.28-4.394a1.09 1.09 0 0 1-.312-.79c0-.307.106-.57.317-.787.21-.217.466-.325.764-.325s.555.11.769.33l3.51 3.611 6.79-6.994c.214-.22.47-.33.769-.33z" fill="white"/></svg>');
     background-repeat: no-repeat;
     background-position: center center;
 }
 .ola_check-input:focus ~ .ola_check-label::before {
-    --color: var(--brand);
-    box-shadow: 0 0 0 4px var(--brand-focus);
+    --color: var(--color-primary-500);
+    box-shadow: 0 0 0 4px var(--color-primary-100);
 }
 .ola_check-input:hover ~ .ola_check-label::before {
-    --color: var(--brand-dark);
+    --color: var(--color-primary-600);
 }
 .ola_check-input:disabled ~ .ola_check-label {
-    color: var(--gray-light);
+    color: var(--color-neutral-400);
 
     &::before {
         cursor: not-allowed;
         pointer-events: none;
-        --color: var(--gray-xlight);
+        --color: var(--color-neutral-200);
     }
 }
 /* Changes for radio */

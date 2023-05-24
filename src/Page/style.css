@@ -34,13 +34,13 @@
     text-overflow: ellipsis;
 }
 span.ola_page-url {
-    color: var(--gray);
+    color: var(--color-neutral-700);
 }
 .ola_page-icon {
     grid-column: 1;
     grid-row: 1 / 3;
     align-self: center;
-    color: var(--gray-light);
+    color: var(--color-neutral-400);
 }
 .ola-skeleton {
     & .ola_page-icon {

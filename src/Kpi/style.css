@@ -7,7 +7,7 @@
 
     font: var(--font-callout);
     font-weight: var(--regular);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     margin: 0 0;
 }
 
@@ -16,7 +16,7 @@
 
     display: block;
     font: var(--font-title);
-    color: var(--black);
+    color: var(--color-neutral-900);
     margin: var(--size-3) 0 0;
 
     & em {
@@ -29,6 +29,6 @@
 
     font: var(--font-caption);
     font-weight: var(--bold);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     margin: var(--size-1) 0 0;
 }

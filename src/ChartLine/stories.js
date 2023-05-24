@@ -47,10 +47,10 @@ const mockData2 = [
 ]
 
 const colors = [
-  'var(--brand)',
-  'var(--error)',
+  'var(--color-primary-500)',
+  'var(--color-negative-500)',
   'pink',
-  'var(--success)',
+  'var(--color-positive-500)',
 ]
 
 export default {

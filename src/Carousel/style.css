@@ -1,5 +1,5 @@
 .ola_carousel {
-  background: var(--white);
+  background: var(--color-white-100);
   border-radius: var(--radius-big);
   padding-top: var(--size-7);
   padding-bottom: var(--size-7);
@@ -32,10 +32,10 @@
   border-radius: 10px;
   margin-left: var(--size-2);
   margin-right: var(--size-2);
-  background: var(--gray-light);
+  background: var(--color-neutral-400);
   cursor: pointer;
 }
 
 .ola_carousel-dots-item.is-selected {
-  background: var(--gray);
+  background: var(--color-neutral-700);
 }

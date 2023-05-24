@@ -7,13 +7,13 @@
   transition-duration: 200ms;
 
   &:focus-within {
-    box-shadow: 0 0 0 4px var(--brand-focus);
+    box-shadow: 0 0 0 4px var(--color-primary-100);
   }
 }
 .ola_searchField-description {
   font: var(--font-caption);
   margin-top: var(--size-2);
-  color: var(--gray);
+  color: var(--color-neutral-700);
 }
 .ola_searchField-icon {
   position: absolute;
@@ -34,7 +34,7 @@
     position: absolute;
     top: var(--size-3);
     left: var(--size-3);
-    color: var(--gray-light);
+    color: var(--color-neutral-400);
   }
 
   &:last-child > .ola_searchField-input {

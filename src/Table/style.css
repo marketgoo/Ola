@@ -3,14 +3,14 @@
 }
 .ola_table {
     font: var(--font-callout);
-    color: var(--gray);
+    color: var(--color-neutral-700);
     text-align: left;
     width: 100%;
     border-collapse: collapse;
     position: relative;
 
     & tr {
-        --table-background: var(--background, var(--white));
+        --table-background: var(--background, var(--color-white-100));
         background: var(--table-background);
     }
 
@@ -23,7 +23,7 @@
 
     & th {
         font-weight: var(--bold);
-        color: var(--black);
+        color: var(--color-neutral-900);
         padding-left: var(--size-4);
         padding-right: var(--size-4);
 
@@ -34,7 +34,7 @@
 
     & td {
         padding: var(--size-3) var(--size-4);
-        border-top: solid 1px var(--gray-xlight);
+        border-top: solid 1px var(--color-neutral-200);
     }
 
     & tbody > tr:first-child td {
@@ -42,11 +42,11 @@
     }
 
     & thead + tbody > tr:first-child td {
-        border-top: solid 1px var(--gray-light);
+        border-top: solid 1px var(--color-neutral-400);
     }
 
     & tbody > tr:last-child td {
-      border-bottom: solid 1px var(--gray-xlight);
+      border-bottom: solid 1px var(--color-neutral-200);
     }
 
     & caption {
@@ -54,7 +54,7 @@
         caption-side: bottom;
         padding-top: var(--size-3);
         text-align: right;
-        border-top: solid 1px var(--gray-light);
+        border-top: solid 1px var(--color-neutral-400);
     }
 
     &.is-sticky {
@@ -74,8 +74,8 @@
 .ola_tableRow {
     &.is-selectable:hover td,
     &.is-checked td {
-        --table-background: var(--gray-xlight);
-        color: var(--black);
+        --table-background: var(--color-neutral-200);
+        color: var(--color-neutral-900);
     }
 
     &.is-selectable {
@@ -120,7 +120,7 @@
         right: 0;
         width: var(--size-8);
         background: linear-gradient(var(--table-background), var(--table-background) var(--size-8)) no-repeat;
-        box-shadow: inset 1px 0 0 var(--gray-xlight);
+        box-shadow: inset 1px 0 0 var(--color-neutral-200);
 
         & .ola_buttonIcon {
             margin: 0 var(--size-3);

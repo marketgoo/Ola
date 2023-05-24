@@ -28,14 +28,14 @@
     will-change: opacity, transform;
     position: absolute;
     filter: drop-shadow(var(--shadow-2)) drop-shadow(var(--shadow-line));
-    background: var(--white);
+    background: var(--color-white-100);
     border-radius: var(--radius);
     padding: var(--size-6);
     width: var(--width);
     box-sizing: border-box;
     z-index: 5;
     font: var(--font-caption);
-    color: var(--black);
+    color: var(--color-neutral-900);
     display: none;
 
     &::before {

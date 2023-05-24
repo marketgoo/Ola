@@ -1,5 +1,5 @@
 .ola_modal {
-    background: var(--white);
+    background: var(--color-white-100);
     border-radius: var(--radius);
     border: none;
     box-shadow: var(--shadow-3), var(--shadow-line);
@@ -134,7 +134,7 @@
 .ola_modal-intro {
     margin: 0;
     font: var(--font-callout);
-    color: var(--gray);
+    color: var(--color-neutral-700);
 }
 .ola_modal-content {
     flex-shrink: 0;

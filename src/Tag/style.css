@@ -1,6 +1,6 @@
 .ola_tag {
-    --color: var(--gray);
-    --background: var(--gray-xlight);
+    --color: var(--color-neutral-700);
+    --background: var(--color-neutral-200);
     --padding: var(--size-3);
 
     display: inline-flex;
@@ -23,58 +23,58 @@
     }
 
     &.is-success {
-        --color: var(--white);
-        --background: var(--success);
+        --color: var(--color-white-100);
+        --background: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--white);
-        --background: var(--error);
+        --color: var(--color-white-100);
+        --background: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--white);
-        --background: var(--warning);
+        --color: var(--color-white-100);
+        --background: var(--color-warning-500);
     }
 
     &.is-chart-0 {
-        --color: var(--white);
-        --background: var(--chart-0);
+        --color: var(--color-white-100);
+        --background: var(--color-chart-0);
     }
 
     &.is-chart-1 {
-        --color: var(--black);
-        --background: var(--chart-1);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-1);
     }
 
     &.is-chart-2 {
-        --color: var(--black);
-        --background: var(--chart-2);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-2);
     }
 
     &.is-chart-3 {
-        --color: var(--black);
-        --background: var(--chart-3);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-3);
     }
 
     &.is-chart-4 {
-        --color: var(--white);
-        --background: var(--chart-4);
+        --color: var(--color-white-100);
+        --background: var(--color-chart-4);
     }
 
     &.is-invert {
-        --color: var(--white);
-        --background: var(--gray);
+        --color: var(--color-white-100);
+        --background: var(--color-neutral-700);
     }
 
     &.is-info {
-      --color: var(--white);
-      --background: var(--info);
+      --color: var(--color-white-100);
+      --background: var(--color-info);
   }
 
     &.is-pro {
-        --color: var(--white);
-        --background: var(--pro);
+        --color: var(--color-white-100);
+        --background: var(--color-pro-500);
     }
 
     &.is-small {
