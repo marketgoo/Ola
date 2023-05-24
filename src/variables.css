@@ -1,159 +1,333 @@
 .ola {
+    /*********/
     /* Fonts */
-    --font-brand-name: 'Omnes';
-    --font-brand: var(--font-brand-name), -apple-system, system-ui, sans-serif;
-    --font-ui: -apple-system, system-ui, sans-serif;
+    /*********/
+    --font-name-1: 'Inter';
+    --font-name-2: 'Omnes';
+    --font-family-1: var(--font-name-1), -apple-system, system-ui, sans-serif; /* OLD --font-ui */
+    --font-family-2: var(--font-name-2), -apple-system, system-ui, sans-serif; /* OLD --font-brand */
 
-    --regular: 400;
-    --bold: 600;
-
+    /**********/
     /* Colors */
-    --brand: #0090DA;
-    --brand-dark: #0070A8;
-    --brand-xdark: #004E75;
-    --brand-focus: #0090DA33;
-    --white: #FFFFFF;
-    --black: #2C333E;
-    --gray: #57657A;
-    --gray-light: #BBC2CE;
-    --gray-xlight: #E2E5E9;
-    --gray-xxlight: #F6F7F9;
-    --error: #DE0220;
-    --error-dark: #AC0219;
-    --error-xdark: #790111;
-    --error-focus: #DE022033;
-    --warning: #D7800F;
-    --warning-focus: #D7800F33;
-    --warning-dark: #A7640C;
-    --warning-xdark: #774708;
-    --success: #17AB4D;
-    --success-focus: #17AB4D33;
-    --success-dark: #117E39;
-    --success-xdark: #0B5125;
-    --pro: #AC18B4;
-    --pro-dark: #811287;
-    --pro-xdark: #560C5A;
-    --pro-focus: #AC18B433;
-    --premium: #F1D34B;
+    /**********/
 
-    --info: var(--brand);
+        /* Primary */
+    --color-primary-100:  #CCE9F8; /* OLD --brand-focus */
+    --color-primary-100a: #0090DA33;
+    --color-primary-200:  #99D3F0;
+    --color-primary-200a: #0090DA66;
+    --color-primary-300:  #66BCE9;
+    --color-primary-300a: #0090DA99;
+    --color-primary-400:  #33A6E1;
+    --color-primary-400a: #0090DACC;
+    --color-primary-500:  #0090DA; /* OLD --brand */
+    --color-primary-600:  #0073AE; /* OLD --brand-dark */
+    --color-primary-700:  #005683; /* OLD --brand-xdark */
+    --color-primary-800:  #003A57;
+    --color-primary-900:  #001D2C;
+        /* Neutral */
+    --color-neutral-100:  #F3F5F6; /* OLD --gray-xxlight */
+    --color-neutral-100a: #8A99A826;
+    --color-neutral-200:  #DCE0E5; /* OLD --gray-xlight */
+    --color-neutral-200a: #8A99A859;
+    --color-neutral-300:  #C5CCD4;
+    --color-neutral-300a: #8A99A88C;
+    --color-neutral-400:  #ADB8C2; /* OLD --gray-light */
+    --color-neutral-400a: #8A99A8BF;
+    --color-neutral-500:  #8A99A8;
+    --color-neutral-600:  #6E7A86;
+    --color-neutral-700:  #535C65; /* OLD --gray */
+    --color-neutral-800:  #373D43;
+    --color-neutral-900:  #1C1F22; /* OLD --black */
+        /* Positive */
+    --color-positive-100:  #D1EEDB; /* OLD --success-focus */
+    --color-positive-100a: #17AB4D33;
+    --color-positive-200:  #A2DDB8;
+    --color-positive-200a: #17AB4D66;
+    --color-positive-300:  #74CD94;
+    --color-positive-300a: #17AB4D99;
+    --color-positive-400:  #45BC71;
+    --color-positive-400a: #17AB4DCC;
+    --color-positive-500:  #17AB4D; /* OLD --success */
+    --color-positive-600:  #12893E; /* OLD --success-dark */
+    --color-positive-700:  #0E672E; /* OLD --success-xdark */
+    --color-positive-800:  #09441F;
+    --color-positive-900:  #05220F;
+        /* Negative */
+    --color-negative-100:  #F8CCD2; /* OLD --error-focus */
+    --color-negative-100a: #DE022033;
+    --color-negative-200:  #F29AA6;
+    --color-negative-200a: #DE022066;
+    --color-negative-300:  #EB6779;
+    --color-negative-300a: #DE022099;
+    --color-negative-400:  #E5354D;
+    --color-negative-400a: #DE0220CC;
+    --color-negative-500:  #DE0220; /* OLD --error */
+    --color-negative-600:  #B2021A; /* OLD --error-dark */
+    --color-negative-700:  #850113; /* OLD --error-xdark */
+    --color-negative-800:  #59010D;
+    --color-negative-900:  #2C0006;
+        /* Warning */
+    --color-warning-100:  #F7E6CF; /* OLD --warning-focus */
+    --color-warning-100a: #D7800F33;
+    --color-warning-200:  #EFCC9F;
+    --color-warning-200a: #D7800F66;
+    --color-warning-300:  #E7B36F;
+    --color-warning-300a: #D7800F99;
+    --color-warning-400:  #DF993F;
+    --color-warning-400a: #D7800FCC;
+    --color-warning-500:  #D7800F; /* OLD --warning */
+    --color-warning-600:  #AC660C; /* OLD --warning-dark */
+    --color-warning-700:  #814D09; /* OLD --warning-xdark */
+    --color-warning-800:  #563306;
+    --color-warning-900:  #2B1A03;
+        /* Pro */
+    --color-pro-100:  #EED1F0;
+    --color-pro-100a: #AC18B433; /* OLD --pro-focus */
+    --color-pro-200:  #DEA3E1;
+    --color-pro-200a: #AC18B466;
+    --color-pro-300:  #CD74D2;
+    --color-pro-300a: #AC18B499;
+    --color-pro-400:  #BD46C3;
+    --color-pro-400a: #AC18B4CC;
+    --color-pro-500:  #AC18B4;   /* OLD --pro */
+    --color-pro-600:  #811287;   /* OLD --pro-dark */
+    --color-pro-700:  #560C5A;   /* OLD --pro-xdark */
+    --color-pro-800:  #450A48;
+    --color-pro-900:  #220524;
+        /* Accent */
+    --color-accent-100:  var(--color-primary-100); /* OLD --accent-focus */
+    --color-accent-100a: var(--color-primary-100a);
+    --color-accent-200:  var(--color-primary-200);
+    --color-accent-200a: var(--color-primary-200a);
+    --color-accent-300:  var(--color-primary-300);
+    --color-accent-300a: var(--color-primary-300a);
+    --color-accent-400:  var(--color-primary-400);
+    --color-accent-400a: var(--color-primary-400a);
+    --color-accent-500:  var(--color-primary-500); /* OLD --accent */
+    --color-accent-600:  var(--color-primary-600); /* OLD --accent-dark */
+    --color-accent-700:  var(--color-primary-700); /* OLD --accent-xdark */
+    --color-accent-800:  var(--color-primary-800);
+    --color-accent-900:  var(--color-primary-900);
+        /* Others */
+    --color-premium: #F1D34B; /* OLD --premium */
+    --color-info: var(--color-primary-500); /* OLD --info */
+    --color-white-100:    #FFFFFF; /* OLD --white */
+        /* Pictures */
+    --color-pict-blue-100: #CAE4F8;     /* OLD --pict-blue-xlight */
+    --color-pict-blue-500: #95B8D1;     /* OLD --pict-blue-light */
+    --color-pict-blue-600: #457AA0;     /* OLD --pict-blue */
+    --color-pict-blue-700: #2E526B;     /* OLD --pict-blue-dark */
+    --color-pict-brown-500: #DCA47D;    /* OLD --pict-brown-light */
+    --color-pict-brown-600: #A16A45;    /* OLD --pict-brown */
+    --color-pict-brown-700: #663613;    /* OLD --pict-brown-dark */
+    --color-pict-green-500: #7FD8BE;    /* OLD --pict-green */
+    --color-pict-green-600: #309C7D;    /* OLD --pict-green-dark */
+    --color-pict-red-100: #FACCD4;      /* OLD --pict-red-light */
+    --color-pict-red-500: #F48498;      /* OLD --pict-red */
+    --color-pict-red-600: #CD1032;      /* OLD --pict-red-dark */
+    --color-pict-white: #FFF;           /* OLD --pict-white */
+    --color-pict-yellow-100: #FFE9B3;   /* OLD --pict-yellow-light */
+    --color-pict-yellow-500: #FFD266;   /* OLD --pict-yellow */
+        /* Charts */
+    --color-chart-0: #98A6EE;                       /* OLD --chart-0 */
+    --color-chart-1: var(--color-pict-red-500);     /* OLD --chart-1 */
+    --color-chart-2: var(--color-pict-green-500);   /* OLD --chart-2 */
+    --color-chart-3: var(--color-pict-yellow-500:); /* OLD --chart-3 */
+    --color-chart-4: var(--color-pict-blue-500);    /* OLD --chart-4 */
+    --color-chart-5: var(--color-pict-brown-500);   /* OLD --chart-5 */
 
-    --accent: var(--brand);
-    --accent-dark: var(--brand-dark);
-    --accent-xdark: var(--brand-xdark);
-    --accent-focus: var(--brand-focus);
-
-    --pict-blue-dark: #2E526B;
-    --pict-blue-light: #95B8D1;
-    --pict-blue-xlight: #CAE4F8;
-    --pict-blue: #457AA0;
-    --pict-brown-dark: #663613;
-    --pict-brown-light: #DCA47D;
-    --pict-brown: #A16A45;
-    --pict-green-dark: #309C7D;
-    --pict-green: #7FD8BE;
-    --pict-red-dark: #CD1032;
-    --pict-red-light: #FACCD4;
-    --pict-red: #F48498;
-    --pict-white: #FFF;
-    --pict-yellow-light: #FFE9B3;
-    --pict-yellow: #FFD266;
-
-    --chart-0: var(--brand);
-    --chart-1: var(--pict-red);
-    --chart-2: var(--pict-green);
-    --chart-3: var(--pict-yellow);
-    --chart-4: var(--pict-blue-light);
-
+    /***************/
     /* Space units */
-    --size-1: 2px;
-    --size-2: 4px;
-    --size-3: 8px;
-    --size-4: 14px;
-    --size-5: 16px;
-    --size-6: 20px;
-    --size-7: 28px;
-    --size-8: 44px;
-    --size-9: 76px;
-    --size-10: 140px;
-    --size-11: 268px;
-    --size-12: 524px;
-    --size-13: 1036px;
+    /***************/
+    --size-0:  4px;   /* OLD --size-1: 2px; && --size-2: 4px; */
+    --size-1:  8px;   /* OLD --size-3: 8px; */
+    --size-2:  16px;  /* OLD --size-4: 14px; && --size-5: 16px; */
+    --size-3:  24px;  /* OLD --size-6: 20px; */
+    --size-4:  32px;  /* OLD --size-7: 28px; */
+    --size-5:  40px;  /* OLD --size-8: 44px; */
+    --size-6:  48px;
+    --size-7:  56px;
+    --size-8:  64px;
+    --size-9:  72px;  /* OLD --size-9: 76px; */
+    --size-10: 80px;
+    --size-12: 140px; /* OLD --size-10 */
+    --size-14: 268px; /* OLD --size-11 */
+    --size-16: 524px; /* OLD --size-12 */
+    --size-20: 1036px; /* OLD --size-13 */
+    --max-width: var(--size-20);
 
-    --max-width: var(--size-13);
-
+    /***************/
     /* Font styles */
-    --font-display-spacing: -0.03em;
-    --font-display-weight: 500;
-    --font-title-spacing: -0.015em;
-    --font-title-weight: 500;
+    /***************/
 
-    --font-display: var(--font-display-weight) var(--size-9) / 1 var(--font-brand);
-    --font-title: var(--font-title-weight) var(--size-8) / 1.05 var(--font-brand);
-    --font-headline: var(--size-7) / 1.28 var(--font-ui);
-    --font-body: var(--size-6) / 1.3 var(--font-ui);
-    --font-callout: var(--size-5) / 1.38 var(--font-ui);
-    --font-caption: var(--size-4) / 1.42 var(--font-ui);
+        /* Font Line Height */
+    --font-line-height-0: 20px;
+    --font-line-height-1: 24px;
+    --font-line-height-2: 24px;
+    --font-line-height-3: 32px;
+    --font-line-height-4: 36px;
+    --font-line-height-5: 48px;
+    --font-line-height-6: 56px;
+    --font-line-height-7: 72px;
+    --font-line-height-8: 86px;
 
-    @supports (font-size: clamp(var(--size-8), 12vw, var(--size-9))) {
-        --font-display: var(--font-display-weight) clamp(var(--size-9) * .6, 12vw, var(--size-9)) / 1 var(--font-brand);
-        --font-title: var(--font-title-weight) clamp(var(--size-8) * .7, 9vw, var(--size-8)) / 1.05 var(--font-brand);
-        --font-headline: clamp(var(--size-7) * .8, 6vw, var(--size-7)) / 1.28 var(--font-ui);
-        --font-body: clamp(var(--size-6) * .9, 4vw, var(--size-6)) / 1.3 var(--font-ui);
-        --font-callout: clamp(var(--size-5) * .95, 3vw, var(--size-5)) / 1.38 var(--font-ui);
+        /* Font Letter Spacing */
+    --font-letter-spacing-0: 0;
+    --font-letter-spacing-1: 0;
+    --font-letter-spacing-2: -0.01em;
+    --font-letter-spacing-3: -0.0125em;
+    --font-letter-spacing-4: -0.015em; /* OLD --font-title-spacing */
+    --font-letter-spacing-5: -0.0175em;
+    --font-letter-spacing-6: -0.02em;
+    --font-letter-spacing-7: -0.03em; /* OLD --font-display-spacing */
+    --font-letter-spacing-8: -0.04em;
+
+        /* Font Sizes */
+    --font-size-0: 14px;
+    --font-size-1: 16px;
+    --font-size-2: 20px;
+    --font-size-3: 24px;
+    --font-size-4: 32px;
+    --font-size-5: 40px;
+    --font-size-6: 48px;
+    --font-size-7: 64px;
+    --font-size-8: 72px;
+
+    @media (--to-width-2) {
+            /* Desktop Styles */
+
+            /* Font Line Height */
+        --font-line-height-0: 17px;
+        --font-line-height-1: 19px;
+        --font-line-height-2: 22px;
+        --font-line-height-3: 25px;
+        --font-line-height-4: 29px;
+        --font-line-height-5: 32px;
+        --font-line-height-6: 36px;
+        --font-line-height-7: 42px;
+        --font-line-height-8: 49px;
+
+            /* Font Letter Spacing */
+        --font-letter-spacing-3: -0.01em;
+        --font-letter-spacing-4: -0.0125em; /* OLD --font-title-spacing */
+        --font-letter-spacing-5: -0.015em;
+        --font-letter-spacing-6: -0.015em;
+        --font-letter-spacing-7: -0.0175em; /* OLD --font-display-spacing */
+        --font-letter-spacing-8: -0.02em;
+
+            /* Font Sizes */
+        --font-size-0: 14px;
+        --font-size-1: 16px;
+        --font-size-2: 18px;
+        --font-size-3: 21px;
+        --font-size-4: 24px;
+        --font-size-5: 28px;
+        --font-size-6: 32px;
+        --font-size-7: 37px;
+        --font-size-8: 43px;
+    }
+
+    --font-weight-regular:  400; /* OLD --regular */
+    --font-weight-medium:   500; /* OLD --font-display-weight && --font-title-weight */
+    --font-weight-bold:     600; /* OLD --bold */
+
+        /* Font Styles Configured */
+    --font-0-regular: var(--font-weight-regular) var(--font-size-0) / var(--font-line-height-0) var(--font-family-1); /* OLD --font-caption */
+    --font-0-bold:    var(--font-weight-bold) var(--font-size-0) / var(--font-line-height-0) var(--font-family-1);
+    --font-1-regular: var(--font-weight-regular) var(--font-size-1) / var(--font-line-heigh-1) var(--font-family-1); /* OLD --font-callout */
+    --font-1-bold:    var(--font-weight-bold) var(--font-size-1) / var(--font-line-height-1) var(--font-family-1);
+    --font-2-regular: var(--font-weight-regular) var(--font-size-2) / var(--font-line-heigh-2) var(--font-family-1); /* OLD --font-body */
+    --font-2-bold:    var(--font-weight-bold) var(--font-size-2) / var(--font-line-height-2) var(--font-family-1);
+    --font-3-regular: var(--font-weight-regular) var(--font-size-3) / var(--font-line-heigh-3) var(--font-family-1); /* OLD --font-headline */
+    --font-3-bold:    var(--font-weight-bold) var(--font-size-3) / var(--font-line-height-3) var(--font-family-1);
+    --font-4-regular: var(--font-weight-regular) var(--font-size-4) / var(--font-line-heigh-4) var(--font-family-1);
+    --font-4-bold:    var(--font-weight-bold) var(--font-size-4) / var(--font-line-height-4) var(--font-family-1);
+    --font-5-medium:  var(--font-weight-medium) var(--font-size-5) / var(--font-line-height-5)  var(--font-family-2); /* OLD --font-title */
+    --font-6-medium:  var(--font-weight-medium) var(--font-size-6) / var(--font-line-height-6) var(--font-family-2);
+    --font-7-medium:  var(--font-weight-medium) var(--font-size-7) / var(--font-line-height-7) var(--font-family-2);
+    --font-8-medium:  var(--font-weight-medium) var(--font-size-8) / var(--font-line-height-8) var(--font-family-2); /* OLD --font-display */
+
+    @supports (font-size: clamp(var(--font-size-5), 12vw, var(--font-size-8))) {
+            /* Font Styles Configured */
+        --font-0-regular: var(--font-weight-regular) clamp(var(--font-size-0), 2vw, var(--font-size-0)) / var(--font-line-height-0) var(--font-family-1); /* OLD --font-caption */
+        --font-0-bold:    var(--font-weight-bold) clamp(var(--font-size-0), 2vw, var(--font-size-0)) / var(--font-line-height-0) v(--font-family-1);
+        --font-1-regular: var(--font-weight-regular) clamp(var(--font-size-1) * .95, 3vw, var(--font-size-1)) / var(--font-line-height-1) var(--font-family-1); /* OLD --font-callout */
+        --font-1-bold:    var(--font-weight-bold) clamp(var(--font-size-1) * .95, 3vw, var(--font-size-1)) / var(--font-line-height-0) var(--font-family-1);
+        --font-2-regular: var(--font-weight-regular) clamp(var(--font-size-2) * .9, 4vw, var(--font-size-2)) / var(--font-line-height-2) var(--font-family-1); /* OLD --font-body */
+        --font-2-bold:    var(--font-weight-bold) clamp(var(--font-size-2) * .9, 4vw, var(--font-size-2)) / var(--font-line-height-2) var(--font-family-1);
+        --font-3-regular: var(--font-weight-regular) clamp(var(--font-size-3) * .8, 6vw, var(--font-size-3)) / var(--font-line-height-3) var(--font-family-1); /* OLD --font-headline */
+        --font-3-bold:    var(--font-weight-bold) clamp(var(--font-size-3) * .8, 6vw, var(--font-size-3)) / var(--font-line-height-3) var(--font-family-1);
+        --font-4-regular: var(--font-weight-regular) clamp(var(--font-size-4) * .75, 7vw, var(--font-size-4)) / var(--font-line-height-4) var(--font-family-1);
+        --font-4-bold:    var(--font-weight-bold) clamp(var(--font-size-4) * .75, 7vw, var(--font-size-4)) / var(--font-line-height-4) var(--font-family-1);
+        --font-5-medium:  var(--font-weight-medium) clamp(var(--font-size-5) * .7, 9vw, var(--font-size-5)) / var(--font-line-height-5)  var(--font-family-2); /* OLD --font-title */
+        --font-6-medium:  var(--font-weight-medium) clamp(var(--font-size-6) * .67, 10vw, var(--font-size-6)) / var(--font-line-height-6) var(--font-family-2);
+        --font-7-medium:  var(--font-weight-medium) clamp(var(--font-size-7) * .63, 11vw, var(--font-size-7)) / var(--font-line-height-7) var(--font-family-2);
+        --font-8-medium:  var(--font-weight-medium) clamp(var(--font-size-8) * .6, 12vw, var(--font-size-8)) / var(--font-line-height-8) var(--font-family-2); /* OLD --font-display */
     }
 
 
+    /***********/
     /* Shadows */
-    --shadow-line: 0 0 1px #0006;
-    --shadow-1: 0 1px 3px #0003;
-    --shadow-2: 0 2px 6px #0003;
-    --shadow-3: 0 4px 12px #0003;
+    /***********/
+    --shadow-line: 0px 0px 1px 0px #00000066;
+    --shadow-level-1: 0px 1px 3px 0px #00000033; /* OLD --shadow-1 */
+    --shadow-level-2: 0px 2px 6px 0px #00000033; /* OLD --shadow-2 */
+    --shadow-level-3: 0px 4px 12px 0px #00000033; /* OLD --shadow-3 */
+    --shadow-focus: 0px 0px 0px 4px #0090DA33; 
+    --shadow-focus-negative: 0px 0px 0px 4px var(--color-negative-100a);
+    --shadow-focus-pro: 0px 0px 0px 4px #AC18B459;
 
 
+    /*****************/
     /* Border radius */
-    --radius-big: calc(var(--size-8) / 2);
-    --radius: var(--size-3);
-    --radius-small: var(--size-2);
+    /*****************/
+    --radius-s: var(--size-0); /* OLD --radius-small */
+    --radius-m: var(--size-1); /* OLD --radius */
+    --radius-xl: var(--size-3); /* OLD --radius-big */
 
+    /**************/
     /* Separators */
-    --separator: solid 4px var(--gray-xlight);
+    /**************/
+    --separator: solid var(--size-0) var(--color-neutral-200);
 
-    --column-gap-1: var(--size-3);
-    --column-gap-2: var(--size-5);
-    --column-gap-3: var(--size-6);
+    --column-gap-1: var(--size-1);
+    --column-gap-2: var(--size-2);
+    --column-gap-3: var(--size-3);
 
-    --row-gap-1: var(--size-3);
-    --row-gap-2: var(--size-5);
-    --row-gap-3: var(--size-6);
-    --row-gap-4: var(--size-8);
+    --row-gap-1: var(--size-1);
+    --row-gap-2: var(--size-2);
+    --row-gap-3: var(--size-3);
+    --row-gap-4: var(--size-5);
 
     @media (--from-width-1) {
-        --column-gap-1: var(--size-4);
-        --column-gap-2: var(--size-6);
-        --column-gap-3: var(--size-7);
+        --column-gap-1: var(--size-2);
+        --column-gap-2: var(--size-3);
+        --column-gap-3: var(--size-4);
     }
 
     @media (--from-height-1) {
-        --row-gap-1: var(--size-4);
-        --row-gap-2: var(--size-6);
-        --row-gap-3: var(--size-7);
+        --row-gap-1: var(--size-2);
+        --row-gap-2: var(--size-3);
+        --row-gap-3: var(--size-4);
         --row-gap-4: var(--size-9);
     }
 
     @media (--from-width-2) {
-        --column-gap-1: var(--size-5);
-        --column-gap-2: var(--size-7);
-        --column-gap-3: var(--size-8);
+        --column-gap-1: var(--size-2);
+        --column-gap-2: var(--size-4);
+        --column-gap-3: var(--size-5);
     }
 
     @media (--from-height-2) {
-        --row-gap-1: var(--size-5);
-        --row-gap-2: var(--size-7);
-        --row-gap-3: var(--size-8);
+        --row-gap-1: var(--size-2);
+        --row-gap-2: var(--size-4);
+        --row-gap-3: var(--size-5);
     }
 
+    /***************/
     /* Transitions */
+    /***************/
     --duration: 100ms;
     --slow-duration: 500ms;
 }
