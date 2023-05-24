@@ -29,14 +29,14 @@
     }
 
     & .ola_tag {
-        margin-left: var(--size-3);
+        margin-left: var(--size-1);
     }
 }
 .ola_accordion-header-content {
     display: inline-flex;
     align-items: center;
-    height: var(--size-8);
-    padding-right: var(--size-5);
+    height: var(--size-5);
+    padding-right: var(--size-2);
 }
 .ola_accordion-title {
     font: var(--font-callout);
@@ -50,7 +50,7 @@
 .ola_accordion-marker {
     display: block;
     flex: 0 0 auto;
-    margin-right: var(--size-3);
+    margin-right: var(--size-1);
     color: var(--color-neutral-400);
     border-radius: 50%;
     transition: transform var(--duration);
@@ -60,5 +60,5 @@
     }
 }
 .ola_accordion-content {
-    margin-top: var(--size-4);
+    margin-top: var(--size-2);
 }

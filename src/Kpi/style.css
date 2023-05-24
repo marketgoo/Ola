@@ -17,7 +17,7 @@
     display: block;
     font: var(--font-title);
     color: var(--color-neutral-900);
-    margin: var(--size-3) 0 0;
+    margin: var(--size-1) 0 0;
 
     & em {
         font: var(--font-headline);
@@ -30,5 +30,5 @@
     font: var(--font-caption);
     font-weight: var(--bold);
     color: var(--color-neutral-700);
-    margin: var(--size-1) 0 0;
+    margin: var(--size-0) 0 0;
 }

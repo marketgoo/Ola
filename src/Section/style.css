@@ -34,8 +34,8 @@
 .ola_section-intro {
     font: var(--font-body);
     color: var(--color-neutral-700);
-    margin-top: var(--size-2);
-    max-width: var(--size-12);
+    margin-top: var(--size-0);
+    max-width: var(--size-16);
 }
 .ola_section-subheader {
     margin: var(--row-gap-3) 0;

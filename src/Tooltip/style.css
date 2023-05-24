@@ -1,6 +1,6 @@
 .ola_tooltip {
-    --pointer: var(--size-3);
-    --width: var(--size-11);
+    --pointer: var(--size-1);
+    --width: var(--size-14);
 
     display: inline-block;
     position: relative;
@@ -9,7 +9,7 @@
 
     &.is-wide {
         @media (--from-width-1) {
-            --width: var(--size-12);
+            --width: var(--size-16);
         }
     }
 }
@@ -30,7 +30,7 @@
     filter: drop-shadow(var(--shadow-2)) drop-shadow(var(--shadow-line));
     background: var(--color-white-100);
     border-radius: var(--radius);
-    padding: var(--size-6);
+    padding: var(--size-3);
     width: var(--width);
     box-sizing: border-box;
     z-index: 5;

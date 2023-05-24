@@ -208,10 +208,10 @@ strong {
 
 /* Widths */
 .ola-width-narrow {
-    max-width: var(--size-11);
+    max-width: var(--size-14);
 }
 .ola-width-medium {
-    max-width: var(--size-12);
+    max-width: var(--size-16);
 }
 
 /* Skeletor */

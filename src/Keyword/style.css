@@ -10,7 +10,7 @@
     vertical-align: baseline;
     cursor: default;
     max-width: max-content;
-    min-height: var(--size-8);
+    min-height: var(--size-5);
     letter-spacing: 0;
 }
 
@@ -26,8 +26,8 @@
     align-self: flex-start;
 
     & .ola_buttonIcon {
-        min-width: var(--size-8);
-        min-height: var(--size-8);
+        min-width: var(--size-5);
+        min-height: var(--size-5);
         border-radius: var(--radius-small);
         --background-hover: var(--color-neutral-400);
     }

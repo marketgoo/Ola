@@ -29,12 +29,12 @@
     color: var(--color-neutral-700);
 }
 .ola_field-input {
-    margin: var(--size-2) 0;
+    margin: var(--size-0) 0;
 }
 .ola_field-description,
 .ola_field-error {
     font: var(--font-caption);
-    margin-top: var(--size-2);
+    margin-top: var(--size-0);
     color: var(--color-neutral-700);
 }
 .ola_field-error {

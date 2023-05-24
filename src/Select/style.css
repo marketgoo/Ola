@@ -2,7 +2,7 @@
     display: block;
     appearance: none;
     box-sizing: border-box;
-    height: var(--size-8);
+    height: var(--size-5);
     width: 100%;
     border: solid 2px var(--color-neutral-400);
     background: var(--color-white-100);
@@ -14,7 +14,7 @@
     background-position: right center;
     border-radius: var(--radius-small);
     font: var(--font-callout);
-    padding: 0 var(--size-8) 0 1em;
+    padding: 0 var(--size-5) 0 1em;
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: 200ms;
     outline: 0;

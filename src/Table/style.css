@@ -17,15 +17,15 @@
     & td,
     & th {
         border: none;
-        height: var(--size-8);
+        height: var(--size-5);
         background: var(--table-background);
     }
 
     & th {
         font-weight: var(--bold);
         color: var(--color-neutral-900);
-        padding-left: var(--size-4);
-        padding-right: var(--size-4);
+        padding-left: var(--size-2);
+        padding-right: var(--size-2);
 
         & > * {
             vertical-align: middle;
@@ -33,7 +33,7 @@
     }
 
     & td {
-        padding: var(--size-3) var(--size-4);
+        padding: var(--size-1) var(--size-2);
         border-top: solid 1px var(--color-neutral-200);
     }
 
@@ -52,7 +52,7 @@
     & caption {
         font: var(--font-caption);
         caption-side: bottom;
-        padding-top: var(--size-3);
+        padding-top: var(--size-1);
         text-align: right;
         border-top: solid 1px var(--color-neutral-400);
     }
@@ -80,11 +80,11 @@
 
     &.is-selectable {
         & .ola_tableCell:last-child {
-            padding-right: var(--size-4);
+            padding-right: var(--size-2);
         }
 
         & .ola_tableCell:first-child {
-            padding-left: var(--size-4);
+            padding-left: var(--size-2);
         }
     }
 }
@@ -118,25 +118,25 @@
         padding: 0;
         position: sticky;
         right: 0;
-        width: var(--size-8);
-        background: linear-gradient(var(--table-background), var(--table-background) var(--size-8)) no-repeat;
+        width: var(--size-5);
+        background: linear-gradient(var(--table-background), var(--table-background) var(--size-5)) no-repeat;
         box-shadow: inset 1px 0 0 var(--color-neutral-200);
 
         & .ola_buttonIcon {
-            margin: 0 var(--size-3);
+            margin: 0 var(--size-1);
         }
 
         & .ola_button {
-            margin-left: var(--size-3);
-            margin-right: var(--size-2);
+            margin-left: var(--size-1);
+            margin-right: var(--size-0);
         }
     }
     &.is-check {
-        padding-left: var(--size-4);
-        width: var(--size-7);
+        padding-left: var(--size-2);
+        width: var(--size-4);
     }
 }
 th.ola_tableCell.is-action {
-    padding-right: var(--size-7);
+    padding-right: var(--size-4);
     box-shadow: none;
 }

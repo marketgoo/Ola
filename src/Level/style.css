@@ -3,14 +3,14 @@
   --color: var(--color-neutral-200);
   --size: 12px;
   --gap: 1px;
-  --height: var(--size-6);
+  --height: var(--size-3);
 
   display: inline-flex;
   vertical-align: middle;
   height: var(--height);
   gap: var(--gap);
   border-color: var(--background);
-  margin: var(--size-1);
+  margin: var(--size-0);
 
   & span {
     background-color: var(--background);
@@ -27,15 +27,15 @@
   }
   &.is-size_small {
     --size: 8px;
-    --height: var(--size-4);
+    --height: var(--size-2);
     --radius: 1px;
   }
   &.is-size_medium {
     --radius: var(--radius-small);
   }
   &.is-size_xbig {
-    --size: var(--size-8);
-    --height: var(--size-8);
+    --size: var(--size-5);
+    --height: var(--size-5);
     --gap: 2px;
   }
   &.is-low {

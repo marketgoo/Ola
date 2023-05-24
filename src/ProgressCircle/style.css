@@ -1,8 +1,8 @@
 .ola_progressCircle {
     --color: var(--color-primary-500);
 
-    width: var(--size-10);
-    height: var(--size-10);
+    width: var(--size-12);
+    height: var(--size-12);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@
     z-index: 1;
 
     & > span {
-        font-size: var(--size-7);
+        font-size: var(--size-4);
     }
 }
 
@@ -64,7 +64,7 @@
     transition: opacity 200ms;
     z-index: 1;
     display: block;
-    padding: 0 var(--size-5);
+    padding: 0 var(--size-2);
     text-align: center;
 }
 

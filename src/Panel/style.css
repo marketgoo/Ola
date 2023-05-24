@@ -49,23 +49,23 @@
     font-weight: var(--regular);
 }
 .ola_panel-display {
-    margin: 0 0 var(--size-4) 0;
+    margin: 0 0 var(--size-2) 0;
     font: var(--font-title);
 }
 .ola_panel-intro {
-    margin-top: var(--size-3);
+    margin-top: var(--size-1);
     font: var(--font-callout);
     color: var(--color-neutral-700);
 }
 .ola_panel-extra {
 
     @media (--from-width-2) {
-        max-width: var(--size-11);
+        max-width: var(--size-14);
     }
 }
 
 .ola_panel-subtitle {
-    padding: var(--size-3) var(--column-gap-3);
+    padding: var(--size-1) var(--column-gap-3);
     margin: var(--row-gap-1) 0 0;
     background-color: var(--color-neutral-200);
     font: var(--font-body);

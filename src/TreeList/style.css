@@ -12,7 +12,7 @@
 }
 .ola_treeList .ola_treeList .ola_treeList-option {
   border: none;
-  padding-left: var(--size-8);
+  padding-left: var(--size-5);
   position: relative;
 
   &::before {
@@ -21,11 +21,11 @@
     border-left: 2px solid var(--color-neutral-400);
     border-bottom: 2px solid var(--color-neutral-400);
     height: 50%;
-    min-height: var(--size-5);
-    width: var(--size-5);
+    min-height: var(--size-2);
+    width: var(--size-2);
     top: 0;
-    left: var(--size-5);
-    border-bottom-left-radius: var(--size-5) var(--size-5);
+    left: var(--size-2);
+    border-bottom-left-radius: var(--size-2) var(--size-2);
   }
 
   &:not(:last-child)::after {
@@ -35,7 +35,7 @@
     height: 100%;
     border-left: 2px solid var(--color-neutral-400);
     top: 0;
-    left: var(--size-5);
+    left: var(--size-2);
   }
 }
 .ola_treeList-option > a,
@@ -45,12 +45,12 @@
   text-decoration: none;
   background-image: url('data:image/svg+xml;utf-8,<svg width="28" height="28" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg"><path d="M26 14L16.708 3.293a1 1 0 00-1.5 1.319L22.5 13H3a1 1 0 00-.117 1.993L22.5 15l-7.207 8.292c-.36.36-.405 1.036-.02 1.408.386.37.946.395 1.339.09L26 14z" fill="%23BBC2CE"></path></svg>');
   background-repeat: no-repeat;
-  background-position: right var(--size-4) center;
-  background-size: var(--size-6) var(--size-6);
-  padding-right: var(--size-8);
-  padding-left: var(--size-3);
-  padding-top: var(--size-4);
-  padding-bottom: var(--size-4);
+  background-position: right var(--size-2) center;
+  background-size: var(--size-3) var(--size-3);
+  padding-right: var(--size-5);
+  padding-left: var(--size-1);
+  padding-top: var(--size-2);
+  padding-bottom: var(--size-2);
 
   &:hover {
     background-color: var(--color-neutral-200);
@@ -72,8 +72,8 @@
   max-width: max-content;
   background-image: none;
   border-radius: var(--radius);
-  margin-left: calc(var(--size-2) * -1);
-  padding-right: var(--size-3);
-  padding-top: var(--size-3);
-  padding-bottom: var(--size-3);
+  margin-left: calc(var(--size-0) * -1);
+  padding-right: var(--size-1);
+  padding-top: var(--size-1);
+  padding-bottom: var(--size-1);
 }

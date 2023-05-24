@@ -7,8 +7,8 @@
     --background-active: var(--color-neutral-400);
 
     display: inline-flex;
-    min-height: var(--size-6);
-    min-width: var(--size-6);
+    min-height: var(--size-3);
+    min-width: var(--size-3);
     align-items: center;
     justify-content: center;
     background: none;
@@ -49,11 +49,11 @@
     }
 
     & .ola_icon.is-small {
-        padding: var(--size-2);
+        padding: var(--size-0);
     }
     & .ola_icon.is-medium,
     & .ola_spinner {
-        padding: var(--size-3);
+        padding: var(--size-1);
     }
 
     &.is-secondary {
@@ -70,7 +70,7 @@
     &.is-chevron {
         background-repeat: no-repeat;
         background-position: right center;
-        padding-right: var(--size-7);
+        padding-right: var(--size-4);
         border-radius: var(--radius-big);
 
         /* Chevron gray */

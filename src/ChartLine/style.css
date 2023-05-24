@@ -23,7 +23,7 @@
     &.is-multiple .ola_chartLine-value.has-tooltip:hover {
         background-image: linear-gradient(var(--vertical-line-color), var(--vertical-line-color));
         background-position: center bottom;
-        background-size: 2px calc((var(--height) * var(--value)) + var(--size-6));
+        background-size: 2px calc((var(--height) * var(--value)) + var(--size-3));
         background-repeat: no-repeat;
     }
 }
@@ -58,7 +58,7 @@
     border-bottom: solid 1px var(--color-neutral-200);
 }
 .ola_chartLine-space {
-    height: calc((var(--height) * var(--value)) + var(--size-6));
+    height: calc((var(--height) * var(--value)) + var(--size-3));
     flex-shrink: 0;
 }
 .ola_chartLine-point {
@@ -77,14 +77,14 @@
 .ola_chartLine-footer {
     height: 0;
     position: relative;
-    top: var(--size-3);
+    top: var(--size-1);
 }
 .ola_chartLine-rule {
     position: absolute;
     left: 0;
     width: 100%;
     border-bottom: dashed 1px var(--color-neutral-400);
-    padding-bottom: var(--size-2);
+    padding-bottom: var(--size-0);
     bottom: calc(var(--value) * (var(--height) + 5px));
     text-align: right;
     mix-blend-mode: multiply;
@@ -98,7 +98,7 @@
     flex-direction: column-reverse;
     z-index: 1;
     align-self: flex-end;
-    height: calc(var(--height) + var(--size-4));
+    height: calc(var(--height) + var(--size-2));
     background: var(--color-white-100);
     justify-content: space-between;
 
@@ -106,8 +106,8 @@
     text-align: right;
     font: var(--font-caption);
     color: var(--color-neutral-700);
-    padding-right: var(--size-3);
-    width: var(--size-8);
+    padding-right: var(--size-1);
+    width: var(--size-5);
     white-space: nowrap;
     box-sizing: border-box;
     flex-shrink: 0;
@@ -118,8 +118,8 @@
         align-items: flex-end;
 
         & ~ .ola_chartLine-svg {
-            left: var(--size-8);
-            width: calc(100% - var(--size-8));
+            left: var(--size-5);
+            width: calc(100% - var(--size-5));
         }
     }
 }

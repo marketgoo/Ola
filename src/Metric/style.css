@@ -43,21 +43,21 @@
 .ola_metric-description {
     font: var(--font-caption);
     color: var(--color-neutral-700);
-    margin: var(--size-1) 0 0;
+    margin: var(--size-0) 0 0;
 }
 .ola_metric-footer {
     font: var(--font-caption);
     color: var(--color-neutral-700);
-    margin: var(--size-4) 0 0;
+    margin: var(--size-2) 0 0;
 }
 .ola_metric-value {
     display: block;
     font: var(--font-title);
     color: var(--color-neutral-900);
-    margin: var(--size-1) 0 0;
+    margin: var(--size-0) 0 0;
 }
 .ola_metric-icon {
-    margin-right: var(--size-2);
+    margin-right: var(--size-0);
     position: relative;
     top: 1px;
 }

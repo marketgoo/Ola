@@ -18,7 +18,7 @@
 .ola_progressBar-description {
   font: var(--font-caption);
   color: var(--color-neutral-700);
-  margin: 0px 0px var(--size-3) var(--size-3);
+  margin: 0px 0px var(--size-1) var(--size-1);
 }
 
 .ola_progressBar-description strong {

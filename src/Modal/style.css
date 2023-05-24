@@ -33,18 +33,18 @@
     }
 
     &.is-narrow {
-        max-width: var(--size-12);
+        max-width: var(--size-16);
     }
 
     &.is-closable {
         @media (--from-width-2) {
             & .ola_modal-extra {
-                margin-top: var(--size-8);
+                margin-top: var(--size-5);
             }
         }
         @media (--to-width-2) {
             & .ola_modal-title {
-                margin-right: var(--size-8);
+                margin-right: var(--size-5);
             }
         }
     }
@@ -123,8 +123,8 @@
 
 .ola_modal-close {
     position: absolute;
-    top: var(--size-5);
-    right: var(--size-5);
+    top: var(--size-2);
+    right: var(--size-2);
 }
 .ola_modal-title {
     margin: 0;

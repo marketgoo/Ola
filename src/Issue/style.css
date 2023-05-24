@@ -77,7 +77,7 @@
 
 .ola_issue-dropdown {
     &.is-small .ola_issue-content {
-        padding-left: calc(var(--size-2) + var(--size-6) + var(--column-gap-1));
+        padding-left: calc(var(--size-0) + var(--size-3) + var(--column-gap-1));
         font: var(--font-caption);
 
         & > *:first-child {
@@ -85,7 +85,7 @@
         }
     }
     &.is-big .ola_issue-content {
-        padding-left: calc(var(--size-2) + var(--size-8) + var(--column-gap-1));
+        padding-left: calc(var(--size-0) + var(--size-5) + var(--column-gap-1));
         font: var(--font-body);
     }
     & .ola_issue-summary-content {
@@ -103,7 +103,7 @@
     list-style: none;
     cursor: pointer;
     outline: 0;
-    padding: var(--size-3) var(--size-2);
+    padding: var(--size-1) var(--size-0);
     transition: background-color var(--duration);
 
     &::-webkit-details-marker {
@@ -115,7 +115,7 @@
     }
 }
 .ola_issue-content {
-    padding-left: calc(var(--size-2) + var(--size-7) + var(--column-gap-1));
+    padding-left: calc(var(--size-0) + var(--size-4) + var(--column-gap-1));
     color: var(--color-neutral-700);
     font: var(--font-callout);
     & > *:first-child {

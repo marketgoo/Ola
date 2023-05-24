@@ -1,7 +1,7 @@
 /* Common pattern of a img + content */
 
 .ola_ly-imgContent {
-    --img-width: var(--size-11);
+    --img-width: var(--size-14);
     --gap: var(--column-gap-3);
 
     display: grid;

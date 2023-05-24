@@ -1,7 +1,7 @@
 .ola_speedmeter {
     --color: var(--color-neutral-700);
 
-    width: var(--size-11);
+    width: var(--size-14);
     height: 110px;
     position: relative;
     display: flex;
@@ -42,7 +42,7 @@
     color: var(--color-neutral-900);
     transition: opacity var(--duration);
     text-align: center;
-    margin-bottom: var(--size-2);
+    margin-bottom: var(--size-0);
 
     & > * {
         display: block;
@@ -66,7 +66,7 @@
     transition: opacity var(--duration);
     z-index: 1;
     display: block;
-    padding: 0 var(--size-5);
+    padding: 0 var(--size-2);
     text-align: center;
 }
 

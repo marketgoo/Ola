@@ -20,7 +20,7 @@
   align-items: center;
   text-align: left;
   text-decoration: none;
-  padding: var(--size-4) var(--size-6);
+  padding: var(--size-2) var(--size-3);
   outline: 0;
   border: none;
   box-sizing: border-box;
@@ -38,7 +38,7 @@
 
   & .ola_icon {
       flex: 0 0 auto;
-      margin-right: var(--size-4);
+      margin-right: var(--size-2);
   }
 
   &.is-selected {

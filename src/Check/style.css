@@ -1,5 +1,5 @@
 .ola_check {
-    padding: var(--size-3) 0;
+    padding: var(--size-1) 0;
     display: inline-block;
     font: var(--font-callout);
     cursor: default;
@@ -12,7 +12,7 @@
             background: var(--color-white-100);
             border-radius: var(--radius-small);
             border: solid 2px var(--color-neutral-400);
-            padding: var(--size-4);
+            padding: var(--size-2);
             transition: background-color 200ms;
         }
 
@@ -38,7 +38,7 @@
         padding: 0;
 
         & .ola_check-label {
-            padding: var(--size-4);
+            padding: var(--size-2);
             transition: background-color 200ms;
         }
         & .ola_check-input:checked ~ .ola_check-label {

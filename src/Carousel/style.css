@@ -1,14 +1,14 @@
 .ola_carousel {
   background: var(--color-white-100);
   border-radius: var(--radius-big);
-  padding-top: var(--size-7);
-  padding-bottom: var(--size-7);
-  padding-left: var(--size-5);
-  padding-right: var(--size-5);
+  padding-top: var(--size-4);
+  padding-bottom: var(--size-4);
+  padding-left: var(--size-2);
+  padding-right: var(--size-2);
 
   &.is-alone {
-    padding-left: var(--size-8);
-    padding-right: var(--size-8);
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
   }
 }
 
@@ -30,8 +30,8 @@
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  margin-left: var(--size-2);
-  margin-right: var(--size-2);
+  margin-left: var(--size-0);
+  margin-right: var(--size-0);
   background: var(--color-neutral-400);
   cursor: pointer;
 }

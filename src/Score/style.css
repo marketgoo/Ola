@@ -82,7 +82,7 @@
   transition: opacity 200ms;
   z-index: 1;
   display: block;
-  padding: 0 var(--size-5);
+  padding: 0 var(--size-2);
   text-align: center;
 }
 
@@ -118,7 +118,7 @@
   transition: opacity 200ms, stroke-dashoffset 400ms;
 }
 .ola_score-level .ola_tag {
-  margin-top: var(--size-2);
+  margin-top: var(--size-0);
 }
 
 @keyframes score-loading {

@@ -28,7 +28,7 @@
     }
 
     & .ola_task-extra {
-        margin-left: var(--size-6);
+        margin-left: var(--size-3);
         @media (--to-width-1) {
             display: none;
         }
@@ -38,17 +38,17 @@
         position: relative;
         z-index: 2;
         box-shadow: var(--shadow-2), var(--shadow-line);
-        margin-left: calc(var(--size-4) * -1);
-        margin-right: calc(var(--size-4) * -1);
+        margin-left: calc(var(--size-2) * -1);
+        margin-right: calc(var(--size-2) * -1);
         border-radius: var(--radius);
-        padding-top: var(--size-4);
-        margin-top: calc(var(--size-4) * -1);
-        margin-top: var(--size-4);
+        padding-top: var(--size-2);
+        margin-top: calc(var(--size-2) * -1);
+        margin-top: var(--size-2);
 
         & .ola_task-content {
             animation: task-open 200ms;
             animation-fill-mode: both;
-            padding-left: calc(var(--column-gap-3) + var(--size-8));
+            padding-left: calc(var(--column-gap-3) + var(--size-5));
             padding-right: calc(var(--column-gap-3));
         }
 
@@ -91,7 +91,7 @@
     min-height: 52px;
 
     @media (--to-width-2) {
-        padding: 0 var(--size-6);
+        padding: 0 var(--size-3);
     }
 }
 
@@ -119,12 +119,12 @@
 }
 .ola_task-status {
     flex: 0 0 auto;
-    margin-right: var(--size-5);
+    margin-right: var(--size-2);
 }
 .ola_task-icon {
     flex: 0 0 auto;
     margin-left: auto;
-    margin-right: calc(var(--size-7) * -1);
+    margin-right: calc(var(--size-4) * -1);
     display: none;
     color: var(--color-neutral-700);
 
@@ -149,7 +149,7 @@
     & h3 {
       font: var(--font-body);
       color: var(--color-neutral-900);
-      margin: var(--size-7) 0 var(--size-3);
+      margin: var(--size-4) 0 var(--size-1);
     }
 
     & li + li,
@@ -163,7 +163,7 @@
 
     & ol {
         margin-left: 0;
-        padding-left: var(--size-7);
+        padding-left: var(--size-4);
 
         & li::marker {
             font: var(--font-callout);
@@ -179,15 +179,15 @@
         & li {
             list-style: none;
             position: relative;
-            padding-left: var(--size-7);
+            padding-left: var(--size-4);
 
             &::before {
                 content: "";
                 position: absolute;
                 left: 0;
                 top: .4em;
-                width: var(--size-3);
-                height: var(--size-3);
+                width: var(--size-1);
+                height: var(--size-1);
                 background: var(--color-neutral-400);
                 border-radius: 50%;
             }
@@ -202,8 +202,8 @@
     }
 
     @media (--to-width-1) {
-        padding-left: var(--size-6);
-        padding-right: var(--size-6);
+        padding-left: var(--size-3);
+        padding-right: var(--size-3);
     }
 }
 .ola_task-footer {
@@ -219,7 +219,7 @@
 
     & > * {
         margin: 0;
-        margin-right: var(--size-7);
+        margin-right: var(--size-4);
     }
 
     & strong {
@@ -227,8 +227,8 @@
     }
 
     @media (--to-width-1) {
-        padding-left: var(--size-6);
-        padding-right: var(--size-6);
+        padding-left: var(--size-3);
+        padding-right: var(--size-3);
     }
 }
 
