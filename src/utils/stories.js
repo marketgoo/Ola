@@ -19,7 +19,7 @@ const Table = ({ children }) =>
       <tr>
         <th>
           <span>Class</span>
-          <span className='ola-brand' style={{
+          <span className='ola-color-primary-500' style={{
             display: 'block',
             fontSize: '12px',
             fontWeight: '500',
@@ -38,53 +38,53 @@ const Table = ({ children }) =>
 export const FontStyles = () => {
   const fontStyles = [
     {
-      name: 'Display',
-      className: 'ola-display',
+      name: 'Font 8',
+      className: 'ola-font-8-medium',
       tag: 'h1'
     },
     {
       name: 'Title',
-      className: 'ola-title',
+      className: 'ola-font-5-medium',
       tag: 'h2'
     },
     {
       name: 'Headline',
-      className: 'ola-headline',
+      className: 'ola-font-3-regular',
       tag: 'p'
     },
     {
       name: 'Headline bold',
-      className: 'ola-headline',
+      className: 'ola-font-3-regular',
       tag: 'h3'
     },
     {
       name: 'Body',
-      className: 'ola-body',
+      className: 'ola-font-2-regular',
       tag: 'p'
     },
     {
       name: 'Callout',
-      className: 'ola-callout',
+      className: 'ola-font-1-regular',
       tag: 'p'
     },
     {
       name: 'Callout Bold',
-      className: 'ola-callout',
+      className: 'ola-font-1-regular',
       tag: 'h2'
     },
     {
       name: 'Caption',
-      className: 'ola-caption',
+      className: 'ola-font-0-regular',
       tag: 'p'
     },
     {
       name: 'Caption Bold',
-      className: 'ola-caption ola-bold',
+      className: 'ola-font-0-regular ola-font-weight-bold',
       tag: 'p'
     },
     {
       name: 'Caption Bold',
-      className: 'ola-caption',
+      className: 'ola-font-0-regular',
       tag: 'strong'
     },
   ]
@@ -114,63 +114,63 @@ export const Colors = () => {
   const colors = [
     {
       name: 'Brand',
-      className: 'ola-brand',
-      extra: 'ola-title'
+      className: 'ola-color-primary-500',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Accent',
-      className: 'ola-accent',
-      extra: 'ola-title'
+      className: 'ola-color-accent-500',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'White',
-      className: 'ola-white',
-      extra: 'ola-bg-black ola-title'
+      className: 'ola-color-white-100',
+      extra: 'ola-bg-neutral-900 ola-font-5-medium'
     },
     {
       name: 'Black',
       className: 'ola-black',
-      extra: 'ola-title'
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray',
-      className: 'ola-gray',
-      extra: 'ola-title'
+      className: 'ola-color-neutral-700',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray Light',
-      className: 'ola-gray-light',
-      extra: 'ola-title'
+      className: 'ola-color-neutral-400',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray XLight',
-      className: 'ola-gray-xlight',
-      extra: 'ola-title'
+      className: 'ola-color-neutral-200',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray XXLight',
-      className: 'ola-gray-xxlight',
-      extra: 'ola-title'
+      className: 'ola-color-neutral-100',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Error',
-      className: 'ola-error',
-      extra: 'ola-title'
+      className: 'ola-color-negative-500',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Warning',
-      className: 'ola-warning',
-      extra: 'ola-title'
+      className: 'ola-color-warning-500',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Success',
-      className: 'ola-success',
-      extra: 'ola-title'
+      className: 'ola-color-positive-500',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Pro',
-      className: 'ola-pro',
-      extra: 'ola-title'
+      className: 'ola-color-pro-500',
+      extra: 'ola-font-5-medium'
     },
   ]
 
@@ -205,63 +205,63 @@ export const BackgroundColors = () => {
   const bgs = [
     {
       name: 'Brand',
-      className: 'ola-bg-brand',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-primary-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Accent',
-      className: 'ola-bg-accent',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-accent-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'White',
-      className: 'ola-bg-white',
-      extra: 'ola-bg-black ola-white ola-title'
+      className: 'ola-bg-white-100',
+      extra: 'ola-bg-neutral-900 ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Black',
-      className: 'ola-bg-black',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-neutral-900',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Gray',
-      className: 'ola-bg-gray',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-neutral-700',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Gray Light',
-      className: 'ola-bg-gray-light',
-      extra: 'ola-title'
+      className: 'ola-bg-neutral-400',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray XLight',
-      className: 'ola-bg-gray-xlight',
-      extra: 'ola-title'
+      className: 'ola-bg-neutral-200',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Gray XXLight',
-      className: 'ola-bg-gray-xxlight',
-      extra: 'ola-title'
+      className: 'ola-bg-neutral-100',
+      extra: 'ola-font-5-medium'
     },
     {
       name: 'Error',
-      className: 'ola-bg-error',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-negative-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Warning',
-      className: 'ola-bg-warning',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-warning-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Success',
-      className: 'ola-bg-success',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-positive-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
     {
       name: 'Pro',
-      className: 'ola-bg-pro',
-      extra: 'ola-white ola-title'
+      className: 'ola-bg-pro-500',
+      extra: 'ola-color-white-100 ola-font-5-medium'
     },
   ]
 
@@ -285,7 +285,7 @@ export const BlackBolds = () =>
     <tr>
       <td onClick={() => _copyToClipboard('ola-black-bolds')} style={{ cursor: 'pointer' }}><pre>ola-black-bolds</pre></td>
       <td>
-        <div className="ola-callout ola-gray ola-black-bolds" style={{ whiteSpace: 'normal' }}>
+        <div className="ola-font-1-regular ola-color-neutral-700 ola-black-bolds" style={{ whiteSpace: 'normal' }}>
           Lorem ipsum <strong>dolor sit amet,</strong> consectetur <b>adipiscing</b> elit. In velit
           sapien, venenatis id tincidunt ac, interdum a ipsum. Phasellus et ante libero. Etiam
           molestie metus a blandit viverra.

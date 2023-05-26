@@ -19,7 +19,7 @@ const Table = ({ children, example = false }) =>
       <tr>
         <th>
           <span>Var Name</span>
-          <span className='ola-brand' style={{
+          <span className='ola-color-primary-500' style={{
             display: 'block',
             fontSize: '12px',
             fontWeight: '500',
