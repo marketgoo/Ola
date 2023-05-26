@@ -251,9 +251,9 @@
     @supports (font-size: clamp(var(--font-size-5), 12vw, var(--font-size-8))) {
             /* Font Styles Configured */
         --font-0-regular: var(--font-weight-regular) clamp(var(--font-size-0), 2vw, var(--font-size-0)) / var(--font-line-height-0) var(--font-family-1); /* OLD --font-caption */
-        --font-0-bold:    var(--font-weight-bold) clamp(var(--font-size-0), 2vw, var(--font-size-0)) / var(--font-line-height-0) v(--font-family-1);
+        --font-0-bold:    var(--font-weight-bold) clamp(var(--font-size-0), 2vw, var(--font-size-0)) / var(--font-line-height-0) var(--font-family-1);
         --font-1-regular: var(--font-weight-regular) clamp(var(--font-size-1) * .95, 3vw, var(--font-size-1)) / var(--font-line-height-1) var(--font-family-1); /* OLD --font-callout */
-        --font-1-bold:    var(--font-weight-bold) clamp(var(--font-size-1) * .95, 3vw, var(--font-size-1)) / var(--font-line-height-0) var(--font-family-1);
+        --font-1-bold:    var(--font-weight-bold) clamp(var(--font-size-1) * .95, 3vw, var(--font-size-1)) / var(--font-line-height-1) var(--font-family-1);
         --font-2-regular: var(--font-weight-regular) clamp(var(--font-size-2) * .9, 4vw, var(--font-size-2)) / var(--font-line-height-2) var(--font-family-1); /* OLD --font-body */
         --font-2-bold:    var(--font-weight-bold) clamp(var(--font-size-2) * .9, 4vw, var(--font-size-2)) / var(--font-line-height-2) var(--font-family-1);
         --font-3-regular: var(--font-weight-regular) clamp(var(--font-size-3) * .8, 6vw, var(--font-size-3)) / var(--font-line-height-3) var(--font-family-1); /* OLD --font-headline */
