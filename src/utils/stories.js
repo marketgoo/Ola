@@ -43,49 +43,69 @@ export const FontStyles = () => {
       tag: 'h1'
     },
     {
-      name: 'Title',
-      className: 'ola-font-5-medium',
+      name: 'Font 7',
+      className: 'ola-font-7-medium',
       tag: 'h2'
     },
     {
-      name: 'Headline',
+      name: 'Font 6',
+      className: 'ola-font-6-medium',
+      tag: 'h3'
+    },
+    {
+      name: 'Font 5',
+      className: 'ola-font-5-medium',
+      tag: 'h4'
+    },
+    {
+      name: 'Font 4 Bold',
+      className: 'ola-font-4-bold',
+      tag: 'p'
+    },
+    {
+      name: 'Font 4 Regular',
+      className: 'ola-font-4-regular',
+      tag: 'p'
+    },
+    {
+      name: 'Font 3 Bold',
+      className: 'ola-font-3-bold',
+      tag: 'p'
+    },
+    {
+      name: 'Font 3 Regular',
       className: 'ola-font-3-regular',
       tag: 'p'
     },
     {
-      name: 'Headline bold',
-      className: 'ola-font-3-regular',
-      tag: 'h3'
+      name: 'Font 2 Bold',
+      className: 'ola-font-2-bold',
+      tag: 'p'
     },
     {
-      name: 'Body',
+      name: 'Font 2 Regular',
       className: 'ola-font-2-regular',
       tag: 'p'
     },
     {
-      name: 'Callout',
+      name: 'Font 1 Bold',
+      className: 'ola-font-1-bold',
+      tag: 'p'
+    },
+    {
+      name: 'Font 1 Regular',
       className: 'ola-font-1-regular',
       tag: 'p'
     },
     {
-      name: 'Callout Bold',
-      className: 'ola-font-1-regular',
-      tag: 'h2'
-    },
-    {
-      name: 'Caption',
-      className: 'ola-font-0-regular',
+      name: 'Font 0 Bold',
+      className: 'ola-font-0-bold',
       tag: 'p'
     },
     {
-      name: 'Caption Bold',
-      className: 'ola-font-0-regular ola-font-weight-bold',
-      tag: 'p'
-    },
-    {
-      name: 'Caption Bold',
+      name: 'Font 0 Regular',
       className: 'ola-font-0-regular',
-      tag: 'strong'
+      tag: 'p'
     },
   ]
 
@@ -113,64 +133,380 @@ export const Colors = () => {
 
   const colors = [
     {
-      name: 'Brand',
+      className: 'ola-color-primary-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-primary-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
       className: 'ola-color-primary-500',
-      extra: 'ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Accent',
-      className: 'ola-color-accent-500',
-      extra: 'ola-font-5-medium'
+      className: 'ola-color-primary-600',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'White',
-      className: 'ola-color-white-100',
-      extra: 'ola-bg-neutral-900 ola-font-5-medium'
+      className: 'ola-color-primary-700',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Black',
-      className: 'ola-black',
-      extra: 'ola-font-5-medium'
+      className: 'ola-color-primary-800',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Gray',
-      className: 'ola-color-neutral-700',
-      extra: 'ola-font-5-medium'
+      className: 'ola-color-primary-900',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Gray Light',
-      className: 'ola-color-neutral-400',
-      extra: 'ola-font-5-medium'
-    },
-    {
-      name: 'Gray XLight',
-      className: 'ola-color-neutral-200',
-      extra: 'ola-font-5-medium'
-    },
-    {
-      name: 'Gray XXLight',
       className: 'ola-color-neutral-100',
-      extra: 'ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Error',
-      className: 'ola-color-negative-500',
-      extra: 'ola-font-5-medium'
+      className: 'ola-color-neutral-100a',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Warning',
-      className: 'ola-color-warning-500',
-      extra: 'ola-font-5-medium'
+      className: 'ola-color-neutral-200',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Success',
+      className: 'ola-color-neutral-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-neutral-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
       className: 'ola-color-positive-500',
-      extra: 'ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Pro',
+      className: 'ola-color-positive-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-positive-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-negative-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-warning-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
       className: 'ola-color-pro-500',
-      extra: 'ola-font-5-medium'
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-pro-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-600',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-700',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-800',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-accent-900',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-premium',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-info',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-color-white-100',
+      extra: 'ola-bg-neutral-900 ola-font-5-medium',
     },
   ]
 
@@ -204,65 +540,441 @@ export const BackgroundColors = () => {
 
   const bgs = [
     {
-      name: 'Brand',
+      className: 'ola-bg-primary-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-primary-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
       className: 'ola-bg-primary-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Accent',
-      className: 'ola-bg-accent-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-primary-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
     },
     {
-      name: 'White',
-      className: 'ola-bg-white-100',
-      extra: 'ola-bg-neutral-900 ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-primary-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
     },
     {
-      name: 'Black',
-      className: 'ola-bg-neutral-900',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-primary-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
     },
     {
-      name: 'Gray',
-      className: 'ola-bg-neutral-700',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-primary-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
     },
     {
-      name: 'Gray Light',
-      className: 'ola-bg-neutral-400',
-      extra: 'ola-font-5-medium'
-    },
-    {
-      name: 'Gray XLight',
-      className: 'ola-bg-neutral-200',
-      extra: 'ola-font-5-medium'
-    },
-    {
-      name: 'Gray XXLight',
       className: 'ola-bg-neutral-100',
-      extra: 'ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Error',
-      className: 'ola-bg-negative-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-neutral-100a',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Warning',
-      className: 'ola-bg-warning-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-neutral-200',
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Success',
+      className: 'ola-bg-neutral-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-neutral-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
       className: 'ola-bg-positive-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      extra: 'ola-font-5-medium',
     },
     {
-      name: 'Pro',
-      className: 'ola-bg-pro-500',
-      extra: 'ola-color-white-100 ola-font-5-medium'
+      className: 'ola-bg-positive-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
     },
+    {
+      className: 'ola-bg-positive-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-positive-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-negative-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-warning-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-pro-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-100',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-100a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-200',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-200a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-300',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-300a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-400',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-400a',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-500',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-600',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-700',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-800',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-accent-900',
+      extra: 'ola-color-white-100 ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-premium',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-info',
+      extra: 'ola-font-5-medium',
+    },
+    {
+      className: 'ola-bg-white-100',
+      extra: 'ola-bg-neutral-900 ola-font-5-medium',
+    },
+    // {
+    //   name: 'Brand',
+    //   className: 'ola-bg-primary-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Accent',
+    //   className: 'ola-bg-accent-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'White',
+    //   className: 'ola-bg-white-100',
+    //   extra: 'ola-bg-neutral-900 ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Black',
+    //   className: 'ola-bg-neutral-900',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Gray',
+    //   className: 'ola-bg-neutral-700',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Gray Light',
+    //   className: 'ola-bg-neutral-400',
+    //   extra: 'ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Gray XLight',
+    //   className: 'ola-bg-neutral-200',
+    //   extra: 'ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Gray XXLight',
+    //   className: 'ola-bg-neutral-100',
+    //   extra: 'ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Error',
+    //   className: 'ola-bg-negative-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Warning',
+    //   className: 'ola-bg-warning-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Success',
+    //   className: 'ola-bg-positive-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
+    // {
+    //   name: 'Pro',
+    //   className: 'ola-bg-pro-500',
+    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    // },
   ]
 
   return (
@@ -272,7 +984,7 @@ export const BackgroundColors = () => {
           <tr key={index}>
             <td onClick={() => _copyToClipboard(bg.className)} style={{ cursor: 'pointer' }}><pre>{bg.className}</pre></td>
             <td><div className={`${bg.className} ${bg.extra}`}>
-              {styles.getPropertyValue(bg.className.replace('ola-bg-', '--'))}
+              {styles.getPropertyValue(bg.className.replace('ola-bg-', '--color-'))}
             </div></td>
             <td><pre>&lt;div className=&quot;{bg.className}&quot;&gt;...&lt;/div&gt;</pre></td>
           </tr>)
