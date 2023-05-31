@@ -140,16 +140,16 @@
     /***************/
     /* Space units */
     /***************/
-    --size-0:  4px;   /* OLD --size-1: 2px; && --size-2: 4px; */
-    --size-1:  8px;   /* OLD --size-3: 8px; */
-    --size-2:  16px;  /* OLD --size-4: 14px; && --size-5: 16px; */
-    --size-3:  24px;  /* OLD --size-6: 20px; */
-    --size-4:  32px;  /* OLD --size-7: 28px; */
-    --size-5:  40px;  /* OLD --size-8: 44px; */
+    --size-0:  4px;   /* OLD --size-1: 2px && --size-2: 4px */
+    --size-1:  8px;   /* OLD --size-3: 8px */
+    --size-2:  16px;  /* OLD --size-4: 14px && --size-5: 16px */
+    --size-3:  24px;  /* OLD --size-6: 20px */
+    --size-4:  32px;  /* OLD --size-7: 28px */
+    --size-5:  40px;  /* OLD --size-8: 44px */
     --size-6:  48px;
     --size-7:  56px;
     --size-8:  64px;
-    --size-9:  72px;  /* OLD --size-9: 76px; */
+    --size-9:  72px;  /* OLD --size-9: 76px */
     --size-10: 80px;
     --size-12: 140px; /* OLD --size-10 */
     --size-14: 268px; /* OLD --size-11 */
@@ -235,13 +235,13 @@
         /* Font Styles Configured */
     --font-0-regular: var(--font-weight-regular) var(--font-size-0) / var(--font-line-height-0) var(--font-family-1); /* OLD --font-caption */
     --font-0-bold:    var(--font-weight-bold) var(--font-size-0) / var(--font-line-height-0) var(--font-family-1);
-    --font-1-regular: var(--font-weight-regular) var(--font-size-1) / var(--font-line-heigh-1) var(--font-family-1); /* OLD --font-callout */
+    --font-1-regular: var(--font-weight-regular) var(--font-size-1) / var(--font-line-height-1) var(--font-family-1); /* OLD --font-callout */
     --font-1-bold:    var(--font-weight-bold) var(--font-size-1) / var(--font-line-height-1) var(--font-family-1);
-    --font-2-regular: var(--font-weight-regular) var(--font-size-2) / var(--font-line-heigh-2) var(--font-family-1); /* OLD --font-body */
+    --font-2-regular: var(--font-weight-regular) var(--font-size-2) / var(--font-line-height-2) var(--font-family-1); /* OLD --font-body */
     --font-2-bold:    var(--font-weight-bold) var(--font-size-2) / var(--font-line-height-2) var(--font-family-1);
-    --font-3-regular: var(--font-weight-regular) var(--font-size-3) / var(--font-line-heigh-3) var(--font-family-1); /* OLD --font-headline */
+    --font-3-regular: var(--font-weight-regular) var(--font-size-3) / var(--font-line-height-3) var(--font-family-1); /* OLD --font-headline */
     --font-3-bold:    var(--font-weight-bold) var(--font-size-3) / var(--font-line-height-3) var(--font-family-1);
-    --font-4-regular: var(--font-weight-regular) var(--font-size-4) / var(--font-line-heigh-4) var(--font-family-1);
+    --font-4-regular: var(--font-weight-regular) var(--font-size-4) / var(--font-line-height-4) var(--font-family-1);
     --font-4-bold:    var(--font-weight-bold) var(--font-size-4) / var(--font-line-height-4) var(--font-family-1);
     --font-5-medium:  var(--font-weight-medium) var(--font-size-5) / var(--font-line-height-5)  var(--font-family-2); /* OLD --font-title */
     --font-6-medium:  var(--font-weight-medium) var(--font-size-6) / var(--font-line-height-6) var(--font-family-2);
