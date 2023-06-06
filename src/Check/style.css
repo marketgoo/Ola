@@ -9,7 +9,7 @@
         padding: 0;
 
         & .ola_check-label {
-            background: var(--color-white-100);
+            background: var(--color-white);
             border-radius: var(--radius-s);
             border: solid 2px var(--color-neutral-400);
             padding: var(--size-2);

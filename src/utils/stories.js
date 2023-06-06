@@ -505,7 +505,7 @@ export const Colors = () => {
       extra: 'ola-font-5-medium',
     },
     {
-      className: 'ola-color-white-100',
+      className: 'ola-color-white',
       extra: 'ola-bg-neutral-900 ola-font-5-medium',
     },
   ]
@@ -577,19 +577,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-primary-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-primary-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-primary-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-primary-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-neutral-100',
@@ -629,19 +629,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-neutral-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-neutral-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-neutral-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-neutral-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-positive-100',
@@ -681,19 +681,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-positive-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-positive-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-positive-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-positive-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-negative-100',
@@ -733,19 +733,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-negative-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-negative-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-negative-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-negative-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-warning-100',
@@ -785,19 +785,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-warning-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-warning-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-warning-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-warning-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-pro-100',
@@ -837,19 +837,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-pro-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-pro-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-pro-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-pro-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-accent-100',
@@ -889,19 +889,19 @@ export const BackgroundColors = () => {
     },
     {
       className: 'ola-bg-accent-600',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-accent-700',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-accent-800',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-accent-900',
-      extra: 'ola-color-white-100 ola-font-5-medium',
+      extra: 'ola-color-white ola-font-5-medium',
     },
     {
       className: 'ola-bg-premium',
@@ -918,27 +918,27 @@ export const BackgroundColors = () => {
     // {
     //   name: 'Brand',
     //   className: 'ola-bg-primary-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Accent',
     //   className: 'ola-bg-accent-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'White',
     //   className: 'ola-bg-white-100',
-    //   extra: 'ola-bg-neutral-900 ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-bg-neutral-900 ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Black',
     //   className: 'ola-bg-neutral-900',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Gray',
     //   className: 'ola-bg-neutral-700',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Gray Light',
@@ -958,22 +958,22 @@ export const BackgroundColors = () => {
     // {
     //   name: 'Error',
     //   className: 'ola-bg-negative-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Warning',
     //   className: 'ola-bg-warning-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Success',
     //   className: 'ola-bg-positive-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
     // {
     //   name: 'Pro',
     //   className: 'ola-bg-pro-500',
-    //   extra: 'ola-color-white-100 ola-font-5-medium'
+    //   extra: 'ola-color-white ola-font-5-medium'
     // },
   ]
 

@@ -21,7 +21,7 @@
       animation: score-loading 2s linear infinite;
       animation-fill-mode: both;
       &.is-white {
-        --stroke--color: var(--color-white-100);
+        --stroke--color: var(--color-white);
       }
     }
   }
@@ -109,7 +109,7 @@
   stroke: var(--stroke-color);
 
   &.is-white {
-    --stroke-color: var(--color-white-100);
+    --stroke-color: var(--color-white);
   }
 }
 .ola_score-circle-value {

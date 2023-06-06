@@ -37,7 +37,7 @@
     z-index: -1;
 }
 .ola_chartLine-svg-background {
-    fill: var(--color-white-100);
+    fill: var(--color-white);
     stroke: none;
 }
 .ola_chartLine-svg-line {
@@ -99,7 +99,7 @@
     z-index: 1;
     align-self: flex-end;
     height: calc(var(--height) + var(--size-2));
-    background: var(--color-white-100);
+    background: var(--color-white);
     justify-content: space-between;
 
     border-right: solid 1px var(--color-neutral-400);

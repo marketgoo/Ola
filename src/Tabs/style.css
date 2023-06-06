@@ -43,7 +43,7 @@
 
   &.is-selected {
     color: var(--color-primary-500);
-    --background: var(--color-white-100);
+    --background: var(--color-white);
     border-bottom: 3px solid var(--color-primary-500);
     cursor: unset;
   }

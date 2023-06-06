@@ -1,6 +1,6 @@
 .ola_task {
     margin: 0;
-    background: var(--color-white-100);
+    background: var(--color-white);
 
     &.is-success {
         & .ola_task-status {

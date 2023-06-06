@@ -206,7 +206,7 @@ td.ola-bg {
     /* Others */
 .ola-color-premium { color: var(--color-premium); }
 .ola-color-info { color: var(--color-info); }
-.ola-color-white-100 { color: var(--color-white-100); } /* OLD .ola-white */
+.ola-color-white { color: var(--color-white); } /* OLD .ola-white */
 
 .ola-black-bolds b,
 .ola-black-bolds strong {
@@ -317,7 +317,7 @@ td.ola-bg {
     /* Others */
 .ola-bg-premium { background-color: var(--color-premium); }
 .ola-bg-info { background-color: var(--color-info); }
-.ola-bg-white-100 { background-color: var(--color-white-100); } /* OLD .ola-bg-white */
+.ola-bg-white-100 { background-color: var(--color-white); } /* OLD .ola-bg-white */
 
 
 /* Alignment */
@@ -407,7 +407,7 @@ td.ola-bg {
 
     &.is-loading {
         & > :empty::before {
-            background: linear-gradient(to right, var(--color-neutral-200) 40%, var(--color-white-100), var(--color-neutral-200) 60%);
+            background: linear-gradient(to right, var(--color-neutral-200) 40%, var(--color-white), var(--color-neutral-200) 60%);
             background-size: 800px 100%;
             animation: loadingSkeleton 2s linear infinite;
         }

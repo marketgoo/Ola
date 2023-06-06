@@ -8,7 +8,7 @@
   --background-hover: transparent;
   --background-active: var(--color-accent-100);
   --background-selected: var(--color-neutral-200);
-  --background-unselected: var(--color-white-100);
+  --background-unselected: var(--color-white);
   --shadow-focus: var(--color-accent-100);
   --border: currentColor;
   --border-hover: currentColor;
@@ -61,12 +61,12 @@
   }
 
   &.is-primary {
-    --color: var(--color-white-100);
+    --color: var(--color-white);
     --background: var(--color-accent-500);
-    --color-hover: var(--color-white-100);
+    --color-hover: var(--color-white);
     --background-hover: var(--color-accent-600);
     --shadow-focus: var(--color-accent-100);
-    --color-active: var(--color-white-100);
+    --color-active: var(--color-white);
     --background-active: var(--color-accent-700);
   }
 
@@ -76,12 +76,12 @@
   }
 
   &.is-destructive-primary {
-    --color: var(--color-white-100);
+    --color: var(--color-white);
     --background: var(--color-negative-500);
-    --color-hover: var(--color-white-100);
+    --color-hover: var(--color-white);
     --background-hover: var(--color-negative-600);
     --shadow-focus: var(--color-negative-100);
-    --color-active: var(--color-white-100);
+    --color-active: var(--color-white);
     --background-active: var(--color-negative-700);
   }
 
@@ -97,12 +97,12 @@
   }
 
   &.is-pro {
-    --color: var(--color-white-100);
+    --color: var(--color-white);
     --background: var(--color-pro-500);
-    --color-hover: var(--color-white-100);
+    --color-hover: var(--color-white);
     --background-hover: var(--color-pro-600);
     --shadow-focus: var(--color-pro-100a);
-    --color-active: var(--color-white-100);
+    --color-active: var(--color-white);
     --background-active: var(--color-pro-700);
   }
 

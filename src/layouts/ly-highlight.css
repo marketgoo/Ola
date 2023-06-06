@@ -27,7 +27,7 @@
   background-color: var(--color-neutral-100);
 
   & .ly-highlight {
-    background-color: var(--color-white-100);
+    background-color: var(--color-white);
     padding: var(--row-gap-2) var(--column-gap-2);
   }
 }

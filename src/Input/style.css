@@ -1,7 +1,7 @@
 .ola_input {
     --border: var(--color-neutral-400);
     --color: var(--color-neutral-900);
-    --background: var(--color-white-100);
+    --background: var(--color-white);
     --focus: var(--color-primary-100);
 
     display: block;
@@ -9,7 +9,7 @@
     height: var(--size-5);
     width: 100%;
     border: solid 2px var(--border);
-    background: var(--color-white-100);
+    background: var(--color-white);
     color: var(--color);
     background-color: var(--background);
     border-radius: var(--radius-s);

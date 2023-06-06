@@ -72,6 +72,6 @@
 
 .ola-bg-hover:hover .ola_level,
 .ola-bg .ola_level {
-  --background: var(--color-white-100);
+  --background: var(--color-white);
 }
 

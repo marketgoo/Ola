@@ -28,7 +28,7 @@
     will-change: opacity, transform;
     position: absolute;
     filter: drop-shadow(var(--drop-shadow-level-2)) drop-shadow(var(--drop-shadow-line));
-    background: var(--color-white-100);
+    background: var(--color-white);
     border-radius: var(--radius-m);
     padding: var(--size-3);
     width: var(--width);

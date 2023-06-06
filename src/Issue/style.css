@@ -126,7 +126,7 @@
 .ola-bg-hover:hover, .ola-bg {
   & .ola_issue.is-pending {
     & .ola_issue-status{
-      fill: var(--color-white-100);
+      fill: var(--color-white);
     }
   }
 }

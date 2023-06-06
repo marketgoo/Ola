@@ -10,7 +10,7 @@
     position: relative;
 
     & tr {
-        --table-background: var(--background, var(--color-white-100));
+        --table-background: var(--background, var(--color-white));
         background: var(--table-background);
     }
 

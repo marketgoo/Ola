@@ -80,9 +80,9 @@
     &.is-disabled,
     &:disabled {
         color: var(--color-neutral-200);
-        --background: var(--color-white-100);
-        --background-hover: var(--color-white-100);
-        --background-active: var(--color-white-100);
+        --background: var(--color-white);
+        --background-hover: var(--color-white);
+        --background-active: var(--color-white);
         cursor: not-allowed;
         pointer-events: none;
         box-shadow: none;
@@ -94,7 +94,7 @@
     }
 
     &.is-busy {
-        color: var(--color-white-100);
+        color: var(--color-white);
         background-color: var(--color-neutral-700);
         min-width: 0;
         cursor: wait;

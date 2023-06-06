@@ -1,6 +1,6 @@
 .ola_progressBar {
   --color: var(--color-primary-500);
-  --background: var(--color-white-100);
+  --background: var(--color-white);
   --color-empty: var(--color-neutral-200);
 
   width: 100%;

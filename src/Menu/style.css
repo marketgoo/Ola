@@ -5,7 +5,7 @@
 }
 .ola_menu-option {
     --color: var(--color-neutral-700);
-    --background: var(--color-white-100);
+    --background: var(--color-white);
 
     font: var(--font-1-regular);
     color: var(--color);

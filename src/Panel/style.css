@@ -1,5 +1,5 @@
 .ola_panel {
-    background: var(--color-white-100);
+    background: var(--color-white);
     border-radius: var(--radius-m);
     box-shadow: var(--shadow-level-1), var(--shadow-line);
     padding-top: 0.1px;
@@ -73,7 +73,7 @@
 }
 
 .ola_panel-content {
-    --background: var(--color-white-100);
+    --background: var(--color-white);
 
     margin: var(--row-gap-2) 0;
     padding: 0 var(--column-gap-3);

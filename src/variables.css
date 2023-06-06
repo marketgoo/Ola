@@ -112,7 +112,7 @@
         /* Others */
     --color-premium: #F1D34B; /* OLD --premium */
     --color-info: var(--color-primary-500); /* OLD --info */
-    --color-white-100:    #FFFFFF; /* OLD --white */
+    --color-white:    #FFFFFF; /* OLD --white */
         /* Pictures */
     --color-pict-blue-100: #CAE4F8;     /* OLD --pict-blue-xlight */
     --color-pict-blue-500: #95B8D1;     /* OLD --pict-blue-light */

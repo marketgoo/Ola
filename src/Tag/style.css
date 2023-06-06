@@ -23,22 +23,22 @@
     }
 
     &.is-success {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-warning-500);
     }
 
     &.is-chart-0 {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-chart-0);
     }
 
@@ -58,22 +58,22 @@
     }
 
     &.is-chart-4 {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-chart-4);
     }
 
     &.is-invert {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-neutral-700);
     }
 
     &.is-info {
-      --color: var(--color-white-100);
+      --color: var(--color-white);
       --background: var(--color-info);
   }
 
     &.is-pro {
-        --color: var(--color-white-100);
+        --color: var(--color-white);
         --background: var(--color-pro-500);
     }
 

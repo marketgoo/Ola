@@ -97,7 +97,7 @@ export const Colors = () => {
     '--color-pro-800', '--color-pro-900', '--color-accent-100', '--color-accent-100a', '--color-accent-200', 
     '--color-accent-200a', '--color-accent-300', '--color-accent-300a', '--color-accent-400', '--color-accent-400a', 
     '--color-accent-500', '--color-accent-600', '--color-accent-700', '--color-accent-800', '--color-accent-900', 
-    '--color-premium', '--color-info', '--color-white-100', '--color-pict-blue-100', '--color-pict-blue-500', 
+    '--color-premium', '--color-info', '--color-white', '--color-pict-blue-100', '--color-pict-blue-500', 
     '--color-pict-blue-600', '--color-pict-blue-700', '--color-pict-brown-500', '--color-pict-brown-600', 
     '--color-pict-brown-700', '--color-pict-green-500', '--color-pict-green-600', '--color-pict-red-100', 
     '--color-pict-red-500', '--color-pict-red-600', '--color-pict-white', '--color-pict-yellow-100', 
