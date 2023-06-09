@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.16.1] - 2023-06-09
+### Changed
+- Add extra className into `Field` component.
+
 ## [0.16.0] - 2023-05-05
 ### Added
 - Docs for css variables
@@ -646,6 +650,7 @@ Added `Edit` to `Icon` component
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
+[0.16.1]: https://github.com/marketgoo/Ola/compare/v0.16.0...v0.16.1
 [0.16.0]: https://github.com/marketgoo/Ola/compare/v0.15.10...v0.16.0
 [0.15.10]: https://github.com/marketgoo/Ola/compare/v0.15.9...v0.15.10
 [0.15.9]: https://github.com/marketgoo/Ola/compare/v0.15.8...v0.15.9
