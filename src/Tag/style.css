@@ -1,7 +1,7 @@
 .ola_tag {
-    --color: var(--gray);
-    --background: var(--gray-xlight);
-    --padding: var(--size-3);
+    --color: var(--color-neutral-700);
+    --background: var(--color-neutral-200);
+    --padding: var(--size-1);
 
     display: inline-flex;
     align-items: center;
@@ -9,7 +9,7 @@
     color: var(--color);
     background-color: var(--background);
     padding: 0 var(--padding);
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     border: solid 1px var(--background);
     vertical-align: baseline;
     cursor: default;
@@ -23,88 +23,88 @@
     }
 
     &.is-success {
-        --color: var(--white);
-        --background: var(--success);
+        --color: var(--color-white);
+        --background: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--white);
-        --background: var(--error);
+        --color: var(--color-white);
+        --background: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--white);
-        --background: var(--warning);
+        --color: var(--color-white);
+        --background: var(--color-warning-500);
     }
 
     &.is-chart-0 {
-        --color: var(--white);
-        --background: var(--chart-0);
+        --color: var(--color-white);
+        --background: var(--color-chart-0);
     }
 
     &.is-chart-1 {
-        --color: var(--black);
-        --background: var(--chart-1);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-1);
     }
 
     &.is-chart-2 {
-        --color: var(--black);
-        --background: var(--chart-2);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-2);
     }
 
     &.is-chart-3 {
-        --color: var(--black);
-        --background: var(--chart-3);
+        --color: var(--color-neutral-900);
+        --background: var(--color-chart-3);
     }
 
     &.is-chart-4 {
-        --color: var(--white);
-        --background: var(--chart-4);
+        --color: var(--color-white);
+        --background: var(--color-chart-4);
     }
 
     &.is-invert {
-        --color: var(--white);
-        --background: var(--gray);
+        --color: var(--color-white);
+        --background: var(--color-neutral-700);
     }
 
     &.is-info {
-      --color: var(--white);
-      --background: var(--info);
+      --color: var(--color-white);
+      --background: var(--color-info);
   }
 
     &.is-pro {
-        --color: var(--white);
-        --background: var(--pro);
+        --color: var(--color-white);
+        --background: var(--color-pro-500);
     }
 
     &.is-small {
-        height: var(--size-6);
-        font: var(--font-caption);
-        font-weight: var(--bold);
+        height: var(--size-3);
+        font: var(--font-0-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-medium {
-        height: var(--size-7);
-        font: var(--font-callout);
-        font-weight: var(--bold);
+        height: var(--size-4);
+        font: var(--font-1-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-big {
-        --padding: var(--size-4);
-        height: var(--size-8);
-        font: var(--font-body);
-        font-weight: var(--bold);
+        --padding: var(--size-2);
+        height: var(--size-5);
+        font: var(--font-2-regular);
+        font-weight: var(--font-weight-bold);
     }
 
     & > .ola_buttonIcon {
         margin-right: calc(var(--padding) * -1);
-        margin-left: var(--size-3);
+        margin-left: var(--size-1);
         --color: currentColor;
         flex: 0 0 auto;
         height: 100%;
 
         & .ola_icon {
-            border-radius: 0 calc(var(--radius-small) - 1px) calc(var(--radius-small) - 1px) 0;
+            border-radius: 0 calc(var(--radius-s) - 1px) calc(var(--radius-s) - 1px) 0;
             padding-top: 0;
             padding-bottom: 0;
         }

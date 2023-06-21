@@ -4,17 +4,17 @@
     padding: 0;
 }
 .ola_menu-option {
-    --color: var(--gray);
-    --background: var(--white);
+    --color: var(--color-neutral-700);
+    --background: var(--color-white);
 
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     color: var(--color);
     background: var(--background);
     display: flex;
     align-items: center;
     text-align: left;
     text-decoration: none;
-    padding: var(--size-4) var(--size-6);
+    padding: var(--size-2) var(--size-3);
     outline: 0;
     border: none;
     box-sizing: border-box;
@@ -26,44 +26,44 @@
     }
 
     &.is-nav {
-        --color: var(--brand);
-        border-top: solid 1px var(--gray-xlight);
-        font-weight: var(--bold);
+        --color: var(--color-primary-500);
+        border-top: solid 1px var(--color-neutral-200);
+        font-weight: var(--font-weight-bold);
     }
 
     &.is-selected,
     &:hover,
     &:focus-visible {
-        --color: var(--black);
-        --background: var(--gray-xlight);
+        --color: var(--color-neutral-900);
+        --background: var(--color-neutral-200);
     }
 
     &.is-selected {
-        border-left: solid var(--size-1) var(--gray-light);
+        border-left: solid var(--size-0) var(--color-neutral-400);
     }
 
     &.is-small {
-        font: var(--font-caption);
-        padding: var(--size-2) var(--size-4);
+        font: var(--font-0-regular);
+        padding: var(--size-0) var(--size-2);
     }
 
     &:active {
-        --color: var(--black);
-        --background: var(--brand-focus);
+        --color: var(--color-neutral-900);
+        --background: var(--color-primary-100);
     }
 
     & .ola_icon {
         flex: 0 0 auto;
-        margin-right: var(--size-4);
+        margin-right: var(--size-2);
     }
 }
 .ola_menu-separator {
-    border-top: solid 1px var(--gray-light);
-    margin-top: var(--size-3);
-    padding-top: var(--size-3);
+    border-top: solid 1px var(--color-neutral-400);
+    margin-top: var(--size-1);
+    padding-top: var(--size-1);
 }
 .ola_tooltip-content .ola_menu-option {
-    margin-left: calc(var(--size-6) * -1);
-    margin-right: calc(var(--size-6) * -1);
-    width: calc(100% + var(--size-6) * 2);
+    margin-left: calc(var(--size-3) * -1);
+    margin-right: calc(var(--size-3) * -1);
+    width: calc(100% + var(--size-3) * 2);
 }

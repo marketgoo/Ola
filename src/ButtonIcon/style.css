@@ -1,14 +1,14 @@
 .ola_buttonIcon {
-    --color: var(--gray);
+    --color: var(--color-neutral-700);
     --background: transparent;
-    --color-hover: var(--black);
-    --background-hover: var(--gray-xlight);
-    --shadow-focus: var(--accent-focus);
-    --background-active: var(--gray-light);
+    --color-hover: var(--color-neutral-900);
+    --background-hover: var(--color-neutral-200);
+    --shadow-focus: var(--color-accent-100);
+    --background-active: var(--color-neutral-400);
 
     display: inline-flex;
-    min-height: var(--size-6);
-    min-width: var(--size-6);
+    min-height: var(--size-3);
+    min-width: var(--size-3);
     align-items: center;
     justify-content: center;
     background: none;
@@ -49,29 +49,29 @@
     }
 
     & .ola_icon.is-small {
-        padding: var(--size-2);
+        padding: var(--size-0);
     }
     & .ola_icon.is-medium,
     & .ola_spinner {
-        padding: var(--size-3);
+        padding: var(--size-1);
     }
 
     &.is-secondary {
-        --color: var(--gray-light);
+        --color: var(--color-neutral-400);
     }
 
     &.is-destructive {
-        --color: var(--error);
-        --shadow-focus: var(--error-focus);
-        --color-hover: var(--error-dark);
-        --background-active: var(--error-focus);
+        --color: var(--color-negative-500);
+        --shadow-focus: var(--color-negative-100);
+        --color-hover: var(--color-negative-600);
+        --background-active: var(--color-negative-100);
     }
 
     &.is-chevron {
         background-repeat: no-repeat;
         background-position: right center;
-        padding-right: var(--size-7);
-        border-radius: var(--radius-big);
+        padding-right: var(--size-4);
+        border-radius: var(--radius-xl);
 
         /* Chevron gray */
         background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%2357657a"></path></svg>');
@@ -79,10 +79,10 @@
 
     &.is-disabled,
     &:disabled {
-        color: var(--gray-xlight);
-        --background: var(--white);
-        --background-hover: var(--white);
-        --background-active: var(--white);
+        color: var(--color-neutral-200);
+        --background: var(--color-white);
+        --background-hover: var(--color-white);
+        --background-active: var(--color-white);
         cursor: not-allowed;
         pointer-events: none;
         box-shadow: none;
@@ -94,8 +94,8 @@
     }
 
     &.is-busy {
-        color: var(--white);
-        background-color: var(--gray);
+        color: var(--color-white);
+        background-color: var(--color-neutral-700);
         min-width: 0;
         cursor: wait;
         pointer-events: none;

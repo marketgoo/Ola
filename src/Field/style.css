@@ -6,7 +6,7 @@
 
         & .ola_field-label {
             cursor: inherit;
-            color: var(--gray-light);
+            color: var(--color-neutral-400);
         }
         & .ola_field-hint,
         & .ola_field-description {
@@ -15,33 +15,33 @@
     }
 }
 .ola_field-label {
-    color: var(--black);
+    color: var(--color-neutral-900);
     display: flex;
     justify-content: space-between;
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     cursor: default;
 }
 .ola_field-hint {
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     margin-left: 1em;
-    font-weight: var(--regular);
-    color: var(--gray);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-neutral-700);
 }
 .ola_field-input {
-    margin: var(--size-2) 0;
+    margin: var(--size-0) 0;
 }
 .ola_field-description,
 .ola_field-error {
-    font: var(--font-caption);
-    margin-top: var(--size-2);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    margin-top: var(--size-0);
+    color: var(--color-neutral-700);
 }
 .ola_field-error {
-    color: var(--error);
+    color: var(--color-negative-500);
 }
 .ola_field.is-invalid {
     & .ola_field-label {
-        color: var(--error);
+        color: var(--color-negative-500);
     }
 }

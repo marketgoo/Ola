@@ -32,35 +32,35 @@ export const Base = (args) =>
       <SearchField id="search-button" placeholder="Filter elements" textButton="Test Search" />
     </ModalContent>
     <ModalContent variant="scroll">
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
-      <p className="ola-body">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
+      <p className="ola-font-2-regular">Modal content</p>
     </ModalContent>
     <ModalFooter>
       <ButtonGroup variant='reversed'>
@@ -108,10 +108,10 @@ export const FullWidth = () =>
       intro={<><strong>Lorem ipsum</strong> for testing intro</>}>
       <ProgressBar value="20" max="100" />
     </ModalHeader>
-    <ModalContent variant="fullwidth" style={{ background: 'var(--gray-xlight)'}}>
+    <ModalContent variant="fullwidth" style={{ background: 'var(--color-neutral-200)'}}>
       <p>Modal content</p>
     </ModalContent>
-    <ModalContent variant="fullwidth-scroll" style={{ background: 'var(--gray-xlight)'}}>
+    <ModalContent variant="fullwidth-scroll" style={{ background: 'var(--color-neutral-200)'}}>
       <p>Modal content</p>
       <p>Modal content</p>
       <p>Modal content</p>

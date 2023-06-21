@@ -1,7 +1,7 @@
 .ola_speedmeter {
-    --color: var(--gray);
+    --color: var(--color-neutral-700);
 
-    width: var(--size-11);
+    width: var(--size-14);
     height: 110px;
     position: relative;
     display: flex;
@@ -20,53 +20,53 @@
             stroke-linecap: butt;
             animation: speedmeter-loading 2s linear infinite;
             animation-fill-mode: both;
-            stroke: var(--gray-light);
+            stroke: var(--color-neutral-400);
         }
     }
 
     &.is-success {
-        --color: var(--success);
+        --color: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--error);
+        --color: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--warning);
+        --color: var(--color-warning-500);
     }
 
 }
 
 .ola_speedmeter-metric {
-    color: var(--black);
+    color: var(--color-neutral-900);
     transition: opacity var(--duration);
     text-align: center;
-    margin-bottom: var(--size-2);
+    margin-bottom: var(--size-0);
 
     & > * {
         display: block;
     }
 }
 .ola_speedmeter-value {
-    font: var(--font-title);
+    font: var(--font-5-medium);
     line-height: 0.8;
     text-align: center;
 }
 
 .ola_speedmeter-unit {
-    font: var(--font-body);
-    font-weight: var(--bold);
+    font: var(--font-2-regular);
+    font-weight: var(--font-weight-bold);
 }
 
 .ola_speedmeter-busy {
-    font: var(--font-caption);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
     position: relative;
     transition: opacity var(--duration);
     z-index: 1;
     display: block;
-    padding: 0 var(--size-5);
+    padding: 0 var(--size-2);
     text-align: center;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .ola_speedmeter-circle-background {
-    stroke: var(--gray-xlight);
+    stroke: var(--color-neutral-200);
     transition: stroke 200ms;
 }
 .ola_speedmeter-circle-value {
@@ -105,13 +105,13 @@
 
 .ola_speedmeter-breakpoint {
     transform-origin: 94px 94px;
-    stroke: var(--gray);
+    stroke: var(--color-neutral-700);
     stroke-width: 2;
     stroke-linecap: round;
 }
 
 .ola_speedmeter-line {
-    stroke: var(--gray-xlight);
+    stroke: var(--color-neutral-200);
 }
 
 @keyframes speedmeter-loading {

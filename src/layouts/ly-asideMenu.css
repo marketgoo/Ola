@@ -11,7 +11,7 @@
     grid-template-columns: minmax(0, 1fr);
 
     @media (--from-width-2) {
-      grid-template-columns: var(--size-11) minmax(0, 1fr);
+      grid-template-columns: var(--size-14) minmax(0, 1fr);
 
       & > * {
         grid-column: 2;

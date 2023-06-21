@@ -4,7 +4,7 @@
             transform: rotate(90deg);
         }
         & .ola_accordion-title {
-            color: var(--black);
+            color: var(--color-neutral-900);
             text-decoration: none;
         }
     }
@@ -14,34 +14,34 @@
     cursor: pointer;
     outline: 0;
     list-style: none;
-    border-radius: var(--radius);
+    border-radius: var(--radius-m);
 
     &::-webkit-details-marker {
         display: none;
     }
 
     &:focus-visible {
-        box-shadow: 0 0 0 4px var(--brand-focus);
+        box-shadow: 0 0 0 4px var(--color-primary-100);
     }
 
     &:hover .ola_accordion-title {
-        color: var(--black);
+        color: var(--color-neutral-900);
     }
 
     & .ola_tag {
-        margin-left: var(--size-3);
+        margin-left: var(--size-1);
     }
 }
 .ola_accordion-header-content {
     display: inline-flex;
     align-items: center;
-    height: var(--size-8);
-    padding-right: var(--size-5);
+    height: var(--size-5);
+    padding-right: var(--size-2);
 }
 .ola_accordion-title {
-    font: var(--font-callout);
-    font-weight: var(--bold);
-    color: var(--brand);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary-500);
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
@@ -50,8 +50,8 @@
 .ola_accordion-marker {
     display: block;
     flex: 0 0 auto;
-    margin-right: var(--size-3);
-    color: var(--gray-light);
+    margin-right: var(--size-1);
+    color: var(--color-neutral-400);
     border-radius: 50%;
     transition: transform var(--duration);
 
@@ -60,5 +60,5 @@
     }
 }
 .ola_accordion-content {
-    margin-top: var(--size-4);
+    margin-top: var(--size-2);
 }

@@ -4,30 +4,30 @@
 
     &.is-error {
         & .ola_metric-value {
-            color: var(--gray-light);
+            color: var(--color-neutral-400);
         }
 
         & .ola_metric-description,
         & .ola_metric-icon {
-            color: var(--error);
+            color: var(--color-negative-500);
         }
     }
 
     &.is-positive {
         & .ola_metric-value {
-            color: var(--success);
+            color: var(--color-positive-500);
         }
     }
 
     &.is-negative {
         & .ola_metric-value {
-            color: var(--error);
+            color: var(--color-negative-500);
         }
     }
 
     &.is-busy {
         & .ola_metric-value {
-            color: var(--gray-light);
+            color: var(--color-neutral-400);
         }
     }
 
@@ -36,28 +36,28 @@
     }
 }
 .ola_metric-title {
-    font: var(--font-body);
-    font-weight: var(--regular);
-    color: var(--black);
+    font: var(--font-2-regular);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-neutral-900);
 }
 .ola_metric-description {
-    font: var(--font-caption);
-    color: var(--gray);
-    margin: var(--size-1) 0 0;
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
+    margin: var(--size-0) 0 0;
 }
 .ola_metric-footer {
-    font: var(--font-caption);
-    color: var(--gray);
-    margin: var(--size-4) 0 0;
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
+    margin: var(--size-2) 0 0;
 }
 .ola_metric-value {
     display: block;
-    font: var(--font-title);
-    color: var(--black);
-    margin: var(--size-1) 0 0;
+    font: var(--font-5-medium);
+    color: var(--color-neutral-900);
+    margin: var(--size-0) 0 0;
 }
 .ola_metric-icon {
-    margin-right: var(--size-2);
+    margin-right: var(--size-0);
     position: relative;
     top: 1px;
 }

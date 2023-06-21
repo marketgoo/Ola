@@ -1,6 +1,6 @@
 .ola_page {
     display: grid;
-    grid-column-gap: var(--size-4);
+    grid-column-gap: var(--size-2);
 
     &.has-icon {
         grid-template-columns: min-content 1fr;
@@ -13,8 +13,8 @@
 }
 .ola_page-title {
     --skeleton-width: 20em;
-    font: var(--font-callout);
-    font-weight: var(--bold);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
     grid-row: 1;
     display: block;
     max-width: 100%;
@@ -24,7 +24,7 @@
 }
 .ola_page-url {
     --skeleton-width: 14em;
-    font: var(--font-caption);
+    font: var(--font-0-regular);
     display: block;
     grid-row: 2;
     justify-self: start;
@@ -34,17 +34,17 @@
     text-overflow: ellipsis;
 }
 span.ola_page-url {
-    color: var(--gray);
+    color: var(--color-neutral-700);
 }
 .ola_page-icon {
     grid-column: 1;
     grid-row: 1 / 3;
     align-self: center;
-    color: var(--gray-light);
+    color: var(--color-neutral-400);
 }
 .ola-skeleton {
     & .ola_page-icon {
-        --skeleton-width: var(--size-8);
+        --skeleton-width: var(--size-5);
 
         &:before {
             height: var(--skeleton-width);

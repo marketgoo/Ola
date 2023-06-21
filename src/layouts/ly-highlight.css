@@ -24,10 +24,10 @@
 .ola_ly-highlight {
   padding-top: var(--column-gap-3);
   padding-bottom: var(--column-gap-3);
-  background-color: var(--gray-xxlight);
+  background-color: var(--color-neutral-100);
 
   & .ly-highlight {
-    background-color: var(--white);
+    background-color: var(--color-white);
     padding: var(--row-gap-2) var(--column-gap-2);
   }
 }

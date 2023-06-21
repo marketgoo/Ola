@@ -5,32 +5,32 @@
 
     &.is-success {
         & .ola_issue-status {
-            fill: var(--success);
+            fill: var(--color-positive-500);
         }
     }
     &.is-error {
         & .ola_issue-status {
-            fill: var(--error);
+            fill: var(--color-negative-500);
         }
     }
     &.is-warning {
         & .ola_issue-status {
-            fill: var(--warning);
+            fill: var(--color-warning-500);
         }
     }
     &.is-suggested {
         & .ola_issue-status {
-            fill: var(--gray);
+            fill: var(--color-neutral-700);
         }
     }
     &.is-pending {
       & .ola_issue-status {
-          fill: var(--gray-xlight);
+          fill: var(--color-neutral-200);
       }
     }
     &.is-done {
       & .ola_issue-status {
-        fill: var(--info);
+        fill: var(--color-info);
         transform: rotate(360deg);
         transition-property: fill, transform;
         transition-duration: 800ms;
@@ -39,17 +39,17 @@
     }
     &.is-small {
         & .ola_issue-title {
-            font: var(--font-callout);
-            font-weight: var(--bold);
+            font: var(--font-1-regular);
+            font-weight: var(--font-weight-bold);
         }
     }
     &.is-big {
         & .ola_issue-title {
-            font: var(--font-title);
+            font: var(--font-5-medium);
 
             @media (--to-width-1) {
-                font: var(--font-headline);
-                font-weight: var(--bold);
+                font: var(--font-3-regular);
+                font-weight: var(--font-weight-bold);
             }
         }
     }
@@ -65,9 +65,9 @@
 .ola_issue-title {
     --skeleton-width: 16em;
     flex: 1 1 auto;
-    font: var(--font-body);
-    color: var(--black);
-    font-weight: var(--bold);
+    font: var(--font-2-regular);
+    color: var(--color-neutral-900);
+    font-weight: var(--font-weight-bold);
 }
 
 .ola_issue-status {
@@ -77,16 +77,16 @@
 
 .ola_issue-dropdown {
     &.is-small .ola_issue-content {
-        padding-left: calc(var(--size-2) + var(--size-6) + var(--column-gap-1));
-        font: var(--font-caption);
+        padding-left: calc(var(--size-0) + var(--size-3) + var(--column-gap-1));
+        font: var(--font-0-regular);
 
         & > *:first-child {
             margin-top: 0;
         }
     }
     &.is-big .ola_issue-content {
-        padding-left: calc(var(--size-2) + var(--size-8) + var(--column-gap-1));
-        font: var(--font-body);
+        padding-left: calc(var(--size-0) + var(--size-5) + var(--column-gap-1));
+        font: var(--font-2-regular);
     }
     & .ola_issue-summary-content {
       display: flex;
@@ -103,7 +103,7 @@
     list-style: none;
     cursor: pointer;
     outline: 0;
-    padding: var(--size-3) var(--size-2);
+    padding: var(--size-1) var(--size-0);
     transition: background-color var(--duration);
 
     &::-webkit-details-marker {
@@ -111,13 +111,13 @@
     }
 
     &:hover {
-        background: var(--gray-xlight);
+        background: var(--color-neutral-200);
     }
 }
 .ola_issue-content {
-    padding-left: calc(var(--size-2) + var(--size-7) + var(--column-gap-1));
-    color: var(--gray);
-    font: var(--font-callout);
+    padding-left: calc(var(--size-0) + var(--size-4) + var(--column-gap-1));
+    color: var(--color-neutral-700);
+    font: var(--font-1-regular);
     & > *:first-child {
         margin-top: .5em;
     }
@@ -126,7 +126,7 @@
 .ola-bg-hover:hover, .ola-bg {
   & .ola_issue.is-pending {
     & .ola_issue-status{
-      fill: var(--white);
+      fill: var(--color-white);
     }
   }
 }

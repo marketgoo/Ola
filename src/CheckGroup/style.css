@@ -1,18 +1,18 @@
 .ola_checkGroup {
 
-    --border: var(--gray-light);
+    --border: var(--color-neutral-400);
     box-sizing: border-box;
-    min-height: var(--size-7);
-    margin: var(--size-2) 0;
+    min-height: var(--size-4);
+    margin: var(--size-0) 0;
 
     &.is-row {
         display: flex;
         flex-direction: column;
-        padding: var(--size-2);
-        margin-left: calc(var(--size-2) * -1);
+        padding: var(--size-0);
+        margin-left: calc(var(--size-0) * -1);
 
         & > * + * {
-            margin-top: var(--size-4);
+            margin-top: var(--size-2);
         }
     }
 
@@ -24,8 +24,8 @@
         position: relative;
         -webkit-overflow-scrolling: touch;
         text-align: center;
-        padding: var(--size-2);
-        margin-left: calc(var(--size-2) * -1);
+        padding: var(--size-0);
+        margin-left: calc(var(--size-0) * -1);
 
         & > * {
             width: 200px;
@@ -35,18 +35,18 @@
             display: flex;
         }
         & > * + * {
-            margin-left: var(--size-4);
+            margin-left: var(--size-2);
         }
         & > .ola_check.is-area .ola_check-label {
             display: block;
             position: relative;
-            padding-top: var(--size-7);
+            padding-top: var(--size-4);
             flex: 1 1 auto;
 
             &::before {
                 position: absolute;
-                top: var(--size-3);
-                left: var(--size-3);
+                top: var(--size-1);
+                left: var(--size-1);
             }
         }
     }
@@ -57,21 +57,21 @@
         box-sizing: border-box;
         width: 100%;
         border: solid 2px var(--border);
-        background: var(--white);
-        border-radius: var(--radius-small);
+        background: var(--color-white);
+        border-radius: var(--radius-s);
         position: relative;
     }
 
     &.is-list {
-        max-height: var(--size-11);
+        max-height: var(--size-14);
         overflow-y: auto;
     }
 
     &:invalid,
     &.is-invalid {
-        --border: var(--error);
+        --border: var(--color-negative-500);
         &:hover {
-            --border: var(--error-dark);
+            --border: var(--color-negative-600);
         }
     }
 }

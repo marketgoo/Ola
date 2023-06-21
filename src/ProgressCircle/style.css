@@ -1,8 +1,8 @@
 .ola_progressCircle {
-    --color: var(--brand);
+    --color: var(--color-primary-500);
 
-    width: var(--size-10);
-    height: var(--size-10);
+    width: var(--size-12);
+    height: var(--size-12);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -17,40 +17,40 @@
         & .ola_progressCircle-circle-background {
             animation: progressCircle-loading 2s linear infinite;
             animation-fill-mode: both;
-            stroke: var(--gray-light);
+            stroke: var(--color-neutral-400);
         }
     }
 
     &.is-success {
-        --color: var(--success);
+        --color: var(--color-positive-500);
     }
 
     &.is-error {
-        --color: var(--error);
+        --color: var(--color-negative-500);
     }
 
     &.is-warning {
-        --color: var(--warning);
+        --color: var(--color-warning-500);
     }
 
 }
 
 .ola_progressCircle-value {
-    font: var(--font-title);
-    color: var(--black);
+    font: var(--font-5-medium);
+    color: var(--color-neutral-900);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
 
     & > span {
-        font-size: var(--size-7);
+        font-size: var(--size-4);
     }
 }
 
 .ola_progressCircle-label,
 .ola_progressCircle-description {
-    font: var(--font-caption);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
@@ -58,13 +58,13 @@
 }
 
 .ola_progressCircle-busy {
-    font: var(--font-caption);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
     position: relative;
     transition: opacity 200ms;
     z-index: 1;
     display: block;
-    padding: 0 var(--size-5);
+    padding: 0 var(--size-2);
     text-align: center;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .ola_progressCircle-circle-background {
-    stroke: var(--gray-xlight);
+    stroke: var(--color-neutral-200);
     transition: stroke 200ms;
 }
 .ola_progressCircle-circle-value {
