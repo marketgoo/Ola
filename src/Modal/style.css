@@ -1,8 +1,8 @@
 .ola_modal {
-    background: var(--white);
-    border-radius: var(--radius);
+    background: var(--color-white);
+    border-radius: var(--radius-m);
     border: none;
-    box-shadow: var(--shadow-3), var(--shadow-line);
+    box-shadow: var(--shadow-level-3), var(--shadow-line);
     max-width: 850px;
     width: calc(100% - 5vw);
     margin: 2.5vw auto 0;
@@ -33,18 +33,18 @@
     }
 
     &.is-narrow {
-        max-width: var(--size-12);
+        max-width: var(--size-16);
     }
 
     &.is-closable {
         @media (--from-width-2) {
             & .ola_modal-extra {
-                margin-top: var(--size-8);
+                margin-top: var(--size-5);
             }
         }
         @media (--to-width-2) {
             & .ola_modal-title {
-                margin-right: var(--size-8);
+                margin-right: var(--size-5);
             }
         }
     }
@@ -123,18 +123,18 @@
 
 .ola_modal-close {
     position: absolute;
-    top: var(--size-5);
-    right: var(--size-5);
+    top: var(--size-2);
+    right: var(--size-2);
 }
 .ola_modal-title {
     margin: 0;
-    font: var(--font-headline);
-    font-weight: var(--regular);
+    font: var(--font-3-regular);
+    font-weight: var(--font-weight-regular);
 }
 .ola_modal-intro {
     margin: 0;
-    font: var(--font-callout);
-    color: var(--gray);
+    font: var(--font-1-regular);
+    color: var(--color-neutral-700);
 }
 .ola_modal-content {
     flex-shrink: 0;

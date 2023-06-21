@@ -26,16 +26,16 @@
     }
 }
 .ola_section-title {
-    font: var(--font-title);
-    letter-spacing: var(--font-title-spacing);
+    font: var(--font-5-medium);
+    letter-spacing: var(--font-letter-spacing-4);
     margin: 0;
     max-width: 15em;
 }
 .ola_section-intro {
-    font: var(--font-body);
-    color: var(--gray);
-    margin-top: var(--size-2);
-    max-width: var(--size-12);
+    font: var(--font-2-regular);
+    color: var(--color-neutral-700);
+    margin-top: var(--size-0);
+    max-width: var(--size-16);
 }
 .ola_section-subheader {
     margin: var(--row-gap-3) 0;
@@ -45,12 +45,12 @@
     }
 
     & .ola_section-intro {
-        font: var(--font-callout);
+        font: var(--font-1-regular);
     }
 }
 .ola_section-subtitle {
-    font: var(--font-headline);
-    font-weight: var(--bold);
+    font: var(--font-3-regular);
+    font-weight: var(--font-weight-bold);
     margin: 0;
 }
 .ola_section_action {

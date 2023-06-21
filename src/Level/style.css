@@ -1,52 +1,52 @@
 .ola_level {
-  --background: var(--gray-xlight);
-  --color: var(--gray-xlight);
+  --background: var(--color-neutral-200);
+  --color: var(--color-neutral-200);
   --size: 12px;
   --gap: 1px;
-  --height: var(--size-6);
+  --height: var(--size-3);
 
   display: inline-flex;
   vertical-align: middle;
   height: var(--height);
   gap: var(--gap);
   border-color: var(--background);
-  margin: var(--size-1);
+  margin: var(--size-0);
 
   & span {
     background-color: var(--background);
     width: var(--size);
     height: var(--height);
     &:first-child {
-      border-top-left-radius: var(--radius);
-      border-bottom-left-radius: var(--radius);
+      border-top-left-radius: var(--radius-m);
+      border-bottom-left-radius: var(--radius-m);
     }
     &:last-child {
-      border-top-right-radius: var(--radius);
-      border-bottom-right-radius: var(--radius);
+      border-top-right-radius: var(--radius-m);
+      border-bottom-right-radius: var(--radius-m);
     }
   }
   &.is-size_small {
     --size: 8px;
-    --height: var(--size-4);
-    --radius: 1px;
+    --height: var(--size-2);
+    --radius-m: 1px;
   }
   &.is-size_medium {
-    --radius: var(--radius-small);
+    --radius-m: var(--radius-s);
   }
   &.is-size_xbig {
-    --size: var(--size-8);
-    --height: var(--size-8);
+    --size: var(--size-5);
+    --height: var(--size-5);
     --gap: 2px;
   }
   &.is-low {
-    --color: var(--error);
+    --color: var(--color-negative-500);
 
     & span:first-child {
       background-color: var(--color);
     }
   }
   &.is-medium {
-    --color: var(--warning);
+    --color: var(--color-warning-500);
 
     & span:nth-child(-n + 2) {
       background-color: var(--color);
@@ -54,7 +54,7 @@
   }
 
   &.is-high {
-    --color: var(--success);
+    --color: var(--color-positive-500);
 
     & span:nth-child(-n + 3) {
       background-color: var(--color);
@@ -62,7 +62,7 @@
   }
 
   &.is-highest {
-    --color: var(--success-dark);
+    --color: var(--color-positive-600);
 
     & span {
       background-color: var(--color);
@@ -72,6 +72,6 @@
 
 .ola-bg-hover:hover .ola_level,
 .ola-bg .ola_level {
-  --background: var(--white);
+  --background: var(--color-white);
 }
 

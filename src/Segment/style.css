@@ -1,9 +1,9 @@
 .ola_segment {
   display: inline-flex;
   max-width: 100%;
-  border: solid 2px var(--gray-light);
-  border-radius: calc(var(--radius-big) + 2px);
-  height: var(--size-8);
+  border: solid 2px var(--color-neutral-400);
+  border-radius: calc(var(--radius-xl) + 2px);
+  height: var(--size-5);
   box-sizing: border-box;
 
   & > .ola_button {

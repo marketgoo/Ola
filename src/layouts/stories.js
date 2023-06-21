@@ -54,8 +54,8 @@ export const Columns = () =>
 export const pageCenter = () => 
   <section className="ola_ly-pageCenter">
     <header>
-      <h1 className="ola-title">Welcome to this page</h1>
-      <p className="ola-callout ola-gray">This is a introductory tegit xt of this process</p>
+      <h1 className="ola-font-5-medium">Welcome to this page</h1>
+      <p className="ola-font-1-regular ola-color-neutral-700">This is a introductory tegit xt of this process</p>
     </header>
   
     <div>
@@ -76,8 +76,8 @@ export const asideMenu = () =>
 export const asideHeader = () => 
   <section className="ola_ly-asideHeader">
     <header>
-      <h2 className="ola-title ola-nomargin">This is the header</h2>
-      <p className="ola-callout ola-gray">This is an intro</p>
+      <h2 className="ola-font-5-medium ola-nomargin">This is the header</h2>
+      <p className="ola-font-1-regular ola-color-neutral-700">This is an intro</p>
     </header>
 
     <div>And this is the content</div>

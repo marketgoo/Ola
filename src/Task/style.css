@@ -1,25 +1,25 @@
 .ola_task {
     margin: 0;
-    background: var(--white);
+    background: var(--color-white);
 
     &.is-success {
         & .ola_task-status {
-            fill: var(--success);
+            fill: var(--color-positive-500);
         }
     }
     &.is-error {
         & .ola_task-status {
-            fill: var(--error);
+            fill: var(--color-negative-500);
         }
     }
     &.is-warning {
         & .ola_task-status {
-            fill: var(--warning);
+            fill: var(--color-warning-500);
         }
     }
     &.is-suggested {
         & .ola_task-status {
-            fill: var(--gray);
+            fill: var(--color-neutral-700);
         }
     }
 
@@ -28,7 +28,7 @@
     }
 
     & .ola_task-extra {
-        margin-left: var(--size-6);
+        margin-left: var(--size-3);
         @media (--to-width-1) {
             display: none;
         }
@@ -37,18 +37,18 @@
     &[open] {
         position: relative;
         z-index: 2;
-        box-shadow: var(--shadow-2), var(--shadow-line);
-        margin-left: calc(var(--size-4) * -1);
-        margin-right: calc(var(--size-4) * -1);
-        border-radius: var(--radius);
-        padding-top: var(--size-4);
-        margin-top: calc(var(--size-4) * -1);
-        margin-top: var(--size-4);
+        box-shadow: var(--shadow-level-2), var(--shadow-line);
+        margin-left: calc(var(--size-2) * -1);
+        margin-right: calc(var(--size-2) * -1);
+        border-radius: var(--radius-m);
+        padding-top: var(--size-2);
+        margin-top: calc(var(--size-2) * -1);
+        margin-top: var(--size-2);
 
         & .ola_task-content {
             animation: task-open 200ms;
             animation-fill-mode: both;
-            padding-left: calc(var(--column-gap-3) + var(--size-8));
+            padding-left: calc(var(--column-gap-3) + var(--size-5));
             padding-right: calc(var(--column-gap-3));
         }
 
@@ -80,7 +80,7 @@
 
 }
 .ola_task-header {
-    font: var(--font-body);
+    font: var(--font-2-regular);
     list-style: none;
     display: flex;
     align-items: center;
@@ -91,12 +91,12 @@
     min-height: 52px;
 
     @media (--to-width-2) {
-        padding: 0 var(--size-6);
+        padding: 0 var(--size-3);
     }
 }
 
 .ola_task-summary {
-    color: var(--black);
+    color: var(--color-neutral-900);
     cursor: pointer;
     transition: background-color var(--duration);
     outline: 0;
@@ -107,26 +107,26 @@
     }
 
     &:hover {
-        color: var(--brand-dark);
-        background-color: var(--gray-xlight);
+        color: var(--color-primary-600);
+        background-color: var(--color-neutral-200);
     }
 
     &:focus-visible {
         position: relative;
         z-index: 2;
-        box-shadow: 0 0 0 4px var(--brand-focus);
+        box-shadow: 0 0 0 4px var(--color-primary-100);
     }
 }
 .ola_task-status {
     flex: 0 0 auto;
-    margin-right: var(--size-5);
+    margin-right: var(--size-2);
 }
 .ola_task-icon {
     flex: 0 0 auto;
     margin-left: auto;
-    margin-right: calc(var(--size-7) * -1);
+    margin-right: calc(var(--size-4) * -1);
     display: none;
-    color: var(--gray);
+    color: var(--color-neutral-700);
 
     @media (--to-width-2) {
         margin-right: 0;
@@ -134,8 +134,8 @@
 }
 .ola_task-body {
     padding: var(--row-gap-2) 0;
-    font: var(--font-callout);
-    color: var(--gray);
+    font: var(--font-1-regular);
+    color: var(--color-neutral-700);
 
     & p,
     & li,
@@ -147,9 +147,9 @@
     }
 
     & h3 {
-      font: var(--font-body);
-      color: var(--black);
-      margin: var(--size-7) 0 var(--size-3);
+      font: var(--font-2-regular);
+      color: var(--color-neutral-900);
+      margin: var(--size-4) 0 var(--size-1);
     }
 
     & li + li,
@@ -158,17 +158,17 @@
     }
 
     & strong {
-        color: var(--black);
+        color: var(--color-neutral-900);
     }
 
     & ol {
         margin-left: 0;
-        padding-left: var(--size-7);
+        padding-left: var(--size-4);
 
         & li::marker {
-            font: var(--font-callout);
-            font-weight: var(--bold);
-            color: var(--gray-light);
+            font: var(--font-1-regular);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-neutral-400);
         }
     }
 
@@ -179,16 +179,16 @@
         & li {
             list-style: none;
             position: relative;
-            padding-left: var(--size-7);
+            padding-left: var(--size-4);
 
             &::before {
                 content: "";
                 position: absolute;
                 left: 0;
                 top: .4em;
-                width: var(--size-3);
-                height: var(--size-3);
-                background: var(--gray-light);
+                width: var(--size-1);
+                height: var(--size-1);
+                background: var(--color-neutral-400);
                 border-radius: 50%;
             }
         }
@@ -202,8 +202,8 @@
     }
 
     @media (--to-width-1) {
-        padding-left: var(--size-6);
-        padding-right: var(--size-6);
+        padding-left: var(--size-3);
+        padding-right: var(--size-3);
     }
 }
 .ola_task-footer {
@@ -212,23 +212,23 @@
 
 .ola_task-info {
     padding: 0 0 var(--row-gap-3);
-    font: var(--font-caption);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
     display: flex;
     flex-wrap: wrap;
 
     & > * {
         margin: 0;
-        margin-right: var(--size-7);
+        margin-right: var(--size-4);
     }
 
     & strong {
-        color: var(--black);
+        color: var(--color-neutral-900);
     }
 
     @media (--to-width-1) {
-        padding-left: var(--size-6);
-        padding-right: var(--size-6);
+        padding-left: var(--size-3);
+        padding-right: var(--size-3);
     }
 }
 

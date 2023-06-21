@@ -1,22 +1,22 @@
 .ola_keyword {
-    --color: var(--gray);
-    --background: var(--gray-xlight);
+    --color: var(--color-neutral-700);
+    --background: var(--color-neutral-200);
 
     display: flex;
     align-items: center;
     color: var(--color);
     background-color: var(--background);
-    border-radius: var(--radius-small);
+    border-radius: var(--radius-s);
     vertical-align: baseline;
     cursor: default;
     max-width: max-content;
-    min-height: var(--size-8);
+    min-height: var(--size-5);
     letter-spacing: 0;
 }
 
 .ola_keyword-text {
-    font: var(--font-caption);
-    font-weight: var(--bold);
+    font: var(--font-0-regular);
+    font-weight: var(--font-weight-bold);
     padding: 0.8em var(--column-gap-1);
 }
 
@@ -26,9 +26,9 @@
     align-self: flex-start;
 
     & .ola_buttonIcon {
-        min-width: var(--size-8);
-        min-height: var(--size-8);
-        border-radius: var(--radius-small);
-        --background-hover: var(--gray-light);
+        min-width: var(--size-5);
+        min-height: var(--size-5);
+        border-radius: var(--radius-s);
+        --background-hover: var(--color-neutral-400);
     }
 }

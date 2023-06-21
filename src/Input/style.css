@@ -1,59 +1,59 @@
 .ola_input {
-    --border: var(--gray-light);
-    --color: var(--black);
-    --background: var(--white);
-    --focus: var(--brand-focus);
+    --border: var(--color-neutral-400);
+    --color: var(--color-neutral-900);
+    --background: var(--color-white);
+    --focus: var(--color-primary-100);
 
     display: block;
     box-sizing: border-box;
-    height: var(--size-8);
+    height: var(--size-5);
     width: 100%;
     border: solid 2px var(--border);
-    background: var(--white);
+    background: var(--color-white);
     color: var(--color);
     background-color: var(--background);
-    border-radius: var(--radius-small);
-    font: var(--font-callout);
+    border-radius: var(--radius-s);
+    font: var(--font-1-regular);
     padding: 0 1em;
     margin: 0;
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: var(--duration);
     outline: 0;
     text-decoration: none;
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
 
     &::placeholder {
-        color: var(--gray-light);
+        color: var(--color-neutral-400);
         opacity: 1;
     }
 
     &:focus {
-        --border: var(--brand);
+        --border: var(--color-primary-500);
         box-shadow: 0 0 0 4px var(--focus);
     }
 
     &:hover {
-        --border: var(--brand-dark);
+        --border: var(--color-primary-600);
     }
 
     &:invalid,
     &.is-invalid {
-        --border: var(--error);
-        --color: var(--error);
+        --border: var(--color-negative-500);
+        --color: var(--color-negative-500);
         box-shadow: none;
 
         &:focus {
-            box-shadow: 0 0 0 4px var(--error-focus);
+            box-shadow: 0 0 0 4px var(--color-negative-100);
         }
 
         &:hover {
-            --border: var(--error-dark);
+            --border: var(--color-negative-600);
         }
     }
 
     &:disabled {
-        --border: var(--gray-xlight);
-        --color: var(--gray-light);
+        --border: var(--color-neutral-200);
+        --color: var(--color-neutral-400);
         cursor: not-allowed;
 
         &::placeholder {

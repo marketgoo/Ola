@@ -1,7 +1,7 @@
 .ola_chartColumn {
     --height: 150px;
-    --color: var(--gray-light);
-    --empty-color: var(--gray-xlight);
+    --color: var(--color-neutral-400);
+    --empty-color: var(--color-neutral-200);
 
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     &.ola-skeleton {
         --skeleton-width: 100%;
         --skeleton-height: 100%;
-        border-color: var(--gray-xlight);
+        border-color: var(--color-neutral-200);
         overflow: visible;
 
         & .ola_chartColumn-graphic {
@@ -26,14 +26,14 @@
             background: none;
         }
         & .ola_chartColumn-footer {
-            color: var(--gray-xlight);
+            color: var(--color-neutral-200);
 
             &::before {
                 display: none;
             }
         }
         & .ola_chartColumn-label {
-            color: var(--gray-xlight);
+            color: var(--color-neutral-200);
 
             &::before {
                 display: none;
@@ -50,40 +50,40 @@
 }
 
 .ola_chartColumn-footer {
-    padding-top: var(--size-2);
-    font: var(--font-callout);
-    font-weight: var(--bold);
-    color: var(--gray);
+    padding-top: var(--size-0);
+    font: var(--font-1-regular);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-neutral-700);
 }
 .ola_chartColumn-label {
-    padding-bottom: var(--size-2);
-    font: var(--font-callout);
+    padding-bottom: var(--size-0);
+    font: var(--font-1-regular);
 }
 .ola_chartColumn-rule {
     position: absolute;
     left: 0;
     width: 100%;
-    border-bottom: dashed 1px var(--gray-light);
-    padding-bottom: var(--size-2);
+    border-bottom: dashed 1px var(--color-neutral-400);
+    padding-bottom: var(--size-0);
     bottom: calc((var(--value) * var(--height)) + 1px);
     text-align: right;
     mix-blend-mode: multiply;
-    font: var(--font-caption);
-    color: var(--gray);
+    font: var(--font-0-regular);
+    color: var(--color-neutral-700);
     pointer-events: none;
 }
 
 @media (--to-width-1) {
     .ola_chartColumn-value + .ola_chartColumn-value {
-        margin-top: var(--size-7);
+        margin-top: var(--size-4);
     }
 
     .ola_chartColumn-graphic {
         width: calc(100% * var(--value));
-        height: var(--size-5);
+        height: var(--size-2);
         transition: width var(--slow-duration);
-        border-top-right-radius: var(--radius-small);
-        border-bottom-right-radius: var(--radius-small);
+        border-top-right-radius: var(--radius-s);
+        border-bottom-right-radius: var(--radius-s);
     }
     .ola_chartColumn-rule {
         display: none;
@@ -96,13 +96,13 @@
         text-align: center;
 
         &.has-rule {
-            padding-right: var(--size-8);
+            padding-right: var(--size-5);
         }
     }
 
     .ola_chartColumn-value {
-        max-width: var(--size-11);
-        border-bottom: solid 1px var(--gray);
+        max-width: var(--size-14);
+        border-bottom: solid 1px var(--color-neutral-700);
     }
 
     .ola_chartColumn {
@@ -113,15 +113,15 @@
         height: 0;
         padding-top: 0;
         position: relative;
-        top: var(--size-2);
+        top: var(--size-0);
     }
 
     .ola_chartColumn-graphic {
-        margin-left: var(--size-4);
-        margin-right: var(--size-4);
+        margin-left: var(--size-2);
+        margin-right: var(--size-2);
         height: calc(var(--height) * var(--value));
-        border-top-right-radius: var(--radius-small);
-        border-top-left-radius: var(--radius-small);
+        border-top-right-radius: var(--radius-s);
+        border-top-left-radius: var(--radius-s);
         transition: height var(--slow-duration);
     }
 }

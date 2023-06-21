@@ -1,5 +1,5 @@
 .ola_switch {
-    padding: var(--size-3) 0;
+    padding: var(--size-1) 0;
     display: inline-block;
 }
 .ola_switch-input {
@@ -8,11 +8,11 @@
 }
 .ola_switch-label {
     display: flex;
-    font: var(--font-callout);
+    font: var(--font-1-regular);
     align-items: center;
 }
 .ola_switch-label::before {
-    --color: var(--gray-light);
+    --color: var(--color-neutral-400);
 
     content: "";
     display: block;
@@ -30,15 +30,15 @@
 }
 
 .ola_switch-input:checked ~ .ola_switch-label::before {
-    --color: var(--brand);
+    --color: var(--color-primary-500);
     background-position: right center;
 }
 .ola_switch-input:focus ~ .ola_switch-label::before {
-    box-shadow: 0 0 0 4px var(--brand-focus);
+    box-shadow: 0 0 0 4px var(--color-primary-100);
 }
 .ola_switch-input:hover ~ .ola_switch-label::before {
-    --color: var(--gray-light);
+    --color: var(--color-neutral-400);
 }
 .ola_switch-input:checked:hover ~ .ola_switch-label::before {
-    --color: var(--brand-dark);
+    --color: var(--color-primary-600);
 }

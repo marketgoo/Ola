@@ -1,14 +1,14 @@
 .ola_carousel {
-  background: var(--white);
-  border-radius: var(--radius-big);
-  padding-top: var(--size-7);
-  padding-bottom: var(--size-7);
-  padding-left: var(--size-5);
-  padding-right: var(--size-5);
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding-top: var(--size-4);
+  padding-bottom: var(--size-4);
+  padding-left: var(--size-2);
+  padding-right: var(--size-2);
 
   &.is-alone {
-    padding-left: var(--size-8);
-    padding-right: var(--size-8);
+    padding-left: var(--size-5);
+    padding-right: var(--size-5);
   }
 }
 
@@ -30,12 +30,12 @@
   width: 10px;
   height: 10px;
   border-radius: 10px;
-  margin-left: var(--size-2);
-  margin-right: var(--size-2);
-  background: var(--gray-light);
+  margin-left: var(--size-0);
+  margin-right: var(--size-0);
+  background: var(--color-neutral-400);
   cursor: pointer;
 }
 
 .ola_carousel-dots-item.is-selected {
-  background: var(--gray);
+  background: var(--color-neutral-700);
 }

@@ -1,145 +1,324 @@
 .ola-bg {
-    background-color: var(--gray-xxlight) !important; /* Ensures that it is always applied, regardless of the styles that exist. */
+    background-color: var(--color-neutral-100) !important; /* Ensures that it is always applied, regardless of the styles that exist. */
 
     & > * {
-        --gray-xxlight: var(--gray-xlight);
+        --color-neutral-100: var(--color-neutral-200);
     }
 }
 td.ola-bg {
-    background-color: var(--gray-xxlight);
+    background-color: var(--color-neutral-100);
 }
 .ola-bg-hover:hover {
-    background-color: var(--gray-xxlight);
+    background-color: var(--color-neutral-100);
 
     & > * {
-        --gray-xxlight: var(--gray-xlight);
+        --color-neutral-100: var(--color-neutral-200);
     }
 }
 
-/* Text sizes */
-.ola-display {
-    font: var(--font-display);
-    letter-spacing: var(--font-display-spacing);
+
+/************************************/
+/*           Font Classes           */
+/************************************/
+.ola-font-8-medium { /* OLD .ola-display */
+    font: var(--font-8-medium);
+    letter-spacing: var(--font-letter-spacing-8);
 }
-.ola-title {
-    font: var(--font-title);
-    letter-spacing: var(--font-title-spacing);
+.ola-font-7-medium {
+    font: var(--font-7-medium);
+    letter-spacing: var(--font-letter-spacing-7);
 }
-.ola-headline {
-    font: var(--font-headline);
+.ola-font-6-medium {
+    font: var(--font-6-medium);
+    letter-spacing: var(--font-letter-spacing-6);
 }
-.ola-body {
-    font: var(--font-body);
-}
-.ola-callout {
-    font: var(--font-callout);
-}
-.ola-caption {
-    font: var(--font-caption);
+.ola-font-5-medium { /* OLD .ola-title */
+    font: var(--font-5-medium);
+    letter-spacing: var(--font-letter-spacing-5);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-b,
-strong {
-    &.ola-headline,
-    &.ola-body,
-    &.ola-callout,
-    &.ola-caption {
-        font-weight: var(--bold);
-    }
+.ola-font-4-bold {
+    font: var(--font-4-bold);
+}
+.ola-font-4-regular {
+    font: var(--font-4-regular);
+}
+.ola-font-4-bold,
+.ola-font-4-regular {
+    letter-spacing: var(--font-letter-spacing-4);
 }
 
-.ola-normal {
-    font-weight: var(--normal) !important; /* Overrides the previous ruleset */
+.ola-font-3-regular { /* OLD .ola-headline */
+    font: var(--font-3-regular);
 }
-.ola-bold {
-    font-weight: var(--bold);
+.ola-font-3-bold {
+    font: var(--font-3-bold);
+}
+.ola-font-3-bold,
+.ola-font-3-regular {
+    letter-spacing: var(--font-letter-spacing-3);
 }
 
-/* Colors */
-.ola-brand {
-    color: var(--brand);
+.ola-font-2-regular { /* OLD .ola-body */
+    font: var(--font-2-regular);
 }
-.ola-accent {
-    color: var(--accent);
+.ola-font-2-bold {
+    font: var(--font-2-bold);
 }
-.ola-white {
-    color: var(--white);
+.ola-font-2-bold,
+.ola-font-2-regular {
+    letter-spacing: var(--font-letter-spacing-2);
 }
-.ola-black {
-    color: var(--black);
+
+.ola-font-1-regular { /* OLD .ola-callout */
+    font: var(--font-1-regular);
 }
-.ola-gray {
-    color: var(--gray);
+.ola-font-1-bold {
+    font: var(--font-1-bold);
 }
-.ola-gray-light {
-    color: var(--gray-light);
+.ola-font-1-bold,
+.ola-font-1-regular {
+    letter-spacing: var(--font-letter-spacing-1);
 }
-.ola-gray-xlight {
-    color: var(--gray-xlight);
+
+.ola-font-0-regular { /* OLD .ola-caption */
+    font: var(--font-0-regular);
 }
-.ola-gray-xxlight {
-    color: var(--gray-xxlight);
+.ola-font-0-bold {
+    font: var(--font-0-bold);
 }
-.ola-error {
-    color: var(--error);
+.ola-font-0-bold,
+.ola-font-0-regular {
+    letter-spacing: var(--font-letter-spacing-0);
 }
-.ola-warning {
-    color: var(--warning);
+    /* font-weight */
+.ola-font-weight-regular { /* OLD .ola-normal */
+    font-weight: var(--font-weight-regular) !important; /* Overrides the previous ruleset */
 }
-.ola-success {
-    color: var(--success);
+.ola-font-weight-medium {
+    font-weight: var(--font-weight-medium);
 }
-.ola-pro {
-    color: var(--pro);
+.ola-font-weight-bold { /* OLD .ola-bold */
+    font-weight: var(--font-weight-bold);
 }
+
+/************************************/
+/*          Color Classes           */
+/************************************/
+    /* Primary */
+.ola-color-primary-100 {  color: var(--color-primary-100); }
+.ola-color-primary-100a { color: var(--color-primary-100a); }
+.ola-color-primary-200 {  color: var(--color-primary-200); }
+.ola-color-primary-200a { color: var(--color-primary-200a); }
+.ola-color-primary-300 {  color: var(--color-primary-300); }
+.ola-color-primary-300a { color: var(--color-primary-300a); }
+.ola-color-primary-400 {  color: var(--color-primary-400); }
+.ola-color-primary-400a { color: var(--color-primary-400a); }
+.ola-color-primary-500 {  color: var(--color-primary-500); } /* OLD .ola-brand */
+.ola-color-primary-600 {  color: var(--color-primary-600); }
+.ola-color-primary-700 {  color: var(--color-primary-700); }
+.ola-color-primary-800 {  color: var(--color-primary-800); }
+.ola-color-primary-900 {  color: var(--color-primary-900); }
+    /* Neutral */
+.ola-color-neutral-100 {  color: var(--color-neutral-100); } /* OLD .ola-gray-xxlight */
+.ola-color-neutral-100a { color: var(--color-neutral-100a); }
+.ola-color-neutral-200 {  color: var(--color-neutral-200); } /* OLD .ola-gray-xlight */
+.ola-color-neutral-200a { color: var(--color-neutral-200a); }
+.ola-color-neutral-300 {  color: var(--color-neutral-300); }
+.ola-color-neutral-300a { color: var(--color-neutral-300a); }
+.ola-color-neutral-400 {  color: var(--color-neutral-400); } /* OLD .ola-gray-light */
+.ola-color-neutral-400a { color: var(--color-neutral-400a); }
+.ola-color-neutral-500 {  color: var(--color-neutral-500); }
+.ola-color-neutral-600 {  color: var(--color-neutral-600); }
+.ola-color-neutral-700 {  color: var(--color-neutral-700); } /* OLD .ola-gray */
+.ola-color-neutral-800 {  color: var(--color-neutral-800); }
+.ola-color-neutral-900 {  color: var(--color-neutral-900); } /* OLD .ola-black */
+    /* Positive */
+.ola-color-positive-100 {  color: var(--color-positive-100); }
+.ola-color-positive-100a { color: var(--color-positive-100a); }
+.ola-color-positive-200 {  color: var(--color-positive-200); }
+.ola-color-positive-200a { color: var(--color-positive-200a); }
+.ola-color-positive-300 {  color: var(--color-positive-300); }
+.ola-color-positive-300a { color: var(--color-positive-300a); }
+.ola-color-positive-400 {  color: var(--color-positive-400); }
+.ola-color-positive-400a { color: var(--color-positive-400a); }
+.ola-color-positive-500 {  color: var(--color-positive-500); } /* OLD .ola-success */
+.ola-color-positive-600 {  color: var(--color-positive-600); }
+.ola-color-positive-700 {  color: var(--color-positive-700); }
+.ola-color-positive-800 {  color: var(--color-positive-800); }
+.ola-color-positive-900 {  color: var(--color-positive-900); }
+    /* Negative */
+.ola-color-negative-100 {  color: var(--color-negative-100); }
+.ola-color-negative-100a { color: var(--color-negative-100a); }
+.ola-color-negative-200 {  color: var(--color-negative-200); }
+.ola-color-negative-200a { color: var(--color-negative-200a); }
+.ola-color-negative-300 {  color: var(--color-negative-300); }
+.ola-color-negative-300a { color: var(--color-negative-300a); }
+.ola-color-negative-400 {  color: var(--color-negative-400); }
+.ola-color-negative-400a { color: var(--color-negative-400a); }
+.ola-color-negative-500 {  color: var(--color-negative-500); } /* OLD .ola-error */
+.ola-color-negative-600 {  color: var(--color-negative-600); }
+.ola-color-negative-700 {  color: var(--color-negative-700); }
+.ola-color-negative-800 {  color: var(--color-negative-800); }
+.ola-color-negative-900 {  color: var(--color-negative-900); }
+    /* Warning */
+.ola-color-warning-100 {  color: var(--color-warning-100); }
+.ola-color-warning-100a { color: var(--color-warning-100a); }
+.ola-color-warning-200 {  color: var(--color-warning-200); }
+.ola-color-warning-200a { color: var(--color-warning-200a); }
+.ola-color-warning-300 {  color: var(--color-warning-300); }
+.ola-color-warning-300a { color: var(--color-warning-300a); }
+.ola-color-warning-400 {  color: var(--color-warning-400); }
+.ola-color-warning-400a { color: var(--color-warning-400a); }
+.ola-color-warning-500 {  color: var(--color-warning-500); } /* OLD .ola-warning */
+.ola-color-warning-600 {  color: var(--color-warning-600); }
+.ola-color-warning-700 {  color: var(--color-warning-700); }
+.ola-color-warning-800 {  color: var(--color-warning-800); }
+.ola-color-warning-900 {  color: var(--color-warning-900); }
+    /* Pro */
+.ola-color-pro-100 {  color: var(--color-pro-100); }
+.ola-color-pro-100a { color: var(--color-pro-100a); }
+.ola-color-pro-200 {  color: var(--color-pro-200); }
+.ola-color-pro-200a { color: var(--color-pro-200a); }
+.ola-color-pro-300 {  color: var(--color-pro-300); }
+.ola-color-pro-300a { color: var(--color-pro-300a); }
+.ola-color-pro-400 {  color: var(--color-pro-400); }
+.ola-color-pro-400a { color: var(--color-pro-400a); }
+.ola-color-pro-500 {  color: var(--color-pro-500); } /* OLD .ola-pro */
+.ola-color-pro-600 {  color: var(--color-pro-600); }
+.ola-color-pro-700 {  color: var(--color-pro-700); }
+.ola-color-pro-800 {  color: var(--color-pro-800); }
+.ola-color-pro-900 {  color: var(--color-pro-900); }
+    /* Accent */
+.ola-color-accent-100 {  color: var(--color-accent-100); }
+.ola-color-accent-100a { color: var(--color-accent-100a); }
+.ola-color-accent-200 {  color: var(--color-accent-200); }
+.ola-color-accent-200a { color: var(--color-accent-200a); }
+.ola-color-accent-300 {  color: var(--color-accent-300); }
+.ola-color-accent-300a { color: var(--color-accent-300a); }
+.ola-color-accent-400 {  color: var(--color-accent-400); }
+.ola-color-accent-400a { color: var(--color-accent-400a); }
+.ola-color-accent-500 {  color: var(--color-accent-500); } /* OLD .ola-accent */
+.ola-color-accent-600 {  color: var(--color-accent-600); }
+.ola-color-accent-700 {  color: var(--color-accent-700); }
+.ola-color-accent-800 {  color: var(--color-accent-800); }
+.ola-color-accent-900 {  color: var(--color-accent-900); }
+    /* Others */
+.ola-color-premium { color: var(--color-premium); }
+.ola-color-info { color: var(--color-info); }
+.ola-color-white { color: var(--color-white); } /* OLD .ola-white */
+
 .ola-black-bolds b,
 .ola-black-bolds strong {
-    color: var(--black);
+    color: var(--color-neutral-900);
 }
 
-/* Background colors */
-.ola-bg-brand {
-    background-color: var(--brand);
-}
-.ola-bg-accent {
-    background-color: var(--accent);
-}
-.ola-bg-white {
-    background-color: var(--white);
-}
-.ola-bg-black {
-    background-color: var(--black);
-}
-.ola-bg-gray {
-    background-color: var(--gray);
-}
-.ola-bg-gray-light {
-    background-color: var(--gray-light);
-}
-.ola-bg-gray-xlight {
-    background-color: var(--gray-xlight);
-}
-.ola-bg-gray-xxlight {
-    background-color: var(--gray-xxlight);
-}
-.ola-bg-error {
-    background-color: var(--error);
-}
-.ola-bg-warning {
-    background-color: var(--warning);
-}
-.ola-bg-success {
-    background-color: var(--success);
-}
-.ola-bg-pro {
-    background-color: var(--pro);
-}
+/************************************/
+/*     Background Color Classes     */
+/************************************/
+    /* Primary */
+.ola-bg-primary-100 {  background-color: var(--color-primary-100); }
+.ola-bg-primary-100a { background-color: var(--color-primary-100a); }
+.ola-bg-primary-200 {  background-color: var(--color-primary-200); }
+.ola-bg-primary-200a { background-color: var(--color-primary-200a); }
+.ola-bg-primary-300 {  background-color: var(--color-primary-300); }
+.ola-bg-primary-300a { background-color: var(--color-primary-300a); }
+.ola-bg-primary-400 {  background-color: var(--color-primary-400); }
+.ola-bg-primary-400a { background-color: var(--color-primary-400a); }
+.ola-bg-primary-500 {  background-color: var(--color-primary-500); } /* OLD .ola-bg-brand */
+.ola-bg-primary-600 {  background-color: var(--color-primary-600); }
+.ola-bg-primary-700 {  background-color: var(--color-primary-700); }
+.ola-bg-primary-800 {  background-color: var(--color-primary-800); }
+.ola-bg-primary-900 {  background-color: var(--color-primary-900); }
+    /* Neutral */
+.ola-bg-neutral-100 {  background-color: var(--color-neutral-100); } /* OLD .ola-bg-gray-xxlight */
+.ola-bg-neutral-100a { background-color: var(--color-neutral-100a); }
+.ola-bg-neutral-200 {  background-color: var(--color-neutral-200); } /* OLD .ola-bg-gray-xlight */
+.ola-bg-neutral-200a { background-color: var(--color-neutral-200a); }
+.ola-bg-neutral-300 {  background-color: var(--color-neutral-300); }
+.ola-bg-neutral-300a { background-color: var(--color-neutral-300a); }
+.ola-bg-neutral-400 {  background-color: var(--color-neutral-400); } /* OLD .ola-bg-gray-light */
+.ola-bg-neutral-400a { background-color: var(--color-neutral-400a); }
+.ola-bg-neutral-500 {  background-color: var(--color-neutral-500); }
+.ola-bg-neutral-600 {  background-color: var(--color-neutral-600); }
+.ola-bg-neutral-700 {  background-color: var(--color-neutral-700); } /* OLD .ola-bg-gray */
+.ola-bg-neutral-800 {  background-color: var(--color-neutral-800); }
+.ola-bg-neutral-900 {  background-color: var(--color-neutral-900); } /* OLD .ola-bg-black */
+    /* Positive */
+.ola-bg-positive-100 {  background-color: var(--color-positive-100); }
+.ola-bg-positive-100a { background-color: var(--color-positive-100a); }
+.ola-bg-positive-200 {  background-color: var(--color-positive-200); }
+.ola-bg-positive-200a { background-color: var(--color-positive-200a); }
+.ola-bg-positive-300 {  background-color: var(--color-positive-300); }
+.ola-bg-positive-300a { background-color: var(--color-positive-300a); }
+.ola-bg-positive-400 {  background-color: var(--color-positive-400); }
+.ola-bg-positive-400a { background-color: var(--color-positive-400a); }
+.ola-bg-positive-500 {  background-color: var(--color-positive-500); } /* OLD .ola-bg-success */
+.ola-bg-positive-600 {  background-color: var(--color-positive-600); }
+.ola-bg-positive-700 {  background-color: var(--color-positive-700); }
+.ola-bg-positive-800 {  background-color: var(--color-positive-800); }
+.ola-bg-positive-900 {  background-color: var(--color-positive-900); }
+    /* Negative */
+.ola-bg-negative-100 {  background-color: var(--color-negative-100); }
+.ola-bg-negative-100a { background-color: var(--color-negative-100a); }
+.ola-bg-negative-200 {  background-color: var(--color-negative-200); }
+.ola-bg-negative-200a { background-color: var(--color-negative-200a); }
+.ola-bg-negative-300 {  background-color: var(--color-negative-300); }
+.ola-bg-negative-300a { background-color: var(--color-negative-300a); }
+.ola-bg-negative-400 {  background-color: var(--color-negative-400); }
+.ola-bg-negative-400a { background-color: var(--color-negative-400a); }
+.ola-bg-negative-500 {  background-color: var(--color-negative-500); } /* OLD .ola-bg-error */
+.ola-bg-negative-600 {  background-color: var(--color-negative-600); }
+.ola-bg-negative-700 {  background-color: var(--color-negative-700); }
+.ola-bg-negative-800 {  background-color: var(--color-negative-800); }
+.ola-bg-negative-900 {  background-color: var(--color-negative-900); }
+    /* Warning */
+.ola-bg-warning-100 {  background-color: var(--color-warning-100); }
+.ola-bg-warning-100a { background-color: var(--color-warning-100a); }
+.ola-bg-warning-200 {  background-color: var(--color-warning-200); }
+.ola-bg-warning-200a { background-color: var(--color-warning-200a); }
+.ola-bg-warning-300 {  background-color: var(--color-warning-300); }
+.ola-bg-warning-300a { background-color: var(--color-warning-300a); }
+.ola-bg-warning-400 {  background-color: var(--color-warning-400); }
+.ola-bg-warning-400a { background-color: var(--color-warning-400a); }
+.ola-bg-warning-500 {  background-color: var(--color-warning-500); } /* OLD .ola-bg-warning */
+.ola-bg-warning-600 {  background-color: var(--color-warning-600); }
+.ola-bg-warning-700 {  background-color: var(--color-warning-700); }
+.ola-bg-warning-800 {  background-color: var(--color-warning-800); }
+.ola-bg-warning-900 {  background-color: var(--color-warning-900); }
+    /* Pro */
+.ola-bg-pro-100 {  background-color: var(--color-pro-100); }
+.ola-bg-pro-100a { background-color: var(--color-pro-100a); }
+.ola-bg-pro-200 {  background-color: var(--color-pro-200); }
+.ola-bg-pro-200a { background-color: var(--color-pro-200a); }
+.ola-bg-pro-300 {  background-color: var(--color-pro-300); }
+.ola-bg-pro-300a { background-color: var(--color-pro-300a); }
+.ola-bg-pro-400 {  background-color: var(--color-pro-400); }
+.ola-bg-pro-400a { background-color: var(--color-pro-400a); }
+.ola-bg-pro-500 {  background-color: var(--color-pro-500); } /* OLD .ola-bg-pro */
+.ola-bg-pro-600 {  background-color: var(--color-pro-600); }
+.ola-bg-pro-700 {  background-color: var(--color-pro-700); }
+.ola-bg-pro-800 {  background-color: var(--color-pro-800); }
+.ola-bg-pro-900 {  background-color: var(--color-pro-900); }
+    /* Accent */
+.ola-bg-accent-100 {  background-color: var(--color-accent-100); }
+.ola-bg-accent-100a { background-color: var(--color-accent-100a); }
+.ola-bg-accent-200 {  background-color: var(--color-accent-200); }
+.ola-bg-accent-200a { background-color: var(--color-accent-200a); }
+.ola-bg-accent-300 {  background-color: var(--color-accent-300); }
+.ola-bg-accent-300a { background-color: var(--color-accent-300a); }
+.ola-bg-accent-400 {  background-color: var(--color-accent-400); }
+.ola-bg-accent-400a { background-color: var(--color-accent-400a); }
+.ola-bg-accent-500 {  background-color: var(--color-accent-500); } /* OLD .ola-bg-accent */
+.ola-bg-accent-600 {  background-color: var(--color-accent-600); }
+.ola-bg-accent-700 {  background-color: var(--color-accent-700); }
+.ola-bg-accent-800 {  background-color: var(--color-accent-800); }
+.ola-bg-accent-900 {  background-color: var(--color-accent-900); }
+    /* Others */
+.ola-bg-premium { background-color: var(--color-premium); }
+.ola-bg-info { background-color: var(--color-info); }
+.ola-bg-white-100 { background-color: var(--color-white); } /* OLD .ola-bg-white */
+
 
 /* Alignment */
 .ola-right {
@@ -208,10 +387,10 @@ strong {
 
 /* Widths */
 .ola-width-narrow {
-    max-width: var(--size-11);
+    max-width: var(--size-14);
 }
 .ola-width-medium {
-    max-width: var(--size-12);
+    max-width: var(--size-16);
 }
 
 /* Skeletor */
@@ -221,14 +400,14 @@ strong {
     & > :empty::before {
         content: "\00a0";
         display: block;
-        background-color: var(--gray-xlight);
+        background-color: var(--color-neutral-200);
         width: var(--skeleton-width, 5em);
         height: var(--skeleton-height, 1em);
     }
 
     &.is-loading {
         & > :empty::before {
-            background: linear-gradient(to right, var(--gray-xlight) 40%, var(--white), var(--gray-xlight) 60%);
+            background: linear-gradient(to right, var(--color-neutral-200) 40%, var(--color-white), var(--color-neutral-200) 60%);
             background-size: 800px 100%;
             animation: loadingSkeleton 2s linear infinite;
         }

@@ -40,7 +40,7 @@
 }
 .ola_ly-main > .is-center {
   display: grid;
-  grid-template-columns: 1fr minmax(0, var(--size-12)) 1fr;
+  grid-template-columns: 1fr minmax(0, var(--size-16)) 1fr;
   grid-row-gap: var(--row-gap-3);
   align-content: center;
   padding-top: var(--row-gap-3);
@@ -55,7 +55,7 @@
   top: 0;
   z-index: 2;
   background: white;
-  box-shadow: var(--shadow-1);
+  box-shadow: var(--shadow-level-1);
 }
 
 .ola_ly-main-navbar {

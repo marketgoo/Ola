@@ -2,37 +2,37 @@
     display: block;
     appearance: none;
     box-sizing: border-box;
-    height: var(--size-8);
+    height: var(--size-5);
     width: 100%;
-    border: solid 2px var(--gray-light);
-    background: var(--white);
-    color: var(--black);
-    background-color: var(--white);
+    border: solid 2px var(--color-neutral-400);
+    background: var(--color-white);
+    color: var(--color-neutral-900);
+    background-color: var(--color-white);
     /* Chevron gray-light */
     background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%23BBC2CE"></path></svg>');
     background-repeat: no-repeat;
     background-position: right center;
-    border-radius: var(--radius-small);
-    font: var(--font-callout);
-    padding: 0 var(--size-8) 0 1em;
+    border-radius: var(--radius-s);
+    font: var(--font-1-regular);
+    padding: 0 var(--size-5) 0 1em;
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: 200ms;
     outline: 0;
     white-space: nowrap;
     text-decoration: none;
-    font-weight: var(--regular);
+    font-weight: var(--font-weight-regular);
     cursor: initial;
     max-width: 100%;
 
     &:hover {
-        color: var(--black);
-        border-color: var(--brand-dark);
+        color: var(--color-neutral-900);
+        border-color: var(--color-primary-600);
     }
 
     &:focus-visible {
-        color: var(--black);
-        border-color: var(--brand);
-        box-shadow: 0 0 0 4px var(--brand-focus);
+        color: var(--color-neutral-900);
+        border-color: var(--color-primary-500);
+        box-shadow: 0 0 0 4px var(--color-primary-100);
 
         /* Chevron brand */
         background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%230090DA"></path></svg>');
@@ -40,18 +40,18 @@
 
     &:invalid,
     &.is-invalid {
-        color: var(--error);
-        border-color: var(--error);
+        color: var(--color-negative-500);
+        border-color: var(--color-negative-500);
         box-shadow: none;
 
         &:focus-visible {
-            box-shadow: 0 0 0 4px var(--error-focus);
+            box-shadow: 0 0 0 4px var(--color-negative-100);
         }
     }
 
     &:disabled {
-        color: var(--gray-light);
-        border-color: var(--gray-xlight);
+        color: var(--color-neutral-400);
+        border-color: var(--color-neutral-200);
         cursor: not-allowed;
 
         &::placeholder {

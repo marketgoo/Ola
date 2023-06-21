@@ -9,16 +9,16 @@ export default {
 
 export const Base = (args) => <CheckGroup {...args}>
   <Check variant={args.checkVariant}>
-    <strong className="ola-callout">Test 1</strong>
-    <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+    <strong className="ola-font-1-regular">Test 1</strong>
+    <p className="ola-font-1-regular ola-nomargin">Lorem ipsum dolor sit amet</p>
   </Check>
   <Check variant={args.checkVariant}>
-    <strong className="ola-callout">Test 1</strong>
-    <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+    <strong className="ola-font-1-regular">Test 1</strong>
+    <p className="ola-font-1-regular ola-nomargin">Lorem ipsum dolor sit amet</p>
   </Check>
   <Check variant={args.checkVariant}>
-    <strong className="ola-callout">Test 1</strong>
-    <p className="ola-callout ola-nomargin">Lorem ipsum dolor sit amet</p>
+    <strong className="ola-font-1-regular">Test 1</strong>
+    <p className="ola-font-1-regular ola-nomargin">Lorem ipsum dolor sit amet</p>
   </Check>
 </CheckGroup>
 

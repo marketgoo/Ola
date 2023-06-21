@@ -13,7 +13,7 @@
   grid-template-columns: minmax(0, 1fr);
 
   & > *:first-child {
-    max-width: var(--size-12);
+    max-width: var(--size-16);
   }
 
   @media (--from-width-3) {
