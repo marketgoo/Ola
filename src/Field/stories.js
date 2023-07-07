@@ -5,6 +5,7 @@ import Select from '../Select'
 import Button from '../Button'
 
 import { useForm, Controller } from 'react-hook-form'
+import Icon from '../Icon'
 
 export default {
   title: 'Field',
@@ -26,6 +27,31 @@ export const FieldInput = (args) =>
     <Input placeholder="Text placeholder" />
   </Field>
 
+export const FieldInputNoHint = (args) =>
+  <Field {...args}>
+    <Input placeholder="Without hint" />
+  </Field>
+FieldInputNoHint.args = {
+  hint: null
+}
+
+export const FieldInputNoDescription = (args) =>
+  <Field {...args}>
+    <Input placeholder="Without description" />
+  </Field>
+FieldInputNoDescription.args = {
+  description: null
+}
+
+export const FieldInputNoHintDescription = (args) =>
+  <Field {...args}>
+    <Input placeholder="Without hint nor description" />
+  </Field>
+FieldInputNoHintDescription.args = {
+  hint: null,
+  description: null
+}
+
 export const FieldInputCounter = (args) =>
   <Field {...args}>
     <Input placeholder="With max-length 10" maxLength={10} />
@@ -33,6 +59,11 @@ export const FieldInputCounter = (args) =>
 FieldInputCounter.args = {
   counter: true
 }
+
+export const FieldInputIcon = (args) =>
+  <Field {...args}>
+    <Input placeholder="With Icon" icon={<Icon name="copy" />} />
+  </Field>
 
 export const FieldTextarea = (args) =>
   <Field {...args}>

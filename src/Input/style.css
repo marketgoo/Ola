@@ -47,6 +47,10 @@
         }
     }
 
+    &.is-icon {
+      padding-right: var(--size-5);
+    }
+
     &:disabled {
         --color: var(--color-neutral-400);
         --background: var(--color-neutral-100);
@@ -64,6 +68,31 @@
     &[readonly] {
         box-shadow: none;
     }
+}
+
+.ola_input-wrapper {
+  width: 100%;
+  height: var(--size-5);
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.ola_input-icon {
+  position: absolute;
+  height: var(--size-4);
+  width: var(--size-4);
+  border-radius: 100%;
+  background-color: var(--color-white);
+  top: var(--size-0);
+  right: var(--size-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    fill: var(--color-neutral-600);
+  }
 }
 
 textarea.ola_input {

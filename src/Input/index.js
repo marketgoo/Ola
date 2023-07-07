@@ -1,8 +1,9 @@
 import React from 'react'
 import { default as PT } from 'prop-types'
 import cx from 'classnames'
+import Icon from '../Icon'
 
-const Input = React.forwardRef(({ className, error, type, ...props }, ref) => {
+const Input = React.forwardRef(({ className, error, type, icon, ...props }, ref) => {
   const Element = type === 'textarea' ? 'textarea' : 'input'
 
   if (type === 'textarea' && !props.rows) {
@@ -12,17 +13,33 @@ const Input = React.forwardRef(({ className, error, type, ...props }, ref) => {
   if (type !== 'textarea') {
     props.type = type
   }
- 
-  return <Element
+
+  const createElement = () => <Element
     ref={ref}
-    className={cx('ola_input', { 'is-invalid': error }, className)}
+    className={cx('ola_input', { 'is-invalid': error, 'is-icon': !!icon }, className)}
     {...props}
   />
+
+  if (icon) {
+    const newIcon = React.cloneElement(icon, { size: 'small' })
+
+    return (
+      <div className="ola_input-wrapper">
+        {createElement()}
+        <div className="ola_input-icon">
+          {newIcon}
+        </div>
+      </div>
+    )
+  }
+ 
+  return createElement()
 })
 
 Input.defaultProps = {
   type: 'text',
   className: null,
+  icon: null,
   error: false,
 }
 
@@ -47,6 +64,8 @@ Input.propTypes = {
   className: PT.string,
   /** Input is invalid */
   error: PT.bool,
+  /** Optional icon to show on the top right corner */
+  icon: PT.instanceOf(Icon),
   rows: PT.number,
 }
 

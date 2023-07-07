@@ -1,5 +1,6 @@
 import React from 'react'
 import Input from './'
+import Icon from '../Icon'
 
 export default {
   title: 'Input',
@@ -11,7 +12,8 @@ export default {
     placeholder: 'Text placeholder',
     className: '',
     type: 'text',
-    value: ''
+    value: '',
+    icon: null
   },
   argTypes: {
     onClick: { action: 'clicked' },
@@ -26,6 +28,11 @@ export const InputBase = (args) => <Input {...args} />
 export const InputNumber = (args) => <Input {...args} />
 InputNumber.args = {
   type: 'number',
+}
+
+export const InputIcon = (args) => <Input {...args} />
+InputIcon.args = {
+  icon: <Icon name="copy" />,
 }
 
 export const InputError = (args) => <Input {...args} />
@@ -48,6 +55,12 @@ InputReadOnly.args = {
 export const TextareaBase = (args) => <Input {...args} />
 TextareaBase.args = {
   placeholder: 'Textarea placeholder',
+  type: 'textarea',
+}
+
+export const TextareaIcon = (args) => <Input {...args} />
+TextareaIcon.args = {
+  icon: <Icon name="copy" />,
   type: 'textarea',
 }
 
