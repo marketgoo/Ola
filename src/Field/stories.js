@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Field from './'
 import Input from '../Input'
+import Select from '../Select'
 import Button from '../Button'
 
 import { useForm, Controller } from 'react-hook-form'
@@ -13,14 +14,39 @@ export default {
     label: 'Label of the field',
     description: 'This is a description',
     hint: '(optional)',
+    counter: false
   },
+  argTypes: {
+    children: { control: { disable: true } },
+  }
 }
 
-export const Base = (args) => (
+export const FieldInput = (args) =>
   <Field {...args}>
     <Input placeholder="Text placeholder" />
   </Field>
-)
+
+export const FieldInputCounter = (args) =>
+  <Field {...args}>
+    <Input placeholder="With max-length 10" maxLength={10} />
+  </Field>
+FieldInputCounter.args = {
+  counter: true
+}
+
+export const FieldTextarea = (args) =>
+  <Field {...args}>
+    <Input type="textarea" placeholder="Textarea placeholder" />
+  </Field>
+
+export const FieldSelect = (args) =>
+  <Field {...args}>
+    <Select options={[
+      { value: '1', label: 'Option 1' },
+      { value: '2', label: 'Option 2' },
+      { value: '3', label: 'Option 3' }
+    ]} />
+  </Field>
 
 export const reactHookFormsExample = () => {
   const onSubmit = (data) => setData(data)
@@ -43,10 +69,11 @@ export const reactHookFormsExample = () => {
           render={({ field }) => (
             <Field
               id="field-test"
-              label={'Test input'}
+              label="Test input"
+              hint="Test hint"
               error={!!errors?.testInput?.message}
               description={
-                errors?.testInput?.message ? errors.testInput.message : ''
+                errors?.testInput?.message ? errors.testInput.message : 'This is a normal description'
               }
             >
               <Input {...field} />
@@ -60,8 +87,4 @@ export const reactHookFormsExample = () => {
       {data && <code>{JSON.stringify(data)}</code>}
     </>
   )
-}
-
-Base.argTypes = {
-  children: { control: { disable: true } },
 }
