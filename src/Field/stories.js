@@ -15,7 +15,8 @@ export default {
     label: 'Label of the field',
     description: 'This is a description',
     hint: '(optional)',
-    counter: false
+    counter: false,
+    error: false
   },
   argTypes: {
     children: { control: { disable: true } },
@@ -26,6 +27,14 @@ export const FieldInput = (args) =>
   <Field {...args}>
     <Input placeholder="Text placeholder" />
   </Field>
+
+export const FieldInputError = (args) =>
+  <Field {...args}>
+    <Input placeholder="Text placeholder" />
+  </Field>
+FieldInputError.args = {
+  error: true
+}
 
 export const FieldInputNoHint = (args) =>
   <Field {...args}>
@@ -70,6 +79,14 @@ export const FieldTextarea = (args) =>
     <Input type="textarea" placeholder="Textarea placeholder" />
   </Field>
 
+export const FieldTextareaError = (args) =>
+  <Field {...args}>
+    <Input type="textarea" placeholder="Textarea placeholder" />
+  </Field>
+FieldTextareaError.args = {
+  error: true
+}
+
 export const FieldSelect = (args) =>
   <Field {...args}>
     <Select options={[
@@ -78,6 +95,18 @@ export const FieldSelect = (args) =>
       { value: '3', label: 'Option 3' }
     ]} />
   </Field>
+
+export const FieldSelectError = (args) =>
+  <Field {...args}>
+    <Select options={[
+      { value: '1', label: 'Option 1' },
+      { value: '2', label: 'Option 2' },
+      { value: '3', label: 'Option 3' }
+    ]} />
+  </Field>
+FieldSelectError.args = {
+  error: true
+}
 
 export const reactHookFormsExample = () => {
   const onSubmit = (data) => setData(data)
