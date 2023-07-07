@@ -5,16 +5,20 @@ import cx from 'classnames'
 const SelectOption = ({ value, label, ...props }) =>  <option value={value} {...props}>{label}</option>
 
 const Select = forwardRef(({ options, error, className, ...props }, ref) => {
-  const styles = cx('ola_select', {'is-invalid': error}, className)
   return (
-    <select className={styles} ref={ref} {...props}>
-      { options.map( ({ value, label }, idx) => <SelectOption key={idx} value={value} label={label} /> ) }
+    <select
+      ref={ref}
+      className={cx('ola_select', {'is-invalid': error}, className)}
+      {...props}>
+      { options.map( (option, idx) => <SelectOption key={idx} {...option} /> ) }
     </select>
   )
 })
 
 Select.defaultProps = {
+  options: [],
   className: null,
+  error: false
 }
 
 Select.displayName = 'Select'
@@ -24,7 +28,7 @@ Select.propTypes = {
   options: PT.arrayOf(PT.shape({
     value: PT.any,
     label: PT.string
-  })).isRequired,
+  })),
   /** Extra className */
   className: PT.string,
   /** Select is invalid */
