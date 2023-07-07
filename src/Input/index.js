@@ -3,21 +3,14 @@ import { default as PT } from 'prop-types'
 import cx from 'classnames'
 
 const Input = React.forwardRef(({ className, error, type, ...props }, ref) => {
-  return type === 'textarea' ? (
-    <textarea
-      ref={ref}
-      type={type}
-      className={cx('ola_input', { 'is-invalid': error }, className)}
-      {...props}
-    />
-  ) : (
-    <input
-      type={type}
-      ref={ref}
-      className={cx('ola_input', { 'is-invalid': error }, className)}
-      {...props}
-    />
-  )
+  const Element = type === 'textarea' ? 'textarea' : 'input'
+
+  return <Element
+    ref={ref}
+    type={type}
+    className={cx('ola_input', { 'is-invalid': error }, className)}
+    {...props}
+  />
 })
 
 Input.defaultProps = {
