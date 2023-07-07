@@ -69,6 +69,6 @@
 textarea.ola_input {
     padding: var(--size-1) var(--size-2);
     height: auto;
-    min-height: var(--size-10);
     resize: vertical;
+    line-height: var(--size-3);
 }

@@ -5,9 +5,16 @@ import cx from 'classnames'
 const Input = React.forwardRef(({ className, error, type, ...props }, ref) => {
   const Element = type === 'textarea' ? 'textarea' : 'input'
 
+  if (type === 'textarea' && !props.rows) {
+    props.rows = 3
+  }
+
+  if (type !== 'textarea') {
+    props.type = type
+  }
+ 
   return <Element
     ref={ref}
-    type={type}
     className={cx('ola_input', { 'is-invalid': error }, className)}
     {...props}
   />
@@ -40,6 +47,7 @@ Input.propTypes = {
   className: PT.string,
   /** Input is invalid */
   error: PT.bool,
+  rows: PT.number,
 }
 
 Input.displayName = 'Input'
