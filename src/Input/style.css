@@ -1,63 +1,63 @@
 .ola_input {
-    --border: var(--color-neutral-400);
+    --border: var(--color-neutral-500);
     --color: var(--color-neutral-900);
     --background: var(--color-white);
-    --focus: var(--color-primary-100);
 
     display: block;
     box-sizing: border-box;
     height: var(--size-5);
     width: 100%;
-    border: solid 2px var(--border);
-    background: var(--color-white);
-    color: var(--color);
-    background-color: var(--background);
-    border-radius: var(--radius-s);
-    font: var(--font-1-regular);
-    padding: 0 1em;
+    padding: 0 var(--size-1);
     margin: 0;
+    border: solid 1px var(--border);
+    border-radius: var(--radius-s);
+    background-color: var(--background);
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: var(--duration);
     outline: 0;
+    font: var(--font-1-regular);
+    color: var(--color);
     text-decoration: none;
     font-weight: var(--font-weight-regular);
 
     &::placeholder {
-        color: var(--color-neutral-400);
+        color: var(--color-neutral-500);
         opacity: 1;
     }
 
     &:focus {
         --border: var(--color-primary-500);
-        box-shadow: 0 0 0 4px var(--focus);
+        box-shadow: var(--shadow-focus);
     }
 
     &:hover {
-        --border: var(--color-primary-600);
+        --border: var(--color-neutral-700);
     }
 
     &:invalid,
     &.is-invalid {
         --border: var(--color-negative-500);
-        --color: var(--color-negative-500);
-        box-shadow: none;
 
         &:focus {
-            box-shadow: 0 0 0 4px var(--color-negative-100);
+            box-shadow: var(--shadow-focus-negative);
         }
 
         &:hover {
-            --border: var(--color-negative-600);
+            --border: var(--color-negative-700);
         }
     }
 
     &:disabled {
-        --border: var(--color-neutral-200);
         --color: var(--color-neutral-400);
+        --background: var(--color-neutral-100);
         cursor: not-allowed;
 
         &::placeholder {
-            opacity: 0;
+            color: var(--color-neutral-300);
+        }
+
+        &:hover {
+            --border: var(--color-neutral-500);
         }
     }
 
@@ -67,8 +67,8 @@
 }
 
 textarea.ola_input {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: var(--size-1) var(--size-2);
     height: auto;
+    min-height: var(--size-10);
     resize: vertical;
 }
