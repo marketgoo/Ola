@@ -23,6 +23,11 @@ export default {
 
 export const InputBase = (args) => <Input {...args} />
 
+export const InputNumber = (args) => <Input {...args} />
+InputNumber.args = {
+  type: 'number',
+}
+
 export const InputError = (args) => <Input {...args} />
 InputError.args = {
   error: true,
