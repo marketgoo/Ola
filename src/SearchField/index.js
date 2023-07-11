@@ -42,7 +42,7 @@ const SearchField = ({
               className="ola_searchField-icon"
               disabled={disabled}
             >
-              <Icon name="search" />
+              <Icon name="search" size="small" />
             </ButtonIcon>
           )}
           {props?.value?.length > 0 && onRemove && (
@@ -50,7 +50,7 @@ const SearchField = ({
               className="ola_searchField-icon-close"
               onClick={onRemove}
             >
-              <Icon name="close" size="medium" />
+              <Icon name="close" size="small" />
             </ButtonIcon>
           )}
         </div>
