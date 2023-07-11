@@ -1,15 +1,17 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import { getElementType } from '../../utils'
 
 const SegmentButton = ({ className, onClick, as, selected, children, ...props }) => {
-  const styles = cx('ola_segment-button', {'is-selected': selected}, className)
-  const ComponentTag = as
+  const styles = cx('ola_segment-button', { 'is-selected': selected }, className)
+  const ElementType = getElementType(SegmentButton, { as, ...props })
+  delete props.as
 
   return (
-    <ComponentTag className={styles} onClick={onClick} {...props}>
+    <ElementType className={styles} onClick={onClick} {...props}>
       { children }
-    </ComponentTag>
+    </ElementType>
   )
 }
 
