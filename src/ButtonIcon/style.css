@@ -1,108 +1,58 @@
-.ola_buttonIcon {
-    --color: var(--color-neutral-700);
-    --background: transparent;
-    --color-hover: var(--color-neutral-900);
-    --background-hover: var(--color-neutral-200);
-    --shadow-focus: var(--color-accent-100);
-    --background-active: var(--color-neutral-400);
+.ola_button-icon {
+  --color: var(--base-color);
+  --background: transparent;
+  --background-hover: var(--color-neutral-100a);
 
-    display: inline-flex;
-    min-height: var(--size-3);
-    min-width: var(--size-3);
-    align-items: center;
-    justify-content: center;
-    background: none;
-    color: var(--color);
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    outline: 0;
-    vertical-align: middle;
+  display: inline-flex;
+  min-height: var(--size-4);
+  min-width: var(--size-4);
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--color);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  outline: 0;
+  vertical-align: middle;
+  border-radius: 50%;
+  transition: all var(--duration) ease-out;
 
-    &::-moz-focus-inner {
-        border: 0;
-    }
+  &::-moz-focus-inner {
+    border: 0;
+  }
 
-    & > svg {
-        display: block;
-        flex-shrink: 0;
-        max-height: 100%;
-        max-width: 100%;
-        border-radius: 50%;
-        fill: var(--color);
-        background-color: var(--background);
-        transition: background-color var(--duration);
-    }
+  & > svg {
+    fill: var(--color);
+    height: 18px;
+    width: 18px;
+  }
 
-    &:focus-visible svg {
-        fill: var(--color-hover);
-        box-shadow: 0 0 0 4px var(--shadow-focus);
-    }
+  &:focus-visible,
+  &:focus {
+    box-shadow: var(--shadow-focus);
+  }
 
-    &:hover svg {
-        fill: var(--color-hover);
-        background: var(--background-hover);
-    }
+  &:hover:not(:disabled) {
+    background-color: var(--background-hover);
+  }
 
-    &:active svg {
-        background: var(--background-active);
-    }
+  &.is-invert {
+    --color: var(--color-white);
+    --busy-color: var(--color-white);
+  }
 
-    & .ola_icon.is-small {
-        padding: var(--size-0);
-    }
-    & .ola_icon.is-medium,
-    & .ola_spinner {
-        padding: var(--size-1);
-    }
+  &.is-disabled {
+    --color: var(--disabled-color);
+  }
 
-    &.is-secondary {
-        --color: var(--color-neutral-400);
-    }
+  &.is-busy {
+    --color: var(--busy-color);
+  }
 
-    &.is-destructive {
-        --color: var(--color-negative-500);
-        --shadow-focus: var(--color-negative-100);
-        --color-hover: var(--color-negative-600);
-        --background-active: var(--color-negative-100);
-    }
-
-    &.is-chevron {
-        background-repeat: no-repeat;
-        background-position: right center;
-        padding-right: var(--size-4);
-        border-radius: var(--radius-xl);
-
-        /* Chevron gray */
-        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%2357657a"></path></svg>');
-    }
-
-    &.is-disabled,
-    &:disabled {
-        color: var(--color-neutral-200);
-        --background: var(--color-white);
-        --background-hover: var(--color-white);
-        --background-active: var(--color-white);
-        cursor: not-allowed;
-        pointer-events: none;
-        box-shadow: none;
-
-        &.is-chevron {
-            /* Chevron gray-xlight */
-            background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%23f0f2f4"></path></svg>');
-        }
-    }
-
-    &.is-busy {
-        color: var(--color-white);
-        background-color: var(--color-neutral-700);
-        min-width: 0;
-        cursor: wait;
-        pointer-events: none;
-
-        &.is-chevron {
-            background-image: none;
-        }
-    }
+  &.is-disabled,
+  &.is-busy {
+    cursor: default;
+  }
 }
 
