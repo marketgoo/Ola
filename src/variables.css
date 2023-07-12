@@ -279,7 +279,12 @@
     --drop-shadow-level-2: 0px 2px 6px #00000033; 
     --drop-shadow-level-3: 0px 4px 12px #00000033; 
     --shadow-focus: 0px 0px 0px 4px #0090DA59; 
+    --shadow-focus-primary: var(--shadow-focus); 
+    --shadow-focus-accent: var(--shadow-focus-primary); 
+    --shadow-focus-neutral: 0px 0px 0px 4px #8A99A859;
+    --shadow-focus-positive: 0px 0px 0px 4px #17AB4D59;
     --shadow-focus-negative: 0px 0px 0px 4px #DE022059;
+    --shadow-focus-warning: 0px 0px 0px 4px #D7800F59;
     --shadow-focus-pro: 0px 0px 0px 4px #AC18B459;
 
 
