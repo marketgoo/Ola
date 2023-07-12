@@ -5,7 +5,7 @@ import cx from 'classnames'
 import Icon from '../Icon'
 import Spinner from '../Spinner'
 
-const ButtonIcon = ({ as, className, busy, disabled, color, variant, invert, icon, children, ...props }) => {
+const ButtonIcon = ({ as, className, busy, disabled, color, variant, invert, icon, ...props }) => {
   const ElementType = getElementType(ButtonIcon, { as: as, ...props })
   delete props.as
 
