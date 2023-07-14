@@ -4,9 +4,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased]
+### Added
+- `Field` component now accepts a boolean property `counter` to display a counter in the right bottom corner.
+- `Input` component now accepts an `icon` property to display an icon in the right side.
+- `SegmentButton` component has been added to be included in the `Segment` component.
+- More `focus` css variables are available.
+
+### Changed
+- BREAKING CHANGES ❗️❗️
+- `Segment` component now only accepts `SegmentButton` components as children.
+- `ButtonIcon` component now doesn't accept children. It now accepts a `icon` property to pass the name of the Icon `<ButtonIcon icon="home" />`, or to pass an svg directly `<ButtonIcon icon={<Icon name="clock" />} />` ("Icon" is a component that renders an svg).
+
+### Fixed
+- Fix sizes of the left icon of SearchField component
+
 ## [1.0.0] - 2023-06-21
 ### Changed
+- BREAKING CHANGES ❗️❗️
 - Change all css tokens
+- Change css utils classes
 
 ## [0.16.1] - 2023-06-09
 ### Changed
