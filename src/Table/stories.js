@@ -1,10 +1,10 @@
 import React from 'react'
 import Table from './'
-import TableRow from './Row'
-import TableCell from './Cell'
+// import TableRow from './Row'
+// import TableCell from './Cell'
 import Button from '../Button'
 import ButtonIcon from '../ButtonIcon'
-import Check from '../Check'
+// import Check from '../Check'
 import Icon from '../Icon'
 
 const data = [
@@ -49,29 +49,43 @@ export default {
   }
 }
 
-export const Base = (args) => 
+export const Base = (args) =>
   <Table {...args}>
-    <thead>
-      <TableRow>
-        <TableCell header variant="check"></TableCell>
-        <TableCell header>Page</TableCell>
-        <TableCell header variant="numeric">Incoming links</TableCell>
-        <TableCell header variant="numeric">Popularity</TableCell>
-        <TableCell header>Page</TableCell>
-        <TableCell header variant="numeric">Incoming links</TableCell>
-        <TableCell header variant="numeric">Popularity</TableCell>
-      </TableRow>
-    </thead>
-    <tbody>
-      { data.map( (row, idx) => (
-        <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
-          <TableCell>{row.title}</TableCell>
-          <TableCell variant="numeric">{row.links}</TableCell>
-          <TableCell variant="numeric">{row.popularity}</TableCell>
-          <TableCell>{row.title}</TableCell>
-          <TableCell variant="numeric">{row.links}</TableCell>
-          <TableCell variant="numeric">{row.popularity}</TableCell>
-        </TableRow>
-      ) ) }
-    </tbody>
+    <Table.Head>
+      <Table.Row>
+        soy el header
+      </Table.Row>
+    </Table.Head>
+    <Table.Body>
+      <Table.Row>
+        soy el body
+      </Table.Row>
+    </Table.Body>
   </Table>
+
+// export const Base = (args) => 
+//   <Table {...args}>
+//     <thead>
+//       <TableRow>
+//         <TableCell header variant="check"></TableCell>
+//         <TableCell header>Page</TableCell>
+//         <TableCell header variant="numeric">Incoming links</TableCell>
+//         <TableCell header variant="numeric">Popularity</TableCell>
+//         <TableCell header>Page</TableCell>
+//         <TableCell header variant="numeric">Incoming links</TableCell>
+//         <TableCell header variant="numeric">Popularity</TableCell>
+//       </TableRow>
+//     </thead>
+//     <tbody>
+//       { data.map( (row, idx) => (
+//         <TableRow key={idx} check={<Check type="checkbox" name="foo" checked={row.checked} />} checked={row.checked}>
+//           <TableCell>{row.title}</TableCell>
+//           <TableCell variant="numeric">{row.links}</TableCell>
+//           <TableCell variant="numeric">{row.popularity}</TableCell>
+//           <TableCell>{row.title}</TableCell>
+//           <TableCell variant="numeric">{row.links}</TableCell>
+//           <TableCell variant="numeric">{row.popularity}</TableCell>
+//         </TableRow>
+//       ) ) }
+//     </tbody>
+//   </Table>
