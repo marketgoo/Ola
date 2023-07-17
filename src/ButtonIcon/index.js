@@ -14,7 +14,7 @@ const ButtonIcon = ({ as, className, busy, disabled, color, variant, invert, ico
   const iconElement = typeof icon === 'string' ? <Icon name={icon} /> : icon
 
   const styles = cx(
-    'ola_button-icon',
+    'ola_button_icon',
     `is-${variant}`,
     {'is-busy': busy},
     {'is-disabled': disabled && !busy},
