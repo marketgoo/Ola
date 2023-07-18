@@ -1,82 +1,102 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import TableHead from './components/TableHead'
-import TableBody from './components/TableBody'
 import TableRow from './components/TableRow'
+import TableCell from './components/TableCell'
+import { debounce } from '../utils'
 
 
-const Table = ({ caption, sticky, className, children }) => {
-  const arrChildren = React.Children.toArray(children)
-  
-  const thead = arrChildren.find(child => child.props.__type__ === 'TableHead')
-  const tbody = arrChildren.find(child => child.props.__type__ === 'TableBody')
+const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColumns, children }) => {
+  const [stickyStyles, setStickyStyles] = React.useState({})
+  const tableRef = useRef()
+  let numColumns = 0
+
+  const cloneChildren = React.Children.map(children, (child, index) => {
+    if (index === 0) {
+      numColumns = React.Children.count(child.props.children)
+      return React.cloneElement(child, { sticky: stickyHeader, stickyStyles, header: true })
+    }
+
+    return React.cloneElement(child, { sticky: false })
+  })
+
+  const handleScrollResize = debounce((e) => {
+    const eventType = e?.nativeEvent ? e?.nativeEvent.type : e?.type
+
+    const tableStyles = window.getComputedStyle(tableRef.current)
+    const nStickyStyles = {
+      ...stickyStyles,
+      top: e ? `${e.target.scrollTop}px` : '0'
+    }
+
+    if (!eventType || eventType === 'resize') {
+      const firstElements = Array.from(tableRef.current.querySelectorAll('.ola_table-cell:not(.is-header)')).slice(0, numColumns)
+      nStickyStyles.width = tableStyles.width
+      nStickyStyles.gridTemplateColumns = firstElements.map(elem => `${elem.offsetWidth}px`).join(' ')
+    }
+
+    setStickyStyles(nStickyStyles)
+  })
+
+  useEffect(() => {
+    if (stickyHeader) {
+      handleScrollResize()
+
+      window.addEventListener('resize', handleScrollResize)
+    }
+
+    return () => {
+      window.removeEventListener('resize', handleScrollResize)
+    }
+  }, [])
 
   return (
     <div className={
       cx(
         'ola_table-container',
-        { 'ola_table-sticky': sticky },
+        { 'is-sticky': stickyHeader },
         className)
-    }>
-      <div className='ola_table' role='table'>
-        {thead}
-        {tbody}
-        {caption && <div className='ola_table-caption'>{caption}</div>}
+    } onScroll={stickyHeader ? handleScrollResize : null}>
+      <div ref={tableRef} className='ola_table' role='table' style={{
+        '--min-width': minWidth,
+        '--max-height': maxHeight,
+        '--grid-template-columns': gridTemplateColumns || `repeat(${numColumns}, 1fr)`
+      }}>
+        {cloneChildren}
       </div>
     </div>
   )
 }
 
+Table.Cell = TableCell
 Table.Row = TableRow
-Table.Head = TableHead
-Table.Body = TableBody
 
 Table.defaultProps = {
-  caption: null,
   className: '',
-  sticky: false,
+  stickyHeader: false,
+  minWidth: '100%',
+  maxHeight: 'unset',
+  gridTemplateColumns: null
 }
 
 Table.propTypes = {
+  /**
+   * To overwrite the grid-template-columns. The default value is `repeat(NUM_COLUMNS, 1fr)`
+   * Accept any valid CSS [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) value. */
+  gridTemplateColumns: PT.string,
+  /** Minimum width of the table in css valid value */
+  minWidth: PT.string,
+  /** Maximun height of the table in css valid value */
+  maxHeight: PT.string,
   /** Table header is sticky */
-  sticky: PT.bool,
-  /** Table caption */
-  caption: PT.string,
+  stickyHeader: PT.bool,
   /** Extra className */
   className: PT.string,
-  /** Children nodes. Accepts a combination of a single TableHead, 
-   * and a single TableBody. All are optional. */
-  children: function(props, propName) {
-    const counts = {
-      TableHead: 0,
-      TableBody: 0,
-    }
-    let unnkownCount = 0
-    const accepts = Object.keys(counts)
-    
-    React.Children.forEach(props[propName], child => {
-      if (accepts.includes(child.props.__type__)) {
-        counts[child.props.__type__] += 1
-      } else {
-        unnkownCount += 1
-      }
-    })
-
-    let errors = []
-    Object.keys(counts).forEach(key => {
-      if (counts[key] > 1) {
-        errors.push(`Table has more than one ${key}`)
-      }
-    })
-    if (unnkownCount > 0) {
-      errors.push(`Table has components that are not ${accepts.join(', ')}`)
-    }
-
-    if (errors.length) {
-      return new Error(errors.join('\n'))
-    }
-  },
+  /** Children nodes. */
+  children: PT.oneOfType([
+    TableRow,
+    PT.arrayOf(TableRow),
+  ]).isRequired,
 }
 
 export default Table
