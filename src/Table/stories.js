@@ -1,95 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Table from './'
-import Button from '../Button'
 import ButtonIcon from '../ButtonIcon'
 import Check from '../Check'
 
-const data = [
-  {
-    title: 'Page title test',
-    links: 'holi',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 2',
-    links: '78854',
-    popularity: 'medium',
-    checked: true,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 3',
-    links: '2354689',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 4',
-    links: '7668132',
-    popularity: 'low',
-    checked: true,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 3',
-    links: '2354689',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 4',
-    links: '7668132',
-    popularity: 'low',
-    checked: true,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 3',
-    links: '2354689',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 4',
-    links: '7668132',
-    popularity: 'low',
-    checked: true,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 3',
-    links: '2354689',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 4',
-    links: '7668132',
-    popularity: 'low',
-    checked: true,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 3',
-    links: '2354689',
-    popularity: 'hight',
-    checked: false,
-    action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
-  },
-  {
-    title: 'Page title test 4',
-    links: '7668132',
-    popularity: 'low',
-    checked: true,
+const data = Array.from({ length: 12 }).map((_, index) => {
+  return {
+    id: index,
+    title: `Page title test ${index}`,
+    links: index * 2,
+    popularity: index % 2 === 0 ? 'hight' : index % 3 === 0 ? 'medium' : 'low',
+    checked: index % 3 === 0,
     action: <><ButtonIcon icon="success" color="positive" /><ButtonIcon icon="error" color="negative" /></>
   }
-]
+})
 
 export default {
   title: 'Table',
@@ -117,7 +40,9 @@ export const Base = (args) =>
     </Table.Row>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
-        <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={row.checked} />
+        </Table.Cell>
         <Table.Cell nowrap>{row.title}</Table.Cell>
         <Table.Cell>{row.links}</Table.Cell>
         <Table.Cell>{row.popularity}</Table.Cell>
@@ -125,6 +50,57 @@ export const Base = (args) =>
       </Table.Row>
     ))}
   </Table>
+
+
+export const CheckRowsExample = (args) => {
+  const [selected, setSelected] = useState(data.filter(item => item.checked).map(item => item.id))
+  const [allChecked, setAllChecked] = useState(false)
+
+  const localData = data.slice(0, 5)
+
+  return (
+    <Table {...args}>
+      <Table.Row>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={allChecked} onChange={
+            (e) => {
+              setAllChecked(e.target.checked)
+              setSelected(e.target.checked ? data.map(item => item.id) : [])
+            }
+          } />
+        </Table.Cell>
+        <Table.Cell nowrap>Title</Table.Cell>
+        <Table.Cell>Links</Table.Cell>
+        <Table.Cell>Popularity</Table.Cell>
+        <Table.Cell>Action</Table.Cell>
+      </Table.Row>
+      {localData.map((row, idx) => (
+        <Table.Row key={idx}>
+          <Table.Cell selected={selected.includes(row.id)}>
+            <Check type="checkbox" name="foo" checked={selected.includes(row.id)} onChange={
+              (e) => {
+                if (e.target.checked) {
+                  setSelected([...selected, row.id])
+                } else {
+                  setSelected(selected.filter(id => id !== row.id))
+                }
+
+                setAllChecked(selected.length === localData.length)
+              }
+            } />
+          </Table.Cell>
+          <Table.Cell selected={selected.includes(row.id)} nowrap>{row.title}</Table.Cell>
+          <Table.Cell selected={selected.includes(row.id)}>{row.links}</Table.Cell>
+          <Table.Cell selected={selected.includes(row.id)}>{row.popularity}</Table.Cell>
+          <Table.Cell selected={selected.includes(row.id)}>{row.action}</Table.Cell>
+        </Table.Row>
+      ))}
+    </Table>
+  )
+}
+CheckRowsExample.args = {
+  gridTemplateColumns: '60px 3fr 1fr 190px 2fr',
+}
 
 export const DisabledColumn = (args) =>
   <Table {...args}>
