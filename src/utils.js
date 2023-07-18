@@ -98,3 +98,12 @@ export function copyToClipboard(text) {
     document.body.removeChild(textArea)
   }
 }
+
+export function debounce(fn, timeout = 100){
+  let timer
+  return (...args) => {
+    if (!timer) { fn.apply(this, args) }
+    clearTimeout(timer)
+    timer = setTimeout(() => { timer = undefined }, timeout)
+  }
+}
