@@ -20,6 +20,7 @@ import Edit from './Edit'
 import Help from './Help'
 import Home from './Home'
 import InformationCircle from './InformationCircle'
+import Line from './Line'
 import Link from './Link'
 import NewWindow from './NewWindow'
 import Null from './Null'
@@ -46,11 +47,12 @@ export const ICONS = {
   clock: Clock,
   close: Close,
   copy: Copy,
-  error: Error,
   edit: Edit,
+  error: Error,
   help: Help,
   home: Home,
   informationCircle: InformationCircle,
+  line: Line,
   link: Link,
   newWindow: NewWindow,
   null: Null,
