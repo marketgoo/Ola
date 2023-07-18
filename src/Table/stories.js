@@ -126,6 +126,48 @@ export const Base = (args) =>
     ))}
   </Table>
 
+export const DisabledColumn = (args) =>
+  <Table {...args}>
+    <Table.Row>
+      <Table.Cell></Table.Cell>
+      <Table.Cell nowrap>Disabled Column</Table.Cell>
+      <Table.Cell>Links</Table.Cell>
+      <Table.Cell>Popularity</Table.Cell>
+      <Table.Cell>Action</Table.Cell>
+    </Table.Row>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
+        <Table.Cell nowrap disabled>{row.title}</Table.Cell>
+        <Table.Cell>{row.links}</Table.Cell>
+        <Table.Cell>{row.popularity}</Table.Cell>
+        <Table.Cell>{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+
+
+
+export const SelectedColumn = (args) =>
+  <Table {...args}>
+    <Table.Row>
+      <Table.Cell></Table.Cell>
+      <Table.Cell nowrap>Title</Table.Cell>
+      <Table.Cell>Selected Column</Table.Cell>
+      <Table.Cell>Popularity</Table.Cell>
+      <Table.Cell>Action</Table.Cell>
+    </Table.Row>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
+        <Table.Cell nowrap>{row.title}</Table.Cell>
+        <Table.Cell selected>{row.links}</Table.Cell>
+        <Table.Cell>{row.popularity}</Table.Cell>
+        <Table.Cell>{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+
 export const StickyHeader = (args) =>
   <Table {...args}>
     <Table.Row>
@@ -200,10 +242,10 @@ StickyHeaderHorizontalScroll.args = {
 
 export const CustomGridTemplate = (args) =>
   <>
-    <p><strong><code>gridTemplateColumns: "50px 3fr 1fr 190px 2fr"</code></strong></p>
+    <p><strong><code>gridTemplateColumns: "60px 3fr 1fr 190px 2fr"</code></strong></p>
     <Table {...args}>
       <Table.Row>
-        <Table.Cell>50px</Table.Cell>
+        <Table.Cell>60px</Table.Cell>
         <Table.Cell nowrap>3fr</Table.Cell>
         <Table.Cell>1fr</Table.Cell>
         <Table.Cell>190px</Table.Cell>
@@ -221,5 +263,5 @@ export const CustomGridTemplate = (args) =>
     </Table>
   </>
 CustomGridTemplate.args = {
-  gridTemplateColumns: '50px 3fr 1fr 190px 2fr',
+  gridTemplateColumns: '60px 3fr 1fr 190px 2fr',
 }
