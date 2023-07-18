@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Table 1`] = `
+<div
+  className="ola_table-container"
+  onScroll={null}
+>
+  <div
+    className="ola_table"
+    role="table"
+    style={
+      Object {
+        "--grid-template-columns": "repeat(5, 1fr)",
+        "--max-height": "unset",
+        "--min-width": "100%",
+      }
+    }
+  >
+    <div
+      className="ola_table-cell is-header"
+      role="cell"
+    >
+      <span />
+    </div>
+    <div
+      className="ola_table-cell is-header is-nowrap"
+      role="cell"
+    >
+      <span>
+        Title
+      </span>
+    </div>
+    <div
+      className="ola_table-cell is-header"
+      role="cell"
+    >
+      <span>
+        Links
+      </span>
+    </div>
+    <div
+      className="ola_table-cell is-header"
+      role="cell"
+    >
+      <span>
+        Popularity
+      </span>
+    </div>
+    <div
+      className="ola_table-cell is-header"
+      role="cell"
+    >
+      <span>
+        Action
+      </span>
+    </div>
+    <div
+      className="ola_table-cell"
+      role="cell"
+    >
+      <span>
+        Check
+      </span>
+    </div>
+    <div
+      className="ola_table-cell is-nowrap"
+      role="cell"
+    >
+      <span>
+        The title
+      </span>
+    </div>
+    <div
+      className="ola_table-cell"
+      role="cell"
+    >
+      <span>
+        The links
+      </span>
+    </div>
+    <div
+      className="ola_table-cell"
+      role="cell"
+    >
+      <span>
+        The popularity
+      </span>
+    </div>
+    <div
+      className="ola_table-cell"
+      role="cell"
+    >
+      <span>
+        The actions
+      </span>
+    </div>
+  </div>
+</div>
+`;
