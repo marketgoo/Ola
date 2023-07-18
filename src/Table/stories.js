@@ -23,6 +23,7 @@ export default {
     gridTemplateColumns: '',
     minWidth: '',
     maxHeight: '',
+    loading: false
   },
   argTypes: {
     children: { control: { disable: true }}
@@ -50,6 +51,31 @@ export const Base = (args) =>
       </Table.Row>
     ))}
   </Table>
+
+export const Loading = (args) =>
+  <Table {...args}>
+    <Table.Row>
+      <Table.Cell></Table.Cell>
+      <Table.Cell nowrap>Title</Table.Cell>
+      <Table.Cell>Links</Table.Cell>
+      <Table.Cell>Popularity</Table.Cell>
+      <Table.Cell>Action</Table.Cell>
+    </Table.Row>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={row.checked} />
+        </Table.Cell>
+        <Table.Cell nowrap>{row.title}</Table.Cell>
+        <Table.Cell>{row.links}</Table.Cell>
+        <Table.Cell>{row.popularity}</Table.Cell>
+        <Table.Cell>{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+Loading.args = {
+  loading: true
+}
 
 
 export const CheckRowsExample = (args) => {

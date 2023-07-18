@@ -6,7 +6,7 @@ import TableCell from './components/TableCell'
 import { debounce } from '../utils'
 
 
-const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColumns, children }) => {
+const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColumns, loading, children }) => {
   const [stickyStyles, setStickyStyles] = React.useState({})
   const tableRef = useRef()
   let numColumns = 0
@@ -17,7 +17,15 @@ const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColum
       return React.cloneElement(child, { sticky: stickyHeader, stickyStyles, header: true })
     }
 
-    return React.cloneElement(child, { sticky: false })
+    let childrenRow = child.props.children
+
+    if (loading) {
+      childrenRow = React.Children.map(child.props.children, (child) => {
+        return React.cloneElement(child, { loading: true })
+      })
+    }
+
+    return React.cloneElement(child, { sticky: false, children: childrenRow })
   })
 
   const handleScrollResize = debounce((e) => {
@@ -76,7 +84,8 @@ Table.defaultProps = {
   stickyHeader: false,
   minWidth: '100%',
   maxHeight: 'unset',
-  gridTemplateColumns: null
+  gridTemplateColumns: null,
+  loading: false
 }
 
 Table.propTypes = {
@@ -84,6 +93,8 @@ Table.propTypes = {
    * To overwrite the grid-template-columns. The default value is `repeat(NUM_COLUMNS, 1fr)`
    * Accept any valid CSS [grid-template-columns](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) value. */
   gridTemplateColumns: PT.string,
+  /** Set the status table as loading */
+  loading: PT.bool,
   /** Minimum width of the table in css valid value */
   minWidth: PT.string,
   /** Maximun height of the table in css valid value */
