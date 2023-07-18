@@ -1,7 +1,6 @@
 import React from 'react'
 import Keyword from './'
 import ButtonIcon from '../ButtonIcon'
-import Icon from '../Icon'
 import renderer from 'react-test-renderer'
 
 it('Default Keyword', () => {

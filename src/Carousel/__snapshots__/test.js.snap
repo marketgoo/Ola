@@ -19,7 +19,19 @@ exports[`Default Carousel 1`] = `
           "--shadow-focus": "var(--shadow-focus-neutral)",
         }
       }
-    />
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M12.414 14l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L12.414 14z"
+        />
+      </svg>
+    </button>
     <p>
       item 1
     </p>
@@ -35,7 +47,19 @@ exports[`Default Carousel 1`] = `
           "--shadow-focus": "var(--shadow-focus-neutral)",
         }
       }
-    />
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </button>
   </div>
   <div
     className="ola_carousel-dots"
@@ -71,7 +95,19 @@ exports[`Extra class Carousel 1`] = `
           "--shadow-focus": "var(--shadow-focus-neutral)",
         }
       }
-    />
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M12.414 14l5.293 5.293a1 1 0 0 1-1.414 1.414l-6-6a1 1 0 0 1 0-1.414l6-6a1 1 0 0 1 1.414 1.414L12.414 14z"
+        />
+      </svg>
+    </button>
     <p>
       item 1
     </p>
@@ -87,7 +123,19 @@ exports[`Extra class Carousel 1`] = `
           "--shadow-focus": "var(--shadow-focus-neutral)",
         }
       }
-    />
+    >
+      <svg
+        className="ola_icon is-medium"
+        fillRule="evenodd"
+        height="28"
+        viewBox="0 0 28 28"
+        width="28"
+      >
+        <path
+          d="M15.586 14l-5.293-5.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L15.586 14z"
+        />
+      </svg>
+    </button>
   </div>
   <div
     className="ola_carousel-dots"

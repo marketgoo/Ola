@@ -3,7 +3,6 @@ import cx from 'classnames'
 import {default as PT} from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
 import useEventListener from '../hooks/useEventListener'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
 const scrollBarWidth = getScrollbarWidth()

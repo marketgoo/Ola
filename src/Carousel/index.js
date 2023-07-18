@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 import cx from 'classnames'
 import {default as PT} from 'prop-types'

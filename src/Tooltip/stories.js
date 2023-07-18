@@ -2,7 +2,6 @@ import React from 'react'
 
 import Tooltip from './'
 import Button from '../Button'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
 export default {

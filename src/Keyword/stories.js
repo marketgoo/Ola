@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonIcon from '../ButtonIcon'
-import Icon from '../Icon'
 import Keyword from './'
 
 export default {

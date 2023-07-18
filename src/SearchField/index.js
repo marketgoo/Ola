@@ -4,7 +4,6 @@ import { default as PT } from 'prop-types'
 
 import Button from '../Button'
 import Input from '../Input'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 import Spinner from '../Spinner'
 
