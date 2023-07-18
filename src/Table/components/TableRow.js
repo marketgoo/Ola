@@ -1,6 +1,5 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import cx from 'classnames'
 import TableCell from './TableCell'
 
 const TableRow = ({ children, header, sticky, stickyStyles }) => {

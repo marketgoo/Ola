@@ -244,7 +244,7 @@ StickyHeaderHorizontalScroll.args = {
 
 export const CustomGridTemplate = (args) =>
   <>
-    <p><strong><code>gridTemplateColumns: "60px 3fr 1fr 190px 2fr"</code></strong></p>
+    <p><strong><code>gridTemplateColumns: &quot;60px 3fr 1fr 190px 2fr&quot;</code></strong></p>
     <Table {...args}>
       <Table.Row>
         <Table.Cell>60px</Table.Cell>
