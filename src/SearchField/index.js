@@ -38,20 +38,18 @@ const SearchField = ({
           ) : (
             <ButtonIcon
               tabIndex="-1"
-              variant="secondary"
+              color="neutral"
               className="ola_searchField-icon"
               disabled={disabled}
-            >
-              <Icon name="search" size="small" />
-            </ButtonIcon>
+              icon="search"
+            />
           )}
           {props?.value?.length > 0 && onRemove && (
             <ButtonIcon
               className="ola_searchField-icon-close"
               onClick={onRemove}
-            >
-              <Icon name="close" size="small" />
-            </ButtonIcon>
+              icon="close"
+            />
           )}
         </div>
         {textButton && (

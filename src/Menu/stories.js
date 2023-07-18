@@ -54,7 +54,7 @@ export const InMenu = () =>
   </Menu>
 
 export const InTooltip = () =>
-  <Tooltip trigger={<ButtonIcon as="span"><Icon name="user" /></ButtonIcon>}>
+  <Tooltip trigger={<ButtonIcon as="span" icon="user" />}>
     <Menu>
       <MenuOption>
         <Icon name="user" />

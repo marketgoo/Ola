@@ -26,9 +26,8 @@ const Carousel = ({ children, className }) => {
         <ButtonIcon
           onClick={() => moveNext(-1)}
           disabled={!canMoveLeft}
-        >
-          <Icon name="chevronLeft" size="big" />
-        </ButtonIcon>
+          icon="chevronLeft"
+        />
         {children.map((item, index) => {
           return index === itemSelected ? React.cloneElement(item, {
             key: index
@@ -37,9 +36,8 @@ const Carousel = ({ children, className }) => {
         <ButtonIcon
           onClick={() => moveNext()}
           disabled={!canMoveRight}
-        >
-          <Icon name="chevronRight" size="big" />
-        </ButtonIcon>
+          icon="chevronRight"
+        />
       </div>
       <div className="ola_carousel-dots">
         {children.map((item, i) => (

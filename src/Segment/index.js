@@ -24,8 +24,8 @@ Segment.propTypes = {
   className: PT.string,
   /** Child nodes */
   children: PT.oneOfType([
-    PT.instanceOf(Segment.Button),
-    PT.arrayOf(PT.instanceOf(Segment.Button)),
+    PT.shape({ type: PT.oneOf([Segment.Button]) }),
+    PT.arrayOf(PT.shape({ type: PT.oneOf([Segment.Button]) })),
   ]).isRequired
 }
 

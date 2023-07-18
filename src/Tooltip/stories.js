@@ -27,9 +27,7 @@ export const WithButtonIconHover = (args) => (
     {...args}
     hover
     trigger={
-      <ButtonIcon as="span">
-        <Icon name="help" />
-      </ButtonIcon>
+      <ButtonIcon as="span" icon="help" />
     }
   >
     Content
@@ -40,9 +38,7 @@ export const WithButtonIcon = (args) => (
   <Tooltip
     {...args}
     trigger={
-      <ButtonIcon as="span">
-        <Icon name="help" />
-      </ButtonIcon>
+      <ButtonIcon as="span" icon="help" />
     }
   >
     Content
@@ -75,9 +71,7 @@ export const InAScrollableElement = () => (
     <div style={{ padding: '300px' }}>
       <Tooltip
         trigger={
-          <ButtonIcon as="span">
-            <Icon name="help" />
-          </ButtonIcon>
+          <ButtonIcon as="span" icon="help" />
         }
       >
         Lorem ipsum

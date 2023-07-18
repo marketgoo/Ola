@@ -50,9 +50,7 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
         <>
           <div className="ola_modal-container">{children}</div>
           { closable &&
-          <ButtonIcon type="button" onClick={() => modal.current.close()} className={'ola_modal-close'}>
-            <Icon name="close" />
-          </ButtonIcon>
+          <ButtonIcon icon="close" onClick={() => modal.current.close()} className={'ola_modal-close'} />
           }
         </>
       }

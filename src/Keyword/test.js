@@ -15,6 +15,6 @@ it('Keyword with extraClass', () => {
 })
 
 it('Keyword with button', () => {
-  const tree = renderer.create(<Keyword className="test" button={<ButtonIcon><Icon name="close" size="small" /></ButtonIcon>}>Test</Keyword>).toJSON()
+  const tree = renderer.create(<Keyword className="test" button={<ButtonIcon icon="close" />}>Test</Keyword>).toJSON()
   expect(tree).toMatchSnapshot()
 })

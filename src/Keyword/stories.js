@@ -13,4 +13,4 @@ export default {
 
 export const Base = (args) => <Keyword {...args}>{args.children}</Keyword>
 
-export const WithButtonIcon = (args) => <Keyword {...args} button={<ButtonIcon><Icon name="close" size="small" /></ButtonIcon>}>{args.children}</Keyword>
+export const WithButtonIcon = (args) => <Keyword {...args} button={<ButtonIcon icon="close" />}>{args.children}</Keyword>
