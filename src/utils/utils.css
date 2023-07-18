@@ -397,17 +397,23 @@ td.ola-bg {
 .ola-skeleton {
     overflow: hidden;
 
+    & > :empty {
+      width: 100%;
+    }
+
     & > :empty::before {
         content: "\00a0";
         display: block;
         background-color: var(--color-neutral-200);
-        width: var(--skeleton-width, 5em);
-        height: var(--skeleton-height, 1em);
+        height: var(--size-3);
+        width: 100%;
+        max-width: 121px;
+        border-radius: var(--radius-s);
     }
 
     &.is-loading {
         & > :empty::before {
-            background: linear-gradient(to right, var(--color-neutral-200) 40%, var(--color-white), var(--color-neutral-200) 60%);
+            background: linear-gradient(to right, var(--color-neutral-300) 40%, var(--color-white), var(--color-neutral-300) 60%);
             background-size: 800px 100%;
             animation: loadingSkeleton 2s linear infinite;
         }
