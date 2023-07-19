@@ -3,6 +3,7 @@ import {default as PT} from 'prop-types'
 import cx from 'classnames'
 import TableRow from './components/TableRow'
 import TableCell from './components/TableCell'
+import TableHeader from './components/TableHeader'
 import { debounce } from '../utils'
 
 
@@ -11,10 +12,10 @@ const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColum
   const tableRef = useRef()
   let numColumns = 0
 
-  const cloneChildren = React.Children.map(children, (child, index) => {
-    if (index === 0) {
+  const cloneChildren = React.Children.map(children, (child) => {
+    if (child.props.__type__ === 'TableHeader') {
       numColumns = React.Children.count(child.props.children)
-      return React.cloneElement(child, { sticky: stickyHeader, stickyStyles, header: true })
+      return React.cloneElement(child, { sticky: stickyHeader, stickyStyles })
     }
 
     let childrenRow = child.props.children
@@ -25,7 +26,7 @@ const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColum
       })
     }
 
-    return React.cloneElement(child, { sticky: false, children: childrenRow })
+    return React.cloneElement(child, { sticky: false, children: childrenRow, header: false })
   })
 
   const handleScrollResize = debounce((e) => {
@@ -78,6 +79,7 @@ const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColum
 
 Table.Cell = TableCell
 Table.Row = TableRow
+Table.Header = TableHeader
 
 Table.defaultProps = {
   className: '',
@@ -107,6 +109,8 @@ Table.propTypes = {
   children: PT.oneOfType([
     TableRow,
     PT.arrayOf(TableRow),
+    TableHeader,
+    PT.arrayOf(TableHeader),
   ]).isRequired,
 }
 

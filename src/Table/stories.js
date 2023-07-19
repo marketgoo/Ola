@@ -15,7 +15,7 @@ const data = Array.from({ length: 12 }).map((_, index) => {
 })
 
 export default {
-  title: 'Table',
+  title: 'Table/Table',
   component: Table,
   args: {
     stickyHeader: false,
@@ -32,13 +32,13 @@ export default {
 
 export const Base = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell>
@@ -54,13 +54,13 @@ export const Base = (args) =>
 
 export const Loading = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell>
@@ -86,7 +86,7 @@ export const CheckRowsExample = (args) => {
 
   return (
     <Table {...args}>
-      <Table.Row>
+      <Table.Header>
         <Table.Cell>
           <Check type="checkbox" name="foo" checked={allChecked} onChange={
             (e) => {
@@ -99,7 +99,7 @@ export const CheckRowsExample = (args) => {
         <Table.Cell>Links</Table.Cell>
         <Table.Cell>Popularity</Table.Cell>
         <Table.Cell>Action</Table.Cell>
-      </Table.Row>
+      </Table.Header>
       {localData.map((row, idx) => (
         <Table.Row key={idx}>
           <Table.Cell selected={selected.includes(row.id)}>
@@ -130,13 +130,13 @@ CheckRowsExample.args = {
 
 export const DisabledColumn = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Disabled Column</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
@@ -152,13 +152,13 @@ export const DisabledColumn = (args) =>
 
 export const SelectedColumn = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Selected Column</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
@@ -172,13 +172,13 @@ export const SelectedColumn = (args) =>
 
 export const StickyHeader = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
@@ -196,13 +196,13 @@ StickyHeader.args = {
 
 export const HorizontalScroll = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
@@ -219,13 +219,13 @@ HorizontalScroll.args = {
 
 export const StickyHeaderHorizontalScroll = (args) =>
   <Table {...args}>
-    <Table.Row>
+    <Table.Header>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
       <Table.Cell>Popularity</Table.Cell>
       <Table.Cell>Action</Table.Cell>
-    </Table.Row>
+    </Table.Header>
     {data.map((row, idx) => (
       <Table.Row key={idx}>
         <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
@@ -246,13 +246,13 @@ export const CustomGridTemplate = (args) =>
   <>
     <p><strong><code>gridTemplateColumns: &quot;60px 3fr 1fr 190px 2fr&quot;</code></strong></p>
     <Table {...args}>
-      <Table.Row>
+      <Table.Header>
         <Table.Cell>60px</Table.Cell>
         <Table.Cell nowrap>3fr</Table.Cell>
         <Table.Cell>1fr</Table.Cell>
         <Table.Cell>190px</Table.Cell>
         <Table.Cell>2fr</Table.Cell>
-      </Table.Row>
+      </Table.Header>
       {data.slice(0, 5).map((row, idx) => (
         <Table.Row key={idx}>
           <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
