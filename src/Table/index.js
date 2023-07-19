@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import TableRow from './components/TableRow'
-import TableCell from './components/TableCell'
-import TableHeader from './components/TableHeader'
+import TableRow from './TableRow'
+import TableCell from './TableCell'
+import TableHeader from './TableHeader'
 import { debounce } from '../utils'
 
 

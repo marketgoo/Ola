@@ -1,6 +1,6 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import TableRow from './TableRow'
+import TableRow from '../TableRow'
 
 const TableHeader = ({ ...props }) => {
   return (

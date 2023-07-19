@@ -1,6 +1,6 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
-import TableCell from './TableCell'
+import TableCell from '../TableCell'
 
 const TableRow = ({ children, header, sticky, stickyStyles }) => {
   const cloneChildren = React.Children.map(children, child => {
