@@ -2,7 +2,7 @@ import React from 'react'
 import Segment from '../'
 
 export default {
-  title: 'Segment.Button',
+  title: 'Segment/Segment.Button',
   component: Segment.Button,
   args: {
     className: '',

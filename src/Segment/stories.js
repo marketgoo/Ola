@@ -2,7 +2,7 @@ import React from 'react'
 import Segment from './'
 
 export default {
-  title: 'Segment',
+  title: 'Segment/Segment',
   component: Segment,
   args: {
     className: '',
