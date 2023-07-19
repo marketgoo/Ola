@@ -49,7 +49,7 @@ ButtonIcon.defaultProps = {
 
 ButtonIcon.propTypes = {
   /** Name of the icon (see Ola Icon) or a svg direcly */
-  icon: PT.oneOf([
+  icon: PT.oneOfType([
     PT.string,
     PT.shape({
       type: PT.oneOf(['svg']),
