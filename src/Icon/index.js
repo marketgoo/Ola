@@ -6,8 +6,10 @@ import cx from 'classnames'
 import Add from './Add'
 import Analytics from './Analytics'
 import ArrowDown from './ArrowDown'
+import ArrowDownFill from './ArrowDownFill'
 import ArrowRight from './ArrowRight'
 import ArrowUp from './ArrowUp'
+import ArrowUpFill from './ArrowUpFill'
 import ChevronDown from './ChevronDown'
 import ChevronLeft from './ChevronLeft'
 import ChevronRight from './ChevronRight'
@@ -38,8 +40,10 @@ export const ICONS = {
   add: Add,
   analytics: Analytics,
   arrowDown: ArrowDown,
+  arrowDownFill: ArrowDownFill,
   arrowRight: ArrowRight,
   arrowUp: ArrowUp,
+  arrowUpFill: ArrowUpFill,
   chevronDown: ChevronDown,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
