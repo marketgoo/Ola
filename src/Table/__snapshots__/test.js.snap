@@ -10,20 +10,20 @@ exports[`Default Table 1`] = `
     role="table"
     style={
       Object {
-        "--grid-template-columns": "repeat(5, 1fr)",
+        "--grid-template-columns": "repeat(0, 1fr)",
         "--max-height": "unset",
         "--min-width": "100%",
       }
     }
   >
     <div
-      className="ola_table-cell is-header"
+      className="ola_table-cell"
       role="cell"
     >
       <span />
     </div>
     <div
-      className="ola_table-cell is-header is-nowrap"
+      className="ola_table-cell is-nowrap"
       role="cell"
     >
       <span>
@@ -31,7 +31,7 @@ exports[`Default Table 1`] = `
       </span>
     </div>
     <div
-      className="ola_table-cell is-header"
+      className="ola_table-cell"
       role="cell"
     >
       <span>
@@ -39,7 +39,7 @@ exports[`Default Table 1`] = `
       </span>
     </div>
     <div
-      className="ola_table-cell is-header"
+      className="ola_table-cell"
       role="cell"
     >
       <span>
@@ -47,7 +47,7 @@ exports[`Default Table 1`] = `
       </span>
     </div>
     <div
-      className="ola_table-cell is-header"
+      className="ola_table-cell"
       role="cell"
     >
       <span>
