@@ -5,7 +5,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Accordion',
@@ -13,7 +13,7 @@ export default [
     storybookLabelLink: 'Accordion',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Button',
@@ -21,7 +21,7 @@ export default [
     storybookLabelLink: 'Button',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -29,15 +29,16 @@ export default [
     storybookLabelLink: 'ButtonGroup',
     where: 'storybook',
     state: 'same',
-    coment: 'Not needed on Fimga',
+    comment: 'Not needed on Fimga',
   },
   {
     figmaLabel: 'ButtonIcon',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=2186-2537&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'ButtonIcon',
     storybookLabelLink: 'ButtonIcon',
     where: 'both',
-    state: 'different',
-    coment: 'Different variants, sizes, floating...',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -45,7 +46,7 @@ export default [
     storybookLabelLink: '',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -53,7 +54,7 @@ export default [
     storybookLabelLink: '',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -61,7 +62,7 @@ export default [
     storybookLabelLink: '',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Collapse',
@@ -69,7 +70,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Checkbox',
@@ -77,7 +78,7 @@ export default [
     storybookLabelLink: 'Check',
     where: 'both',
     state: 'same',
-    coment: 'In Figma we have indeterminate and error but is not needed now',
+    comment: 'In Figma we have indeterminate and error but is not needed now',
   },
   {
     figmaLabel: '-',
@@ -85,7 +86,7 @@ export default [
     storybookLabelLink: 'CheckGroup',
     where: 'storybook',
     state: 'same',
-    coment: 'Not needed on Figma',
+    comment: 'Not needed on Figma',
   },
   {
     figmaLabel: 'Divider',
@@ -93,7 +94,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Radio',
@@ -101,7 +102,7 @@ export default [
     storybookLabelLink: 'Check',
     where: 'both',
     state: 'same',
-    coment: 'In storybook is part of the checkbox component',
+    comment: 'In storybook is part of the checkbox component',
   },
   {
     figmaLabel: '-',
@@ -109,7 +110,7 @@ export default [
     storybookLabelLink: 'Device',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Empty state',
@@ -117,31 +118,34 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Field',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=1947-2415&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'Field',
     storybookLabelLink: 'Field',
     where: 'both',
-    state: 'different',
-    coment: 'Is not necessary',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: 'Input',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=1947-2415&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'Input',
     storybookLabelLink: 'Input',
     where: 'both',
-    state: 'different',
-    coment: 'Add icon and separate from field',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: 'Select',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=1947-2417&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'Select',
     storybookLabelLink: 'Select',
     where: 'both',
     state: 'different',
-    coment: 'Add tag and separate from field',
+    comment: 'Only multiselect is missing on Storybook. The rest is ok',
   },
   {
     figmaLabel: 'Icons',
@@ -149,7 +153,7 @@ export default [
     storybookLabelLink: 'Icon',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Issue',
@@ -157,7 +161,7 @@ export default [
     storybookLabelLink: 'IssueDropDown',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Keyword',
@@ -165,7 +169,7 @@ export default [
     storybookLabelLink: 'Keyword',
     where: 'both',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -173,7 +177,7 @@ export default [
     storybookLabelLink: 'Kpi',
     where: 'storybook',
     state: 'different',
-    coment: 'Metric and KPI',
+    comment: 'Metric and KPI',
   },
   {
     figmaLabel: 'Level',
@@ -181,7 +185,7 @@ export default [
     storybookLabelLink: 'Level',
     where: 'both',
     state: 'same',
-    coment: 'There are more sizes on Storybook but are not necessary now',
+    comment: 'There are more sizes on Storybook but are not necessary now',
   },
   {
     figmaLabel: 'Metric',
@@ -189,7 +193,7 @@ export default [
     storybookLabelLink: 'Metric',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Modal',
@@ -197,7 +201,7 @@ export default [
     storybookLabelLink: 'Modal',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'NavWP',
@@ -205,7 +209,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'NavApp & OptionApp & NavAccount',
@@ -213,7 +217,7 @@ export default [
     storybookLabelLink: '',
     where: 'both',
     state: 'different',
-    coment: 'Menu + MenuOption',
+    comment: 'Menu + MenuOption',
   },
   {
     figmaLabel: 'NavSide & OptionSide',
@@ -221,7 +225,7 @@ export default [
     storybookLabelLink: '',
     where: 'both',
     state: 'different',
-    coment: '-> Navigation',
+    comment: '-> Navigation',
   },
   {
     figmaLabel: 'Page',
@@ -229,7 +233,7 @@ export default [
     storybookLabelLink: 'Page',
     where: 'both',
     state: 'same',
-    coment: 'Will need states',
+    comment: 'Will need states',
   },
   {
     figmaLabel: '-',
@@ -237,7 +241,7 @@ export default [
     storybookLabelLink: 'Panel',
     where: 'storybook',
     state: 'different',
-    coment: 'Not needed on Figma',
+    comment: 'Not needed on Figma',
   },
   {
     figmaLabel: 'Pagination',
@@ -245,7 +249,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Progress Bar',
@@ -253,7 +257,7 @@ export default [
     storybookLabelLink: 'ProgessBar',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -261,7 +265,7 @@ export default [
     storybookLabelLink: 'ProgressCircle',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Score',
@@ -269,7 +273,7 @@ export default [
     storybookLabelLink: 'Score',
     where: 'both',
     state: 'different',
-    coment: 'Style',
+    comment: 'Style',
   },
   {
     figmaLabel: 'Search',
@@ -277,7 +281,7 @@ export default [
     storybookLabelLink: 'SearchField',
     where: 'both',
     state: 'different',
-    coment: 'Changes needed on Storybook',
+    comment: 'Changes needed on Storybook',
   },
   {
     figmaLabel: 'Section Header',
@@ -285,15 +289,16 @@ export default [
     storybookLabelLink: 'Section',
     where: 'both',
     state: 'same',
-    coment: 'It will need a buttonicon option on Storybook (not needed now)',
+    comment: 'It will need a buttonicon option on Storybook (not needed now)',
   },
   {
     figmaLabel: 'Segment',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=1947-2418&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'Segment',
     storybookLabelLink: 'Segment',
     where: 'both',
-    state: 'different',
-    coment: 'It will need one state for selected and hover. Error on focus',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: 'SpeedMeter',
@@ -301,7 +306,7 @@ export default [
     storybookLabelLink: 'SpeedMeter',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Spinner',
@@ -309,7 +314,7 @@ export default [
     storybookLabelLink: 'Spinner',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Stepper',
@@ -317,7 +322,7 @@ export default [
     storybookLabelLink: '',
     where: 'figma',
     state: 'different',
-    coment: 'Remove form Figma',
+    comment: 'Remove form Figma',
   },
   {
     figmaLabel: 'Switch',
@@ -325,15 +330,16 @@ export default [
     storybookLabelLink: 'Switch',
     where: 'both',
     state: 'same',
-    coment: 'Label and description',
+    comment: 'Label and description',
   },
   {
     figmaLabel: 'Table',
+    figmaLabelLink: 'https://www.figma.com/file/rYyXkYL8kUkbDW2sZJ9sLY/Ola-%5Bv2%5D?type=design&node-id=1820-3172&mode=design&t=sMhlHr3wN0UaB0a3-0',
     storybookLabel: 'Table',
     storybookLabelLink: 'Table',
     where: 'both',
-    state: 'different',
-    coment: 'Cells on Figma',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: 'Tabs',
@@ -341,7 +347,7 @@ export default [
     storybookLabelLink: 'Tabs',
     where: 'both',
     state: 'different',
-    coment: 'Will need more states. Review use',
+    comment: 'Will need more states. Review use',
   },
   {
     figmaLabel: 'Tag',
@@ -349,7 +355,7 @@ export default [
     storybookLabelLink: 'Tag',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: '-',
@@ -357,7 +363,7 @@ export default [
     storybookLabelLink: 'Task',
     where: 'storybook',
     state: 'different',
-    coment: 'Different between task and issue',
+    comment: 'Different between task and issue',
   },
   {
     figmaLabel: '-',
@@ -365,7 +371,7 @@ export default [
     storybookLabelLink: 'TaskGroup',
     where: 'storybook',
     state: 'different',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Thumbnail',
@@ -373,7 +379,7 @@ export default [
     storybookLabelLink: 'Thumbnail',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'Tooltip',
@@ -381,7 +387,7 @@ export default [
     storybookLabelLink: 'Tooltip',
     where: 'both',
     state: 'same',
-    coment: '',
+    comment: '',
   },
   {
     figmaLabel: 'TreeList Element',
@@ -389,6 +395,6 @@ export default [
     storybookLabelLink: 'TreeList',
     where: 'both',
     state: 'different',
-    coment: 'states and components inside',
+    comment: 'states and components inside',
   },
 ]
