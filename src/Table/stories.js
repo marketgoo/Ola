@@ -52,6 +52,28 @@ export const Base = (args) =>
     ))}
   </Table>
 
+export const OrderableHeaders = (args) =>
+  <Table {...args}>
+    <Table.Header>
+      <Table.Cell></Table.Cell>
+      <Table.Cell nowrap orderable direction="desc" onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Ordered Cell</Table.Cell>
+      <Table.Cell orderable onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Orderable Cell 1</Table.Cell>
+      <Table.Cell orderable onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Orderable Cell 2</Table.Cell>
+      <Table.Cell>Action</Table.Cell>
+    </Table.Header>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={row.checked} />
+        </Table.Cell>
+        <Table.Cell nowrap>{row.title}</Table.Cell>
+        <Table.Cell>{row.links}</Table.Cell>
+        <Table.Cell>{row.popularity}</Table.Cell>
+        <Table.Cell>{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+
 export const Loading = (args) =>
   <Table {...args}>
     <Table.Header>
@@ -127,27 +149,6 @@ export const CheckRowsExample = (args) => {
 CheckRowsExample.args = {
   gridTemplateColumns: '60px 3fr 1fr 190px 2fr',
 }
-
-export const DisabledColumn = (args) =>
-  <Table {...args}>
-    <Table.Header>
-      <Table.Cell></Table.Cell>
-      <Table.Cell nowrap>Disabled Column</Table.Cell>
-      <Table.Cell>Links</Table.Cell>
-      <Table.Cell>Popularity</Table.Cell>
-      <Table.Cell>Action</Table.Cell>
-    </Table.Header>
-    {data.slice(0, 5).map((row, idx) => (
-      <Table.Row key={idx}>
-        <Table.Cell><Check type="checkbox" name="foo" checked={row.checked} /></Table.Cell>
-        <Table.Cell nowrap disabled>{row.title}</Table.Cell>
-        <Table.Cell>{row.links}</Table.Cell>
-        <Table.Cell>{row.popularity}</Table.Cell>
-        <Table.Cell>{row.action}</Table.Cell>
-      </Table.Row>
-    ))}
-  </Table>
-
 
 
 export const SelectedColumn = (args) =>

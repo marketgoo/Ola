@@ -47,14 +47,37 @@
     white-space: nowrap;
   }
 
-  &:hover:not(.is-disabled), &.is-selected {
+  &:hover, &.is-selected {
     background-color: var(--color-neutral-100);
   }
 
-  &.is-disabled > * {
-    opacity: .5;
-    cursor: default;
-    user-select: none;
-    pointer-events: none;
+  &.is-orderable {
+    cursor: pointer;
+
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      & .ola_icon {
+        margin-left: var(--size-1);
+        transition: opacity var(--duration);
+        margin-top: 3px;
+      }
+    }
+  }
+
+  &.is-orderable:not(.is-ordered) {
+    & .ola_icon {
+      opacity: 0;
+    }
+  }
+
+  &.is-ordered,
+  &.is-orderable:not(.is-ordered):hover {
+    & .ola_icon {
+      opacity: 1;
+    }
   }
 }

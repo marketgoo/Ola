@@ -1,6 +1,5 @@
 import React from 'react'
 import Table from '../'
-import Check from '../../Check'
 
 export default {
   title: 'Table/Table.Cell',
@@ -8,7 +7,8 @@ export default {
   args: {
     nowrap: false,
     selected: false,
-    disabled: false
+    orderable: false,
+    direction: null
   },
   argTypes: {
     children: { control: false },
