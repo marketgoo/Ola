@@ -7,15 +7,23 @@ const TableRow = ({ children, header, sticky, stickyStyles, uuid }) => {
   const uuidGenerated = uuid || uuidv4()
 
   const cloneChildren = React.Children.map(children, child => {
-    return React.cloneElement(child, { header, 'data-row': uuidGenerated, onMouseEnter: () => {
-      document.querySelectorAll(`[data-row="${uuidGenerated}"]`).forEach(el => {
-        el.classList.add('is-hovered')
-      })
-    }, onMouseLeave: () => {
-      document.querySelectorAll(`[data-row="${uuidGenerated}"]`).forEach(el => {
-        el.classList.remove('is-hovered')
-      })
-    }})
+    const config = { header }
+
+    if (!header) {
+      config['data-row'] = uuidGenerated
+      config.onMouseEnter = () => {
+        document.querySelectorAll(`[data-row="${uuidGenerated}"]`).forEach(el => {
+          el.classList.add('is-hovered')
+        })
+      }
+      config.onMouseLeave = () => {
+        document.querySelectorAll(`[data-row="${uuidGenerated}"]`).forEach(el => {
+          el.classList.remove('is-hovered')
+        })
+      }
+    }
+
+    return React.cloneElement(child, config)
   })
 
   if (sticky) {

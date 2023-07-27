@@ -47,7 +47,7 @@
     white-space: nowrap;
   }
 
-  &:hover, &.is-selected, &.is-hovered:not(.is-header) {
+  &:not(.is-header):hover, &.is-selected, &.is-hovered:not(.is-header) {
     background-color: var(--color-neutral-100);
   }
 
