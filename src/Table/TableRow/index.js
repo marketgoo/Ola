@@ -1,10 +1,21 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import TableCell from '../TableCell'
+import { uuidv4 } from '../../utils'
 
 const TableRow = ({ children, header, sticky, stickyStyles }) => {
+  const uuid = uuidv4()
+
   const cloneChildren = React.Children.map(children, child => {
-    return React.cloneElement(child, { header })
+    return React.cloneElement(child, { header, 'data-row': uuid, onMouseEnter: () => {
+      document.querySelectorAll(`[data-row="${uuid}"]`).forEach(el => {
+        el.classList.add('is-hovered')
+      })
+    }, onMouseLeave: () => {
+      document.querySelectorAll(`[data-row="${uuid}"]`).forEach(el => {
+        el.classList.remove('is-hovered')
+      })
+    }})
   })
 
   if (sticky) {
