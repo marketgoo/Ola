@@ -6,7 +6,6 @@ import Button from '../Button'
 import ButtonIcon from '../ButtonIcon'
 
 import { useForm, Controller } from 'react-hook-form'
-import Icon from '../Icon'
 
 export default {
   title: 'Field',

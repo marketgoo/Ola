@@ -18,12 +18,18 @@ exports[`Default Table 1`] = `
   >
     <div
       className="ola_table-cell"
+      data-row="aaa"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span />
     </div>
     <div
       className="ola_table-cell is-nowrap"
+      data-row="aaa"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -32,6 +38,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="aaa"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -40,6 +49,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="aaa"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -48,6 +60,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="aaa"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -56,6 +71,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="bbb"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -64,6 +82,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell is-nowrap"
+      data-row="bbb"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -72,6 +93,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="bbb"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -80,6 +104,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="bbb"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>
@@ -88,6 +115,9 @@ exports[`Default Table 1`] = `
     </div>
     <div
       className="ola_table-cell"
+      data-row="bbb"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
       role="cell"
     >
       <span>

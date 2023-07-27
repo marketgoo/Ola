@@ -7,14 +7,14 @@ it('Default Table', () => {
   const tree = renderer
     .create(
       <Table>
-        <Table.Row>
+        <Table.Row uuid="aaa">
           <Table.Cell></Table.Cell>
           <Table.Cell nowrap>Title</Table.Cell>
           <Table.Cell>Links</Table.Cell>
           <Table.Cell>Popularity</Table.Cell>
           <Table.Cell>Action</Table.Cell>
         </Table.Row>
-        <Table.Row>
+        <Table.Row uuid="bbb">
           <Table.Cell>
             Check
           </Table.Cell>
