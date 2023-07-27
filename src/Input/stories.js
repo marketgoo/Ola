@@ -1,6 +1,7 @@
 import React from 'react'
 import Input from './'
 import Icon from '../Icon'
+import ButtonIcon from '../ButtonIcon'
 
 export default {
   title: 'Input',
@@ -13,13 +14,13 @@ export default {
     className: '',
     type: 'text',
     value: '',
-    icon: null
   },
   argTypes: {
     onClick: { action: 'clicked' },
     onFocus: { action: 'focused' },
     onBlur: { action: 'blurred' },
     onInput: { action: 'input' },
+    icon: { table: { disable: true }},
   },
 }
 
@@ -32,7 +33,7 @@ InputNumber.args = {
 
 export const InputIcon = (args) => <Input {...args} />
 InputIcon.args = {
-  icon: <Icon name="copy" />,
+  icon: <ButtonIcon icon="copy" />,
 }
 
 export const InputError = (args) => <Input {...args} />

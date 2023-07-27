@@ -3,6 +3,7 @@ import Field from './'
 import Input from '../Input'
 import Select from '../Select'
 import Button from '../Button'
+import ButtonIcon from '../ButtonIcon'
 
 import { useForm, Controller } from 'react-hook-form'
 import Icon from '../Icon'
@@ -71,7 +72,7 @@ FieldInputCounter.args = {
 
 export const FieldInputIcon = (args) =>
   <Field {...args}>
-    <Input placeholder="With Icon" icon={<Icon name="copy" />} />
+    <Input placeholder="With Icon" icon={<ButtonIcon icon="copy" />} />
   </Field>
 
 export const FieldTextarea = (args) =>
