@@ -8,17 +8,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - `Field` component now accepts a boolean property `counter` to display a counter in the right bottom corner.
 - `Input` component now accepts an `icon` property to display an icon in the right side.
+- `Input` component now accepts a `counter` property to display a letters counter.
 - `SegmentButton` component has been added to be included in the `Segment` component.
 - More `focus` css variables are available.
 - `debounce` function is available as util.
 - Added new icon `line`.
+- Added new icon `arrowDownFill` and `arrowUpFill`.
 
 ### Changed
 - BREAKING CHANGES ❗️❗️
 - `Segment` component now only accepts `SegmentButton` components as children.
 - `ButtonIcon` component now doesn't accept children. It now accepts a `icon` property to pass the name of the Icon `<ButtonIcon icon="home" />`, or to pass an svg directly `<ButtonIcon icon={<Icon name="clock" />} />` ("Icon" is a component that renders an svg).
-- `Table` completely changes its implementation. See new component documentation.
+- `Table` COMPLETELY CHANGES its implementation. See new component documentation.
 - `ola-skeleton is-loading` has style changes, such as `width`, `height`, `border-radius` or `color`, that may introduce visual modifications to your project if you are using it.
+- `Field`, `Input`, `Segment`, `Select` and `ButtonIcon` has style changes that may introduce visual modifications to your project if you are using it.
 
 ### Fixed
 - Fix sizes of the left icon of SearchField component
