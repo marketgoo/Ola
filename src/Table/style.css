@@ -60,7 +60,7 @@
       justify-content: space-between;
       width: 100%;
 
-      & .ola_icon {
+      & svg {
         margin-left: var(--size-1);
         transition: opacity var(--duration);
         margin-top: 3px;
@@ -69,14 +69,14 @@
   }
 
   &.is-orderable:not(.is-ordered) {
-    & .ola_icon {
+    & svg {
       opacity: 0;
     }
   }
 
   &.is-ordered,
   &.is-orderable:not(.is-ordered):hover {
-    & .ola_icon {
+    & svg {
       opacity: 1;
     }
   }

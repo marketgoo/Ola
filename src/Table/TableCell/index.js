@@ -1,17 +1,18 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
-import Icon from '../../Icon'
+import { CaretDown, CaretUp } from '@phosphor-icons/react'
 
 const TableCellOrder = ({ children, direction }) => {
   const icon = {
-    asc: 'arrowUpFill',
-    desc: 'arrowDownFill',
-    null: 'arrowDownFill',
+    asc: <CaretUp weight="fill" />,
+    desc: <CaretDown weight="fill" />,
   }
+  icon.null = icon.desc
+
   return (
     <>
-      {children} <Icon name={icon[direction]} size="small" />
+      {children} {icon[direction]}
     </>
   )
 }

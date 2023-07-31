@@ -56,7 +56,7 @@ export const OrderableHeaders = (args) =>
   <Table {...args}>
     <Table.Header>
       <Table.Cell></Table.Cell>
-      <Table.Cell nowrap orderable direction="desc" onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Ordered Cell</Table.Cell>
+      <Table.Cell nowrap orderable direction="asc" onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Ordered Cell</Table.Cell>
       <Table.Cell orderable onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Orderable Cell 1</Table.Cell>
       <Table.Cell orderable onClick={() => { alert('Hi! I\'m an orderable column. I\'m just listening onClick event') }}>Orderable Cell 2</Table.Cell>
       <Table.Cell>Action</Table.Cell>
