@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - BREAKING CHANGES ❗️❗️
 - `Segment` component now only accepts `SegmentButton` components as children.
 - `ButtonIcon` component now doesn't accept children. It now accepts a `icon` property to pass the name of the Icon `<ButtonIcon icon="home" />`, or to pass an svg directly `<ButtonIcon icon={<Icon name="clock" />} />` ("Icon" is a component that renders an svg).
+- `ButtonIcon` changed its class to `ola_button_icon` (instead `ola_buttonIcon`)
 - `Table` COMPLETELY CHANGES its implementation. See new component documentation.
 - `ola-skeleton is-loading` has style changes, such as `width`, `height`, `border-radius` or `color`, that may introduce visual modifications to your project if you are using it.
 - `Field`, `Input`, `Segment`, `Select` and `ButtonIcon` has style changes that may introduce visual modifications to your project if you are using it.
