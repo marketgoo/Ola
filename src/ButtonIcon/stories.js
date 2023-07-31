@@ -1,6 +1,6 @@
 import React from 'react'
 import ButtonIcon from './'
-import Icon from '../Icon'
+import { Copy, ShieldCheck, Airplane } from '@phosphor-icons/react'
 
 export default {
   title: 'ButtonIcon',
@@ -71,8 +71,9 @@ VariantDark.args = {
   variant: 'dark'
 }
 
-export const CustomIcon = (args) => <ButtonIcon {...args} />
-CustomIcon.args = {
-  icon: <Icon name="clock" />,
-  color: 'primary'
-}
+export const WithPhosphorIcons = (args) => <>
+  <ButtonIcon {...args} icon={<Copy />} color="primary" />
+  <ButtonIcon {...args} icon={<ShieldCheck />} color="positive" />
+  <ButtonIcon {...args} icon={<Airplane />} color="pro" />
+</>
+

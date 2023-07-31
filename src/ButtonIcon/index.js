@@ -48,7 +48,7 @@ ButtonIcon.defaultProps = {
 }
 
 ButtonIcon.propTypes = {
-  /** Name of the icon (see Ola Icon) or a svg direcly */
+  /** Name of the icon in this lib (see Ola Icon), or a svg direcly **(preferred a Phosphor Icon)** */
   icon: PT.oneOfType([
     PT.string,
     PT.shape({
