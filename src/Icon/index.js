@@ -6,10 +6,8 @@ import cx from 'classnames'
 import Add from './Add'
 import Analytics from './Analytics'
 import ArrowDown from './ArrowDown'
-import ArrowDownFill from './ArrowDownFill'
 import ArrowRight from './ArrowRight'
 import ArrowUp from './ArrowUp'
-import ArrowUpFill from './ArrowUpFill'
 import ChevronDown from './ChevronDown'
 import ChevronLeft from './ChevronLeft'
 import ChevronRight from './ChevronRight'
@@ -22,7 +20,6 @@ import Edit from './Edit'
 import Help from './Help'
 import Home from './Home'
 import InformationCircle from './InformationCircle'
-import Line from './Line'
 import Link from './Link'
 import NewWindow from './NewWindow'
 import Null from './Null'
@@ -40,10 +37,8 @@ export const ICONS = {
   add: Add,
   analytics: Analytics,
   arrowDown: ArrowDown,
-  arrowDownFill: ArrowDownFill,
   arrowRight: ArrowRight,
   arrowUp: ArrowUp,
-  arrowUpFill: ArrowUpFill,
   chevronDown: ChevronDown,
   chevronLeft: ChevronLeft,
   chevronRight: ChevronRight,
@@ -56,7 +51,6 @@ export const ICONS = {
   help: Help,
   home: Home,
   informationCircle: InformationCircle,
-  line: Line,
   link: Link,
   newWindow: NewWindow,
   null: Null,
