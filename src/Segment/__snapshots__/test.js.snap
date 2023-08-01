@@ -1,59 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Segment with two buttons 1`] = `
+exports[`Default Segment 1`] = `
 <nav
   className="ola_segment"
 >
   <button
-    aria-pressed={null}
-    className="ola_button is-secondary"
-    disabled={false}
+    className="ola_segment-button is-selected"
+    onClick={[Function]}
   >
-    <span
-      className="ola_button-text"
-    >
-      Main button
-    </span>
+    One &lt;Segment.Button&gt;
   </button>
   <button
-    aria-pressed={null}
-    className="ola_button is-secondary"
-    disabled={false}
+    className="ola_segment-button"
+    onClick={[Function]}
   >
-    <span
-      className="ola_button-text"
-    >
-      Secondary button
-    </span>
+    I am a button
   </button>
-</nav>
-`;
-
-exports[`Segment with two buttons and an extra class and one button pressed 1`] = `
-<nav
-  className="ola_segment extra-class"
->
-  <button
-    aria-pressed="true"
-    className="ola_button is-secondary"
-    disabled={false}
+  <a
+    className="ola_segment-button"
+    href="https://www.marketgoo.com/"
+    onClick={[Function]}
+    target="_blank"
   >
-    <span
-      className="ola_button-text"
-    >
-      Main button
-    </span>
-  </button>
-  <button
-    aria-pressed={null}
-    className="ola_button is-secondary"
-    disabled={false}
-  >
-    <span
-      className="ola_button-text"
-    >
-      Secondary button
-    </span>
-  </button>
+    I am an anchor
+  </a>
 </nav>
 `;

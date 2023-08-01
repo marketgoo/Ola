@@ -44,10 +44,17 @@ exports[`Default Modal 1`] = `
     </div>
   </div>
   <button
-    className="ola_buttonIcon is-primary ola_modal-close"
+    className="ola_button_icon is-regular ola_modal-close"
     disabled={false}
     onClick={[Function]}
-    type="button"
+    style={
+      Object {
+        "--base-color": "var(--color-neutral-500)",
+        "--busy-color": "var(--color-neutral-600)",
+        "--disabled-color": "var(--color-neutral-300)",
+        "--shadow-focus": "var(--shadow-focus-neutral)",
+      }
+    }
   >
     <svg
       className="ola_icon is-medium"

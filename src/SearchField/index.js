@@ -4,7 +4,6 @@ import { default as PT } from 'prop-types'
 
 import Button from '../Button'
 import Input from '../Input'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 import Spinner from '../Spinner'
 
@@ -38,20 +37,18 @@ const SearchField = ({
           ) : (
             <ButtonIcon
               tabIndex="-1"
-              variant="secondary"
+              color="neutral"
               className="ola_searchField-icon"
               disabled={disabled}
-            >
-              <Icon name="search" />
-            </ButtonIcon>
+              icon="search"
+            />
           )}
           {props?.value?.length > 0 && onRemove && (
             <ButtonIcon
               className="ola_searchField-icon-close"
               onClick={onRemove}
-            >
-              <Icon name="close" size="medium" />
-            </ButtonIcon>
+              icon="close"
+            />
           )}
         </div>
         {textButton && (

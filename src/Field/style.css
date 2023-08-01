@@ -6,42 +6,38 @@
 
         & .ola_field-label {
             cursor: inherit;
-            color: var(--color-neutral-400);
-        }
-        & .ola_field-hint,
-        & .ola_field-description {
-            visibility: hidden;
         }
     }
 }
 .ola_field-label {
     color: var(--color-neutral-900);
+    font: var(--font-1-bold);
     display: flex;
     justify-content: space-between;
-    font: var(--font-1-regular);
-    font-weight: var(--font-weight-bold);
     cursor: default;
 }
+
 .ola_field-hint {
-    font: var(--font-0-regular);
-    margin-left: 1em;
-    font-weight: var(--font-weight-regular);
     color: var(--color-neutral-700);
+    font: var(--font-0-regular);
+    margin-left: var(--size-2);
 }
+
 .ola_field-input {
     margin: var(--size-0) 0;
 }
+
 .ola_field-description,
 .ola_field-error {
     font: var(--font-0-regular);
-    margin-top: var(--size-0);
-    color: var(--color-neutral-700);
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.ola_field-description {
+    color: var(--color-neutral-600);
 }
 .ola_field-error {
     color: var(--color-negative-500);
 }
-.ola_field.is-invalid {
-    & .ola_field-label {
-        color: var(--color-negative-500);
-    }
-}
+

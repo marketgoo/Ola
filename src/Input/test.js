@@ -1,11 +1,11 @@
 import React from 'react'
-import ButtonIcon from './'
+import Input from './'
 import renderer from 'react-test-renderer'
 
-it('Default ButtonIcon', () => {
+it('Default Input', () => {
   const tree = renderer
     .create(
-      <ButtonIcon icon="success" color="positive" />
+      <Input placeholder="The placeholder" />
     )
     .toJSON()
 

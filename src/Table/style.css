@@ -1,142 +1,83 @@
 .ola_table-container {
-    overflow-x: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: auto;
+
+  &.is-sticky .ola_table {
+    padding-top: var(--size-7);
+  }
 }
+
 .ola_table {
-    font: var(--font-1-regular);
-    color: var(--color-neutral-700);
-    text-align: left;
-    width: 100%;
-    border-collapse: collapse;
-    position: relative;
-
-    & tr {
-        --table-background: var(--background, var(--color-white));
-        background: var(--table-background);
-    }
-
-    & td,
-    & th {
-        border: none;
-        height: var(--size-5);
-        background: var(--table-background);
-    }
-
-    & th {
-        font-weight: var(--font-weight-bold);
-        color: var(--color-neutral-900);
-        padding-left: var(--size-2);
-        padding-right: var(--size-2);
-
-        & > * {
-            vertical-align: middle;
-        }
-    }
-
-    & td {
-        padding: var(--size-1) var(--size-2);
-        border-top: solid 1px var(--color-neutral-200);
-    }
-
-    & tbody > tr:first-child td {
-      border-top: none;
-    }
-
-    & thead + tbody > tr:first-child td {
-        border-top: solid 1px var(--color-neutral-400);
-    }
-
-    & tbody > tr:last-child td {
-      border-bottom: solid 1px var(--color-neutral-200);
-    }
-
-    & caption {
-        font: var(--font-0-regular);
-        caption-side: bottom;
-        padding-top: var(--size-1);
-        text-align: right;
-        border-top: solid 1px var(--color-neutral-400);
-    }
-
-    &.is-sticky {
-        & thead {
-          & th {
-            position: sticky;
-            top: 0;
-          }
-        }
-    }
+  display: grid;
+  grid-template-columns: var(--grid-template-columns);
+  min-width: var(--min-width);
+  max-height: var(--max-height);
+  position: relative;
 }
 
-.ola_table-container.is-responsive {
+.ola_table-row {
+  &.is-sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    z-index: 50;
+  }
+}
+
+.ola_table-cell {
+  display: inline-flex;
+  align-items: center;
+  font: var(--font-1-regular);
+  border-bottom: 1px solid var(--color-neutral-200);
+  min-height: var(--size-7);
+  padding: 0 var(--size-2);
+  background-color: var(--color-white);
+  transition: all var(--duration);
+  
+  &.is-header {
+    font: var(--font-1-bold);
+    border-bottom: 1px solid var(--color-neutral-500);
+  }
+
+  &.is-nowrap,
+  &.is-header {
     white-space: nowrap;
-}
+  }
 
-.ola_tableRow {
-    &.is-selectable:hover td,
-    &.is-checked td {
-        --table-background: var(--color-neutral-200);
-        color: var(--color-neutral-900);
-    }
+  &:not(.is-header):hover, &.is-selected, &.is-hovered:not(.is-header) {
+    background-color: var(--color-neutral-100);
+  }
 
-    &.is-selectable {
-        & .ola_tableCell:last-child {
-            padding-right: var(--size-2);
-        }
+  &.is-orderable {
+    cursor: pointer;
 
-        & .ola_tableCell:first-child {
-            padding-left: var(--size-2);
-        }
-    }
-}
+    & > span {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
 
-.ola_tableCell {
-    &:first-child {
-        padding-left: 0;
+      & svg {
+        margin-left: var(--size-1);
+        transition: opacity var(--duration);
+        margin-top: 3px;
+      }
     }
-    &:last-child {
-        padding-right: 0;
-    }
+  }
 
-    &.is-left {
-        text-align: left;
+  &.is-orderable:not(.is-ordered) {
+    & svg {
+      opacity: 0;
     }
-    &.is-multiline {
-        white-space: normal;
-    }
-    &.is-right {
-        text-align: right;
-    }
-    &.is-center {
-        text-align: center;
-    }
-    &.is-numeric {
-        font-variant-numeric: tabular-nums;
-        text-align: right;
-    }
-    &.is-action {
-        text-align: center;
-        padding: 0;
-        position: sticky;
-        right: 0;
-        width: var(--size-5);
-        background: linear-gradient(var(--table-background), var(--table-background) var(--size-5)) no-repeat;
-        box-shadow: inset 1px 0 0 var(--color-neutral-200);
+  }
 
-        & .ola_buttonIcon {
-            margin: 0 var(--size-1);
-        }
-
-        & .ola_button {
-            margin-left: var(--size-1);
-            margin-right: var(--size-0);
-        }
+  &.is-ordered,
+  &.is-orderable:not(.is-ordered):hover {
+    & svg {
+      opacity: 1;
     }
-    &.is-check {
-        padding-left: var(--size-2);
-        width: var(--size-4);
-    }
-}
-th.ola_tableCell.is-action {
-    padding-right: var(--size-4);
-    box-shadow: none;
+  }
 }

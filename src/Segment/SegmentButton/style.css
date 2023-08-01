@@ -1,0 +1,36 @@
+.ola_segment-button {
+  border: none;
+  flex-shrink: 1;
+  min-height: 100%;
+  background-color: var(--color-white);
+  color: var(--color-neutral-700);
+  text-decoration: none;
+  font: var(--font-1-bold);
+  border-radius: var(--radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--size-3);
+  cursor: pointer;
+  transition: all var(--duration) ease-in;
+
+  &.is-selected {
+    background-color: var(--color-primary-500);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-primary-700);
+      color: var(--color-white);
+    }
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: var(--shadow-focus);
+  }
+
+  &:hover {
+    color: var(--color-neutral-900);
+    background-color: var(--color-neutral-100);
+  }
+}

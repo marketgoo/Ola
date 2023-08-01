@@ -3,7 +3,6 @@ import cx from 'classnames'
 import {default as PT} from 'prop-types'
 import dialogPolyfill from 'dialog-polyfill'
 import useEventListener from '../hooks/useEventListener'
-import Icon from '../Icon'
 import ButtonIcon from '../ButtonIcon'
 
 const scrollBarWidth = getScrollbarWidth()
@@ -50,9 +49,7 @@ const Modal = ({ open, closable, onClose, onOpen, variant, className, children, 
         <>
           <div className="ola_modal-container">{children}</div>
           { closable &&
-          <ButtonIcon type="button" onClick={() => modal.current.close()} className={'ola_modal-close'}>
-            <Icon name="close" />
-          </ButtonIcon>
+          <ButtonIcon icon="close" onClick={() => modal.current.close()} className={'ola_modal-close'} />
           }
         </>
       }
