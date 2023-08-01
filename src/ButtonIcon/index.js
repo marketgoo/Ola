@@ -9,7 +9,7 @@ const ButtonIcon = ({ as, className, busy, disabled, color, variant, invert, ico
   const ElementType = getElementType(ButtonIcon, { as: as, ...props })
   delete props.as
 
-  const variantNumber = variant === 'normal' ? '500' : '900'
+  const variantNumber = variant === 'regular' ? '500' : '900'
 
   const iconElement = typeof icon === 'string' ? <Icon name={icon} /> : icon
 
@@ -39,7 +39,7 @@ const ButtonIcon = ({ as, className, busy, disabled, color, variant, invert, ico
 
 ButtonIcon.defaultProps = {
   as: 'button',
-  variant: 'normal',
+  variant: 'regular',
   color: 'neutral',
   busy: false,
   disabled: false,
@@ -59,8 +59,8 @@ ButtonIcon.propTypes = {
   as: PT.string,
   /** Icon color */
   color: PT.oneOf(['primary', 'neutral', 'positive', 'negative', 'warning', 'pro', 'accent']),
-  /** Icon variant (normal=color-500, dark=color-900) */
-  variant: PT.oneOf(['normal', 'dark']),
+  /** Icon variant (regular=color-500, dark=color-900) */
+  variant: PT.oneOf(['regular', 'dark']),
   /** Extra className */
   className: PT.string,
   /** Button busy state */

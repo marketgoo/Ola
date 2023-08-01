@@ -9,7 +9,7 @@ export default {
     icon: 'home',
     color: 'neutral',
     as: 'button',
-    variant: 'normal',
+    variant: 'regular',
     invert: false,
     disabled: false,
     busy: false,
