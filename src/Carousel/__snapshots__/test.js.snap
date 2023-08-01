@@ -8,7 +8,7 @@ exports[`Default Carousel 1`] = `
     className="ola_carousel-container"
   >
     <button
-      className="ola_button_icon is-normal is-disabled"
+      className="ola_button_icon is-regular is-disabled"
       disabled={true}
       onClick={[Function]}
       style={
@@ -36,7 +36,7 @@ exports[`Default Carousel 1`] = `
       item 1
     </p>
     <button
-      className="ola_button_icon is-normal"
+      className="ola_button_icon is-regular"
       disabled={false}
       onClick={[Function]}
       style={
@@ -84,7 +84,7 @@ exports[`Extra class Carousel 1`] = `
     className="ola_carousel-container"
   >
     <button
-      className="ola_button_icon is-normal is-disabled"
+      className="ola_button_icon is-regular is-disabled"
       disabled={true}
       onClick={[Function]}
       style={
@@ -112,7 +112,7 @@ exports[`Extra class Carousel 1`] = `
       item 1
     </p>
     <button
-      className="ola_button_icon is-normal"
+      className="ola_button_icon is-regular"
       disabled={false}
       onClick={[Function]}
       style={

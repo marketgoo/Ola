@@ -2,7 +2,7 @@
 
 exports[`Default ButtonIcon 1`] = `
 <button
-  className="ola_button_icon is-normal"
+  className="ola_button_icon is-regular"
   disabled={false}
   style={
     Object {

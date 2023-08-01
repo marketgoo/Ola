@@ -44,7 +44,7 @@ exports[`Default Modal 1`] = `
     </div>
   </div>
   <button
-    className="ola_button_icon is-normal ola_modal-close"
+    className="ola_button_icon is-regular ola_modal-close"
     disabled={false}
     onClick={[Function]}
     style={

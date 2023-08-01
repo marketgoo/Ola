@@ -25,7 +25,7 @@ exports[`Keyword with button 1`] = `
     className="ola_keyword-button"
   >
     <button
-      className="ola_button_icon is-normal"
+      className="ola_button_icon is-regular"
       disabled={false}
       style={
         Object {
