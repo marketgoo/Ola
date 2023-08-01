@@ -1,8 +1,5 @@
 import React from 'react'
 import Table from './'
-import TableCell from './Cell'
-import TableRow from './Row'
-import Check from '../Check'
 import renderer from 'react-test-renderer'
 
 
@@ -10,128 +7,23 @@ it('Default Table', () => {
   const tree = renderer
     .create(
       <Table>
-        <tbody></tbody>
+        <Table.Row uuid="aaa">
+          <Table.Cell></Table.Cell>
+          <Table.Cell nowrap>Title</Table.Cell>
+          <Table.Cell>Links</Table.Cell>
+          <Table.Cell>Popularity</Table.Cell>
+          <Table.Cell>Action</Table.Cell>
+        </Table.Row>
+        <Table.Row uuid="bbb">
+          <Table.Cell>
+            Check
+          </Table.Cell>
+          <Table.Cell nowrap>The title</Table.Cell>
+          <Table.Cell>The links</Table.Cell>
+          <Table.Cell>The popularity</Table.Cell>
+          <Table.Cell>The actions</Table.Cell>
+        </Table.Row>
       </Table>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Table with extra class', () => {
-  const tree = renderer
-    .create(
-      <Table className="extra-class">
-        <tbody></tbody>
-      </Table>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Add caption', () => {
-  const tree = renderer
-    .create(
-      <Table caption="test caption">
-        <tbody></tbody>
-      </Table>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Can be stiky', () => {
-  const tree = renderer
-    .create(
-      <Table sticky>
-        <tbody></tbody>
-      </Table>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Can be responsive', () => {
-  const tree = renderer
-    .create(
-      <Table responsive>
-        <tbody></tbody>
-      </Table>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Default Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell>Test content</TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Header Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell header>Content</TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Empty Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell></TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('ColSpan Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell colSpan={8}></TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Numeric Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell variant="numeric">8</TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Align center Cell', () => {
-  const tree = renderer
-    .create(
-      <TableCell variant="center">Test content</TableCell>
-    )
-    .toJSON()
-
-  expect(tree).toMatchSnapshot()
-})
-
-it('Table row', () => {
-  const tree = renderer
-    .create(
-      <TableRow check={<Check></Check>}>
-        <TableCell>First column</TableCell>
-      </TableRow>
     )
     .toJSON()
 

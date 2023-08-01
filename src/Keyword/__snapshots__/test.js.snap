@@ -25,11 +25,19 @@ exports[`Keyword with button 1`] = `
     className="ola_keyword-button"
   >
     <button
-      className="ola_buttonIcon is-primary"
+      className="ola_button_icon is-regular"
       disabled={false}
+      style={
+        Object {
+          "--base-color": "var(--color-neutral-500)",
+          "--busy-color": "var(--color-neutral-600)",
+          "--disabled-color": "var(--color-neutral-300)",
+          "--shadow-focus": "var(--shadow-focus-neutral)",
+        }
+      }
     >
       <svg
-        className="ola_icon is-small"
+        className="ola_icon is-medium"
         fillRule="evenodd"
         height="28"
         viewBox="0 0 28 28"

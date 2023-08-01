@@ -26,6 +26,7 @@
 @import './SearchField/style.css';
 @import './Section/style.css';
 @import './Segment/style.css';
+@import './Segment/SegmentButton/style.css';
 @import './Select/style.css';
 @import './Spinner/style.css';
 @import './SpeedMeter/style.css';

@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonIcon from '../ButtonIcon'
-import Icon from '../Icon'
 import Keyword from './'
 
 export default {
@@ -13,4 +12,4 @@ export default {
 
 export const Base = (args) => <Keyword {...args}>{args.children}</Keyword>
 
-export const WithButtonIcon = (args) => <Keyword {...args} button={<ButtonIcon><Icon name="close" size="small" /></ButtonIcon>}>{args.children}</Keyword>
+export const WithButtonIcon = (args) => <Keyword {...args} button={<ButtonIcon icon="close" />}>{args.children}</Keyword>

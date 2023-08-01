@@ -1,61 +1,56 @@
 .ola_select {
-    display: block;
     appearance: none;
     box-sizing: border-box;
     height: var(--size-5);
     width: 100%;
-    border: solid 2px var(--color-neutral-400);
-    background: var(--color-white);
+    border: solid 1px var(--color-neutral-500);
     color: var(--color-neutral-900);
     background-color: var(--color-white);
-    /* Chevron gray-light */
-    background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%23BBC2CE"></path></svg>');
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path d="M26.7075 12.7101L16.7075 22.7101C16.6146 22.803 16.5043 22.8768 16.3829 22.9271C16.2615 22.9775 16.1314 23.0034 16 23.0034C15.8686 23.0034 15.7385 22.9775 15.6171 22.9271C15.4957 22.8768 15.3854 22.803 15.2925 22.7101L5.29251 12.7101C5.10487 12.5224 4.99945 12.2679 4.99945 12.0026C4.99945 11.7372 5.10487 11.4827 5.29251 11.2951C5.48015 11.1074 5.73464 11.002 6.00001 11.002C6.26537 11.002 6.51987 11.1074 6.70751 11.2951L16 20.5888L25.2925 11.2951C25.3854 11.2022 25.4957 11.1285 25.6171 11.0782C25.7385 11.0279 25.8686 11.002 26 11.002C26.1314 11.002 26.2615 11.0279 26.3829 11.0782C26.5043 11.1285 26.6146 11.2022 26.7075 11.2951C26.8004 11.388 26.8741 11.4983 26.9244 11.6197C26.9747 11.7411 27.0006 11.8712 27.0006 12.0026C27.0006 12.134 26.9747 12.2641 26.9244 12.3855C26.8741 12.5069 26.8004 12.6172 26.7075 12.7101Z" fill="black"/></svg>');
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: calc(100% - var(--size-1)) center;
+    background-size: var(--size-3);
     border-radius: var(--radius-s);
     font: var(--font-1-regular);
-    padding: 0 var(--size-5) 0 1em;
+    padding: 0 var(--size-6) 0 var(--size-2);
     transition-property: background-color, color, box-shadow, border-color;
     transition-duration: 200ms;
     outline: 0;
     white-space: nowrap;
     text-decoration: none;
-    font-weight: var(--font-weight-regular);
     cursor: initial;
     max-width: 100%;
 
     &:hover {
-        color: var(--color-neutral-900);
-        border-color: var(--color-primary-600);
+        border-color: var(--color-neutral-700);
     }
 
+    &:focus,
     &:focus-visible {
-        color: var(--color-neutral-900);
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path d="M26.7075 20.7101C26.6146 20.803 26.5043 20.8768 26.3829 20.9271C26.2615 20.9774 26.1314 21.0033 26 21.0033C25.8686 21.0033 25.7385 20.9774 25.6171 20.9271C25.4957 20.8768 25.3854 20.803 25.2925 20.7101L16 11.4163L6.70751 20.7101C6.51987 20.8977 6.26537 21.0031 6.00001 21.0031C5.73464 21.0031 5.48015 20.8977 5.29251 20.7101C5.10487 20.5224 4.99945 20.2679 4.99945 20.0026C4.99945 19.7372 5.10487 19.4827 5.29251 19.2951L15.2925 9.29506C15.3854 9.20208 15.4957 9.12832 15.6171 9.078C15.7385 9.02767 15.8686 9.00177 16 9.00177C16.1314 9.00177 16.2615 9.02767 16.3829 9.078C16.5043 9.12832 16.6146 9.20208 16.7075 9.29506L26.7075 19.2951C26.8005 19.3879 26.8742 19.4982 26.9246 19.6196C26.9749 19.741 27.0008 19.8711 27.0008 20.0026C27.0008 20.134 26.9749 20.2641 26.9246 20.3855C26.8742 20.5069 26.8005 20.6172 26.7075 20.7101Z" fill="black"/></svg>');
         border-color: var(--color-primary-500);
-        box-shadow: 0 0 0 4px var(--color-primary-100);
-
-        /* Chevron brand */
-        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M22,23.5857864 L27.2928932,18.2928932 C27.6834175,17.9023689 28.3165825,17.9023689 28.7071068,18.2928932 C29.0976311,18.6834175 29.0976311,19.3165825 28.7071068,19.7071068 L22.7071068,25.7071068 C22.3165825,26.0976311 21.6834175,26.0976311 21.2928932,25.7071068 L15.2928932,19.7071068 C14.9023689,19.3165825 14.9023689,18.6834175 15.2928932,18.2928932 C15.6834175,17.9023689 16.3165825,17.9023689 16.7071068,18.2928932 L22,23.5857864 Z" fill="%230090DA"></path></svg>');
+        box-shadow: var(--shadow-focus);
     }
 
     &:invalid,
     &.is-invalid {
-        color: var(--color-negative-500);
         border-color: var(--color-negative-500);
-        box-shadow: none;
 
+        &:focus,
         &:focus-visible {
-            box-shadow: 0 0 0 4px var(--color-negative-100);
+            box-shadow: var(--shadow-focus-negative);
+        }
+
+        &:hover {
+            border-color: var(--color-negative-700);
         }
     }
 
     &:disabled {
-        color: var(--color-neutral-400);
-        border-color: var(--color-neutral-200);
+        color: var(--color-neutral-300);
+        border-color: var(--color-neutral-300);
+        background-color: var(--color-neutral-100);
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none"><path d="M26.7075 12.7101L16.7075 22.7101C16.6146 22.803 16.5043 22.8768 16.3829 22.9271C16.2615 22.9775 16.1314 23.0034 16 23.0034C15.8686 23.0034 15.7385 22.9775 15.6171 22.9271C15.4957 22.8768 15.3854 22.803 15.2925 22.7101L5.29251 12.7101C5.10487 12.5224 4.99945 12.2679 4.99945 12.0026C4.99945 11.7372 5.10487 11.4827 5.29251 11.2951C5.48015 11.1074 5.73464 11.002 6.00001 11.002C6.26537 11.002 6.51987 11.1074 6.70751 11.2951L16 20.5888L25.2925 11.2951C25.3854 11.2022 25.4957 11.1285 25.6171 11.0782C25.7385 11.0279 25.8686 11.002 26 11.002C26.1314 11.002 26.2615 11.0279 26.3829 11.0782C26.5043 11.1285 26.6146 11.2022 26.7075 11.2951C26.8004 11.388 26.8741 11.4983 26.9244 11.6197C26.9747 11.7411 27.0006 11.8712 27.0006 12.0026C27.0006 12.134 26.9747 12.2641 26.9244 12.3855C26.8741 12.5069 26.8004 12.6172 26.7075 12.7101Z" fill="#C5CCD4"/></svg>');
         cursor: not-allowed;
-
-        &::placeholder {
-            opacity: 0;
-        }
     }
 }

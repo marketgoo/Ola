@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Input 1`] = `
+<input
+  className="ola_input"
+  placeholder="The placeholder"
+  type="text"
+/>
+`;

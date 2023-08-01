@@ -1,6 +1,5 @@
 import React from 'react'
 import ButtonIcon from '../ButtonIcon'
-import Icon from '../Icon'
 import Tag from './'
 
 export default {
@@ -13,4 +12,4 @@ export default {
 
 export const Base = (args) => <Tag {...args}>{args.children}</Tag>
 
-export const WithButtonIcon = (args) => <Tag {...args}>{args.children} <ButtonIcon><Icon name="close" size="small" /></ButtonIcon></Tag>
+export const WithButtonIcon = (args) => <Tag {...args}>{args.children} <ButtonIcon icon="close" /></Tag>

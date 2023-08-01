@@ -1,6 +1,7 @@
 import React from 'react'
 import {default as PT} from 'prop-types'
 import cx from 'classnames'
+import SegmentButton from './SegmentButton'
 
 const Segment = ({ className, children, ...props }) => {
   const styles = cx('ola_segment', className)
@@ -12,6 +13,8 @@ const Segment = ({ className, children, ...props }) => {
   )
 }
 
+Segment.Button = SegmentButton
+
 Segment.defaultProps = {
   className: null
 }
@@ -19,11 +22,10 @@ Segment.defaultProps = {
 Segment.propTypes = {
   /** Extra className */
   className: PT.string,
-  /** Childen nodes */
+  /** Child nodes */
   children: PT.oneOfType([
-    PT.string,
-    PT.arrayOf(PT.node),
-    PT.node
+    PT.shape({ type: PT.oneOf([Segment.Button]) }),
+    PT.arrayOf(PT.shape({ type: PT.oneOf([Segment.Button]) })),
   ]).isRequired
 }
 
