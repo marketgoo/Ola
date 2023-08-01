@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [2.0.0] - 2023-08-01
 ### Added
 - `Field` component now accepts a boolean property `counter` to display a counter in the right bottom corner.
 - `Input` component now accepts an `icon` property to display an icon in the right side.
@@ -679,6 +679,7 @@ Added `Edit` to `Icon` component
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
+[2.0.0]: https://github.com/marketgoo/Ola/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/marketgoo/Ola/compare/v0.16.1...v1.0.0
 [0.16.1]: https://github.com/marketgoo/Ola/compare/v0.16.0...v0.16.1
 [0.16.0]: https://github.com/marketgoo/Ola/compare/v0.15.10...v0.16.0
