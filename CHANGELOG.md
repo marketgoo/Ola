@@ -12,8 +12,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - `SegmentButton` component has been added to be included in the `Segment` component.
 - More `focus` css variables are available.
 - `debounce` function is available as util.
-- Added new icon `line`.
-- Added new icon `arrowDownFill` and `arrowUpFill`.
 
 ### Changed
 - BREAKING CHANGES ❗️❗️
