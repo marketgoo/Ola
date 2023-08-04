@@ -10,10 +10,10 @@ export default {
       { value: 'chocolate', label: 'Chocolate' },
       { value: 'strawberry', label: 'Strawberry' },
       { value: 'vanilla', label: 'Vanilla' },
-      { value: '', label: 'None' }
     ],
     disabled: false,
-    error: false
+    error: false,
+    multiple: true
   },
   argTypes: {
     onClick: { action: 'clicked' },
