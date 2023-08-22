@@ -1,6 +1,6 @@
 {
   "name": "@marketgoo/ola",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Design System by marketgoo",
   "main": "dist/index.js",
   "styles": "dist/index.css",
@@ -76,7 +76,7 @@
     "react-test-renderer": "^16.13.1"
   },
   "dependencies": {
-    "@phosphor-icons/react": "^2.0.10",
+    "@phosphor-icons/react": "2.0.9",
     "classnames": "^2.2.6",
     "dialog-polyfill": "^0.5.3",
     "react-hook-form": "^7.21.0"
