@@ -3,11 +3,15 @@ import {default as PT} from 'prop-types'
 import TableCell from '../TableCell'
 import { uuidv4 } from '../../utils'
 
-const TableRow = ({ children, header, sticky, stickyStyles, uuid }) => {
+const TableRow = ({ children, header, sticky, stickyStyles, uuid, onClick }) => {
   const uuidGenerated = uuid || uuidv4()
 
   const cloneChildren = React.Children.map(children, child => {
     const config = { header }
+
+    if (onClick) {
+      config.onClick = onClick
+    }
 
     if (!header) {
       config['data-row'] = uuidGenerated
@@ -44,7 +48,8 @@ TableRow.defaultProps = {
   header: false,
   sticky: false,
   stickyStyles: {},
-  uuid: null
+  uuid: null,
+  onClick: null,
 }
 
 TableRow.propTypes = {
@@ -53,6 +58,7 @@ TableRow.propTypes = {
   stickyStyles: PT.object,
   /** Indicates if the row is a header row */
   header: PT.bool,
+  onClick: PT.func,
   /** Child nodes */
   children: PT.oneOfType([
     TableCell,
