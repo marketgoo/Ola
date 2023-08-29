@@ -33,12 +33,18 @@ const Field = ({ id, label, hint, counter, error, description, disabled, classNa
         {React.cloneElement(elements.shift(), extendChildProps)}
       </div>
       {elements}
-      {description && <p className={cx({ 'ola_field-error': error, 'ola_field-description': !error })}>
-        {description}
-        {
-          counter && childProps.maxLength && <span className="ola_field-counter">{localValue.length}/{childProps.maxLength}</span>
-        }
-      </p>}
+      {
+        description || (counter && childProps.maxLength)
+          ? (
+            <p className={cx({ 'ola_field-error': error, 'ola_field-description': !error })}>
+              {description && <span>{description}</span>}
+              {
+                counter && childProps.maxLength && <span className="ola_field-counter">{localValue.length}/{childProps.maxLength}</span>
+              }
+            </p>
+          )
+          : <></>
+      }
     </div>
   )
 }
