@@ -36,6 +36,16 @@
   padding: 0 var(--size-2);
   background-color: var(--color-white);
   transition: all var(--duration);
+
+  &.is-align--left {
+    justify-content: flex-start;
+  }
+  &.is-align--center {
+    justify-content: center;
+  }
+  &.is-align--right {
+    justify-content: right;
+  }
   
   &.is-header {
     font: var(--font-1-bold);
