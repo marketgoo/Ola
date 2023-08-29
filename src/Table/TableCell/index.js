@@ -17,10 +17,20 @@ const TableCellOrder = ({ children, direction }) => {
   )
 }
 
-const TableCell = ({ children, header, nowrap, selected, loading, orderable, direction, className, ...props }) => {
+const TableCell = ({
+  children,
+  header,
+  nowrap,
+  selected,
+  loading,
+  orderable,
+  direction,
+  align,
+  className,
+  ...props }) => {
   return (
     <div
-      className={cx('ola_table-cell', {
+      className={cx('ola_table-cell', `is-align--${align}`, {
         'is-header': header,
         'is-nowrap': nowrap,
         'is-selected': selected,
@@ -48,6 +58,7 @@ TableCell.defaultProps = {
   loading: false,
   orderable: false,
   direction: null,
+  align: 'left',
   className: ''
 }
 
@@ -64,6 +75,8 @@ TableCell.propTypes = {
   orderable: PT.bool,
   /** Order direction */
   direction: PT.oneOf(['asc', 'desc']),
+  /** Alignment */
+  align: PT.oneOf(['left', 'center', 'right']),
   /** Extra className */
   className: PT.string,
   /** Child nodes */
