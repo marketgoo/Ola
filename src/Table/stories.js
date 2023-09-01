@@ -52,6 +52,21 @@ export const Base = (args) =>
     ))}
   </Table>
 
+export const NoHeader = (args) =>
+  <Table {...args}>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={row.checked} />
+        </Table.Cell>
+        <Table.Cell nowrap>{row.title}</Table.Cell>
+        <Table.Cell>{row.links}</Table.Cell>
+        <Table.Cell align="center">{row.popularity}</Table.Cell>
+        <Table.Cell align="right">{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+
 export const OrderableHeaders = (args) =>
   <Table {...args}>
     <Table.Header>
