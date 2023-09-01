@@ -29,6 +29,12 @@ const Table = ({ stickyHeader, minWidth, maxHeight, className, gridTemplateColum
     return React.cloneElement(child, { sticky: false, children: childrenRow, header: false })
   })
 
+  if (numColumns === 0) {
+    numColumns = React.Children.toArray(cloneChildren).length ? React.Children.count(
+      React.Children.toArray(cloneChildren)[0].props.children
+    ) : 0
+  }
+
   const handleScrollResize = debounce((e) => {
     const eventType = e?.nativeEvent ? e?.nativeEvent.type : e?.type
 
