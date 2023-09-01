@@ -10,7 +10,7 @@ exports[`Default Table 1`] = `
     role="table"
     style={
       Object {
-        "--grid-template-columns": "repeat(0, 1fr)",
+        "--grid-template-columns": "repeat(5, 1fr)",
         "--max-height": "unset",
         "--min-width": "100%",
       }
