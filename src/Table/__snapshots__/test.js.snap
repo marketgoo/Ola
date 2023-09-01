@@ -22,6 +22,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span />
     </div>
@@ -31,6 +36,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Title
@@ -42,6 +52,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Links
@@ -53,6 +68,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Popularity
@@ -64,6 +84,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Action
@@ -75,6 +100,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Check
@@ -86,6 +116,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The title
@@ -97,6 +132,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The links
@@ -108,6 +148,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The popularity
@@ -119,6 +164,11 @@ exports[`Default Table 1`] = `
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The actions
