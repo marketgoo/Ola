@@ -27,6 +27,7 @@ const TableCell = ({
   direction,
   align,
   className,
+  padding,
   ...props }) => {
   return (
     <div
@@ -38,6 +39,9 @@ const TableCell = ({
         'is-ordered': !!direction,
         'ola-skeleton is-loading': loading
       }, className)}
+      style={{
+        'padding': padding
+      }}
       role="cell"
       {...props}>
       <span>{
@@ -59,7 +63,8 @@ TableCell.defaultProps = {
   orderable: false,
   direction: null,
   align: 'left',
-  className: ''
+  className: '',
+  padding: '0 var(--size-2)',
 }
 
 TableCell.propTypes = {
@@ -79,6 +84,8 @@ TableCell.propTypes = {
   align: PT.oneOf(['left', 'center', 'right']),
   /** Extra className */
   className: PT.string,
+  /** Padding in css unit. Default "0 var(--size-2)" */
+  padding: PT.string,
   /** Child nodes */
   children: PT.oneOfType([
     PT.string,
