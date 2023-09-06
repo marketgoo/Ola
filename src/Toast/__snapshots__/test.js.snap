@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Toast 1`] = `
+<div
+  className="ola_toast is-neutral"
+  style={
+    Object {
+      "--bottom": "unset",
+      "--left": "unset",
+      "--right": "24px",
+      "--top": "24px",
+    }
+  }
+>
+  <div
+    className="ola_toast-container"
+  >
+    <div
+      className="ola_toast-icon"
+    >
+      <svg
+        fill="currentColor"
+        height={24}
+        viewBox="0 0 256 256"
+        width={24}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,168a12,12,0,1,1,12-12A12,12,0,0,1,128,192Zm8-48.72V144a8,8,0,0,1-16,0v-8a8,8,0,0,1,8-8c13.23,0,24-9,24-20s-10.77-20-24-20-24,9-24,20v4a8,8,0,0,1-16,0v-4c0-19.85,17.94-36,40-36s40,16.15,40,36C168,125.38,154.24,139.93,136,143.28Z"
+        />
+      </svg>
+    </div>
+    <div
+      className="ola_toast-content"
+    >
+      <div
+        className="ola_toast-title ola-font-1-bold"
+      >
+        This is the title
+      </div>
+    </div>
+    <div
+      className="ola_toast-close"
+    >
+      <button
+        className="ola_button_icon is-dark"
+        disabled={false}
+        size="small"
+        style={
+          Object {
+            "--base-color": "var(--color-neutral-900)",
+            "--busy-color": "var(--color-neutral-600)",
+            "--disabled-color": "var(--color-neutral-300)",
+            "--shadow-focus": "var(--shadow-focus-neutral)",
+          }
+        }
+      >
+        <svg
+          className="ola_icon is-medium"
+          fillRule="evenodd"
+          height="28"
+          viewBox="0 0 28 28"
+          width="28"
+        >
+          <path
+            d="M22.92 4c.296 0 .55.105.762.314.212.21.318.462.318.758s-.106.55-.318.762l-8.17 8.174 8.17 8.166c.212.212.318.464.318.754 0 .296-.106.549-.318.758-.212.21-.466.314-.762.314s-.547-.103-.753-.31l-8.171-8.166-8.163 8.166c-.206.207-.46.31-.761.31a1.04 1.04 0 0 1-.758-.31A1.02 1.02 0 0 1 4 22.936c0-.301.103-.555.31-.762l8.17-8.166-8.17-8.174A1.026 1.026 0 0 1 4 5.08c0-.296.105-.55.314-.762.21-.212.462-.318.758-.318.295 0 .55.106.761.318l8.163 8.174 8.17-8.174A1.03 1.03 0 0 1 22.92 4z"
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+`;
