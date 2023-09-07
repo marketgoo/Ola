@@ -12,6 +12,7 @@
   background-color: var(--background-color);
   max-width: 620px;
   width: fit-content;
+  box-shadow: 0px 2px 6px 0.2px rgba(0, 0, 0, 0.2);
   & .ola_toast-container {
     position: relative;
     display: flex;
