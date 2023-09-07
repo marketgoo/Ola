@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.1.4] - 2023-09-07
+### Added
+- New component `Toast`.
+
 ## [2.0.1] - 2023-08-22
 ### Fixed
 - Downgrade the `@phosphor-icons/react` version to `2.0.9` because `2.0.10` is not compatible with ES Modules.
@@ -681,6 +685,7 @@ Added `Edit` to `Icon` component
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
+[2.1.4]: https://github.com/marketgoo/Ola/compare/v2.0.1...v2.1.4
 [2.0.1]: https://github.com/marketgoo/Ola/compare/v2.0.0...v2.0.1
 [2.0.0]: https://github.com/marketgoo/Ola/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/marketgoo/Ola/compare/v0.16.1...v1.0.0
