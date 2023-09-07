@@ -33,17 +33,32 @@
   font: var(--font-1-regular);
   border-bottom: 1px solid var(--color-neutral-200);
   min-height: var(--size-7);
-  padding: 0 var(--size-2);
   background-color: var(--color-white);
   transition: all var(--duration);
+
+  & > span {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &.is-align--left > span {
+    justify-content: flex-start;
+  }
+  &.is-align--center > span {
+    justify-content: center;
+  }
+  &.is-align--right > span {
+    justify-content: right;
+  }
   
   &.is-header {
     font: var(--font-1-bold);
     border-bottom: 1px solid var(--color-neutral-500);
   }
 
-  &.is-nowrap,
-  &.is-header {
+  &.is-nowrap > span,
+  &.is-header > span {
     white-space: nowrap;
   }
 

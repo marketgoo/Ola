@@ -213,7 +213,9 @@ exports[`Checkgroup with error 1`] = `
   <p
     className="ola_field-error"
   >
-    Test description
+    <span>
+      Test description
+    </span>
   </p>
 </div>
 `;

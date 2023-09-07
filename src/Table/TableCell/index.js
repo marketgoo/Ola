@@ -17,10 +17,21 @@ const TableCellOrder = ({ children, direction }) => {
   )
 }
 
-const TableCell = ({ children, header, nowrap, selected, loading, orderable, direction, className, ...props }) => {
+const TableCell = ({
+  children,
+  header,
+  nowrap,
+  selected,
+  loading,
+  orderable,
+  direction,
+  align,
+  className,
+  padding,
+  ...props }) => {
   return (
     <div
-      className={cx('ola_table-cell', {
+      className={cx('ola_table-cell', `is-align--${align}`, {
         'is-header': header,
         'is-nowrap': nowrap,
         'is-selected': selected,
@@ -28,6 +39,9 @@ const TableCell = ({ children, header, nowrap, selected, loading, orderable, dir
         'is-ordered': !!direction,
         'ola-skeleton is-loading': loading
       }, className)}
+      style={{
+        'padding': padding
+      }}
       role="cell"
       {...props}>
       <span>{
@@ -48,7 +62,9 @@ TableCell.defaultProps = {
   loading: false,
   orderable: false,
   direction: null,
-  className: ''
+  align: 'left',
+  className: '',
+  padding: '0 var(--size-2)',
 }
 
 TableCell.propTypes = {
@@ -64,8 +80,12 @@ TableCell.propTypes = {
   orderable: PT.bool,
   /** Order direction */
   direction: PT.oneOf(['asc', 'desc']),
+  /** Alignment */
+  align: PT.oneOf(['left', 'center', 'right']),
   /** Extra className */
   className: PT.string,
+  /** Padding in css unit. Default "0 var(--size-2)" */
+  padding: PT.string,
   /** Child nodes */
   children: PT.oneOfType([
     PT.string,

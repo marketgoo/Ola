@@ -10,115 +10,165 @@ exports[`Default Table 1`] = `
     role="table"
     style={
       Object {
-        "--grid-template-columns": "repeat(0, 1fr)",
+        "--grid-template-columns": "repeat(5, 1fr)",
         "--max-height": "unset",
         "--min-width": "100%",
       }
     }
   >
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="aaa"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span />
     </div>
     <div
-      className="ola_table-cell is-nowrap"
+      className="ola_table-cell is-align--left is-nowrap"
       data-row="aaa"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Title
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="aaa"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Links
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="aaa"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Popularity
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="aaa"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Action
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="bbb"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         Check
       </span>
     </div>
     <div
-      className="ola_table-cell is-nowrap"
+      className="ola_table-cell is-align--left is-nowrap"
       data-row="bbb"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The title
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="bbb"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The links
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="bbb"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The popularity
       </span>
     </div>
     <div
-      className="ola_table-cell"
+      className="ola_table-cell is-align--left"
       data-row="bbb"
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       role="cell"
+      style={
+        Object {
+          "padding": "0 var(--size-2)",
+        }
+      }
     >
       <span>
         The actions

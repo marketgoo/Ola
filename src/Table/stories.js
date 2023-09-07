@@ -36,8 +36,8 @@ export const Base = (args) =>
       <Table.Cell></Table.Cell>
       <Table.Cell nowrap>Title</Table.Cell>
       <Table.Cell>Links</Table.Cell>
-      <Table.Cell>Popularity</Table.Cell>
-      <Table.Cell>Action</Table.Cell>
+      <Table.Cell align="center">Align Center</Table.Cell>
+      <Table.Cell align="right">Align Right</Table.Cell>
     </Table.Header>
     {data.slice(0, 5).map((row, idx) => (
       <Table.Row key={idx}>
@@ -46,8 +46,23 @@ export const Base = (args) =>
         </Table.Cell>
         <Table.Cell nowrap>{row.title}</Table.Cell>
         <Table.Cell>{row.links}</Table.Cell>
-        <Table.Cell>{row.popularity}</Table.Cell>
-        <Table.Cell>{row.action}</Table.Cell>
+        <Table.Cell align="center">{row.popularity}</Table.Cell>
+        <Table.Cell align="right">{row.action}</Table.Cell>
+      </Table.Row>
+    ))}
+  </Table>
+
+export const NoHeader = (args) =>
+  <Table {...args}>
+    {data.slice(0, 5).map((row, idx) => (
+      <Table.Row key={idx}>
+        <Table.Cell>
+          <Check type="checkbox" name="foo" checked={row.checked} />
+        </Table.Cell>
+        <Table.Cell nowrap>{row.title}</Table.Cell>
+        <Table.Cell>{row.links}</Table.Cell>
+        <Table.Cell align="center">{row.popularity}</Table.Cell>
+        <Table.Cell align="right">{row.action}</Table.Cell>
       </Table.Row>
     ))}
   </Table>
