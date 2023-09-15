@@ -1,4 +1,5 @@
 ![logo Ola](https://raw.githubusercontent.com/marketgoo/Ola/master/ola.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarketgoo%2FOla.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarketgoo%2FOla?ref=badge_shield)
 
 React implementation of **Ola** design system created by **marketgoo**.
 
@@ -205,3 +206,7 @@ The MIT License (MIT). Please see [LICENSE](https://github.com/marketgoo/Ola/blo
 
 [summary]: https://caniuse.com/#feat=details
 [https://github.com/javan/details-element-polyfill]: https://github.com/javan/details-element-polyfill
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmarketgoo%2FOla.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmarketgoo%2FOla?ref=badge_large)
