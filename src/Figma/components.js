@@ -144,8 +144,8 @@ export default [
     storybookLabel: 'Select',
     storybookLabelLink: 'Select',
     where: 'both',
-    state: 'different',
-    comment: 'Only multiselect is missing on Storybook. The rest is ok',
+    state: 'same',
+    comment: '',
   },
   {
     figmaLabel: 'Icons',
