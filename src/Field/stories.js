@@ -96,6 +96,23 @@ export const FieldSelect = (args) =>
     ]} />
   </Field>
 
+export const FieldSelectMultiple = (args) => { 
+  const options = [
+    { value: '1', label: 'Option 1' },
+    { value: '2', label: 'Option 2' },
+    { value: '3', label: 'Option 3' }
+  ]
+  const [baseSelect, setBaseSelect] = useState([options[0]])
+
+  return <Field {...args}>
+    <Select multiple value={baseSelect} onChange={setBaseSelect} options={[
+      { value: '1', label: 'Option 1' },
+      { value: '2', label: 'Option 2' },
+      { value: '3', label: 'Option 3' }
+    ]} />
+  </Field>
+}
+
 export const FieldSelectError = (args) =>
   <Field {...args}>
     <Select options={[
