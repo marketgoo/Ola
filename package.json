@@ -79,6 +79,7 @@
     "@phosphor-icons/react": "2.0.9",
     "classnames": "^2.2.6",
     "dialog-polyfill": "^0.5.3",
-    "react-hook-form": "^7.21.0"
+    "react-hook-form": "^7.21.0",
+    "react-select": "^5.7.4"
   }
 }
