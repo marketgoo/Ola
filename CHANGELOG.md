@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.3.1] - 2023-09-27
+### Fixed
+- Styles component `Toast`.
+
 ## [2.3.0] - 2023-09-19
 ### Added
 - `multiple` prop to Select component
@@ -693,7 +697,8 @@ Added `Edit` to `Icon` component
 [#233]: https://github.com/marketgoo/Ola/issues/233
 [#238]: https://github.com/marketgoo/Ola/issues/238
 
-[2.3.0]: https://github.com/marketgoo/Ola/compare/v2.2.0...v2.3.0
+[2.3.1]: https://github.com/marketgoo/Ola/compare/v2.3.0...v2.3.1
+[2.3.0]: https://github.com/marketgoo/Ola/compare/v2.2.1...v2.3.0
 [2.2.1]: https://github.com/marketgoo/Ola/compare/v2.2.0...v2.2.1
 [2.2.0]: https://github.com/marketgoo/Ola/compare/v2.0.1...v2.2.0
 [2.0.1]: https://github.com/marketgoo/Ola/compare/v2.0.0...v2.0.1
