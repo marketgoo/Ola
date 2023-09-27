@@ -46,7 +46,7 @@
   & .ola_toast-close {
     position: absolute;
     right: var(--size-1);
-    top: var(--size-1);
+    top: 11px;
     margin-left: var(--size-1);
   }
   & .ola_toast-icon {
