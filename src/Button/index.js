@@ -77,6 +77,7 @@ Button.propTypes = {
     'destructive-primary',
     'destructive',
     'pro',
+    'pro-secondary',
     'link',
   ]),
   /** Text for loading state */
