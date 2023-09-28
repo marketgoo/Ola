@@ -80,6 +80,10 @@
     border-style: solid;
     border-width: 1px;
     --color-hover: var(--color-pro-600);
+    background-selected: var(--color-pro-100);
+    --color-active: var(--color-pro-700);
+    --shadow-focus: var(--color-pro-100);
+    --background-active: var(--color-pro-100);
   }
 
   &.is-destructive-primary {
