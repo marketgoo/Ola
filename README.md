@@ -1,3 +1,12 @@
+![maintenance-status](https://img.shields.io/badge/package-deprecated-red.svg)
+
+# [DEPRECATED] Ola
+
+‼️ This package has been deprecated in favor of the [@marketgoo/components](https://github.com/marketgoo/ola-monorepo/pkgs/npm/components) package.
+
+----
+----
+
 ![logo Ola](https://raw.githubusercontent.com/marketgoo/Ola/master/ola.png)
 
 React implementation of **Ola** design system created by **marketgoo**.
